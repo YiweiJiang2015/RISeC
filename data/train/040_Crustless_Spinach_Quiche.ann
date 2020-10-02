@@ -1,0 +1,83 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 61 67	grease
+T6	TOOL 68 84	a 9 inch pie pan
+T7	AC 89 93	Heat
+T8	FOOD 94 97	oil
+T9	TOOL 101 116	a large skillet
+T10	OTHER 122 138	medium-high heat
+T11	AC 143 146	Add
+T12	FOOD 147 153	onions
+T13	AC 158 162	cook
+T14	AC 164 172	stirring
+T15	CONDITION_CLAUSE 187 208	until onions are soft
+T16	AC 213 220	Stir in
+T17	FOOD 221 228	spinach
+T18	AC 242 249	cooking
+T19	CONDITION_CLAUSE 250 286	until excess moisture has evaporated
+T20	TOOL 294 306	a large bowl
+T21	AC 308 315	combine
+T22	FOOD 316 320	eggs
+T23	FOOD 322 328	cheese
+T24	FOOD 330 334	salt
+T25	FOOD 339 345	pepper
+T26	AC 350 353	Add
+T27	FOOD 354 369	spinach mixture
+T28	AC 374 378	stir
+T29	PURPOSE_CLAUSE 379 387	to blend
+T30	AC 392 397	Scoop
+T31	TOOL 403 419	prepared pie pan
+T32	AC 424 428	Bake
+T33	TOOL 432 446	preheated oven
+T34	CONDITION_CLAUSE 447 466	until eggs have set
+T35	DUR 474 484	30 minutes
+T36	AC 494 498	cool
+T37	DUR 503 513	10 minutes
+T38	CONDITION_CLAUSE 514 528	before serving
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T7 Arg2:T8	
+R6	ArgM_LOC Arg1:T7 Arg2:T9	
+R7	ArgM_MNR Arg1:T7 Arg2:T10	
+R8	Arg1_PPT Arg1:T11 Arg2:T12	
+R9	Arg1_PPT_X Arg1:T13 Arg2:T11	
+R10	Arg2_PPT_Z Arg1:T11 Arg2:T7	
+R11	Simultaneous Arg1:T11 Arg2:T14	
+R12	ArgM_TMP Arg1:T11 Arg2:T15	
+R13	Arg1_PPT Arg1:T16 Arg2:T17	
+R14	ArgM_TMP Arg1:T18 Arg2:T19	
+R15	Arg1_PPT_X Arg1:T18 Arg2:T16	
+R16	Arg2_PPT_Z Arg1:T16 Arg2:T11	
+R17	ArgM_LOC Arg1:T21 Arg2:T20	
+R18	Arg1_PPT Arg1:T21 Arg2:T22	
+R19	Arg1_PPT Arg1:T21 Arg2:T23	
+R20	Arg1_PPT Arg1:T21 Arg2:T24	
+R21	Arg1_PPT Arg1:T21 Arg2:T25	
+R22	Arg1_PPT Arg1:T26 Arg2:T27	
+R23	ArgM_PRP Arg1:T28 Arg2:T29	
+R24	Arg1_PPT_X Arg1:T28 Arg2:T26	
+R25	Arg2_PPT_Z Arg1:T26 Arg2:T21	
+R26	Arg3_GOL Arg1:T30 Arg2:T31	
+R27	Arg1_PPT_X Arg1:T30 Arg2:T28	
+R28	ArgM_LOC Arg1:T32 Arg2:T33	
+R29	Arg1_PPT_X Arg1:T32 Arg2:T30	
+R30	ArgM_TMP Arg1:T32 Arg2:T34	
+R31	ArgM_TMP Arg1:T32 Arg2:T35	
+R32	ArgM_TMP Arg1:T36 Arg2:T37	
+R33	ArgM_TMP Arg1:T36 Arg2:T38	
+R34	Arg1_PPT_X Arg1:T36 Arg2:T32	
+#1	AnnotatorNotes R10	the oil; the hot oil
+#2	AnnotatorNotes R9	the onions
+R35	Arg1_PPT_X Arg1:T14 Arg2:T13	
+#3	AnnotatorNotes R35	the onions
+#4	AnnotatorNotes R16	the onions; the soft onions
+#5	AnnotatorNotes R15	the spinach; the spinach mixture
+#6	AnnotatorNotes R25	the egg mixture; the eggs and cheese
+#7	AnnotatorNotes R24	the mixture; the spinach mixture
+#8	AnnotatorNotes R27	the spinach; the spinach mixture
+#9	AnnotatorNotes R29	the quiche; the spinach quiche
+#10	AnnotatorNotes R34	the quiche; the spinach quiche

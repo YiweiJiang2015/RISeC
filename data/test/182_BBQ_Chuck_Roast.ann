@@ -1,0 +1,82 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 23	mix
+T3	FOOD 24 38	barbeque sauce
+T4	FOOD 40 54	teriyaki sauce
+T5	FOOD 56 60	beer
+T6	FOOD 62 68	garlic
+T7	FOOD 70 76	ginger
+T8	FOOD 78 83	onion
+T9	FOOD 85 97	black pepper
+T10	FOOD 103 107	salt
+T11	AC 112 117	Place
+T12	FOOD 118 127	the roast
+T13	FOOD 133 145	the marinade
+T14	AC 147 152	cover
+T15	AC 157 168	refrigerate
+T16	DUR 173 182	six hours
+T17	AC 184 191	turning
+T18	AC 202 209	Preheat
+T19	TOOL 210 226	an outdoor grill
+T20	OTHER 231 244	indirect heat
+T21	AC 249 255	Remove
+T22	FOOD 256 265	the roast
+T23	FOOD 271 283	the marinade
+T24	AC 289 293	pour
+T25	FOOD 294 306	the marinade
+T26	TOOL 312 322	a saucepan
+T29	AC 348 352	cook
+T30	DUR 357 366	5 minutes
+T32	PURPOSE_CLAUSE 381 407	for use as a basting sauce
+T33	AC 412 418	Thread
+T34	FOOD 419 428	the roast
+T35	TOOL 434 458	a rotating barbecue spit
+T36	OTHER 465 478	indirect heat
+T37	AC 483 487	Cook
+T38	FOOD 488 497	the roast
+T39	DUR 502 511	two hours
+T44	AC 605 610	Baste
+T45	FOOD 643 660	reserved marinade
+T46	DUR 624 637	the last hour
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	Arg1_PPT Arg1:T2 Arg2:T8	
+R7	Arg1_PPT Arg1:T2 Arg2:T9	
+R8	Arg1_PPT Arg1:T2 Arg2:T10	
+R9	ArgM_LOC Arg1:T2 Arg2:T1	
+R10	Arg1_PPT Arg1:T11 Arg2:T12	
+R11	Arg3_GOL Arg1:T11 Arg2:T13	
+R12	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R13	Arg1_PPT_X Arg1:T15 Arg2:T14	
+R14	ArgM_TMP Arg1:T15 Arg2:T16	
+R16	Arg1_PPT Arg1:T18 Arg2:T19	
+R17	TODO Arg1:T18 Arg2:T20	
+R18	Arg1_PPT Arg1:T21 Arg2:T22	
+R19	Arg2_DIR Arg1:T21 Arg2:T23	
+R20	Arg1_PPT Arg1:T24 Arg2:T25	
+R21	Arg3_GOL Arg1:T24 Arg2:T26	
+R22	ArgM_TMP Arg1:T29 Arg2:T30	
+T27	AC 338 342	boil
+T28	AC 371 380	Set aside
+R23	Arg1_PPT Arg1:T37 Arg2:T38	
+R24	ArgM_TMP Arg1:T37 Arg2:T39	
+R25	Arg1_PPT_X Arg1:T27 Arg2:T24	
+R26	Arg1_PPT_X Arg1:T29 Arg2:T27	
+R27	Arg1_PPT_X Arg1:T28 Arg2:T29	
+R28	Arg1_PPT Arg1:T33 Arg2:T34	
+R29	ArgM_LOC Arg1:T33 Arg2:T35	
+R30	ArgM_MNR Arg1:T33 Arg2:T36	
+T31	CONDITION_CLAUSE 516 600	until the internal temperature of the roast is at least 145 degrees F (63 degrees C)
+R31	Arg2_PPT Arg1:T44 Arg2:T45	
+R32	Arg1_PPT_X Arg1:T44 Arg2:T37	
+R15	Simultaneous Arg1:T15 Arg2:T17	
+R33	ArgM_PRP Arg1:T28 Arg2:T32	
+R34	ArgM_TMP Arg1:T37 Arg2:T31	
+#1	AnnotatorNotes R25	The marinade; The poured marinade
+#2	AnnotatorNotes R27	The marinade; The cooked marinade
+#3	AnnotatorNotes R32	The roast; The cooked roast
+#4	AnnotatorNotes R26	The marinade; The boiled marinade
+#5	AnnotatorNotes R12	The roast; The roast placed in marinade
+#6	AnnotatorNotes R13	the roast; the covered roast in the marinade

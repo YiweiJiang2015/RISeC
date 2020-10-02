@@ -1,0 +1,24 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 19 26	combine
+T3	FOOD 27 37	mayonnaise
+T4	FOOD 39 46	ketchup
+T5	FOOD 48 59	horseradish
+T6	FOOD 61 68	paprika
+T7	FOOD 70 74	salt
+T8	FOOD 76 83	oregano
+T9	FOOD 85 97	black pepper
+T10	FOOD 102 116	cayenne pepper
+T11	AC 121 126	Store
+T12	TOOL 140 156	the refrigerator
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	Arg1_PPT Arg1:T2 Arg2:T8	
+R7	Arg1_PPT Arg1:T2 Arg2:T9	
+R8	Arg1_PPT Arg1:T2 Arg2:T10	
+R9	ArgM_LOC Arg1:T2 Arg2:T1	
+R10	ArgM_LOC Arg1:T11 Arg2:T12	
+R11	Arg1_PPT_X Arg1:T11 Arg2:T2	
+#1	AnnotatorNotes R11	The combination; the combination of sauces and spices

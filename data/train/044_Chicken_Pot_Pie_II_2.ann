@@ -1,0 +1,167 @@
+T1	AC 3 7	Wash
+T2	FOOD 8 23	chicken breasts
+T3	FOOD 27 32	water
+T4	AC 42 47	place
+T5	TOOL 51 56	a pot
+T6	FOOD 62 67	water
+T7	PURPOSE_CLAUSE 73 93	to cover the chicken
+T9	AC 98 101	Add
+T10	FOOD 102 111	some salt
+T11	FOOD 116 122	pepper
+T12	FOOD 127 140	garlic powder
+T13	AC 149 153	cool
+T14	TOOL 157 164	the pot
+T15	AC 169 176	Preheat
+T16	TOOL 177 181	oven
+T17	TEMPERATURE 185 198	350 degrees F
+T18	TEMPERATURE 200 213	175 degrees C
+T19	AC 219 223	Wash
+T20	AC 228 231	cut
+T21	FOOD 232 240	potatoes
+T22	OTHER 246 262	bite size pieces
+T23	AC 267 271	boil
+T24	CONDITION_CLAUSE 272 295	till almost fork tender
+T25	AC 300 305	Drain
+T26	AC 310 319	set aside
+T27	AC 324 328	Wash
+T28	FOOD 329 335	celery
+T29	AC 340 343	cut
+T30	OTHER 347 363	bite-size pieces
+T31	AC 368 371	Cut
+T32	FOOD 372 377	onion
+T33	OTHER 381 397	bite-size pieces
+T34	TOOL 405 426	a large heavy skillet
+T35	OTHER 433 444	medium heat
+T36	AC 446 451	saute
+T37	FOOD 452 458	celery
+T38	FOOD 463 468	onion
+T39	FOOD 474 491	2 tablespoons oil
+T40	DUR 497 511	5 to 8 minutes
+T41	AC 517 520	Add
+T42	FOOD 521 542	the frozen vegetables
+T43	AC 547 551	cook
+T44	DUR 560 569	5 minutes
+T45	AC 575 578	Add
+T46	FOOD 579 584	flour
+T47	AC 589 593	cook
+T48	DUR 600 610	30 seconds
+T49	AC 616 619	Add
+T50	FOOD 620 633	chicken broth
+T51	AC 649 653	boil
+T52	CONDITION_CLAUSE 659 684	After it has become thick
+T53	AC 686 689	add
+T54	FOOD 690 698	potatoes
+R1	ArgM_TMP Arg1:T53 Arg2:T52	
+T55	AC 704 710	Remove
+T56	FOOD 711 718	chicken
+T57	TOOL 724 727	pot
+T58	AC 732 735	cut
+T59	OTHER 741 757	bite-size pieces
+T60	AC 762 765	add
+T61	FOOD 769 786	vegetable mixture
+T62	AC 792 795	Add
+T63	FOOD 796 800	salt
+T64	FOOD 805 811	pepper
+T66	AC 826 830	Pour
+T67	FOOD 831 838	mixture
+T68	TOOL 844 872	a 9 inch deep dish pie plate
+T69	AC 877 882	cover
+T70	FOOD 888 897	pie shell
+T71	AC 917 922	crimp
+T72	FOOD 923 949	the edges of the pie shell
+T74	TOOL 953 962	the plate
+T75	AC 995 999	Bake
+T76	TEMPERATURE 1003 1017	350  degrees F
+T77	TEMPERATURE 1019 1032	175 degrees C
+T78	DUR 1038 1048	45 minutes
+T79	CONDITION_CLAUSE 1052 1094	until pie shell is cooked and golden brown
+T80	PURPOSE_CLAUSE 963 989	so no juices spill in oven
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	ArgM_LOC Arg1:T1 Arg2:T3	
+R4	Arg3_GOL Arg1:T4 Arg2:T5	
+R5	Arg1_PPT_X Arg1:T4 Arg2:T1	
+R7	ArgM_PRP Arg1:T4 Arg2:T7	
+R9	TODO Arg1:T5 Arg2:T6	
+R10	Arg1_PPT Arg1:T9 Arg2:T10	
+R11	Arg1_PPT Arg1:T9 Arg2:T11	
+R12	Arg1_PPT Arg1:T9 Arg2:T12	
+R13	Arg2_PPT_Z Arg1:T9 Arg2:T4	
+R14	ArgM_LOC Arg1:T13 Arg2:T14	
+R15	Arg1_PPT_X Arg1:T13 Arg2:T9	
+R16	Arg1_PPT Arg1:T15 Arg2:T16	
+R17	ArgM_MNR Arg1:T15 Arg2:T17	
+R18	ArgM_MNR Arg1:T15 Arg2:T18	
+R19	Arg1_PPT Arg1:T19 Arg2:T21	
+R20	Arg1_PPT_X Arg1:T20 Arg2:T19	
+R21	Arg3_PRD Arg1:T20 Arg2:T22	
+R22	Arg1_PPT_X Arg1:T23 Arg2:T20	
+R23	ArgM_TMP Arg1:T23 Arg2:T24	
+R24	Arg1_PPT_X Arg1:T25 Arg2:T23	
+R25	Arg1_PPT_X Arg1:T26 Arg2:T25	
+R26	Arg1_PPT Arg1:T27 Arg2:T28	
+R27	Arg1_PPT_X Arg1:T29 Arg2:T27	
+R28	Arg3_PRD Arg1:T29 Arg2:T30	
+R29	Arg1_PPT Arg1:T31 Arg2:T32	
+R30	Arg2_PRD Arg1:T31 Arg2:T33	
+R31	Arg1_PPT Arg1:T36 Arg2:T37	
+R32	Arg1_PPT Arg1:T36 Arg2:T38	
+R33	Arg1_PPT Arg1:T36 Arg2:T39	
+R34	ArgM_TMP Arg1:T36 Arg2:T40	
+R35	ArgM_LOC Arg1:T36 Arg2:T34	
+R36	ArgM_MNR Arg1:T36 Arg2:T35	
+R37	Arg1_PPT Arg1:T41 Arg2:T42	
+R38	ArgM_TMP Arg1:T43 Arg2:T44	
+R39	Arg2_PPT_Z Arg1:T41 Arg2:T36	
+R40	Arg1_PPT_X Arg1:T43 Arg2:T41	
+R41	Arg1_PPT Arg1:T45 Arg2:T46	
+R42	Arg2_PPT_Z Arg1:T45 Arg2:T43	
+R43	Arg1_PPT_X Arg1:T47 Arg2:T45	
+R44	ArgM_TMP Arg1:T47 Arg2:T48	
+R45	Arg1_PPT Arg1:T49 Arg2:T50	
+R46	Arg1_PPT_X Arg1:T51 Arg2:T49	
+R47	Arg2_PPT_Z Arg1:T49 Arg2:T47	
+R48	Arg1_PPT Arg1:T53 Arg2:T54	
+R49	Arg2_PPT_Z Arg1:T53 Arg2:T51	
+R50	Arg1_PPT Arg1:T55 Arg2:T56	
+R51	Arg2_DIR Arg1:T55 Arg2:T57	
+R52	Arg1_PPT_X Arg1:T58 Arg2:T55	
+R53	Arg3_PRD Arg1:T58 Arg2:T59	
+R54	Arg2_PPT Arg1:T60 Arg2:T61	
+R55	Arg1_PPT_X Arg1:T60 Arg2:T58	
+R56	Arg1_PPT Arg1:T62 Arg2:T63	
+R57	Arg1_PPT Arg1:T62 Arg2:T64	
+R58	Arg2_PPT_Z Arg1:T62 Arg2:T60	
+T65	PURPOSE_CLAUSE 812 820	to taste
+R60	Arg1_PPT Arg1:T66 Arg2:T67	
+R61	Arg3_GOL Arg1:T66 Arg2:T68	
+R62	Arg1_PPT_X Arg1:T69 Arg2:T66	
+R63	Arg2_PPT Arg1:T69 Arg2:T70	
+R64	Arg1_PPT Arg1:T71 Arg2:T72	
+R66	Arg2_GOL Arg1:T71 Arg2:T74	
+R67	ArgM_MNR Arg1:T75 Arg2:T76	
+R68	ArgM_MNR Arg1:T75 Arg2:T77	
+R69	ArgM_TMP Arg1:T75 Arg2:T78	
+R70	ArgM_TMP Arg1:T75 Arg2:T79	
+R71	Arg1_PPT_X Arg1:T75 Arg2:T71	
+R6	ArgM_PRP Arg1:T71 Arg2:T80	
+#1	AnnotatorNotes R5	the chicken; the chicken breasts; the clean chicken breasts
+#2	AnnotatorNotes R13	the chicken; the chicken in the pot; the chicken in the water; 
+#3	AnnotatorNotes R15	the chicken; the chicken with favoring
+#4	AnnotatorNotes R20	the potatoes; the clean potatoes; the washed potatoes
+#5	AnnotatorNotes R22	the potatoes; the potato pieces
+#6	AnnotatorNotes R24	the potatoes; the boiled potatoes
+#7	AnnotatorNotes R25	the potatoes
+#8	AnnotatorNotes R27	the celery; the washed celery
+#9	AnnotatorNotes R39	the skillet; the celery and onion
+#10	AnnotatorNotes R40	the vegetables
+#11	AnnotatorNotes R42	the vegatables
+#12	AnnotatorNotes R43	the vegetables; the vegetables with flour
+#13	AnnotatorNotes R47	the vegetables
+#14	AnnotatorNotes R46	the chicken broth
+#15	AnnotatorNotes R49	the vegetable mixture
+#16	AnnotatorNotes R52	the chicken; the chicken breasts
+#17	AnnotatorNotes R55	the chicken; the chicken pieces
+#19	AnnotatorNotes R58	the chicken mixture
+#20	AnnotatorNotes R62	the mixture; the pie
+#21	AnnotatorNotes R71	the pie
+R59	ArgM_PRP Arg1:T62 Arg2:T65	

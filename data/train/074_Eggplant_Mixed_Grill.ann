@@ -1,0 +1,62 @@
+T1	AC 38 41	mix
+T2	AC 127 132	Place
+T3	AC 233 237	Seal
+T4	AC 243 251	marinate
+T5	AC 281 288	turning
+T6	AC 302 309	Preheat
+T7	AC 346 349	oil
+T8	AC 370 375	Grill
+T9	TOOL 6 36	a large resealable plastic bag
+T10	FOOD 42 55	the olive oil
+T11	FOOD 57 64	parsley
+T12	FOOD 66 73	oregano
+T13	FOOD 75 80	basil
+T14	FOOD 82 89	vinegar
+T15	FOOD 91 102	kosher salt
+T16	FOOD 104 110	pepper
+T17	FOOD 116 122	garlic
+T18	FOOD 133 142	the onion
+T19	FOOD 144 153	asparagus
+T20	FOOD 155 164	mushrooms
+T21	FOOD 166 174	eggplant
+T22	FOOD 176 191	red bell pepper
+T23	FOOD 197 215	yellow bell pepper
+T24	TOOL 221 228	the bag
+T25	DUR 252 259	2 hours
+T26	TOOL 263 279	the refrigerator
+T27	TOOL 310 319	the grill
+T28	TEMPERATURE 324 333	high heat
+T29	TOOL 350 365	the grill grate
+T30	FOOD 376 390	the vegetables
+T31	DUR 391 400	6 minutes
+T32	CONDITION_CLAUSE 415 427	until tender
+R1	Arg1_PPT Arg1:T1 Arg2:T10	
+R2	Arg1_PPT Arg1:T1 Arg2:T11	
+R3	Arg1_PPT Arg1:T1 Arg2:T12	
+R4	Arg1_PPT Arg1:T1 Arg2:T13	
+R5	Arg1_PPT Arg1:T1 Arg2:T14	
+R6	Arg1_PPT Arg1:T1 Arg2:T15	
+R7	Arg1_PPT Arg1:T1 Arg2:T16	
+R8	Arg1_PPT Arg1:T1 Arg2:T17	
+R9	ArgM_LOC Arg1:T1 Arg2:T9	
+R10	Arg1_PPT Arg1:T2 Arg2:T18	
+R11	Arg1_PPT Arg1:T2 Arg2:T19	
+R12	Arg1_PPT Arg1:T2 Arg2:T20	
+R13	Arg1_PPT Arg1:T2 Arg2:T21	
+R14	Arg1_PPT Arg1:T2 Arg2:T22	
+R15	Arg1_PPT Arg1:T2 Arg2:T23	
+R16	Arg3_GOL Arg1:T2 Arg2:T24	
+R17	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R18	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R19	ArgM_TMP Arg1:T4 Arg2:T25	
+R20	ArgM_LOC Arg1:T4 Arg2:T26	
+R22	Arg1_PPT Arg1:T6 Arg2:T27	
+R23	ArgM_MNR Arg1:T6 Arg2:T28	
+R24	Arg1_PPT Arg1:T7 Arg2:T29	
+R25	Arg1_PPT Arg1:T8 Arg2:T30	
+R26	ArgM_TMP Arg1:T8 Arg2:T31	
+R27	ArgM_TMP Arg1:T8 Arg2:T32	
+T33	OTHER 401 413	on each side
+R21	Simultaneous Arg1:T4 Arg2:T5	
+#1	AnnotatorNotes R17	the vegetables; the vegetables in the bag
+#2	AnnotatorNotes R18	the vegetables; the vegetables in the sealed bag

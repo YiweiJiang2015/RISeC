@@ -1,0 +1,58 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 27	combine
+T3	FOOD 28 51	first eight ingredients
+T4	AC 56 61	Place
+T5	FOOD 62 69	chicken
+T6	FOOD 73 80	mixture
+T7	AC 85 89	turn
+T8	PURPOSE_CLAUSE 90 97	to coat
+T9	AC 102 107	Cover
+T10	AC 112 120	marinate
+T11	DUR 121 130	overnight
+T12	TOOL 134 150	the refrigerator
+T13	AC 155 161	Remove
+T14	FOOD 162 169	chicken
+T15	FOOD 175 183	marinade
+T16	AC 185 189	coat
+T17	FOOD 190 200	each piece
+T18	FOOD 206 212	crumbs
+T19	AC 217 224	Arrange
+T20	TOOL 228 248	a shallow baking pan
+T21	AC 253 257	Bake
+T23	TEMPERATURE 273 284	350 degrees
+T24	DUR 289 299	45 minutes
+T25	CONDITION_CLAUSE 303 325	until juices run clear
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	ArgM_LOC Arg1:T2 Arg2:T1	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R4	Arg2_GOL Arg1:T4 Arg2:T6	
+R5	Arg1_PPT_X Arg1:T7 Arg2:T4	
+R6	ArgM_PRP Arg1:T7 Arg2:T8	
+R7	Arg1_PPT_X Arg1:T10 Arg2:T9	
+R8	Arg1_PPT_X Arg1:T9 Arg2:T7	
+R9	ArgM_TMP Arg1:T10 Arg2:T11	
+R10	ArgM_LOC Arg1:T10 Arg2:T12	
+R11	Arg1_PPT Arg1:T13 Arg2:T14	
+R12	Arg2_DIR Arg1:T13 Arg2:T15	
+R13	Arg1_GOL Arg1:T16 Arg2:T17	
+R14	Arg2_PPT Arg1:T16 Arg2:T18	
+R15	ArgM_LOC Arg1:T19 Arg2:T20	
+R16	ArgM_MNR Arg1:T21 Arg2:T23	
+R18	ArgM_TMP Arg1:T21 Arg2:T24	
+R19	ArgM_TMP Arg1:T21 Arg2:T25	
+#1	AnnotatorNotes T2	the mixture; the mixture in a bowl
+#2	AnnotatorNotes T4	the mixture; the chicken mixture
+#3	AnnotatorNotes T7	the mixture; the coated chicken mixture
+#4	AnnotatorNotes T9	the mixture; the covered mixture
+#5	AnnotatorNotes T10	the mixture; the marinated mixture
+#6	AnnotatorNotes T13	the chicken; the chicken removed from marinade
+#7	AnnotatorNotes T16	the chicken; the chicken coated with crumbs
+#8	AnnotatorNotes T19	the chicken; the chicken on a baking pan
+#9	AnnotatorNotes T21	the chicken; the baked chicken
+#10	AnnotatorNotes R5	the chicken
+#11	AnnotatorNotes R8	the large bowl; the chicken
+#12	AnnotatorNotes R7	the chicken
+R17	Arg1_PPT_X Arg1:T19 Arg2:T16	
+R20	Arg1_PPT_X Arg1:T21 Arg2:T19	
+#13	AnnotatorNotes R17	the chicken; the chicken pieces; the pieces coated with crumbs; the marinated chicken pieces
+#14	AnnotatorNotes R20	the chicken; the chicken on the pan; the chicken pieces on the baking pan

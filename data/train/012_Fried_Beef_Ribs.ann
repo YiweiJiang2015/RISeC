@@ -1,0 +1,65 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 15	the oil
+T3	TOOL 19 31	a deep-fryer
+T4	TEMPERATURE 35 48	375 degrees F
+T5	TEMPERATURE 50 63	190 degrees C
+T6	TOOL 72 85	a medium bowl
+T7	AC 87 90	mix
+T8	FOOD 100 108	the salt
+T9	FOOD 110 122	black pepper
+T10	FOOD 124 138	cayenne pepper
+T11	FOOD 140 151	garlic salt
+T12	FOOD 157 167	onion salt
+T13	AC 172 177	Place
+T14	FOOD 178 187	the flour
+T15	TOOL 191 206	a separate bowl
+T16	TOOL 210 215	plate
+T17	AC 220 225	Whisk
+T18	FOOD 226 230	eggs
+T19	TOOL 234 246	a large bowl
+T20	AC 251 254	Rub
+T21	FOOD 255 272	the spice mixture
+T22	FOOD 278 293	all of the ribs
+T23	AC 298 301	Dip
+T24	FOOD 302 310	each rib
+T25	FOOD 314 317	egg
+T26	FOOD 327 332	flour
+T27	FOOD 339 342	egg
+T28	FOOD 349 354	flour
+T29	AC 365 370	Place
+T30	FOOD 371 379	the ribs
+T31	TOOL 383 397	a fryer basket
+T32	FOOD 401 405	they
+T33	AC 410 421	not crowded
+T34	AC 423 426	try
+T35	AC 484 488	Cook
+T36	DUR 499 508	8 minutes
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	ArgM_MNR Arg1:T1 Arg2:T5	
+R5	ArgM_LOC Arg1:T7 Arg2:T6	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg1_PPT Arg1:T7 Arg2:T9	
+R8	Arg1_PPT Arg1:T7 Arg2:T10	
+R9	Arg1_PPT Arg1:T7 Arg2:T11	
+R10	Arg1_PPT Arg1:T7 Arg2:T12	
+R11	Arg1_PPT Arg1:T13 Arg2:T14	
+R12	Arg3_GOL Arg1:T13 Arg2:T15	
+R13	Arg3_GOL Arg1:T13 Arg2:T16	
+R14	Arg1_PPT Arg1:T17 Arg2:T18	
+R15	ArgM_LOC Arg1:T17 Arg2:T19	
+R16	Arg2_PPT Arg1:T20 Arg2:T21	
+R17	Arg1_GOL Arg1:T20 Arg2:T22	
+R18	Arg1_PPT Arg1:T23 Arg2:T24	
+R19	Arg3_GOL Arg1:T23 Arg2:T25	
+R20	Arg3_GOL Arg1:T23 Arg2:T26	
+R21	Arg3_GOL Arg1:T23 Arg2:T27	
+R22	Arg3_GOL Arg1:T23 Arg2:T28	
+R23	Arg1_PPT Arg1:T29 Arg2:T30	
+R24	Arg3_GOL Arg1:T29 Arg2:T31	
+R25	Arg1_PPT Arg1:T33 Arg2:T32	
+R26	ArgM_TMP Arg1:T35 Arg2:T36	
+R27	Arg1_PPT_X Arg1:T35 Arg2:T29	
+T37	TOOL 469 479	your fryer
+#1	AnnotatorNotes R27	the ribs

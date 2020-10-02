@@ -1,0 +1,88 @@
+T1	AC 71 77	Season
+T2	AC 147 154	Stir in
+T3	FOOD 155 169	crushed garlic
+T4	AC 174 178	Cook
+T5	AC 241 247	Remove
+T6	AC 270 275	drain
+T7	AC 293 297	cool
+T8	AC 312 316	dice
+T9	AC 318 325	discard
+T10	AC 362 365	mix
+T11	AC 459 463	toss
+T12	AC 559 562	Top
+T13	AC 3 7	Warm
+T14	FOOD 8 30	1 tablespoon olive oil
+T15	TOOL 34 49	a large skillet
+T16	TEMPERATURE 55 66	medium heat
+T17	FOOD 78 99	both sides of chicken
+T18	FOOD 105 120	Cajun seasoning
+T19	AC 126 131	place
+T20	FOOD 135 142	hot oil
+T21	FOOD 179 186	chicken
+T22	DUR 187 196	5 minutes
+T23	CONDITION_CLAUSE 214 236	until juices run clear
+T24	FOOD 248 255	chicken
+T25	TOOL 261 268	skillet
+T26	TOOL 279 291	paper towels
+T27	FOOD 326 329	oil
+T28	FOOD 334 340	garlic
+T29	TOOL 348 360	a small bowl
+T30	FOOD 366 385	remaining olive oil
+T31	FOOD 387 403	balsamic vinegar
+T32	FOOD 405 412	mustard
+T33	FOOD 414 418	salt
+T34	FOOD 424 430	pepper
+T35	TOOL 438 450	a large bowl
+T36	FOOD 464 476	the dressing
+T37	FOOD 482 504	the mixed salad greens
+T38	FOOD 506 513	arugula
+T39	FOOD 515 522	avocado
+T40	FOOD 524 542	sun-dried tomatoes
+T41	FOOD 548 554	olives
+T42	FOOD 568 581	diced chicken
+T43	PURPOSE_CLAUSE 582 590	to serve
+R1	Arg1_PPT Arg1:T11 Arg2:T36	
+R2	Arg1_PPT Arg1:T11 Arg2:T37	
+R3	Arg1_PPT Arg1:T11 Arg2:T38	
+R4	Arg1_PPT Arg1:T11 Arg2:T39	
+R5	Arg1_PPT Arg1:T11 Arg2:T40	
+R6	Arg1_PPT Arg1:T11 Arg2:T41	
+R7	Arg2_PPT Arg1:T12 Arg2:T42	
+R8	Arg1_GOL_X Arg1:T12 Arg2:T11	
+R9	ArgM_PRP Arg1:T12 Arg2:T43	
+R10	Arg1_PPT Arg1:T13 Arg2:T14	
+R11	ArgM_LOC Arg1:T13 Arg2:T15	
+R12	ArgM_MNR Arg1:T13 Arg2:T16	
+R13	Arg1_GOL Arg1:T1 Arg2:T17	
+R14	Arg2_PPT Arg1:T1 Arg2:T18	
+R15	Arg1_PPT_X Arg1:T19 Arg2:T1	
+R16	Arg2_GOL Arg1:T19 Arg2:T20	
+R17	Arg1_PPT Arg1:T2 Arg2:T3	
+R18	Arg2_GOL_X Arg1:T2 Arg2:T19	
+R19	Arg1_PPT Arg1:T4 Arg2:T21	
+R20	ArgM_TMP Arg1:T4 Arg2:T22	
+T44	OTHER 200 209	each side
+R21	ArgM_TMP Arg1:T4 Arg2:T23	
+R22	Arg2_DIR Arg1:T5 Arg2:T25	
+R23	Arg1_PPT Arg1:T5 Arg2:T24	
+R24	Arg2_PPT_Z Arg1:T6 Arg2:T5	
+R25	ArgM_LOC Arg1:T6 Arg2:T26	
+R26	Arg1_PPT Arg1:T7 Arg2:T6	
+R27	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R28	TODO Arg1:T9 Arg2:T8	
+R29	Arg1_PPT Arg1:T9 Arg2:T27	
+R30	Arg1_PPT Arg1:T9 Arg2:T28	
+R31	Arg1_PPT Arg1:T10 Arg2:T30	
+R32	Arg1_PPT Arg1:T10 Arg2:T31	
+R33	Arg1_PPT Arg1:T10 Arg2:T32	
+R34	Arg1_PPT Arg1:T10 Arg2:T33	
+R35	Arg1_PPT Arg1:T10 Arg2:T34	
+R36	ArgM_LOC Arg1:T10 Arg2:T29	
+R37	ArgM_LOC Arg1:T11 Arg2:T35	
+R38	TODO Arg1:T4 Arg2:T44	
+#1	AnnotatorNotes R15	The chicken; The seasoned chicken
+#2	AnnotatorNotes R24	The chicked; The removed chicken
+#3	AnnotatorNotes R26	The chicken; The drained chicken
+#4	AnnotatorNotes R27	The chicken; The cooled chicken
+#5	AnnotatorNotes R18	the chicken; the chicken in the hot oil; the chicken in the skillet
+#6	AnnotatorNotes R8	the dressing; 

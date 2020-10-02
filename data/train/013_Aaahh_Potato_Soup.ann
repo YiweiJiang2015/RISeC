@@ -1,0 +1,46 @@
+T1	TOOL 6 22	a large saucepan
+T2	TOOL 26 29	pot
+T3	AC 31 38	combine
+T4	FOOD 39 47	potatoes
+T5	FOOD 49 69	au gratin potato mix
+T6	FOOD 71 84	chicken broth
+T7	FOOD 89 94	water
+T8	AC 99 102	Add
+T9	FOOD 103 113	more water
+T11	CONDITION_CLAUSE 123 135	if necessary
+T12	AC 140 144	Cook
+T13	OTHER 150 161	medium heat
+T14	AC 163 171	stirring
+T15	CONDITION_CLAUSE 186 211	until potatoes are tender
+T16	DUR 220 230	40 minutes
+T17	AC 235 242	Stir in
+T18	FOOD 243 248	cream
+T19	AC 253 257	heat
+T20	AC 270 275	Serve
+R1	ArgM_LOC Arg1:T3 Arg2:T1	
+R2	ArgM_LOC Arg1:T3 Arg2:T2	
+R3	Arg1_PPT Arg1:T3 Arg2:T4	
+R4	Arg1_PPT Arg1:T3 Arg2:T5	
+R5	Arg1_PPT Arg1:T3 Arg2:T6	
+R6	Arg1_PPT Arg1:T3 Arg2:T7	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R9	Arg2_PPT_Z Arg1:T8 Arg2:T3	
+R10	ArgM_MNR Arg1:T12 Arg2:T13	
+R11	Simultaneous Arg1:T12 Arg2:T14	
+R12	ArgM_TMP Arg1:T12 Arg2:T15	
+R13	ArgM_TMP Arg1:T12 Arg2:T16	
+R14	Arg1_PPT Arg1:T17 Arg2:T18	
+R16	Arg2_PPT_Z Arg1:T17 Arg2:T12	
+R17	TODO Arg1:T8 Arg2:T11	
+T10	PURPOSE_CLAUSE 114 122	to cover
+R8	ArgM_PRP Arg1:T8 Arg2:T10	
+#1	AnnotatorNotes R9	the soup
+R18	Arg1_PPT_X Arg1:T12 Arg2:T8	
+#2	AnnotatorNotes R18	the soup; the potato soup
+R19	Arg1_PPT_X Arg1:T14 Arg2:T12	
+#3	AnnotatorNotes R19	the potato soup
+#4	AnnotatorNotes R16	the soup; the potato soup
+R20	Arg1_PPT_X Arg1:T19 Arg2:T17	
+R15	Arg1_PPT_X Arg1:T20 Arg2:T19	
+#5	AnnotatorNotes R15	the soup; the potato cream soup; the hot soup
+#6	AnnotatorNotes R20	the soup; the potato cream soup

@@ -1,0 +1,71 @@
+T1	TOOL 6 36	a large resealable plastic bag
+T2	AC 38 45	combine
+T3	FOOD 46 72	the first five ingredients
+T4	TOOL 80 94	a shallow bowl
+T5	AC 96 100	beat
+T6	FOOD 101 108	the egg
+T7	FOOD 113 117	milk
+T8	AC 122 125	Add
+T9	FOOD 126 133	chicken
+T10	TOOL 137 140	bag
+T11	FOOD 142 154	a few pieces
+T12	AC 170 175	shake
+T14	AC 188 191	Dip
+T15	FOOD 197 208	egg mixture
+T16	AC 215 221	return
+T17	FOOD 225 238	flour mixture
+T18	AC 243 248	shake
+T19	AC 259 265	Remove
+T20	TOOL 271 274	bag
+T21	AC 283 288	stand
+T22	DUR 293 302	5 minutes
+T23	AC 307 311	Heat
+T24	FOOD 312 315	oil
+T25	TOOL 319 334	a large skillet
+T26	AC 339 342	Fry
+T27	FOOD 343 350	chicken
+T28	CONDITION_CLAUSE 351 382	until golden brown on all sides
+T29	AC 387 393	Reduce
+T30	OTHER 394 398	heat
+T31	TEMPERATURE 402 408	medium
+T32	AC 413 417	cook
+T33	CONDITION_CLAUSE 418 456	until a meat thermometer reads 180 deg
+T34	DUR 464 474	15 minutes
+R1	ArgM_LOC Arg1:T2 Arg2:T1	
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	ArgM_LOC Arg1:T5 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg2_PPT Arg1:T8 Arg2:T10	
+R8	Arg1_PPT_X Arg1:T12 Arg2:T8	
+R10	Arg3_GOL Arg1:T14 Arg2:T15	
+R11	Arg3_GOL Arg1:T16 Arg2:T17	
+R12	Arg1_PPT_X Arg1:T16 Arg2:T14	
+R13	Arg1_PPT_X Arg1:T18 Arg2:T16	
+R14	Arg2_DIR Arg1:T19 Arg2:T20	
+R15	Arg1_PPT_X Arg1:T19 Arg2:T18	
+R16	ArgM_TMP Arg1:T21 Arg2:T22	
+R17	Arg1_PPT Arg1:T23 Arg2:T24	
+R18	ArgM_LOC Arg1:T23 Arg2:T25	
+R19	Arg1_PPT Arg1:T26 Arg2:T27	
+R20	ArgM_TMP Arg1:T26 Arg2:T28	
+R21	TODO Arg1:T8 Arg2:T11	
+R22	Arg1_PPT Arg1:T29 Arg2:T30	
+R23	Arg4_GOL Arg1:T29 Arg2:T31	
+R24	ArgM_TMP Arg1:T32 Arg2:T33	
+R25	ArgM_TMP Arg1:T32 Arg2:T34	
+R27	Arg2_PPT_Z Arg1:T26 Arg2:T23	
+R28	Arg1_PPT_X Arg1:T14 Arg2:T12	
+#2	AnnotatorNotes R8	the bag
+#3	AnnotatorNotes R28	the chicken
+#4	AnnotatorNotes R12	the chicken
+#5	AnnotatorNotes R13	the chicken
+#6	AnnotatorNotes R15	the chicken; the coated chicken
+R29	Arg1_PPT_X Arg1:T21 Arg2:T19	
+#7	AnnotatorNotes R29	the chicken; the coated chicken
+#8	AnnotatorNotes R27	the hot oil
+R26	Arg1_PPT_X Arg1:T32 Arg2:T29	
+#9	AnnotatorNotes R26	the chicken
+T13	PURPOSE_CLAUSE 176 183	to coat
+R9	ArgM_PRP Arg1:T12 Arg2:T13	

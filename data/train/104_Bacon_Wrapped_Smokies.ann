@@ -1,0 +1,53 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 19	the oven
+T3	TEMPERATURE 23 36	325 degrees F
+T4	TEMPERATURE 38 51	165 degrees C
+T5	AC 57 68	Refrigerate
+T6	FOOD 69 85	2/3 of the bacon
+T7	CONDITION_CLAUSE 86 98	until needed
+T8	AC 103 107	Wrap
+T9	FOOD 108 128	each cocktail wiener
+T10	FOOD 134 150	a piece of bacon
+T11	AC 155 161	secure
+T12	TOOL 167 178	a toothpick
+T13	AC 183 188	Place
+T14	TOOL 192 212	a large baking sheet
+T15	AC 217 225	Sprinkle
+T16	FOOD 226 237	brown sugar
+T17	FOOD 254 257	all
+T18	AC 262 266	Bake
+T19	DUR 271 281	40 minutes
+T20	TOOL 285 303	the preheated oven
+T21	CONDITION_CLAUSE 305 330	until the sugar is bubbly
+T22	AC 345 350	place
+T23	FOOD 351 362	the wieners
+T24	TOOL 366 379	a slow cooker
+T25	AC 384 388	keep
+T26	TEMPERATURE 392 404	the low heat
+T27	PURPOSE_CLAUSE 335 343	To serve
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	ArgM_TMP Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg2_PPT Arg1:T8 Arg2:T10	
+R8	Arg1_PPT_X Arg1:T11 Arg2:T8	
+R9	ArgM_MEANS Arg1:T11 Arg2:T12	
+R10	Arg1_PPT_X Arg1:T13 Arg2:T11	
+R11	Arg3_GOL Arg1:T13 Arg2:T14	
+R12	Arg1_PPT Arg1:T15 Arg2:T16	
+R13	Arg2_GOL Arg1:T15 Arg2:T17	
+R15	ArgM_TMP Arg1:T18 Arg2:T19	
+R16	ArgM_LOC Arg1:T18 Arg2:T20	
+R17	Arg1_PPT_X Arg1:T18 Arg2:T15	
+R18	ArgM_TMP Arg1:T18 Arg2:T21	
+R19	ArgM_PRP Arg1:T22 Arg2:T27	
+R20	Arg1_PPT Arg1:T22 Arg2:T23	
+R21	Arg3_GOL Arg1:T22 Arg2:T24	
+R22	Arg1_PPT_X Arg1:T25 Arg2:T22	
+R23	ArgM_MNR Arg1:T25 Arg2:T26	
+#1	AnnotatorNotes R8	the wrap; the bacon wrap
+#2	AnnotatorNotes R10	the wrap; the wrap with a toothpick
+#3	AnnotatorNotes R17	the wrap; the bacon wrap; the bacon wrap with sugar
+#4	AnnotatorNotes R22	the wieners; the wieners in the cooker

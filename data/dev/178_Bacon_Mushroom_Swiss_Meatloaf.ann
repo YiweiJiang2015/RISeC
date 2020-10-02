@@ -1,0 +1,116 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 58	Place
+T6	FOOD 59 64	bacon
+T7	TOOL 68 77	a skillet
+T8	AC 82 86	cook
+T9	TEMPERATURE 92 103	medium heat
+T10	CONDITION_CLAUSE 104 132	until the pieces are browned
+T11	AC 137 143	Remove
+T12	TOOL 149 164	a slotted spoon
+T13	TOOL 168 180	paper towels
+T14	AC 185 192	Discard
+T16	FOOD 193 229	all but 1 tablespoon of bacon grease
+T17	AC 234 241	Stir in
+T18	FOOD 242 248	onions
+T19	FOOD 253 262	mushrooms
+T20	AC 268 272	cook
+T21	CONDITION_CLAUSE 273 283	until soft
+T22	AC 288 294	Remove
+T23	OTHER 300 304	heat
+T24	TOOL 312 324	a large bowl
+T25	AC 326 330	stir
+T26	FOOD 340 344	beef
+T27	FOOD 346 349	egg
+T28	FOOD 355 359	milk
+T29	AC 364 371	Stir in
+T30	FOOD 372 381	the onion
+T31	FOOD 386 395	mushrooms
+T32	AC 400 406	Mix in
+T33	FOOD 413 437	4 ounces of Swiss cheese
+T34	AC 478 485	Stir in
+T35	FOOD 486 502	cornflake crumbs
+T36	AC 508 511	mix
+T37	CONDITION_CLAUSE 512 530	until well blended
+T38	AC 536 541	Shape
+T39	FOOD 547 553	a loaf
+T40	AC 559 564	place
+T41	TOOL 568 582	a meatloaf pan
+T42	AC 588 592	Bake
+T43	TOOL 596 612	a preheated oven
+T44	DUR 617 623	1 hour
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg3_GOL Arg1:T5 Arg2:T7	
+R6	ArgM_MNR Arg1:T8 Arg2:T9	
+R7	ArgM_TMP Arg1:T8 Arg2:T10	
+R8	ArgM_MEANS Arg1:T11 Arg2:T12	
+R9	ArgM_LOC Arg1:T11 Arg2:T13	
+R10	Arg1_PPT Arg1:T17 Arg2:T18	
+R11	Arg1_PPT Arg1:T17 Arg2:T19	
+R12	Arg1_PPT_X Arg1:T20 Arg2:T17	
+R13	Arg1_PPT Arg1:T14 Arg2:T16	
+R14	Arg2_DIR Arg1:T22 Arg2:T23	
+R15	Arg1_PPT_X Arg1:T22 Arg2:T20	
+R16	Arg2_PPT_Z Arg1:T17 Arg2:T14	
+R17	Arg1_PPT_X Arg1:T11 Arg2:T8	
+R18	Arg1_PPT_X Arg1:T8 Arg2:T5	
+R19	Arg1_PPT Arg1:T25 Arg2:T26	
+R20	Arg1_PPT Arg1:T25 Arg2:T27	
+R21	Arg1_PPT Arg1:T25 Arg2:T28	
+R22	ArgM_LOC Arg1:T25 Arg2:T24	
+R23	Arg1_PPT Arg1:T29 Arg2:T30	
+R24	Arg1_PPT Arg1:T29 Arg2:T31	
+R25	Arg2_PPT_Z Arg1:T29 Arg2:T25	
+R26	Arg2_PPT_Z Arg1:T32 Arg2:T29	
+R27	Arg1_PPT Arg1:T32 Arg2:T33	
+T15	FOOD 443 472	all but 1 tablespoon of bacon
+R28	Arg1_PPT Arg1:T32 Arg2:T15	
+R29	Arg1_PPT Arg1:T34 Arg2:T35	
+R30	Arg1_PPT_X Arg1:T36 Arg2:T34	
+R31	Arg2_PPT_Z Arg1:T34 Arg2:T32	
+R32	ArgM_TMP Arg1:T36 Arg2:T37	
+R33	Arg1_PPT_X Arg1:T38 Arg2:T36	
+R34	Arg3_PRD Arg1:T38 Arg2:T39	
+R35	Arg1_PPT_X Arg1:T40 Arg2:T38	
+R36	Arg3_GOL Arg1:T40 Arg2:T41	
+R37	ArgM_LOC Arg1:T42 Arg2:T43	
+R38	ArgM_TMP Arg1:T42 Arg2:T44	
+T45	AC 629 634	Drain
+T46	OTHER 635 638	fat
+T47	AC 644 652	sprinkle
+T48	FOOD 658 674	remaining cheese
+T49	FOOD 679 684	bacon
+R39	Arg1_PPT Arg1:T47 Arg2:T48	
+R40	Arg1_PPT Arg1:T47 Arg2:T49	
+R41	Arg2_GOL_X Arg1:T47 Arg2:T45	
+R43	Arg1_PPT_X Arg1:T42 Arg2:T40	
+T50	AC 690 696	Return
+T51	TOOL 700 704	oven
+T52	AC 710 714	bake
+T53	CONDITION_CLAUSE 715 737	until cheese is melted
+T54	DUR 745 754	5 minutes
+R44	ArgM_TMP Arg1:T52 Arg2:T53	
+R45	ArgM_TMP Arg1:T52 Arg2:T54	
+R46	ArgM_LOC Arg1:T50 Arg2:T51	
+R47	Arg1_PPT_X Arg1:T50 Arg2:T47	
+R48	Arg1_PPT_X Arg1:T52 Arg2:T50	
+R42	Arg1_PPT Arg1:T45 Arg2:T46	
+#1	AnnotatorNotes R17	The bacon; The cooked bacon
+#2	AnnotatorNotes R16	The grease; The leftover grease
+#3	AnnotatorNotes R15	The bacon mixture; The cooked bacon
+#4	AnnotatorNotes R25	The beef; The beef mixture
+#5	AnnotatorNotes R26	The beef; The beef mixture with onions
+#6	AnnotatorNotes R31	The beef; The beef with cheese and bacon
+#7	AnnotatorNotes R33	The beef mixture; The blended mixture
+#8	AnnotatorNotes R43	The beef loaf; The loaf placed in the pan
+#9	AnnotatorNotes R47	The beef loaf; The baked sprinkled loaf
+#10	AnnotatorNotes R18	the bacon; the bacon in the skillet
+#11	AnnotatorNotes R12	the bacon mixture; the bacon mixture with onions
+#12	AnnotatorNotes R30	The beef; The beef with crumbs
+#13	AnnotatorNotes R41	the beef loaf; the baked beef without fat
+#14	AnnotatorNotes R48	the beef loaf; the beef loaf in the oven

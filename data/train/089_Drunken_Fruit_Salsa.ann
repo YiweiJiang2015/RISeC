@@ -1,0 +1,24 @@
+T1	AC 3 7	Stir
+T2	FOOD 17 22	mango
+T3	FOOD 24 36	strawberries
+T4	FOOD 38 42	kiwi
+T5	FOOD 44 52	jalapeno
+T6	FOOD 54 58	mint
+T7	FOOD 64 67	rum
+T8	TOOL 71 83	a glass bowl
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T1 Arg2:T5	
+R5	Arg1_PPT Arg1:T1 Arg2:T6	
+R6	Arg1_PPT Arg1:T1 Arg2:T7	
+R7	ArgM_LOC Arg1:T1 Arg2:T8	
+T9	AC 88 99	Refrigerate
+R8	Arg1_PPT_X Arg1:T9 Arg2:T1	
+T10	DUR 104 116	1 to 3 hours
+R9	ArgM_TMP Arg1:T9 Arg2:T10	
+T11	AC 118 126	stirring
+T12	OTHER 127 140	once or twice
+R10	ArgM_MNR Arg1:T11 Arg2:T12	
+R11	Simultaneous Arg1:T9 Arg2:T11	
+#1	AnnotatorNotes R8	the fruits; the fruits in the bowl

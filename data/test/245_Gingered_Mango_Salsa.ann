@@ -1,0 +1,12 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 21	combine
+T3	FOOD 22 37	all ingredients
+T4	AC 46 51	stand
+T5	DUR 56 66	30 minutes
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	ArgM_LOC Arg1:T2 Arg2:T1	
+R3	ArgM_TMP Arg1:T4 Arg2:T5	
+T6	CONDITION_CLAUSE 67 81	before serving
+R4	ArgM_TMP Arg1:T4 Arg2:T6	
+R5	Arg0_PAG Arg1:T4 Arg2:T3	
+#1	AnnotatorNotes R5	the salsa; the combined ingredients

@@ -1,0 +1,65 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 11	oil
+T3	TOOL 15 26	a large pot
+T4	AC 28 33	brown
+T5	FOOD 34 41	chicken
+T6	AC 46 52	Remove
+T7	FOOD 53 60	chicken
+T8	AC 65 74	set aside
+T9	AC 79 84	Saute
+T10	FOOD 85 91	onions
+T11	CONDITION_CLAUSE 92 102	until soft
+T12	DUR 110 119	5 minutes
+T13	AC 124 127	Add
+T14	FOOD 128 133	broth
+T15	FOOD 135 140	beans
+T16	FOOD 142 150	tomatoes
+T17	FOOD 152 158	celery
+T18	FOOD 160 167	carrots
+T19	FOOD 169 173	wine
+T20	FOOD 175 183	bay leaf
+T21	FOOD 185 190	herbs
+T22	FOOD 195 210	all the chicken
+T23	AC 212 217	cover
+T24	AC 222 228	simmer
+T25	DUR 233 243	40 minutes
+T26	AC 248 251	Add
+T27	FOOD 252 259	parsley
+T28	FOOD 261 269	cilantro
+T29	FOOD 271 275	salt
+T30	FOOD 281 287	pepper
+T31	AC 293 299	simmer
+T32	DUR 300 314	5 more minutes
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+R5	Arg1_PPT Arg1:T8 Arg2:T6	
+R6	Arg1_PPT Arg1:T9 Arg2:T10	
+R7	ArgM_TMP Arg1:T9 Arg2:T11	
+R8	ArgM_TMP Arg1:T9 Arg2:T12	
+R9	Arg1_PPT Arg1:T13 Arg2:T14	
+R10	Arg1_PPT Arg1:T13 Arg2:T15	
+R11	Arg1_PPT Arg1:T13 Arg2:T16	
+R12	Arg1_PPT Arg1:T13 Arg2:T17	
+R13	Arg1_PPT Arg1:T13 Arg2:T18	
+R14	Arg1_PPT Arg1:T13 Arg2:T19	
+R15	Arg1_PPT Arg1:T13 Arg2:T20	
+R16	Arg1_PPT Arg1:T13 Arg2:T21	
+R17	Arg1_PPT Arg1:T13 Arg2:T22	
+R18	Arg1_PPT_X Arg1:T23 Arg2:T13	
+R19	Arg1_PPT_X Arg1:T24 Arg2:T23	
+R20	ArgM_TMP Arg1:T24 Arg2:T25	
+R21	Arg1_PPT Arg1:T26 Arg2:T27	
+R22	Arg2_PPT_Z Arg1:T13 Arg2:T9	
+R23	Arg2_PPT_Z Arg1:T26 Arg2:T24	
+R24	Arg1_PPT Arg1:T26 Arg2:T28	
+R25	Arg1_PPT Arg1:T26 Arg2:T29	
+R26	Arg1_PPT Arg1:T26 Arg2:T30	
+R27	Arg1_PPT_X Arg1:T31 Arg2:T26	
+R28	ArgM_TMP Arg1:T31 Arg2:T32	
+#1	AnnotatorNotes R22	the onions; the sauteed onions
+#2	AnnotatorNotes R18	the stew; the chicken mixture
+#3	AnnotatorNotes R19	the stew; the bean chicken stew
+#4	AnnotatorNotes R23	the stew; the bean chicken stew
+#5	AnnotatorNotes R27	the stew; the seasoned stew

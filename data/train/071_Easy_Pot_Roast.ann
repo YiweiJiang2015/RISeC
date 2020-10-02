@@ -1,0 +1,63 @@
+T1	AC 3 10	Preheat
+T2	AC 53 58	Score
+T3	AC 87 92	place
+T4	AC 124 131	Combine
+T5	AC 175 179	pour
+T6	AC 195 202	Arrange
+T7	AC 230 235	Place
+T8	AC 267 272	Place
+T9	AC 304 310	reduce
+T10	AC 353 357	Bake
+T11	AC 399 405	adjust
+T12	FOOD 132 137	water
+T13	FOOD 139 147	soup mix
+T14	FOOD 153 173	Worcestershire sauce
+T15	FOOD 185 190	roast
+T16	FOOD 59 64	roast
+T17	TEMPERATURE 19 32	350 degrees F
+T18	TOOL 11 15	oven
+T19	TOOL 96 119	a medium sized oven bag
+T20	FOOD 203 213	vegetables
+T21	FOOD 221 225	meat
+T22	TOOL 236 244	oven bag
+T23	TOOL 248 262	a roasting pan
+T24	FOOD 273 278	roast
+T25	TOOL 282 286	oven
+T26	TEMPERATURE 319 332	300 degrees F
+T27	DUR 362 373	1 1/2 hours
+R1	Arg1_PPT Arg1:T1 Arg2:T18	
+R2	ArgM_MNR Arg1:T1 Arg2:T17	
+R3	Arg1_PPT Arg1:T2 Arg2:T16	
+R4	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R5	Arg3_GOL Arg1:T3 Arg2:T19	
+R6	Arg1_PPT Arg1:T4 Arg2:T12	
+R7	Arg1_PPT Arg1:T4 Arg2:T13	
+R8	Arg1_PPT Arg1:T4 Arg2:T14	
+R9	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R10	Arg3_GOL Arg1:T5 Arg2:T15	
+R11	Arg1_PPT Arg1:T6 Arg2:T20	
+R12	Arg3_GOL Arg1:T6 Arg2:T21	
+R13	Arg1_PPT Arg1:T7 Arg2:T22	
+R14	Arg2_GOL Arg1:T7 Arg2:T23	
+R15	Arg1_PPT Arg1:T8 Arg2:T24	
+R16	Arg2_GOL Arg1:T8 Arg2:T25	
+T28	TOOL 311 315	heat
+R17	Arg1_PPT Arg1:T9 Arg2:T28	
+R19	ArgM_TMP Arg1:T10 Arg2:T27	
+T29	OTHER 406 410	time
+R20	Arg1_PPT Arg1:T11 Arg2:T29	
+T32	TEMPERATURE 334 347	150 degrees C
+T33	TEMPERATURE 34 47	175 degrees C
+R18	ArgM_MNR Arg1:T1 Arg2:T33	
+R21	Arg4_GOL Arg1:T9 Arg2:T26	
+R22	Arg4_GOL Arg1:T9 Arg2:T32	
+T34	OTHER 68 81	top and sides
+R23	ArgM_MNR Arg1:T2 Arg2:T34	
+T30	PURPOSE_CLAUSE 374 394	for medium well done
+T31	PURPOSE_CLAUSE 411 431	for desired doneness
+R24	ArgM_PRP Arg1:T10 Arg2:T30	
+R25	ArgM_PRP Arg1:T11 Arg2:T31	
+#1	AnnotatorNotes R4	the roast; the scored roast
+#2	AnnotatorNotes R9	the soup mix; the soup and sauce mixture
+R26	Arg1_PPT_X Arg1:T10 Arg2:T8	
+#3	AnnotatorNotes R26	the roast; the roast with sauce; the roast in the oven

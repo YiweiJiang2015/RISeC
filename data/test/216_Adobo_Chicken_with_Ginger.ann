@@ -1,0 +1,77 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 22	the chicken
+T3	FOOD 24 33	soy sauce
+T4	FOOD 35 42	vinegar
+T5	FOOD 44 50	garlic
+T6	FOOD 52 58	ginger
+T7	FOOD 60 70	bay leaves
+T8	FOOD 75 86	peppercorns
+T9	TOOL 90 102	a Dutch oven
+T10	AC 118 122	boil
+T11	TEMPERATURE 128 139	medium heat
+T12	CONDITION_CLAUSE 144 157	Once it boils
+T13	AC 159 165	reduce
+T14	OTHER 166 170	heat
+T15	AC 187 192	Cover
+T16	TOOL 193 200	the pot
+T17	AC 205 211	simmer
+T18	DUR 216 226	30 minutes
+T19	AC 228 235	basting
+T20	FOOD 236 247	the chicken
+T21	CONDITION_CLAUSE 265 281	After 30 minutes
+T22	AC 283 289	remove
+T23	TOOL 290 293	lid
+T24	AC 298 302	cook
+T25	CONDITION_CLAUSE 303 335	until liquid has reduced to half
+T26	AC 340 346	Remove
+T27	FOOD 347 354	chicken
+T28	TOOL 360 367	the pot
+T29	TOOL 371 386	a serving plate
+T30	AC 391 397	Strain
+T31	FOOD 398 408	the liquid
+T32	TOOL 414 421	the pot
+T33	PURPOSE_CLAUSE 425 454	remove all the food particles
+T34	AC 460 469	set aside
+T35	AC 474 479	Serve
+T36	FOOD 480 487	chicken
+T37	FOOD 497 509	steamed rice
+T38	AC 514 521	drizzle
+T39	FOOD 527 541	reserved sauce
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T1 Arg2:T5	
+R5	Arg1_PPT Arg1:T1 Arg2:T6	
+R6	Arg1_PPT Arg1:T1 Arg2:T7	
+R7	Arg1_PPT Arg1:T1 Arg2:T8	
+R8	ArgM_LOC Arg1:T1 Arg2:T9	
+R9	Arg1_PPT_X Arg1:T10 Arg2:T1	
+R10	ArgM_MNR Arg1:T10 Arg2:T11	
+R11	Arg1_PPT Arg1:T13 Arg2:T14	
+T40	TEMPERATURE 174 182	a simmer
+R12	Arg4_GOL Arg1:T13 Arg2:T40	
+R13	ArgM_TMP Arg1:T13 Arg2:T12	
+R14	Arg1_GOL Arg1:T15 Arg2:T16	
+R15	Arg1_PPT_X Arg1:T17 Arg2:T15	
+R16	ArgM_TMP Arg1:T17 Arg2:T18	
+R17	Simultaneous Arg1:T17 Arg2:T19	
+R18	Arg1_PPT Arg1:T19 Arg2:T20	
+R19	Arg1_PPT Arg1:T22 Arg2:T23	
+R20	ArgM_TMP Arg1:T24 Arg2:T25	
+R21	ArgM_TMP Arg1:T22 Arg2:T21	
+R22	TODO Arg1:T22 Arg2:T15	
+R23	Arg1_PPT Arg1:T26 Arg2:T27	
+R24	Arg2_DIR Arg1:T26 Arg2:T28	
+R25	Arg3_GOL Arg1:T26 Arg2:T29	
+R26	Arg1_PPT Arg1:T30 Arg2:T31	
+R27	Arg2_DIR Arg1:T30 Arg2:T32	
+R28	ArgM_PRP Arg1:T30 Arg2:T33	
+R29	Arg1_PPT_X Arg1:T34 Arg2:T30	
+R30	Arg1_PPT Arg1:T35 Arg2:T36	
+R31	Arg2_PPT Arg1:T35 Arg2:T37	
+R32	Arg1_GOL_X Arg1:T38 Arg2:T35	
+R33	Arg2_PPT Arg1:T38 Arg2:T39	
+#1	AnnotatorNotes R9	the chicken; the chicken and garlic mix; the chicken in the oven
+#2	AnnotatorNotes R15	the pot; the chicken; the chicken broth; the covered chicken
+#3	AnnotatorNotes R29	the liquid; the sauce; the sauce without food particles
+#4	AnnotatorNotes R32	the chicken; the chicken on steamed rice

@@ -1,0 +1,64 @@
+T1	AC 27 32	cream
+T2	AC 64 67	Add
+T3	AC 86 89	mix
+T4	AC 99 102	Add
+T5	AC 162 169	Stir in
+T6	AC 196 200	Roll
+T7	AC 215 220	Place
+T8	AC 247 254	flatten
+T9	AC 302 310	Sprinkle
+T10	AC 345 349	Bake
+T11	TOOL 6 25	a large mixing bowl
+T12	FOOD 33 43	the butter
+T13	FOOD 45 51	sugars
+T14	FOOD 56 59	oil
+T15	FOOD 68 72	eggs
+T16	FOOD 77 84	vanilla
+T17	FOOD 103 108	flour
+T18	FOOD 110 114	salt
+T19	FOOD 116 127	baking soda
+T20	FOOD 129 137	cinnamon
+T21	FOOD 142 157	cream of tartar
+T22	FOOD 170 180	the pecans
+T23	TOOL 224 245	greased baking sheets
+T26	FOOD 316 329	colored sugar
+T27	DUR 371 384	10-12 minutes
+T28	TEMPERATURE 353 366	375 degrees F
+R1	Arg1_PPT Arg1:T1 Arg2:T12	
+R2	Arg1_PPT Arg1:T1 Arg2:T13	
+R3	Arg1_PPT Arg1:T1 Arg2:T14	
+R4	ArgM_LOC Arg1:T1 Arg2:T11	
+R5	Arg1_PPT Arg1:T2 Arg2:T15	
+R6	Arg1_PPT Arg1:T2 Arg2:T16	
+R7	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+R8	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R9	Arg1_PPT Arg1:T4 Arg2:T17	
+R10	Arg1_PPT Arg1:T4 Arg2:T18	
+R11	Arg1_PPT Arg1:T4 Arg2:T19	
+R12	Arg1_PPT Arg1:T4 Arg2:T20	
+R13	Arg1_PPT Arg1:T4 Arg2:T21	
+R14	Arg2_PPT_Z Arg1:T4 Arg2:T3	
+R15	Arg1_PPT Arg1:T5 Arg2:T22	
+R16	Arg2_PPT_Z Arg1:T5 Arg2:T4	
+R17	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R18	Arg1_PPT_X Arg1:T7 Arg2:T6	
+R19	Arg3_GOL Arg1:T7 Arg2:T23	
+R20	Arg1_PPT_X Arg1:T8 Arg2:T7	
+T24	TOOL 260 297	the bottom of a glass dipped in sugar
+R21	ArgM_MEANS Arg1:T8 Arg2:T24	
+R22	Arg1_PPT Arg1:T9 Arg2:T26	
+R23	Arg2_GOL_X Arg1:T9 Arg2:T8	
+R24	Arg1_PPT_X Arg1:T10 Arg2:T9	
+R25	ArgM_MNR Arg1:T10 Arg2:T28	
+R26	ArgM_TMP Arg1:T10 Arg2:T27	
+T25	OTHER 206 210	1-in
+R29	Arg2_PRD Arg1:T6 Arg2:T25	
+#1	AnnotatorNotes R7	the cream; the butter cream
+#2	AnnotatorNotes R8	the cream; the butter cream with eggs
+#3	AnnotatorNotes R14	the mixture; the egg mixture
+#4	AnnotatorNotes R16	the dough; the dough with eggs and butter cream
+#5	AnnotatorNotes R17	the dough; the dough with pecans
+#6	AnnotatorNotes R18	the dough balls; the 1-in dough balls
+#7	AnnotatorNotes R20	the dough balls; the dough balls on baking sheets
+#8	AnnotatorNotes R23	the dough balls; the flattened dough balls
+#9	AnnotatorNotes R24	the dough balls; the dough balls with colored sugar

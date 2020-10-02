@@ -1,0 +1,32 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 21	combine
+T3	FOOD 22 34	cream cheese
+T4	FOOD 39 51	dressing mix
+T5	AC 56 62	Spread
+T6	FOOD 66 97	one side of each slice of bread
+T7	AC 102 106	Peel
+T8	FOOD 107 116	cucumbers
+T9	AC 135 140	slice
+T11	AC 145 150	place
+T12	AC 178 181	Top
+T13	FOOD 187 202	remaining bread
+T15	AC 207 212	Serve
+T17	FOOD 154 173	six slices of bread
+R3	ArgM_LOC Arg1:T2 Arg2:T1	
+R4	Arg1_PPT Arg1:T2 Arg2:T3	
+R5	Arg1_PPT Arg1:T2 Arg2:T4	
+R6	Arg1_PPT_X Arg1:T5 Arg2:T2	
+R7	Arg2_GOL Arg1:T5 Arg2:T6	
+R8	Arg1_PPT Arg1:T7 Arg2:T8	
+R11	Next Arg1:T9 Arg2:T11	
+R12	Arg1_PPT_X Arg1:T11 Arg2:T9	
+R13	Arg3_GOL Arg1:T11 Arg2:T17	
+R9	Arg1_PPT_X Arg1:T9 Arg2:T7	
+R14	Arg1_GOL_X Arg1:T12 Arg2:T11	
+R15	Arg2_PPT Arg1:T12 Arg2:T13	
+R17	Arg1_PPT_X Arg1:T15 Arg2:T12	
+#1	AnnotatorNotes R6	the mix; the cheese mix
+#2	AnnotatorNotes R9	the cucumbers; the peeled cucumbers
+#3	AnnotatorNotes R12	the cucumbers; the sliced cucumbers
+#4	AnnotatorNotes R14	the bread; the six slices of bread
+#5	AnnotatorNotes R17	the sandwiches; the cucumber sandwiches

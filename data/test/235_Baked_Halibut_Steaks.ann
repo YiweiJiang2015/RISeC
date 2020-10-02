@@ -1,0 +1,77 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	450 degrees F
+T4	AC 58 64	grease
+T5	TOOL 65 86	a shallow baking dish
+T6	AC 91 95	Heat
+T7	FOOD 96 105	olive oil
+T8	TOOL 109 126	a medium saucepan
+T9	TEMPERATURE 132 143	medium heat
+T10	AC 148 155	stir in
+T11	FOOD 156 164	zucchini
+T12	FOOD 166 171	onion
+T13	FOOD 177 183	garlic
+T14	AC 185 189	Cook
+T15	AC 194 198	stir
+T16	DUR 199 208	5 minutes
+T17	CONDITION_CLAUSE 212 224	until tender
+T18	AC 229 235	Remove
+T19	TOOL 236 244	saucepan
+T20	TOOL 250 254	heat
+T21	AC 259 265	mix in
+T22	FOOD 266 274	tomatoes
+T23	FOOD 276 281	basil
+T24	FOOD 283 287	salt
+T25	FOOD 293 299	pepper
+T26	AC 304 311	Arrange
+T27	FOOD 312 326	halibut steaks
+T28	TOOL 348 372	the prepared baking dish
+T29	OTHER 330 344	a single layer
+T30	AC 377 382	Spoon
+T31	FOOD 400 420	the zucchini mixture
+T32	FOOD 426 436	each steak
+T33	AC 441 444	Top
+T34	FOOD 450 461	feta cheese
+T35	AC 466 470	Bake
+T36	DUR 471 481	15 minutes
+T37	TOOL 485 503	the preheated oven
+T38	CONDITION_CLAUSE 508 547	until fish is easily flaked with a fork
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+T39	TEMPERATURE 34 47	230 degrees C
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T39	
+R4	Arg1_PPT Arg1:T4 Arg2:T5	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	ArgM_LOC Arg1:T6 Arg2:T8	
+R7	ArgM_MNR Arg1:T6 Arg2:T9	
+R8	Arg1_PPT Arg1:T10 Arg2:T11	
+R9	Arg1_PPT Arg1:T10 Arg2:T12	
+R10	Arg1_PPT Arg1:T10 Arg2:T13	
+R11	Arg2_PPT_Z Arg1:T10 Arg2:T6	
+R12	ArgM_TMP Arg1:T14 Arg2:T16	
+R13	ArgM_TMP Arg1:T14 Arg2:T17	
+R14	Simultaneous Arg1:T14 Arg2:T15	
+R15	Arg1_PPT Arg1:T18 Arg2:T19	
+R16	Arg2_DIR Arg1:T18 Arg2:T20	
+R17	Arg1_PPT Arg1:T21 Arg2:T22	
+R18	Arg1_PPT Arg1:T21 Arg2:T23	
+R19	Arg1_PPT Arg1:T21 Arg2:T24	
+R20	Arg1_PPT Arg1:T21 Arg2:T25	
+R21	Arg1_PPT Arg1:T26 Arg2:T27	
+R22	Arg2_PPT_Z Arg1:T21 Arg2:T18	
+R23	Arg3_PRD Arg1:T26 Arg2:T29	
+R24	ArgM_LOC Arg1:T26 Arg2:T28	
+R25	Arg1_PPT Arg1:T30 Arg2:T31	
+R26	Arg2_GOL Arg1:T30 Arg2:T32	
+R27	Arg2_PPT Arg1:T33 Arg2:T34	
+R28	Arg1_GOL_X Arg1:T33 Arg2:T30	
+R29	ArgM_TMP Arg1:T35 Arg2:T36	
+R30	ArgM_LOC Arg1:T35 Arg2:T37	
+R31	Arg1_PPT_X Arg1:T35 Arg2:T33	
+R32	ArgM_TMP Arg1:T35 Arg2:T38	
+#1	AnnotatorNotes R11	the oil; the olive oil; the hot oil; the hot olive oil; the heated oil; the heated olive oil
+R33	Arg1_PPT_X Arg1:T14 Arg2:T10	
+#2	AnnotatorNotes R33	the vegetables; the vegetables in the pan; the zucchini mixture; the vegetable mixture
+#3	AnnotatorNotes R28	the steaks; the halibut; the halibut stakes; the halibut steaks with vegetables; the halibut with zucchini mixture
+#4	AnnotatorNotes R31	the halibut steaks; the halibut steaks with vegetable mixture and feta
+#5	AnnotatorNotes R22	the saucepan; the garlic mixture in the saucepan

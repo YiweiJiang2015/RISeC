@@ -1,0 +1,78 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 19	the oven
+T3	TEMPERATURE 23 36	325 degrees F
+T4	TEMPERATURE 38 51	165 degrees C
+T5	AC 57 63	Grease
+T6	AC 68 73	flour
+T7	TOOL 74 96	a 9x13 inch baking pan
+T8	TOOL 104 116	a large bowl
+T9	AC 118 122	beat
+T10	FOOD 123 127	eggs
+T11	FOOD 132 137	sugar
+T12	CONDITION_CLAUSE 138 158	until thick and pale
+T13	AC 163 167	Sift
+T14	FOOD 177 186	the flour
+T15	FOOD 188 201	baking powder
+T16	FOOD 203 207	salt
+T17	FOOD 209 215	cloves
+T18	FOOD 217 225	cinnamon
+T19	FOOD 230 238	allspice
+T20	AC 240 245	blend
+T21	FOOD 251 266	the egg mixture
+T22	FOOD 278 289	the vanilla
+T23	AC 302 309	fold in
+T24	FOOD 310 326	the chopped figs
+T25	FOOD 331 338	walnuts
+T26	AC 343 347	Pour
+T27	FOOD 348 358	the batter
+T28	TOOL 364 380	the prepared pan
+T29	AC 385 391	spread
+T30	AC 403 407	Bake
+T31	DUR 412 428	20 to 25 minutes
+T32	TOOL 432 450	the preheated oven
+T33	CONDITION_CLAUSE 452 473	until lightly toasted
+T34	CONDITION_CLAUSE 478 487	When cool
+T35	AC 489 492	cut
+T36	OTHER 498 505	squares
+T37	AC 510 514	roll
+T38	FOOD 515 526	the squares
+T39	FOOD 530 550	confectioners' sugar
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	TODO Arg1:T3 Arg2:T4	
+R5	Arg1_PPT Arg1:T9 Arg2:T10	
+R6	Arg1_PPT Arg1:T9 Arg2:T11	
+R7	ArgM_TMP Arg1:T9 Arg2:T12	
+R8	ArgM_LOC Arg1:T9 Arg2:T8	
+R9	Arg1_PPT Arg1:T13 Arg2:T14	
+R10	Arg1_PPT Arg1:T13 Arg2:T15	
+R11	Arg1_PPT Arg1:T13 Arg2:T16	
+R12	Arg1_PPT Arg1:T13 Arg2:T17	
+R13	Arg1_PPT Arg1:T13 Arg2:T18	
+R14	Arg1_PPT Arg1:T13 Arg2:T19	
+R15	Arg2_PPT Arg1:T20 Arg2:T21	
+R16	Arg1_PPT_X Arg1:T20 Arg2:T13	
+R17	Arg1_PPT Arg1:T20 Arg2:T22	
+R18	Arg1_PPT Arg1:T23 Arg2:T24	
+R19	Arg1_PPT Arg1:T23 Arg2:T25	
+R20	Arg2_PPT_Z Arg1:T23 Arg2:T20	
+R21	Arg1_PPT Arg1:T26 Arg2:T27	
+R22	Arg3_GOL Arg1:T26 Arg2:T28	
+R23	Arg1_PPT_X Arg1:T29 Arg2:T26	
+R24	ArgM_TMP Arg1:T30 Arg2:T31	
+R25	ArgM_LOC Arg1:T30 Arg2:T32	
+R26	ArgM_TMP Arg1:T30 Arg2:T33	
+R27	Arg1_PPT Arg1:T37 Arg2:T38	
+R28	Arg3_PRD Arg1:T35 Arg2:T36	
+R29	ArgM_LOC Arg1:T37 Arg2:T39	
+R31	Arg1_PPT_X Arg1:T35 Arg2:T30	
+R30	Arg1_PPT_X Arg1:T30 Arg2:T29	
+R32	Arg1_PPT Arg1:T6 Arg2:T7	
+R33	Arg1_PPT Arg1:T5 Arg2:T7	
+R34	Simultaneous Arg1:T5 Arg2:T6	
+#1	AnnotatorNotes R16	the mixture; the sifted ingredients
+#2	AnnotatorNotes R20	the blend; the mix
+#3	AnnotatorNotes R23	the batter; the content of the pan
+#4	AnnotatorNotes R30	the batter; the content of the pan
+#5	AnnotatorNotes R31	the batter; the baked batter

@@ -1,0 +1,53 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	TEMPERATURE 34 47	190 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 82	a 9x13 inch baking pan
+T7	AC 87 92	Empty
+T8	OTHER 93 96	jar
+T9	FOOD 100 111	brownie mix
+T10	TOOL 117 136	a large mixing bowl
+T11	AC 138 142	stir
+T12	PURPOSE_CLAUSE 143 160	to break up lumps
+T14	AC 165 168	Add
+T15	FOOD 169 192	3/4 cup softened butter
+T16	FOOD 194 207	2 beaten eggs
+T17	FOOD 213 243	2 teaspoons of vanilla extract
+T18	AC 245 248	mix
+T19	CONDITION_CLAUSE 249 267	until well blended
+T20	AC 272 278	Spread
+T21	FOOD 279 285	batter
+T22	TOOL 296 312	the prepared pan
+T23	AC 317 321	Bake
+T24	DUR 326 336	25 minutes
+T25	AC 350 354	cool
+T26	DUR 358 365	the pan
+T27	CONDITION_CLAUSE 371 398	before cutting into squares
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R6	Arg3_GOL Arg1:T7 Arg2:T10	
+R8	ArgM_PRP Arg1:T11 Arg2:T12	
+R9	Arg1_PPT_X Arg1:T11 Arg2:T7	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T14 Arg2:T16	
+R13	Arg1_PPT Arg1:T14 Arg2:T17	
+R14	ArgM_TMP Arg1:T18 Arg2:T19	
+R15	Arg1_PPT_X Arg1:T18 Arg2:T14	
+R16	Arg2_PPT_Z Arg1:T14 Arg2:T11	
+R17	Arg1_PPT Arg1:T20 Arg2:T21	
+R18	Arg2_GOL Arg1:T20 Arg2:T22	
+R19	ArgM_TMP Arg1:T23 Arg2:T24	
+R20	ArgM_TMP Arg1:T25 Arg2:T26	
+R21	ArgM_TMP Arg1:T25 Arg2:T27	
+R5	Arg1_PPT Arg1:T7 Arg2:T9	
+#1	AnnotatorNotes T8	quantitiy
+#2	AnnotatorNotes R16	the brownie mixture; the broken brownie mixture; 
+#3	AnnotatorNotes R9	the brownie mix; the brownie mix in the bowl
+#4	AnnotatorNotes R15	the brownie and egg mix; the brownies with butter and eggs 
+R7	Arg1_PPT_X Arg1:T23 Arg2:T20	
+#5	AnnotatorNotes R7	the batter; the batter in the pan
+R10	Arg1_PPT_X Arg1:T25 Arg2:T23	
+#6	AnnotatorNotes R10	the batter; the baked batter; the baked batter in the pan

@@ -1,0 +1,124 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	425 degrees F
+T4	TEMPERATURE 34 47	220 degrees C
+T5	TOOL 56 66	a saucepan
+T6	AC 68 75	combine
+T7	FOOD 76 83	chicken
+T8	FOOD 85 92	carrots
+T9	FOOD 94 98	peas
+T10	FOOD 104 110	celery
+T11	AC 115 118	Add
+T12	FOOD 119 124	water
+T13	PURPOSE_CLAUSE 125 133	to cover
+T14	AC 138 142	boil
+T15	DUR 147 157	15 minutes
+T16	AC 162 168	Remove
+T17	OTHER 174 178	heat
+T18	AC 180 185	drain
+T19	AC 190 193	set
+T20	TOOL 207 219	the saucepan
+T21	OTHER 225 236	medium heat
+T22	AC 238 242	cook
+T23	FOOD 243 249	onions
+T24	FOOD 253 259	butter
+T25	CONDITION_CLAUSE 260 286	until soft and translucent
+T26	AC 291 298	Stir in
+T27	FOOD 299 304	flour
+T28	FOOD 306 310	salt
+T29	FOOD 312 318	pepper
+T30	FOOD 324 335	celery seed
+T31	AC 347 354	stir in
+T32	FOOD 355 368	chicken broth
+T33	FOOD 373 377	milk
+T34	AC 382 388	Simmer
+T35	OTHER 394 409	medium-low heat
+T36	CONDITION_CLAUSE 410 421	until thick
+T37	AC 426 432	Remove
+T38	OTHER 438 442	heat
+T39	AC 447 456	set aside
+T40	AC 462 467	Place
+T41	FOOD 468 487	the chicken mixture
+T42	FOOD 491 507	bottom pie crust
+T43	AC 513 517	Pour
+T44	FOOD 518 536	hot liquid mixture
+T45	AC 547 552	Cover
+T46	FOOD 558 567	top crust
+T47	AC 569 573	seal
+T48	FOOD 574 579	edges
+T49	AC 585 593	cut away
+T50	FOOD 594 606	excess dough
+T51	FOOD 617 636	several small slits
+T52	FOOD 640 647	the top
+T54	PURPOSE_CLAUSE 648 672	to allow steam to escape
+T56	AC 612 616	Make
+T57	AC 678 685	Bake in
+T58	TOOL 686 704	the preheated oven
+T59	DUR 709 725	30 to 35 minutes
+T60	CONDITION_CLAUSE 730 780	until pastry is golden brown and filling is bubbly
+T61	AC 786 790	Cool
+T62	DUR 795 805	10 minutes
+T63	AC 813 820	serving
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+R5	Arg1_PPT Arg1:T6 Arg2:T8	
+R6	Arg1_PPT Arg1:T6 Arg2:T9	
+R7	Arg1_PPT Arg1:T6 Arg2:T10	
+R8	ArgM_LOC Arg1:T6 Arg2:T5	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R12	ArgM_TMP Arg1:T14 Arg2:T15	
+R13	Arg2_DIR Arg1:T16 Arg2:T17	
+R14	Arg1_PPT_X Arg1:T16 Arg2:T14	
+R15	Arg1_PPT_X Arg1:T18 Arg2:T16	
+R16	Arg1_PPT_X Arg1:T19 Arg2:T18	
+R17	ArgM_LOC Arg1:T22 Arg2:T20	
+R18	ArgM_MNR Arg1:T22 Arg2:T21	
+R19	Arg1_PPT Arg1:T22 Arg2:T23	
+R20	ArgM_LOC Arg1:T22 Arg2:T24	
+R21	ArgM_TMP Arg1:T22 Arg2:T25	
+#1	AnnotatorNotes R20	Arg2?
+R22	Arg1_PPT Arg1:T26 Arg2:T27	
+R23	Arg1_PPT Arg1:T26 Arg2:T28	
+R24	Arg1_PPT Arg1:T26 Arg2:T29	
+R25	Arg1_PPT Arg1:T26 Arg2:T30	
+R26	Arg2_PPT_Z Arg1:T26 Arg2:T22	
+R27	Arg1_PPT Arg1:T31 Arg2:T32	
+R28	Arg1_PPT Arg1:T31 Arg2:T33	
+R29	Arg2_PPT_Z Arg1:T31 Arg2:T26	
+R30	ArgM_MNR Arg1:T34 Arg2:T35	
+R31	ArgM_TMP Arg1:T34 Arg2:T36	
+R32	Arg1_PPT_X Arg1:T34 Arg2:T31	
+R33	Arg1_PPT_X Arg1:T37 Arg2:T34	
+R34	Arg2_DIR Arg1:T37 Arg2:T38	
+R35	Arg1_PPT_X Arg1:T39 Arg2:T37	
+R36	Arg1_PPT Arg1:T40 Arg2:T41	
+R37	Arg3_GOL Arg1:T40 Arg2:T42	
+R38	Arg1_PPT Arg1:T43 Arg2:T44	
+R39	Arg2_PPT_Z Arg1:T43 Arg2:T40	
+R40	Arg2_PPT Arg1:T45 Arg2:T46	
+R41	Arg1_PPT Arg1:T47 Arg2:T48	
+R42	Arg1_PPT Arg1:T49 Arg2:T50	
+R43	Arg1_PPT_X Arg1:T45 Arg2:T43	
+R44	Arg1_PPT Arg1:T56 Arg2:T51	
+R45	ArgM_LOC Arg1:T56 Arg2:T52	
+R46	ArgM_PRP Arg1:T56 Arg2:T54	
+R50	ArgM_LOC Arg1:T57 Arg2:T58	
+R51	ArgM_TMP Arg1:T57 Arg2:T59	
+R52	ArgM_TMP Arg1:T57 Arg2:T60	
+R53	ArgM_TMP Arg1:T61 Arg2:T62	
+R54	ArgM_TMP Arg1:T61 Arg2:T63	
+#4	AnnotatorNotes R14	the chicken and vegatables
+#5	AnnotatorNotes R15	the chicken and vegatables
+#6	AnnotatorNotes R16	the chicken and vegatables
+#7	AnnotatorNotes R26	the onions
+#8	AnnotatorNotes R29	the onions
+#9	AnnotatorNotes R32	the liquid mixture
+#10	AnnotatorNotes R33	the liquid mixture
+#11	AnnotatorNotes R35	the liquid mixture
+#12	AnnotatorNotes R39	the chicken mixture
+#13	AnnotatorNotes R43	the mixture
+R10	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R11	ArgM_PRP Arg1:T11 Arg2:T13	
+#2	AnnotatorNotes R10	the chicken mixture; the chicken and vegetables; the chicken in water

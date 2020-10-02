@@ -1,0 +1,48 @@
+T1	TOOL 6 20	a serving bowl
+T2	AC 22 25	mix
+T3	FOOD 35 46	the chicken
+T4	FOOD 48 54	celery
+T5	FOOD 60 69	red onion
+T6	TOOL 77 92	a separate bowl
+T7	AC 94 98	stir
+T8	FOOD 108 122	the mayonnaise
+T9	FOOD 124 134	sour cream
+T10	FOOD 136 147	feta cheese
+T11	FOOD 153 157	dill
+T12	AC 162 166	Pour
+T13	FOOD 172 191	the chicken mixture
+T14	AC 197 201	stir
+T15	PURPOSE_CLAUSE 202 210	to blend
+T16	AC 215 220	Taste
+T17	AC 226 232	season
+T18	FOOD 238 242	salt
+T19	FOOD 247 253	pepper
+T20	AC 268 273	Serve
+T21	AC 290 301	refrigerate
+T22	CONDITION_CLAUSE 302 315	until serving
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	ArgM_LOC Arg1:T2 Arg2:T1	
+R5	Arg1_PPT Arg1:T7 Arg2:T8	
+R6	Arg1_PPT Arg1:T7 Arg2:T9	
+R7	Arg1_PPT Arg1:T7 Arg2:T10	
+R8	Arg1_PPT Arg1:T7 Arg2:T11	
+R9	ArgM_LOC Arg1:T7 Arg2:T6	
+R10	Arg3_GOL Arg1:T12 Arg2:T13	
+R11	Arg1_PPT_X Arg1:T12 Arg2:T7	
+R12	Arg1_PPT_X Arg1:T14 Arg2:T12	
+R13	ArgM_PRP Arg1:T14 Arg2:T15	
+R14	Arg1_PPT_X Arg1:T16 Arg2:T14	
+R15	Arg1_GOL_X Arg1:T17 Arg2:T14	
+R16	Arg2_PPT Arg1:T17 Arg2:T18	
+R17	Arg2_PPT Arg1:T17 Arg2:T19	
+R18	Arg1_PPT_X Arg1:T20 Arg2:T17	
+R19	ArgM_TMP Arg1:T21 Arg2:T22	
+#1	AnnotatorNotes R11	the cream; the cream mixture
+#2	AnnotatorNotes R12	the chicken mixture; the chicken mixture with cream
+#3	AnnotatorNotes R14	the chicken mixture; the blended chicken mixture
+#4	AnnotatorNotes R15	the chicken mixture; the blended chicken mixture
+#5	AnnotatorNotes R18	the chicken mixture; the seasoned chicken mixture
+R20	Arg1_PPT_X Arg1:T21 Arg2:T17	
+#6	AnnotatorNotes R20	the chicken mixture; the seasoned chicken mixture

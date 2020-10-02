@@ -1,0 +1,82 @@
+T1	TOOL 6 17	a large pot
+T2	TEMPERATURE 23 34	medium heat
+T3	AC 36 40	cook
+T4	FOOD 41 55	chicken pieces
+T5	FOOD 59 62	oil
+T6	CONDITION_CLAUSE 63 90	until browned on both sides
+T7	AC 95 102	Stir in
+T8	FOOD 103 108	onion
+T9	AC 113 117	cook
+T10	DUR 118 132	2 minutes more
+T11	AC 137 144	Pour in
+T12	FOOD 145 150	water
+T13	FOOD 155 171	chicken bouillon
+T14	AC 187 191	boil
+T15	AC 196 202	Reduce
+T16	OTHER 203 207	heat
+T17	AC 212 218	simmer
+T18	DUR 219 229	45 minutes
+T19	AC 234 241	Stir in
+T20	FOOD 242 248	celery
+T21	FOOD 250 257	carrots
+T22	FOOD 259 265	garlic
+T23	FOOD 267 271	salt
+T24	FOOD 276 282	pepper
+T25	AC 287 293	Simmer
+T26	CONDITION_CLAUSE 294 323	until carrots are just tender
+T27	AC 328 334	Remove
+T28	FOOD 335 349	chicken pieces
+T29	AC 354 358	pull
+T30	FOOD 359 367	the meat
+T31	FOOD 373 381	the bone
+T32	AC 386 390	Stir
+T33	FOOD 391 402	the noodles
+T34	TOOL 408 415	the pot
+T35	AC 420 424	cook
+T36	CONDITION_CLAUSE 425 437	until tender
+T37	DUR 439 449	10 minutes
+T38	AC 454 460	Return
+T39	FOOD 461 473	chicken meat
+T40	TOOL 477 480	pot
+T41	CONDITION_CLAUSE 486 500	before serving
+R1	Arg1_PPT Arg1:T3 Arg2:T4	
+R2	ArgM_LOC Arg1:T3 Arg2:T5	
+R3	ArgM_TMP Arg1:T3 Arg2:T6	
+R4	ArgM_LOC Arg1:T3 Arg2:T1	
+R5	ArgM_MNR Arg1:T3 Arg2:T2	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg1_PPT_X Arg1:T9 Arg2:T7	
+R8	Arg2_PPT_Z Arg1:T7 Arg2:T3	
+R9	ArgM_TMP Arg1:T9 Arg2:T10	
+R10	Arg1_PPT Arg1:T11 Arg2:T12	
+R11	Arg1_PPT Arg1:T11 Arg2:T13	
+R12	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R14	Arg1_PPT Arg1:T15 Arg2:T16	
+R15	Arg1_PPT_X Arg1:T17 Arg2:T14	
+R16	ArgM_TMP Arg1:T17 Arg2:T18	
+R17	Arg1_PPT Arg1:T19 Arg2:T20	
+R18	Arg1_PPT Arg1:T19 Arg2:T21	
+R19	Arg1_PPT Arg1:T19 Arg2:T22	
+R20	Arg1_PPT Arg1:T19 Arg2:T23	
+R21	Arg1_PPT Arg1:T19 Arg2:T24	
+R22	Arg2_PPT_Z Arg1:T19 Arg2:T17	
+R23	Arg1_PPT_X Arg1:T25 Arg2:T19	
+R24	ArgM_TMP Arg1:T25 Arg2:T26	
+R25	Arg1_PPT Arg1:T27 Arg2:T28	
+R26	Arg1_PPT Arg1:T29 Arg2:T30	
+R27	Arg2_DIR Arg1:T29 Arg2:T31	
+R28	Arg1_PPT Arg1:T32 Arg2:T33	
+R29	Arg2_PPT Arg1:T32 Arg2:T34	
+R30	ArgM_TMP Arg1:T35 Arg2:T36	
+R31	ArgM_TMP Arg1:T35 Arg2:T37	
+R32	Arg1_PPT Arg1:T38 Arg2:T39	
+R33	Arg3_GOL Arg1:T38 Arg2:T40	
+R34	ArgM_TMP Arg1:T38 Arg2:T41	
+#1	AnnotatorNotes R8	the chicken; the chicken pieces
+#2	AnnotatorNotes R7	the chicken; the chicken pieces; the chicken and onions
+R13	Arg3_GOL_X Arg1:T11 Arg2:T9	
+#3	AnnotatorNotes R13	the chicken; the pot; the chicken in the pot
+#4	AnnotatorNotes R12	the soup; the chicken soup
+#5	AnnotatorNotes R15	the soup; the chicken soup
+#6	AnnotatorNotes R22	the soup; the chicken soup; the hot soup
+#7	AnnotatorNotes R23	the soup; the chicken soup

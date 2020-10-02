@@ -1,0 +1,29 @@
+T1	TOOL 6 16	a saucepan
+T2	AC 40 44	boil
+T3	FOOD 24 34	applesauce
+T4	AC 49 55	Remove
+T5	OTHER 61 69	the heat
+T6	AC 71 78	stir in
+T7	FOOD 79 86	gelatin
+T8	CONDITION_CLAUSE 87 102	until dissolved
+T9	AC 114 117	add
+T10	FOOD 118 122	soda
+T11	FOOD 127 136	pineapple
+T12	AC 141 152	Refrigerate
+T13	CONDITION_CLAUSE 153 163	until firm
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	ArgM_LOC Arg1:T2 Arg2:T1	
+R3	Arg2_DIR Arg1:T4 Arg2:T5	
+R4	Arg1_PPT_X Arg1:T4 Arg2:T2	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	ArgM_TMP Arg1:T6 Arg2:T8	
+R7	Arg2_PPT_Z Arg1:T6 Arg2:T4	
+R8	Arg1_PPT Arg1:T9 Arg2:T10	
+R9	Arg1_PPT Arg1:T9 Arg2:T11	
+R10	Arg2_PPT_Z Arg1:T9 Arg2:T6	
+R11	ArgM_TMP Arg1:T12 Arg2:T13	
+R12	Arg1_PPT_X Arg1:T12 Arg2:T9	
+#1	AnnotatorNotes R4	the saucepan; the applesauce; the boiling applesauce
+#2	AnnotatorNotes R7	the applesauce
+#3	AnnotatorNotes R10	the applesauce
+#4	AnnotatorNotes R12	the fruit; the fruit salad; the gelatin fruit salad

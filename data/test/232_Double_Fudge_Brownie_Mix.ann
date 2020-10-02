@@ -1,0 +1,14 @@
+T1	TOOL 6 30	a 1 quart or 1 liter jar
+T2	AC 32 37	layer
+T3	FOOD 38 53	the ingredients
+T4	AC 78 84	Attach
+T5	TOOL 85 90	a tag
+T6	AC 124 131	Preheat
+T7	TOOL 132 140	the oven
+T8	TEMPERATURE 144 157	325 degrees F
+R1	ArgM_LOC Arg1:T2 Arg2:T1	
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+R5	Arg2_PPT_Z Arg1:T4 Arg2:T2	
+#1	AnnotatorNotes R5	the jar; the jar with the mix

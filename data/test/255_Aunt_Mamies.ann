@@ -1,0 +1,137 @@
+T1	AC 3 7	Beat
+T2	FOOD 17 29	cream cheese
+T3	FOOD 34 43	margarine
+T4	CONDITION_CLAUSE 44 62	until well blended
+T5	AC 67 70	Add
+T6	FOOD 71 76	flour
+T7	AC 78 84	mixing
+T8	AC 94 99	Shape
+T9	FOOD 105 111	a ball
+T10	AC 113 118	cover
+T11	AC 123 128	chill
+T12	DUR 133 140	2 hours
+T13	TOOL 148 156	saucepan
+T14	TEMPERATURE 162 173	medium heat
+T15	AC 175 179	cook
+T16	FOOD 180 185	sugar
+T17	FOOD 190 194	milk
+T18	AC 196 204	stirring
+T19	CONDITION_CLAUSE 218 257	until milk boils and sugar is dissolved
+T20	AC 262 265	Add
+T21	FOOD 266 281	the ground nuts
+T22	AC 286 292	Remove
+T23	OTHER 298 302	heat
+T24	AC 311 315	cool
+T25	CONDITION_CLAUSE 316 357	until mixture is of spreading consistency
+T26	AC 362 370	Roll out
+T27	FOOD 371 384	chilled dough
+T28	TOOL 388 411	lightly floured surface
+T29	OTHER 415 447	a rectangle about 18 X 12 inches
+T30	AC 452 455	Cut
+T31	OTHER 459 474	half lengthwise
+T32	AC 479 485	Spread
+T33	FOOD 486 496	each piece
+T34	FOOD 502 518	milk/nut filling
+T35	AC 523 530	roll up
+T36	OTHER 536 548	a jelly-roll
+T38	AC 583 586	Cut
+R1	ArgM_MNR Arg1:T30 Arg2:T31	
+T39	FOOD 587 596	each roll
+T40	OTHER 600 604	half
+T41	AC 610 615	Place
+T42	FOOD 616 625	seam side
+T43	TOOL 634 657	ungreased cookie sheets
+T44	AC 785 789	Bake
+T45	TEMPERATURE 793 806	350 degrees F
+T46	TEMPERATURE 808 821	175 degrees C
+T47	DUR 827 843	15 to 20 minutes
+T48	CONDITION_CLAUSE 847 856	till done
+T49	AC 862 868	Remove
+T50	TOOL 874 879	sheet
+T51	AC 884 892	sprinkle
+T52	FOOD 898 918	confectioners' sugar
+T53	AC 716 719	cut
+T54	OTHER 725 746	slices 1/2 inch thick
+T55	CONDITION_CLAUSE 687 714	Leaving roll's shape intact
+T56	AC 924 928	Cool
+T57	TOOL 932 937	racks
+T58	AC 943 946	Cut
+T59	FOOD 947 954	cookies
+T60	AC 980 991	Refrigerate
+T61	AC 995 1001	freeze
+T62	AC 1007 1017	Resprinkle
+T63	FOOD 1023 1043	confectioners' sugar
+T64	CONDITION_CLAUSE 1044 1058	before serving
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	Arg1_PPT Arg1:T1 Arg2:T3	
+R4	ArgM_TMP Arg1:T1 Arg2:T4	
+R5	Arg1_PPT Arg1:T5 Arg2:T6	
+R6	Arg2_PPT_Z Arg1:T5 Arg2:T1	
+R7	Simultaneous Arg1:T5 Arg2:T7	
+R9	ArgM_TMP Arg1:T11 Arg2:T12	
+R10	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R11	Arg1_PPT_X Arg1:T10 Arg2:T8	
+R12	ArgM_LOC Arg1:T15 Arg2:T13	
+R13	ArgM_MNR Arg1:T15 Arg2:T14	
+R14	Arg1_PPT Arg1:T15 Arg2:T16	
+R15	Arg1_PPT Arg1:T15 Arg2:T17	
+R16	Simultaneous Arg1:T15 Arg2:T18	
+R17	ArgM_TMP Arg1:T18 Arg2:T19	
+R18	Arg1_PPT Arg1:T20 Arg2:T21	
+R19	Arg2_PPT_Z Arg1:T20 Arg2:T15	
+R20	Arg2_DIR Arg1:T22 Arg2:T23	
+R21	ArgM_TMP Arg1:T24 Arg2:T25	
+R22	Arg1_PPT_X Arg1:T22 Arg2:T20	
+R23	Arg1_PPT_X Arg1:T24 Arg2:T22	
+R24	Arg1_PPT Arg1:T26 Arg2:T27	
+R25	ArgM_LOC Arg1:T26 Arg2:T28	
+R26	Arg2_PRD Arg1:T26 Arg2:T29	
+R27	Arg1_PPT_X Arg1:T30 Arg2:T26	
+R28	Arg1_GOL Arg1:T32 Arg2:T33	
+R29	Arg2_PPT Arg1:T32 Arg2:T34	
+R30	Arg1_PPT_X Arg1:T35 Arg2:T32	
+R31	ArgM_MNR Arg1:T35 Arg2:T36	
+R32	Arg1_PPT Arg1:T38 Arg2:T39	
+R33	ArgM_MNR Arg1:T38 Arg2:T40	
+R34	Arg1_PPT Arg1:T41 Arg2:T42	
+R35	Arg3_GOL Arg1:T41 Arg2:T43	
+R37	Arg3_PRD Arg1:T53 Arg2:T54	
+R38	Arg1_PPT_X Arg1:T44 Arg2:T53	
+R39	Arg1_PPT_X Arg1:T53 Arg2:T41	
+R40	ArgM_MNR Arg1:T44 Arg2:T45	
+R41	ArgM_MNR Arg1:T44 Arg2:T46	
+R42	ArgM_TMP Arg1:T44 Arg2:T47	
+R43	ArgM_TMP Arg1:T44 Arg2:T48	
+R44	Arg1_PPT_X Arg1:T49 Arg2:T44	
+R45	Arg2_DIR Arg1:T49 Arg2:T50	
+R46	Arg1_PPT Arg1:T51 Arg2:T52	
+R47	Arg2_GOL_X Arg1:T51 Arg2:T49	
+R48	ArgM_LOC Arg1:T56 Arg2:T57	
+R49	Arg1_PPT_X Arg1:T56 Arg2:T51	
+R50	Arg1_PPT Arg1:T58 Arg2:T59	
+R51	Arg1_PPT_X Arg1:T60 Arg2:T58	
+R52	Arg1_PPT_X Arg1:T61 Arg2:T58	
+R53	Arg1_PPT Arg1:T62 Arg2:T63	
+R54	ArgM_TMP Arg1:T62 Arg2:T64	
+R55	Arg2_GOL_X Arg1:T62 Arg2:T60	
+#1	AnnotatorNotes R6	the cream; the cheese blend
+R36	Arg1_PPT_X Arg1:T8 Arg2:T5	
+R8	Arg2_PRD Arg1:T8 Arg2:T9	
+#2	AnnotatorNotes R36	the dough
+#3	AnnotatorNotes R19	the milk; the cooked milk
+#4	AnnotatorNotes R22	the milk; the milk with nuts
+#5	AnnotatorNotes R23	the milk; the milk with nuts
+#6	AnnotatorNotes R27	the dough; the dough rectangle
+#7	AnnotatorNotes R30	the dough; the dough strips
+R56	Arg1_PPT_X Arg1:T41 Arg2:T38	
+#8	AnnotatorNotes R56	the rolls; the filled rolls; the filled dough rolls
+#9	AnnotatorNotes R39	the roll; the filled roll
+#10	AnnotatorNotes R38	the rolls
+#11	AnnotatorNotes R44	the rolls
+#12	AnnotatorNotes R49	the rolls
+#13	AnnotatorNotes R51	the cookies
+#14	AnnotatorNotes R52	the cookies
+#15	AnnotatorNotes R55	the cookies
+#16	AnnotatorNotes R47	the rolls
+#17	AnnotatorNotes R11	the ball; the dough; the dough ball
+#18	AnnotatorNotes R10	the dough; the ball; the dough ball; the covered dough

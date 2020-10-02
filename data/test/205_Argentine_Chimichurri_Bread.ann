@@ -1,0 +1,11 @@
+T1	AC 3 8	Place
+T2	FOOD 9 20	ingredients
+T3	TOOL 24 52	the pan of the bread machine
+T4	AC 102 108	Select
+T5	AC 131 136	press
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg3_GOL Arg1:T1 Arg2:T3	
+T6	OTHER 137 142	Start
+R3	Arg1_PPT Arg1:T5 Arg2:T6	
+T7	OTHER 109 129	Basic or White Cycle
+R4	Arg1_PPT Arg1:T4 Arg2:T7	

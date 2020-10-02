@@ -1,0 +1,80 @@
+T1	AC 3 8	Crush
+T2	FOOD 9 25	half the cookies
+T3	PURPOSE_CLAUSE 37 51	to make crumbs
+T4	AC 56 63	Combine
+T5	FOOD 64 70	crumbs
+T6	FOOD 76 92	melted margarine
+T8	TOOL 108 145	the bottom of a 9-inch springform pan
+T9	TOOL 149 158	pie plate
+T10	AC 163 168	Stand
+T11	FOOD 169 186	remaining cookies
+T12	TOOL 194 205	edge of pan
+T13	AC 210 216	Spread
+T14	FOOD 217 238	3/4 cup fudge topping
+T15	FOOD 244 249	crust
+T16	AC 254 260	Freeze
+T17	DUR 261 271	15 minutes
+T18	AC 287 293	soften
+T19	FOOD 294 314	1 quart of ice cream
+T20	TOOL 318 327	microwave
+T21	TOOL 334 344	countertop
+T22	CONDITION_CLAUSE 349 372	After crust has chilled
+T23	AC 374 380	spread
+T24	FOOD 381 399	softened ice cream
+T25	FOOD 405 416	fudge layer
+T26	AC 421 427	Freeze
+T27	DUR 428 438	30 minutes
+T28	AC 443 448	Scoop
+T29	FOOD 449 477	remaining quart of ice cream
+T30	AC 493 500	arrange
+T31	FOOD 506 528	spread ice cream layer
+T33	AC 534 540	Freeze
+T34	CONDITION_CLAUSE 541 551	until firm
+T35	DUR 553 560	4 hours
+T36	DUR 564 573	overnight
+T37	PURPOSE_CLAUSE 579 587	To serve
+T38	AC 589 596	garnish
+T39	FOOD 602 628	remainder of fudge topping
+T40	FOOD 630 643	whipped cream
+T41	FOOD 648 656	cherries
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_PRP Arg1:T1 Arg2:T3	
+T32	OTHER 483 488	balls
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R4	Arg1_PPT Arg1:T4 Arg2:T6	
+T7	AC 97 102	press
+R5	Arg1_PPT_X Arg1:T7 Arg2:T4	
+R6	Arg2_GOL Arg1:T7 Arg2:T8	
+R7	Arg2_GOL Arg1:T7 Arg2:T9	
+R8	Arg1_PPT Arg1:T10 Arg2:T11	
+R9	ArgM_LOC Arg1:T10 Arg2:T12	
+R10	Arg1_PPT Arg1:T13 Arg2:T14	
+R11	Arg2_GOL Arg1:T13 Arg2:T15	
+R12	ArgM_TMP Arg1:T16 Arg2:T17	
+R13	Arg1_PPT_X Arg1:T16 Arg2:T13	
+R14	Arg1_PPT Arg1:T18 Arg2:T19	
+R15	Arg1_PPT Arg1:T23 Arg2:T24	
+R16	Arg2_GOL Arg1:T23 Arg2:T25	
+R17	ArgM_TMP Arg1:T23 Arg2:T22	
+R18	ArgM_LOC Arg1:T18 Arg2:T20	
+R19	ArgM_LOC Arg1:T18 Arg2:T21	
+R20	ArgM_TMP Arg1:T26 Arg2:T27	
+R21	Arg1_PPT_X Arg1:T26 Arg2:T23	
+R22	Arg3_GOL Arg1:T30 Arg2:T31	
+R23	ArgM_TMP Arg1:T33 Arg2:T34	
+R24	ArgM_TMP Arg1:T33 Arg2:T35	
+R25	ArgM_TMP Arg1:T33 Arg2:T36	
+R26	ArgM_PRP Arg1:T38 Arg2:T37	
+R27	Arg1_GOL_X Arg1:T38 Arg2:T33	
+R28	Arg2_PPT Arg1:T38 Arg2:T39	
+R29	Arg2_PPT Arg1:T38 Arg2:T40	
+R30	Arg2_PPT Arg1:T38 Arg2:T41	
+R31	Arg1_PPT Arg1:T28 Arg2:T29	
+R32	Arg3_PRD Arg1:T28 Arg2:T32	
+R33	Arg1_PPT Arg1:T30 Arg2:T32	
+R34	Arg1_PPT_X Arg1:T33 Arg2:T30	
+#1	AnnotatorNotes R5	The crumbs; The crumbs combined with margarine
+#2	AnnotatorNotes R13	The cookies; The topped cookies
+#3	AnnotatorNotes R21	The cookies; The cookies spreaded with ice cream
+#4	AnnotatorNotes R34	The cookies; The cookies arranged with ice cream
+#5	AnnotatorNotes R27	the cookies; the firm cookies

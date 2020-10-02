@@ -1,0 +1,72 @@
+T1	AC 3 10	Preheat
+T2	AC 53 57	Beat
+T3	AC 141 146	Blend
+T5	AC 238 245	Reserve
+T6	AC 300 304	Stir
+T7	AC 352 358	Spread
+T8	AC 404 412	Sprinkle
+T9	AC 443 447	Bake
+T10	AC 532 536	Cool
+T11	TOOL 11 15	oven
+T12	TEMPERATURE 19 48	350 degrees F (175 degrees C)
+T13	FOOD 58 68	the butter
+T14	FOOD 72 81	margarine
+T15	FOOD 150 158	the eggs
+T16	AC 160 166	mixing
+T17	FOOD 183 192	the flour
+T4	AC 176 182	Mix in
+T18	FOOD 194 205	baking soda
+T19	FOOD 210 214	salt
+T20	FOOD 218 233	the egg mixture
+T21	FOOD 246 279	1/2 cup of the chopped candy bars
+T22	FOOD 284 295	the topping
+T23	FOOD 305 324	the remaining candy
+T24	FOOD 330 347	the flour mixture
+T25	FOOD 359 369	the batter
+T26	TOOL 375 399	one 13x9 inch baking pan
+T27	FOOD 413 431	the reserved candy
+T28	FOOD 435 438	top
+T29	TEMPERATURE 451 464	350 degrees F
+T30	DUR 485 501	25 to 30 minutes
+T31	CONDITION_CLAUSE 505 526	until lightly browned
+T34	AC 564 567	cut
+T35	OTHER 573 580	squares
+T38	CONDITION_CLAUSE 114 136	until light and fluffy
+T36	FOOD 87 113	the white and brown sugars
+R1	Arg1_PPT Arg1:T1 Arg2:T11	
+R2	ArgM_MNR Arg1:T1 Arg2:T12	
+R3	Arg1_PPT Arg1:T2 Arg2:T13	
+R4	Arg1_PPT Arg1:T2 Arg2:T14	
+R5	Arg1_PPT Arg1:T2 Arg2:T36	
+R6	ArgM_TMP Arg1:T2 Arg2:T38	
+R7	Arg1_PPT Arg1:T3 Arg2:T15	
+R8	Arg2_PPT_Z Arg1:T3 Arg2:T2	
+R9	Arg1_PPT_X Arg1:T16 Arg2:T3	
+R10	Arg1_PPT Arg1:T4 Arg2:T17	
+R11	Arg1_PPT Arg1:T4 Arg2:T18	
+R12	Arg1_PPT Arg1:T4 Arg2:T19	
+R13	Arg2_PPT Arg1:T4 Arg2:T20	
+R14	Arg1_PPT Arg1:T5 Arg2:T21	
+R15	Arg2_GOL Arg1:T5 Arg2:T22	
+R16	Arg1_PPT Arg1:T6 Arg2:T23	
+R17	Arg2_GOL Arg1:T6 Arg2:T24	
+R18	Arg1_PPT Arg1:T7 Arg2:T25	
+R19	Arg2_GOL Arg1:T7 Arg2:T26	
+R20	Arg1_PPT Arg1:T8 Arg2:T27	
+R21	Arg2_GOL Arg1:T8 Arg2:T28	
+R22	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R23	ArgM_MNR Arg1:T9 Arg2:T29	
+R24	ArgM_TMP Arg1:T9 Arg2:T30	
+R25	ArgM_TMP Arg1:T9 Arg2:T31	
+R26	Arg1_PPT_X Arg1:T10 Arg2:T9	
+T32	TOOL 540 558	pan on a wire rack
+R27	ArgM_LOC Arg1:T10 Arg2:T32	
+R28	Arg1_PPT_X Arg1:T34 Arg2:T10	
+R29	Arg3_PRD Arg1:T34 Arg2:T35	
+T33	TEMPERATURE 466 479	175 degrees C
+R30	ArgM_MNR Arg1:T9 Arg2:T33	
+#1	AnnotatorNotes R8	The butter; The beated butter
+#2	AnnotatorNotes R9	The butter and egs; The blended butter and egs
+#3	AnnotatorNotes R22	The batter; The sprinkled batter
+#4	AnnotatorNotes R26	The batter; The baked batter
+#5	AnnotatorNotes R28	The batter; The cooled batter

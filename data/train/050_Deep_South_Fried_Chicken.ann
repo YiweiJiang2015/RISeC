@@ -1,0 +1,67 @@
+T1	AC 3 7	Heat
+T2	AC 107 114	combine
+T3	AC 147 152	Shake
+T4	AC 196 201	place
+T5	AC 226 232	Repeat
+T6	AC 291 294	Fry
+T7	AC 389 393	Turn
+T8	AC 418 423	cover
+T9	AC 429 433	cook
+T10	AC 453 459	Remove
+T11	AC 473 481	increase
+T13	FOOD 115 124	the flour
+T17	FOOD 126 130	salt
+T18	FOOD 136 142	pepper
+T19	FOOD 153 171	two chicken pieces
+T20	TOOL 26 52	a large, cast iron skillet
+T21	TEMPERATURE 58 74	medium-high heat
+T22	TOOL 82 105	a brown paper lunch bag
+T23	TOOL 175 182	the bag
+T24	TOOL 210 221	the skillet
+T25	FOOD 8 22	the shortening
+T27	FOOD 295 306	the chicken
+T28	TEMPERATURE 312 328	medium-high heat
+T32	TOOL 394 402	the heat
+T33	TEMPERATURE 406 416	medium-low
+T34	DUR 438 448	25 minutes
+T35	TOOL 460 467	the lid
+T36	TOOL 482 486	heat
+T37	TEMPERATURE 490 501	medium-high
+R2	Arg1_PPT Arg1:T1 Arg2:T25	
+R3	ArgM_LOC Arg1:T1 Arg2:T20	
+R4	ArgM_MNR Arg1:T1 Arg2:T21	
+R5	Arg1_PPT Arg1:T2 Arg2:T13	
+R6	Arg1_PPT Arg1:T2 Arg2:T17	
+R7	Arg1_PPT Arg1:T2 Arg2:T18	
+R8	ArgM_LOC Arg1:T2 Arg2:T22	
+R9	Arg1_PPT Arg1:T3 Arg2:T19	
+R10	ArgM_LOC Arg1:T3 Arg2:T23	
+T43	FOOD 202 206	them
+R12	Arg1_PPT Arg1:T4 Arg2:T43	
+R13	Arg1_PPT Arg1:T6 Arg2:T27	
+R14	ArgM_MNR Arg1:T6 Arg2:T28	
+R16	Arg1_PPT Arg1:T7 Arg2:T32	
+R17	ArgM_TMP Arg1:T9 Arg2:T34	
+R18	Arg1_PPT Arg1:T10 Arg2:T35	
+R19	Arg1_PPT Arg1:T11 Arg2:T36	
+R20	Arg4_GOL Arg1:T7 Arg2:T33	
+R21	Arg4_GOL Arg1:T11 Arg2:T37	
+R35	Arg2_GOL Arg1:T4 Arg2:T24	
+T14	CONDITION_CLAUSE 233 286	until all of the chicken is coated and in the skillet
+T15	CONDITION_CLAUSE 329 384	until all of the pieces have been browned on both sides
+T12	CONDITION_CLAUSE 522 592	until chicken pieces are a deep golden brown, and the juices run clear
+R1	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R15	ArgM_TMP Arg1:T5 Arg2:T14	
+R22	ArgM_TMP Arg1:T6 Arg2:T15	
+R24	Arg1_PPT Arg1:T8 Arg2:T7	
+R25	Arg1_PPT Arg1:T9 Arg2:T8	
+R27	TODO Arg1:T11 Arg2:T10	
+T16	AC 515 521	frying
+R28	ArgM_TMP Arg1:T16 Arg2:T12	
+R29	Arg1_PPT_X Arg1:T16 Arg2:T11	
+#1	AnnotatorNotes R20	Yiwei: Arg2?
+#2	AnnotatorNotes R21	Yiwei: Arg2?
+T26	PURPOSE_CLAUSE 183 190	to coat
+R11	ArgM_PRP Arg1:T3 Arg2:T26	
+#4	AnnotatorNotes R1	coating and placing chicken; coating and placing remaining chicken in the skillet
+#3	AnnotatorNotes R29	the chicken; the chicken pieces

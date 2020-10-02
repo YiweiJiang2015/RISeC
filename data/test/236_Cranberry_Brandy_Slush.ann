@@ -1,0 +1,28 @@
+T1	AC 27 30	mix
+T2	TOOL 6 25	a plastic container
+T3	FOOD 40 53	cherry brandy
+T4	FOOD 55 79	orange juice concentrate
+T5	FOOD 81 101	lemonade concentrate
+T6	FOOD 107 122	cranberry juice
+T7	AC 127 133	Freeze
+T8	PURPOSE_CLAUSE 148 156	To serve
+T9	AC 158 163	scoop
+T10	FOOD 164 196	desired amount of frozen mixture
+T11	TOOL 202 209	a glass
+T12	AC 215 219	fill
+T13	FOOD 225 240	lemon-lime soda
+R1	Arg1_PPT Arg1:T1 Arg2:T3	
+R2	Arg1_PPT Arg1:T1 Arg2:T4	
+R3	Arg1_PPT Arg1:T1 Arg2:T5	
+R4	Arg1_PPT Arg1:T1 Arg2:T6	
+R5	ArgM_LOC Arg1:T1 Arg2:T2	
+T14	DUR 134 143	overnight
+R6	ArgM_TMP Arg1:T7 Arg2:T14	
+R7	Arg1_PPT_X Arg1:T7 Arg2:T1	
+R8	Arg1_PPT Arg1:T9 Arg2:T10	
+R9	Arg3_GOL Arg1:T9 Arg2:T11	
+R10	Arg2_PPT Arg1:T12 Arg2:T13	
+R11	Arg1_PPT_X Arg1:T12 Arg2:T9	
+R12	ArgM_PRP Arg1:T9 Arg2:T8	
+#1	AnnotatorNotes R7	the mixture; the lemonade mixture; the juice; the juice mixture; the mixed juice
+#2	AnnotatorNotes R11	the glass; the glass with the mixture; the glass with the frozen mixture

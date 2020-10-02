@@ -1,0 +1,42 @@
+T1	AC 40 44	boil
+T2	OTHER 9 20	a large pot
+T3	AC 49 54	Place
+T4	FOOD 55 67	the broccoli
+T5	FOOD 72 91	cauliflower florets
+T6	FOOD 97 114	the boiling water
+T7	DUR 119 129	one minute
+T8	AC 134 139	Drain
+T9	AC 144 149	rinse
+T10	FOOD 150 157	florets
+T11	AC 162 169	Combine
+T12	FOOD 170 178	broccoli
+T13	FOOD 180 191	cauliflower
+T14	FOOD 193 204	bell pepper
+T15	FOOD 206 214	cucumber
+T16	FOOD 216 222	carrot
+T17	FOOD 227 249	Italian salad dressing
+T18	TOOL 253 278	a medium size mixing bowl
+T19	AC 283 288	Cover
+T20	TOOL 289 297	the bowl
+T21	AC 302 313	refrigerate
+T22	FOOD 314 328	the vegetables
+T23	DUR 333 341	one hour
+T24	FOOD 24 36	salted water
+#1	AnnotatorNotes T2	quantity
+R1	Arg1_PPT Arg1:T1 Arg2:T24	
+R2	Arg1_PPT Arg1:T3 Arg2:T4	
+R3	Arg1_PPT Arg1:T3 Arg2:T5	
+R4	Arg3_GOL Arg1:T3 Arg2:T6	
+R5	ArgM_TMP Arg1:T3 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T10	
+R7	Arg1_PPT Arg1:T9 Arg2:T8	
+R8	Arg1_PPT Arg1:T11 Arg2:T12	
+R9	Arg1_PPT Arg1:T11 Arg2:T13	
+R10	Arg1_PPT Arg1:T11 Arg2:T14	
+R11	Arg1_PPT Arg1:T11 Arg2:T15	
+R12	Arg1_PPT Arg1:T11 Arg2:T16	
+R13	Arg1_PPT Arg1:T11 Arg2:T17	
+R14	ArgM_LOC Arg1:T11 Arg2:T18	
+R15	Arg1_PPT Arg1:T19 Arg2:T20	
+R16	Arg1_PPT Arg1:T21 Arg2:T22	
+R17	ArgM_TMP Arg1:T21 Arg2:T23	

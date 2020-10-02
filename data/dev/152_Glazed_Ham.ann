@@ -1,0 +1,101 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 19	the oven
+T3	TEMPERATURE 23 36	275 degrees F
+T4	TEMPERATURE 38 51	135 degrees C
+T5	AC 57 62	Place
+T6	FOOD 63 66	ham
+T7	TOOL 70 84	a roasting pan
+T8	AC 89 96	Pour in
+T9	FOOD 97 102	water
+T10	OTHER 106 120	a 2 inch depth
+T11	AC 125 130	Cover
+T12	TOOL 136 155	a tight fitting lid
+T13	AC 160 164	Bake
+T14	DUR 169 181	6 to 8 hours
+T15	TOOL 185 203	the preheated oven
+T16	AC 231 237	Remove
+T17	TOOL 243 251	the oven
+T18	AC 253 261	pour off
+T19	AC 276 283	reserve
+T20	FOOD 262 271	drippings
+T21	OTHER 309 323	any excess fat
+T22	AC 337 343	return
+T23	TOOL 347 363	the roasting pan
+T24	AC 288 294	Debone
+T25	FOOD 295 298	ham
+T26	AC 300 308	removing
+T27	AC 368 372	Skim
+T28	OTHER 373 376	fat
+T29	AC 412 419	discard
+T30	FOOD 382 406	the top of the drippings
+T31	TOOL 427 439	a small bowl
+T32	AC 441 444	mix
+T33	FOOD 445 469	one cup of the drippings
+T34	FOOD 475 480	honey
+T35	FOOD 482 493	brown sugar
+T36	FOOD 495 507	liquid smoke
+T37	FOOD 509 529	Worcestershire sauce
+T38	FOOD 534 540	cloves
+T39	AC 546 550	Pour
+T40	FOOD 551 555	this
+T41	FOOD 561 568	the ham
+T42	AC 570 575	cover
+T43	AC 580 586	return
+T44	TOOL 590 598	the oven
+T45	FOOD 604 623	Remaining drippings
+T46	AC 631 640	discarded
+T47	AC 644 652	reserved
+T48	PURPOSE_CLAUSE 653 667	for other uses
+T49	AC 673 677	Bake
+T50	DUR 690 706	30 to 40 minutes
+T51	TOOL 710 728	the preheated oven
+T52	AC 738 743	stand
+T53	DUR 748 758	10 minutes
+T54	CONDITION_CLAUSE 759 773	before serving
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg3_GOL Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg2_PPT Arg1:T11 Arg2:T12	
+R8	ArgM_TMP Arg1:T13 Arg2:T14	
+R9	ArgM_LOC Arg1:T13 Arg2:T15	
+R10	Arg2_DIR Arg1:T16 Arg2:T17	
+R11	Arg1_PPT Arg1:T18 Arg2:T20	
+R12	Arg1_PPT_X Arg1:T19 Arg2:T18	
+R13	Arg1_PPT Arg1:T24 Arg2:T25	
+R14	Arg1_PPT Arg1:T26 Arg2:T21	
+R15	Simultaneous Arg1:T24 Arg2:T26	
+R16	Arg3_GOL Arg1:T22 Arg2:T23	
+R17	Arg1_PPT_X Arg1:T22 Arg2:T24	
+R18	Arg1_PPT Arg1:T27 Arg2:T28	
+R19	Arg2_DIR Arg1:T27 Arg2:T30	
+R20	Arg1_PPT_X Arg1:T29 Arg2:T27	
+R21	Arg1_PPT Arg1:T32 Arg2:T33	
+R22	Arg1_PPT Arg1:T32 Arg2:T34	
+R23	Arg1_PPT Arg1:T32 Arg2:T35	
+R24	Arg1_PPT Arg1:T32 Arg2:T36	
+R25	Arg1_PPT Arg1:T32 Arg2:T37	
+R26	Arg1_PPT Arg1:T32 Arg2:T38	
+R27	ArgM_LOC Arg1:T32 Arg2:T31	
+R28	Arg1_PPT Arg1:T39 Arg2:T40	
+R29	Arg3_GOL Arg1:T39 Arg2:T41	
+R30	Arg3_GOL Arg1:T43 Arg2:T44	
+R31	Arg1_PPT_X Arg1:T42 Arg2:T39	
+R32	Arg1_PPT_X Arg1:T43 Arg2:T42	
+R33	Arg1_PPT Arg1:T46 Arg2:T45	
+R34	Arg1_PPT Arg1:T47 Arg2:T45	
+R35	ArgM_PRP Arg1:T47 Arg2:T48	
+R36	ArgM_TMP Arg1:T49 Arg2:T50	
+R37	ArgM_LOC Arg1:T49 Arg2:T51	
+R38	ArgM_TMP Arg1:T52 Arg2:T53	
+R39	ArgM_TMP Arg1:T52 Arg2:T54	
+R40	Arg1_PPT_X Arg1:T49 Arg2:T43	
+R41	Arg0_PAG Arg1:T52 Arg2:T49	
+#1	AnnotatorNotes R12	the baked ham; the drained ham
+#2	AnnotatorNotes R17	the ham; the deboned ham; 
+#3	AnnotatorNotes R20	the fat; the fat from the ham;
+#4	AnnotatorNotes R40	the ham; the mixture
+#5	AnnotatorNotes R31	the ham; the ham with drippings
+#6	AnnotatorNotes R32	the ham; the covered ham; the covered ham with drippings

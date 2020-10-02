@@ -1,0 +1,49 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 19 26	combine
+T3	FOOD 27 30	oil
+T4	FOOD 32 39	vinegar
+T5	FOOD 41 46	sugar
+T6	FOOD 51 94	the seasoning packet from the ramen noodles
+T8	AC 99 102	Mix
+T9	AC 112 123	refrigerate
+T10	DUR 124 141	at least one hour
+T11	CONDITION_CLAUSE 142 156	before serving
+T12	DUR 161 170	overnight
+T13	TOOL 178 190	a large bowl
+T14	AC 191 198	combine
+T15	FOOD 199 207	broccoli
+T16	FOOD 209 216	carrots
+T17	FOOD 218 230	green onions
+T18	FOOD 235 250	sunflower seeds
+T19	AC 255 260	Crush
+T20	FOOD 261 274	ramen noodles
+T21	AC 279 286	stir in
+T22	AC 291 295	Pour
+T23	FOOD 310 315	salad
+T24	FOOD 296 304	dressing
+T25	DUR 322 332	10 minutes
+T26	CONDITION_CLAUSE 333 347	before serving
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	ArgM_LOC Arg1:T2 Arg2:T1	
+R6	Arg1_PPT_X Arg1:T8 Arg2:T2	
+R7	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R8	ArgM_TMP Arg1:T9 Arg2:T10	
+R9	ArgM_TMP Arg1:T9 Arg2:T12	
+R10	Arg1_PPT Arg1:T14 Arg2:T15	
+R11	Arg1_PPT Arg1:T14 Arg2:T16	
+R12	Arg1_PPT Arg1:T14 Arg2:T17	
+R13	Arg1_PPT Arg1:T14 Arg2:T18	
+R14	ArgM_LOC Arg1:T14 Arg2:T13	
+R15	Arg1_PPT Arg1:T19 Arg2:T20	
+R16	Arg1_PPT Arg1:T21 Arg2:T19	
+R17	Arg2_PPT_Z Arg1:T21 Arg2:T14	
+R18	Arg1_PPT Arg1:T22 Arg2:T24	
+R19	Arg3_GOL Arg1:T22 Arg2:T23	
+R20	ArgM_TMP Arg1:T22 Arg2:T25	
+R21	ArgM_TMP Arg1:T9 Arg2:T11	
+#1	AnnotatorNotes R6	the mixture; seasoning mixture;
+#2	AnnotatorNotes R7	the mixture; the seasoning mixture; 
+#3	AnnotatorNotes R17	the mixture; the ramen noodles mixture; 

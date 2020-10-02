@@ -1,0 +1,73 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 17	cut
+T3	FOOD 18 27	margarine
+T4	FOOD 33 38	flour
+T5	CONDITION_CLAUSE 39 52	until crumbly
+T6	AC 57 62	Press
+T7	TOOL 68 88	an 11-in baking dish
+T9	AC 128 132	Bake
+T10	TEMPERATURE 136 149	350 degrees F
+T11	DUR 154 167	15-18 minutes
+T12	CONDITION_CLAUSE 171 192	until lightly browned
+T13	AC 197 201	Cool
+T14	TOOL 220 233	a mixing bowl
+T15	AC 235 239	beat
+T16	FOOD 240 252	cream cheese
+T17	FOOD 257 266	sweetener
+T18	CONDITION_CLAUSE 267 279	until smooth
+T19	AC 284 291	Fold in
+T21	FOOD 292 319	half of the whipped topping
+T22	AC 334 340	spread
+T23	FOOD 350 355	crust
+T24	TOOL 363 376	a mixing bowl
+T25	AC 378 385	combine
+T26	FOOD 386 390	milk
+T27	FOOD 395 406	pudding mix
+T28	AC 411 415	Beat
+T29	OTHER 419 428	low speed
+T30	DUR 433 442	2 minutes
+T31	AC 452 457	stand
+T32	DUR 462 473	2-3 minutes
+T33	AC 479 485	Spread
+T34	FOOD 491 507	the cream cheese
+T35	AC 513 516	Top
+T36	FOOD 522 551	the remaining whipped topping
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	ArgM_LOC Arg1:T2 Arg2:T1	
+R3	Arg3_PRD Arg1:T2 Arg2:T4	
+R4	ArgM_TMP Arg1:T2 Arg2:T5	
+R5	Arg3_GOL Arg1:T6 Arg2:T7	
+R7	ArgM_MNR Arg1:T9 Arg2:T10	
+R8	ArgM_TMP Arg1:T9 Arg2:T11	
+R9	ArgM_TMP Arg1:T9 Arg2:T12	
+R10	Arg1_PPT_X Arg1:T9 Arg2:T6	
+R11	Arg1_PPT_X Arg1:T6 Arg2:T2	
+R12	Arg1_PPT_X Arg1:T13 Arg2:T9	
+R13	Arg1_PPT Arg1:T15 Arg2:T16	
+R14	Arg1_PPT Arg1:T15 Arg2:T17	
+R15	ArgM_TMP Arg1:T15 Arg2:T18	
+R16	ArgM_LOC Arg1:T15 Arg2:T14	
+R17	Arg1_PPT Arg1:T19 Arg2:T21	
+R18	Arg2_PPT_Z Arg1:T19 Arg2:T15	
+R19	Arg2_GOL Arg1:T22 Arg2:T23	
+R20	Arg1_PPT_X Arg1:T22 Arg2:T19	
+R21	Arg1_PPT Arg1:T25 Arg2:T26	
+R22	Arg1_PPT Arg1:T25 Arg2:T27	
+R23	ArgM_LOC Arg1:T25 Arg2:T24	
+R24	ArgM_MNR Arg1:T28 Arg2:T29	
+R25	ArgM_TMP Arg1:T28 Arg2:T30	
+R26	Arg1_PPT_X Arg1:T28 Arg2:T25	
+R27	Arg0_PAG Arg1:T31 Arg2:T28	
+R28	ArgM_TMP Arg1:T31 Arg2:T32	
+R29	Arg2_GOL Arg1:T33 Arg2:T34	
+R30	Arg1_PPT_X Arg1:T33 Arg2:T31	
+R31	Arg2_PPT Arg1:T35 Arg2:T36	
+R32	Arg1_GOL_X Arg1:T35 Arg2:T33	
+#1	AnnotatorNotes R11	the margarine and flour; the mixture
+#2	AnnotatorNotes R10	the mixture; the margarine and flour
+#3	AnnotatorNotes R12	the mixture; the margarine and flour
+#4	AnnotatorNotes R18	the cream cheese and sweetener; the mixture; the whipped topping;
+#5	AnnotatorNotes R20	the mixture; the beaten cream cheese and sweetener; the whipped topping
+#6	AnnotatorNotes R26	the mixture; the milk and pudding mix
+#7	AnnotatorNotes R30	the mixture; the milk and pudding mix;
+#8	AnnotatorNotes R32	the mixture; the milk mixture on cream cheese

@@ -1,0 +1,71 @@
+T1	AC 21 26	cream
+T2	AC 54 57	Add
+T3	AC 80 83	mix
+T4	AC 93 100	Combine
+T5	AC 117 120	add
+T6	AC 144 149	Press
+T7	AC 175 179	Bake
+T8	AC 253 258	place
+T10	AC 361 369	Sprinkle
+T11	AC 387 391	Cool
+T12	AC 397 400	Cut
+T13	TOOL 6 19	a mixing bowl
+T14	FOOD 27 33	butter
+T15	FOOD 38 49	brown sugar
+T16	FOOD 58 66	egg yolk
+T17	FOOD 71 78	vanilla
+T18	FOOD 101 106	flour
+T19	FOOD 111 115	salt
+T20	FOOD 124 139	creamed mixture
+T21	TOOL 155 170	a greased 15-in
+T22	TEMPERATURE 183 196	350 degrees F
+T23	DUR 201 214	15-18 minutes
+T24	FOOD 259 275	candy bar pieces
+T26	DUR 305 313	1 minute
+T27	AC 333 339	spread
+T28	FOOD 340 349	chocolate
+T29	FOOD 375 382	walnuts
+T30	CONDITION_CLAUSE 218 236	until golden brown
+R1	Arg1_PPT Arg1:T1 Arg2:T14	
+R2	Arg1_PPT Arg1:T1 Arg2:T15	
+R3	ArgM_LOC Arg1:T1 Arg2:T13	
+R4	Arg1_PPT Arg1:T2 Arg2:T16	
+R5	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+R6	Arg1_PPT Arg1:T2 Arg2:T17	
+R7	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R8	Arg1_PPT Arg1:T4 Arg2:T18	
+R9	Arg1_PPT Arg1:T4 Arg2:T19	
+R10	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R11	Arg2_PPT Arg1:T5 Arg2:T20	
+R12	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R13	TODO Arg1:T6 Arg2:T21	
+R14	Arg1_PPT_X Arg1:T7 Arg2:T6	
+R15	ArgM_MNR Arg1:T7 Arg2:T22	
+R16	ArgM_TMP Arg1:T7 Arg2:T23	
+R17	ArgM_TMP Arg1:T7 Arg2:T30	
+R18	Arg1_PPT Arg1:T8 Arg2:T24	
+T25	FOOD 281 286	crust
+R19	Arg3_GOL Arg1:T8 Arg2:T25	
+T9	AC 295 300	stand
+R20	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R21	ArgM_TMP Arg1:T9 Arg2:T26	
+T31	CONDITION_CLAUSE 317 331	until softened
+R22	ArgM_TMP Arg1:T9 Arg2:T31	
+R23	Arg1_PPT Arg1:T27 Arg2:T28	
+R24	Arg2_GOL_X Arg1:T10 Arg2:T27	
+R25	Arg1_PPT Arg1:T10 Arg2:T29	
+R26	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R27	Arg1_PPT_X Arg1:T12 Arg2:T11	
+T32	OTHER 406 413	squares
+R28	Arg3_PRD Arg1:T12 Arg2:T32	
+#1	AnnotatorNotes R5	the cream; the creamed mixture; the butter cream
+#2	AnnotatorNotes R10	the flour; the flour mixture
+#3	AnnotatorNotes R12	the flour mixture; the creamed flour mixture
+#4	AnnotatorNotes R14	the flour mixture; the flour creamed mixture
+#5	AnnotatorNotes R20	the crust; the crust with candy bar
+R29	Arg2_GOL_X Arg1:T27 Arg2:T9	
+#6	AnnotatorNotes R29	the crust; the cool crust
+#7	AnnotatorNotes R24	the crust; the crust with chocolate
+#8	AnnotatorNotes R26	the crust; the crust with walnuts
+#9	AnnotatorNotes R27	the crust; the cool crust
+#10	AnnotatorNotes R7	the egg yolk; the yolk mixture; the yolk mixture with creamed butter

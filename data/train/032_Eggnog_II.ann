@@ -1,0 +1,77 @@
+T1	TOOL 6 22	a large saucepan
+T2	AC 24 31	combine
+T3	FOOD 32 40	the eggs
+T4	FOOD 42 46	milk
+T5	FOOD 51 64	1/3 cup sugar
+T6	AC 69 73	Cook
+T7	AC 78 82	stir
+T8	OTHER 88 99	medium heat
+T9	CONDITION_CLAUSE 100 133	until mixture coats a metal spoon
+T10	AC 138 144	Remove
+T11	OTHER 150 154	heat
+T12	AC 159 163	Cool
+T13	AC 175 182	placing
+T14	TOOL 183 186	pan
+T15	TOOL 190 196	a sink
+T16	TOOL 200 217	bowl of ice water
+T17	AC 222 230	stirring
+T18	DUR 231 245	1 to 2 minutes
+T19	AC 250 257	Stir in
+T20	FOOD 258 269	the vanilla
+T21	AC 274 279	Chill
+T22	DUR 280 293	4 to 24 hours
+T23	CONDITION_CLAUSE 298 312	Before serving
+T24	AC 314 318	whip
+T25	FOOD 319 328	the cream
+T26	FOOD 333 352	2 tablespoons sugar
+T27	CONDITION_CLAUSE 353 374	until soft peaks form
+T28	AC 379 387	Transfer
+T29	FOOD 388 407	chilled egg mixture
+T30	TOOL 411 423	a punch bowl
+T31	AC 428 436	Sprinkle
+T32	FOOD 437 449	each serving
+T33	FOOD 455 461	nutmeg
+T34	AC 467 474	Fold in
+T35	FOOD 475 496	whipped cream mixture
+T36	AC 501 506	serve
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	ArgM_LOC Arg1:T2 Arg2:T1	
+R5	Simultaneous Arg1:T6 Arg2:T7	
+R6	ArgM_MNR Arg1:T6 Arg2:T8	
+R7	ArgM_TMP Arg1:T6 Arg2:T9	
+R8	Arg2_DIR Arg1:T10 Arg2:T11	
+R9	Arg1_PPT_X Arg1:T10 Arg2:T6	
+R10	Arg1_PPT_X Arg1:T12 Arg2:T10	
+R11	Arg1_PPT Arg1:T13 Arg2:T14	
+R12	Arg3_GOL Arg1:T13 Arg2:T15	
+R13	Arg3_GOL Arg1:T13 Arg2:T16	
+R14	ArgM_TMP Arg1:T17 Arg2:T18	
+R15	ArgM_MNR Arg1:T12 Arg2:T13	
+R16	ArgM_MNR Arg1:T12 Arg2:T17	
+R17	Arg1_PPT Arg1:T19 Arg2:T20	
+R18	Arg2_PPT_Z Arg1:T19 Arg2:T12	
+R19	ArgM_TMP Arg1:T21 Arg2:T22	
+R20	Arg1_PPT Arg1:T24 Arg2:T25	
+R21	Arg1_PPT Arg1:T24 Arg2:T26	
+R22	ArgM_TMP Arg1:T24 Arg2:T27	
+R23	ArgM_TMP Arg1:T24 Arg2:T23	
+R24	Arg1_PPT Arg1:T28 Arg2:T29	
+R25	Arg3_GOL Arg1:T28 Arg2:T30	
+R26	Arg2_GOL Arg1:T31 Arg2:T32	
+R27	Arg1_PPT Arg1:T31 Arg2:T33	
+R28	Arg1_PPT_X Arg1:T36 Arg2:T34	
+R29	Arg1_PPT Arg1:T34 Arg2:T35	
+R30	Arg1_PPT_X Arg1:T21 Arg2:T19	
+R31	Arg1_PPT_X Arg1:T7 Arg2:T6	
+#1	AnnotatorNotes R31	the eggs; the eggs in milk
+#2	AnnotatorNotes R9	the egg mixture
+#3	AnnotatorNotes R10	the hot mixture
+#5	AnnotatorNotes R18	the cool mixture
+#6	AnnotatorNotes R30	the vanilla mixture
+R32	Arg2_PPT_Z Arg1:T34 Arg2:T31	
+R33	Arg1_PPT_X Arg1:T6 Arg2:T2	
+#4	AnnotatorNotes R33	the eggs; the egg mixture; the egg mixture with sugar
+#7	AnnotatorNotes R32	each serving; each serving with nutmeg; the egg mixture with nutmeg
+#8	AnnotatorNotes R28	the egg mixture; the egg mixture with whipped cream

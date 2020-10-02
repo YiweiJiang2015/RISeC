@@ -1,0 +1,68 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 18	a grill
+T3	TEMPERATURE 23 32	high heat
+T4	TOOL 40 52	a large bowl
+T5	AC 54 57	mix
+T6	FOOD 67 85	the Cheddar cheese
+T7	FOOD 87 102	Parmesan cheese
+T8	FOOD 104 109	onion
+T9	FOOD 111 114	egg
+T10	FOOD 116 123	ketchup
+T11	FOOD 125 145	Worcestershire sauce
+T12	FOOD 147 151	salt
+T13	FOOD 156 162	pepper
+T14	AC 167 177	Crumble in
+T15	FOOD 178 193	the ground beef
+T16	AC 199 202	mix
+T17	TOOL 215 219	hand
+R1	ArgM_MEANS Arg1:T16 Arg2:T17	
+T18	AC 224 228	Form
+T19	FOOD 234 243	6 patties
+T20	AC 249 253	wrap
+T21	FOOD 254 270	a slice of bacon
+T22	FOOD 278 286	each one
+R2	TODO Arg1:T19 Arg2:T22	
+T23	AC 291 297	Secure
+T24	FOOD 298 303	bacon
+T25	TOOL 309 319	toothpicks
+T26	AC 324 329	Place
+T27	FOOD 330 337	patties
+T28	TOOL 341 350	the grill
+T29	AC 356 360	cook
+T30	DUR 365 374	5 minutes
+T31	OTHER 375 383	per side
+T32	CONDITION_CLAUSE 388 403	until well done
+T33	AC 408 414	Remove
+T34	TOOL 415 425	toothpicks
+T35	CONDITION_CLAUSE 426 458	before serving on hamburger buns
+R3	Arg1_PPT Arg1:T1 Arg2:T2	
+R4	ArgM_MNR Arg1:T1 Arg2:T3	
+R5	ArgM_LOC Arg1:T5 Arg2:T4	
+R6	Arg1_PPT Arg1:T5 Arg2:T6	
+R7	Arg1_PPT Arg1:T5 Arg2:T7	
+R8	Arg1_PPT Arg1:T5 Arg2:T8	
+R9	Arg1_PPT Arg1:T5 Arg2:T9	
+R10	Arg1_PPT Arg1:T5 Arg2:T10	
+R11	Arg1_PPT Arg1:T5 Arg2:T11	
+R12	Arg1_PPT Arg1:T5 Arg2:T12	
+R13	Arg1_PPT Arg1:T5 Arg2:T13	
+R14	Arg1_PPT Arg1:T14 Arg2:T15	
+R15	Arg2_PPT_Z Arg1:T14 Arg2:T5	
+R16	Arg1_PPT_X Arg1:T16 Arg2:T14	
+R17	Arg3_PRD Arg1:T18 Arg2:T19	
+R18	Arg1_PPT_X Arg1:T18 Arg2:T16	
+R19	Arg1_GOL Arg1:T20 Arg2:T22	
+R20	Arg2_PPT Arg1:T20 Arg2:T21	
+R21	Arg1_PPT Arg1:T23 Arg2:T24	
+R22	ArgM_MEANS Arg1:T23 Arg2:T25	
+R23	Arg1_PPT Arg1:T26 Arg2:T27	
+R24	Arg3_GOL Arg1:T26 Arg2:T28	
+R25	ArgM_TMP Arg1:T29 Arg2:T30	
+R26	ArgM_TMP Arg1:T29 Arg2:T32	
+R27	Arg1_PPT_X Arg1:T29 Arg2:T26	
+R28	Arg1_PPT Arg1:T33 Arg2:T34	
+R29	ArgM_TMP Arg1:T33 Arg2:T35	
+#1	AnnotatorNotes R15	the mixture; the cheese mixture
+#2	AnnotatorNotes R16	the mixture; the beef mixture; the beef and cheese mixture
+#3	AnnotatorNotes R18	the mixture; the beef mixture; the meat mixture
+#4	AnnotatorNotes R27	the patties; the beef patties; the burgers; the hamburgers

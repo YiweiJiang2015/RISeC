@@ -1,0 +1,70 @@
+T1	AC 3 10	Preheat
+T2	AC 53 59	Grease
+T3	AC 64 69	flour
+T4	TEMPERATURE 19 32	350 degrees F
+T5	TOOL 11 15	oven
+T6	TOOL 70 85	a 9x13 inch pan
+T7	AC 90 94	Sift
+T8	FOOD 104 113	the flour
+T9	FOOD 115 126	baking soda
+T10	FOOD 128 136	cinnamon
+T11	FOOD 141 145	salt
+T12	AC 150 157	Combine
+T13	FOOD 158 168	the apples
+T14	FOOD 173 188	the white sugar
+T15	AC 190 199	set aside
+T16	TOOL 207 219	a large bowl
+T17	AC 221 224	mix
+T18	FOOD 234 249	the brown sugar
+T19	FOOD 251 254	oil
+T20	FOOD 256 260	eggs
+T21	FOOD 265 272	vanilla
+T23	FOOD 285 302	the apple mixture
+T22	AC 277 284	Stir in
+T24	AC 331 338	Fold in
+T25	AC 355 359	Pour
+T26	AC 389 393	Bake
+T27	AC 520 524	cool
+T28	FOOD 309 326	the flour mixture
+T29	FOOD 339 350	the walnuts
+T30	FOOD 360 366	batter
+T31	TOOL 372 384	prepared pan
+T32	TOOL 397 415	the preheated oven
+T33	DUR 420 430	45 minutes
+T34	CONDITION_CLAUSE 435 505	until a toothpick inserted into the center of the cake comes out clean
+R1	Arg1_PPT Arg1:T7 Arg2:T8	
+R2	Arg1_PPT Arg1:T7 Arg2:T9	
+R3	Arg1_PPT Arg1:T7 Arg2:T10	
+R4	Arg1_PPT Arg1:T7 Arg2:T11	
+R5	Arg1_PPT Arg1:T12 Arg2:T13	
+R6	Arg1_PPT Arg1:T12 Arg2:T14	
+R7	Arg1_PPT_X Arg1:T15 Arg2:T12	
+R8	Arg1_PPT Arg1:T17 Arg2:T18	
+R9	Arg1_PPT Arg1:T17 Arg2:T19	
+R10	Arg1_PPT Arg1:T17 Arg2:T20	
+R11	Arg1_PPT Arg1:T17 Arg2:T21	
+R12	ArgM_LOC Arg1:T17 Arg2:T16	
+R13	Arg1_PPT Arg1:T22 Arg2:T23	
+R14	Arg1_PPT Arg1:T22 Arg2:T28	
+R15	Arg2_PPT_Z Arg1:T22 Arg2:T17	
+R16	Arg1_PPT Arg1:T24 Arg2:T29	
+R17	Arg2_PPT_Z Arg1:T24 Arg2:T22	
+R18	Arg1_PPT Arg1:T25 Arg2:T30	
+R19	Arg3_GOL Arg1:T25 Arg2:T31	
+R20	Arg1_PPT_X Arg1:T26 Arg2:T25	
+R21	ArgM_LOC Arg1:T26 Arg2:T32	
+R22	ArgM_TMP Arg1:T26 Arg2:T33	
+R23	ArgM_TMP Arg1:T26 Arg2:T34	
+R24	Arg1_PPT_X Arg1:T27 Arg2:T26	
+R25	Arg1_PPT Arg1:T1 Arg2:T5	
+R27	Arg1_PPT_X Arg1:T3 Arg2:T2	
+T35	TEMPERATURE 34 47	175 degrees C
+R28	ArgM_MNR Arg1:T1 Arg2:T4	
+R29	ArgM_MNR Arg1:T1 Arg2:T35	
+R26	Arg1_PPT Arg1:T2 Arg2:T6	
+#1	AnnotatorNotes R27	The pan; The greased pan
+#2	AnnotatorNotes R15	The mixture; The mixture of brown sugar
+#3	AnnotatorNotes R17	The mixture; The stirred mixture
+#4	AnnotatorNotes R20	The batter; The batter poured in the pan
+#5	AnnotatorNotes R24	The batter; The baked batter
+#6	AnnotatorNotes R7	the apple mixture; the apple with sugar

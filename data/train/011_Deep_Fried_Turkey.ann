@@ -1,0 +1,100 @@
+T1	TOOL 6 22	a large stockpot
+T2	TOOL 26 38	turkey fryer
+T3	AC 40 44	heat
+T4	FOOD 45 48	oil
+T5	TEMPERATURE 52 65	400 degrees F
+T6	TEMPERATURE 67 80	200 degrees C
+T7	AC 97 102	leave
+T8	OTHER 103 107	room
+T9	FOOD 112 122	the turkey
+T10	FOOD 127 134	the oil
+T11	AC 140 145	spill
+T12	AC 155 160	Layer
+T13	TOOL 161 176	a large platter
+T14	TOOL 182 202	food-safe paper bags
+T15	AC 207 212	Rinse
+T16	FOOD 213 219	turkey
+T17	AC 236 239	pat
+T18	OTHER 240 243	dry
+T19	TOOL 249 261	paper towels
+T20	AC 266 269	Rub
+T21	FOOD 270 286	Creole seasoning
+T22	FOOD 292 298	turkey
+T26	AC 423 428	Place
+T27	FOOD 429 444	the whole onion
+T28	FOOD 449 455	turkey
+T29	TOOL 459 471	drain basket
+T30	FOOD 476 486	The turkey
+T31	AC 497 503	placed
+T32	TOOL 507 513	basket
+T33	AC 540 545	lower
+T34	TOOL 546 552	basket
+T35	FOOD 558 565	hot oil
+T36	PURPOSE_CLAUSE 566 592	to completely cover turkey
+T38	AC 598 606	Maintain
+T39	OTHER 607 622	the temperature
+T40	FOOD 626 633	the oil
+T41	TEMPERATURE 637 650	350 degrees F
+T42	TEMPERATURE 652 665	175 degrees C
+T43	AC 672 676	cook
+T44	FOOD 677 683	turkey
+T46	DUR 719 729	45 minutes
+T45	DUR 688 711	3 1/2 minutes per pound
+T47	AC 745 751	remove
+T48	TOOL 752 758	basket
+T49	FOOD 764 767	oil
+T50	AC 773 778	drain
+T51	FOOD 779 785	turkey
+T52	AC 791 797	Insert
+T53	TOOL 798 816	a meat thermometer
+T54	FOOD 822 852	the thickest part of the thigh
+T56	OTHER 854 878	the internal temperature
+T57	TEMPERATURE 887 900	180 degrees F
+T58	TEMPERATURE 902 914	80 degrees C
+T60	AC 928 936	draining
+T61	FOOD 937 943	turkey
+T62	TOOL 947 967	the prepared platter
+R1	Arg1_PPT Arg1:T3 Arg2:T4	
+R2	ArgM_MNR Arg1:T3 Arg2:T5	
+R3	ArgM_MNR Arg1:T3 Arg2:T6	
+R4	ArgM_LOC Arg1:T3 Arg2:T2	
+R5	ArgM_LOC Arg1:T3 Arg2:T1	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	ArgM_PRP Arg1:T7 Arg2:T9	
+R8	ArgM_LOC Arg1:T11 Arg2:T10	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	ArgM_MEANS Arg1:T12 Arg2:T14	
+R11	Arg1_PPT Arg1:T15 Arg2:T16	
+R12	Arg1_PPT_X Arg1:T17 Arg2:T15	
+R13	ArgM_MNR Arg1:T17 Arg2:T18	
+R14	ArgM_MEANS Arg1:T17 Arg2:T19	
+R15	Arg1_PPT Arg1:T20 Arg2:T21	
+R16	Arg2_GOL Arg1:T20 Arg2:T22	
+R18	Arg1_PPT Arg1:T26 Arg2:T27	
+R19	Arg1_PPT Arg1:T26 Arg2:T28	
+R20	Arg3_GOL Arg1:T26 Arg2:T29	
+R21	Arg1_PPT Arg1:T31 Arg2:T30	
+R22	Arg3_GOL Arg1:T31 Arg2:T32	
+R23	Arg1_PPT Arg1:T33 Arg2:T34	
+R24	Arg3_GOL Arg1:T33 Arg2:T35	
+R25	ArgM_PRP Arg1:T33 Arg2:T36	
+R27	Arg1_PPT Arg1:T38 Arg2:T39	
+R28	TODO Arg1:T40 Arg2:T39	
+R29	ArgM_MNR Arg1:T38 Arg2:T41	
+R30	ArgM_MNR Arg1:T38 Arg2:T42	
+R31	Arg1_PPT Arg1:T43 Arg2:T44	
+R32	ArgM_TMP Arg1:T43 Arg2:T45	
+R33	ArgM_TMP Arg1:T43 Arg2:T46	
+R34	Arg1_PPT Arg1:T47 Arg2:T48	
+R35	Arg2_DIR Arg1:T47 Arg2:T49	
+R36	Arg1_PPT Arg1:T50 Arg2:T51	
+R37	Arg1_PPT Arg1:T52 Arg2:T53	
+R38	Arg2_GOL Arg1:T52 Arg2:T54	
+R40	TODO Arg1:T56 Arg2:T57	
+R41	TODO Arg1:T56 Arg2:T58	
+R42	Arg1_PPT Arg1:T60 Arg2:T61	
+R43	ArgM_LOC Arg1:T60 Arg2:T62	
+T23	PURPOSE_CLAUSE 375 418	so the oil can flow freely through the bird
+T24	CONDITION_CLAUSE 318 374	Make sure the hole at the neck is open at least 2 inches
+R17	TODO Arg1:T24 Arg2:T23	
+#1	AnnotatorNotes R12	the turkey; the rinsed turkey

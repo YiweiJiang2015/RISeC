@@ -1,0 +1,73 @@
+T1	AC 3 7	Melt
+T2	FOOD 8 14	butter
+T3	AC 19 24	saute
+T4	FOOD 25 37	Broccoflower
+T5	FOOD 39 48	mushrooms
+T6	FOOD 50 56	onions
+T7	FOOD 61 67	garlic
+T8	DUR 72 82	10 minutes
+T9	AC 87 93	Remove
+T10	FOOD 94 113	sauteed ingredients
+T11	AC 118 129	place aside
+T12	TOOL 137 145	same pan
+T13	AC 147 151	cook
+T14	FOOD 152 160	the rice
+T15	FOOD 171 184	chicken stock
+T16	OTHER 185 202	one-cup at a time
+T17	AC 203 211	stirring
+T18	CONDITION_CLAUSE 212 235	until well incorporated
+T19	CONDITION_CLAUSE 236 262	before adding the next cup
+T20	AC 164 170	adding
+T21	CONDITION_CLAUSE 267 316	Once chicken stock is absorbed and rice is tender
+T22	AC 318 325	stir in
+R1	ArgM_TMP Arg1:T22 Arg2:T21	
+T23	FOOD 326 332	nutmeg
+T24	FOOD 334 339	herbs
+T25	AC 344 350	season
+T26	FOOD 356 360	salt
+T27	FOOD 365 371	pepper
+T28	CONDITION_CLAUSE 376 403	Once rice risotto is cooked
+T29	AC 405 412	stir in
+T30	FOOD 413 436	the sauteed ingredients
+T31	FOOD 438 442	salt
+T32	FOOD 447 453	pepper
+T33	PURPOSE_CLAUSE 454 462	to taste
+T34	AC 467 474	Stir in
+T35	FOOD 475 490	Parmesan cheese
+T36	CONDITION_CLAUSE 491 505	before serving
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	Arg1_PPT Arg1:T3 Arg2:T4	
+R4	Arg1_PPT Arg1:T3 Arg2:T5	
+R5	Arg1_PPT Arg1:T3 Arg2:T6	
+R6	Arg1_PPT Arg1:T3 Arg2:T7	
+R7	ArgM_TMP Arg1:T3 Arg2:T8	
+R8	Arg1_PPT Arg1:T9 Arg2:T10	
+R9	Arg1_PPT_X Arg1:T11 Arg2:T9	
+R10	ArgM_LOC Arg1:T13 Arg2:T12	
+R11	Arg1_PPT Arg1:T13 Arg2:T14	
+R12	Arg1_PPT Arg1:T20 Arg2:T15	
+R13	ArgM_MNR Arg1:T20 Arg2:T16	
+R14	Simultaneous Arg1:T13 Arg2:T20	
+R15	Simultaneous Arg1:T13 Arg2:T17	
+R16	ArgM_TMP Arg1:T17 Arg2:T18	
+R17	ArgM_TMP Arg1:T17 Arg2:T19	
+R18	Arg1_PPT Arg1:T22 Arg2:T23	
+R19	Arg1_PPT Arg1:T22 Arg2:T24	
+R20	Arg2_PPT Arg1:T25 Arg2:T26	
+R21	Arg2_PPT Arg1:T25 Arg2:T27	
+R22	Arg1_GOL_X Arg1:T25 Arg2:T22	
+R23	Arg2_PPT_Z Arg1:T22 Arg2:T13	
+R24	Arg1_PPT Arg1:T29 Arg2:T30	
+R25	Arg1_PPT Arg1:T29 Arg2:T31	
+R26	Arg1_PPT Arg1:T29 Arg2:T32	
+R27	ArgM_PRP Arg1:T29 Arg2:T33	
+R28	ArgM_TMP Arg1:T29 Arg2:T28	
+R29	Arg1_PPT Arg1:T34 Arg2:T35	
+R30	ArgM_TMP Arg1:T34 Arg2:T36	
+R31	Arg2_PPT_Z Arg1:T29 Arg2:T25	
+R32	Arg2_PPT_Z Arg1:T34 Arg2:T29	
+#1	AnnotatorNotes R9	fried ingredients; sauteed ingredients
+#2	AnnotatorNotes R23	the rice; the rice with stock
+#3	AnnotatorNotes R22	the rice; the rice with herbs
+#4	AnnotatorNotes R31	the rise; the seasoned rice
+#5	AnnotatorNotes R32	risotto; seasoned risotto; 

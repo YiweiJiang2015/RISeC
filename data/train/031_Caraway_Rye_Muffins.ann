@@ -1,0 +1,56 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 27	combine
+T3	FOOD 28 38	the flours
+T4	FOOD 40 45	sugar
+T5	FOOD 47 60	baking powder
+T6	FOOD 62 66	salt
+T7	FOOD 71 84	caraway seeds
+T8	AC 89 96	Stir in
+T9	FOOD 97 103	cheese
+T10	AC 108 115	Combine
+T11	FOOD 116 123	the egg
+T12	FOOD 125 129	milk
+T13	FOOD 134 137	oil
+T14	AC 139 143	stir
+T15	FOOD 149 168	the dry ingredients
+T16	CONDITION_CLAUSE 174 189	until moistened
+T17	AC 194 198	Fill
+T18	TOOL 199 233	greased or paper-lined muffin cups
+T20	AC 254 258	Bake
+T21	TEMPERATURE 262 275	400 degrees F
+T22	DUR 280 293	20-23 minutes
+T23	CONDITION_CLAUSE 297 349	a toothpick inserted near the center comes out clean
+T24	AC 354 358	Cool
+T25	DUR 363 372	5 minutes
+T26	CONDITION_CLAUSE 373 412	before removing from pan to a wire rack
+T27	AC 417 422	Serve
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	ArgM_LOC Arg1:T2 Arg2:T1	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	Arg1_PPT Arg1:T10 Arg2:T11	
+R9	Arg2_PPT_Z Arg1:T8 Arg2:T2	
+R10	Arg1_PPT Arg1:T10 Arg2:T12	
+R11	Arg1_PPT Arg1:T10 Arg2:T13	
+R12	Arg2_PPT Arg1:T14 Arg2:T15	
+R13	Arg1_PPT_X Arg1:T14 Arg2:T10	
+R14	ArgM_TMP Arg1:T14 Arg2:T16	
+R15	Arg1_PPT Arg1:T17 Arg2:T18	
+R17	ArgM_MNR Arg1:T20 Arg2:T21	
+R18	ArgM_TMP Arg1:T20 Arg2:T22	
+R19	ArgM_TMP Arg1:T20 Arg2:T23	
+R20	Arg1_PPT_X Arg1:T20 Arg2:T17	
+R21	Arg2_PPT_Z Arg1:T17 Arg2:T14	
+R22	Arg1_PPT_X Arg1:T24 Arg2:T20	
+R23	ArgM_TMP Arg1:T24 Arg2:T25	
+R24	ArgM_TMP Arg1:T24 Arg2:T26	
+R26	Arg1_PPT_X Arg1:T27 Arg2:T24	
+#1	AnnotatorNotes R9	the flour mixture
+#2	AnnotatorNotes R13	the egg mixture
+#3	AnnotatorNotes R21	the dough; the muffin dough
+#4	AnnotatorNotes R20	the muffins
+#5	AnnotatorNotes R22	the muffins
+#6	AnnotatorNotes R26	the muffins

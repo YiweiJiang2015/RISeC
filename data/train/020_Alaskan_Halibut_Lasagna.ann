@@ -1,0 +1,115 @@
+T1	TOOL 6 21	a large skillet
+T2	OTHER 27 38	medium heat
+T3	AC 40 44	melt
+T4	FOOD 45 65	2 tablespoons butter
+T5	AC 70 73	Add
+T6	FOOD 74 81	halibut
+T7	FOOD 83 89	garlic
+T8	FOOD 94 99	thyme
+T9	AC 104 108	Cook
+T10	CONDITION_CLAUSE 109 145	until fish flakes easily with a fork
+T11	DUR 153 163	10 minutes
+T12	AC 168 174	Remove
+T13	AC 179 188	set aside
+T14	AC 193 196	Add
+T15	FOOD 197 217	the remaining butter
+T16	TOOL 221 232	the skillet
+T17	AC 237 241	Stir
+T18	FOOD 245 250	flour
+T19	FOOD 255 259	salt
+T20	CONDITION_CLAUSE 260 272	until smooth
+T21	AC 274 278	cook
+T22	AC 283 287	stir
+T23	CONDITION_CLAUSE 288 306	until golden brown
+T24	AC 321 324	add
+T25	FOOD 325 330	broth
+T26	FOOD 335 340	cream
+T29	AC 362 366	cook
+T30	AC 371 375	stir
+T31	DUR 380 389	2 minutes
+T32	CONDITION_CLAUSE 393 408	until thickened
+T33	TOOL 416 443	a greased 13-in baking dish
+T34	AC 445 450	layer
+T35	FOOD 451 470	half of the noodles
+T37	FOOD 472 479	halibut
+T38	FOOD 481 492	white sauce
+T39	FOOD 497 503	cheese
+T40	AC 509 515	Repeat
+T41	FOOD 516 522	layers
+T42	AC 528 533	Cover
+T43	AC 538 542	bake
+T44	TEMPERATURE 546 559	350 degrees F
+T45	DUR 564 574	20 minutes
+T46	AC 580 587	Uncover
+T47	AC 589 593	bake
+T48	DUR 594 604	20 minutes
+T49	CONDITION_CLAUSE 615 627	until bubbly
+T50	AC 637 642	stand
+T51	DUR 643 653	15 minutes
+T52	CONDITION_CLAUSE 654 668	before serving
+T53	AC 674 682	Sprinkle
+T54	FOOD 688 695	parsley
+R1	Arg1_PPT Arg1:T3 Arg2:T4	
+R2	ArgM_LOC Arg1:T3 Arg2:T1	
+R3	ArgM_MNR Arg1:T3 Arg2:T2	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T5 Arg2:T8	
+R7	Arg2_PPT_Z Arg1:T5 Arg2:T3	
+R8	ArgM_TMP Arg1:T9 Arg2:T10	
+R9	ArgM_TMP Arg1:T9 Arg2:T11	
+R10	Arg1_PPT_X Arg1:T12 Arg2:T9	
+R11	Arg1_PPT_X Arg1:T13 Arg2:T12	
+R12	Arg1_PPT Arg1:T14 Arg2:T15	
+R13	Arg2_PPT Arg1:T14 Arg2:T16	
+R14	Arg1_PPT Arg1:T17 Arg2:T18	
+R15	Arg1_PPT Arg1:T17 Arg2:T19	
+R16	ArgM_TMP Arg1:T17 Arg2:T20	
+R17	Arg1_PPT_X Arg1:T17 Arg2:T14	
+R18	Arg1_PPT_X Arg1:T21 Arg2:T17	
+R19	Simultaneous Arg1:T22 Arg2:T21	
+R21	Arg1_PPT Arg1:T24 Arg2:T25	
+R22	Arg1_PPT Arg1:T24 Arg2:T26	
+T27	AC 356 360	boil
+R24	Arg1_PPT_X Arg1:T27 Arg2:T24	
+R20	ArgM_TMP Arg1:T21 Arg2:T23	
+R23	Arg2_PPT_Z Arg1:T24 Arg2:T21	
+R25	Simultaneous Arg1:T29 Arg2:T30	
+R26	ArgM_TMP Arg1:T29 Arg2:T31	
+R27	ArgM_TMP Arg1:T29 Arg2:T32	
+R28	Arg1_PPT_X Arg1:T29 Arg2:T27	
+R29	Arg1_PPT Arg1:T34 Arg2:T35	
+R31	Arg1_PPT Arg1:T34 Arg2:T37	
+R32	Arg1_PPT Arg1:T34 Arg2:T38	
+R33	Arg1_PPT Arg1:T34 Arg2:T39	
+R34	ArgM_LOC Arg1:T34 Arg2:T33	
+R35	Arg1_PPT Arg1:T40 Arg2:T41	
+R36	Arg1_PPT_X Arg1:T42 Arg2:T40	
+R37	Arg1_PPT_X Arg1:T43 Arg2:T42	
+R38	ArgM_MNR Arg1:T43 Arg2:T44	
+R39	ArgM_TMP Arg1:T43 Arg2:T45	
+R40	ArgM_TMP Arg1:T47 Arg2:T48	
+R41	Arg1_PPT_X Arg1:T46 Arg2:T43	
+R42	ArgM_TMP Arg1:T47 Arg2:T49	
+R43	Arg1_PPT_X Arg1:T47 Arg2:T46	
+R44	ArgM_TMP Arg1:T50 Arg2:T51	
+R45	ArgM_TMP Arg1:T50 Arg2:T52	
+R46	Arg1_PPT Arg1:T53 Arg2:T54	
+R48	Arg2_GOL_X Arg1:T53 Arg2:T50	
+#1	AnnotatorNotes R10	the fish
+#2	AnnotatorNotes R7	the butter; the melted butter; the hot butter
+#3	AnnotatorNotes R11	the fish
+#4	AnnotatorNotes R17	the butter
+#5	AnnotatorNotes R23	the rough
+#6	AnnotatorNotes R18	the mixture; the flour and butter; the roux
+R30	Arg1_PPT_X Arg1:T22 Arg2:T21	
+#7	AnnotatorNotes R30	the roux
+#8	AnnotatorNotes R24	the sauce; the cream sauce
+#9	AnnotatorNotes R28	the sauce; the cream sauce
+R47	Arg1_PPT_X Arg1:T30 Arg2:T29	
+#10	AnnotatorNotes R47	the sauce; the cream sauce; the white sauce
+#11	AnnotatorNotes R36	the lasagna; the baking dish
+#12	AnnotatorNotes R37	the lasagna; the halibut lasagna
+#13	AnnotatorNotes R41	the lasagna
+#14	AnnotatorNotes R43	the lasagna; the halibut lasagna
+#15	AnnotatorNotes R48	the lasagna; the halibut lasagna

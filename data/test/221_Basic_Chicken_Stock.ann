@@ -1,0 +1,100 @@
+T1	AC 3 10	Quarter
+T2	AC 21 25	Chop
+T3	AC 76 81	Place
+T4	AC 174 177	Add
+T6	AC 215 221	Reduce
+T7	AC 261 267	Remove
+T8	AC 295 301	Strain
+T9	AC 312 316	Skim
+T10	AC 342 350	Separate
+T11	AC 428 435	combine
+T12	AC 493 496	Add
+T13	AC 531 535	boil
+T14	AC 541 547	Remove
+T15	AC 567 572	stand
+T16	AC 588 594	Strain
+T17	FOOD 11 16	onion
+T18	FOOD 26 41	scrubbed celery
+T19	FOOD 46 52	carrot
+T20	OTHER 58 71	1 inch chunks
+T21	FOOD 82 96	chicken pieces
+T22	FOOD 98 103	onion
+T23	FOOD 105 111	celery
+T24	FOOD 113 119	carrot
+T25	FOOD 121 125	salt
+T26	FOOD 131 137	cloves
+T27	TOOL 141 155	large soup pot
+T28	TOOL 159 169	Dutch oven
+T29	FOOD 178 190	6 cups water
+T5	AC 206 210	boil
+T30	OTHER 222 226	heat
+T31	AC 228 233	cover
+T32	AC 239 245	simmer
+T33	DUR 250 256	1 hour
+T34	FOOD 268 275	chicken
+T35	FOOD 280 290	vegetables
+T36	FOOD 302 307	stock
+T37	FOOD 317 320	fat
+T38	OTHER 325 336	the surface
+T39	FOOD 351 364	the egg white
+T40	FOOD 370 382	the egg yolk
+T41	AC 388 395	reserve
+T42	FOOD 396 405	the shell
+T43	TOOL 414 426	a small bowl
+T44	FOOD 436 454	1/4 cup cold water
+T45	FOOD 456 465	egg white
+T46	FOOD 471 487	crushed eggshell
+T47	FOOD 500 514	strained stock
+T48	TOOL 553 557	heat
+T49	DUR 573 582	5 minutes
+T50	TOOL 628 639	cheesecloth
+T51	TOOL 609 616	a sieve
+R1	Arg1_PPT Arg1:T1 Arg2:T17	
+R2	Arg1_PPT Arg1:T2 Arg2:T18	
+R3	Arg1_PPT Arg1:T2 Arg2:T19	
+R4	Arg2_PRD Arg1:T2 Arg2:T20	
+R5	Arg1_PPT Arg1:T3 Arg2:T21	
+R6	Arg1_PPT Arg1:T3 Arg2:T22	
+R7	Arg1_PPT Arg1:T3 Arg2:T23	
+R8	Arg1_PPT Arg1:T3 Arg2:T24	
+R9	Arg1_PPT Arg1:T3 Arg2:T25	
+R10	Arg1_PPT Arg1:T3 Arg2:T26	
+R11	Arg3_GOL Arg1:T3 Arg2:T27	
+R12	Arg3_GOL Arg1:T3 Arg2:T28	
+R13	Arg1_PPT Arg1:T4 Arg2:T29	
+R14	Arg2_PPT_Z Arg1:T4 Arg2:T3	
+R15	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R16	Arg1_PPT Arg1:T6 Arg2:T30	
+R17	Arg1_PPT_X Arg1:T31 Arg2:T5	
+R18	Arg1_PPT_X Arg1:T32 Arg2:T31	
+R19	ArgM_TMP Arg1:T32 Arg2:T33	
+R20	Arg1_PPT Arg1:T7 Arg2:T34	
+R21	Arg1_PPT Arg1:T7 Arg2:T35	
+R22	Arg1_PPT Arg1:T8 Arg2:T36	
+R23	Arg1_PPT Arg1:T9 Arg2:T37	
+R24	Arg2_DIR Arg1:T9 Arg2:T38	
+R25	Arg1_PPT Arg1:T10 Arg2:T39	
+R26	Arg2_DIR Arg1:T10 Arg2:T40	
+R27	Arg1_PPT Arg1:T41 Arg2:T42	
+R28	Arg1_PPT Arg1:T11 Arg2:T44	
+R29	Arg1_PPT Arg1:T11 Arg2:T45	
+R30	Arg1_PPT Arg1:T11 Arg2:T46	
+R31	ArgM_LOC Arg1:T11 Arg2:T43	
+R32	Arg2_PPT Arg1:T12 Arg2:T47	
+R33	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R34	Arg1_PPT_X Arg1:T13 Arg2:T12	
+R35	Arg1_PPT_X Arg1:T14 Arg2:T13	
+R36	Arg2_DIR Arg1:T14 Arg2:T48	
+R37	Arg0_PAG Arg1:T15 Arg2:T14	
+R38	ArgM_TMP Arg1:T15 Arg2:T49	
+R39	ArgM_MEANS Arg1:T16 Arg2:T51	
+R40	Arg1_PPT_X Arg1:T16 Arg2:T15	
+R41	TODO Arg1:T51 Arg2:T50	
+#1	AnnotatorNotes R14	the chicken pieces; the chicken in the pot; the chicken and carrot mix
+#2	AnnotatorNotes R15	the chicken pieces; the chicken pieces in water
+#3	AnnotatorNotes R17	the boiling mix; the chicken in the boling water
+#4	AnnotatorNotes R18	the chicken mix; the covered chicken soup
+#5	AnnotatorNotes R33	the egg white; the egg white in cold water
+#6	AnnotatorNotes R34	the strained stock; the chicken stock with egg white; the strained stock with egg mix
+#7	AnnotatorNotes R35	the boiling mix; the boiling stock; the chicken stock
+#8	AnnotatorNotes R40	the cooled mix; the cooled chicken stock

@@ -1,0 +1,164 @@
+T1	AC 19 23	melt
+T2	AC 44 48	cool
+T3	AC 86 91	cream
+T4	AC 114 117	Add
+T5	AC 154 161	Beat in
+T6	AC 189 192	add
+T7	AC 213 218	Cover
+T8	AC 223 234	refrigerate
+T9	AC 272 280	roll out
+T10	AC 312 315	Cut
+T11	AC 448 452	Bake
+T12	AC 526 530	Cool
+T13	AC 545 551	remove
+T14	AC 604 611	combine
+T15	AC 667 670	mix
+T16	AC 691 698	beat in
+T17	AC 710 715	Place
+T18	AC 749 752	cut
+T19	AC 788 792	Pipe
+T20	AC 826 833	Fill in
+T21	AC 908 913	place
+T22	AC 879 883	Tint
+T23	AC 936 940	Pipe
+T24	AC 1029 1033	Tint
+T25	AC 1089 1093	Tint
+T26	AC 141 144	mix
+T27	AC 200 203	mix
+T28	TOOL 6 17	a microwave
+T29	TOOL 71 84	a mixing bowl
+T30	FOOD 92 98	butter
+T31	FOOD 103 109	sugars
+T32	DUR 53 63	10 minutes
+T33	FOOD 24 42	butterscotch chips
+T34	FOOD 118 121	egg
+T35	FOOD 123 127	milk
+T36	FOOD 132 139	vanilla
+T37	FOOD 162 174	melted chips
+T38	DUR 239 245	1 hour
+T39	TOOL 253 270	a floured surface
+T40	FOOD 281 286	dough
+T41	OTHER 290 307	1/4-in. thickness
+T42	TOOL 321 370	a floured 4-1/2-in. gingerbread man cookie cutter
+T43	TOOL 375 395	a 3-in. round cutter
+T44	AC 400 405	Place
+T45	TOOL 421 442	greased baking sheets
+T46	TEMPERATURE 456 469	375 degrees F
+T47	DUR 474 485	5-8 minutes
+T48	CONDITION_CLAUSE 489 520	until edges are lightly browned
+T49	DUR 535 543	1 minute
+T50	PURPOSE_CLAUSE 566 584	to cool completely
+T51	TOOL 555 565	wire racks
+T52	FOOD 594 602	frosting
+T53	FOOD 612 622	shortening
+T54	FOOD 624 629	water
+T55	FOOD 631 636	flour
+T56	FOOD 641 648	vanilla
+T57	TOOL 652 665	a mixing bowl
+T58	FOOD 699 704	sugar
+T59	FOOD 716 730	1 cup frosting
+T60	TOOL 734 747	a plastic bag
+T61	OTHER 753 765	a small hole
+T62	TOOL 769 782	corner of bag
+T63	OTHER 793 820	shirt and shorts on players
+T66	AC 846 852	smooth
+T67	TOOL 858 873	a metal spatula
+T68	FOOD 884 900	1/4 cup frosting
+T69	TOOL 917 930	a plastic bag
+T72	PURPOSE_CLAUSE 964 985	to create basketballs
+T73	AC 987 991	pipe
+T78	FOOD 1034 1050	1/4 cup frosting
+T79	AC 1056 1060	pipe
+T80	OTHER 1061 1083	a mouth on each player
+T82	AC 1150 1154	pipe
+T83	FOOD 1094 1112	remaining frosting
+T84	PURPOSE_CLAUSE 1113 1148	to match team colors of your choice
+T87	AC 1184 1187	add
+R1	ArgM_LOC Arg1:T1 Arg2:T28	
+R2	Arg1_PPT Arg1:T1 Arg2:T33	
+R3	ArgM_TMP Arg1:T2 Arg2:T32	
+R4	Arg1_PPT_X Arg1:T2 Arg2:T1	
+R5	ArgM_LOC Arg1:T3 Arg2:T29	
+R6	Arg1_PPT Arg1:T3 Arg2:T30	
+R7	Arg1_PPT Arg1:T3 Arg2:T31	
+R8	Arg1_PPT Arg1:T4 Arg2:T34	
+R9	Arg1_PPT Arg1:T4 Arg2:T35	
+R10	Arg1_PPT Arg1:T4 Arg2:T36	
+R11	Arg1_PPT_X Arg1:T26 Arg2:T4	
+R12	Arg2_PPT_Z Arg1:T4 Arg2:T3	
+R13	Arg1_PPT Arg1:T5 Arg2:T37	
+T91	FOOD 193 198	flour
+R14	Arg1_PPT Arg1:T6 Arg2:T91	
+R15	Arg2_PPT_Z Arg1:T5 Arg2:T26	
+R16	Arg2_PPT_Z Arg1:T6 Arg2:T5	
+R17	Arg1_PPT_X Arg1:T27 Arg2:T6	
+R18	Arg1_PPT_X Arg1:T7 Arg2:T27	
+R19	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R20	ArgM_TMP Arg1:T8 Arg2:T38	
+R21	ArgM_LOC Arg1:T9 Arg2:T39	
+R22	Arg1_PPT Arg1:T9 Arg2:T40	
+R23	Arg2_PRD Arg1:T9 Arg2:T41	
+R24	ArgM_MEANS Arg1:T10 Arg2:T42	
+R25	ArgM_MEANS Arg1:T10 Arg2:T43	
+R26	Arg1_PPT_X Arg1:T10 Arg2:T9	
+R27	Arg3_GOL Arg1:T44 Arg2:T45	
+R28	Arg1_PPT_X Arg1:T44 Arg2:T10	
+R29	Arg1_PPT_X Arg1:T11 Arg2:T44	
+R30	ArgM_MNR Arg1:T11 Arg2:T46	
+R31	ArgM_TMP Arg1:T11 Arg2:T47	
+R32	ArgM_TMP Arg1:T11 Arg2:T48	
+R33	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R34	ArgM_TMP Arg1:T12 Arg2:T49	
+R35	Arg1_PPT_X Arg1:T13 Arg2:T12	
+R36	Arg3_GOL Arg1:T13 Arg2:T51	
+R37	ArgM_PRP Arg1:T13 Arg2:T50	
+R38	Arg1_PPT Arg1:T14 Arg2:T53	
+R39	Arg1_PPT Arg1:T14 Arg2:T54	
+R40	Arg1_PPT Arg1:T14 Arg2:T55	
+R41	Arg1_PPT Arg1:T14 Arg2:T56	
+R42	ArgM_LOC Arg1:T14 Arg2:T57	
+R43	Arg1_PPT_X Arg1:T15 Arg2:T14	
+R44	Arg1_PPT Arg1:T16 Arg2:T58	
+R45	Arg2_PPT_Z Arg1:T16 Arg2:T14	
+R46	Arg1_PPT Arg1:T17 Arg2:T59	
+R47	Arg3_GOL Arg1:T17 Arg2:T60	
+R48	Arg1_PPT Arg1:T18 Arg2:T61	
+R49	Arg2_DIR Arg1:T18 Arg2:T62	
+R50	ArgM_MEANS Arg1:T66 Arg2:T67	
+R51	Arg3_GOL Arg1:T21 Arg2:T69	
+R52	Arg1_PPT Arg1:T22 Arg2:T68	
+R54	Arg1_PPT_X Arg1:T21 Arg2:T22	
+R55	Arg1_PPT Arg1:T19 Arg2:T63	
+T65	OTHER 834 841	outline
+R56	Arg1_GOL Arg1:T20 Arg2:T65	
+R57	Arg1_PPT_X Arg1:T66 Arg2:T20	
+T74	OTHER 992 1023	hair, eyes and noses on players
+T70	OTHER 941 963	lines on round cookies
+R58	Arg1_PPT Arg1:T23 Arg2:T70	
+R59	ArgM_PRP Arg1:T23 Arg2:T72	
+R60	Arg1_PPT Arg1:T73 Arg2:T74	
+R61	Arg1_PPT Arg1:T24 Arg2:T78	
+R62	Arg1_PPT Arg1:T79 Arg2:T80	
+R63	Arg1_PPT Arg1:T25 Arg2:T83	
+R64	ArgM_PRP Arg1:T25 Arg2:T84	
+T75	OTHER 1162 1179	shirts and shorts
+T76	OTHER 1188 1206	a letter on shirts
+R65	Arg1_PPT Arg1:T87 Arg2:T76	
+R66	Arg1_PPT Arg1:T82 Arg2:T75	
+#1	AnnotatorNotes R4	the butterscotch; the melted butterscotch
+#2	AnnotatorNotes R12	the butter with sugar; the creamed butter and sugars
+#3	AnnotatorNotes R11	the mixture; the egg and milk mixture
+#4	AnnotatorNotes R15	the mixture; the milk mixture
+#5	AnnotatorNotes R16	the mixture; the milk mixture with the butterscotch
+#6	AnnotatorNotes R17	the milk with the flour; the dough
+#7	AnnotatorNotes R18	the dough
+#8	AnnotatorNotes R19	the dough; the covered dough
+#9	AnnotatorNotes R26	the dough; the rolled out dough
+#10	AnnotatorNotes R28	the cookies; the unbaked cookies
+#11	AnnotatorNotes R29	the cookies; the cookies on the baking sheets
+#12	AnnotatorNotes R33	the cookies; the baked cookies
+#13	AnnotatorNotes R35	the cookies; the warm cookies
+#14	AnnotatorNotes R43	the frosting; the frosting ingredients
+#15	AnnotatorNotes R45	REDO - point to `mix' rather than `combine'?
+#16	AnnotatorNotes R57	the frosting; the frosting with basketball player outline
+#17	AnnotatorNotes R54	the frosting; the black frosting

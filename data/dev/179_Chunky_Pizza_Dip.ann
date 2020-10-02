@@ -1,0 +1,40 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 11	oil
+T3	FOOD 16 22	garlic
+T4	TOOL 26 42	a large saucepan
+T5	TOOL 46 56	Dutch oven
+T6	CONDITION_CLAUSE 57 102	until garlic starts to sizzle and turn golden
+T7	AC 107 110	Add
+T8	FOOD 111 119	tomatoes
+T9	FOOD 121 133	tomato paste
+T10	FOOD 135 140	basil
+T11	FOOD 145 152	oregano
+T13	AC 176 182	Simmer
+T12	AC 154 159	bring
+T14	TOOL 163 171	a simmer
+T15	CONDITION_CLAUSE 195 234	until sauce is thick enough for dipping
+T16	DUR 236 252	15 to 20 minutes
+T17	AC 257 261	Cool
+T18	AC 266 277	refrigerate
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	ArgM_LOC Arg1:T1 Arg2:T4	
+R4	ArgM_LOC Arg1:T1 Arg2:T5	
+R5	ArgM_TMP Arg1:T1 Arg2:T6	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg1_PPT Arg1:T7 Arg2:T9	
+R8	Arg1_PPT Arg1:T7 Arg2:T10	
+R9	Arg1_PPT Arg1:T7 Arg2:T11	
+R10	Arg1_PPT_X Arg1:T12 Arg2:T7	
+R11	Arg2_PPT_Z Arg1:T7 Arg2:T1	
+R12	ArgM_LOC Arg1:T12 Arg2:T14	
+R13	Arg1_PPT_X Arg1:T13 Arg2:T12	
+R14	ArgM_TMP Arg1:T13 Arg2:T15	
+R15	ArgM_TMP Arg1:T13 Arg2:T16	
+R16	Arg1_PPT_X Arg1:T17 Arg2:T13	
+R17	Arg1_PPT_X Arg1:T18 Arg2:T17	
+#1	AnnotatorNotes R11	The oil and garlic; The heated oil and garlic
+#2	AnnotatorNotes R16	The sauce; The simmered sauce
+#3	AnnotatorNotes R13	The sauce; The simmered sauce
+#4	AnnotatorNotes R10	the vegetables; the golden garlic with tomatoes
+#5	AnnotatorNotes R17	the thick sauce; the cool sauce

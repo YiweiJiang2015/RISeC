@@ -1,0 +1,67 @@
+T1	TOOL 6 21	a large skillet
+T2	TEMPERATURE 27 38	medium heat
+T3	AC 40 45	brown
+T4	FOOD 46 57	ground beef
+T5	FOOD 72 77	onion
+T6	FOOD 79 97	crushed red pepper
+T7	FOOD 99 112	garlic powder
+T8	FOOD 118 133	seasoned pepper
+T9	AC 138 147	Drain off
+T10	FOOD 148 155	the fat
+T11	AC 161 166	place
+T12	FOOD 167 178	the mixture
+T13	TOOL 184 197	a slow cooker
+T14	AC 202 206	Stir
+T15	FOOD 207 216	mushrooms
+T16	FOOD 218 229	baked beans
+T17	FOOD 231 243	kidney beans
+T18	FOOD 257 269	tomato paste
+T19	FOOD 271 276	sugar
+T20	FOOD 278 285	carrots
+T21	FOOD 287 293	celery
+T22	FOOD 295 302	peppers
+T23	FOOD 304 308	beer
+T24	FOOD 314 328	barbeque sauce
+T25	TOOL 334 349	the slow cooker
+T26	AC 354 360	Season
+T27	FOOD 366 375	hot sauce
+T28	FOOD 380 403	more crushed red pepper
+T29	AC 408 413	Cover
+T30	AC 419 423	cook
+T31	TEMPERATURE 427 430	Low
+T32	DUR 435 447	4 to 5 hours
+R1	Arg1_PPT Arg1:T3 Arg2:T4	
+R2	Arg2_PPT Arg1:T3 Arg2:T5	
+R3	Arg2_PPT Arg1:T3 Arg2:T6	
+R4	Arg2_PPT Arg1:T3 Arg2:T7	
+R5	Arg2_PPT Arg1:T3 Arg2:T8	
+R6	ArgM_LOC Arg1:T3 Arg2:T1	
+R7	ArgM_MNR Arg1:T3 Arg2:T2	
+R8	Arg2_PPT Arg1:T9 Arg2:T10	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg3_GOL Arg1:T11 Arg2:T13	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T14 Arg2:T16	
+R13	Arg1_PPT Arg1:T14 Arg2:T17	
+T33	FOOD 249 255	liquid
+R14	Arg2_PPT Arg1:T14 Arg2:T33	
+R15	Arg2_PPT Arg1:T14 Arg2:T18	
+R16	Arg2_PPT Arg1:T14 Arg2:T19	
+R17	Arg2_PPT Arg1:T14 Arg2:T20	
+R18	Arg2_PPT Arg1:T14 Arg2:T21	
+R19	Arg2_PPT Arg1:T14 Arg2:T22	
+R20	Arg2_PPT Arg1:T14 Arg2:T23	
+R21	Arg2_PPT Arg1:T14 Arg2:T24	
+R22	ArgM_LOC Arg1:T14 Arg2:T25	
+R23	Arg1_PPT Arg1:T26 Arg2:T27	
+R24	Arg2_GOL_X Arg1:T26 Arg2:T14	
+R25	Arg1_PPT Arg1:T26 Arg2:T28	
+R26	Arg1_PPT_X Arg1:T29 Arg2:T26	
+R27	Arg1_PPT_X Arg1:T30 Arg2:T29	
+R28	ArgM_MNR Arg1:T30 Arg2:T31	
+R29	ArgM_TMP Arg1:T30 Arg2:T32	
+#2	AnnotatorNotes R24	the mixture
+#3	AnnotatorNotes R26	the slow cooker
+#4	AnnotatorNotes R27	the mixture
+R31	Arg2_DIR_X Arg1:T9 Arg2:T3	
+#5	AnnotatorNotes R31	the beef; the brown beef

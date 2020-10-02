@@ -1,0 +1,44 @@
+T1	AC 3 9	Spread
+T2	FOOD 10 39	1/4 cup of chocolate hazelnut
+T3	FOOD 45 55	each crepe
+T4	AC 60 67	Arrange
+T5	FOOD 68 83	1 sliced banana
+T6	FOOD 89 111	the center of each one
+T8	AC 116 123	Roll up
+T9	AC 129 134	place
+T10	TOOL 138 152	a warm skillet
+T11	TEMPERATURE 158 169	medium heat
+T12	FOOD 178 182	them
+T13	AC 183 190	warm up
+T14	DUR 201 211	90 seconds
+T15	AC 216 224	Transfer
+T16	TOOL 228 234	plates
+T17	AC 240 245	serve
+T18	AC 246 252	topped
+T19	FOOD 258 271	whipped cream
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg2_GOL Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R5	Arg3_GOL Arg1:T4 Arg2:T6	
+R6	Arg1_PPT_X Arg1:T8 Arg2:T4	
+R7	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R8	Arg2_GOL Arg1:T9 Arg2:T10	
+R9	ArgM_MNR Arg1:T9 Arg2:T11	
+R10	Arg0_PAG Arg1:T13 Arg2:T12	
+R11	ArgM_TMP Arg1:T13 Arg2:T14	
+R12	Arg2_GOL Arg1:T15 Arg2:T16	
+R13	Arg1_PPT_X Arg1:T17 Arg2:T15	
+R14	Arg1_PPT Arg1:T18 Arg2:T19	
+R15	ArgM_MNR Arg1:T17 Arg2:T18	
+#1	AnnotatorNotes T1	the crepes; the crepes with chocolate hazelnut
+#2	AnnotatorNotes T4	the crepes; the crepes with banana
+#3	AnnotatorNotes T8	the crepes; the rolled crepes
+#4	AnnotatorNotes T9	the crepes; the crepes in the skillet
+#5	AnnotatorNotes T13	the crepes; the warm crepe;
+#6	AnnotatorNotes T15	the crepes; the crepes on plates;
+#7	AnnotatorNotes T17	the crepes; the served crepes;
+R4	Arg1_PPT_X Arg1:T15 Arg2:T13	
+#8	AnnotatorNotes R6	the crepe; the crepe with a banana slice in the center
+#9	AnnotatorNotes R7	the crepes; the rolled up crepes
+#10	AnnotatorNotes R4	the crepes
+#11	AnnotatorNotes R13	the crepes

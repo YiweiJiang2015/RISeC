@@ -1,0 +1,85 @@
+T1	AC 3 10	Preheat
+T2	AC 71 76	cream
+T4	AC 191 198	Combine
+T5	AC 250 254	stir
+T6	AC 301 305	Roll
+T7	AC 334 338	roll
+T8	AC 376 381	Place
+T9	AC 438 442	Bake
+T11	AC 548 556	removing
+T12	TOOL 11 15	oven
+T13	TEMPERATURE 19 32	350 degrees F
+T14	TOOL 56 69	a medium bowl
+T15	FOOD 86 99	the margarine
+T16	FOOD 104 121	1 cup white sugar
+T17	FOOD 147 154	the egg
+T18	FOOD 159 167	molasses
+T19	FOOD 203 208	flour
+T20	FOOD 210 216	ginger
+T21	FOOD 218 226	cinnamon
+T22	FOOD 228 239	baking soda
+T23	FOOD 244 248	salt
+T24	FOOD 260 280	the molasses mixture
+T26	FOOD 306 311	dough
+T27	FOOD 317 329	1 inch balls
+T28	FOOD 339 348	the balls
+T29	FOOD 352 371	the remaining sugar
+T30	FOOD 382 389	cookies
+T31	TOOL 410 433	ungreased cookie sheets
+T32	TOOL 466 484	the preheated oven
+T33	DUR 447 462	8 to 10 minutes
+T34	TOOL 514 526	baking sheet
+T35	DUR 531 540	5 minutes
+T36	TOOL 560 571	a wire rack
+T37	FOOD 495 502	cookies
+T38	CONDITION_CLAUSE 122 134	until smooth
+T39	CONDITION_CLAUSE 168 186	until well blended
+R1	Arg1_PPT Arg1:T1 Arg2:T12	
+R2	ArgM_MNR Arg1:T1 Arg2:T13	
+R3	ArgM_LOC Arg1:T2 Arg2:T14	
+R4	Arg1_PPT Arg1:T2 Arg2:T15	
+R5	Arg1_PPT Arg1:T2 Arg2:T16	
+T3	AC 139 146	Beat in
+R6	Arg1_PPT Arg1:T3 Arg2:T17	
+R7	Arg1_PPT Arg1:T3 Arg2:T18	
+R8	Arg2_GOL_X Arg1:T3 Arg2:T2	
+R9	Arg1_PPT Arg1:T4 Arg2:T19	
+R10	Arg1_PPT Arg1:T4 Arg2:T20	
+R11	Arg1_PPT Arg1:T4 Arg2:T21	
+R12	Arg1_PPT Arg1:T4 Arg2:T22	
+R13	Arg1_PPT Arg1:T4 Arg2:T23	
+R14	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R15	Arg1_PPT Arg1:T6 Arg2:T26	
+R16	Arg1_PPT Arg1:T7 Arg2:T28	
+R17	Arg1_PPT Arg1:T8 Arg2:T30	
+R18	Arg2_GOL Arg1:T8 Arg2:T31	
+R19	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R20	ArgM_TMP Arg1:T9 Arg2:T33	
+R21	ArgM_LOC Arg1:T9 Arg2:T32	
+T10	AC 506 510	cool
+R22	Arg1_PPT Arg1:T10 Arg2:T37	
+R23	ArgM_LOC Arg1:T10 Arg2:T34	
+R24	ArgM_TMP Arg1:T10 Arg2:T35	
+R25	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R26	Arg3_GOL Arg1:T11 Arg2:T36	
+R27	ArgM_TMP Arg1:T2 Arg2:T38	
+R28	ArgM_TMP Arg1:T3 Arg2:T39	
+R29	Arg2_PPT Arg1:T5 Arg2:T24	
+R31	Arg3_PRD Arg1:T6 Arg2:T27	
+R32	ArgM_LOC Arg1:T7 Arg2:T29	
+#1	AnnotatorNotes T3	Y: 'in'?
+#4	AnnotatorNotes R26	Yiwei: Loc normally means a static location. Shall we add Direction relation?
+T25	PURPOSE_CLAUSE 281 296	to form a dough
+R30	ArgM_PRP Arg1:T5 Arg2:T25	
+#2	AnnotatorNotes T6	two different meanings of rolling?
+#3	AnnotatorNotes T7	two different meanings of rolling?
+T40	OTHER 390 404	2 inches apart
+R33	ArgM_MNR Arg1:T8 Arg2:T40	
+T41	PURPOSE_CLAUSE 572 590	to cool completely
+R34	ArgM_PRP Arg1:T11 Arg2:T41	
+T42	TEMPERATURE 34 47	175 degrees C
+R35	ArgM_MNR Arg1:T1 Arg2:T42	
+#5	AnnotatorNotes R8	the creamed magarine; the creamed magarine with sugar
+#6	AnnotatorNotes R14	the dough; the flour mixture
+#7	AnnotatorNotes R19	the cookies; the cookies on the sheets
+#8	AnnotatorNotes R25	the cookies; the cool cookies

@@ -1,0 +1,90 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 22	brown sugar
+T3	FOOD 24 42	2/3 cup shortening
+T4	FOOD 44 49	water
+T5	FOOD 55 73	1 teaspoon vanilla
+T6	TOOL 77 87	large bowl
+T7	AC 92 96	Beat
+T8	FOOD 97 101	eggs
+T9	FOOD 107 122	creamed mixture
+T10	TOOL 130 142	another bowl
+T11	AC 144 151	combine
+T12	FOOD 152 157	flour
+T13	FOOD 159 164	cocoa
+T14	FOOD 166 170	salt
+T15	FOOD 176 187	baking soda
+T16	AC 192 195	Mix
+T17	FOOD 196 208	this mixture
+T18	FOOD 214 229	creamed mixture
+T19	CONDITION_CLAUSE 230 248	until just blended
+T20	AC 253 260	Stir in
+T21	FOOD 261 276	chocolate chips
+T22	AC 281 285	Drop
+T23	FOOD 286 317	rounded tablespoonfuls of dough
+T24	TOOL 323 345	ungreased baking sheet
+T25	OTHER 346 366	about 2 inches apart
+T26	AC 371 376	Place
+T27	TOOL 377 389	cookie sheet
+T28	TOOL 393 415	the middle of the oven
+T30	AC 420 424	Cool
+T31	DUR 429 438	2 minutes
+T32	TOOL 442 454	baking sheet
+T33	AC 459 465	Remove
+T34	FOOD 466 473	cookies
+T35	TOOL 477 486	wire rack
+T36	PURPOSE_CLAUSE 487 505	to cool completely
+T37	AC 538 547	combining
+T38	FOOD 548 563	evaporated milk
+T39	FOOD 565 576	white sugar
+T40	FOOD 578 596	1/4 cup shortening
+T41	FOOD 602 611	egg yolks
+T42	TOOL 615 630	medium saucepan
+T43	AC 636 640	Stir
+T44	FOOD 641 661	1/2 teaspoon vanilla
+T45	FOOD 663 669	pecans
+T46	FOOD 675 682	coconut
+T47	FOOD 688 704	the warm mixture
+T48	AC 710 714	Cool
+T49	AC 731 736	frost
+T50	FOOD 737 751	cooled cookies
+T51	AC 514 518	Make
+T52	FOOD 519 527	Frosting
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	Arg1_PPT Arg1:T1 Arg2:T3	
+R4	Arg1_PPT Arg1:T1 Arg2:T4	
+R5	Arg1_PPT Arg1:T1 Arg2:T5	
+R6	ArgM_LOC Arg1:T1 Arg2:T6	
+R7	Arg1_PPT Arg1:T7 Arg2:T8	
+R8	Arg2_PPT Arg1:T7 Arg2:T9	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg1_PPT Arg1:T11 Arg2:T13	
+R11	Arg1_PPT Arg1:T11 Arg2:T14	
+R12	Arg1_PPT Arg1:T11 Arg2:T15	
+R13	ArgM_LOC Arg1:T11 Arg2:T10	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg2_PPT Arg1:T16 Arg2:T18	
+R16	ArgM_TMP Arg1:T16 Arg2:T19	
+R17	Arg1_PPT Arg1:T20 Arg2:T21	
+R18	Arg1_PPT Arg1:T22 Arg2:T23	
+R19	Arg3_GOL Arg1:T22 Arg2:T24	
+R20	Arg1_PPT Arg1:T26 Arg2:T27	
+R21	Arg3_GOL Arg1:T26 Arg2:T28	
+R22	ArgM_TMP Arg1:T30 Arg2:T31	
+R23	ArgM_LOC Arg1:T30 Arg2:T32	
+R24	Arg1_PPT Arg1:T33 Arg2:T34	
+R25	Arg3_GOL Arg1:T33 Arg2:T35	
+R26	ArgM_PRP Arg1:T33 Arg2:T36	
+R27	Arg1_PPT Arg1:T37 Arg2:T38	
+R29	Arg1_PPT Arg1:T51 Arg2:T52	
+R30	Arg1_PPT Arg1:T37 Arg2:T39	
+R31	Arg1_PPT Arg1:T37 Arg2:T40	
+R32	Arg1_PPT Arg1:T37 Arg2:T41	
+R33	ArgM_LOC Arg1:T37 Arg2:T42	
+R34	Arg1_PPT Arg1:T43 Arg2:T44	
+R35	Arg1_PPT Arg1:T43 Arg2:T45	
+R36	Arg1_PPT Arg1:T43 Arg2:T46	
+R37	Arg2_PPT Arg1:T43 Arg2:T47	
+R38	Arg1_PPT_X Arg1:T48 Arg2:T43	
+R39	Arg1_PPT Arg1:T49 Arg2:T50	
+R28	TODO Arg1:T37 Arg2:T51	
+#1	AnnotatorNotes R38	the mixture; the warm mixture

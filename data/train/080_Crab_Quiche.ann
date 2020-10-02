@@ -1,0 +1,71 @@
+T1	AC 441 446	Leave
+T2	AC 338 342	Bake
+T3	AC 310 314	Pour
+T4	AC 3 10	Preheat
+T5	AC 57 61	Bake
+T6	AC 131 137	Remove
+T7	AC 192 197	whisk
+T9	TOOL 11 19	the oven
+T10	TEMPERATURE 23 36	350 degrees F
+T11	FOOD 62 75	the pie crust
+T12	DUR 80 96	about 10 minutes
+T13	TOOL 143 151	the oven
+T15	TOOL 178 190	a large bowl
+T16	FOOD 207 215	the eggs
+T17	FOOD 217 222	cream
+T18	FOOD 224 228	salt
+T19	FOOD 230 236	pepper
+T20	FOOD 242 251	hot sauce
+T21	FOOD 264 279	shredded cheese
+T22	FOOD 281 286	onion
+T23	FOOD 291 305	imitation crab
+T24	FOOD 320 333	the pie shell
+T25	DUR 347 363	25 to 30 minutes
+T26	TOOL 367 385	the preheated oven
+T27	TOOL 401 409	the oven
+T28	FOOD 447 453	quiche
+T29	TOOL 457 465	the oven
+T30	DUR 470 500	an additional 20 to 30 minutes
+T31	CONDITION_CLAUSE 98 126	until just starting to brown
+T32	AC 392 400	turn off
+T33	TOOL 421 429	the door
+T34	AC 415 420	leave
+T35	CONDITION_CLAUSE 501 511	until firm
+R1	Arg1_PPT Arg1:T4 Arg2:T9	
+R2	ArgM_MNR Arg1:T4 Arg2:T10	
+R3	Arg1_PPT Arg1:T5 Arg2:T11	
+R4	ArgM_TMP Arg1:T5 Arg2:T12	
+R5	ArgM_TMP Arg1:T5 Arg2:T31	
+R6	Arg2_DIR Arg1:T6 Arg2:T13	
+R7	Arg1_PPT_X Arg1:T6 Arg2:T5	
+T14	AC 166 170	cool
+R8	Arg1_PPT_X Arg1:T14 Arg2:T6	
+R9	Arg1_PPT Arg1:T7 Arg2:T16	
+R10	Arg1_PPT Arg1:T7 Arg2:T17	
+R11	Arg1_PPT Arg1:T7 Arg2:T18	
+R12	Arg1_PPT Arg1:T7 Arg2:T19	
+R13	Arg1_PPT Arg1:T7 Arg2:T20	
+R14	ArgM_LOC Arg1:T7 Arg2:T15	
+T8	AC 256 263	Stir in
+R15	Arg1_PPT Arg1:T8 Arg2:T21	
+R16	Arg1_PPT Arg1:T8 Arg2:T22	
+R17	Arg1_PPT Arg1:T8 Arg2:T23	
+R18	Arg2_PPT_Z Arg1:T8 Arg2:T7	
+R19	Arg1_PPT_X Arg1:T3 Arg2:T8	
+R20	Arg3_GOL Arg1:T3 Arg2:T24	
+R21	Arg1_PPT_X Arg1:T2 Arg2:T3	
+R22	ArgM_TMP Arg1:T2 Arg2:T25	
+R23	ArgM_LOC Arg1:T2 Arg2:T26	
+R24	Arg1_PPT Arg1:T32 Arg2:T27	
+R25	Arg1_PPT Arg1:T34 Arg2:T33	
+R26	Arg1_PPT Arg1:T1 Arg2:T28	
+R27	ArgM_LOC Arg1:T1 Arg2:T29	
+R28	ArgM_TMP Arg1:T1 Arg2:T30	
+R29	ArgM_TMP Arg1:T1 Arg2:T35	
+T36	TEMPERATURE 38 51	175 degrees C
+R30	ArgM_MNR Arg1:T4 Arg2:T36	
+#1	AnnotatorNotes R7	the pie curst; the brown pie crust; the baked pie crust
+#2	AnnotatorNotes R8	the pie crust; the pie crust out of the oven
+#3	AnnotatorNotes R18	the hot sause; the hot sauce with eggs
+#4	AnnotatorNotes R19	the hot sauce; the hot sauce with crab
+#5	AnnotatorNotes R21	the pie shell; the pie shell filled with hot sauce

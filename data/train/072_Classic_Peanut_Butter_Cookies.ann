@@ -1,0 +1,67 @@
+T1	AC 3 8	Cream
+T3	AC 92 96	sift
+T4	AC 154 158	Stir
+T5	AC 175 178	Put
+T6	AC 217 221	Roll
+T7	AC 269 276	Flatten
+T8	AC 333 337	Bake
+T9	FOOD 63 67	eggs
+T10	FOOD 18 24	butter
+T11	FOOD 26 39	peanut butter
+T12	FOOD 44 50	sugars
+T13	FOOD 106 111	flour
+T14	FOOD 113 126	baking powder
+T15	FOOD 128 139	baking soda
+T16	FOOD 145 149	salt
+T17	TOOL 75 90	a separate bowl
+T18	FOOD 164 170	batter
+T19	FOOD 179 185	batter
+T20	TOOL 189 201	refrigerator
+T21	DUR 206 212	1 hour
+T22	FOOD 227 239	1 inch balls
+T23	AC 244 247	put
+T24	TOOL 251 264	baking sheets
+T25	FOOD 277 286	each ball
+T26	TOOL 292 298	a fork
+T27	TOOL 341 371	a preheated 375 degrees F oven
+T28	DUR 376 392	about 10 minutes
+R1	Arg1_PPT Arg1:T1 Arg2:T10	
+R2	Arg1_PPT Arg1:T1 Arg2:T11	
+R3	Arg1_PPT Arg1:T1 Arg2:T12	
+T2	AC 55 62	Beat in
+R4	Arg1_PPT Arg1:T2 Arg2:T9	
+R5	Arg2_GOL_X Arg1:T2 Arg2:T1	
+R6	Arg1_PPT Arg1:T3 Arg2:T13	
+R7	Arg1_PPT Arg1:T3 Arg2:T14	
+R8	Arg1_PPT Arg1:T3 Arg2:T15	
+R9	Arg1_PPT Arg1:T3 Arg2:T16	
+R10	ArgM_LOC Arg1:T3 Arg2:T17	
+R11	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R12	Arg2_GOL Arg1:T4 Arg2:T18	
+R13	Arg1_PPT Arg1:T5 Arg2:T19	
+R14	Arg2_GOL Arg1:T5 Arg2:T20	
+R15	ArgM_TMP Arg1:T5 Arg2:T21	
+R16	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R17	Arg2_PRD Arg1:T6 Arg2:T22	
+R18	Arg1_PPT_X Arg1:T23 Arg2:T6	
+R19	Arg2_GOL Arg1:T23 Arg2:T24	
+R20	Arg1_PPT Arg1:T7 Arg2:T25	
+R21	ArgM_MEANS Arg1:T7 Arg2:T26	
+T30	AC 300 306	making
+R23	ArgM_LOC Arg1:T8 Arg2:T27	
+R24	ArgM_TMP Arg1:T8 Arg2:T28	
+T29	CONDITION_CLAUSE 396 424	until cookies begin to brown
+T31	AC 436 445	over-bake
+R25	Arg1_PPT_X Arg1:T31 Arg2:T8	
+T32	OTHER 432 435	not
+R26	TODO Arg1:T31 Arg2:T32	
+T33	OTHER 307 328	a criss-cross pattern
+R27	TODO Arg1:T30 Arg2:T33	
+R22	Arg1_PPT_X Arg1:T8 Arg2:T30	
+#1	AnnotatorNotes R5	the butter; the butter mixture
+#2	AnnotatorNotes R11	the flour mixture; the flour mixture with salt
+#3	AnnotatorNotes R16	the batter; the refrigerated batter
+#4	AnnotatorNotes R18	the balls; the batter balls
+R28	ArgM_TMP Arg1:T8 Arg2:T29	
+#5	AnnotatorNotes R22	the balls; the flattened balls
+#6	AnnotatorNotes R25	the balls; the baking balls; the baking cookies

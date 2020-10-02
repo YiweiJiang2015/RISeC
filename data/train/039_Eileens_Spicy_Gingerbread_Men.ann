@@ -1,0 +1,98 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 25	cream
+T3	FOOD 35 48	the margarine
+T4	FOOD 53 58	sugar
+T5	CONDITION_CLAUSE 59 71	until smooth
+T6	AC 76 83	Stir in
+T7	FOOD 97 105	egg yolk
+T8	FOOD 84 92	molasses
+T9	AC 110 117	Combine
+T10	FOOD 118 127	the flour
+T11	FOOD 129 133	salt
+T12	FOOD 135 148	baking powder
+T13	FOOD 150 161	baking soda
+T14	FOOD 163 171	cinnamon
+T15	FOOD 173 179	cloves
+T16	FOOD 181 187	ginger
+T17	FOOD 193 199	nutmeg
+T18	AC 201 206	blend
+T19	FOOD 212 232	the molasses mixture
+T20	CONDITION_CLAUSE 233 245	until smooth
+T21	AC 250 255	Cover
+T22	AC 261 266	chill
+T23	DUR 271 288	at least one hour
+T24	AC 293 300	Preheat
+T25	TOOL 301 309	the oven
+T26	TEMPERATURE 313 326	350 degrees F
+T27	TEMPERATURE 328 341	175 degrees C
+T28	TOOL 350 375	a lightly floured surface
+T29	AC 377 381	roll
+T30	FOOD 382 391	the dough
+T31	FOOD 399 417	1/4 inch thickness
+T32	AC 422 425	Cut
+T33	OTHER 431 445	desired shapes
+T34	TOOL 451 465	cookie cutters
+T35	AC 470 475	Place
+T36	FOOD 476 483	cookies
+T38	TOOL 502 525	ungreased cookie sheets
+T39	AC 530 534	Bake
+T40	DUR 539 554	8 to 10 minutes
+T41	TOOL 558 576	the preheated oven
+T42	CONDITION_CLAUSE 578 588	until firm
+T43	AC 594 600	Remove
+T44	TOOL 606 619	cookie sheets
+T45	PURPOSE_CLAUSE 620 641	to cool on wire racks
+T47	AC 647 652	Frost
+T48	AC 656 664	decorate
+T49	CONDITION_CLAUSE 665 674	when cool
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	ArgM_TMP Arg1:T2 Arg2:T5	
+R4	ArgM_LOC Arg1:T2 Arg2:T1	
+R5	Arg1_PPT Arg1:T6 Arg2:T8	
+R6	Arg1_PPT Arg1:T6 Arg2:T7	
+R7	Arg2_PPT_Z Arg1:T6 Arg2:T2	
+R8	Arg1_PPT Arg1:T9 Arg2:T10	
+R10	Arg1_PPT Arg1:T9 Arg2:T11	
+R9	Arg1_PPT Arg1:T9 Arg2:T12	
+R11	Arg1_PPT Arg1:T9 Arg2:T13	
+R12	Arg1_PPT Arg1:T9 Arg2:T14	
+R13	Arg1_PPT Arg1:T9 Arg2:T15	
+R14	Arg1_PPT Arg1:T9 Arg2:T16	
+R15	Arg1_PPT Arg1:T9 Arg2:T17	
+R16	Arg1_PPT_X Arg1:T18 Arg2:T9	
+R17	Arg2_PPT Arg1:T18 Arg2:T19	
+R18	ArgM_TMP Arg1:T18 Arg2:T20	
+R19	Arg1_PPT_X Arg1:T21 Arg2:T18	
+R20	Arg1_PPT_X Arg1:T22 Arg2:T21	
+R21	ArgM_TMP Arg1:T22 Arg2:T23	
+R22	Arg1_PPT Arg1:T24 Arg2:T25	
+R23	ArgM_MNR Arg1:T24 Arg2:T26	
+R24	ArgM_MNR Arg1:T24 Arg2:T27	
+R25	ArgM_LOC Arg1:T29 Arg2:T28	
+R26	Arg1_PPT Arg1:T29 Arg2:T30	
+R27	Arg3_PRD Arg1:T29 Arg2:T31	
+R29	ArgM_MNR Arg1:T32 Arg2:T34	
+R30	Arg1_PPT Arg1:T35 Arg2:T36	
+R32	Arg3_GOL Arg1:T35 Arg2:T38	
+R33	ArgM_TMP Arg1:T39 Arg2:T40	
+R34	ArgM_LOC Arg1:T39 Arg2:T41	
+R35	ArgM_TMP Arg1:T39 Arg2:T42	
+R36	Arg1_PPT_X Arg1:T39 Arg2:T35	
+R37	Arg1_PPT_X Arg1:T32 Arg2:T29	
+R38	Arg2_DIR Arg1:T43 Arg2:T44	
+R39	Arg1_PPT_X Arg1:T43 Arg2:T39	
+R40	ArgM_PRP Arg1:T43 Arg2:T45	
+R42	ArgM_TMP Arg1:T47 Arg2:T49	
+R43	Simultaneous Arg1:T47 Arg2:T48	
+R28	Arg3_PRD Arg1:T32 Arg2:T33	
+#1	AnnotatorNotes R7	the margarine and sugar; the sugar mixture
+#2	AnnotatorNotes R16	the flour mixture
+#3	AnnotatorNotes R19	the mixture; the smooth mixture
+#4	AnnotatorNotes R20	the mixture; the covered mixture; the dough
+#5	AnnotatorNotes R37	the dough; the rolled out dough
+#6	AnnotatorNotes R36	the cookies
+#7	AnnotatorNotes R39	the cookies; the gingerbread
+#8	AnnotatorNotes T45	TODO???? purpose clause?
+R31	Arg1_PPT_X Arg1:T47 Arg2:T43	
+#9	AnnotatorNotes R31	the cookies; the cool cookies; the cooled cookies; the cookies on wire racks

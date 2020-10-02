@@ -1,0 +1,92 @@
+T1	AC 3 10	Preheat
+T2	AC 50 55	Spray
+T3	AC 59 65	grease
+T4	AC 111 117	mixing
+T5	PURPOSE_CLAUSE 88 107	Prepare the topping
+T6	AC 184 188	Sift
+T7	AC 249 254	Blend
+T8	AC 282 285	add
+T9	AC 306 309	Add
+T10	AC 360 363	Add
+T11	AC 416 419	mix
+T12	AC 449 453	Bake
+T13	AC 473 477	Pour
+T14	AC 499 507	sprinkle
+T15	AC 534 538	Pour
+T16	AC 560 563	top
+T17	TOOL 11 15	oven
+T18	TEMPERATURE 19 32	350 degrees F
+T19	TOOL 66 83	one 9x13 inch pan
+T20	FOOD 127 142	the brown sugar
+T21	FOOD 144 152	cinnamon
+T22	FOOD 154 160	nutmeg
+T23	FOOD 165 179	chopped pecans
+T24	FOOD 198 207	the flour
+T25	FOOD 209 222	baking powder
+T26	FOOD 224 235	baking soda
+T27	FOOD 240 244	salt
+T28	FOOD 264 270	butter
+T29	FOOD 275 280	sugar
+T30	FOOD 286 290	eggs
+T31	AC 295 299	beat
+T32	FOOD 310 322	apple butter
+T33	FOOD 324 331	vanilla
+T34	FOOD 333 343	wheat germ
+T35	FOOD 347 358	bran cereal
+T36	FOOD 364 386	sifted dry ingredients
+T37	FOOD 404 414	sour cream
+T38	DUR 458 468	40 minutes
+T39	FOOD 478 488	1/2 batter
+T40	TOOL 494 497	pan
+T41	FOOD 508 523	1/2 the topping
+T42	OTHER 529 532	top
+T43	FOOD 539 555	remaining batter
+T44	FOOD 569 586	remaining topping
+T45	TEMPERATURE 34 47	175 degrees C
+R1	Arg1_PPT Arg1:T1 Arg2:T17	
+R2	ArgM_MNR Arg1:T1 Arg2:T18	
+R3	ArgM_MNR Arg1:T1 Arg2:T45	
+R4	Arg1_PPT Arg1:T2 Arg2:T19	
+R5	Arg1_PPT Arg1:T3 Arg2:T19	
+R6	Arg1_PPT Arg1:T4 Arg2:T20	
+R7	Arg1_PPT Arg1:T4 Arg2:T21	
+R8	Arg1_PPT Arg1:T4 Arg2:T22	
+R9	Arg1_PPT Arg1:T4 Arg2:T23	
+R10	TODO Arg1:T4 Arg2:T5	
+R11	Arg1_PPT Arg1:T6 Arg2:T24	
+R12	Arg1_PPT Arg1:T6 Arg2:T25	
+R13	Arg1_PPT Arg1:T6 Arg2:T26	
+R14	Arg1_PPT Arg1:T6 Arg2:T27	
+R15	Arg1_PPT Arg1:T7 Arg2:T28	
+R16	Arg1_PPT Arg1:T7 Arg2:T29	
+R17	Arg1_PPT Arg1:T8 Arg2:T30	
+R18	Arg2_PPT_Z Arg1:T8 Arg2:T7	
+R19	Arg2_PPT_Z Arg1:T7 Arg2:T6	
+R20	Arg2_PPT_Z Arg1:T6 Arg2:T4	
+R21	Arg1_PPT_X Arg1:T31 Arg2:T8	
+R22	Arg1_PPT Arg1:T9 Arg2:T32	
+R23	Arg1_PPT Arg1:T9 Arg2:T33	
+R24	Arg1_PPT Arg1:T9 Arg2:T34	
+R25	Arg1_PPT Arg1:T9 Arg2:T35	
+R26	Arg2_PPT Arg1:T9 Arg2:T31	
+R27	Arg1_PPT Arg1:T10 Arg2:T36	
+R28	Arg2_PPT Arg1:T10 Arg2:T37	
+R29	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R30	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R31	ArgM_TMP Arg1:T12 Arg2:T38	
+R32	Arg1_PPT Arg1:T13 Arg2:T39	
+R33	Arg3_GOL Arg1:T13 Arg2:T40	
+R34	Arg1_GOL Arg1:T14 Arg2:T42	
+R35	Arg2_PPT Arg1:T14 Arg2:T41	
+R36	Arg1_PPT Arg1:T15 Arg2:T43	
+R37	Arg2_PPT Arg1:T16 Arg2:T44	
+R38	Arg1_GOL_X Arg1:T16 Arg2:T14	
+R39	Arg2_GOL_X Arg1:T15 Arg2:T14	
+#1	AnnotatorNotes R20	REDO - remove arc; the sifting is a new step, independent.
+#2	AnnotatorNotes R19	REDO - remove arc; the blending is a new step, independent; the result from sifting (line 3) is used in 'sifted dry ingredients' further on
+#3	AnnotatorNotes R18	the sugar with butter; the blended sugar and butter
+#4	AnnotatorNotes R21	the mixture; the mixture of butter, sugar, and eggs; the sugar butter mixture with eggs
+#5	AnnotatorNotes R26	REDO - should this be Arg2_PPT_X?
+#6	AnnotatorNotes R30	the cake; apple cake; the cake dough
+#7	AnnotatorNotes R39	the cake; the apple cake
+#8	AnnotatorNotes R38	the cake; the apple cake

@@ -1,0 +1,19 @@
+T1	AC 3 8	Blend
+T2	FOOD 18 34	the cream cheese
+T3	FOOD 36 53	marshmallow cream
+T4	FOOD 58 72	thawed topping
+T5	AC 77 80	Add
+T6	FOOD 81 103	enough pineapple juice
+T10	AC 139 144	Chill
+T11	DUR 149 155	1 hour
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T1 Arg2:T4	
+R5	Arg1_PPT Arg1:T5 Arg2:T6	
+R9	ArgM_TMP Arg1:T10 Arg2:T11	
+R11	Arg2_PPT_Z Arg1:T5 Arg2:T1	
+T7	PURPOSE_CLAUSE 104 134	to make it dipping consistency
+R4	ArgM_PRP Arg1:T5 Arg2:T7	
+R6	Arg1_PPT_X Arg1:T10 Arg2:T5	
+#1	AnnotatorNotes R11	the cream; the cream cheese mixture
+#2	AnnotatorNotes R6	the juice; the juice with cream

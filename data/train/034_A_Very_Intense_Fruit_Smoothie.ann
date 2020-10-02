@@ -1,0 +1,14 @@
+T1	TOOL 6 15	a blender
+T2	AC 17 24	combine
+T3	FOOD 25 37	frozen fruit
+T4	FOOD 39 51	canned fruit
+T5	FOOD 56 61	honey
+T6	AC 66 71	Blend
+T7	CONDITION_CLAUSE 72 84	until smooth
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	ArgM_LOC Arg1:T2 Arg2:T1	
+R5	ArgM_TMP Arg1:T6 Arg2:T7	
+R6	Arg1_PPT_X Arg1:T6 Arg2:T2	
+#1	AnnotatorNotes R6	the fruit

@@ -1,0 +1,48 @@
+T1	AC 3 10	Preheat
+T2	AC 23 28	Cover
+T3	TOOL 29 56	a medium sized baking sheet
+T4	AC 97 102	Brush
+T5	FOOD 103 113	the slices
+T6	FOOD 119 128	olive oil
+T7	AC 133 137	Dice
+T8	FOOD 138 150	the tomatoes
+T9	TOOL 158 171	a mixing bowl
+T10	AC 173 180	combine
+T11	FOOD 181 193	the tomatoes
+T12	FOOD 195 204	olive oil
+T13	FOOD 209 214	basil
+T14	AC 219 222	Mix
+T15	DUR 227 238	two minutes
+T16	AC 243 248	Place
+T17	FOOD 249 254	bread
+T18	TOOL 261 268	broiler
+T19	CONDITION_CLAUSE 269 290	until lightly browned
+T20	AC 295 301	Remove
+T21	TOOL 307 314	broiler
+T22	AC 319 322	top
+T23	FOOD 328 346	the tomato mixture
+T24	FOOD 62 92	a single layer of bread slices
+T25	TOOL 11 18	broiler
+R1	Arg1_PPT Arg1:T1 Arg2:T25	
+R2	Arg1_GOL Arg1:T2 Arg2:T3	
+R3	Arg2_PPT Arg1:T2 Arg2:T24	
+R4	Arg1_GOL Arg1:T4 Arg2:T5	
+R5	Arg2_PPT Arg1:T4 Arg2:T6	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg1_PPT Arg1:T10 Arg2:T11	
+R8	Arg1_PPT Arg1:T10 Arg2:T12	
+R9	Arg1_PPT Arg1:T10 Arg2:T13	
+R10	ArgM_LOC Arg1:T10 Arg2:T9	
+R11	ArgM_TMP Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T16 Arg2:T17	
+R13	Arg3_GOL Arg1:T16 Arg2:T18	
+R14	ArgM_TMP Arg1:T16 Arg2:T19	
+R15	Arg2_DIR Arg1:T20 Arg2:T21	
+R16	Arg2_PPT Arg1:T22 Arg2:T23	
+R17	Arg1_PPT_X Arg1:T22 Arg2:T20	
+R18	Arg1_PPT_X Arg1:T20 Arg2:T16	
+R19	Arg1_PPT_X Arg1:T14 Arg2:T10	
+R20	TODO Arg1:T11 Arg2:T7	
+#1	AnnotatorNotes R19	the tomatoes; the tomatoes in the bowl
+#2	AnnotatorNotes R18	the bread; the browned bread; the broiled bread
+#3	AnnotatorNotes R17	the bread; the browned bread; the bread out of the broiler

@@ -1,0 +1,76 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 15	the oil
+T3	TOOL 19 30	a large pot
+T4	TEMPERATURE 36 47	medium heat
+T5	AC 52 59	Stir in
+T6	FOOD 60 69	the onion
+T7	FOOD 71 82	bell pepper
+T8	FOOD 84 90	carrot
+T9	FOOD 96 102	garlic
+T10	AC 108 112	cook
+T11	DUR 113 122	5 minutes
+T12	CONDITION_CLAUSE 124 136	until tender
+T13	AC 141 147	Mix in
+T14	FOOD 148 165	1 can black beans
+T15	FOOD 170 183	chicken broth
+T16	TOOL 191 200	a blender
+T17	AC 202 207	puree
+T18	FOOD 208 230	remaining can of beans
+T19	CONDITION_CLAUSE 231 243	until smooth
+T20	AC 248 251	Mix
+T21	TOOL 257 264	the pot
+T22	AC 285 289	boil
+T23	FOOD 275 279	soup
+T24	AC 294 300	Reduce
+T25	OTHER 301 305	heat
+T26	TEMPERATURE 309 312	low
+T27	AC 317 323	Mix in
+T28	FOOD 324 327	ham
+T29	FOOD 329 334	cumin
+T30	FOOD 336 340	salt
+T31	FOOD 346 352	pepper
+T32	AC 357 363	Simmer
+T33	DUR 364 374	20 minutes
+T34	AC 380 387	Garnish
+T35	FOOD 393 407	Cheddar cheese
+T36	FOOD 412 422	sour cream
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T5 Arg2:T8	
+R7	Arg1_PPT Arg1:T5 Arg2:T9	
+R8	Arg1_PPT_X Arg1:T10 Arg2:T5	
+R9	ArgM_TMP Arg1:T10 Arg2:T11	
+R10	ArgM_TMP Arg1:T10 Arg2:T12	
+R11	Arg1_PPT Arg1:T13 Arg2:T14	
+R12	Arg1_PPT Arg1:T13 Arg2:T15	
+R13	Arg1_PPT Arg1:T17 Arg2:T18	
+R14	ArgM_TMP Arg1:T17 Arg2:T19	
+R15	ArgM_LOC Arg1:T17 Arg2:T16	
+R16	Arg3_GOL Arg1:T20 Arg2:T21	
+R17	Arg2_PPT_Z Arg1:T5 Arg2:T1	
+R18	Arg2_PPT_Z Arg1:T13 Arg2:T10	
+R19	Arg1_PPT_X Arg1:T20 Arg2:T17	
+R20	Arg1_PPT Arg1:T22 Arg2:T23	
+R21	Arg1_PPT Arg1:T24 Arg2:T25	
+R22	Arg4_GOL Arg1:T24 Arg2:T26	
+R23	Arg1_PPT Arg1:T27 Arg2:T28	
+R24	Arg1_PPT Arg1:T27 Arg2:T29	
+R25	Arg1_PPT Arg1:T27 Arg2:T30	
+R26	Arg1_PPT Arg1:T27 Arg2:T31	
+R27	Arg1_PPT_X Arg1:T32 Arg2:T27	
+R29	ArgM_TMP Arg1:T32 Arg2:T33	
+R30	Arg2_PPT Arg1:T34 Arg2:T35	
+R31	Arg1_GOL_X Arg1:T34 Arg2:T32	
+R32	Arg2_PPT Arg1:T34 Arg2:T36	
+T37	PURPOSE_CLAUSE 423 431	to serve
+R33	ArgM_PRP Arg1:T34 Arg2:T37	
+#1	AnnotatorNotes R17	the oil; the oil in a large pot;
+#2	AnnotatorNotes R18	the onion, bell pepper, carrot, and garlic; the mixture;
+#3	AnnotatorNotes R19	the beans; the remaining can of beans;
+R28	Arg2_PPT_Z Arg1:T27 Arg2:T22	
+#4	AnnotatorNotes R28	the soup; soup in the pot;
+#5	AnnotatorNotes R27	the mixture; the soup, ham, cumin, salt, and pepper;
+#6	AnnotatorNotes R31	cheddar cheese and sour cream; cheese and cream;

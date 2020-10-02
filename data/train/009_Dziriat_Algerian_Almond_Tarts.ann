@@ -1,0 +1,262 @@
+T2	FOOD 9 24	6 cups of water
+T4	AC 39 45	Remove
+T5	OTHER 51 55	heat
+T6	AC 61 64	add
+T7	FOOD 65 76	the almonds
+T8	FOOD 85 96	the almonds
+T9	AC 97 101	soak
+T10	FOOD 105 110	water
+T11	DUR 121 130	5 minutes
+T12	AC 137 142	drain
+T13	AC 147 151	peel
+T14	AC 156 162	Spread
+T15	FOOD 163 174	the almonds
+T16	TOOL 178 191	baking sheets
+T17	AC 197 201	bake
+T18	TEMPERATURE 205 232	200 degrees F(95 degrees C)
+T20	CONDITION_CLAUSE 233 265	until completely dry and toasted
+T21	DUR 281 294	several hours
+T22	AC 342 353	not to burn
+T23	FOOD 354 362	the nuts
+T24	AC 416 423	Combine
+T25	FOOD 424 435	1 cup sugar
+T26	FOOD 440 451	1 cup water
+T27	TOOL 455 465	a saucepan
+T30	AC 491 494	Add
+T31	FOOD 495 517	1 teaspoon lemon juice
+T32	AC 519 525	reduce
+T33	OTHER 526 530	heat
+T34	TEMPERATURE 534 537	low
+T35	AC 550 556	simmer
+T36	FOOD 547 549	it
+T37	DUR 577 593	30 to 40 minutes
+T38	AC 598 605	Stir in
+T39	FOOD 606 626	orange blossom water
+T40	AC 632 638	remove
+T41	OTHER 644 648	heat
+T42	AC 654 657	Set
+T43	FOOD 658 669	sugar syrup
+T44	AC 681 688	Combine
+T45	FOOD 689 694	flour
+T46	FOOD 699 703	salt
+T47	TOOL 707 726	a large mixing bowl
+T48	AC 732 736	Make
+T49	OTHER 737 743	a hole
+T50	FOOD 747 757	the center
+T51	AC 763 767	pour
+T52	FOOD 768 771	oil
+T53	FOOD 773 776	egg
+T54	FOOD 778 802	1/2 teaspoon lemon juice
+T55	FOOD 808 841	1 tablespoon orange blossom water
+T56	FOOD 847 857	the center
+T57	AC 863 866	Mix
+T58	TOOL 872 879	fingers
+T59	CONDITION_CLAUSE 880 919	until the dough resembles coarse crumbs
+T60	AC 935 943	sprinkle
+T61	FOOD 949 959	warm water
+T62	AC 966 972	mixing
+T63	CONDITION_CLAUSE 973 1013	until the dough becomes soft and pliable
+T64	AC 1019 1025	Divide
+T65	FOOD 1031 1047	4 equal portions
+T66	AC 1053 1058	Cover
+T67	FOOD 1059 1064	dough
+T68	TOOL 1070 1081	a wet cloth
+T69	AC 1087 1096	set aside
+T70	TOOL 1105 1121	a food processor
+T71	AC 1130 1135	grind
+T72	FOOD 1136 1147	the almonds
+T73	AC 1153 1160	Measure
+T74	FOOD 1161 1196	3 cups of the finely ground almonds
+T75	TOOL 1202 1215	a mixing bowl
+T76	AC 1221 1225	stir
+T77	FOOD 1240 1251	1 cup sugar
+T78	FOOD 1253 1266	baking powder
+T79	FOOD 1268 1282	vanilla powder
+T80	FOOD 1284 1294	lemon zest
+T81	FOOD 1300 1333	2 tablespoons orange flower water
+T82	AC 1339 1345	Mix in
+T83	FOOD 1346 1356	three eggs
+T84	AC 1372 1380	stirring
+T85	AC 1393 1396	mix
+T86	CONDITION_CLAUSE 1397 1439	until you get a sticky, paste-like mixture
+T87	AC 1445 1453	Sprinkle
+T88	FOOD 1454 1464	cornstarch
+T89	FOOD 1468 1487	the rolling surface
+T90	PURPOSE_CLAUSE 1488 1507	to prevent sticking
+T92	AC 1513 1517	Roll
+T93	FOOD 1518 1539	each portion of dough
+T95	OTHER 1553 1571	1 to 2 millimeters
+T96	OTHER 1573 1582	1/16 inch
+T97	AC 1589 1592	Cut
+T98	FOOD 1593 1609	the rolled dough
+T99	FOOD 1615 1622	circles
+T100	OTHER 1632 1646	10 centimeters
+T101	OTHER 1648 1656	4 inches
+T102	AC 1688 1692	wipe
+T103	FOOD 1693 1719	the surface of each circle
+T105	FOOD 1725 1735	cornstarch
+T106	AC 1741 1744	fit
+T107	TOOL 1750 1761	a tart mold
+T108	FOOD 1763 1778	cornstarch side
+T111	AC 1816 1821	press
+T112	FOOD 1822 1831	the dough
+T113	TOOL 1837 1869	the sides and bottom of the mold
+T115	AC 1875 1879	trim
+T116	FOOD 1880 1891	extra dough
+T117	TOOL 1904 1911	the rim
+T118	AC 1917 1921	Fill
+T119	TOOL 1922 1949	three quarters of each mold
+T121	FOOD 1955 1973	the almond filling
+T122	AC 1979 1983	Bake
+T123	TOOL 1987 2000	the top shelf
+T124	TEMPERATURE 2004 2017	350 degrees F
+T125	TEMPERATURE 2019 2032	175 degrees C
+T126	DUR 2038 2054	20 to 25 minutes
+T127	CONDITION_CLAUSE 2059 2120	until the surface of the tart is golden and the dough is firm
+T128	AC 2126 2132	Remove
+T129	FOOD 2133 2142	the tarts
+T130	TOOL 2148 2157	the molds
+T131	CONDITION_CLAUSE 2158 2194	as soon as they come out of the oven
+T132	AC 2200 2203	Dip
+T133	FOOD 2204 2213	each tart
+T134	FOOD 2217 2232	the sugar syrup
+T135	CONDITION_CLAUSE 2233 2248	while still hot
+T136	AC 2254 2259	Stick
+T137	FOOD 2260 2270	a pine nut
+T138	FOOD 2276 2299	the middle of each tart
+T140	PURPOSE_CLAUSE 2300 2314	for decoration
+T141	AC 2320 2325	Place
+T142	TOOL 2329 2340	a wire rack
+T143	PURPOSE_CLAUSE 2341 2349	to drain
+R3	Arg2_DIR Arg1:T4 Arg2:T5	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+T1	AC 30 34	boil
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT_X Arg1:T4 Arg2:T1	
+R5	Arg2_PPT_Z Arg1:T6 Arg2:T4	
+R6	Arg0_PAG Arg1:T9 Arg2:T8	
+R7	ArgM_LOC Arg1:T9 Arg2:T10	
+R8	ArgM_TMP Arg1:T9 Arg2:T11	
+R9	Arg1_PPT_X Arg1:T13 Arg2:T12	
+R10	Arg1_PPT_X Arg1:T12 Arg2:T9	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg2_GOL Arg1:T14 Arg2:T16	
+R13	ArgM_MNR Arg1:T17 Arg2:T18	
+R15	ArgM_TMP Arg1:T17 Arg2:T20	
+R16	Arg1_PPT_X Arg1:T17 Arg2:T14	
+R17	Arg1_PPT Arg1:T22 Arg2:T23	
+R18	Arg1_PPT Arg1:T24 Arg2:T25	
+R19	Arg1_PPT Arg1:T24 Arg2:T26	
+R20	ArgM_LOC Arg1:T24 Arg2:T27	
+T3	AC 482 486	boil
+R21	Arg1_PPT_X Arg1:T3 Arg2:T24	
+R22	Arg1_PPT Arg1:T30 Arg2:T31	
+R23	Arg1_PPT Arg1:T32 Arg2:T33	
+R24	Arg4_GOL Arg1:T32 Arg2:T34	
+R25	Arg0_PAG Arg1:T35 Arg2:T36	
+T28	CONDITION_CLAUSE 557 569	until syrupy
+R26	ArgM_TMP Arg1:T35 Arg2:T28	
+R27	ArgM_TMP Arg1:T35 Arg2:T37	
+R28	Arg1_PPT Arg1:T38 Arg2:T39	
+R29	Arg2_DIR Arg1:T40 Arg2:T41	
+R30	Arg1_PPT_X Arg1:T40 Arg2:T38	
+R31	Arg1_PPT Arg1:T42 Arg2:T43	
+R32	Arg1_PPT Arg1:T44 Arg2:T45	
+R33	Arg1_PPT Arg1:T44 Arg2:T46	
+R34	ArgM_LOC Arg1:T44 Arg2:T47	
+R35	Arg1_PPT Arg1:T48 Arg2:T49	
+R36	ArgM_LOC Arg1:T48 Arg2:T50	
+R37	Arg1_PPT Arg1:T51 Arg2:T52	
+R38	Arg1_PPT Arg1:T51 Arg2:T53	
+R39	Arg1_PPT Arg1:T51 Arg2:T54	
+R40	Arg1_PPT Arg1:T51 Arg2:T55	
+R41	Arg3_GOL Arg1:T51 Arg2:T56	
+R42	ArgM_TMP Arg1:T57 Arg2:T59	
+R43	ArgM_MNR Arg1:T57 Arg2:T58	
+R44	Simultaneous Arg1:T60 Arg2:T62	
+R45	Arg1_PPT Arg1:T60 Arg2:T61	
+R46	ArgM_TMP Arg1:T60 Arg2:T63	
+R47	Arg2_GOL Arg1:T64 Arg2:T65	
+R48	Arg1_PPT Arg1:T66 Arg2:T67	
+R49	ArgM_MEANS Arg1:T66 Arg2:T68	
+R50	Arg1_PPT_X Arg1:T69 Arg2:T66	
+R51	Arg1_PPT_X Arg1:T64 Arg2:T60	
+R52	Arg1_PPT_X Arg1:T57 Arg2:T51	
+R53	Arg2_PPT_Z Arg1:T30 Arg2:T3	
+R54	Arg2_PPT_Z Arg1:T38 Arg2:T35	
+R55	Arg2_GOL_X Arg1:T60 Arg2:T57	
+R56	ArgM_LOC Arg1:T71 Arg2:T70	
+R57	Arg1_PPT Arg1:T71 Arg2:T72	
+R58	Arg1_PPT Arg1:T73 Arg2:T74	
+R59	Arg3_GOL Arg1:T73 Arg2:T75	
+R60	Arg1_PPT Arg1:T76 Arg2:T77	
+R61	Arg1_PPT Arg1:T76 Arg2:T78	
+R62	Arg1_PPT Arg1:T76 Arg2:T79	
+R63	Arg1_PPT Arg1:T76 Arg2:T80	
+R64	Arg1_PPT Arg1:T76 Arg2:T81	
+R65	Arg2_PPT_Z Arg1:T76 Arg2:T73	
+R66	Arg1_PPT Arg1:T82 Arg2:T83	
+R67	Simultaneous Arg1:T82 Arg2:T84	
+R68	Arg2_PPT_Z Arg1:T82 Arg2:T76	
+R69	ArgM_TMP Arg1:T85 Arg2:T86	
+R70	Arg1_PPT_X Arg1:T85 Arg2:T82	
+R71	Arg1_PPT Arg1:T87 Arg2:T88	
+R72	Arg2_GOL Arg1:T87 Arg2:T89	
+R73	ArgM_PRP Arg1:T87 Arg2:T90	
+R75	Arg1_PPT Arg1:T92 Arg2:T93	
+R77	ArgM_MNR Arg1:T92 Arg2:T95	
+R78	ArgM_MNR Arg1:T92 Arg2:T96	
+R79	Arg1_PPT Arg1:T97 Arg2:T98	
+R80	Arg3_PRD Arg1:T97 Arg2:T99	
+R81	ArgM_MNR Arg1:T97 Arg2:T100	
+R82	ArgM_MNR Arg1:T97 Arg2:T101	
+R83	Arg1_PPT Arg1:T102 Arg2:T103	
+R85	ArgM_MEANS Arg1:T102 Arg2:T105	
+R86	Arg2_GOL Arg1:T106 Arg2:T107	
+R87	Arg1_PPT_X Arg1:T106 Arg2:T102	
+R89	Arg1_PPT Arg1:T111 Arg2:T112	
+R90	Arg2_GOL Arg1:T111 Arg2:T113	
+R92	Arg1_PPT Arg1:T115 Arg2:T116	
+R93	Arg2_DIR Arg1:T115 Arg2:T117	
+R94	Arg1_GOL Arg1:T118 Arg2:T119	
+R96	Arg2_PPT Arg1:T118 Arg2:T121	
+R97	ArgM_LOC Arg1:T122 Arg2:T123	
+R98	ArgM_MNR Arg1:T122 Arg2:T124	
+R99	ArgM_MNR Arg1:T122 Arg2:T125	
+R100	ArgM_TMP Arg1:T122 Arg2:T126	
+R101	ArgM_TMP Arg1:T122 Arg2:T127	
+R102	Arg1_PPT Arg1:T128 Arg2:T129	
+R103	Arg2_DIR Arg1:T128 Arg2:T130	
+R104	ArgM_TMP Arg1:T128 Arg2:T131	
+R105	Arg1_PPT_X Arg1:T122 Arg2:T118	
+R106	Arg1_PPT Arg1:T132 Arg2:T133	
+R107	Arg3_GOL Arg1:T132 Arg2:T134	
+R108	ArgM_TMP Arg1:T132 Arg2:T135	
+R109	Arg1_PPT Arg1:T136 Arg2:T137	
+R110	Arg2_GOL Arg1:T136 Arg2:T138	
+R112	ArgM_PRP Arg1:T136 Arg2:T140	
+R113	Arg3_GOL Arg1:T141 Arg2:T142	
+R114	Arg1_PPT_X Arg1:T141 Arg2:T136	
+R115	ArgM_PRP Arg1:T141 Arg2:T143	
+#1	AnnotatorNotes R2	the water; the boiling water; the hot water
+#2	AnnotatorNotes R5	the water; the hot water
+#3	AnnotatorNotes R10	the almonds; the soaked almonds
+#4	AnnotatorNotes R9	the almonds; the drained almonds
+#5	AnnotatorNotes R16	the almonds; the almonds on the baking sheets
+#6	AnnotatorNotes R21	the water; the sugar water
+#7	AnnotatorNotes R53	the sugar water; the boiling sugar water
+#8	AnnotatorNotes R54	the syrup; the hot syrup
+#9	AnnotatorNotes R30	the syrup; the orange blossom syrup
+#10	AnnotatorNotes R52	the dough; the dough with the syrup; the dough mixture
+#12	AnnotatorNotes R55	the dough; the coarse dough; the dough resembling crumbs; REDO
+#11	AnnotatorNotes R105	the mold; the mold with almond filling; the tart
+#13	AnnotatorNotes T18	bad entity due to the non-space after 'F'
+#14	AnnotatorNotes R114	the tarts; the tarts with a pine nut
+#15	AnnotatorNotes R51	the dough; the soft and pliable dough; the dough mixed with warm water
+#16	AnnotatorNotes R50	the dough; the covered dough; the dough with a wet cloth
+#17	AnnotatorNotes R65	the almonds; the finely gound almonds
+#18	AnnotatorNotes R68	the almonds; the almond mixture; the almonds with sugar
+#19	AnnotatorNotes R70	the almonds; the almonds with eggs
+#20	AnnotatorNotes R87	the dough circles; the wiped dough circles
+T19	PURPOSE_CLAUSE 1784 1803	to prevent sticking
+R14	ArgM_PRP Arg1:T106 Arg2:T19	

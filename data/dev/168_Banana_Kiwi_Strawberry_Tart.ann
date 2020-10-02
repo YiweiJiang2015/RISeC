@@ -1,0 +1,159 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 18	sift
+T3	FOOD 28 37	the flour
+T4	FOOD 39 56	light brown sugar
+T5	FOOD 58 66	cinnamon
+T6	FOOD 72 76	salt
+T7	AC 81 87	Cut in
+T8	FOOD 88 98	the butter
+T9	CONDITION_CLAUSE 99 140	until the mixture resembles coarse crumbs
+T10	AC 145 153	Sprinkle
+T11	FOOD 159 172	the ice water
+T12	AC 178 182	toss
+T13	FOOD 183 194	the mixture
+T14	TOOL 200 206	a fork
+T15	CONDITION_CLAUSE 207 229	until evenly moistened
+T16	AC 234 237	Pat
+T17	AC 256 260	wrap
+T18	TOOL 264 271	plastic
+T19	AC 276 287	Refrigerate
+T20	OTHER 243 250	a round
+T21	DUR 292 302	30 minutes
+T22	TOOL 310 341	the top half of a double boiler
+T24	AC 343 347	heat
+T25	FOOD 348 356	the milk
+T26	CONDITION_CLAUSE 357 382	until it begins to bubble
+T27	TOOL 390 396	a bowl
+T28	AC 398 402	beat
+T29	FOOD 412 426	the egg whites
+T30	FOOD 428 433	sugar
+T31	FOOD 439 467	1 tablespoon of the hot milk
+T32	AC 472 477	Whisk
+T33	FOOD 478 499	the egg white mixture
+T34	FOOD 505 527	the remaining hot milk
+T35	AC 532 536	Cook
+T36	AC 541 545	stir
+T37	DUR 568 578	10 minutes
+T38	CONDITION_CLAUSE 580 613	until the mixture is thick enough
+T39	PURPOSE_CLAUSE 614 647	to coat the back of a metal spoon
+T42	AC 653 659	Remove
+T43	OTHER 665 669	heat
+T44	AC 675 682	stir in
+T45	FOOD 683 694	the vanilla
+T46	AC 700 704	Cool
+T47	TEMPERATURE 708 724	room temperature
+T48	AC 730 737	Preheat
+T49	TOOL 738 742	oven
+T50	TEMPERATURE 746 760	375  degrees F
+T51	TEMPERATURE 762 775	190 degrees C
+T52	AC 790 796	grease
+T53	TOOL 797 815	an 8 inch tart pan
+T55	TOOL 848 865	a floured surface
+T56	AC 867 871	roll
+T57	FOOD 872 886	the tart dough
+T58	FOOD 894 912	1/4 inch thickness
+T59	AC 918 923	Press
+T60	FOOD 924 941	the chilled dough
+T61	TOOL 947 968	the prepared tart pan
+T62	AC 974 978	Trim
+T63	FOOD 979 988	the edges
+T64	AC 994 1000	pierce
+T65	FOOD 1001 1011	the bottom
+T66	TOOL 1017 1023	a fork
+T67	AC 1029 1033	Bake
+T68	DUR 1034 1050	15 to 18 minutes
+T69	TOOL 1054 1072	the preheated oven
+T70	CONDITION_CLAUSE 1074 1092	until golden brown
+T71	AC 1098 1104	Remove
+T72	TOOL 1108 1119	a wire rack
+T73	AC 1125 1129	cool
+T74	AC 1146 1151	Spoon
+T75	FOOD 1152 1171	the filling mixture
+T76	FOOD 1177 1186	the crust
+T77	AC 1192 1196	Bake
+T78	DUR 1197 1213	18 to 20 minutes
+T79	TOOL 1217 1235	the preheated oven
+T80	AC 1241 1245	Cool
+T81	TEMPERATURE 1249 1265	room temperature
+T82	TOOL 1269 1280	a wire rack
+T83	AC 1286 1297	Refrigerate
+T84	DUR 1298 1305	8 hours
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	ArgM_LOC Arg1:T2 Arg2:T1	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	ArgM_TMP Arg1:T7 Arg2:T9	
+R8	Arg2_PPT_Z Arg1:T7 Arg2:T2	
+R9	Arg1_PPT Arg1:T10 Arg2:T11	
+R10	Arg1_PPT Arg1:T12 Arg2:T13	
+R11	ArgM_MEANS Arg1:T12 Arg2:T14	
+R12	ArgM_TMP Arg1:T12 Arg2:T15	
+R13	Arg2_PPT_Z Arg1:T10 Arg2:T7	
+R14	Arg3_PRD Arg1:T16 Arg2:T20	
+R15	ArgM_MEANS Arg1:T17 Arg2:T18	
+R16	Arg1_PPT_X Arg1:T17 Arg2:T16	
+R17	ArgM_TMP Arg1:T19 Arg2:T21	
+R18	Arg1_PPT_X Arg1:T19 Arg2:T17	
+R19	Arg1_PPT Arg1:T24 Arg2:T25	
+R20	ArgM_TMP Arg1:T24 Arg2:T26	
+R21	Arg1_PPT Arg1:T28 Arg2:T29	
+R22	Arg1_PPT Arg1:T28 Arg2:T30	
+R23	Arg1_PPT Arg1:T28 Arg2:T31	
+R24	ArgM_LOC Arg1:T28 Arg2:T27	
+R25	Arg1_PPT Arg1:T24 Arg2:T22	
+R27	Arg1_PPT Arg1:T32 Arg2:T33	
+R28	Arg2_PPT Arg1:T32 Arg2:T34	
+R29	ArgM_TMP Arg1:T35 Arg2:T37	
+R30	Simultaneous Arg1:T35 Arg2:T36	
+R31	ArgM_TMP Arg1:T35 Arg2:T38	
+R32	ArgM_PRP Arg1:T35 Arg2:T39	
+R35	Arg2_DIR Arg1:T42 Arg2:T43	
+R36	Arg1_PPT_X Arg1:T42 Arg2:T35	
+R37	Arg1_PPT Arg1:T44 Arg2:T45	
+R38	Arg2_PPT_Z Arg1:T44 Arg2:T42	
+R39	ArgM_MNR Arg1:T46 Arg2:T47	
+R40	Arg1_PPT_X Arg1:T46 Arg2:T44	
+R41	Arg1_PPT Arg1:T48 Arg2:T49	
+R42	ArgM_MNR Arg1:T48 Arg2:T50	
+R43	ArgM_MNR Arg1:T48 Arg2:T51	
+R44	Arg1_PPT Arg1:T52 Arg2:T53	
+R46	Arg1_PPT Arg1:T56 Arg2:T57	
+R47	Arg3_PRD Arg1:T56 Arg2:T58	
+R48	ArgM_LOC Arg1:T56 Arg2:T55	
+R49	Arg1_PPT Arg1:T59 Arg2:T60	
+R50	Arg2_GOL Arg1:T59 Arg2:T61	
+R51	Arg1_PPT Arg1:T62 Arg2:T63	
+R52	Arg1_PPT Arg1:T64 Arg2:T65	
+R53	ArgM_MEANS Arg1:T64 Arg2:T66	
+R54	ArgM_TMP Arg1:T67 Arg2:T68	
+R55	ArgM_LOC Arg1:T67 Arg2:T69	
+R56	ArgM_TMP Arg1:T67 Arg2:T70	
+R57	Arg3_GOL Arg1:T71 Arg2:T72	
+R58	Arg1_PPT_X Arg1:T73 Arg2:T71	
+R59	Arg1_PPT Arg1:T74 Arg2:T75	
+R60	Arg2_GOL Arg1:T74 Arg2:T76	
+R61	ArgM_TMP Arg1:T77 Arg2:T78	
+R62	ArgM_LOC Arg1:T77 Arg2:T79	
+R63	ArgM_MNR Arg1:T80 Arg2:T81	
+R64	ArgM_LOC Arg1:T80 Arg2:T82	
+R65	ArgM_TMP Arg1:T83 Arg2:T84	
+R66	Arg1_PPT_X Arg1:T83 Arg2:T80	
+R67	Arg1_PPT_X Arg1:T67 Arg2:T64	
+#1	AnnotatorNotes R8	the mix; the mixture; the sifted mixture
+#2	AnnotatorNotes R13	the crumbs; the butter mix; 
+#3	AnnotatorNotes R18	the wrapped mixture; the mixture wrapped in plastic
+#4	AnnotatorNotes R36	the mix; the thickened mixture
+#5	AnnotatorNotes R38	the mix; the cooked mixture; 
+#6	AnnotatorNotes R40	the mixture; the mixture with vanilla
+#7	AnnotatorNotes R67	the dough; the pierced dough
+#8	AnnotatorNotes R66	the tart; the cooled tart
+R26	Arg1_PPT_X Arg1:T16 Arg2:T12	
+#9	AnnotatorNotes R26	the flour mixture; the moistened batter; the moistened mixture
+#10	AnnotatorNotes R16	the round mixture; the round batter
+R34	Arg1_PPT_X Arg1:T77 Arg2:T74	
+R45	Arg1_PPT_X Arg1:T71 Arg2:T67	
+#11	AnnotatorNotes R45	the baked dough; the golded brown dough
+#12	AnnotatorNotes R58	the tart; the brown on the wire rack
+#13	AnnotatorNotes R34	the crust; the crust with filling mixture

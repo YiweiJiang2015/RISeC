@@ -1,0 +1,93 @@
+T1	AC 3 8	Place
+T2	AC 52 55	Add
+T3	AC 146 151	Cover
+T4	AC 156 160	cook
+T5	AC 215 221	Remove
+T6	AC 263 271	Transfer
+T7	AC 315 322	Combine
+T8	AC 395 399	boil
+T9	AC 401 405	cook
+T10	AC 410 414	stir
+T11	AC 452 456	Pour
+T12	AC 486 491	serve
+T13	FOOD 9 18	mushrooms
+T14	FOOD 23 30	chicken
+T15	TOOL 34 47	a slow cooker
+T16	FOOD 56 66	the celery
+T17	FOOD 68 76	zucchini
+T18	FOOD 78 85	carrots
+T19	FOOD 87 92	onion
+T20	FOOD 94 106	tomato juice
+T21	FOOD 108 113	broth
+T22	FOOD 115 121	garlic
+T23	FOOD 123 130	paprika
+T24	FOOD 135 141	pepper
+T25	TEMPERATURE 164 167	low
+T26	DUR 172 179	5 hours
+T27	CONDITION_CLAUSE 180 210	or until meat juices run clear
+T28	FOOD 222 229	chicken
+T29	FOOD 234 244	vegetables
+T30	AC 249 253	keep
+T31	FOOD 272 286	cooking juices
+T32	TOOL 290 300	a saucepan
+T33	AC 302 306	skim
+T34	FOOD 307 310	fat
+T35	FOOD 323 337	the cornstarch
+T36	FOOD 342 347	water
+T37	CONDITION_CLAUSE 348 360	until smooth
+T38	AC 362 365	add
+T39	FOOD 369 379	the juices
+T40	DUR 419 428	2 minutes
+T41	CONDITION_CLAUSE 432 447	until thickened
+T42	FOOD 462 469	chicken
+T43	FOOD 474 484	vegetables
+T44	FOOD 497 501	rice
+R1	Arg1_PPT Arg1:T1 Arg2:T13	
+R2	Arg1_PPT Arg1:T1 Arg2:T14	
+R3	Arg3_GOL Arg1:T1 Arg2:T15	
+R4	Arg1_PPT Arg1:T2 Arg2:T16	
+R5	Arg1_PPT Arg1:T2 Arg2:T17	
+R6	Arg1_PPT Arg1:T2 Arg2:T18	
+R7	Arg1_PPT Arg1:T2 Arg2:T19	
+R8	Arg1_PPT Arg1:T2 Arg2:T20	
+R9	Arg1_PPT Arg1:T2 Arg2:T21	
+R10	Arg1_PPT Arg1:T2 Arg2:T22	
+R11	Arg1_PPT Arg1:T2 Arg2:T23	
+R12	Arg1_PPT Arg1:T2 Arg2:T24	
+R13	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+R14	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R15	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R16	ArgM_MNR Arg1:T4 Arg2:T25	
+R17	ArgM_TMP Arg1:T4 Arg2:T26	
+R18	ArgM_TMP Arg1:T4 Arg2:T27	
+R19	Arg1_PPT Arg1:T5 Arg2:T28	
+R20	Arg1_PPT Arg1:T5 Arg2:T29	
+R21	Arg1_PPT_X Arg1:T30 Arg2:T5	
+R23	Arg1_PPT Arg1:T6 Arg2:T31	
+R24	Arg3_GOL Arg1:T6 Arg2:T32	
+R25	Arg1_PPT Arg1:T33 Arg2:T34	
+R26	Arg1_PPT Arg1:T7 Arg2:T35	
+R27	Arg1_PPT Arg1:T7 Arg2:T36	
+R28	ArgM_TMP Arg1:T7 Arg2:T37	
+R29	Arg2_PPT Arg1:T38 Arg2:T39	
+R30	Arg1_PPT_X Arg1:T38 Arg2:T7	
+R31	Arg1_PPT_X Arg1:T8 Arg2:T38	
+R32	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R33	ArgM_TMP Arg1:T9 Arg2:T40	
+R34	ArgM_TMP Arg1:T9 Arg2:T41	
+R35	Simultaneous Arg1:T9 Arg2:T10	
+R36	Arg3_GOL Arg1:T11 Arg2:T42	
+R37	Arg1_PPT_X Arg1:T11 Arg2:T9	
+R38	Arg3_GOL Arg1:T11 Arg2:T43	
+R39	Arg2_PPT Arg1:T12 Arg2:T44	
+R40	Arg1_PPT_X Arg1:T12 Arg2:T11	
+#1	AnnotatorNotes R13	the cooker; the chicken; the cooker with chicken and mushrooms
+#2	AnnotatorNotes R14	the cooker; the chicken with vegetables
+#3	AnnotatorNotes R15	the chicken; the chicken with vegetables
+#4	AnnotatorNotes R21	the chicken and vegetables
+#5	AnnotatorNotes R30	the mixture; the cornstarch with water mixture
+#6	AnnotatorNotes R31	the sauce; the mixture; the saucepan with juices and cornstarch
+#7	AnnotatorNotes R32	the sauce; the boiling sauce
+#8	AnnotatorNotes T10	REDO - do we need arx1_ppt_x? 
+#9	AnnotatorNotes R37	the sauce; the thickened sauce
+#10	AnnotatorNotes R40	the chicken with vegetables

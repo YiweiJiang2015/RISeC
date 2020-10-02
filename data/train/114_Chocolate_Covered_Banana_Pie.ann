@@ -1,0 +1,86 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 32	crushed cookie crumbs
+T3	FOOD 34 40	pecans
+T4	FOOD 46 52	butter
+T5	FOOD 56 65	margarine
+T6	AC 70 75	Press
+T7	TOOL 81 98	a 9 x 13 inch pan
+T8	AC 103 107	Bake
+T9	TEMPERATURE 111 124	375 degrees F
+T10	TEMPERATURE 126 139	190 degrees C
+T11	DUR 145 154	5 minutes
+T12	AC 159 163	Cool
+T13	AC 168 175	Combine
+T14	FOOD 176 191	chocolate chips
+T15	FOOD 193 203	1 cup milk
+T16	FOOD 209 228	2 cups marshmallows
+T17	TOOL 232 243	a sauce pan
+T18	AC 248 252	Stir
+T19	TEMPERATURE 258 266	low heat
+T20	CONDITION_CLAUSE 267 279	until melted
+T21	AC 284 288	Pour
+T22	FOOD 294 306	cooled crust
+T23	AC 311 316	Chill
+T24	DUR 321 327	1 hour
+T25	AC 332 339	Arrange
+T26	FOOD 340 353	banana slices
+T27	FOOD 359 382	chilled chocolate layer
+T28	AC 388 395	Prepare
+T29	FOOD 396 407	pudding mix
+T31	AC 463 470	Fold in
+T32	FOOD 471 495	nondairy whipped topping
+T33	FOOD 500 522	remaining marshmallows
+T34	AC 528 532	Pour
+T35	FOOD 533 548	pudding mixture
+T36	FOOD 554 561	bananas
+T37	AC 567 572	Grate
+T38	FOOD 573 586	chocolate bar
+T39	FOOD 592 599	the top
+T40	AC 605 610	Chill
+T41	DUR 615 627	2 to 3 hours
+T42	CONDITION_CLAUSE 628 642	before serving
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T1 Arg2:T5	
+R5	Arg3_GOL Arg1:T6 Arg2:T7	
+R6	Arg1_PPT_X Arg1:T6 Arg2:T1	
+R7	ArgM_MNR Arg1:T8 Arg2:T9	
+R8	ArgM_MNR Arg1:T8 Arg2:T10	
+R9	ArgM_TMP Arg1:T8 Arg2:T11	
+R10	Arg1_PPT_X Arg1:T8 Arg2:T6	
+R11	Arg1_PPT_X Arg1:T12 Arg2:T8	
+R12	Arg1_PPT Arg1:T13 Arg2:T14	
+R13	Arg1_PPT Arg1:T13 Arg2:T15	
+R14	Arg1_PPT Arg1:T13 Arg2:T16	
+R15	ArgM_LOC Arg1:T13 Arg2:T17	
+R16	ArgM_MNR Arg1:T18 Arg2:T19	
+R17	ArgM_TMP Arg1:T18 Arg2:T20	
+R18	Arg1_PPT_X Arg1:T18 Arg2:T13	
+R19	Arg1_PPT_X Arg1:T21 Arg2:T18	
+R20	Arg3_GOL Arg1:T21 Arg2:T22	
+R21	TODO Arg1:T22 Arg2:T12	
+R22	Arg1_PPT_X Arg1:T23 Arg2:T21	
+R23	ArgM_TMP Arg1:T23 Arg2:T24	
+R24	Arg1_PPT Arg1:T25 Arg2:T26	
+R25	Arg3_GOL Arg1:T25 Arg2:T27	
+R26	TODO Arg1:T27 Arg2:T23	
+R27	Arg1_PPT Arg1:T28 Arg2:T29	
+R28	Arg1_PPT Arg1:T31 Arg2:T32	
+R29	Arg1_PPT Arg1:T31 Arg2:T33	
+T30	OTHER 408 426	as directed on box
+R30	Arg1_PPT Arg1:T34 Arg2:T35	
+R31	Arg3_GOL Arg1:T34 Arg2:T36	
+R32	Arg2_PPT Arg1:T37 Arg2:T38	
+R33	TODO Arg1:T35 Arg2:T28	
+R34	Arg1_GOL Arg1:T37 Arg2:T39	
+R35	ArgM_TMP Arg1:T40 Arg2:T41	
+R36	ArgM_TMP Arg1:T40 Arg2:T42	
+R37	Arg1_PPT_X Arg1:T40 Arg2:T37	
+#1	AnnotatorNotes R6	the mixture; the crust; crushed cookie crumbs, pecans, and butter;
+#2	AnnotatorNotes R10	the mixture; crushed cookie crumbs, pecans, and butter;
+#3	AnnotatorNotes R11	the mixture; crushed cookie crumbs, pecans, and butter;
+#4	AnnotatorNotes R18	the chocolate; the chocolate layer; the mixture; chocolate chips, 1 cup milk and 2 cups marshmallows;
+#5	AnnotatorNotes R19	the chocolate layer; the mixture; chocolate chips, 1 cup milk and 2 cups marshmallows;
+#6	AnnotatorNotes R22	the mixture; chocolate chips, 1 cup milk and 2 cups marshmallows;
+#7	AnnotatorNotes R37	the pie; the mixture; 

@@ -1,0 +1,34 @@
+T1	AC 3 8	Place
+T2	FOOD 9 23	the mayonnaise
+T3	FOOD 28 44	chipotle peppers
+T4	TOOL 50 66	a food processor
+T5	AC 72 79	process
+T6	CONDITION_CLAUSE 80 98	until well blended
+T7	AC 103 106	Add
+T8	FOOD 107 137	a little bit more of the sauce
+T10	AC 187 195	Transfer
+T11	TOOL 199 213	a serving bowl
+T12	AC 219 226	stir in
+T13	FOOD 227 242	the green onion
+T14	FOOD 247 266	sweet pickle relish
+T15	AC 271 276	Chill
+T16	CONDITION_CLAUSE 277 290	until serving
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg3_GOL Arg1:T1 Arg2:T4	
+R4	ArgM_TMP Arg1:T5 Arg2:T6	
+R5	Arg1_PPT_X Arg1:T5 Arg2:T1	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg3_GOL Arg1:T10 Arg2:T11	
+R8	Arg1_PPT Arg1:T12 Arg2:T13	
+R9	Arg1_PPT Arg1:T12 Arg2:T14	
+R10	Arg2_PPT_Z Arg1:T12 Arg2:T10	
+R11	Arg1_PPT_X Arg1:T10 Arg2:T7	
+R12	Arg1_PPT_X Arg1:T15 Arg2:T12	
+R13	ArgM_TMP Arg1:T15 Arg2:T16	
+#1	AnnotatorNotes R5	the mayonnaise; the mayonnaise and peppers
+R14	Arg2_PPT_Z Arg1:T7 Arg2:T5	
+#2	AnnotatorNotes R14	the peppers; the blended mixture; the blended peppers
+#3	AnnotatorNotes R11	the peppers; the peppers with sauce
+#4	AnnotatorNotes R10	the peppers; the peppers in the bowl
+#5	AnnotatorNotes R12	the peppers with onion and relish

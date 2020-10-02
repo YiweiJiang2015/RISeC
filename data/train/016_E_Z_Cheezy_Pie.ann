@@ -1,0 +1,96 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	TOOL 56 76	a medium mixing bowl
+T6	AC 78 82	whip
+T7	FOOD 83 95	cream cheese
+T8	CONDITION_CLAUSE 96 108	until fluffy
+T9	AC 113 116	Add
+T10	FOOD 117 130	1/2 cup sugar
+T11	FOOD 135 150	vanilla extract
+T12	AC 155 158	Mix
+T13	CONDITION_CLAUSE 159 171	until smooth
+T14	AC 176 179	Add
+T15	FOOD 180 184	eggs
+T16	AC 189 193	Beat
+T17	CONDITION_CLAUSE 194 239	until all ingredients are thoroughly combined
+T18	AC 244 248	Pour
+T19	FOOD 249 256	mixture
+T20	FOOD 262 275	pastry shells
+T21	AC 280 284	Bake
+T22	TOOL 288 302	preheated oven
+T23	DUR 307 317	20 minutes
+T24	AC 322 328	Remove
+T25	AC 337 342	stand
+T26	DUR 347 356	5 minutes
+T27	TOOL 365 377	a small bowl
+T28	AC 379 386	combine
+T29	FOOD 387 397	sour cream
+T30	FOOD 402 421	3 tablespoons sugar
+T31	AC 427 430	Mix
+T32	AC 442 448	spread
+T33	FOOD 449 464	half of mixture
+T34	FOOD 470 478	each pie
+T35	AC 484 488	Turn
+T36	TOOL 493 497	oven
+T37	AC 503 508	Place
+T38	FOOD 509 513	pies
+T39	TOOL 517 521	oven
+T40	DUR 526 536	15 minutes
+T41	AC 542 548	Remove
+T42	AC 553 558	chill
+T43	DUR 559 568	overnight
+T45	AC 590 593	top
+T46	FOOD 594 602	each pie
+T47	FOOD 608 629	1 cup of strawberries
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+R5	ArgM_TMP Arg1:T6 Arg2:T8	
+R6	ArgM_LOC Arg1:T6 Arg2:T5	
+R7	Arg1_PPT Arg1:T9 Arg2:T10	
+R8	Arg1_PPT Arg1:T9 Arg2:T11	
+R9	Arg2_PPT_Z Arg1:T9 Arg2:T6	
+R10	ArgM_TMP Arg1:T12 Arg2:T13	
+R11	Arg1_PPT_X Arg1:T12 Arg2:T9	
+R12	Arg1_PPT Arg1:T14 Arg2:T15	
+R13	Arg2_PPT_Z Arg1:T14 Arg2:T12	
+R14	ArgM_TMP Arg1:T16 Arg2:T17	
+R15	Arg1_PPT_X Arg1:T16 Arg2:T14	
+R16	Arg1_PPT Arg1:T18 Arg2:T19	
+R17	Arg3_GOL Arg1:T18 Arg2:T20	
+R18	ArgM_LOC Arg1:T21 Arg2:T22	
+R19	ArgM_TMP Arg1:T21 Arg2:T23	
+R20	Arg1_PPT_X Arg1:T21 Arg2:T18	
+R21	ArgM_TMP Arg1:T25 Arg2:T26	
+R22	Arg1_PPT Arg1:T28 Arg2:T29	
+R23	Arg1_PPT Arg1:T28 Arg2:T30	
+R24	ArgM_LOC Arg1:T28 Arg2:T27	
+R25	Arg1_PPT_X Arg1:T24 Arg2:T21	
+R26	Arg1_PPT_X Arg1:T31 Arg2:T28	
+R27	Arg1_PPT Arg1:T32 Arg2:T33	
+R28	Arg2_GOL Arg1:T32 Arg2:T34	
+R29	Arg1_PPT Arg1:T35 Arg2:T36	
+R30	Arg1_PPT Arg1:T37 Arg2:T38	
+R31	Arg3_GOL Arg1:T37 Arg2:T39	
+R32	ArgM_TMP Arg1:T37 Arg2:T40	
+R33	Arg1_PPT_X Arg1:T41 Arg2:T37	
+R34	Arg1_PPT_X Arg1:T42 Arg2:T41	
+R35	ArgM_TMP Arg1:T42 Arg2:T43	
+R36	Arg1_GOL Arg1:T45 Arg2:T46	
+R37	Arg2_PPT Arg1:T45 Arg2:T47	
+T44	CONDITION_CLAUSE 574 588	Before serving
+R38	ArgM_TMP Arg1:T45 Arg2:T44	
+#1	AnnotatorNotes R9	the cream cheese; the whipped cream cheese
+#2	AnnotatorNotes R11	the ingredients; the cream cheese with sugar and vanilla extract
+#3	AnnotatorNotes R13	the mixture
+#4	AnnotatorNotes R15	the mixture
+#5	AnnotatorNotes R20	the pie
+#6	AnnotatorNotes R25	the pie
+R39	Arg1_PPT_X Arg1:T25 Arg2:T24	
+#7	AnnotatorNotes R39	the pie; the cheezy pie
+#8	AnnotatorNotes R26	the ingredients; the sour cream and sugar
+#9	AnnotatorNotes R33	the pies
+#10	AnnotatorNotes R34	the pies

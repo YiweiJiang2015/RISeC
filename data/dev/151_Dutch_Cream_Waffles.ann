@@ -1,0 +1,63 @@
+T1	TOOL 6 25	a large mixing bowl
+T2	AC 27 34	combine
+T3	FOOD 35 40	flour
+T4	FOOD 45 49	salt
+T5	TOOL 57 76	a small mixing bowl
+T6	AC 78 82	beat
+T7	FOOD 83 92	egg yolks
+T8	AC 106 112	adding
+T9	FOOD 113 118	cream
+T11	AC 123 127	Beat
+T12	DUR 132 140	1 minute
+T13	AC 145 148	Add
+T14	FOOD 152 165	flour mixture
+T15	AC 167 174	combine
+T16	OTHER 178 187	low speed
+T17	AC 194 198	beat
+T18	OTHER 202 213	medium-high
+T19	CONDITION_CLAUSE 214 226	until smooth
+T20	TOOL 234 259	another small mixing bowl
+T21	AC 284 288	beat
+T22	FOOD 289 299	egg whites
+T23	CONDITION_CLAUSE 308 330	until stiff peaks form
+T24	OTHER 303 307	high
+T25	AC 342 346	fold
+T26	FOOD 352 358	batter
+T27	AC 363 367	Bake
+T28	TOOL 371 394	a preheated waffle iron
+T29	OTHER 395 433	according to manufacturer's directions
+T30	AC 438 443	Serve
+T31	FOOD 449 465	warm maple syrup
+T32	FOOD 469 490	fresh fruit in season
+T33	TOOL 269 282	clean beaters
+R1	ArgM_MEANS Arg1:T21 Arg2:T33	
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg1_PPT Arg1:T2 Arg2:T4	
+R4	ArgM_LOC Arg1:T2 Arg2:T1	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	Simultaneous Arg1:T6 Arg2:T8	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	ArgM_LOC Arg1:T6 Arg2:T5	
+R9	ArgM_TMP Arg1:T11 Arg2:T12	
+R10	Arg2_PPT Arg1:T13 Arg2:T14	
+R11	ArgM_TMP Arg1:T17 Arg2:T19	
+R12	Arg1_PPT_X Arg1:T17 Arg2:T15	
+R13	Arg1_PPT_X Arg1:T15 Arg2:T13	
+R14	Arg1_PPT_X Arg1:T11 Arg2:T6	
+R15	Arg1_PPT_X Arg1:T13 Arg2:T11	
+R16	ArgM_LOC Arg1:T21 Arg2:T20	
+R17	Arg1_PPT Arg1:T21 Arg2:T22	
+R18	ArgM_TMP Arg1:T21 Arg2:T23	
+R19	Arg2_PPT Arg1:T25 Arg2:T26	
+R20	Arg1_PPT_X Arg1:T25 Arg2:T21	
+R21	ArgM_LOC Arg1:T27 Arg2:T28	
+R22	Arg2_PPT Arg1:T30 Arg2:T31	
+R23	Arg2_PPT Arg1:T30 Arg2:T32	
+R24	TODO Arg1:T31 Arg2:T32	
+R25	Arg1_PPT_X Arg1:T27 Arg2:T25	
+#1	AnnotatorNotes R14	the beaten egg yolks; egg yolks with cream
+#2	AnnotatorNotes R15	the mixture; the beaten egg yolks
+#3	AnnotatorNotes R20	the beaten whites; the beaten egg whites
+#4	AnnotatorNotes R25	the egg whites; the folded beaten egg whites
+#5	AnnotatorNotes R13	the flour mixture; the flour mixture with egg yolks
+#6	AnnotatorNotes R12	the flour mixture; the flour mixture with egg yolks

@@ -1,0 +1,34 @@
+T1	AC 231 236	Serve
+T2	AC 135 140	Grill
+T3	AC 14 21	combine
+T4	AC 54 61	Crumble
+T5	AC 93 96	mix
+T6	AC 106 111	Shape
+T7	TOOL 6 12	a bowl
+T8	FOOD 22 49	the first seven ingredients
+T9	FOOD 62 66	beef
+T10	FOOD 71 78	sausage
+T11	FOOD 84 91	mixture
+T12	FOOD 117 130	eight patties
+T13	TEMPERATURE 158 173	medium-hot heat
+T14	DUR 178 189	4-6 minutes
+T15	FOOD 240 244	buns
+T16	CONDITION_CLAUSE 206 226	until no longer pink
+R1	Arg2_PPT Arg1:T1 Arg2:T15	
+R2	Arg1_PPT Arg1:T3 Arg2:T8	
+R3	ArgM_LOC Arg1:T3 Arg2:T7	
+R4	Arg1_PPT Arg1:T4 Arg2:T9	
+R5	Arg1_PPT Arg1:T4 Arg2:T10	
+R6	TODO Arg1:T4 Arg2:T11	
+R7	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R8	Arg2_PRD Arg1:T6 Arg2:T12	
+R9	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R10	Arg1_PPT_X Arg1:T2 Arg2:T6	
+R11	ArgM_MNR Arg1:T2 Arg2:T13	
+R12	ArgM_TMP Arg1:T2 Arg2:T14	
+R13	ArgM_TMP Arg1:T2 Arg2:T16	
+R14	Arg1_PPT_X Arg1:T1 Arg2:T2	
+#1	AnnotatorNotes R7	the beef mixture; the beef and sausage mixture
+#2	AnnotatorNotes R9	the beef mixture; the beef and sausage mixture
+#3	AnnotatorNotes R10	the patties; the beef patties
+#4	AnnotatorNotes R14	the beef mixture; the grilled beef mixture

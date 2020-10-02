@@ -1,0 +1,118 @@
+T2	FOOD 9 44	a large pot of lightly salted water
+T3	AC 50 54	boil
+T1	AC 59 63	Cook
+T4	FOOD 64 69	pasta
+T5	DUR 74 89	8 to 10 minutes
+T6	CONDITION_CLAUSE 94 108	until al dente
+T7	AC 110 115	drain
+T8	TOOL 123 138	a large skillet
+T9	AC 140 145	brown
+T10	FOOD 146 150	beef
+T11	TEMPERATURE 156 167	medium heat
+T12	AC 172 177	Drain
+T13	TOOL 187 190	pan
+T14	OTHER 178 181	fat
+T15	AC 196 204	transfer
+T16	FOOD 205 209	meat
+T17	TOOL 213 219	a bowl
+T18	TOOL 227 243	the same skillet
+T19	AC 245 249	cook
+T20	FOOD 250 255	onion
+T21	FOOD 260 271	bell pepper
+T22	FOOD 275 281	butter
+T23	CONDITION_CLAUSE 282 294	until tender
+T24	AC 299 306	Stir in
+T25	FOOD 307 315	tomatoes
+T26	FOOD 317 326	mushrooms
+T27	FOOD 328 334	olives
+T28	FOOD 341 345	beef
+T29	AC 351 357	season
+T30	FOOD 363 370	oregano
+T31	AC 375 381	Simmer
+T32	DUR 386 396	10 minutes
+T33	AC 401 408	Preheat
+T34	TEMPERATURE 417 430	350 degrees F
+T35	TEMPERATURE 432 445	175 degrees C
+T36	AC 459 465	grease
+T37	TOOL 466 489	a 9x13 inch baking dish
+T38	AC 495 502	Arrange
+T39	FOOD 503 532	half of the cooked fettuccine
+T41	TOOL 536 553	the prepared dish
+T42	AC 555 558	top
+T43	FOOD 564 602	half of the beef and vegetable mixture
+T45	AC 608 616	sprinkle
+T46	FOOD 622 647	1/2 cup of Cheddar cheese
+T47	FOOD 652 680	1/2 cup of mozzarella cheese
+T48	AC 686 692	Repeat
+T49	FOOD 693 699	layers
+T50	AC 705 708	Mix
+T51	FOOD 718 722	soup
+T52	FOOD 727 737	beef broth
+T53	CONDITION_CLAUSE 738 750	until smooth
+T54	AC 756 760	pour
+T55	FOOD 766 775	casserole
+T56	AC 781 789	Sprinkle
+T57	FOOD 795 810	Parmesan cheese
+T58	AC 816 820	Bake
+T59	TOOL 824 838	preheated oven
+T60	DUR 843 859	30 to 35 minutes
+T61	CONDITION_CLAUSE 864 884	until heated through
+R1	Arg1_PPT Arg1:T3 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T4	
+R3	ArgM_TMP Arg1:T1 Arg2:T5	
+R4	ArgM_TMP Arg1:T1 Arg2:T6	
+R5	Arg1_PPT_X Arg1:T7 Arg2:T1	
+R6	TODO Arg1:T5 Arg2:T6	
+R7	Arg1_PPT Arg1:T9 Arg2:T10	
+R8	ArgM_MNR Arg1:T9 Arg2:T11	
+R9	ArgM_LOC Arg1:T9 Arg2:T8	
+R10	Arg1_PPT Arg1:T12 Arg2:T14	
+R11	Arg2_DIR Arg1:T12 Arg2:T13	
+R12	Arg1_PPT Arg1:T15 Arg2:T16	
+R13	Arg3_GOL Arg1:T15 Arg2:T17	
+R14	Arg1_PPT Arg1:T19 Arg2:T20	
+R15	Arg1_PPT Arg1:T19 Arg2:T21	
+R16	Arg1_PPT Arg1:T19 Arg2:T22	
+R17	ArgM_TMP Arg1:T19 Arg2:T23	
+R18	ArgM_LOC Arg1:T19 Arg2:T18	
+R19	Arg1_PPT Arg1:T24 Arg2:T25	
+R20	Arg1_PPT Arg1:T24 Arg2:T26	
+R21	Arg1_PPT Arg1:T24 Arg2:T27	
+R22	Arg1_PPT Arg1:T24 Arg2:T28	
+R23	Arg2_PPT Arg1:T29 Arg2:T30	
+R24	Arg1_GOL_X Arg1:T29 Arg2:T24	
+R25	Arg2_PPT_Z Arg1:T24 Arg2:T19	
+R26	ArgM_TMP Arg1:T31 Arg2:T32	
+R27	Arg1_PPT_X Arg1:T31 Arg2:T29	
+R28	ArgM_MNR Arg1:T33 Arg2:T34	
+R29	ArgM_MNR Arg1:T33 Arg2:T35	
+T62	TOOL 409 413	oven
+R30	Arg1_PPT Arg1:T33 Arg2:T62	
+R31	Arg1_PPT Arg1:T36 Arg2:T37	
+R32	Arg1_PPT Arg1:T38 Arg2:T39	
+R33	ArgM_LOC Arg1:T38 Arg2:T41	
+R34	Arg2_PPT Arg1:T42 Arg2:T43	
+R35	Arg1_PPT Arg1:T45 Arg2:T46	
+R36	Arg1_PPT Arg1:T45 Arg2:T47	
+R37	Arg1_GOL_X Arg1:T42 Arg2:T38	
+R38	Arg2_GOL_X Arg1:T45 Arg2:T42	
+R39	Arg1_PPT Arg1:T48 Arg2:T49	
+R40	Arg1_PPT Arg1:T50 Arg2:T51	
+R41	Arg1_PPT Arg1:T50 Arg2:T52	
+R42	ArgM_TMP Arg1:T50 Arg2:T53	
+R43	Arg3_GOL Arg1:T54 Arg2:T55	
+R44	Arg1_PPT Arg1:T56 Arg2:T57	
+R45	ArgM_LOC Arg1:T58 Arg2:T59	
+R46	ArgM_TMP Arg1:T58 Arg2:T60	
+R47	ArgM_TMP Arg1:T58 Arg2:T61	
+R48	Arg1_PPT Arg1:T54 Arg2:T50	
+R49	Arg2_GOL_X Arg1:T56 Arg2:T54	
+R50	Arg1_PPT_X Arg1:T58 Arg2:T56	
+#1	AnnotatorNotes R5	the pasta; the cooked pasta
+#2	AnnotatorNotes R25	the cooked onion; the cooked mix
+#3	AnnotatorNotes R24	the mixture; the mix in the skillet
+#4	AnnotatorNotes R27	the mix; the seasoned mixture; 
+#5	AnnotatorNotes R37	the fetuccine; the arranged fetuccine
+#6	AnnotatorNotes R38	the fetuccine; the topped fetuccine
+#7	AnnotatorNotes R49	the mix; the content of the casserole
+#8	AnnotatorNotes R50	the mixture; the sprinkled mix

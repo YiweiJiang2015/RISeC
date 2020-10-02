@@ -1,0 +1,47 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	400 degrees F
+T4	TEMPERATURE 34 47	200 degrees C
+T5	TOOL 56 82	a medium-sized mixing bowl
+T6	AC 84 88	stir
+T7	FOOD 98 108	mayonnaise
+T8	FOOD 110 120	sour cream
+T9	FOOD 122 137	Parmesan cheese
+T10	FOOD 142 147	onion
+T11	CONDITION_CLAUSE 152 187	When these ingredients are combined
+T12	AC 189 195	mix in
+T13	FOOD 196 212	artichoke hearts
+T14	FOOD 214 225	lemon juice
+T15	FOOD 227 231	salt
+T16	FOOD 236 242	pepper
+T17	AC 247 255	Transfer
+T18	FOOD 256 263	mixture
+T19	TOOL 267 288	a shallow baking dish
+T20	AC 293 297	Bake
+T21	TEMPERATURE 301 314	400 degrees F
+T22	TEMPERATURE 316 329	200 degrees C
+T23	DUR 335 345	20 minutes
+T24	CONDITION_CLAUSE 350 374	until light brown on top
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+R5	Arg1_PPT Arg1:T6 Arg2:T8	
+R6	Arg1_PPT Arg1:T6 Arg2:T9	
+R7	Arg1_PPT Arg1:T6 Arg2:T10	
+R8	ArgM_LOC Arg1:T6 Arg2:T5	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	Arg1_PPT Arg1:T12 Arg2:T14	
+R11	Arg1_PPT Arg1:T12 Arg2:T15	
+R12	Arg1_PPT Arg1:T12 Arg2:T16	
+R13	ArgM_TMP Arg1:T12 Arg2:T11	
+R14	Arg1_PPT Arg1:T17 Arg2:T18	
+R15	Arg3_GOL Arg1:T17 Arg2:T19	
+R16	Arg1_PPT_X Arg1:T20 Arg2:T17	
+R17	ArgM_MNR Arg1:T20 Arg2:T21	
+R18	ArgM_MNR Arg1:T20 Arg2:T22	
+R19	ArgM_TMP Arg1:T20 Arg2:T23	
+R20	ArgM_TMP Arg1:T20 Arg2:T24	
+#1	AnnotatorNotes R16	the mixture; the artichoke dip
+R21	Arg2_PPT_Z Arg1:T12 Arg2:T6	
+#2	AnnotatorNotes R21	the mixture; the onion mixture; the onion with cheese and cream

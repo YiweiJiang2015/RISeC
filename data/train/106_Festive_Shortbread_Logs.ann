@@ -1,0 +1,75 @@
+T1	TOOL 6 19	a mixing bowl
+T2	AC 21 26	cream
+T3	FOOD 27 33	butter
+T4	FOOD 38 58	confectioners' sugar
+T5	AC 63 66	Add
+T6	FOOD 67 74	vanilla
+T7	AC 89 92	add
+T8	FOOD 93 98	flour
+T9	AC 100 103	mix
+T10	TOOL 118 139	lightly floured hands
+T11	AC 141 146	shape
+T12	FOOD 147 171	tablespoonfuls of batter
+T13	FOOD 177 184	cookies
+T14	AC 189 194	Place
+T15	FOOD 195 202	cookies
+T16	TOOL 212 235	ungreased baking sheets
+T17	AC 240 244	Bake
+T18	TEMPERATURE 248 261	350 degrees F
+T19	DUR 266 278	9-11 minutes
+T20	CONDITION_CLAUSE 282 324	until edges and bottom are lightly browned
+T21	AC 329 333	Cool
+T22	DUR 338 349	2-3 minutes
+T23	CONDITION_CLAUSE 350 379	before removing to wire racks
+T24	TOOL 387 408	a microwave-safe bowl
+T25	AC 410 414	melt
+T26	FOOD 415 430	chocolate chips
+T27	FOOD 435 445	shortening
+T28	AC 447 451	stir
+T29	CONDITION_CLAUSE 452 464	until smooth
+T30	AC 469 476	Drizzle
+T31	FOOD 477 486	chocolate
+T33	FOOD 492 511	half of the cookies
+T34	AC 517 520	Dip
+T35	FOOD 585 592	walnuts
+T36	AC 571 579	sprinkle
+T38	FOOD 521 549	one end of remaining cookies
+T39	FOOD 555 564	chocolate
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	ArgM_LOC Arg1:T2 Arg2:T1	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg2_PPT_Z Arg1:T5 Arg2:T2	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg2_PPT_Z Arg1:T7 Arg2:T5	
+R8	Arg1_PPT_X Arg1:T9 Arg2:T7	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg2_PRD Arg1:T11 Arg2:T13	
+R11	ArgM_MEANS Arg1:T11 Arg2:T10	
+R12	Arg1_PPT Arg1:T14 Arg2:T15	
+R13	Arg3_GOL Arg1:T14 Arg2:T16	
+R14	Arg1_PPT_X Arg1:T17 Arg2:T14	
+R15	ArgM_MNR Arg1:T17 Arg2:T18	
+R16	ArgM_TMP Arg1:T17 Arg2:T19	
+R17	ArgM_TMP Arg1:T17 Arg2:T20	
+R18	ArgM_TMP Arg1:T21 Arg2:T22	
+R19	Arg1_PPT_X Arg1:T21 Arg2:T17	
+R20	ArgM_TMP Arg1:T21 Arg2:T23	
+R21	ArgM_LOC Arg1:T25 Arg2:T24	
+R22	Arg1_PPT Arg1:T25 Arg2:T26	
+R23	Arg1_PPT Arg1:T25 Arg2:T27	
+R24	ArgM_TMP Arg1:T28 Arg2:T29	
+R25	Arg1_PPT_X Arg1:T28 Arg2:T25	
+R26	Arg1_GOL Arg1:T30 Arg2:T33	
+R27	Arg2_PPT Arg1:T30 Arg2:T31	
+R28	Arg1_PPT Arg1:T34 Arg2:T38	
+R29	Arg3_GOL Arg1:T34 Arg2:T39	
+R30	Arg1_PPT Arg1:T36 Arg2:T35	
+R31	Arg2_GOL_X Arg1:T36 Arg2:T34	
+#1	AnnotatorNotes R5	the cream; the butter cream
+#2	AnnotatorNotes R7	the cream; the vanilla cream
+#3	AnnotatorNotes R8	the flour mixture; the batter
+#4	AnnotatorNotes R14	the cookies; the cookies on baking sheets
+#5	AnnotatorNotes R19	the cookies; the baked cookies
+#6	AnnotatorNotes R25	the chocolate chips; the chocolate mixture
+#7	AnnotatorNotes R31	the cookies; the cookies dipped with chocolate

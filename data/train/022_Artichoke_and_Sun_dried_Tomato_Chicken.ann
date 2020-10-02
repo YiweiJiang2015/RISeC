@@ -1,0 +1,82 @@
+T1	AC 3 9	Season
+T2	FOOD 10 39	both sides of chicken breasts
+T4	FOOD 45 49	salt
+T5	FOOD 54 60	pepper
+T6	AC 65 69	Heat
+T7	FOOD 70 73	oil
+T8	TOOL 77 92	a large skillet
+T9	OTHER 98 114	medium-high heat
+T10	AC 119 124	Place
+T11	FOOD 125 132	chicken
+T12	TOOL 136 143	skillet
+T13	AC 145 149	cook
+T14	AC 151 158	turning
+T17	AC 187 193	Remove
+T18	FOOD 194 201	chicken
+T19	TOOL 207 210	pan
+T20	AC 216 225	set aside
+T21	AC 230 234	Pour
+T22	FOOD 235 243	tomatoes
+T23	TOOL 249 252	pan
+T24	AC 254 258	cook
+T25	DUR 263 271	1 minute
+T26	AC 273 281	stirring
+T27	AC 298 311	incorporating
+T28	FOOD 312 326	any brown bits
+T29	TOOL 332 345	bottom of pan
+T31	AC 350 357	Stir in
+T32	FOOD 358 363	pesto
+T33	FOOD 368 378	artichokes
+T34	AC 384 390	return
+T35	FOOD 391 398	chicken
+T36	TOOL 402 405	pan
+T37	AC 410 415	Cover
+T38	AC 421 427	reduce
+T39	OTHER 428 432	heat
+T40	TEMPERATURE 436 442	medium
+T41	AC 447 453	Simmer
+T42	DUR 458 473	5 to 10 minutes
+T43	CONDITION_CLAUSE 478 509	until chicken is cooked through
+R1	Arg1_GOL Arg1:T1 Arg2:T2	
+R3	Arg2_PPT Arg1:T1 Arg2:T4	
+R4	Arg2_PPT Arg1:T1 Arg2:T5	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	ArgM_LOC Arg1:T6 Arg2:T8	
+R7	ArgM_MNR Arg1:T6 Arg2:T9	
+R8	Arg1_PPT Arg1:T10 Arg2:T11	
+R9	Arg3_GOL Arg1:T10 Arg2:T12	
+R10	Simultaneous Arg1:T13 Arg2:T14	
+R13	Arg1_PPT_X Arg1:T13 Arg2:T10	
+R14	Arg1_PPT Arg1:T17 Arg2:T18	
+R15	Arg2_DIR Arg1:T17 Arg2:T19	
+R16	Arg1_PPT Arg1:T20 Arg2:T17	
+R17	Arg1_PPT Arg1:T21 Arg2:T22	
+R18	Arg3_GOL Arg1:T21 Arg2:T23	
+R19	Arg1_PPT_X Arg1:T24 Arg2:T21	
+R20	Simultaneous Arg1:T24 Arg2:T26	
+R21	ArgM_TMP Arg1:T24 Arg2:T25	
+R22	Simultaneous Arg1:T24 Arg2:T27	
+R23	Arg1_PPT Arg1:T27 Arg2:T28	
+R24	TODO Arg1:T28 Arg2:T29	
+R26	Arg1_PPT Arg1:T31 Arg2:T32	
+R27	Arg1_PPT Arg1:T31 Arg2:T33	
+R28	Arg2_PPT_Z Arg1:T31 Arg2:T24	
+R29	Arg1_PPT Arg1:T34 Arg2:T35	
+R30	Arg3_GOL Arg1:T34 Arg2:T36	
+R31	Arg1_PPT_X Arg1:T37 Arg2:T34	
+R32	Arg1_PPT Arg1:T38 Arg2:T39	
+R33	Arg4_GOL Arg1:T38 Arg2:T40	
+R35	ArgM_TMP Arg1:T41 Arg2:T42	
+R36	ArgM_TMP Arg1:T41 Arg2:T43	
+#1	AnnotatorNotes R13	the chicken; the chicken breasts
+R2	Arg1_PPT_X Arg1:T14 Arg2:T13	
+#2	AnnotatorNotes R2	the chicken; the chicken breasts
+T3	PURPOSE_CLAUSE 164 182	to brown each side
+R11	ArgM_PRP Arg1:T14 Arg2:T3	
+#3	AnnotatorNotes R19	the tomatoes
+R12	Arg1_PPT_X Arg1:T26 Arg2:T24	
+#4	AnnotatorNotes R12	the tomatoes
+#5	AnnotatorNotes R28	the tomatoes
+#6	AnnotatorNotes R31	the pan; the chicken
+R25	Arg1_PPT_X Arg1:T41 Arg2:T38	
+#7	AnnotatorNotes R25	the chicken

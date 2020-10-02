@@ -1,0 +1,53 @@
+T1	TOOL 6 19	a medium bowl
+T2	AC 21 26	whisk
+T3	FOOD 36 45	soy sauce
+T4	FOOD 47 60	vegetable oil
+T5	FOOD 62 68	sherry
+T6	FOOD 70 81	ginger root
+T7	FOOD 86 92	garlic
+T8	AC 97 101	Fill
+T9	TOOL 102 124	a large resealable bag
+T10	FOOD 130 141	the mixture
+T11	AC 146 151	Place
+T12	FOOD 152 168	swordfish steaks
+T13	TOOL 174 194	the bag with mixture
+T14	AC 200 205	shake
+T15	PURPOSE_CLAUSE 206 213	to coat
+T16	AC 218 223	Place
+T17	TOOL 224 227	bag
+T18	TOOL 231 247	the refrigerator
+T19	FOOD 259 269	the steaks
+T20	AC 273 281	marinate
+T21	DUR 282 298	at least 4 hours
+T22	AC 303 310	Preheat
+T23	TOOL 311 327	an outdoor grill
+T24	TEMPERATURE 332 341	high heat
+T25	AC 354 357	oil
+T26	TOOL 358 363	grate
+T27	FOOD 374 390	swordfish steaks
+T28	DUR 391 415	8 to 10 minutes per side
+T29	CONDITION_CLAUSE 417 478	until the swordfish flakes easily and is opaque in the center
+T30	AC 368 373	Grill
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg1_PPT Arg1:T2 Arg2:T4	
+R4	Arg1_PPT Arg1:T2 Arg2:T5	
+R5	Arg1_PPT Arg1:T2 Arg2:T6	
+R6	Arg1_PPT Arg1:T2 Arg2:T7	
+R7	ArgM_LOC Arg1:T2 Arg2:T1	
+R8	Arg1_GOL Arg1:T8 Arg2:T9	
+R9	Arg2_PPT Arg1:T8 Arg2:T10	
+R10	Arg1_PPT Arg1:T11 Arg2:T12	
+R11	Arg3_GOL Arg1:T11 Arg2:T13	
+R12	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R13	ArgM_PRP Arg1:T14 Arg2:T15	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg3_GOL Arg1:T16 Arg2:T18	
+R16	Arg1_PPT Arg1:T20 Arg2:T19	
+R17	ArgM_TMP Arg1:T20 Arg2:T21	
+R18	Arg1_PPT Arg1:T22 Arg2:T23	
+R19	Arg1_PPT Arg1:T25 Arg2:T26	
+R20	ArgM_MNR Arg1:T22 Arg2:T24	
+R21	Arg1_PPT Arg1:T30 Arg2:T27	
+R22	ArgM_TMP Arg1:T30 Arg2:T28	
+R23	ArgM_TMP Arg1:T30 Arg2:T29	
+#1	AnnotatorNotes R12	the mixture; the bag of mixture;

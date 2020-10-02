@@ -1,0 +1,71 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 19	the oven
+T3	TEMPERATURE 23 36	350 degrees F
+T4	TOOL 60 72	a large bowl
+T5	AC 74 79	cream
+T6	FOOD 89 99	the butter
+T7	FOOD 101 104	oil
+T8	FOOD 106 117	brown sugar
+T9	FOOD 123 134	white sugar
+T10	CONDITION_CLAUSE 135 147	until smooth
+T11	AC 152 159	Beat in
+T12	FOOD 160 168	the eggs
+T13	FOOD 173 180	vanilla
+T14	AC 185 192	Combine
+T15	FOOD 193 202	the flour
+T16	FOOD 204 215	baking soda
+T17	FOOD 217 232	cream of tartar
+T18	FOOD 238 242	salt
+T19	AC 244 248	stir
+T20	FOOD 254 273	the creamed mixture
+T21	AC 278 284	Mix in
+T22	FOOD 285 304	the chocolate chips
+T23	FOOD 309 316	walnuts
+T24	AC 321 325	Drop
+T25	FOOD 326 331	dough
+T26	TOOL 358 381	ungreased cookie sheets
+T27	AC 386 390	Bake
+T28	DUR 395 411	12 to 15 minutes
+T29	TOOL 415 433	the preheated oven
+T30	CONDITION_CLAUSE 438 455	until light brown
+T31	AC 477 481	cool
+T32	TOOL 485 502	the baking sheets
+T33	FOOD 466 473	cookies
+T34	DUR 507 526	a couple of minutes
+T38	TEMPERATURE 38 51	175 degrees C
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T38	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T5 Arg2:T8	
+R7	Arg1_PPT Arg1:T5 Arg2:T9	
+R8	ArgM_TMP Arg1:T5 Arg2:T10	
+R9	ArgM_LOC Arg1:T5 Arg2:T4	
+R10	Arg1_PPT Arg1:T11 Arg2:T12	
+R11	Arg1_PPT Arg1:T11 Arg2:T13	
+R12	Arg2_PPT_Z Arg1:T11 Arg2:T5	
+R13	Arg1_PPT Arg1:T14 Arg2:T15	
+R14	Arg1_PPT Arg1:T14 Arg2:T16	
+R15	Arg1_PPT Arg1:T14 Arg2:T17	
+R16	Arg1_PPT Arg1:T14 Arg2:T18	
+R17	Arg1_PPT_X Arg1:T19 Arg2:T14	
+R18	Arg2_PPT Arg1:T19 Arg2:T20	
+R19	Arg1_PPT Arg1:T21 Arg2:T22	
+R20	Arg1_PPT Arg1:T21 Arg2:T23	
+R21	Arg2_PPT_Z Arg1:T21 Arg2:T19	
+R22	Arg1_PPT Arg1:T24 Arg2:T25	
+T39	TOOL 335 352	rounded teaspoons
+R23	ArgM_MEANS Arg1:T24 Arg2:T39	
+R24	Arg3_GOL Arg1:T24 Arg2:T26	
+R25	ArgM_TMP Arg1:T27 Arg2:T28	
+R26	ArgM_LOC Arg1:T27 Arg2:T29	
+R27	ArgM_TMP Arg1:T27 Arg2:T30	
+R28	Arg1_PPT Arg1:T31 Arg2:T33	
+R29	ArgM_LOC Arg1:T31 Arg2:T32	
+R30	ArgM_TMP Arg1:T31 Arg2:T34	
+T35	CONDITION_CLAUSE 527 579	before transferring to wire racks to cool completely
+R31	ArgM_TMP Arg1:T31 Arg2:T35	
+#1	AnnotatorNotes R12	the butter; the creamed butter; the butter mixture; the butter with sugar
+#2	AnnotatorNotes R17	the dough; the flour mixture
+#3	AnnotatorNotes R21	the dough; the creamed dough; the dough and dough blend

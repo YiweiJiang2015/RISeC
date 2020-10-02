@@ -1,0 +1,79 @@
+T1	AC 636 640	Bake
+T2	AC 588 593	Place
+T3	AC 3 10	Preheat
+T4	AC 53 57	Heat
+T6	AC 181 185	Cook
+T7	AC 218 226	Transfer
+T9	AC 347 351	roll
+T10	AC 399 402	Cut
+T11	AC 445 450	Place
+T12	AC 517 521	Fold
+T13	DUR 641 651	20 minutes
+T14	TOOL 655 673	the preheated oven
+T15	FOOD 594 605	the squares
+T16	TOOL 11 15	oven
+T17	TEMPERATURE 34 47	200 degrees C
+T18	FOOD 58 71	the olive oil
+T19	TOOL 75 92	a medium saucepan
+T20	OTHER 98 109	medium heat
+T21	FOOD 122 135	the mushrooms
+T22	FOOD 137 149	green onions
+T23	FOOD 151 157	garlic
+T24	FOOD 162 176	cayenne pepper
+T25	DUR 186 196	10 minutes
+T26	FOOD 227 247	the mushroom mixture
+T27	TOOL 251 264	a medium bowl
+T28	FOOD 278 294	the cream cheese
+T29	FOOD 299 307	crabmeat
+T30	TOOL 315 345	a lightly floured flat surface
+T31	FOOD 352 369	each pastry sheet
+T32	FOOD 375 394	a 12x12 inch square
+T33	FOOD 403 413	each sheet
+T34	OTHER 419 440	nine 4x4 inch squares
+T35	FOOD 451 487	1 tablespoon of the mushroom mixture
+T36	FOOD 493 511	each pastry square
+T37	FOOD 522 533	the squares
+T38	TOOL 609 630	a medium baking sheet
+T39	CONDITION_CLAUSE 201 213	until tender
+T40	CONDITION_CLAUSE 678 696	until golden brown
+R1	Arg1_PPT Arg1:T3 Arg2:T16	
+R2	ArgM_MNR Arg1:T3 Arg2:T17	
+R3	Arg1_PPT Arg1:T4 Arg2:T18	
+R4	ArgM_LOC Arg1:T4 Arg2:T19	
+R5	ArgM_MNR Arg1:T4 Arg2:T20	
+T5	AC 114 121	Stir in
+R6	Arg1_PPT Arg1:T5 Arg2:T21	
+R7	Arg1_PPT Arg1:T5 Arg2:T22	
+R8	Arg1_PPT Arg1:T5 Arg2:T23	
+R9	Arg1_PPT Arg1:T5 Arg2:T24	
+R10	Arg2_PPT_Z Arg1:T5 Arg2:T4	
+R11	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R12	ArgM_TMP Arg1:T6 Arg2:T25	
+R13	ArgM_TMP Arg1:T6 Arg2:T39	
+R14	Arg1_PPT Arg1:T7 Arg2:T26	
+R15	Arg3_GOL Arg1:T7 Arg2:T27	
+T8	AC 269 277	Blend in
+R16	Arg1_PPT Arg1:T8 Arg2:T28	
+R17	Arg1_PPT Arg1:T8 Arg2:T29	
+R18	Arg2_PPT_Z Arg1:T8 Arg2:T7	
+R19	Arg1_PPT Arg1:T9 Arg2:T31	
+R20	TODO Arg1:T9 Arg2:T32	
+R21	ArgM_LOC Arg1:T9 Arg2:T30	
+R22	Arg1_PPT Arg1:T10 Arg2:T33	
+R23	Arg3_PRD Arg1:T10 Arg2:T34	
+R24	Arg1_PPT Arg1:T11 Arg2:T35	
+R25	Arg3_GOL Arg1:T11 Arg2:T36	
+R26	Arg1_PPT Arg1:T12 Arg2:T37	
+R27	Arg1_PPT Arg1:T2 Arg2:T15	
+R28	Arg3_GOL Arg1:T2 Arg2:T38	
+R29	Arg1_PPT_X Arg1:T1 Arg2:T2	
+R30	ArgM_TMP Arg1:T1 Arg2:T13	
+R31	ArgM_LOC Arg1:T1 Arg2:T14	
+R32	ArgM_TMP Arg1:T1 Arg2:T40	
+T41	TEMPERATURE 19 32	400 degrees F
+R33	ArgM_MNR Arg1:T3 Arg2:T41	
+T42	OTHER 534 571	by bringing the corners to the center
+#1	AnnotatorNotes R10	the olive oil; the hot oil
+#2	AnnotatorNotes R11	the vegetables; the vegetables in hot oil
+#3	AnnotatorNotes R18	the mushroom mixture; the mushroom mixture in the medium bowl
+#4	AnnotatorNotes R29	the squares; the squares on a baking sheet

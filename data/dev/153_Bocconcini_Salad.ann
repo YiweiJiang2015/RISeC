@@ -1,0 +1,45 @@
+T1	TOOL 6 24	a large salad bowl
+T2	AC 26 33	combine
+T3	FOOD 34 48	the mozzarella
+T4	FOOD 50 65	cherry tomatoes
+T5	FOOD 67 78	bell pepper
+T6	FOOD 80 86	celery
+T7	FOOD 88 94	endive
+T8	FOOD 99 106	arugula
+T9	AC 111 116	Whisk
+T10	FOOD 126 141	the lemon juice
+T11	FOOD 146 155	olive oil
+T12	AC 157 161	pour
+T13	FOOD 167 176	the salad
+T14	AC 181 187	season
+T15	AC 191 196	taste
+T16	FOOD 202 206	salt
+T17	FOOD 211 217	pepper
+T18	AC 222 226	Toss
+T19	CONDITION_CLAUSE 227 292	until all the ingredients are thoroughly coated with the dressing
+T20	AC 297 305	Sprinkle
+T21	FOOD 306 315	the basil
+T22	FOOD 321 330	the salad
+T23	AC 335 340	serve
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	Arg1_PPT Arg1:T2 Arg2:T8	
+R7	ArgM_LOC Arg1:T2 Arg2:T1	
+R8	Arg1_PPT Arg1:T9 Arg2:T10	
+R9	Arg1_PPT Arg1:T9 Arg2:T11	
+R10	Arg3_GOL Arg1:T12 Arg2:T13	
+R11	Arg1_PPT_X Arg1:T12 Arg2:T9	
+R12	ArgM_PRP Arg1:T14 Arg2:T15	
+R13	Arg2_PPT Arg1:T14 Arg2:T16	
+R14	Arg2_PPT Arg1:T14 Arg2:T17	
+R15	Arg1_GOL_X Arg1:T14 Arg2:T12	
+R16	ArgM_TMP Arg1:T18 Arg2:T19	
+R17	Arg1_PPT Arg1:T20 Arg2:T21	
+R18	Arg1_PPT_X Arg1:T23 Arg2:T20	
+R19	Arg2_GOL Arg1:T20 Arg2:T22	
+#1	AnnotatorNotes R11	the mix; the blend of lemon and oil
+#2	AnnotatorNotes R15	the salad; oil dressed salad
+#3	AnnotatorNotes R18	the salad; the dressed salad

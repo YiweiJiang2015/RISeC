@@ -1,0 +1,106 @@
+T1	TOOL 6 19	a mixing bowl
+T2	AC 21 28	combine
+T3	FOOD 29 55	the first four ingredients
+T4	TOOL 63 73	a saucepan
+T5	AC 75 82	combine
+T6	FOOD 83 88	water
+T7	FOOD 90 93	oil
+T8	FOOD 95 101	butter
+T9	FOOD 106 111	cocoa
+T10	AC 124 128	boil
+T11	TEMPERATURE 134 145	medium heat
+T12	AC 150 154	pour
+T13	FOOD 160 175	dry ingredients
+T14	AC 177 180	mix
+T15	AC 190 193	Add
+T16	FOOD 194 198	eggs
+T17	FOOD 200 210	buttermilk
+T18	FOOD 212 219	vanilla
+T19	FOOD 224 235	baking soda
+T20	AC 237 240	mix
+T21	AC 250 254	Pour
+T22	TOOL 260 291	a greased and floured 15-in pan
+T23	AC 296 300	Bake
+T24	TEMPERATURE 304 317	375 degrees F
+T25	DUR 322 335	15-20 minutes
+T26	CONDITION_CLAUSE 339 397	until a toothpick inserted near the center comes out clean
+T27	FOOD 417 425	frosting
+T28	AC 427 434	combine
+T29	FOOD 435 445	the butter
+T30	FOOD 447 452	cream
+T31	FOOD 454 459	cocoa
+T32	FOOD 464 472	cinnamon
+T33	TOOL 476 486	a saucepan
+T34	AC 491 495	Cook
+T35	AC 500 504	stir
+T36	TEMPERATURE 510 521	medium heat
+T37	CONDITION_CLAUSE 522 574	until butter is melted and mixture is heated through
+T38	AC 579 585	Remove
+T39	TOOL 591 599	the heat
+T41	FOOD 609 614	sugar
+T40	AC 601 608	beat in
+T42	FOOD 619 626	vanilla
+T43	CONDITION_CLAUSE 627 639	until smooth
+T44	AC 645 652	Stir in
+T45	FOOD 653 660	walnuts
+T46	AC 676 682	spread
+T47	FOOD 688 696	hot cake
+T48	AC 702 706	Cool
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	ArgM_LOC Arg1:T2 Arg2:T1	
+R3	Arg1_PPT Arg1:T5 Arg2:T6	
+R4	Arg1_PPT Arg1:T5 Arg2:T7	
+R5	Arg1_PPT Arg1:T5 Arg2:T8	
+R6	Arg1_PPT Arg1:T5 Arg2:T9	
+R7	ArgM_MNR Arg1:T10 Arg2:T11	
+R8	ArgM_LOC Arg1:T5 Arg2:T4	
+R9	Arg3_GOL Arg1:T12 Arg2:T13	
+R10	Arg1_PPT_X Arg1:T14 Arg2:T12	
+R11	Arg1_PPT_X Arg1:T12 Arg2:T10	
+R12	Arg1_PPT_X Arg1:T10 Arg2:T5	
+R13	Arg1_PPT Arg1:T15 Arg2:T16	
+R14	Arg1_PPT Arg1:T15 Arg2:T17	
+R15	Arg1_PPT Arg1:T15 Arg2:T18	
+R16	Arg1_PPT Arg1:T15 Arg2:T19	
+R17	Arg1_PPT_X Arg1:T20 Arg2:T15	
+R18	Arg3_GOL Arg1:T21 Arg2:T22	
+R19	Arg1_PPT_X Arg1:T21 Arg2:T20	
+R20	ArgM_MNR Arg1:T23 Arg2:T24	
+R21	ArgM_TMP Arg1:T23 Arg2:T25	
+R22	ArgM_TMP Arg1:T23 Arg2:T26	
+R23	Arg1_PPT Arg1:T28 Arg2:T29	
+R24	Arg1_PPT Arg1:T28 Arg2:T30	
+R25	Arg1_PPT Arg1:T28 Arg2:T31	
+R26	Arg1_PPT Arg1:T28 Arg2:T32	
+R27	ArgM_LOC Arg1:T28 Arg2:T33	
+R28	ArgM_MNR Arg1:T34 Arg2:T36	
+R29	Simultaneous Arg1:T34 Arg2:T35	
+R30	ArgM_TMP Arg1:T34 Arg2:T37	
+R31	Arg2_DIR Arg1:T38 Arg2:T39	
+R32	Arg1_PPT Arg1:T40 Arg2:T41	
+R33	Arg2_PPT_Z Arg1:T40 Arg2:T38	
+R34	Arg1_PPT Arg1:T40 Arg2:T42	
+R35	ArgM_TMP Arg1:T40 Arg2:T43	
+R36	Arg1_PPT Arg1:T44 Arg2:T45	
+R37	Arg2_PPT_Z Arg1:T44 Arg2:T40	
+R38	Arg2_GOL Arg1:T46 Arg2:T47	
+R39	Arg1_PPT_X Arg1:T46 Arg2:T44	
+R40	Arg1_PPT_X Arg1:T48 Arg2:T46	
+R41	Arg1_PPT_X Arg1:T23 Arg2:T21	
+R42	TODO Arg1:T28 Arg2:T27	
+#1	AnnotatorNotes R12	the mixture; the butter mixture; the cocoa mixture
+#3	AnnotatorNotes R10	the mixture
+R43	Arg2_PPT_Z Arg1:T15 Arg2:T14	
+#4	AnnotatorNotes R43	the mixture
+#2	AnnotatorNotes R11	the chocolate sauce; the sauce
+#6	AnnotatorNotes R17	the ingredients; the dough
+#7	AnnotatorNotes R19	the dough; the cake dough; the mixture
+#8	AnnotatorNotes R41	the cake; the dough in the pan
+R44	Arg1_PPT_X Arg1:T34 Arg2:T28	
+#9	AnnotatorNotes R44	the mixture
+R45	Arg1_PPT_X Arg1:T38 Arg2:T34	
+#10	AnnotatorNotes R45	the chocolate cream; the cream in the pan; the chocolate sauce; the chocolate cream in the saucepan
+#11	AnnotatorNotes R37	the sauce; the chocolate sauce; the chocolate cream
+#12	AnnotatorNotes R39	the sauce; the chocolate sauce; the chocolate cream
+#13	AnnotatorNotes R40	the cake
+#5	AnnotatorNotes R33	the chocolate cream; the cream away from heat; the chocolate sauce; the chocolate cream away from heat

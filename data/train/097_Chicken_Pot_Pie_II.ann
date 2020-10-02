@@ -1,0 +1,190 @@
+T2	TOOL 6 22	a large saucepan
+T3	TEMPERATURE 28 44	medium high heat
+T4	AC 46 53	combine
+T5	FOOD 54 70	the chicken meat
+T6	FOOD 72 85	chicken broth
+T7	FOOD 87 91	salt
+T8	FOOD 96 102	pepper
+T9	AC 118 122	boil
+T10	AC 127 133	reduce
+T11	OTHER 134 138	heat
+T12	TEMPERATURE 142 145	low
+T13	AC 150 155	Cover
+T14	AC 164 170	simmer
+T15	DUR 175 185	30 minutes
+T16	CONDITION_CLAUSE 190 260	until chicken is no longer pink in the center and the juices run clear
+T17	AC 265 271	Remove
+T18	FOOD 272 283	the chicken
+T20	AC 292 296	cool
+R3	Arg1_PPT Arg1:T17 Arg2:T18	
+T21	AC 301 305	Pour
+T24	AC 378 387	spoon off
+T25	AC 396 399	Add
+T26	AC 457 460	Cut
+T27	AC 511 515	melt
+T28	TOOL 497 509	the same pan
+T29	AC 558 561	Add
+T30	AC 588 593	Saute
+T31	AC 595 603	stirring
+T32	AC 624 631	Stir in
+T33	OTHER 662 671	Gradually
+T34	FOOD 680 693	broth mixture
+T35	AC 672 679	stir in
+T36	AC 699 705	Simmer
+T37	AC 707 715	stirring
+T39	CONDITION_CLAUSE 728 762	until the sauce thickens and boils
+T40	AC 768 771	Add
+T41	FOOD 772 783	the chicken
+T42	FOOD 785 795	vegetables
+T43	FOOD 797 804	parsley
+T44	FOOD 809 814	thyme
+T45	AC 820 824	Pour
+T46	FOOD 825 832	mixture
+T47	TOOL 840 871	1 1/2 quart deep casserole dish
+T48	AC 877 884	Preheat
+T49	TOOL 885 889	oven
+T50	TEMPERATURE 893 906	400 degrees F
+T51	TEMPERATURE 908 921	200 degrees C
+T52	AC 928 936	Roll out
+T53	FOOD 937 943	pastry
+T54	TOOL 1001 1026	a lightly floured surface
+T55	OTHER 944 997	1 inch larger than the diameter of the casserole dish
+#1	AnnotatorNotes T55	This is quantity
+T56	AC 1032 1035	Cut
+T57	OTHER 1036 1041	slits
+T58	FOOD 1045 1055	the pastry
+T59	PURPOSE_CLAUSE 1056 1071	for venting air
+T60	AC 1077 1082	Place
+R4	ArgM_PRP Arg1:T56 Arg2:T59	
+T61	FOOD 1083 1089	pastry
+T62	TOOL 1093 1109	top of casserole
+T63	AC 1115 1119	Roll
+T64	AC 1191 1196	Brush
+T66	AC 1338 1342	cool
+T67	DUR 1347 1357	10 minutes
+T68	AC 1362 1367	serve
+T69	CONDITION_CLAUSE 1269 1328	until the crust is golden brown and the filling is bubbling
+T70	FOOD 1197 1203	pastry
+T71	FOOD 1209 1219	beaten egg
+T72	AC 1224 1228	bake
+T73	TOOL 1232 1250	the preheated oven
+T74	DUR 1255 1265	30 minutes
+T75	AC 1153 1158	flute
+T76	AC 1168 1185	pinching together
+T77	FOOD 1159 1164	edges
+T78	FOOD 1120 1125	edges
+T79	AC 1130 1138	cut away
+T80	FOOD 1139 1151	extra pastry
+T81	FOOD 516 522	butter
+T82	FOOD 526 535	margarine
+T83	TEMPERATURE 541 552	medium heat
+T84	FOOD 419 432	broth mixture
+T85	FOOD 562 571	the onion
+T86	FOOD 576 582	celery
+R6	Arg1_PPT Arg1:T29 Arg2:T85	
+R7	Arg1_PPT Arg1:T29 Arg2:T86	
+R9	Arg1_PPT Arg1:T27 Arg2:T81	
+R10	Arg1_PPT Arg1:T27 Arg2:T82	
+R11	ArgM_MNR Arg1:T27 Arg2:T83	
+R12	ArgM_LOC Arg1:T27 Arg2:T28	
+T87	FOOD 461 468	chicken
+T88	OTHER 474 489	1/2 inch pieces
+R13	Arg1_PPT Arg1:T26 Arg2:T87	
+R14	Arg2_PRD Arg1:T26 Arg2:T88	
+T89	FOOD 407 411	milk
+R15	Arg1_PPT Arg1:T25 Arg2:T89	
+R16	Arg2_PPT Arg1:T25 Arg2:T84	
+T22	FOOD 388 391	fat
+R17	Arg1_PPT Arg1:T24 Arg2:T22	
+T90	FOOD 306 341	the remaining chicken broth mixture
+T91	FOOD 349 362	measuring cup
+R19	Arg1_PPT Arg1:T21 Arg2:T90	
+R20	Arg3_GOL Arg1:T21 Arg2:T91	
+R22	ArgM_LOC Arg1:T4 Arg2:T2	
+R23	ArgM_MNR Arg1:T4 Arg2:T3	
+R24	Arg1_PPT Arg1:T4 Arg2:T5	
+R25	Arg1_PPT Arg1:T4 Arg2:T6	
+R26	Arg1_PPT Arg1:T4 Arg2:T7	
+R27	Arg1_PPT Arg1:T4 Arg2:T8	
+R28	Arg1_PPT Arg1:T10 Arg2:T11	
+R29	Arg4_GOL Arg1:T10 Arg2:T12	
+R30	Next Arg1:T9 Arg2:T10	
+R31	Arg1_PPT_X Arg1:T9 Arg2:T4	
+R32	Arg1_PPT_X Arg1:T13 Arg2:T9	
+R33	Next Arg1:T13 Arg2:T14	
+R34	ArgM_TMP Arg1:T14 Arg2:T15	
+R35	ArgM_TMP Arg1:T14 Arg2:T16	
+R2	TODO Arg1:T18 Arg2:T13	
+#2	AnnotatorNotes R2	coreference?
+R37	Next Arg1:T24 Arg2:T25	
+R38	TODO Arg1:T17 Arg2:T27	
+#3	AnnotatorNotes R38	Enables
+R39	Arg1_PPT_X Arg1:T30 Arg2:T29	
+T19	DUR 609 618	3 minutes
+T92	FOOD 632 637	flour
+T93	CONDITION_CLAUSE 638 656	until well blended
+R42	Arg1_PPT Arg1:T32 Arg2:T92	
+R44	ArgM_TMP Arg1:T32 Arg2:T93	
+R45	Arg1_PPT Arg1:T35 Arg2:T34	
+R46	Arg2_PPT_Z Arg1:T35 Arg2:T32	
+R47	ArgM_MNR Arg1:T35 Arg2:T33	
+R48	Arg1_PPT_X Arg1:T36 Arg2:T35	
+R52	Arg1_PPT Arg1:T40 Arg2:T41	
+R53	Arg1_PPT Arg1:T40 Arg2:T42	
+R54	Arg1_PPT Arg1:T40 Arg2:T43	
+R55	Arg1_PPT Arg1:T40 Arg2:T44	
+R57	TODO Arg1:T46 Arg2:T40	
+#4	AnnotatorNotes R57	coreference?
+R58	Arg1_PPT Arg1:T45 Arg2:T46	
+R59	Arg3_GOL Arg1:T45 Arg2:T47	
+R60	Arg1_PPT Arg1:T48 Arg2:T49	
+R61	ArgM_MNR Arg1:T48 Arg2:T50	
+R62	ArgM_MNR Arg1:T48 Arg2:T51	
+R63	Arg1_PPT Arg1:T52 Arg2:T53	
+R64	ArgM_LOC Arg1:T52 Arg2:T54	
+R65	Arg2_PRD Arg1:T52 Arg2:T55	
+#5	AnnotatorNotes R65	quantity?
+R66	Arg1_PPT Arg1:T56 Arg2:T57	
+R67	Arg2_DIR Arg1:T56 Arg2:T58	
+R68	TODO Arg1:T58 Arg2:T52	
+#6	AnnotatorNotes R68	coreference?
+R69	Arg1_PPT Arg1:T60 Arg2:T61	
+R70	Arg3_GOL Arg1:T60 Arg2:T62	
+R71	Next Arg1:T56 Arg2:T60	
+R72	Arg1_PPT Arg1:T63 Arg2:T78	
+R73	Arg1_PPT Arg1:T79 Arg2:T80	
+R74	Next Arg1:T63 Arg2:T79	
+R75	Arg1_PPT Arg1:T75 Arg2:T77	
+R76	Simultaneous Arg1:T75 Arg2:T76	
+R77	Next Arg1:T63 Arg2:T75	
+R78	Arg1_GOL Arg1:T64 Arg2:T70	
+R79	Arg2_PPT Arg1:T64 Arg2:T71	
+R5	ArgM_TMP Arg1:T66 Arg2:T67	
+R80	Arg1_PPT_X Arg1:T68 Arg2:T66	
+R81	Arg1_PPT_X Arg1:T72 Arg2:T64	
+R82	ArgM_LOC Arg1:T72 Arg2:T73	
+R83	ArgM_TMP Arg1:T72 Arg2:T74	
+R84	ArgM_TMP Arg1:T72 Arg2:T69	
+R85	TODO Arg1:T66 Arg2:T72	
+#7	AnnotatorNotes R85	arg1??
+R1	Arg1_PPT_X Arg1:T20 Arg2:T17	
+R8	Arg2_PPT_Z Arg1:T29 Arg2:T27	
+R21	ArgM_TMP Arg1:T30 Arg2:T19	
+R40	Simultaneous Arg1:T30 Arg2:T31	
+R41	Arg2_PPT_Z Arg1:T32 Arg2:T30	
+R43	ArgM_TMP Arg1:T36 Arg2:T39	
+R49	Simultaneous Arg1:T36 Arg2:T37	
+R50	Arg2_PPT_Z Arg1:T40 Arg2:T36	
+#8	AnnotatorNotes R31	the chicken; the chicken mixture
+#9	AnnotatorNotes R32	the chicken; the boiling chicken mixture
+R18	Arg1_PPT_X Arg1:T14 Arg2:T13	
+#10	AnnotatorNotes R18	the chicken; the covered chicken
+#11	AnnotatorNotes R1	the chicken broth; the chicken broth
+#12	AnnotatorNotes R8	the butter; the melted butter
+#13	AnnotatorNotes R39	the onion mixture; the onion mixture with butter
+#14	AnnotatorNotes R41	the onion mixture; the sauted onion mixture
+#15	AnnotatorNotes R46	the flour blend; the flour onion blend
+#16	AnnotatorNotes R48	the flour mixture; the flour broth mixture
+#17	AnnotatorNotes R50	the mixture; the broth mixture; the simmered broth mixture
+#18	AnnotatorNotes R81	the pastry; the pastry brushed with egg
+#19	AnnotatorNotes R80	the final dish; the chicken pot pie

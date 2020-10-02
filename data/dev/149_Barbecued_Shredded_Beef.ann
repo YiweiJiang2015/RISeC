@@ -1,0 +1,75 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	275 degrees F
+T4	TEMPERATURE 34 47	135 degrees C
+T5	AC 53 58	Place
+T6	FOOD 59 64	roast
+T7	TOOL 68 88	a large roasting pan
+T8	AC 93 100	scatter
+T9	FOOD 101 115	chopped onions
+T10	TOOL 128 140	a large bowl
+T11	AC 142 149	combine
+T12	FOOD 150 170	Worcestershire sauce
+T13	FOOD 172 184	liquid smoke
+T14	FOOD 186 199	garlic powder
+T15	FOOD 201 205	salt
+T16	FOOD 210 216	pepper
+T17	AC 221 228	Pour in
+T18	FOOD 229 233	beer
+T19	AC 235 239	stir
+T20	AC 244 247	add
+T21	TOOL 251 263	roasting pan
+T22	AC 268 271	Add
+T23	FOOD 272 277	water
+T24	FOOD 281 296	the top of beef
+T26	AC 301 306	Cover
+T27	AC 311 315	cook
+T28	TOOL 319 323	oven
+T29	TEMPERATURE 327 340	275 degrees F
+T30	TEMPERATURE 342 355	135 degrees C
+T31	DUR 361 373	4 to 5 hours
+T32	CONDITION_CLAUSE 378 397	When meat is cooked
+T33	AC 399 404	shred
+T34	FOOD 405 409	meat
+T35	TOOL 415 422	2 forks
+T36	AC 424 427	add
+T37	FOOD 428 442	barbecue sauce
+T38	AC 447 450	mix
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg3_GOL Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg1_PPT Arg1:T11 Arg2:T12	
+R8	Arg1_PPT Arg1:T11 Arg2:T13	
+R9	Arg1_PPT Arg1:T11 Arg2:T14	
+R10	Arg1_PPT Arg1:T11 Arg2:T15	
+R11	Arg1_PPT Arg1:T11 Arg2:T16	
+R12	ArgM_LOC Arg1:T11 Arg2:T10	
+R13	Arg1_PPT Arg1:T17 Arg2:T18	
+R14	Arg1_PPT Arg1:T22 Arg2:T23	
+R15	Arg2_PPT Arg1:T22 Arg2:T24	
+R17	Arg2_PPT_Z Arg1:T17 Arg2:T11	
+R18	Arg1_PPT_X Arg1:T19 Arg2:T17	
+R19	Arg1_PPT_X Arg1:T20 Arg2:T19	
+R20	Arg2_PPT Arg1:T20 Arg2:T21	
+R21	ArgM_LOC Arg1:T27 Arg2:T28	
+R22	ArgM_MNR Arg1:T27 Arg2:T29	
+R23	ArgM_MNR Arg1:T27 Arg2:T30	
+R24	ArgM_TMP Arg1:T27 Arg2:T31	
+R25	Arg1_PPT_X Arg1:T27 Arg2:T26	
+R26	Arg1_PPT_X Arg1:T26 Arg2:T22	
+R27	Arg1_PPT Arg1:T33 Arg2:T34	
+R28	ArgM_MEANS Arg1:T33 Arg2:T35	
+R29	Arg1_PPT Arg1:T36 Arg2:T37	
+R30	Arg2_PPT_Z Arg1:T36 Arg2:T33	
+R31	Arg1_PPT_X Arg1:T38 Arg2:T36	
+R32	ArgM_TMP Arg1:T33 Arg2:T32	
+#1	AnnotatorNotes R17	the mix; the blend
+#2	AnnotatorNotes R18	the mix; the mix with bear
+#3	AnnotatorNotes R19	the stirred mix; the stirred mix with bear
+#4	AnnotatorNotes R26	the beef; the beef with added water
+#5	AnnotatorNotes R25	the beef; the covered beef
+#6	AnnotatorNotes R30	the meat; shredded meat; shredded beef
+#7	AnnotatorNotes R31	the beef; the condimented beef

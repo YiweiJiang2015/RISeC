@@ -1,0 +1,69 @@
+T1	AC 36 43	combine
+T2	AC 101 106	Cover
+T3	AC 111 115	bake
+T4	AC 152 155	Add
+T5	AC 236 244	sprinkle
+T6	AC 213 216	Top
+T7	AC 262 267	Cover
+T8	AC 272 276	bake
+T9	CONDITION_CLAUSE 301 341	until the fish flakes easily with a fork
+T10	AC 346 353	Uncover
+T11	AC 355 363	sprinkle
+T12	FOOD 369 383	cheddar cheese
+T13	FOOD 388 404	remaining onions
+T14	AC 409 415	Return
+T15	TOOL 419 427	the oven
+T16	DUR 432 441	3 minutes
+T17	CONDITION_CLAUSE 445 467	until cheese is melted
+T18	DUR 277 297	20-25 minutes longer
+T19	FOOD 222 234	fish fillets
+T20	FOOD 250 257	paprika
+T21	FOOD 160 168	broccoli
+T22	FOOD 170 185	Parmesan cheese
+T23	FOOD 190 208	half of the onions
+T24	TEMPERATURE 119 132	375 degrees F
+T25	DUR 137 147	10 minutes
+T26	TOOL 6 34	a greased 11-in. baking dish
+T27	FOOD 48 53	broth
+T28	FOOD 55 59	rice
+T29	FOOD 61 78	Italian seasoning
+T30	FOOD 83 96	garlic powder
+R1	Arg1_PPT Arg1:T11 Arg2:T12	
+R2	Arg1_PPT Arg1:T11 Arg2:T13	
+R3	Arg2_GOL_X Arg1:T11 Arg2:T10	
+R4	Arg1_PPT Arg1:T4 Arg2:T21	
+R5	Arg1_PPT Arg1:T4 Arg2:T22	
+R6	Arg1_PPT Arg1:T4 Arg2:T23	
+R7	Arg2_PPT_Z Arg1:T4 Arg2:T3	
+R8	ArgM_MNR Arg1:T3 Arg2:T24	
+R9	ArgM_TMP Arg1:T3 Arg2:T25	
+R10	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R11	Arg1_PPT_X Arg1:T2 Arg2:T1	
+R12	Arg1_PPT Arg1:T1 Arg2:T27	
+R13	Arg1_PPT Arg1:T1 Arg2:T28	
+R14	Arg1_PPT Arg1:T1 Arg2:T29	
+R15	Arg1_PPT Arg1:T1 Arg2:T30	
+R16	ArgM_LOC Arg1:T1 Arg2:T26	
+R17	Arg2_PPT Arg1:T6 Arg2:T19	
+R18	Arg1_GOL_X Arg1:T6 Arg2:T4	
+R19	Arg1_PPT Arg1:T5 Arg2:T20	
+R20	Arg2_GOL_X Arg1:T5 Arg2:T6	
+R21	ArgM_TMP Arg1:T8 Arg2:T18	
+R22	ArgM_TMP Arg1:T8 Arg2:T9	
+R23	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R24	Arg1_PPT_X Arg1:T7 Arg2:T5	
+R25	Arg1_PPT_X Arg1:T10 Arg2:T8	
+R26	Arg3_GOL Arg1:T14 Arg2:T15	
+R27	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R28	ArgM_TMP Arg1:T14 Arg2:T16	
+R29	ArgM_TMP Arg1:T14 Arg2:T17	
+#1	AnnotatorNotes R11	The broth; The combined broth
+#2	AnnotatorNotes R10	The broth; The covered broth
+#3	AnnotatorNotes R7	The broth; The baked broth
+#4	AnnotatorNotes R24	The broth and fish fillets; The sprinkled broth and fish fillets
+#5	AnnotatorNotes R23	The broth and fish fillets; The covered broth and fish fillets
+#6	AnnotatorNotes R25	The broth and fish fillets; The baked broth and fish fillets
+#7	AnnotatorNotes R27	The broth and fish fillets; The sprinkled broth and fish fillets
+#8	AnnotatorNotes R18	the broth; the broth with broccoli
+#9	AnnotatorNotes R20	the broth mixture; the broth topped with fish fillets
+#10	AnnotatorNotes R3	The broth and fish fillets; The uncovered broth and fish fillets

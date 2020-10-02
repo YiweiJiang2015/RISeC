@@ -1,0 +1,115 @@
+T1	TOOL 6 19	a medium bowl
+T2	AC 21 26	cream
+T3	FOOD 36 42	butter
+T4	FOOD 46 55	margarine
+T5	FOOD 60 71	white sugar
+T6	CONDITION_CLAUSE 72 94	until light and fluffy
+T7	AC 99 107	Blend in
+T8	FOOD 108 111	egg
+T9	FOOD 116 123	vanilla
+T10	AC 128 132	Sift
+T11	FOOD 142 147	flour
+T12	FOOD 152 156	salt
+T13	AC 161 164	Add
+T14	FOOD 168 183	creamed mixture
+T15	AC 188 191	mix
+T16	AC 201 208	Stir in
+T17	FOOD 209 213	oats
+T18	AC 218 224	Divide
+T19	FOOD 225 230	dough
+T20	OTHER 234 238	half
+T21	AC 243 246	Add
+T22	FOOD 247 265	peppermint extract
+T23	FOOD 270 295	a few drops of food color
+T24	FOOD 299 312	half of dough
+T26	AC 317 322	Chill
+T27	DUR 327 340	several hours
+T28	AC 345 352	Preheat
+T29	TOOL 353 357	oven
+T30	TEMPERATURE 361 374	350 degrees F
+T31	TEMPERATURE 376 389	175 degrees C
+T32	AC 396 404	Roll out
+T33	FOOD 405 423	each half of dough
+T35	OTHER 427 445	1/8 inch thickness
+T38	TOOL 449 500	surface sprinkled lightly with confectioners' sugar
+T39	AC 506 513	Cut out
+T40	FOOD 514 532	half of each color
+T42	TOOL 538 579	the 2 1/2 inch heart shaped cookie cutter
+T43	FOOD 585 589	half
+T44	TOOL 595 621	a 1 1/2 inch cookie cutter
+T45	AC 627 632	Place
+T46	FOOD 633 637	them
+T47	TOOL 641 665	unprepared cookie sheets
+T48	AC 671 675	Bake
+T49	DUR 680 696	10 to 12 minutes
+T50	TOOL 700 718	the preheated oven
+T51	AC 724 730	Remove
+T52	TOOL 736 740	oven
+T53	AC 745 750	place
+T54	FOOD 751 788	1 one square (1/8) of a chocolate bar
+T55	FOOD 794 824	the center of each large heart
+T57	AC 830 835	Place
+T58	FOOD 836 847	small heart
+T59	AC 859 864	press
+T61	AC 888 896	Transfer
+T62	TOOL 900 904	rack
+T63	PURPOSE_CLAUSE 905 912	to cool
+T64	FOOD 851 854	top
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	ArgM_TMP Arg1:T2 Arg2:T6	
+R5	ArgM_LOC Arg1:T2 Arg2:T1	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg1_PPT Arg1:T7 Arg2:T9	
+R8	Arg2_PPT_Z Arg1:T7 Arg2:T2	
+R9	Arg1_PPT Arg1:T10 Arg2:T11	
+R10	Arg1_PPT Arg1:T10 Arg2:T12	
+R11	Arg2_PPT Arg1:T13 Arg2:T14	
+R12	Arg1_PPT_X Arg1:T15 Arg2:T13	
+R13	Arg1_PPT_X Arg1:T13 Arg2:T10	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg2_PPT_Z Arg1:T16 Arg2:T15	
+R16	Arg1_PPT Arg1:T18 Arg2:T19	
+R17	Arg3_PRD Arg1:T18 Arg2:T20	
+R18	Arg1_PPT Arg1:T21 Arg2:T22	
+R19	Arg1_PPT Arg1:T21 Arg2:T23	
+R20	Arg2_PPT Arg1:T21 Arg2:T24	
+R22	ArgM_TMP Arg1:T26 Arg2:T27	
+R23	Arg1_PPT Arg1:T28 Arg2:T29	
+R24	ArgM_MNR Arg1:T28 Arg2:T30	
+R25	ArgM_MNR Arg1:T28 Arg2:T31	
+R26	Arg1_PPT Arg1:T32 Arg2:T33	
+R28	ArgM_LOC Arg1:T32 Arg2:T38	
+R31	ArgM_MEANS Arg1:T39 Arg2:T42	
+R33	Arg3_PRD Arg1:T39 Arg2:T40	
+R34	Arg3_PRD Arg1:T39 Arg2:T43	
+R35	ArgM_MEANS Arg1:T39 Arg2:T44	
+R36	Arg1_PPT Arg1:T45 Arg2:T46	
+R37	Arg3_GOL Arg1:T45 Arg2:T47	
+R38	ArgM_TMP Arg1:T48 Arg2:T49	
+R39	ArgM_MNR Arg1:T48 Arg2:T50	
+R40	Arg2_DIR Arg1:T51 Arg2:T52	
+R41	Arg1_PPT Arg1:T53 Arg2:T54	
+R42	Arg3_GOL Arg1:T53 Arg2:T55	
+R44	Arg1_PPT_X Arg1:T51 Arg2:T48	
+R45	Arg1_PPT Arg1:T57 Arg2:T58	
+R46	Arg3_GOL Arg1:T57 Arg2:T64	
+R48	Arg1_PPT_X Arg1:T59 Arg2:T57	
+R49	Arg3_GOL Arg1:T61 Arg2:T62	
+R50	Arg1_PPT_X Arg1:T61 Arg2:T59	
+R51	ArgM_PRP Arg1:T61 Arg2:T63	
+R52	Arg2_PRD Arg1:T32 Arg2:T35	
+#1	AnnotatorNotes R8	the sugar mixture; the creamed butter and sugar
+#2	AnnotatorNotes R13	the flour; the sifted flour and salt
+#3	AnnotatorNotes R12	the ingredients; the flour and butter
+#4	AnnotatorNotes R15	the dough
+R21	Arg1_PPT_X Arg1:T26 Arg2:T21	
+#5	AnnotatorNotes R21	the dough
+R27	Arg1_PPT_X Arg1:T48 Arg2:T45	
+#6	AnnotatorNotes R27	the cookies
+#7	AnnotatorNotes R44	the cookies
+#8	AnnotatorNotes R48	the heart
+T25	PURPOSE_CLAUSE 873 882	to secure
+R29	ArgM_PRP Arg1:T59 Arg2:T25	
+#9	AnnotatorNotes R50	the cookies; the cupids cookies

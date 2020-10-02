@@ -1,0 +1,39 @@
+T1	AC 3 8	Place
+T4	AC 112 118	Season
+T5	AC 161 165	Cook
+T6	FOOD 43 48	water
+T7	FOOD 61 66	onion
+T8	FOOD 68 76	tomatoes
+T9	FOOD 78 94	mixed vegetables
+T10	FOOD 99 107	potatoes
+T11	FOOD 9 13	beef
+T12	TOOL 17 30	a slow cooker
+T13	FOOD 124 132	bouillon
+T14	FOOD 134 140	pepper
+T15	FOOD 142 146	salt
+T16	FOOD 151 156	basil
+T17	TEMPERATURE 169 172	low
+T18	DUR 173 180	8 hours
+T2	AC 35 42	Pour in
+T3	AC 53 60	Stir in
+R1	Arg1_PPT Arg1:T1 Arg2:T11	
+R2	Arg3_GOL Arg1:T1 Arg2:T12	
+R3	Arg1_PPT Arg1:T2 Arg2:T6	
+R4	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+R5	Arg1_PPT Arg1:T3 Arg2:T7	
+R6	Arg1_PPT Arg1:T3 Arg2:T8	
+R7	Arg1_PPT Arg1:T3 Arg2:T9	
+R8	Arg1_PPT Arg1:T3 Arg2:T10	
+R9	Arg2_PPT_Z Arg1:T3 Arg2:T2	
+R10	Arg1_GOL_X Arg1:T4 Arg2:T3	
+R11	Arg2_PPT Arg1:T4 Arg2:T13	
+R12	Arg2_PPT Arg1:T4 Arg2:T14	
+R13	Arg2_PPT Arg1:T4 Arg2:T15	
+R14	Arg2_PPT Arg1:T4 Arg2:T16	
+R15	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R16	ArgM_MNR Arg1:T5 Arg2:T17	
+R17	ArgM_TMP Arg1:T5 Arg2:T18	
+#1	AnnotatorNotes R4	the beef; the beef in the slow cooker
+#2	AnnotatorNotes R9	the beef; the beef in water
+#3	AnnotatorNotes R10	the beef; the beef with vegetables
+#4	AnnotatorNotes R15	the beef; the beef with vegetables

@@ -1,0 +1,111 @@
+T1	AC 3 10	Preheat
+T2	AC 53 58	Rinse
+T3	AC 142 147	Place
+T4	AC 210 216	Dredge
+T5	AC 307 311	Heat
+T6	AC 371 376	Place
+T7	AC 451 454	Fry
+T8	AC 537 545	Transfer
+T9	AC 608 612	Bake
+T10	AC 665 672	combine
+T11	AC 657 663	baking
+T13	AC 789 794	cover
+T12	CONDITION_CLAUSE 744 787	After the pork chops have baked for an hour
+T14	FOOD 805 821	the soup mixture
+T15	FOOD 795 799	them
+T16	AC 827 834	Replace
+T17	TOOL 835 839	foil
+T18	AC 845 849	bake
+T19	DUR 854 872	another 30 minutes
+T20	TOOL 11 15	oven
+T21	TEMPERATURE 19 32	350 degrees F
+T22	FOOD 59 69	pork chops
+T23	AC 71 74	pat
+T24	AC 84 90	season
+T25	FOOD 96 109	garlic powder
+T26	FOOD 114 128	seasoning salt
+T27	PURPOSE_CLAUSE 129 137	to taste
+T28	FOOD 148 162	the beaten egg
+T29	FOOD 167 189	egg substitute mixture
+T30	TOOL 193 205	a small bowl
+T31	FOOD 217 231	the pork chops
+T32	FOOD 243 248	flour
+T34	FOOD 257 264	the egg
+T33	AC 250 253	dip
+T35	AC 270 274	coat
+T36	FOOD 290 302	bread crumbs
+T37	FOOD 312 325	the olive oil
+T38	TOOL 329 344	a large skillet
+T39	TEMPERATURE 350 366	medium-high heat
+T40	FOOD 377 391	the pork chops
+T41	TOOL 395 402	the pan
+T42	AC 407 411	coat
+T43	FOOD 426 446	canola cooking spray
+T44	OTHER 412 420	the tops
+T45	FOOD 455 469	the pork chops
+T46	DUR 470 479	5 minutes
+T47	CONDITION_CLAUSE 493 532	until the breading appears well browned
+T48	FOOD 546 555	the chops
+T49	TOOL 559 582	a 9x13 inch baking dish
+T50	AC 588 593	cover
+T51	TOOL 599 603	foil
+T52	TOOL 616 634	the preheated oven
+T53	DUR 639 645	1 hour
+T54	FOOD 673 699	the cream of mushroom soup
+T55	FOOD 701 705	milk
+T56	FOOD 711 721	white wine
+T57	TOOL 725 738	a medium bowl
+R1	Arg1_PPT Arg1:T1 Arg2:T20	
+T58	TEMPERATURE 34 47	175 degrees C
+R2	ArgM_MNR Arg1:T1 Arg2:T21	
+R3	ArgM_MNR Arg1:T1 Arg2:T58	
+R4	Arg1_PPT Arg1:T2 Arg2:T22	
+R5	Arg1_PPT_X Arg1:T23 Arg2:T2	
+R6	Arg1_GOL_X Arg1:T24 Arg2:T23	
+R7	Arg2_PPT Arg1:T24 Arg2:T25	
+R8	Arg2_PPT Arg1:T24 Arg2:T26	
+R9	ArgM_PRP Arg1:T24 Arg2:T27	
+R10	Arg1_PPT Arg1:T3 Arg2:T28	
+R11	Arg1_PPT Arg1:T3 Arg2:T29	
+R12	Arg3_GOL Arg1:T3 Arg2:T30	
+R13	Arg1_PPT Arg1:T4 Arg2:T31	
+R14	ArgM_LOC Arg1:T4 Arg2:T32	
+R15	Arg3_GOL Arg1:T33 Arg2:T34	
+R16	Arg1_PPT_X Arg1:T33 Arg2:T4	
+R17	Arg1_GOL_X Arg1:T35 Arg2:T33	
+R18	Arg2_PPT Arg1:T35 Arg2:T36	
+R19	Arg1_PPT Arg1:T5 Arg2:T37	
+R20	ArgM_LOC Arg1:T5 Arg2:T38	
+R21	ArgM_MNR Arg1:T5 Arg2:T39	
+R22	Arg1_PPT Arg1:T6 Arg2:T40	
+R23	Arg3_GOL Arg1:T6 Arg2:T41	
+R24	Arg2_PPT Arg1:T42 Arg2:T43	
+R25	Arg1_GOL Arg1:T42 Arg2:T44	
+R26	Arg1_PPT Arg1:T7 Arg2:T45	
+R27	ArgM_TMP Arg1:T7 Arg2:T46	
+R28	ArgM_TMP Arg1:T7 Arg2:T47	
+R29	Arg1_PPT Arg1:T8 Arg2:T48	
+R30	Arg3_GOL Arg1:T8 Arg2:T49	
+R31	Arg1_PPT_X Arg1:T50 Arg2:T8	
+R32	ArgM_MEANS Arg1:T50 Arg2:T51	
+R33	ArgM_LOC Arg1:T9 Arg2:T52	
+R34	ArgM_TMP Arg1:T9 Arg2:T53	
+R35	Arg1_PPT Arg1:T10 Arg2:T54	
+R36	Arg1_PPT Arg1:T10 Arg2:T55	
+R37	Arg1_PPT Arg1:T10 Arg2:T56	
+R38	ArgM_LOC Arg1:T10 Arg2:T57	
+R39	Arg1_PPT Arg1:T13 Arg2:T15	
+R40	Arg2_PPT Arg1:T13 Arg2:T14	
+R41	Arg1_PPT Arg1:T16 Arg2:T17	
+R42	ArgM_TMP Arg1:T18 Arg2:T19	
+R43	Arg1_PPT_X Arg1:T18 Arg2:T13	
+R44	ArgM_TMP Arg1:T13 Arg2:T12	
+R45	Simultaneous Arg1:T10 Arg2:T11	
+R46	Arg1_PPT_X Arg1:T9 Arg2:T50	
+#1	AnnotatorNotes R16	the chops; the pork chops; the floured pork chops; the coated pork chops; the flour coated pork chops
+#2	AnnotatorNotes R17	the pork chops; the coated pork chops
+#3	AnnotatorNotes R31	the chops; the pork chops; the dish; the baking dish; the chops in the dish; the pork chops in the baking dish
+#4	AnnotatorNotes R5	the chops; the pork chops; the rinsed chops; the rinsed pork chops
+#5	AnnotatorNotes R6	the chops; the pork chops; the rinsed chops; the dried chops
+#6	AnnotatorNotes R43	the pork chops; the chops; the pork chops covered with soup mixture
+#7	AnnotatorNotes R46	the chops; the covered chops; the covered pork chops; the chops in the dish; the covered dish

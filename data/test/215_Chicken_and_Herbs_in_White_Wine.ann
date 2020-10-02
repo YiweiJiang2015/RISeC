@@ -1,0 +1,106 @@
+T1	AC 3 7	Heat
+T2	AC 61 69	Sprinkle
+T3	AC 126 132	Remove
+T4	AC 161 170	Spoon off
+T5	AC 212 219	Stir in
+T6	AC 297 303	Remove
+T7	AC 345 348	mix
+T8	AC 398 404	Season
+T9	AC 457 464	Stir in
+T10	AC 507 513	Return
+T11	AC 541 545	Pour
+T12	AC 587 592	cover
+T13	AC 598 602	cook
+T14	FOOD 8 17	olive oil
+T15	TOOL 21 39	a large Dutch oven
+T16	TEMPERATURE 45 56	medium heat
+T17	FOOD 70 77	chicken
+T18	FOOD 83 96	garlic powder
+T19	AC 102 107	brown
+T20	OTHER 111 121	both sides
+T21	FOOD 133 140	chicken
+T22	TOOL 144 156	paper towels
+T23	FOOD 171 182	chicken fat
+T24	AC 188 194	return
+T25	TOOL 195 198	pan
+T26	TOOL 202 207	stove
+T27	FOOD 220 229	mushrooms
+T28	FOOD 234 240	onions
+T29	AC 242 246	cook
+T30	AC 248 256	stirring
+T31	CONDITION_CLAUSE 271 292	until onions are soft
+T32	TOOL 307 320	a medium bowl
+T33	TOOL 328 343	a separate bowl
+T34	FOOD 358 363	basil
+T35	FOOD 365 372	oregano
+T36	FOOD 374 382	rosemary
+T37	FOOD 388 393	thyme
+T38	FOOD 410 421	garlic salt
+T39	FOOD 423 429	pepper
+T40	FOOD 435 452	poultry seasoning
+T41	FOOD 465 469	wine
+T42	AC 475 478	add
+T43	FOOD 482 487	onion
+T44	FOOD 492 501	mushrooms
+T45	FOOD 514 521	chicken
+T46	TOOL 525 535	Dutch oven
+T47	FOOD 546 562	mushroom mixture
+T48	FOOD 567 572	broth
+T49	FOOD 578 585	chicken
+T50	TEMPERATURE 608 616	low heat
+T51	CONDITION_CLAUSE 617 655	until meat begins to fall off the bone
+T52	DUR 663 674	1 1/2 hours
+R1	Arg1_PPT Arg1:T1 Arg2:T14	
+R2	ArgM_LOC Arg1:T1 Arg2:T15	
+R3	ArgM_MNR Arg1:T1 Arg2:T16	
+R4	Arg1_GOL Arg1:T2 Arg2:T17	
+R5	Arg2_PPT Arg1:T2 Arg2:T18	
+R6	Arg1_PPT_X Arg1:T19 Arg2:T2	
+R7	ArgM_MNR Arg1:T19 Arg2:T20	
+R8	Arg1_PPT Arg1:T3 Arg2:T21	
+R9	Arg3_GOL Arg1:T3 Arg2:T22	
+R10	Arg1_PPT Arg1:T4 Arg2:T23	
+R11	Arg1_PPT Arg1:T24 Arg2:T25	
+R12	Arg3_GOL Arg1:T24 Arg2:T26	
+R13	Arg1_PPT Arg1:T5 Arg2:T27	
+R14	Arg1_PPT Arg1:T5 Arg2:T28	
+R15	Arg1_PPT_X Arg1:T29 Arg2:T5	
+R16	TODO Arg1:T25 Arg2:T15	
+R17	Simultaneous Arg1:T29 Arg2:T30	
+R18	ArgM_TMP Arg1:T29 Arg2:T31	
+R19	Arg3_GOL Arg1:T6 Arg2:T32	
+R20	Arg1_PPT_X Arg1:T6 Arg2:T29	
+R21	Arg1_PPT Arg1:T7 Arg2:T34	
+R22	Arg1_PPT Arg1:T7 Arg2:T35	
+R23	Arg1_PPT Arg1:T7 Arg2:T36	
+R24	Arg1_PPT Arg1:T7 Arg2:T37	
+R25	ArgM_LOC Arg1:T7 Arg2:T33	
+R26	Arg2_PPT Arg1:T8 Arg2:T38	
+R27	Arg2_PPT Arg1:T8 Arg2:T39	
+R28	Arg2_PPT Arg1:T8 Arg2:T40	
+R29	Arg1_GOL_X Arg1:T8 Arg2:T7	
+R30	Arg1_PPT Arg1:T9 Arg2:T41	
+R31	Arg2_PPT Arg1:T42 Arg2:T43	
+R32	Arg2_PPT Arg1:T42 Arg2:T44	
+R33	Arg2_PPT_Z Arg1:T9 Arg2:T8	
+R34	Arg1_PPT_X Arg1:T42 Arg2:T9	
+R35	Arg1_PPT Arg1:T10 Arg2:T45	
+R36	Arg3_GOL Arg1:T10 Arg2:T46	
+R37	Arg1_PPT Arg1:T11 Arg2:T47	
+R38	Arg1_PPT Arg1:T11 Arg2:T48	
+R39	Arg3_GOL Arg1:T11 Arg2:T49	
+R40	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R41	Arg1_PPT_X Arg1:T13 Arg2:T12	
+R42	ArgM_MNR Arg1:T13 Arg2:T50	
+R43	ArgM_TMP Arg1:T13 Arg2:T51	
+R44	ArgM_TMP Arg1:T13 Arg2:T52	
+#1	AnnotatorNotes R6	the chicken; the chicken with garlic powder
+R45	Arg2_PPT_Z Arg1:T5 Arg2:T24	
+#2	AnnotatorNotes R45	the pan; the chicken in the pan; the chicken; the chicken without fat
+#3	AnnotatorNotes R15	the chicken; the chicken with mushrooms; the chicken and onion mix
+#4	AnnotatorNotes R20	the chicken mix; the cooked chicken; the cooked chicken with soft onion
+#5	AnnotatorNotes R29	the basil mix; the herbs; the herbs in another bowl
+#6	AnnotatorNotes R33	the herbs; the seasoned herbs; the herb and pepper mix
+#7	AnnotatorNotes R34	the herbs and wine; the herbs
+#8	AnnotatorNotes R40	the chicken; the chicken broth; the chicken and mushroom mixture
+#9	AnnotatorNotes R41	the chicken broth; the covered chicken

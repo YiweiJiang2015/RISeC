@@ -1,0 +1,97 @@
+T1	AC 3 8	Press
+T2	AC 63 71	Sprinkle
+T3	AC 104 108	Melt
+T4	AC 161 168	Stir in
+T5	AC 212 219	Arrange
+T6	AC 304 310	Reduce
+T7	AC 327 331	Pour
+T8	AC 417 425	Sprinkle
+T10	AC 507 511	Cook
+T11	AC 544 552	Transfer
+T12	AC 575 579	Stir
+T13	FOOD 580 585	sugar
+T14	FOOD 591 596	sauce
+T15	DUR 248 272	5 to 10 minutes per side
+T16	FOOD 169 175	garlic
+T17	FOOD 180 184	wine
+T18	FOOD 109 115	butter
+T19	TOOL 119 134	a large skillet
+T20	FOOD 9 28	crushed peppercorns
+T21	FOOD 34 58	both sides of each steak
+T22	FOOD 77 89	lemon pepper
+T23	FOOD 95 99	salt
+T24	AC 190 194	cook
+T25	DUR 199 207	1 minute
+T26	FOOD 220 226	steaks
+T27	TOOL 230 233	pan
+T28	AC 239 243	cook
+T29	CONDITION_CLAUSE 277 299	until desired doneness
+T30	TEMPERATURE 319 322	low
+T31	FOOD 332 338	brandy
+T32	FOOD 344 350	steaks
+T34	AC 366 371	light
+T35	TOOL 377 384	a match
+T36	AC 404 412	burn off
+T9	FOOD 426 437	green onion
+T37	FOOD 442 449	shallot
+T38	FOOD 457 467	the steaks
+T39	AC 473 479	circle
+T40	FOOD 480 490	the steaks
+T41	FOOD 496 501	cream
+T42	AC 513 521	stirring
+T43	FOOD 522 527	sauce
+T44	CONDITION_CLAUSE 529 538	until hot
+T46	FOOD 553 559	steaks
+T47	TOOL 563 569	plates
+T48	AC 607 612	spoon
+T49	FOOD 618 622	meat
+R1	Arg1_PPT Arg1:T1 Arg2:T20	
+T50	TEMPERATURE 140 156	medium-high heat
+R2	ArgM_MNR Arg1:T3 Arg2:T50	
+R3	Arg1_PPT Arg1:T3 Arg2:T18	
+R4	ArgM_LOC Arg1:T3 Arg2:T19	
+R5	Arg1_PPT Arg1:T4 Arg2:T16	
+R6	Arg1_PPT Arg1:T4 Arg2:T17	
+R8	Arg1_PPT_X Arg1:T24 Arg2:T4	
+R9	ArgM_TMP Arg1:T24 Arg2:T25	
+R10	Arg2_GOL Arg1:T1 Arg2:T21	
+R11	Arg2_GOL_X Arg1:T2 Arg2:T1	
+R12	Arg1_PPT Arg1:T2 Arg2:T22	
+R13	Arg1_PPT Arg1:T2 Arg2:T23	
+R14	Arg1_PPT Arg1:T5 Arg2:T26	
+R15	Arg3_GOL Arg1:T5 Arg2:T27	
+R16	Arg1_PPT_X Arg1:T28 Arg2:T5	
+R17	ArgM_TMP Arg1:T28 Arg2:T15	
+R18	ArgM_TMP Arg1:T28 Arg2:T29	
+T51	OTHER 311 315	heat
+R19	Arg1_PPT Arg1:T6 Arg2:T51	
+R20	Arg4_GOL Arg1:T6 Arg2:T30	
+R21	Arg1_PPT Arg1:T7 Arg2:T31	
+R22	Arg3_GOL Arg1:T7 Arg2:T32	
+R23	Arg1_PPT_X Arg1:T34 Arg2:T7	
+R24	ArgM_MNR Arg1:T34 Arg2:T35	
+R25	Arg1_PPT Arg1:T8 Arg2:T9	
+R26	Arg1_PPT Arg1:T8 Arg2:T37	
+R27	Arg2_GOL Arg1:T8 Arg2:T38	
+R28	Arg1_GOL Arg1:T39 Arg2:T40	
+R29	Arg2_PPT Arg1:T39 Arg2:T41	
+R31	ArgM_TMP Arg1:T10 Arg2:T44	
+R34	Simultaneous Arg1:T10 Arg2:T42	
+R35	Arg1_PPT Arg1:T11 Arg2:T46	
+R36	Arg3_GOL Arg1:T11 Arg2:T47	
+R37	Arg1_PPT Arg1:T12 Arg2:T13	
+R38	Arg2_PPT Arg1:T12 Arg2:T14	
+R39	Arg1_PPT_X Arg1:T48 Arg2:T12	
+R40	Arg3_GOL Arg1:T48 Arg2:T49	
+R42	Arg2_PPT_Z Arg1:T4 Arg2:T3	
+#1	AnnotatorNotes R42	the butter; the melted butter
+T45	OTHER 397 403	flames
+R41	Arg1_PPT Arg1:T36 Arg2:T45	
+#3	AnnotatorNotes T50	see this, is it a temperature??
+#4	AnnotatorNotes T51	Is this a temperature???
+R7	Arg1_PPT Arg1:T10 Arg2:T43	
+#2	AnnotatorNotes R11	the steak; the steak with peppercorns
+#5	AnnotatorNotes R8	the garlic mixtue; the garlic butter mixture
+#6	AnnotatorNotes R16	the steaks; the steaks in pan
+#7	AnnotatorNotes R23	the steaks; the steaks with brandy
+#8	AnnotatorNotes R39	the sauce; the sauce with sugar

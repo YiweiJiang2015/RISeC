@@ -1,0 +1,135 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 23	mix
+T3	FOOD 33 48	the ground beef
+T4	FOOD 50 66	saltine crackers
+T5	FOOD 71 75	milk
+T6	AC 80 86	Season
+T7	FOOD 92 105	garlic powder
+T8	FOOD 107 119	onion powder
+T9	FOOD 121 125	salt
+T10	FOOD 130 136	pepper
+T11	AC 142 145	mix
+T12	CONDITION_CLAUSE 146 164	until well blended
+T13	AC 169 173	Line
+T14	TOOL 174 200	a 10x15 inch jellyroll pan
+T15	TOOL 206 217	waxed paper
+T16	AC 222 227	Press
+T17	FOOD 228 244	the beef mixture
+T18	TOOL 257 264	the pan
+T19	AC 269 274	Cover
+T20	TOOL 280 292	plastic wrap
+T21	AC 298 309	refrigerate
+T22	DUR 310 323	8 to 10 hours
+T23	DUR 328 337	overnight
+T24	AC 342 349	Preheat
+T25	TOOL 350 358	the oven
+T26	TEMPERATURE 362 375	350 degrees F
+T27	TEMPERATURE 377 390	175 degrees C
+T28	AC 396 402	Remove
+T29	TOOL 403 415	plastic wrap
+T30	FOOD 421 425	meat
+T31	AC 431 434	rub
+T32	FOOD 435 440	flour
+T33	FOOD 446 470	the top side of the beef
+T35	AC 475 479	Flip
+T36	TOOL 487 494	the pan
+T37	AC 557 560	Cut
+T38	TOOL 500 511	waxed paper
+T39	AC 517 520	rub
+T40	FOOD 521 526	flour
+T41	FOOD 530 544	the other side
+T42	OTHER 566 572	pieces
+T43	AC 601 605	Heat
+T44	FOOD 606 609	oil
+T45	TOOL 613 634	a large heavy skillet
+T46	TEMPERATURE 640 656	medium-high heat
+T47	AC 662 665	Fry
+T48	FOOD 666 674	the meat
+T49	CONDITION_CLAUSE 675 701	until browned on each side
+T50	AC 703 710	turning
+T51	AC 726 732	Remove
+T52	TOOL 736 759	a 9x13 inch baking dish
+T53	TOOL 768 781	a medium bowl
+T54	AC 783 786	mix
+T55	FOOD 796 805	the water
+T56	FOOD 807 821	condensed soup
+T57	FOOD 827 836	gravy mix
+T58	AC 842 846	Pour
+T59	FOOD 852 872	the meat in the dish
+T61	AC 878 883	Cover
+T62	TOOL 884 892	the dish
+T63	TOOL 906 919	aluminum foil
+T64	AC 925 929	Bake
+T65	DUR 934 940	1 hour
+T66	TOOL 944 962	the preheated oven
+T67	AC 968 973	Serve
+T68	FOOD 974 994	fake steak and gravy
+T69	FOOD 1000 1008	potatoes
+T70	FOOD 1010 1014	rice
+T71	FOOD 1019 1026	noodles
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	ArgM_LOC Arg1:T2 Arg2:T1	
+R5	Arg2_PPT Arg1:T6 Arg2:T7	
+R6	Arg2_PPT Arg1:T6 Arg2:T8	
+R7	Arg2_PPT Arg1:T6 Arg2:T9	
+R8	Arg2_PPT Arg1:T6 Arg2:T10	
+R9	Arg1_PPT_X Arg1:T11 Arg2:T6	
+R10	ArgM_TMP Arg1:T11 Arg2:T12	
+R11	Arg1_GOL_X Arg1:T6 Arg2:T2	
+R12	Arg1_GOL Arg1:T13 Arg2:T14	
+R13	Arg2_PPT Arg1:T13 Arg2:T15	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg2_GOL Arg1:T16 Arg2:T18	
+R16	Arg2_PPT Arg1:T19 Arg2:T20	
+R17	Arg1_PPT_X Arg1:T19 Arg2:T16	
+R18	ArgM_TMP Arg1:T21 Arg2:T22	
+R19	ArgM_TMP Arg1:T21 Arg2:T23	
+R20	Arg1_PPT_X Arg1:T21 Arg2:T19	
+R21	Arg1_PPT Arg1:T24 Arg2:T25	
+R22	ArgM_MNR Arg1:T24 Arg2:T26	
+R23	ArgM_MNR Arg1:T24 Arg2:T27	
+R24	Arg1_PPT Arg1:T28 Arg2:T29	
+R25	Arg2_DIR Arg1:T28 Arg2:T30	
+R26	Arg2_PPT Arg1:T31 Arg2:T32	
+R27	Arg1_GOL Arg1:T31 Arg2:T33	
+R28	Arg1_PPT_X Arg1:T35 Arg2:T31	
+R29	Arg2_DIR Arg1:T35 Arg2:T36	
+R30	Arg3_GOL Arg1:T35 Arg2:T38	
+R31	Arg2_PPT Arg1:T39 Arg2:T40	
+R32	Arg1_GOL Arg1:T39 Arg2:T41	
+R33	Arg1_PPT_X Arg1:T37 Arg2:T39	
+R34	Arg3_PRD Arg1:T37 Arg2:T42	
+R35	Arg1_PPT Arg1:T43 Arg2:T44	
+R36	ArgM_LOC Arg1:T43 Arg2:T45	
+R37	ArgM_MNR Arg1:T43 Arg2:T46	
+R38	Arg1_PPT Arg1:T47 Arg2:T48	
+R39	ArgM_TMP Arg1:T47 Arg2:T49	
+R40	Simultaneous Arg1:T47 Arg2:T50	
+R41	Arg3_GOL Arg1:T51 Arg2:T52	
+R42	Arg1_PPT_X Arg1:T51 Arg2:T47	
+R43	ArgM_LOC Arg1:T54 Arg2:T53	
+R44	Arg1_PPT Arg1:T54 Arg2:T55	
+R45	Arg1_PPT Arg1:T54 Arg2:T56	
+R46	Arg1_PPT Arg1:T54 Arg2:T57	
+R47	Arg1_PPT_X Arg1:T58 Arg2:T54	
+R48	Arg3_GOL Arg1:T58 Arg2:T59	
+R49	Arg1_PPT Arg1:T61 Arg2:T62	
+R50	Arg2_PPT Arg1:T61 Arg2:T63	
+R51	ArgM_TMP Arg1:T64 Arg2:T65	
+R52	ArgM_LOC Arg1:T64 Arg2:T66	
+R53	Arg1_PPT Arg1:T67 Arg2:T68	
+R54	Arg2_PPT Arg1:T67 Arg2:T69	
+R55	Arg2_PPT Arg1:T67 Arg2:T70	
+R56	Arg2_PPT Arg1:T67 Arg2:T71	
+#1	AnnotatorNotes R11	the beef; the beef mixture
+#2	AnnotatorNotes R9	the beef; the beef onion mixture
+#3	AnnotatorNotes R17	the beef mixture; the beef mixture in the pan
+#4	AnnotatorNotes R20	the beef mixture; the pan; the covered mixture
+#5	AnnotatorNotes R28	the beef; the beef topped with flour
+#6	AnnotatorNotes R33	the beef; the beef rubbed with flour
+#7	AnnotatorNotes R42	the meat; the fried meat
+#8	AnnotatorNotes R47	the gravy mix; the gravy mix in the bowl
+R57	Arg1_PPT_X Arg1:T64 Arg2:T61	
+#9	AnnotatorNotes R57	the dish; the meat dish; the meat dish with soup; the meat dish covered with foil

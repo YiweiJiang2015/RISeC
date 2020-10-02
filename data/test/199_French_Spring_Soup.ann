@@ -1,0 +1,68 @@
+T1	AC 3 7	Melt
+T2	AC 55 62	Stir in
+T3	AC 110 114	Pour
+T4	AC 138 144	Mix in
+T5	AC 188 194	Season
+T7	AC 303 307	Stir
+T8	AC 226 232	reduce
+T9	AC 243 249	simmer
+T10	CONDITION_CLAUSE 262 298	until vegetables and rice are tender
+T11	FOOD 308 315	spinach
+T12	FOOD 320 331	heavy cream
+T13	FOOD 337 353	the soup mixture
+T14	AC 368 375	cooking
+T15	DUR 382 391	5 minutes
+T16	AC 399 406	serving
+T17	DUR 250 260	30 minutes
+T18	TOOL 233 237	heat
+T6	AC 220 224	boil
+T19	FOOD 200 204	salt
+T20	FOOD 145 153	potatoes
+T21	FOOD 155 162	carrots
+T22	FOOD 164 173	asparagus
+T23	FOOD 179 183	rice
+T24	FOOD 115 120	water
+T25	TOOL 126 133	the pot
+T26	FOOD 63 72	the leeks
+T27	FOOD 77 82	onion
+T28	AC 88 92	cook
+T29	CONDITION_CLAUSE 93 105	until tender
+T30	FOOD 8 18	the butter
+T31	TOOL 22 33	a large pot
+T32	TEMPERATURE 39 50	medium heat
+R1	Arg1_PPT Arg1:T1 Arg2:T30	
+R2	ArgM_LOC Arg1:T1 Arg2:T31	
+R3	ArgM_MNR Arg1:T1 Arg2:T32	
+R4	Arg1_PPT Arg1:T2 Arg2:T26	
+R5	Arg1_PPT Arg1:T2 Arg2:T27	
+R6	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+R7	Arg1_PPT Arg1:T3 Arg2:T24	
+R8	Arg3_GOL Arg1:T3 Arg2:T25	
+R9	Arg1_PPT Arg1:T4 Arg2:T20	
+R10	Arg1_PPT Arg1:T4 Arg2:T21	
+R11	Arg1_PPT Arg1:T4 Arg2:T22	
+R12	Arg1_PPT Arg1:T4 Arg2:T23	
+R13	Arg2_PPT_Z Arg1:T4 Arg2:T3	
+R14	Arg1_GOL_X Arg1:T5 Arg2:T4	
+R15	Arg2_PPT Arg1:T5 Arg2:T19	
+R16	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R17	Arg1_PPT Arg1:T8 Arg2:T18	
+R18	Arg1_PPT_X Arg1:T9 Arg2:T6	
+R19	ArgM_TMP Arg1:T9 Arg2:T17	
+R20	ArgM_TMP Arg1:T9 Arg2:T10	
+R21	Arg1_PPT Arg1:T7 Arg2:T11	
+R22	Arg1_PPT Arg1:T7 Arg2:T12	
+R23	Arg2_GOL Arg1:T7 Arg2:T13	
+R24	ArgM_TMP Arg1:T14 Arg2:T15	
+R25	Arg1_PPT_X Arg1:T14 Arg2:T7	
+R26	Arg1_PPT_X Arg1:T16 Arg2:T14	
+#1	AnnotatorNotes R6	The butter; The melted butter
+#2	AnnotatorNotes R13	The water; The water poured into the pot
+#3	AnnotatorNotes R16	The mixture; The seasoned mixture
+#4	AnnotatorNotes R18	The mixture; The boiled mixture
+#5	AnnotatorNotes R25	The stir; The stirred spinach
+#6	AnnotatorNotes R26	The stir; The cooked stir
+R27	ArgM_TMP Arg1:T28 Arg2:T29	
+R28	Arg1_PPT_X Arg1:T28 Arg2:T2	
+#7	AnnotatorNotes R28	the leeks and onion; the leek in the pot
+#8	AnnotatorNotes R14	the rice mixture; the rice and leek mixture

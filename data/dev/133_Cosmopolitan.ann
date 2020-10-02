@@ -1,0 +1,22 @@
+T1	AC 3 7	Pour
+T2	FOOD 8 27	all the ingredients
+T3	TOOL 33 41	a shaker
+T4	FOOD 47 58	lots of ice
+T5	AC 63 68	Shake
+T6	DUR 84 99	several seconds
+T7	AC 104 110	strain
+T8	TOOL 116 132	a cocktail glass
+T9	AC 137 144	Garnish
+T10	TOOL 150 162	a lime twist
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg3_GOL Arg1:T1 Arg2:T3	
+R3	TODO Arg1:T3 Arg2:T4	
+R4	ArgM_TMP Arg1:T5 Arg2:T6	
+R5	Arg2_GOL Arg1:T7 Arg2:T8	
+R6	Arg1_PPT_X Arg1:T7 Arg2:T5	
+R7	Arg1_PPT Arg1:T9 Arg2:T10	
+R8	Arg1_PPT_X Arg1:T9 Arg2:T7	
+R9	Arg1_PPT_X Arg1:T5 Arg2:T1	
+#1	AnnotatorNotes R9	all ingredients; the ingredients in the shaker
+#2	AnnotatorNotes R6	the ingredients; the shake; the iced shake
+#3	AnnotatorNotes R8	the shake; the iced shake in the glass

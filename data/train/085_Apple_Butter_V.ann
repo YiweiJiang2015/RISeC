@@ -1,0 +1,64 @@
+T1	AC 3 8	Place
+T2	AC 40 47	Pour in
+T4	AC 82 86	cook
+T5	AC 132 137	Press
+T9	AC 383 387	Cook
+T10	AC 438 449	Refrigerate
+T11	FOOD 48 57	the cider
+T12	FOOD 9 19	the apples
+T13	TOOL 23 35	a Dutch oven
+T14	TEMPERATURE 90 101	medium heat
+T15	DUR 102 112	30 minutes
+T16	FOOD 138 158	the softened mixture
+T17	TOOL 167 178	a food mill
+T18	TEMPERATURE 203 216	a medium boil
+T19	DUR 221 231	30 minutes
+T20	AC 233 241	stirring
+T21	FOOD 266 275	the sugar
+T22	FOOD 277 285	cinnamon
+T23	FOOD 290 296	cloves
+T24	TEMPERATURE 323 331	low heat
+T26	AC 359 367	stirring
+T27	FOOD 450 475	the finished apple butter
+T28	TOOL 479 497	sterile containers
+T29	CONDITION_CLAUSE 117 127	until soft
+T30	CONDITION_CLAUSE 388 433	until the desired thickness has been attained
+T25	CONDITION_CLAUSE 332 357	until the sugar dissolves
+R1	Arg1_PPT Arg1:T1 Arg2:T12	
+R2	Arg3_GOL Arg1:T1 Arg2:T13	
+R3	Arg1_PPT Arg1:T2 Arg2:T11	
+R4	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+T3	AC 73 77	boil
+R5	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R6	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R7	ArgM_MNR Arg1:T4 Arg2:T14	
+R8	ArgM_TMP Arg1:T4 Arg2:T15	
+R9	ArgM_TMP Arg1:T4 Arg2:T29	
+R10	Arg1_PPT Arg1:T5 Arg2:T16	
+R11	TODO Arg1:T5 Arg2:T17	
+T6	AC 192 199	cooking
+T8	AC 310 317	cooking
+T7	AC 259 265	Mix in
+R12	ArgM_MNR Arg1:T6 Arg2:T18	
+R13	ArgM_TMP Arg1:T6 Arg2:T19	
+R14	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R16	Arg1_PPT Arg1:T7 Arg2:T21	
+R17	Arg1_PPT Arg1:T7 Arg2:T22	
+R18	Arg1_PPT Arg1:T7 Arg2:T23	
+R20	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R21	ArgM_MNR Arg1:T8 Arg2:T24	
+R23	ArgM_TMP Arg1:T8 Arg2:T25	
+R24	ArgM_TMP Arg1:T9 Arg2:T30	
+R25	Arg1_PPT Arg1:T10 Arg2:T27	
+R26	ArgM_LOC Arg1:T10 Arg2:T28	
+R22	Simultaneous Arg1:T8 Arg2:T26	
+R27	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R15	Simultaneous Arg1:T6 Arg2:T20	
+R19	Arg2_PPT_Z Arg1:T7 Arg2:T6	
+#1	AnnotatorNotes R4	the apples; the apples in the oven
+#2	AnnotatorNotes R5	the apple mixture; the apple cider mixture
+#3	AnnotatorNotes R6	the apple mixture; the boiling mixture
+#4	AnnotatorNotes R14	the softened mixture; the softened mixture
+#5	AnnotatorNotes R19	the mixture; the heated mixture
+#6	AnnotatorNotes R20	the sugar mixture; the sugar mixture
+#7	AnnotatorNotes R27	the sugar mixture; the dissolving sugar mixture

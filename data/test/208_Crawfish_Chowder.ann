@@ -1,0 +1,76 @@
+T1	AC 66 71	Saute
+T2	FOOD 72 84	green onions
+T3	FOOD 88 94	butter
+T4	CONDITION_CLAUSE 95 107	until tender
+T5	AC 3 7	Melt
+T6	FOOD 8 25	1/4 cup of butter
+T7	TOOL 29 44	a large skillet
+T8	TEMPERATURE 50 61	medium heat
+T9	AC 112 118	Remove
+T10	TOOL 124 127	pan
+T12	TOOL 150 166	the same skillet
+T13	AC 168 172	melt
+T14	FOOD 173 190	1/2 cup of butter
+T15	AC 196 201	saute
+T16	FOOD 202 214	the crawfish
+T17	DUR 219 228	5 minutes
+T18	AC 230 239	set aside
+T11	AC 133 142	set aside
+T19	TOOL 247 258	a large pot
+T20	TEMPERATURE 264 275	medium heat
+T21	AC 277 284	combine
+T22	FOOD 285 296	potato soup
+T23	FOOD 298 311	mushroom soup
+T24	FOOD 313 317	corn
+T25	FOOD 323 335	cream cheese
+T26	AC 340 343	Mix
+T27	AC 370 374	boil
+T29	FOOD 402 422	sauteed green onions
+T30	FOOD 428 436	crawfish
+T28	AC 379 386	Stir in
+T31	AC 441 447	Season
+T32	FOOD 453 467	cayenne pepper
+T33	AC 487 491	boil
+T34	AC 497 503	simmer
+T35	DUR 504 513	5 minutes
+T36	PURPOSE_CLAUSE 514 530	to blend flavors
+R1	Arg1_PPT Arg1:T5 Arg2:T6	
+R2	ArgM_LOC Arg1:T5 Arg2:T7	
+R3	ArgM_MNR Arg1:T5 Arg2:T8	
+R4	Arg1_PPT Arg1:T1 Arg2:T2	
+R5	ArgM_LOC Arg1:T1 Arg2:T3	
+R6	ArgM_TMP Arg1:T1 Arg2:T4	
+R7	Arg2_DIR Arg1:T9 Arg2:T10	
+R8	Arg1_PPT_X Arg1:T9 Arg2:T1	
+R9	Arg1_PPT_X Arg1:T11 Arg2:T9	
+R10	ArgM_LOC Arg1:T13 Arg2:T12	
+R11	Arg1_PPT Arg1:T13 Arg2:T14	
+R12	Arg1_PPT Arg1:T15 Arg2:T16	
+R13	ArgM_TMP Arg1:T15 Arg2:T17	
+R14	Arg1_PPT_X Arg1:T18 Arg2:T15	
+R15	Arg1_PPT Arg1:T21 Arg2:T22	
+R16	Arg1_PPT Arg1:T21 Arg2:T23	
+R17	Arg1_PPT Arg1:T21 Arg2:T24	
+R18	Arg1_PPT Arg1:T21 Arg2:T25	
+R19	ArgM_LOC Arg1:T21 Arg2:T19	
+R20	ArgM_MNR Arg1:T21 Arg2:T20	
+R21	Arg1_PPT_X Arg1:T26 Arg2:T21	
+R22	Arg1_PPT_X Arg1:T27 Arg2:T26	
+R23	Arg1_PPT Arg1:T28 Arg2:T29	
+R24	Arg1_PPT Arg1:T28 Arg2:T30	
+R25	Arg2_PPT_Z Arg1:T28 Arg2:T27	
+R26	Arg2_PPT Arg1:T31 Arg2:T32	
+R27	Arg1_GOL_X Arg1:T31 Arg2:T28	
+R28	Arg1_PPT_X Arg1:T33 Arg2:T31	
+R29	Arg1_PPT_X Arg1:T34 Arg2:T33	
+R30	ArgM_TMP Arg1:T34 Arg2:T35	
+R31	ArgM_PRP Arg1:T34 Arg2:T36	
+#1	AnnotatorNotes R8	the onions; the sauteed onions; the onions in butter
+#2	AnnotatorNotes R9	the onions; the sauteed onions
+#3	AnnotatorNotes R14	the crawfish; the sauteed crawfish
+#4	AnnotatorNotes R21	the soup; the soup with corn and cheese
+#5	AnnotatorNotes R22	the soup; the soup with corn and cheese
+#6	AnnotatorNotes R25	the soup; the boiling soup
+#7	AnnotatorNotes R27	the soup; the crawfish soup; the crawfish chowder
+#8	AnnotatorNotes R28	the soup; the crawfish soup; the crawfish chowder
+#9	AnnotatorNotes R29	the soup; the crawfish soup; the crawfish chowder

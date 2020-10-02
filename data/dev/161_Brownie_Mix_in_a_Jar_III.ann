@@ -1,0 +1,60 @@
+T1	AC 3 6	Mix
+T2	FOOD 16 21	flour
+T3	FOOD 23 27	salt
+T4	FOOD 32 45	baking powder
+T5	AC 50 53	Add
+T6	FOOD 54 68	3/4 cup butter
+T7	FOOD 72 81	margarine
+T8	AC 86 93	not use
+T9	FOOD 94 107	diet Magarine
+T10	AC 113 119	Mix in
+T11	FOOD 120 126	2 eggs
+T12	FOOD 148 167	2 teaspoons vanilla
+T13	OTHER 128 143	slightly beaten
+T14	AC 172 178	Spread
+T15	FOOD 179 185	batter
+T16	TOOL 191 222	a sprayed 9 x 13 inch metal pan
+T17	AC 227 231	Bake
+T18	AC 284 288	Cool
+T19	AC 318 321	Cut
+T20	TEMPERATURE 235 248	375 degrees F
+T21	TEMPERATURE 250 263	190 degrees C
+T22	DUR 269 279	25 minutes
+T23	DUR 289 299	15 minutes
+T24	TOOL 303 313	baking pan
+T25	FOOD 322 330	brownies
+T26	OTHER 336 354	1 1/2 inch squares
+T27	AC 359 363	Cool
+T28	TOOL 378 381	pan
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	TODO Arg1:T6 Arg2:T7	
+R7	Arg1_PPT Arg1:T10 Arg2:T11	
+R8	Arg1_PPT Arg1:T10 Arg2:T12	
+R9	Arg2_PPT_Z Arg1:T10 Arg2:T5	
+R10	Arg2_PPT_Z Arg1:T5 Arg2:T1	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg2_GOL Arg1:T14 Arg2:T16	
+R13	ArgM_MNR Arg1:T17 Arg2:T20	
+R14	ArgM_MNR Arg1:T17 Arg2:T21	
+R15	ArgM_TMP Arg1:T17 Arg2:T22	
+R16	ArgM_TMP Arg1:T18 Arg2:T23	
+R17	ArgM_LOC Arg1:T18 Arg2:T24	
+R18	Arg1_PPT Arg1:T19 Arg2:T25	
+R19	Arg3_PRD Arg1:T19 Arg2:T26	
+T29	AC 386 390	Make
+T30	FOOD 391 407	2 dozen brownies
+R20	ArgM_LOC Arg1:T27 Arg2:T28	
+R21	Arg1_PPT_X Arg1:T18 Arg2:T17	
+R22	Arg1_PPT_X Arg1:T17 Arg2:T14	
+R23	Arg1_PPT_X Arg1:T27 Arg2:T19	
+R24	Arg1_PPT Arg1:T29 Arg2:T30	
+R25	Arg1_PPT Arg1:T8 Arg2:T9	
+#1	AnnotatorNotes R10	the mixture; the flour mixture
+#2	AnnotatorNotes R9	the mix; the mixture
+#3	AnnotatorNotes R22	the batter; the spread batter
+#4	AnnotatorNotes R21	the baked batter; the baked dough
+#5	AnnotatorNotes R23	the brownies; the cut brownies

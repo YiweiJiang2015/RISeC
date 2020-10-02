@@ -1,0 +1,51 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	400 degrees F
+T4	TEMPERATURE 34 47	200 degrees C
+T5	AC 53 59	Grease
+T6	AC 64 69	flour
+T7	TOOL 70 89	a 9x5 inch loaf pan
+T8	TOOL 97 109	a large bowl
+T9	AC 111 118	combine
+T10	FOOD 119 124	dates
+T11	FOOD 126 137	brown sugar
+T12	FOOD 139 148	margarine
+T13	FOOD 153 166	boiling water
+T14	AC 175 180	stand
+T15	DUR 181 191	15 minutes
+T16	AC 196 203	Stir in
+T17	FOOD 204 209	flour
+T18	FOOD 211 215	soda
+T19	FOOD 220 227	vanilla
+T20	AC 232 236	Pour
+T21	FOOD 237 243	batter
+T22	TOOL 249 261	prepared pan
+T23	AC 266 270	Bake
+T24	TOOL 274 292	the preheated oven
+T25	DUR 297 307	45 minutes
+T26	AC 321 325	cool
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T7	
+R5	Simultaneous Arg1:T5 Arg2:T6	
+R6	Arg1_PPT Arg1:T9 Arg2:T10	
+R7	Arg1_PPT Arg1:T9 Arg2:T11	
+R8	Arg1_PPT Arg1:T9 Arg2:T12	
+R9	Arg1_PPT Arg1:T9 Arg2:T13	
+R10	ArgM_LOC Arg1:T9 Arg2:T8	
+R11	ArgM_TMP Arg1:T14 Arg2:T15	
+R12	Arg0_PAG Arg1:T14 Arg2:T9	
+R13	Arg1_PPT Arg1:T16 Arg2:T17	
+R14	Arg1_PPT Arg1:T16 Arg2:T18	
+R15	Arg1_PPT Arg1:T16 Arg2:T19	
+R16	Arg2_PPT_Z Arg1:T16 Arg2:T14	
+R17	Arg1_PPT Arg1:T20 Arg2:T21	
+R18	Arg3_GOL Arg1:T20 Arg2:T22	
+R19	ArgM_LOC Arg1:T23 Arg2:T24	
+R20	ArgM_TMP Arg1:T23 Arg2:T25	
+R21	Arg1_PPT_X Arg1:T26 Arg2:T23	
+R22	Arg1_PPT_X Arg1:T23 Arg2:T20	
+#1	AnnotatorNotes R16	The combination; The combination of food
+#2	AnnotatorNotes R22	The batter
+#3	AnnotatorNotes R21	The batter; The baked batter

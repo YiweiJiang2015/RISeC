@@ -1,0 +1,56 @@
+T1	TOOL 6 25	a large mixing bowl
+T2	AC 27 34	combine
+T3	FOOD 35 60	the first six ingredients
+T4	AC 65 72	Combine
+T5	FOOD 73 87	the applesauce
+T6	FOOD 89 92	oil
+T7	FOOD 97 101	eggs
+T8	AC 106 109	Add
+T9	FOOD 113 130	the flour mixture
+T10	AC 132 135	mix
+T11	AC 145 152	Stir in
+T12	FOOD 153 171	the chocolate chip
+T13	FOOD 176 183	walnuts
+T14	AC 188 192	Drop
+T15	TOOL 233 246	baking sheets
+T16	TOOL 196 216	rounded teaspoonfuls
+T18	AC 286 293	Flatten
+T19	TOOL 308 322	a glass bottom
+T21	AC 362 366	Bake
+T22	TEMPERATURE 370 383	350 degrees F
+T23	DUR 388 401	10-12 minutes
+T24	CONDITION_CLAUSE 405 456	until edges are lightly browned and cookies are set
+T25	AC 461 465	Cool
+T26	DUR 470 478	1 minute
+T27	CONDITION_CLAUSE 479 508	before removing to wire racks
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	ArgM_LOC Arg1:T2 Arg2:T1	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R4	Arg1_PPT Arg1:T4 Arg2:T6	
+R5	Arg1_PPT Arg1:T4 Arg2:T7	
+R6	Arg2_PPT Arg1:T8 Arg2:T9	
+R7	Arg1_PPT_X Arg1:T10 Arg2:T8	
+R8	Arg1_PPT_X Arg1:T8 Arg2:T4	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg1_PPT Arg1:T11 Arg2:T13	
+R11	ArgM_MEANS Arg1:T14 Arg2:T16	
+R12	Arg2_GOL Arg1:T14 Arg2:T15	
+R14	ArgM_MEANS Arg1:T18 Arg2:T19	
+R16	ArgM_MNR Arg1:T21 Arg2:T22	
+R17	ArgM_TMP Arg1:T21 Arg2:T23	
+R18	ArgM_TMP Arg1:T21 Arg2:T24	
+R19	TODO Arg1:T23 Arg2:T24	
+R20	ArgM_TMP Arg1:T25 Arg2:T26	
+R21	ArgM_TMP Arg1:T25 Arg2:T27	
+R22	Arg2_PPT_Z Arg1:T11 Arg2:T10	
+R23	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R24	Arg1_PPT_X Arg1:T18 Arg2:T14	
+R25	Arg1_PPT_X Arg1:T21 Arg2:T18	
+R26	Arg1_PPT_X Arg1:T25 Arg2:T21	
+#1	AnnotatorNotes R8	The combination; The combined applesauce, oil and eggs
+#2	AnnotatorNotes R22	The mix; The mix added with flour
+#3	AnnotatorNotes R23	The stir; The stirred chocolate and walnuts
+#4	AnnotatorNotes R24	The stir; The stir dropped with cooking spray
+#5	AnnotatorNotes R25	The dough; The flattened dough
+#6	AnnotatorNotes R26	The cookies; The baked cookies
+#7	AnnotatorNotes R7	the flour mixture; the flour mixture with sauce

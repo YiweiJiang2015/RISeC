@@ -1,0 +1,65 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 11	oil
+T3	TOOL 15 31	a large saucepan
+T4	OTHER 37 53	medium-high heat
+T5	AC 58 64	Sautee
+T6	FOOD 65 74	the onion
+T7	FOOD 76 92	red bell peppers
+T8	FOOD 94 102	jalapeno
+T9	FOOD 104 113	mushrooms
+T10	FOOD 115 123	tomatoes
+T11	FOOD 128 132	corn
+T12	DUR 137 147	10 minutes
+T13	CONDITION_CLAUSE 151 183	until the onions are translucent
+T14	AC 188 194	Season
+T15	FOOD 200 212	black pepper
+T16	FOOD 214 219	cumin
+T17	FOOD 224 236	chili powder
+T18	AC 241 248	Stir in
+T19	FOOD 249 264	the black beans
+T20	FOOD 266 279	chicken broth
+T21	FOOD 284 288	salt
+T22	AC 304 308	boil
+T23	AC 313 319	Remove
+T24	FOOD 320 342	1 1/2 cups of the soup
+T25	TOOL 346 360	food processor
+T26	TOOL 364 371	blender
+T27	AC 373 378	puree
+T28	AC 383 387	stir
+T29	FOOD 388 404	the bean mixture
+T30	FOOD 415 423	the soup
+T31	AC 428 433	Serve
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T5 Arg2:T8	
+R7	Arg1_PPT Arg1:T5 Arg2:T9	
+R8	Arg1_PPT Arg1:T5 Arg2:T10	
+R9	Arg1_PPT Arg1:T5 Arg2:T11	
+R10	ArgM_TMP Arg1:T5 Arg2:T12	
+R11	ArgM_TMP Arg1:T5 Arg2:T13	
+R12	Arg1_PPT Arg1:T14 Arg2:T15	
+R13	Arg1_PPT Arg1:T14 Arg2:T16	
+R14	Arg1_PPT Arg1:T14 Arg2:T17	
+R15	Arg2_PPT_Z Arg1:T14 Arg2:T5	
+R16	Arg1_PPT Arg1:T18 Arg2:T19	
+R17	Arg1_PPT Arg1:T18 Arg2:T20	
+R18	Arg1_PPT Arg1:T18 Arg2:T21	
+R19	Arg2_PPT_Z Arg1:T18 Arg2:T14	
+R20	Arg1_PPT_X Arg1:T22 Arg2:T18	
+R21	Arg1_PPT Arg1:T23 Arg2:T24	
+R22	Arg3_GOL Arg1:T23 Arg2:T25	
+R23	Arg3_GOL Arg1:T23 Arg2:T26	
+T33	OTHER 451 460	over rice
+R28	ArgM_MNR Arg1:T31 Arg2:T33	
+R29	Arg1_PPT_X Arg1:T31 Arg2:T27	
+#1	AnnotatorNotes R15	the vegatables; the sauteed vegetables
+#2	AnnotatorNotes R19	the vegetables; the seasoned vegetables; the spiced up vegetables
+#3	AnnotatorNotes R20	the mixture; the sauce; the bean mixture; the soup
+R27	Arg1_PPT_X Arg1:T27 Arg2:T23	
+#4	AnnotatorNotes R27	the soup; the soup that you just set apart; 1 1/2 cups of the soup; the soup in the blender
+R30	Arg1_PPT Arg1:T28 Arg2:T29	
+R24	Arg2_GOL Arg1:T28 Arg2:T30	
+#5	AnnotatorNotes R29	the black bean chili; the soup; the sauce

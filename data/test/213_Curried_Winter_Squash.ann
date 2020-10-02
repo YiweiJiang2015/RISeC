@@ -1,0 +1,20 @@
+T1	AC 21 28	combine
+T2	TOOL 6 19	a medium bowl
+T3	AC 55 64	Microwave
+T4	TEMPERATURE 68 72	high
+T5	CONDITION_CLAUSE 73 93	until heated through
+T6	DUR 101 110	5 minutes
+T7	AC 115 123	Sprinkle
+T8	FOOD 127 134	coconut
+T10	AC 151 156	Serve
+T11	FOOD 29 50	first six ingredients
+R1	Arg1_PPT Arg1:T1 Arg2:T11	
+R2	ArgM_LOC Arg1:T1 Arg2:T2	
+R3	ArgM_MNR Arg1:T3 Arg2:T4	
+R4	ArgM_TMP Arg1:T3 Arg2:T5	
+R5	ArgM_TMP Arg1:T3 Arg2:T6	
+R6	Arg2_PPT Arg1:T7 Arg2:T8	
+R7	Arg1_GOL_X Arg1:T7 Arg2:T3	
+R8	Arg1_PPT_X Arg1:T10 Arg2:T7	
+#1	AnnotatorNotes R7	the squash
+#2	AnnotatorNotes R8	the squash; the squash with coconut sprinkles

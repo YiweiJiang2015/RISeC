@@ -1,0 +1,36 @@
+T1	TOOL 6 16	a saucepan
+T2	AC 18 22	heat
+T3	FOOD 23 27	milk
+T4	FOOD 29 40	brown sugar
+T5	FOOD 42 48	butter
+T6	FOOD 50 54	salt
+T7	FOOD 59 67	cinnamon
+T8	AC 72 75	Add
+T9	FOOD 76 97	remaining ingredients
+T10	AC 99 102	mix
+T11	AC 114 119	Spoon
+T12	TOOL 125 150	a greased 2-qt. casserole
+T13	AC 155 160	Cover
+T14	AC 165 169	bake
+T15	TEMPERATURE 173 186	350 degrees F
+T16	DUR 191 201	45 minutes
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	ArgM_LOC Arg1:T2 Arg2:T1	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	Arg1_PPT_X Arg1:T10 Arg2:T8	
+R9	Arg2_PPT_Z Arg1:T8 Arg2:T2	
+R10	Arg2_GOL Arg1:T11 Arg2:T12	
+R11	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R12	Arg1_PPT_X Arg1:T13 Arg2:T11	
+R13	Arg1_PPT_X Arg1:T14 Arg2:T13	
+R14	ArgM_MNR Arg1:T14 Arg2:T15	
+R15	ArgM_TMP Arg1:T14 Arg2:T16	
+#1	AnnotatorNotes R9	the saucepan; the milk mixture; the mix in the saucepan
+#2	AnnotatorNotes R11	the mix; the content of the saucepan
+#3	AnnotatorNotes R12	the mixture; the casserole
+#4	AnnotatorNotes R13	the blend; the porridge
+#5	AnnotatorNotes R8	the milk mixture; the mixture in the saucepan

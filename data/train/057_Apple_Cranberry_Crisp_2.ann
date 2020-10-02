@@ -1,0 +1,65 @@
+T1	AC 3 10	Preheat
+T2	AC 50 56	Butter
+T3	AC 107 110	mix
+T4	AC 178 183	Place
+T5	AC 230 237	combine
+T8	AC 331 339	Sprinkle
+T9	AC 356 360	Bake
+T10	TOOL 11 15	oven
+T11	TEMPERATURE 19 32	375 degrees F
+T12	TOOL 57 85	an 8 inch square baking dish
+T13	TOOL 93 105	a large bowl
+T14	FOOD 120 126	apples
+T15	FOOD 128 139	cranberries
+T16	FOOD 141 152	white sugar
+T17	FOOD 154 162	cinnamon
+T18	FOOD 167 173	nutmeg
+T19	TOOL 196 207	baking dish
+T20	TOOL 215 228	the same bowl
+T21	FOOD 238 242	oats
+T22	FOOD 244 249	flour
+T23	FOOD 254 265	brown sugar
+T24	TOOL 275 281	a fork
+T25	FOOD 290 296	butter
+T26	FOOD 323 329	pecans
+T27	FOOD 345 351	apples
+T28	TOOL 364 378	preheated oven
+T29	DUR 383 399	40 to 50 minutes
+T32	CONDITION_CLAUSE 297 310	until crumbly
+T30	CONDITION_CLAUSE 404 456	until topping is golden brown, and apples are tender
+R1	Arg1_PPT Arg1:T3 Arg2:T14	
+R2	Arg1_PPT Arg1:T3 Arg2:T15	
+R3	Arg1_PPT Arg1:T3 Arg2:T16	
+R4	Arg1_PPT Arg1:T3 Arg2:T17	
+R5	Arg1_PPT Arg1:T3 Arg2:T18	
+R6	ArgM_LOC Arg1:T3 Arg2:T13	
+R7	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R8	Arg3_GOL Arg1:T4 Arg2:T19	
+R9	Arg1_PPT Arg1:T5 Arg2:T21	
+R10	Arg1_PPT Arg1:T5 Arg2:T22	
+R11	Arg1_PPT Arg1:T5 Arg2:T23	
+R12	ArgM_LOC Arg1:T5 Arg2:T20	
+T6	AC 283 289	mix in
+R13	Arg1_PPT Arg1:T6 Arg2:T25	
+R14	Arg2_PPT_Z Arg1:T6 Arg2:T5	
+T7	AC 315 322	Stir in
+R15	Arg1_PPT Arg1:T7 Arg2:T26	
+R16	Arg2_PPT_Z Arg1:T7 Arg2:T6	
+R17	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R18	Arg2_GOL Arg1:T8 Arg2:T27	
+R19	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R20	ArgM_LOC Arg1:T9 Arg2:T28	
+R21	ArgM_TMP Arg1:T9 Arg2:T29	
+R22	ArgM_TMP Arg1:T9 Arg2:T30	
+R23	Arg1_PPT Arg1:T1 Arg2:T10	
+R24	ArgM_MNR Arg1:T1 Arg2:T11	
+R25	Arg1_PPT Arg1:T2 Arg2:T12	
+R26	TODO Arg1:T6 Arg2:T24	
+R27	ArgM_TMP Arg1:T6 Arg2:T32	
+T31	TEMPERATURE 34 48	190 degrees C.
+R28	ArgM_MNR Arg1:T1 Arg2:T31	
+#1	AnnotatorNotes R7	the mixture; the apple mixture
+#2	AnnotatorNotes R14	the dough; the dough with sugar
+#3	AnnotatorNotes R16	the dough; the crumbly dough; the crumbly dough with butter
+#4	AnnotatorNotes R17	the dough; the dough with pecans
+#5	AnnotatorNotes R19	the dough; the dough with apples

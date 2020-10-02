@@ -1,0 +1,52 @@
+T1	AC 27 32	cream
+T2	TOOL 6 25	a large mixing bowl
+T3	FOOD 33 47	the shortening
+T4	FOOD 52 57	sugar
+T6	FOOD 70 77	the egg
+T5	AC 62 69	Beat in
+T7	FOOD 82 90	molasses
+T8	AC 95 102	Combine
+T9	FOOD 103 108	flour
+T10	FOOD 110 121	baking soda
+T11	FOOD 123 129	ginger
+T12	FOOD 131 139	cinnamon
+T13	FOOD 144 148	salt
+T14	AC 160 163	add
+T15	FOOD 167 182	creamed mixture
+T16	AC 187 191	Roll
+T17	FOOD 192 213	teaspoonfuls of dough
+T18	FOOD 219 224	balls
+T19	FOOD 260 265	sugar
+T20	AC 229 232	Dip
+T21	FOOD 233 254	one side of each ball
+T22	AC 267 272	place
+T23	TOOL 295 317	a greased baking sheet
+T24	AC 322 326	Bake
+T25	TEMPERATURE 330 343	350 degrees F
+T26	DUR 348 361	12-15 minutes
+T27	CONDITION_CLAUSE 365 398	until lightly browned and crinkly
+R1	Arg1_PPT Arg1:T1 Arg2:T3	
+R2	Arg1_PPT Arg1:T1 Arg2:T4	
+R3	ArgM_LOC Arg1:T1 Arg2:T2	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg2_PPT_Z Arg1:T5 Arg2:T1	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	Arg1_PPT Arg1:T8 Arg2:T10	
+R9	Arg1_PPT Arg1:T8 Arg2:T11	
+R10	Arg1_PPT Arg1:T8 Arg2:T12	
+R11	Arg1_PPT Arg1:T8 Arg2:T13	
+R12	Arg2_PPT Arg1:T14 Arg2:T15	
+R13	Arg1_PPT_X Arg1:T14 Arg2:T8	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg3_PRD Arg1:T16 Arg2:T18	
+R16	Arg1_PPT Arg1:T20 Arg2:T21	
+R17	Arg3_GOL Arg1:T20 Arg2:T19	
+R19	ArgM_MNR Arg1:T24 Arg2:T25	
+R20	ArgM_TMP Arg1:T24 Arg2:T26	
+R21	ArgM_TMP Arg1:T24 Arg2:T27	
+#1	AnnotatorNotes R6	the shortening and sugar; the shortening in the bowl
+#2	AnnotatorNotes R13	the dough; the ginger dough; the flour and baking soda combination
+R18	Arg3_GOL Arg1:T22 Arg2:T23	
+R22	Arg1_PPT_X Arg1:T22 Arg2:T20	
+#3	AnnotatorNotes R22	the balls; the dough balls; the dough balls in sugar

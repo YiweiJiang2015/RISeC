@@ -1,0 +1,195 @@
+T1	FOOD 7 13	batter
+T2	AC 15 22	combine
+T3	FOOD 23 31	the eggs
+T4	FOOD 33 38	water
+T5	FOOD 40 45	flour
+T6	FOOD 50 54	salt
+T7	TOOL 58 67	a blender
+T8	AC 72 77	Cover
+T9	AC 82 89	process
+T11	AC 108 113	stand
+T12	DUR 118 128	15 minutes
+T13	TOOL 147 163	a small saucepan
+T14	AC 165 170	saute
+T15	FOOD 171 176	onion
+T16	FOOD 180 186	butter
+T18	AC 204 211	Stir in
+T19	FOOD 212 217	flour
+T20	CONDITION_CLAUSE 218 231	until blended
+T21	AC 246 253	stir in
+T22	FOOD 254 258	milk
+T24	AC 274 278	boil
+T25	TEMPERATURE 284 295	medium heat
+T26	AC 297 305	stirring
+T27	AC 318 322	cook
+T28	AC 327 331	stir
+T29	DUR 336 345	2 minutes
+T30	CONDITION_CLAUSE 349 373	until slightly thickened
+T31	AC 378 384	Reduce
+T32	OTHER 385 389	heat
+T33	TEMPERATURE 393 396	low
+T34	AC 401 408	Stir in
+T35	FOOD 409 423	1/2 cup cheese
+T36	FOOD 425 432	mustard
+T37	FOOD 434 454	Worcestershire sauce
+T38	FOOD 456 462	pepper
+T39	FOOD 467 471	salt
+T42	AC 499 506	Stir in
+T43	FOOD 507 515	broccoli
+T44	AC 521 526	Cover
+T45	AC 528 532	keep
+T47	AC 543 547	Heat
+T48	TOOL 548 588	a lightly greased 8-in. nonstick skillet
+T49	AC 590 594	pour
+T50	FOOD 595 615	2 tablespoons batter
+T51	TOOL 621 642	the center of skillet
+T53	AC 648 652	Lift
+T54	AC 657 661	tilt
+T55	TOOL 662 665	pan
+T58	AC 693 697	Cook
+T62	AC 721 725	turn
+T63	AC 730 734	cook
+T64	DUR 735 748	15-20 seconds
+T65	AC 761 767	Remove
+T66	TOOL 771 782	a wire rack
+T67	AC 788 794	Repeat
+T68	FOOD 800 816	remaining batter
+T69	AC 818 826	greasing
+T70	TOOL 827 834	skillet
+T71	AC 850 855	Spoon
+T72	FOOD 862 877	1/2 cup filling
+T74	FOOD 897 907	each crepe
+T75	AC 909 916	roll up
+T76	AC 922 927	Place
+T77	FOOD 928 937	seam side
+T86	TOOL 946 977	an ungreased 11-in. baking dish
+T78	AC 983 991	Sprinkle
+T79	FOOD 997 1013	remaining cheese
+T80	AC 1019 1023	Bake
+T82	TEMPERATURE 1039 1052	350 degrees F
+T83	DUR 1057 1068	5-7 minutes
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R5	ArgM_LOC Arg1:T2 Arg2:T7	
+R7	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R8	ArgM_LOC Arg1:T14 Arg2:T13	
+R9	Arg1_PPT Arg1:T14 Arg2:T15	
+R10	ArgM_LOC Arg1:T14 Arg2:T16	
+R12	Arg1_PPT Arg1:T18 Arg2:T19	
+R13	ArgM_TMP Arg1:T18 Arg2:T20	
+R14	Arg1_PPT Arg1:T21 Arg2:T22	
+R16	ArgM_TMP Arg1:T27 Arg2:T29	
+R17	ArgM_TMP Arg1:T27 Arg2:T30	
+R18	ArgM_TMP Arg1:T11 Arg2:T12	
+R19	Simultaneous Arg1:T27 Arg2:T28	
+R21	Arg1_PPT Arg1:T31 Arg2:T32	
+R22	Arg4_GOL Arg1:T31 Arg2:T33	
+R23	Arg1_PPT Arg1:T34 Arg2:T35	
+R24	Arg1_PPT Arg1:T34 Arg2:T36	
+R25	Arg1_PPT Arg1:T34 Arg2:T37	
+R26	Arg1_PPT Arg1:T34 Arg2:T38	
+R27	Arg1_PPT Arg1:T34 Arg2:T39	
+R29	Arg1_PPT Arg1:T42 Arg2:T43	
+R32	Arg1_PPT_X Arg1:T45 Arg2:T44	
+R35	Arg1_PPT Arg1:T49 Arg2:T50	
+R36	Arg3_GOL Arg1:T49 Arg2:T51	
+R38	Arg1_PPT Arg1:T53 Arg2:T55	
+R39	Simultaneous Arg1:T53 Arg2:T54	
+R30	Arg1_PPT_X Arg1:T63 Arg2:T62	
+R41	ArgM_TMP Arg1:T63 Arg2:T64	
+R43	Arg1_PPT Arg1:T67 Arg2:T68	
+R44	Arg1_PPT Arg1:T69 Arg2:T70	
+R45	Arg1_PPT Arg1:T71 Arg2:T72	
+R49	Arg1_PPT Arg1:T76 Arg2:T77	
+R50	Arg2_GOL Arg1:T76 Arg2:T86	
+R51	Arg1_PPT Arg1:T78 Arg2:T79	
+R53	ArgM_MNR Arg1:T80 Arg2:T82	
+R54	ArgM_TMP Arg1:T80 Arg2:T83	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R86	Arg2_GOL_X Arg1:T78 Arg2:T76	
+R87	Arg1_PPT_X Arg1:T80 Arg2:T78	
+R95	Arg1_PPT_X Arg1:T58 Arg2:T49	
+R20	Arg3_PRD Arg1:T2 Arg2:T1	
+T10	CONDITION_CLAUSE 90 102	until smooth
+R6	ArgM_TMP Arg1:T9 Arg2:T10	
+T59	CONDITION_CLAUSE 698 719	until top appears dry
+R28	ArgM_TMP Arg1:T58 Arg2:T59	
+R42	Arg3_GOL Arg1:T65 Arg2:T66	
+R56	Arg1_PPT_X Arg1:T65 Arg2:T63	
+T60	CONDITION_CLAUSE 1072 1094	until cheese is melted
+R57	ArgM_TMP Arg1:T80 Arg2:T60	
+R34	Arg1_PPT Arg1:T47 Arg2:T48	
+R58	Arg1_PPT_X Arg1:T8 Arg2:T2	
+R59	Arg2_PPT_Z Arg1:T18 Arg2:T14	
+R60	Arg2_PPT_Z Arg1:T21 Arg2:T18	
+R15	ArgM_MNR Arg1:T24 Arg2:T25	
+R31	Arg1_PPT_X Arg1:T24 Arg2:T21	
+R61	Simultaneous Arg1:T24 Arg2:T26	
+R62	Arg1_PPT_X Arg1:T27 Arg2:T24	
+T23	CONDITION_CLAUSE 472 494	until cheese is melted
+R55	ArgM_TMP Arg1:T34 Arg2:T23	
+R63	Arg1_PPT_X Arg1:T44 Arg2:T42	
+R64	Arg2_PPT_Z Arg1:T42 Arg2:T34	
+R65	Arg2_PPT_Z Arg1:T34 Arg2:T27	
+T17	CONDITION_CLAUSE 187 199	until tender
+R11	ArgM_TMP Arg1:T14 Arg2:T17	
+R37	Arg1_PPT_X Arg1:T26 Arg2:T24	
+#1	AnnotatorNotes T2	the flour mixture; the dough
+#2	AnnotatorNotes T8	the covered mixture; the covered dough
+#3	AnnotatorNotes T9	the processed mixture; the smooth dough
+#4	AnnotatorNotes T11	the processed mixture; the smooth dough
+#5	AnnotatorNotes T14	the sauted onion; the onion mixture
+#6	AnnotatorNotes T18	the onion blend; the dough with sauted onion
+#7	AnnotatorNotes T21	the blend with milk; the dough with milk
+#8	AnnotatorNotes T24	the boiled liquid; the boiled gruel
+#9	AnnotatorNotes T26	the boiled liquid; the boiled gruel
+#10	AnnotatorNotes T27	the boiled liquid; the lightly thinckened gruel
+#11	AnnotatorNotes T28	the boiled liquid; the lightly thinckened gruel
+#12	AnnotatorNotes T31	the low temperature of boiler
+#13	AnnotatorNotes T34	the liquid with cheese; the gruel with melted cheese
+#14	AnnotatorNotes T42	the liquid with broccoli; the gruel with broccoli
+#15	AnnotatorNotes T44	the covered liquid; the covered gruel
+#16	AnnotatorNotes T45	the covered liquid; the covered gruel
+#17	AnnotatorNotes T47	the skillet; the heated skillet
+#18	AnnotatorNotes T49	the batter; the batter in the skillet
+#19	AnnotatorNotes T53	the pan; the pan coated with batter
+R46	Arg3_GOL Arg1:T71 Arg2:T74	
+T40	PURPOSE_CLAUSE 666 687	to evenly coat bottom
+R33	ArgM_PRP Arg1:T53 Arg2:T40	
+#20	AnnotatorNotes T54	the pan; the pan coated with batter
+#21	AnnotatorNotes T58	the batter; the heated batter
+#22	AnnotatorNotes T62	the batter; the heated batter
+#23	AnnotatorNotes T63	the batter; the heated batter
+#24	AnnotatorNotes T65	the batter; the cooked batter on the wire rack
+R40	Simultaneous Arg1:T67 Arg2:T69	
+#25	AnnotatorNotes T71	the crepe; the crepe topped with filling
+#26	AnnotatorNotes T75	the crepe; the crepe roll
+#27	AnnotatorNotes T67	the remaining batter; the cooked remaining batter
+#28	AnnotatorNotes T76	the rolled crepe; the rolled crepe in the baking dish
+#29	AnnotatorNotes T78	the crepe roll; the crepe roll sprinkled with cheese
+#30	AnnotatorNotes T80	the crepe roll; the baked crepe roll
+R52	Arg1_PPT_X Arg1:T62 Arg2:T58	
+#31	AnnotatorNotes R58	the blender; the batter mixture
+#32	AnnotatorNotes R7	the batter
+R66	Arg1_PPT_X Arg1:T11 Arg2:T9	
+#33	AnnotatorNotes R66	the batter
+#34	AnnotatorNotes R59	the onions; the sauteed onions; the tender onions
+#35	AnnotatorNotes R60	the flour and onion
+#36	AnnotatorNotes R31	the milk; the mixture
+#37	AnnotatorNotes R37	the white sauce; the white sauce with onions
+#38	AnnotatorNotes R62	the sauce; the white sauce
+R67	Arg1_PPT_X Arg1:T28 Arg2:T27	
+#39	AnnotatorNotes R67	the white sauce
+#40	AnnotatorNotes R65	the sauce; the white sauce
+#41	AnnotatorNotes R64	the sauce; the cheese sauce; the cheese mustard sauce
+#42	AnnotatorNotes R63	the sauce; the filling
+#43	AnnotatorNotes R32	the filling
+#44	AnnotatorNotes R95	the crepe
+#45	AnnotatorNotes R52	the crepe
+#46	AnnotatorNotes R56	the crepe
+#48	AnnotatorNotes R86	the crepes; the rolled up crepes; the filled crepes
+#49	AnnotatorNotes R87	the filled crepes; the rolled up crepes; the crepes sprinkled with cheese
+R47	Arg1_PPT_X Arg1:T75 Arg2:T71	
+#47	AnnotatorNotes R47	the crepes; the crepes with filling
+#50	AnnotatorNotes R30	the crepe; the turned crepe

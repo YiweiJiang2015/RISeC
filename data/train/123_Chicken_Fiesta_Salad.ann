@@ -1,0 +1,63 @@
+T1	AC 3 6	Rub
+T2	FOOD 7 14	chicken
+T3	FOOD 27 51	1/2 the fajita seasoning
+T4	AC 56 60	Heat
+T5	FOOD 61 68	the oil
+T6	TOOL 72 81	a skillet
+T7	TEMPERATURE 87 98	medium heat
+T8	AC 104 108	cook
+T9	FOOD 109 120	the chicken
+T10	DUR 121 130	8 minutes
+T11	CONDITION_CLAUSE 148 170	until juices run clear
+T12	AC 172 181	set aside
+T13	TOOL 189 205	a large saucepan
+T14	AC 207 210	mix
+T15	FOOD 211 216	beans
+T16	FOOD 218 222	corn
+T17	FOOD 224 229	salsa
+T18	FOOD 234 263	other 1/2 of fajita seasoning
+T19	AC 268 272	Heat
+T20	TEMPERATURE 278 289	medium heat
+T21	CONDITION_CLAUSE 290 300	until warm
+T22	AC 305 312	Prepare
+T23	FOOD 313 322	the salad
+T24	AC 326 333	tossing
+T25	FOOD 334 344	the greens
+R1	ArgM_MEANS Arg1:T22 Arg2:T24	
+R2	Arg1_PPT Arg1:T24 Arg2:T25	
+T26	FOOD 346 351	onion
+T27	FOOD 356 362	tomato
+T28	AC 367 370	Top
+T29	FOOD 371 376	salad
+T30	FOOD 382 389	chicken
+T31	AC 394 399	dress
+T32	FOOD 405 413	the bean
+T33	FOOD 418 430	corn mixture
+R3	Arg1_GOL Arg1:T1 Arg2:T2	
+R4	Arg2_PPT Arg1:T1 Arg2:T3	
+R5	Arg1_PPT Arg1:T4 Arg2:T5	
+R6	ArgM_LOC Arg1:T4 Arg2:T6	
+R7	ArgM_MNR Arg1:T4 Arg2:T7	
+R8	Arg1_PPT Arg1:T8 Arg2:T9	
+R9	ArgM_TMP Arg1:T8 Arg2:T10	
+T34	OTHER 134 143	each side
+R10	ArgM_LOC Arg1:T8 Arg2:T34	
+R11	ArgM_TMP Arg1:T8 Arg2:T11	
+R12	Arg1_PPT_X Arg1:T12 Arg2:T8	
+R13	Arg1_PPT Arg1:T14 Arg2:T15	
+R14	Arg1_PPT Arg1:T14 Arg2:T16	
+R15	Arg1_PPT Arg1:T14 Arg2:T17	
+R16	Arg1_PPT Arg1:T14 Arg2:T18	
+R17	ArgM_LOC Arg1:T14 Arg2:T13	
+R18	ArgM_MNR Arg1:T19 Arg2:T20	
+R19	ArgM_TMP Arg1:T19 Arg2:T21	
+R20	Arg1_PPT Arg1:T22 Arg2:T23	
+R21	Arg1_PPT Arg1:T24 Arg2:T26	
+R22	Arg1_PPT Arg1:T24 Arg2:T27	
+R23	Arg1_GOL Arg1:T28 Arg2:T29	
+R24	Arg2_PPT Arg1:T28 Arg2:T30	
+R25	Arg2_PPT Arg1:T31 Arg2:T32	
+R26	Arg2_PPT Arg1:T31 Arg2:T33	
+R27	Arg1_PPT_X Arg1:T31 Arg2:T28	
+#1	AnnotatorNotes R12	the uncooked chicken; the seasoned chicken; 
+#2	AnnotatorNotes R27	the salad; the beans salad; salad and chicken;

@@ -1,0 +1,83 @@
+T1	AC 3 10	Preheat
+T2	AC 53 57	Wash
+T3	AC 69 74	place
+T4	AC 97 101	Bake
+T5	AC 145 154	Set aside
+T6	AC 167 171	Melt
+T8	AC 261 265	cook
+T9	AC 267 275	stirring
+T10	AC 349 353	peel
+T11	AC 367 371	chop
+T12	AC 376 381	Puree
+T13	AC 437 440	Add
+T14	AC 468 473	pulse
+T15	AC 491 494	Add
+T16	AC 516 521	pulse
+T17	TOOL 11 15	oven
+T19	FOOD 58 63	beets
+T20	TOOL 78 92	a roasting pan
+T21	DUR 106 126	45 minutes to 1 hour
+T22	FOOD 172 178	butter
+T23	TOOL 182 197	a large skillet
+T24	TEMPERATURE 203 214	medium heat
+T25	FOOD 227 232	onion
+T26	FOOD 234 239	pears
+T27	FOOD 241 246	sugar
+T28	FOOD 252 259	vinegar
+T29	DUR 292 302	20 minutes
+T31	FOOD 382 395	onion mixture
+T32	TOOL 399 415	a food processor
+T33	TOOL 421 432	metal blade
+T34	FOOD 441 445	salt
+T35	FOOD 450 466	1/2 of the beets
+T36	FOOD 495 510	remaining beets
+T37	CONDITION_CLAUSE 131 143	until tender
+T30	CONDITION_CLAUSE 307 347	When the beets are cool enough to handle
+R1	Arg1_PPT Arg1:T2 Arg2:T19	
+R2	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R3	Arg3_GOL Arg1:T3 Arg2:T20	
+R4	Arg1_PPT Arg1:T1 Arg2:T17	
+R6	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R7	ArgM_TMP Arg1:T4 Arg2:T21	
+R8	ArgM_TMP Arg1:T4 Arg2:T37	
+R9	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R10	Arg1_PPT Arg1:T6 Arg2:T22	
+R11	ArgM_LOC Arg1:T6 Arg2:T23	
+R12	ArgM_MNR Arg1:T6 Arg2:T24	
+T7	AC 219 226	Stir in
+R13	Arg1_PPT Arg1:T7 Arg2:T25	
+R14	Arg1_PPT Arg1:T7 Arg2:T26	
+R15	Arg1_PPT Arg1:T7 Arg2:T27	
+R16	Arg1_PPT Arg1:T7 Arg2:T28	
+R17	Arg2_PPT_Z Arg1:T7 Arg2:T6	
+R18	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R19	Simultaneous Arg1:T9 Arg2:T8	
+R20	ArgM_TMP Arg1:T8 Arg2:T29	
+R22	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R23	Arg1_PPT Arg1:T12 Arg2:T31	
+R24	ArgM_LOC Arg1:T12 Arg2:T32	
+R25	TODO Arg1:T12 Arg2:T33	
+R26	Arg1_PPT Arg1:T13 Arg2:T34	
+R27	Arg1_PPT Arg1:T13 Arg2:T35	
+R28	Arg2_PPT_Z Arg1:T13 Arg2:T12	
+R29	Arg1_PPT_X Arg1:T14 Arg2:T13	
+R30	Arg1_PPT Arg1:T15 Arg2:T36	
+R31	Arg2_PPT_Z Arg1:T15 Arg2:T14	
+R32	Arg1_PPT_X Arg1:T16 Arg2:T15	
+R33	ArgM_TMP Arg1:T10 Arg2:T30	
+T18	TEMPERATURE 19 32	400 degrees F
+T38	TEMPERATURE 34 47	200 degrees C
+R5	ArgM_MNR Arg1:T1 Arg2:T18	
+R34	ArgM_MNR Arg1:T1 Arg2:T38	
+T39	PURPOSE_CLAUSE 155 162	to cool
+R35	ArgM_PRP Arg1:T5 Arg2:T39	
+#1	AnnotatorNotes R2	the beets; the washed beets
+#2	AnnotatorNotes R6	the beets; the beets in the pan
+#3	AnnotatorNotes R9	the beets; the baked beets; the tender beets
+#4	AnnotatorNotes R17	the butter; the melted butter; the melted butter in a skillet
+#5	AnnotatorNotes R18	the mixture; the onion mixture with butter
+#6	AnnotatorNotes R22	the beets; the peeled beets
+#7	AnnotatorNotes R28	the onion mixture; the pureed onion mixture
+#8	AnnotatorNotes R29	the beet and onion mixture; the beet and onion mixture
+#9	AnnotatorNotes R31	the beet and onion mixture; the processed beet and onion mixture
+#10	AnnotatorNotes R32	the beet and onion mixture; the processed beet and onion mixture

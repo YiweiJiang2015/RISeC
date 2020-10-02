@@ -1,0 +1,74 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	TOOL 56 68	a large bowl
+T6	AC 70 75	cream
+T7	FOOD 85 95	the butter
+T8	FOOD 97 123	butter flavored shortening
+T9	FOOD 125 136	brown sugar
+T10	FOOD 138 149	white sugar
+T11	FOOD 151 155	eggs
+T12	FOOD 161 168	vanilla
+T13	CONDITION_CLAUSE 169 181	until smooth
+T14	AC 186 193	Combine
+T15	FOOD 194 203	the flour
+T16	FOOD 205 216	baking soda
+T17	FOOD 218 226	cinnamon
+T18	FOOD 228 234	cloves
+T19	FOOD 240 244	salt
+T20	AC 246 250	stir
+T21	FOOD 256 273	the sugar mixture
+T22	AC 278 285	Stir in
+T23	FOOD 286 294	the oats
+T24	FOOD 299 306	raisins
+T25	AC 311 315	Drop
+T26	TOOL 345 368	ungreased cookie sheets
+T27	TOOL 319 339	rounded teaspoonfuls
+T28	AC 373 377	Bake
+T29	DUR 378 394	10 to 12 minutes
+T30	CONDITION_CLAUSE 395 417	until light and golden
+T31	AC 425 437	not overbake
+T32	AC 451 455	cool
+T33	FOOD 446 450	them
+T34	DUR 460 469	2 minutes
+T35	CONDITION_CLAUSE 470 523	before removing from cookie sheets to cool completely
+T36	AC 528 533	Store
+T37	TOOL 537 555	airtight container
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	ArgM_LOC Arg1:T6 Arg2:T5	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	Arg1_PPT Arg1:T6 Arg2:T8	
+R7	Arg1_PPT Arg1:T6 Arg2:T9	
+R8	Arg1_PPT Arg1:T6 Arg2:T10	
+R9	Arg1_PPT Arg1:T6 Arg2:T11	
+R10	Arg1_PPT Arg1:T6 Arg2:T12	
+R11	ArgM_TMP Arg1:T6 Arg2:T13	
+R12	Arg1_PPT Arg1:T14 Arg2:T15	
+R13	Arg1_PPT Arg1:T14 Arg2:T16	
+R14	Arg1_PPT Arg1:T14 Arg2:T17	
+R15	Arg1_PPT Arg1:T14 Arg2:T18	
+R16	Arg1_PPT Arg1:T14 Arg2:T19	
+R17	Arg2_PPT Arg1:T20 Arg2:T21	
+R18	Arg1_PPT_X Arg1:T20 Arg2:T14	
+R19	Arg1_PPT Arg1:T22 Arg2:T23	
+R20	Arg1_PPT Arg1:T22 Arg2:T24	
+R21	Arg2_PPT_Z Arg1:T22 Arg2:T20	
+R22	Arg3_GOL Arg1:T25 Arg2:T26	
+R23	ArgM_MEANS Arg1:T25 Arg2:T27	
+R24	ArgM_TMP Arg1:T28 Arg2:T29	
+R25	ArgM_TMP Arg1:T28 Arg2:T30	
+R26	Arg0_PAG Arg1:T32 Arg2:T33	
+R27	ArgM_TMP Arg1:T32 Arg2:T34	
+R28	ArgM_TMP Arg1:T32 Arg2:T35	
+R29	ArgM_LOC Arg1:T36 Arg2:T37	
+#1	AnnotatorNotes R18	the flour mixture
+#2	AnnotatorNotes R21	the dough
+R30	Arg1_PPT_X Arg1:T28 Arg2:T25	
+#3	AnnotatorNotes R30	the cookies
+R31	Arg1_PPT_X Arg1:T31 Arg2:T28	
+#4	AnnotatorNotes R31	the cookies
+R32	Arg1_PPT_X Arg1:T36 Arg2:T32	
+#5	AnnotatorNotes R32	the cookies; the cold cookies

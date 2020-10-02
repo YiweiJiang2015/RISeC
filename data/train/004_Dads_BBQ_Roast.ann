@@ -1,0 +1,105 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 20 23	mix
+T3	FOOD 33 44	the mustard
+T4	AC 68 75	Lay out
+T5	TOOL 76 108	two long sheets of aluminum foil
+T6	AC 123 126	Pat
+T7	FOOD 127 136	the roast
+T9	AC 146 151	place
+T10	TOOL 155 177	the center of the foil
+T12	AC 193 197	coat
+T13	FOOD 198 207	the roast
+T14	FOOD 213 232	the mustard mixture
+T15	AC 237 241	Wrap
+T16	TOOL 242 250	the foil
+T17	FOOD 266 275	the roast
+T18	AC 282 287	apply
+T19	TOOL 288 310	one more piece of foil
+T20	PURPOSE_CLAUSE 311 331	to really seal it in
+T26	AC 408 415	Prepare
+T27	TOOL 416 432	an outdoor grill
+T28	OTHER 437 450	indirect heat
+T29	TOOL 459 467	charcoal
+T30	AC 469 474	light
+T31	TOOL 475 484	the coals
+T32	AC 491 495	move
+T33	TOOL 499 520	one side of the grill
+T35	AC 525 530	Place
+T36	FOOD 531 540	the roast
+T37	TOOL 544 553	the grill
+T38	AC 559 564	cover
+T39	AC 569 573	Cook
+T40	DUR 584 591	2 hours
+T41	AC 593 600	turning
+T42	DUR 601 623	every 30 to 45 minutes
+T47	AC 709 714	stand
+T48	DUR 725 735	10 minutes
+T50	AC 756 761	Place
+T51	TOOL 765 785	a deep serving plate
+T57	PURPOSE_CLAUSE 823 887	to save the juices and mustard rub to slather on the beef slices
+T58	FOOD 49 63	onion soup mix
+R18	ArgM_MNR Arg1:T26 Arg2:T28	
+R25	ArgM_TMP Arg1:T39 Arg2:T40	
+R26	ArgM_TMP Arg1:T41 Arg2:T42	
+R30	ArgM_TMP Arg1:T47 Arg2:T48	
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T58	
+R3	ArgM_LOC Arg1:T2 Arg2:T1	
+R4	Arg1_PPT Arg1:T4 Arg2:T5	
+R8	Arg1_PPT Arg1:T6 Arg2:T7	
+R9	Arg1_PPT_X Arg1:T9 Arg2:T6	
+R10	Arg3_GOL Arg1:T9 Arg2:T10	
+R11	Arg1_GOL Arg1:T12 Arg2:T13	
+R12	Arg2_PPT Arg1:T12 Arg2:T14	
+R13	Arg1_PPT Arg1:T15 Arg2:T16	
+R14	Arg2_GOL Arg1:T15 Arg2:T17	
+R15	Arg1_PPT Arg1:T18 Arg2:T19	
+R16	ArgM_PRP Arg1:T18 Arg2:T20	
+R19	Arg1_PPT Arg1:T30 Arg2:T31	
+R20	Arg1_PPT Arg1:T26 Arg2:T27	
+R22	Arg2_GOL Arg1:T32 Arg2:T33	
+R23	Arg1_PPT_X Arg1:T32 Arg2:T30	
+R24	Arg1_PPT Arg1:T35 Arg2:T36	
+R27	Arg3_GOL Arg1:T35 Arg2:T37	
+R31	Arg1_PPT_X Arg1:T38 Arg2:T35	
+R32	Simultaneous Arg1:T39 Arg2:T41	
+T43	CONDITION_CLAUSE 628 699	until the internal temperature is at least 145 degrees F (63 degrees C)
+R28	ArgM_TMP Arg1:T39 Arg2:T43	
+T44	CONDITION_CLAUSE 736 750	before carving
+R29	ArgM_TMP Arg1:T47 Arg2:T44	
+T45	CONDITION_CLAUSE 786 803	before unwrapping
+R33	ArgM_TMP Arg1:T50 Arg2:T45	
+R34	Arg3_GOL Arg1:T50 Arg2:T51	
+R40	ArgM_PRP Arg1:T50 Arg2:T57	
+R41	Arg1_PPT_X Arg1:T39 Arg2:T38	
+R42	Arg1_PPT_X Arg1:T50 Arg2:T47	
+T22	PURPOSE_CLAUSE 332 403	so that the roast can be rotated without all of the juices spilling out
+R43	ArgM_PRP Arg1:T18 Arg2:T22	
+#1	AnnotatorNotes T2	the mixture; the mustard mixture
+#2	AnnotatorNotes T4	two aluminum foil; two crosswise aluminum foil
+#3	AnnotatorNotes T6	the roast; the patted roast
+#4	AnnotatorNotes T9	the roast; the roast in the foil
+#5	AnnotatorNotes T12	the roast; the roast coated with mustard mixture
+#6	AnnotatorNotes T15	the roast; the roast wrapped with foil
+#7	AnnotatorNotes T18	the roast; the wrapped roast
+#8	AnnotatorNotes T20	the roast; the sealed roast
+#9	AnnotatorNotes T26	the outdoor grill; the headed outdoor grill
+R5	TODO Arg1:T30 Arg2:T29	
+#10	AnnotatorNotes T30	the charcoal; the lighted charcoal
+#11	AnnotatorNotes T32	the charcoal; the charcoal in the grill
+#12	AnnotatorNotes T35	the roast; the roast in the grill
+#13	AnnotatorNotes T38	the roast; the covered roast
+#14	AnnotatorNotes T47	the roast; the chill roast
+#15	AnnotatorNotes T39	the roast; the cooked roast
+#16	AnnotatorNotes T41	the roast; the cooked roast
+#17	AnnotatorNotes T50	the roast; the roast on a deep serving plate
+#18	AnnotatorNotes T57	None
+#19	AnnotatorNotes R9	the roast; the patted roast
+#20	AnnotatorNotes R23	the coals; the lighted coals
+#21	AnnotatorNotes R31	the grill
+#22	AnnotatorNotes R41	the roast
+R6	Arg1_PPT_X Arg1:T41 Arg2:T39	
+#23	AnnotatorNotes R6	the roast
+R7	Arg1_PPT_X Arg1:T47 Arg2:T41	
+#24	AnnotatorNotes R7	the roast; the grilled roast
+#25	AnnotatorNotes R42	the roast; the rested roast

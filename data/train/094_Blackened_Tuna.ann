@@ -1,0 +1,44 @@
+T2	AC 14 18	coat
+T3	FOOD 19 23	tuna
+T4	FOOD 29 44	Cajun seasoning
+T5	AC 49 53	Heat
+T6	FOOD 54 57	oil
+T7	FOOD 62 68	butter
+T8	TOOL 72 87	a large skillet
+T9	TEMPERATURE 93 102	high heat
+#1	AnnotatorNotes T9	Temperature?
+T10	CONDITION_CLAUSE 107 133	When oil is nearly smoking
+T11	AC 135 140	place
+T12	FOOD 141 147	steaks
+T13	TOOL 151 154	pan
+T14	AC 159 163	Cook
+T15	DUR 180 194	3 to 4 minutes
+T16	CONDITION_CLAUSE 199 214	until blackened
+T17	OTHER 167 175	one side
+R1	ArgM_MNR Arg1:T14 Arg2:T17	
+R2	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R3	ArgM_TMP Arg1:T14 Arg2:T15	
+R4	ArgM_TMP Arg1:T14 Arg2:T16	
+R6	Arg1_PPT Arg1:T11 Arg2:T12	
+R7	Arg3_GOL Arg1:T11 Arg2:T13	
+T18	AC 219 223	Turn
+T19	FOOD 224 230	steaks
+T20	AC 236 240	cook
+T21	DUR 245 259	3 to 4 minutes
+T22	CONDITION_CLAUSE 264 283	to desired doneness
+R8	Arg1_PPT Arg1:T18 Arg2:T19	
+R9	Arg1_PPT_X Arg1:T20 Arg2:T18	
+R10	ArgM_TMP Arg1:T20 Arg2:T21	
+R11	ArgM_TMP Arg1:T20 Arg2:T22	
+R12	TODO Arg1:T19 Arg2:T14	
+R13	Arg1_PPT Arg1:T5 Arg2:T6	
+R14	Arg1_PPT Arg1:T5 Arg2:T7	
+R15	ArgM_LOC Arg1:T5 Arg2:T8	
+R16	ArgM_MNR Arg1:T5 Arg2:T9	
+R18	Arg1_GOL Arg1:T2 Arg2:T3	
+R19	Arg2_PPT Arg1:T2 Arg2:T4	
+R20	Next Arg1:T5 Arg2:T11	
+R21	Next Arg1:T14 Arg2:T18	
+R5	ArgM_TMP Arg1:T11 Arg2:T10	
+#2	AnnotatorNotes R2	the steaks; the steaks in pan
+#3	AnnotatorNotes R9	the steaks; the blackened steaks

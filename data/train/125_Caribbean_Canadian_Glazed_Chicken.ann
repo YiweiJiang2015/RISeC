@@ -1,0 +1,105 @@
+T1	TOOL 21 34	a medium bowl
+T2	AC 35 42	combine
+T3	FOOD 43 54	the ketchup
+T4	FOOD 56 71	pineapple juice
+T5	FOOD 73 81	molasses
+T6	FOOD 83 86	rum
+T7	FOOD 88 95	mustard
+T8	FOOD 100 106	garlic
+T9	AC 111 117	Season
+T10	FOOD 123 127	salt
+T11	FOOD 132 138	pepper
+T12	PURPOSE_CLAUSE 139 160	to taste and mix well
+T14	AC 165 170	Place
+T15	FOOD 171 185	chicken pieces
+T16	TOOL 189 226	a lightly oiled 9x13 inch baking dish
+T17	AC 228 233	brush
+T18	OTHER 234 244	both sides
+T19	FOOD 250 264	prepared glaze
+T20	PURPOSE_CLAUSE 3 16	To Make Glaze
+T21	AC 299 304	Cover
+T22	TOOL 305 309	dish
+T23	AC 314 325	refrigerate
+T24	PURPOSE_CLAUSE 326 337	to marinate
+T25	DUR 342 358	at least 2 hours
+T26	DUR 362 371	overnight
+T27	AC 382 393	refrigerate
+T28	FOOD 394 409	remaining glaze
+T29	AC 414 421	Preheat
+T30	TOOL 422 426	oven
+T31	TEMPERATURE 430 444	375  degrees F
+T32	TEMPERATURE 446 459	190 degrees C
+T33	AC 473 478	brush
+T34	FOOD 479 493	chicken pieces
+T35	OTHER 497 505	one side
+T36	FOOD 511 537	some of the reserved glaze
+T37	AC 542 546	bake
+T38	TOOL 560 574	preheated oven
+T39	DUR 585 595	25 minutes
+T40	AC 600 604	Turn
+T41	FOOD 605 611	pieces
+T42	AC 613 618	brush
+T43	FOOD 624 639	remaining glaze
+T44	AC 644 648	bake
+T45	DUR 653 671	another 25 minutes
+T46	CONDITION_CLAUSE 675 698	until chicken is tender
+T47	AC 703 710	Preheat
+T48	TOOL 711 715	oven
+T49	PURPOSE_CLAUSE 716 724	to broil
+T50	AC 730 733	Put
+T51	FOOD 734 741	chicken
+T52	TOOL 748 755	broiler
+T53	AC 768 773	brown
+T54	FOOD 777 787	both sides
+T55	DUR 795 819	2 to 3 minutes each side
+T56	OTHER 266 294	using about 1/2 of the glaze
+R1	ArgM_MNR Arg1:T17 Arg2:T56	
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg1_PPT Arg1:T2 Arg2:T4	
+R4	Arg1_PPT Arg1:T2 Arg2:T5	
+R5	Arg1_PPT Arg1:T2 Arg2:T6	
+R6	Arg1_PPT Arg1:T2 Arg2:T7	
+R7	Arg1_PPT Arg1:T2 Arg2:T8	
+R8	ArgM_LOC Arg1:T2 Arg2:T1	
+R9	Arg2_PPT Arg1:T9 Arg2:T10	
+R10	Arg2_PPT Arg1:T9 Arg2:T11	
+R11	ArgM_PRP Arg1:T9 Arg2:T12	
+R13	Arg1_GOL_X Arg1:T9 Arg2:T2	
+R14	Arg1_PPT Arg1:T14 Arg2:T15	
+R15	Arg3_GOL Arg1:T14 Arg2:T16	
+R16	Arg1_GOL Arg1:T17 Arg2:T18	
+R17	Arg2_PPT Arg1:T17 Arg2:T19	
+R18	Arg1_GOL Arg1:T21 Arg2:T22	
+R19	Arg1_PPT_X Arg1:T23 Arg2:T21	
+R20	TODO Arg1:T22 Arg2:T16	
+R21	ArgM_PRP Arg1:T23 Arg2:T24	
+R22	ArgM_TMP Arg1:T23 Arg2:T25	
+R23	ArgM_TMP Arg1:T23 Arg2:T26	
+R24	Arg1_PPT Arg1:T27 Arg2:T28	
+R25	Arg1_PPT Arg1:T29 Arg2:T30	
+R26	ArgM_MNR Arg1:T29 Arg2:T31	
+R27	ArgM_MNR Arg1:T29 Arg2:T32	
+R28	Arg1_GOL Arg1:T33 Arg2:T34	
+R29	Arg2_PPT Arg1:T33 Arg2:T36	
+R30	ArgM_LOC Arg1:T37 Arg2:T38	
+R31	ArgM_TMP Arg1:T37 Arg2:T39	
+R32	Arg1_PPT_X Arg1:T37 Arg2:T33	
+R33	Arg1_PPT Arg1:T40 Arg2:T41	
+R34	Arg2_PPT Arg1:T42 Arg2:T43	
+R35	Arg1_PPT_X Arg1:T44 Arg2:T42	
+R36	Arg1_GOL_X Arg1:T42 Arg2:T40	
+R37	ArgM_TMP Arg1:T44 Arg2:T45	
+R38	ArgM_TMP Arg1:T44 Arg2:T46	
+R39	Arg1_PPT Arg1:T47 Arg2:T48	
+R40	ArgM_PRP Arg1:T47 Arg2:T49	
+R41	Arg1_PPT Arg1:T50 Arg2:T51	
+R42	Arg3_GOL Arg1:T50 Arg2:T52	
+R43	ArgM_TMP Arg1:T53 Arg2:T55	
+R44	ArgM_LOC Arg1:T53 Arg2:T54	
+R45	Arg1_PPT_X Arg1:T53 Arg2:T50	
+#1	AnnotatorNotes R13	the mixture; the garlic mixture; the Glaze;
+#3	AnnotatorNotes R19	the chicken pieces; the glazed chicken;  
+#4	AnnotatorNotes R32	the chicken pieces; the galzed chicken; 
+#5	AnnotatorNotes R36	the chicken; the galzed chicken; the chicken pieces;
+#6	AnnotatorNotes R35	the chicken; the glazed chicken; the chicken brushed with glazed; 
+#7	AnnotatorNotes R45	the chicken; the glazed chicken; the brushed chicken; 

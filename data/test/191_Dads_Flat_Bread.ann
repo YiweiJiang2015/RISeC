@@ -1,0 +1,110 @@
+T1	AC 27 35	dissolve
+T2	AC 66 69	Add
+T3	AC 183 186	Add
+T5	TOOL 257 274	a floured surface
+T6	AC 276 281	knead
+T7	CONDITION_CLAUSE 282 306	until smooth and elastic
+T8	DUR 308 325	about 6-8 minutes
+T9	AC 330 335	Place
+T10	AC 355 362	turning
+T11	AC 386 391	Cover
+T12	AC 396 404	let rise
+T13	CONDITION_CLAUSE 421 434	until doubled
+T14	DUR 436 448	about 1 hour
+T15	AC 453 458	Punch
+T16	FOOD 459 464	dough
+T17	AC 474 480	Divide
+T18	TOOL 496 518	a greased baking sheet
+T19	AC 520 527	flatten
+T20	FOOD 558 567	each loaf
+T21	AC 551 557	Pierce
+T22	AC 599 604	Cover
+T23	AC 613 617	rise
+T24	TOOL 621 633	a warm place
+T25	CONDITION_CLAUSE 634 654	until nearly doubled
+T26	DUR 656 672	about 30 minutes
+T27	AC 678 682	Bake
+T28	TEMPERATURE 686 699	375 degrees F
+T29	DUR 704 717	25-30 minutes
+T30	CONDITION_CLAUSE 721 739	until golden brown
+T31	TOOL 587 593	a fork
+T32	TOOL 6 25	a large mixing bowl
+T33	FOOD 70 75	sugar
+T34	FOOD 77 80	oil
+T35	FOOD 82 86	salt
+T36	FOOD 36 41	yeast
+T37	FOOD 45 61	1/2 cup of water
+T38	FOOD 88 91	rye
+T39	FOOD 95 112	whole wheat flour
+T40	FOOD 114 138	3 cups all-purpose flour
+T41	FOOD 144 159	remaining water
+T42	AC 161 165	beat
+T43	CONDITION_CLAUSE 166 178	until smooth
+T44	FOOD 187 221	enough remaining all-purpose flour
+T45	PURPOSE_CLAUSE 222 242	to form a soft dough
+T46	PURPOSE_CLAUSE 368 381	to grease top
+T47	TOOL 339 353	a greased bowl
+T48	TOOL 408 420	a warm place
+R1	Arg1_PPT Arg1:T1 Arg2:T36	
+R2	Arg2_GOL Arg1:T1 Arg2:T37	
+R3	ArgM_LOC Arg1:T1 Arg2:T32	
+R4	Arg1_PPT Arg1:T2 Arg2:T33	
+R5	Arg1_PPT Arg1:T2 Arg2:T34	
+R6	Arg1_PPT Arg1:T2 Arg2:T35	
+R7	Arg1_PPT Arg1:T2 Arg2:T38	
+R8	Arg1_PPT Arg1:T2 Arg2:T39	
+R9	Arg1_PPT Arg1:T2 Arg2:T40	
+R10	Arg1_PPT Arg1:T2 Arg2:T41	
+R11	Arg1_PPT_X Arg1:T42 Arg2:T2	
+R12	ArgM_TMP Arg1:T42 Arg2:T43	
+R13	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+R14	ArgM_PRP Arg1:T3 Arg2:T45	
+R15	Arg2_PPT_Z Arg1:T3 Arg2:T42	
+R16	ArgM_TMP Arg1:T6 Arg2:T7	
+R17	ArgM_TMP Arg1:T6 Arg2:T8	
+R18	Arg1_PPT Arg1:T3 Arg2:T44	
+T4	AC 247 251	Turn
+R19	ArgM_LOC Arg1:T4 Arg2:T5	
+R20	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R21	Arg1_PPT_X Arg1:T6 Arg2:T4	
+R22	Arg1_PPT_X Arg1:T9 Arg2:T6	
+R23	Arg2_GOL Arg1:T9 Arg2:T47	
+R24	ArgM_PRP Arg1:T10 Arg2:T46	
+R25	Arg1_PPT_X Arg1:T10 Arg2:T9	
+R26	Arg1_PPT Arg1:T15 Arg2:T16	
+R27	Arg1_PPT_X Arg1:T17 Arg2:T15	
+T49	OTHER 484 488	half
+R28	Arg2_PRD Arg1:T17 Arg2:T49	
+T50	FOOD 528 537	each half
+R29	Arg1_PPT Arg1:T19 Arg2:T50	
+T51	OTHER 541 546	1-in.
+R30	Arg1_PPT Arg1:T21 Arg2:T20	
+R31	ArgM_LOC Arg1:T19 Arg2:T18	
+R32	ArgM_MNR Arg1:T27 Arg2:T28	
+R33	ArgM_TMP Arg1:T27 Arg2:T29	
+R34	ArgM_TMP Arg1:T27 Arg2:T30	
+R35	ArgM_LOC Arg1:T23 Arg2:T24	
+R36	ArgM_TMP Arg1:T23 Arg2:T25	
+R37	ArgM_TMP Arg1:T23 Arg2:T26	
+R38	Arg0_PAG Arg1:T23 Arg2:T22	
+R39	ArgM_MEANS Arg1:T21 Arg2:T31	
+R40	Arg1_PPT_X Arg1:T22 Arg2:T21	
+R41	ArgM_LOC Arg1:T12 Arg2:T48	
+R42	ArgM_TMP Arg1:T12 Arg2:T13	
+R43	ArgM_TMP Arg1:T12 Arg2:T14	
+R44	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R45	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R46	Arg2_PRD Arg1:T19 Arg2:T51	
+R47	Arg1_PPT_X Arg1:T27 Arg2:T23	
+#1	AnnotatorNotes R13	The yeast; The dissolved yeast
+#2	AnnotatorNotes R11	The mixture; The mixture added with ingredients
+#3	AnnotatorNotes R15	The mixture; The beated mixture
+#4	AnnotatorNotes R20	The mixture; The mixture added with flour
+#5	AnnotatorNotes R21	The dough; The turned dough
+#6	AnnotatorNotes R22	The dough; The kneaded dough
+#7	AnnotatorNotes R25	The dough; The dough placed in the bowl
+#8	AnnotatorNotes R45	The dough; The turned dough
+#9	AnnotatorNotes R44	The dough; The covered dough
+#10	AnnotatorNotes R27	The dough; The punched dough
+#11	AnnotatorNotes R40	The loafs; The pierced loafs
+#12	AnnotatorNotes R47	The loafs; The risen loafs

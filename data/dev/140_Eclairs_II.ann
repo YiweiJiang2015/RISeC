@@ -1,0 +1,187 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	450 degrees F
+T4	TEMPERATURE 34 47	230 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 74	a cookie sheet
+T7	TOOL 82 99	a medium saucepan
+T8	AC 101 108	combine
+T9	FOOD 109 123	1/2 cup butter
+T10	FOOD 128 139	1 cup water
+T11	AC 155 159	boil
+T12	AC 161 169	stirring
+T13	CONDITION_CLAUSE 170 199	until butter melts completely
+T14	AC 204 210	Reduce
+T15	OTHER 211 215	heat
+T16	TEMPERATURE 219 222	low
+T17	AC 228 231	add
+T18	FOOD 232 237	flour
+T19	FOOD 242 246	salt
+T20	AC 251 255	Stir
+T21	CONDITION_CLAUSE 267 340	until mixture leaves the sides of the pan and begins to form a stiff ball
+T22	AC 345 351	Remove
+T23	OTHER 357 361	heat
+T24	AC 366 369	Add
+T25	FOOD 370 374	eggs
+T26	OTHER 376 389	one at a time
+R1	ArgM_MNR Arg1:T24 Arg2:T26	
+T27	AC 391 398	beating
+T28	PURPOSE_CLAUSE 404 449	to incorporate completely after each addition
+T31	AC 516 534	tip, spoon or pipe
+T32	FOOD 535 540	dough
+T33	TOOL 546 558	cookie sheet
+T34	OTHER 562 583	1 1/2 x 4 inch strips
+T35	AC 589 593	Bake
+T36	DUR 594 604	15 minutes
+T37	TOOL 608 626	the preheated oven
+T38	AC 633 639	reduce
+T39	OTHER 640 644	heat
+T40	TEMPERATURE 648 661	325 degrees F
+T41	TEMPERATURE 663 676	165 degrees C
+T42	AC 682 686	bake
+T43	DUR 687 697	20 minutes
+T44	CONDITION_CLAUSE 704 759	until hollow sounding when lightly tapped on the bottom
+T45	AC 765 769	Cool
+T46	TOOL 784 795	a wire rack
+T47	FOOD 805 816	the filling
+T48	AC 818 825	combine
+R2	TODO Arg1:T48 Arg2:T47	
+T49	FOOD 826 837	pudding mix
+T50	FOOD 842 846	milk
+T51	TOOL 850 861	medium bowl
+T52	OTHER 862 893	according to package directions
+T53	TOOL 902 917	a separate bowl
+T54	AC 919 923	beat
+T55	FOOD 924 933	the cream
+T56	TOOL 939 956	an electric mixer
+T57	CONDITION_CLAUSE 957 978	until soft peaks form
+T58	AC 984 991	Beat in
+T59	FOOD 992 1020	1/4 cup confectioners' sugar
+T60	FOOD 1025 1043	1 teaspoon vanilla
+T61	AC 1049 1053	Fold
+T62	FOOD 1054 1067	whipped cream
+T63	FOOD 1073 1080	pudding
+T64	AC 1086 1089	Cut
+T65	OTHER 1090 1094	tops
+T66	TOOL 1128 1141	a sharp knife
+T67	TOOL 459 466	a spoon
+T68	TOOL 470 482	a pastry bag
+T69	AC 1147 1151	Fill
+T70	FOOD 1152 1158	shells
+T71	FOOD 1102 1122	cooled pastry shells
+T72	FOOD 1164 1179	pudding mixture
+T73	AC 1184 1191	replace
+T74	OTHER 1192 1196	tops
+T75	FOOD 1206 1215	the icing
+T76	AC 1217 1221	melt
+T77	FOOD 1222 1235	the chocolate
+T78	FOOD 1240 1260	2 tablespoons butter
+T79	TOOL 1264 1281	a medium saucepan
+T80	TEMPERATURE 1287 1295	low heat
+T81	AC 1301 1308	Stir in
+T82	FOOD 1309 1335	1 cup confectioners' sugar
+T83	FOOD 1340 1358	1 teaspoon vanilla
+T84	AC 1364 1371	Stir in
+T85	FOOD 1372 1381	hot water
+T86	OTHER 1383 1407	one tablespoon at a time
+T87	CONDITION_CLAUSE 1409 1466	until icing is smooth and has reached desired consistency
+T88	AC 1472 1478	Remove
+T89	OTHER 1484 1488	heat
+T90	AC 1490 1494	cool
+T91	AC 1509 1516	drizzle
+T92	FOOD 1522 1536	filled eclairs
+T93	AC 1542 1553	Refrigerate
+T94	CONDITION_CLAUSE 1554 1567	until serving
+R3	Arg1_PPT Arg1:T1 Arg2:T2	
+R4	ArgM_MNR Arg1:T1 Arg2:T3	
+R5	ArgM_MNR Arg1:T1 Arg2:T4	
+R6	Arg1_PPT Arg1:T5 Arg2:T6	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	Arg1_PPT Arg1:T8 Arg2:T10	
+R9	ArgM_LOC Arg1:T8 Arg2:T7	
+R10	Arg1_PPT_X Arg1:T11 Arg2:T8	
+R11	Simultaneous Arg1:T11 Arg2:T12	
+R12	ArgM_TMP Arg1:T12 Arg2:T13	
+R13	Arg1_PPT Arg1:T14 Arg2:T15	
+R14	Arg4_GOL Arg1:T14 Arg2:T16	
+R15	Arg1_PPT Arg1:T17 Arg2:T18	
+R16	Arg1_PPT Arg1:T17 Arg2:T19	
+R17	Arg2_PPT_Z Arg1:T17 Arg2:T12	
+R18	ArgM_TMP Arg1:T20 Arg2:T21	
+R19	Arg2_DIR Arg1:T22 Arg2:T23	
+R20	Arg1_PPT Arg1:T24 Arg2:T25	
+R21	Simultaneous Arg1:T24 Arg2:T27	
+R22	ArgM_PRP Arg1:T27 Arg2:T28	
+R23	Arg1_PPT Arg1:T31 Arg2:T32	
+R24	Arg2_GOL Arg1:T31 Arg2:T33	
+R25	ArgM_MEANS Arg1:T31 Arg2:T67	
+R26	ArgM_MEANS Arg1:T31 Arg2:T68	
+R27	TODO Arg1:T67 Arg2:T68	
+R28	ArgM_TMP Arg1:T35 Arg2:T36	
+R29	ArgM_LOC Arg1:T35 Arg2:T37	
+R30	Arg1_PPT Arg1:T38 Arg2:T39	
+R32	ArgM_MNR Arg1:T38 Arg2:T41	
+R33	ArgM_TMP Arg1:T42 Arg2:T43	
+R34	ArgM_TMP Arg1:T42 Arg2:T44	
+R35	Arg1_PPT_X Arg1:T35 Arg2:T31	
+R36	ArgM_LOC Arg1:T45 Arg2:T46	
+R37	Arg1_PPT_X Arg1:T45 Arg2:T42	
+R38	Arg1_PPT Arg1:T48 Arg2:T49	
+R39	Arg1_PPT Arg1:T48 Arg2:T50	
+R40	ArgM_LOC Arg1:T48 Arg2:T51	
+R41	ArgM_MNR Arg1:T48 Arg2:T52	
+R42	Arg1_PPT Arg1:T54 Arg2:T55	
+R43	ArgM_MEANS Arg1:T54 Arg2:T56	
+R44	ArgM_TMP Arg1:T54 Arg2:T57	
+R45	ArgM_LOC Arg1:T54 Arg2:T53	
+R46	Arg1_PPT Arg1:T58 Arg2:T59	
+R47	Arg1_PPT Arg1:T58 Arg2:T60	
+R48	Arg2_PPT_Z Arg1:T58 Arg2:T54	
+R49	Arg1_PPT Arg1:T61 Arg2:T62	
+R50	Arg2_PRD Arg1:T61 Arg2:T63	
+R51	Arg1_PPT Arg1:T64 Arg2:T65	
+R52	Arg2_DIR Arg1:T64 Arg2:T71	
+R53	ArgM_MEANS Arg1:T64 Arg2:T66	
+R54	Arg1_GOL Arg1:T69 Arg2:T70	
+R55	Arg2_PPT Arg1:T69 Arg2:T72	
+R56	Arg1_PPT Arg1:T73 Arg2:T74	
+R57	Arg1_PPT Arg1:T76 Arg2:T77	
+R58	Arg1_PPT Arg1:T76 Arg2:T78	
+R59	ArgM_LOC Arg1:T76 Arg2:T79	
+R60	ArgM_MNR Arg1:T76 Arg2:T80	
+R61	TODO Arg1:T76 Arg2:T75	
+R62	Arg1_PPT Arg1:T81 Arg2:T82	
+R63	Arg1_PPT Arg1:T81 Arg2:T83	
+R64	Arg1_PPT Arg1:T84 Arg2:T85	
+R65	ArgM_MNR Arg1:T84 Arg2:T86	
+R66	ArgM_TMP Arg1:T84 Arg2:T87	
+R67	Arg2_DIR Arg1:T88 Arg2:T89	
+R68	Arg1_PPT_X Arg1:T90 Arg2:T88	
+R69	Arg1_GOL Arg1:T91 Arg2:T92	
+R70	Arg1_PPT_X Arg1:T91 Arg2:T90	
+R71	ArgM_TMP Arg1:T93 Arg2:T94	
+R72	Arg1_PPT_X Arg1:T93 Arg2:T91	
+R73	Arg2_PPT_Z Arg1:T81 Arg2:T76	
+R74	Arg2_PPT_Z Arg1:T84 Arg2:T81	
+R75	Arg1_PPT_X Arg1:T88 Arg2:T84	
+R76	Arg1_PPT_X Arg1:T20 Arg2:T17	
+R77	Arg1_PPT_X Arg1:T22 Arg2:T20	
+R78	Arg2_PPT_Z Arg1:T24 Arg2:T22	
+R79	Arg2_PRD Arg1:T31 Arg2:T34	
+R80	Arg1_PPT_X Arg1:T42 Arg2:T35	
+R81	Arg4_GOL Arg1:T38 Arg2:T40	
+#1	AnnotatorNotes R10	the blend; the content of the saucepan
+#2	AnnotatorNotes R17	the mixture; the butter blend
+#3	AnnotatorNotes R76	the mixture; the ingredients
+#4	AnnotatorNotes R77	the blend; the mixture
+#5	AnnotatorNotes R78	the dough; the stiff ball
+#6	AnnotatorNotes R35	the dough; the mixture
+#7	AnnotatorNotes R80	the mixture; the baked dough
+#8	AnnotatorNotes R37	the mass; the baked mixture
+#9	AnnotatorNotes R48	the cream; the beated cream
+#10	AnnotatorNotes R73	the melted chocolate; the content of the saucepan
+#11	AnnotatorNotes R74	the mix; the content of the saucepan
+#12	AnnotatorNotes R75	 the mix; the icing with desired consistency
+#13	AnnotatorNotes R72	the mix; the cooled icing with eclairs
+#14	AnnotatorNotes R68	the mix; the icing away from heat
+#15	AnnotatorNotes R70	the mix; the cooled mix

@@ -1,0 +1,50 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 28 32	toss
+T3	FOOD 33 38	bread
+T4	FOOD 43 48	water
+T5	TOOL 56 65	a skillet
+T6	AC 67 72	saute
+T7	FOOD 73 79	celery
+T8	FOOD 81 86	onion
+T9	FOOD 91 100	mushrooms
+T10	FOOD 104 107	oil
+T11	CONDITION_CLAUSE 108 120	until tender
+T12	AC 122 130	stirring
+T13	AC 146 150	Stir
+T14	FOOD 156 169	bread mixture
+T15	AC 174 177	Add
+T16	FOOD 178 199	remaining ingredients
+T17	AC 201 204	mix
+T18	AC 214 219	Place
+T19	TOOL 223 247	a greased 2-qt casserole
+T20	AC 252 257	Cover
+T21	AC 262 266	bake
+T22	TEMPERATURE 270 283	350 degrees F
+T23	DUR 288 298	30 minutes
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	ArgM_LOC Arg1:T2 Arg2:T1	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+R5	Arg1_PPT Arg1:T6 Arg2:T8	
+R6	Arg1_PPT Arg1:T6 Arg2:T9	
+R7	ArgM_LOC Arg1:T6 Arg2:T10	
+R8	ArgM_TMP Arg1:T6 Arg2:T11	
+R9	Simultaneous Arg1:T6 Arg2:T12	
+R10	ArgM_LOC Arg1:T6 Arg2:T5	
+R11	Arg2_PPT Arg1:T13 Arg2:T14	
+R12	Arg1_PPT_X Arg1:T13 Arg2:T6	
+R13	Arg1_PPT Arg1:T15 Arg2:T16	
+R14	Arg1_PPT_X Arg1:T17 Arg2:T15	
+R15	Arg2_PPT_Z Arg1:T15 Arg2:T13	
+R16	Arg3_GOL Arg1:T18 Arg2:T19	
+R17	Arg1_PPT_X Arg1:T20 Arg2:T18	
+R18	Arg1_PPT_X Arg1:T18 Arg2:T17	
+R19	Arg1_PPT_X Arg1:T21 Arg2:T20	
+R20	ArgM_MNR Arg1:T21 Arg2:T22	
+R21	ArgM_TMP Arg1:T21 Arg2:T23	
+#1	AnnotatorNotes R12	the mix; the saute; the content of the skillet
+#2	AnnotatorNotes R15	The saute; the content of the skillet; the mix
+#3	AnnotatorNotes R14	The mix; the content of the skillet
+#4	AnnotatorNotes R18	the mix; the mixture
+#5	AnnotatorNotes R17	The casserole; the mixture
+#6	AnnotatorNotes R19	the covered casserole; the mixture; rice dressing

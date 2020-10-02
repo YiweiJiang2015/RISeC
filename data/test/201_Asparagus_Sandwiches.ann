@@ -1,0 +1,54 @@
+T1	AC 145 151	Remove
+T2	AC 233 238	Place
+T3	AC 278 281	Cut
+T4	AC 335 340	Cover
+T5	AC 364 375	refrigerate
+T6	AC 3 6	Set
+T7	AC 87 90	mix
+T8	FOOD 100 114	the mayonnaise
+T9	FOOD 116 121	onion
+T10	FOOD 126 140	seasoning salt
+T11	FOOD 152 158	crusts
+T12	FOOD 164 176	bread slices
+T13	AC 182 188	spread
+T14	FOOD 189 207	mayonnaise mixture
+T15	FOOD 218 228	each slice
+T16	FOOD 239 246	a spear
+T17	FOOD 252 261	the slice
+T18	AC 266 273	roll up
+T19	FOOD 282 291	each roll
+T20	AC 305 312	arrange
+T21	TOOL 316 330	a serving tray
+T22	TOOL 346 358	plastic wrap
+T23	CONDITION_CLAUSE 376 389	until serving
+T24	FOOD 7 23	asparagus spears
+T25	TOOL 29 41	paper towels
+T26	PURPOSE_CLAUSE 42 65	to absorb excess liquid
+T27	TOOL 73 85	a small bowl
+R1	Arg1_PPT Arg1:T6 Arg2:T24	
+R2	Arg3_GOL Arg1:T6 Arg2:T25	
+R3	ArgM_PRP Arg1:T6 Arg2:T26	
+R4	ArgM_LOC Arg1:T7 Arg2:T27	
+R5	Arg1_PPT Arg1:T7 Arg2:T8	
+R6	Arg1_PPT Arg1:T7 Arg2:T9	
+R7	Arg1_PPT Arg1:T7 Arg2:T10	
+R8	Arg1_PPT Arg1:T1 Arg2:T11	
+R9	Arg2_DIR Arg1:T1 Arg2:T12	
+R10	Arg1_PPT Arg1:T13 Arg2:T14	
+R11	Arg2_GOL Arg1:T13 Arg2:T15	
+R12	Arg1_PPT Arg1:T2 Arg2:T16	
+R13	Arg3_GOL Arg1:T2 Arg2:T17	
+R14	Arg1_PPT_X Arg1:T18 Arg2:T2	
+R15	Arg1_PPT Arg1:T3 Arg2:T19	
+T28	OTHER 295 299	half
+R16	Arg3_PRD Arg1:T3 Arg2:T28	
+R17	ArgM_LOC Arg1:T20 Arg2:T21	
+R18	Arg1_PPT_X Arg1:T20 Arg2:T3	
+R19	Arg2_PPT Arg1:T4 Arg2:T22	
+R20	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R21	Arg1_PPT_X Arg1:T4 Arg2:T20	
+R22	ArgM_TMP Arg1:T5 Arg2:T23	
+#1	AnnotatorNotes R14	the sandwich; the bread roll with asparagus; the rolled bread with an asparagus spear
+#2	AnnotatorNotes R18	the sandwiches; the halved sandwiches; the halved asparagus sandwiches
+#3	AnnotatorNotes R21	the tray; the sandwich tray; the tray with asparagus sandwiches 
+#4	AnnotatorNotes R20	the tray; the tray with sandwiches; the asparagus sandwich tray; the tray wrapped in plastic

@@ -1,0 +1,65 @@
+T1	AC 3 6	Cut
+T2	OTHER 7 15	a pocket
+T3	FOOD 19 38	each slice of bread
+T4	AC 43 47	Open
+T5	TOOL 64 76	a large bowl
+T6	AC 78 85	combine
+T7	FOOD 86 97	the ricotta
+T8	FOOD 99 106	cottage
+T9	FOOD 107 113	cheese
+T10	FOOD 118 130	cream cheese
+T11	AC 135 138	Add
+T12	FOOD 139 148	the sugar
+T13	FOOD 153 170	flavoring extract
+T14	AC 175 179	beat
+T15	CONDITION_CLAUSE 180 192	until smooth
+T16	AC 197 203	Spread
+T17	FOOD 204 215	the mixture
+T18	FOOD 228 245	each bread pocket
+T19	AC 250 254	Beat
+T20	FOOD 264 283	the egg substitutes
+T21	FOOD 288 292	milk
+T22	AC 297 300	Dip
+T23	FOOD 301 320	the slices of bread
+T24	FOOD 324 339	the egg mixture
+T25	AC 344 348	Heat
+T26	TOOL 349 363	a nonstick pan
+T27	TEMPERATURE 369 385	medium-high heat
+T28	AC 390 394	Coat
+T29	FOOD 400 413	cooking spray
+T30	AC 419 423	Cook
+T31	FOOD 424 433	the toast
+T32	OTHER 437 446	each side
+T33	DUR 457 471	3 to 4 minutes
+T34	OTHER 472 480	per side
+T35	CONDITION_CLAUSE 481 499	until golden brown
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg2_DIR Arg1:T1 Arg2:T3	
+R3	Arg1_PPT_X Arg1:T4 Arg2:T2	
+R4	ArgM_LOC Arg1:T6 Arg2:T5	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	Arg1_PPT Arg1:T6 Arg2:T8	
+R7	Arg1_PPT Arg1:T6 Arg2:T9	
+R8	Arg1_PPT Arg1:T6 Arg2:T10	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg1_PPT Arg1:T11 Arg2:T13	
+R11	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R12	Arg2_PPT_Z Arg1:T11 Arg2:T6	
+R13	ArgM_TMP Arg1:T14 Arg2:T15	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg2_GOL Arg1:T16 Arg2:T18	
+R16	Arg1_PPT Arg1:T19 Arg2:T20	
+R17	Arg1_PPT Arg1:T19 Arg2:T21	
+R18	Arg1_PPT Arg1:T22 Arg2:T23	
+R19	Arg2_GOL Arg1:T22 Arg2:T24	
+R20	Arg1_PPT Arg1:T25 Arg2:T26	
+R21	ArgM_MNR Arg1:T25 Arg2:T27	
+R22	Arg2_PPT Arg1:T28 Arg2:T29	
+R23	Arg1_GOL_X Arg1:T28 Arg2:T25	
+R24	Arg1_PPT Arg1:T30 Arg2:T31	
+R25	TODO Arg1:T30 Arg2:T32	
+R26	ArgM_TMP Arg1:T30 Arg2:T33	
+R27	ArgM_TMP Arg1:T30 Arg2:T35	
+#1	AnnotatorNotes R3	The pocket; The cut pocket
+#2	AnnotatorNotes R12	The combination; The mixture
+#3	AnnotatorNotes R11	The added combination; the combination added with sugar and flavoring

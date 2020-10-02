@@ -1,0 +1,61 @@
+T1	TOOL 6 16	a saucepan
+T2	TEMPERATURE 22 30	low heat
+T3	AC 32 39	combine
+T4	FOOD 40 50	the butter
+T5	FOOD 52 57	sugar
+T6	FOOD 62 83	1 cup chopped almonds
+T7	AC 88 92	Stir
+T8	CONDITION_CLAUSE 104 123	until mixture boils
+T9	AC 137 141	stir
+T10	AC 145 150	shake
+T11	AC 155 159	Heat
+T12	TEMPERATURE 163 183	300 to 310 degrees F
+T13	TEMPERATURE 185 205	149 to 154 degrees C
+T14	CONDITION_CLAUSE 211 292	until a small amount of syrup dropped into cold water forms hard, brittle threads
+T15	AC 297 301	Pour
+T16	TOOL 307 336	a large buttered cookie sheet
+T17	AC 353 358	press
+T18	FOOD 359 374	chocolate chips
+T19	FOOD 380 393	the hot candy
+T22	AC 419 425	spread
+T23	FOOD 426 428	it
+T24	FOOD 434 443	a coating
+T25	FOOD 449 458	the candy
+T26	AC 463 471	Sprinkle
+T27	FOOD 479 494	chopped almonds
+T28	FOOD 500 507	the top
+T29	AC 509 513	cool
+T30	AC 519 524	break
+T31	OTHER 530 543	uneven pieces
+R1	Arg1_PPT Arg1:T3 Arg2:T4	
+R2	Arg1_PPT Arg1:T3 Arg2:T5	
+R3	Arg1_PPT Arg1:T3 Arg2:T6	
+R4	ArgM_LOC Arg1:T3 Arg2:T1	
+R5	ArgM_MNR Arg1:T3 Arg2:T2	
+R6	ArgM_TMP Arg1:T7 Arg2:T8	
+R7	ArgM_MNR Arg1:T11 Arg2:T12	
+R8	ArgM_MNR Arg1:T11 Arg2:T13	
+R9	ArgM_TMP Arg1:T11 Arg2:T14	
+R10	Arg3_GOL Arg1:T15 Arg2:T16	
+R11	Arg1_PPT_X Arg1:T15 Arg2:T11	
+R12	Arg1_PPT Arg1:T17 Arg2:T18	
+R13	Arg2_GOL Arg1:T17 Arg2:T19	
+R14	Arg1_PPT Arg1:T22 Arg2:T23	
+R15	Arg3_PRD Arg1:T22 Arg2:T24	
+R16	Arg1_PPT Arg1:T26 Arg2:T27	
+R17	Arg2_GOL Arg1:T26 Arg2:T28	
+R18	Arg1_PPT_X Arg1:T29 Arg2:T26	
+R19	Arg1_PPT_X Arg1:T30 Arg2:T29	
+R20	Arg3_PRD Arg1:T30 Arg2:T31	
+T20	CONDITION_CLAUSE 395 417	As the chocolate melts
+R21	ArgM_TMP Arg1:T22 Arg2:T20	
+R22	Arg2_GOL Arg1:T22 Arg2:T25	
+R23	Arg1_PPT_X Arg1:T9 Arg2:T7	
+R24	Arg1_PPT_X Arg1:T10 Arg2:T9	
+#1	AnnotatorNotes R23	the mixture; the boiling mixture
+#2	AnnotatorNotes R24	the mixture; the boiling mixture
+R25	Arg1_PPT_X Arg1:T11 Arg2:T10	
+#3	AnnotatorNotes R25	the mixture; the sugar almonds mixture
+#4	AnnotatorNotes R11	the mixture; the hot mixture; the hot candy
+#5	AnnotatorNotes R18	the candy; the spread out candy
+#6	AnnotatorNotes R19	the candy; the cooled down candy

@@ -1,0 +1,60 @@
+T1	FOOD 9 21	the potatoes
+T2	AC 3 8	Place
+T3	FOOD 26 40	sweet potatoes
+T4	TOOL 44 55	a large pot
+T5	FOOD 61 73	enough water
+T7	AC 98 102	boil
+T8	AC 107 113	Remove
+T9	TOOL 119 123	heat
+T10	AC 129 134	drain
+T11	AC 139 146	Preheat
+T12	TOOL 147 163	the oven broiler
+T13	TOOL 171 183	a large bowl
+T14	AC 185 189	mash
+T15	FOOD 190 202	the potatoes
+T16	AC 217 223	mix in
+T17	FOOD 224 230	butter
+T18	FOOD 232 243	heavy cream
+T19	FOOD 245 261	chicken bouillon
+T20	FOOD 263 274	brown sugar
+T21	FOOD 280 286	pepper
+T22	FOOD 300 311	the mixture
+T23	AC 291 299	Transfer
+T24	TOOL 315 335	a medium baking dish
+T25	AC 341 344	top
+T26	FOOD 350 370	Monterey Jack cheese
+T27	AC 375 380	Broil
+T28	TOOL 394 412	the preheated oven
+T29	DUR 413 423	10 minutes
+T30	CONDITION_CLAUSE 428 474	until the cheese is melted and lightly browned
+R1	Arg1_PPT Arg1:T2 Arg2:T1	
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg3_GOL Arg1:T2 Arg2:T4	
+R4	TODO Arg1:T4 Arg2:T5	
+R5	Arg1_PPT_X Arg1:T7 Arg2:T2	
+R6	Arg2_DIR Arg1:T8 Arg2:T9	
+R7	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R8	Arg1_PPT_X Arg1:T10 Arg2:T8	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	ArgM_LOC Arg1:T14 Arg2:T13	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T16 Arg2:T17	
+R13	Arg1_PPT Arg1:T16 Arg2:T18	
+R14	Arg1_PPT Arg1:T16 Arg2:T19	
+R15	Arg1_PPT Arg1:T16 Arg2:T20	
+R16	Arg1_PPT Arg1:T16 Arg2:T21	
+R17	Arg2_PPT_Z Arg1:T16 Arg2:T14	
+R18	Arg1_PPT Arg1:T23 Arg2:T22	
+R19	Arg3_GOL Arg1:T23 Arg2:T24	
+R20	Arg2_PPT Arg1:T25 Arg2:T26	
+R21	Arg1_PPT_X Arg1:T25 Arg2:T23	
+R22	ArgM_LOC Arg1:T27 Arg2:T28	
+R23	Arg1_PPT_X Arg1:T27 Arg2:T25	
+R24	ArgM_TMP Arg1:T27 Arg2:T29	
+R25	ArgM_TMP Arg1:T27 Arg2:T30	
+#1	AnnotatorNotes R5	the potatoes; the potatoes in the pot; the potatoes and water in the large pot; the popatoes and sweet potatoes
+#2	AnnotatorNotes R7	the boiling water; the potatoes; the potatoes in the boiling water; the pot
+#3	AnnotatorNotes R8	the potatoes; the potatoes away from heat; the potatoes in the pot; the potatoes in the water
+#4	AnnotatorNotes R17	the mash; the potato mash; the potato mash in the bowl
+#5	AnnotatorNotes R21	the mixture; the potato mash; the mash with butter and cream; the potato in the baking dish
+#6	AnnotatorNotes R23	the potato mash; the mash with cheese

@@ -1,0 +1,87 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 33	350 degrees F.
+T4	TOOL 40 53	a medium bowl
+T5	AC 55 58	mix
+T6	FOOD 68 82	2/3 cup butter
+T7	FOOD 84 103	1/4 cup white sugar
+T8	FOOD 109 124	1 1/4 cup flour
+T9	CONDITION_CLAUSE 125 145	until evenly crumbly
+T10	AC 150 155	Press
+T11	TOOL 161 181	9" square baking pan
+T12	AC 186 190	Bake
+T13	DUR 195 205	20 minutes
+T14	TOOL 213 231	a 2 quart saucepan
+T15	AC 233 240	combine
+T16	FOOD 241 255	1/2 cup butter
+T17	FOOD 257 268	brown sugar
+T18	FOOD 270 280	corn syrup
+T19	FOOD 286 310	sweetened condensed milk
+T20	AC 326 330	boil
+T21	AC 347 351	boil
+T22	DUR 356 365	5 minutes
+T23	AC 370 376	Remove
+T24	OTHER 382 386	heat
+T25	AC 391 395	beat
+T26	TOOL 412 426	a wooden spoon
+T27	DUR 437 446	3 minutes
+T28	AC 451 455	Pour
+T29	FOOD 461 472	baked crust
+T30	AC 493 497	Cool
+T31	CONDITION_CLAUSE 498 521	until it begins to firm
+T32	AC 527 531	Melt
+T33	FOOD 532 541	chocolate
+T34	AC 546 550	pour
+T35	FOOD 556 569	caramel layer
+T36	AC 575 580	Cover
+T37	FOOD 581 590	the layer
+T38	AC 607 612	Chill
+T39	AC 618 621	Cut
+T40	OTHER 627 634	squares
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T5 Arg2:T6	
+R4	Arg1_PPT Arg1:T5 Arg2:T7	
+R5	Arg1_PPT Arg1:T5 Arg2:T8	
+R6	ArgM_TMP Arg1:T5 Arg2:T9	
+R7	ArgM_LOC Arg1:T5 Arg2:T4	
+R8	Arg3_GOL Arg1:T10 Arg2:T11	
+R9	Arg1_PPT_X Arg1:T10 Arg2:T5	
+R10	Arg1_PPT_X Arg1:T12 Arg2:T10	
+R11	ArgM_TMP Arg1:T12 Arg2:T13	
+R12	Arg1_PPT Arg1:T15 Arg2:T16	
+R13	Arg1_PPT Arg1:T15 Arg2:T17	
+R14	Arg1_PPT Arg1:T15 Arg2:T18	
+R15	Arg1_PPT Arg1:T15 Arg2:T19	
+R16	ArgM_LOC Arg1:T15 Arg2:T14	
+R17	Arg1_PPT_X Arg1:T20 Arg2:T15	
+R18	Arg1_PPT_X Arg1:T21 Arg2:T20	
+R19	ArgM_TMP Arg1:T21 Arg2:T22	
+R20	Arg1_PPT_X Arg1:T23 Arg2:T21	
+R21	Arg2_DIR Arg1:T23 Arg2:T24	
+R22	Arg1_PPT_X Arg1:T25 Arg2:T23	
+R23	ArgM_MEANS Arg1:T25 Arg2:T26	
+R24	ArgM_TMP Arg1:T25 Arg2:T27	
+R25	Arg3_GOL Arg1:T28 Arg2:T29	
+R26	ArgM_TMP Arg1:T30 Arg2:T31	
+R27	Arg1_PPT_X Arg1:T30 Arg2:T28	
+R28	Arg1_PPT_X Arg1:T28 Arg2:T25	
+R29	Arg1_PPT Arg1:T32 Arg2:T33	
+R30	Arg1_PPT_X Arg1:T34 Arg2:T32	
+R31	Arg3_GOL Arg1:T34 Arg2:T35	
+R32	TODO Arg1:T35 Arg2:T30	
+R33	Arg1_PPT Arg1:T36 Arg2:T37	
+R34	Arg1_PPT_X Arg1:T38 Arg2:T36	
+R35	Arg3_PRD Arg1:T39 Arg2:T40	
+R36	Arg1_PPT_X Arg1:T39 Arg2:T38	
+#1	AnnotatorNotes R9	the mixture; the crust's ingredients; the crust;
+#2	AnnotatorNotes R10	the mixture; the crust ingredients; 
+#3	AnnotatorNotes R17	the caramel ingredients;  the butter, sugar, syrup and condensed milk;
+#4	AnnotatorNotes R18	the caramel ingredients;  the butter, sugar, syrup and condensed milk;
+#5	AnnotatorNotes R20	the caramel ingredients;  the butter, sugar, syrup and condensed milk; the mixture;
+#6	AnnotatorNotes R28	the caramel ingredients;  the butter, sugar, syrup and condensed milk;
+#7	AnnotatorNotes R22	the caramel's ingredients;  the butter, sugar, syrup and condensed milk;
+#8	AnnotatorNotes R27	the caramel; the caramel layer;  
+#9	AnnotatorNotes R30	the chocolate; chocolate; 
+#10	AnnotatorNotes R34	caramel layer; the caramel;
+#11	AnnotatorNotes R36	the caramel; the caramel and baked crust; 

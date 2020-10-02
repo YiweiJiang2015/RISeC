@@ -1,0 +1,90 @@
+T1	AC 506 512	Repeat
+T2	AC 3 7	Heat
+T5	AC 192 196	Cook
+T6	AC 239 243	Melt
+T7	AC 310 315	Place
+T8	AC 415 420	Place
+T9	AC 343 351	sprinkle
+T10	AC 377 380	top
+T11	AC 446 450	cook
+T12	AC 470 474	flip
+T13	AC 479 483	cook
+T14	FOOD 8 11	oil
+T15	TOOL 15 31	a large saucepan
+T16	OTHER 37 48	medium heat
+T17	FOOD 61 66	onion
+T18	AC 72 76	cook
+T20	FOOD 121 126	beans
+T21	FOOD 131 135	corn
+T22	AC 142 145	add
+T23	FOOD 146 151	sugar
+T24	FOOD 153 158	salsa
+T25	FOOD 164 177	pepper flakes
+T26	AC 179 182	mix
+T28	FOOD 244 269	2 teaspoons of the butter
+T29	TOOL 273 288	a large skillet
+T30	TEMPERATURE 294 305	medium heat
+T31	FOOD 316 326	a tortilla
+T32	TOOL 330 341	the skillet
+T33	FOOD 364 370	cheese
+T34	FOOD 386 410	some of the bean mixture
+T35	FOOD 421 437	another tortilla
+T36	FOOD 441 444	top
+T37	OTHER 487 501	the other side
+T38	FOOD 518 537	remaining tortillas
+T39	FOOD 542 549	filling
+T40	CONDITION_CLAUSE 77 91	until softened
+T41	CONDITION_CLAUSE 197 217	until heated through
+T42	CONDITION_CLAUSE 451 463	until golden
+R1	Arg1_PPT Arg1:T2 Arg2:T14	
+R2	ArgM_LOC Arg1:T2 Arg2:T15	
+R3	ArgM_MNR Arg1:T2 Arg2:T16	
+T3	AC 53 60	Stir in
+T4	AC 113 120	Stir in
+R4	Arg1_PPT Arg1:T3 Arg2:T17	
+R5	Arg2_GOL_X Arg1:T3 Arg2:T2	
+R6	Arg1_PPT_X Arg1:T18 Arg2:T3	
+R7	ArgM_TMP Arg1:T18 Arg2:T40	
+T19	DUR 93 108	about 2 minutes
+T27	DUR 219 234	about 3 minutes
+R8	ArgM_TMP Arg1:T18 Arg2:T19	
+R9	Arg1_PPT Arg1:T4 Arg2:T20	
+R10	Arg1_PPT Arg1:T4 Arg2:T21	
+R11	Arg2_PPT_Z Arg1:T4 Arg2:T18	
+R12	Arg1_PPT Arg1:T22 Arg2:T23	
+R13	Arg1_PPT Arg1:T22 Arg2:T24	
+R14	Arg1_PPT Arg1:T22 Arg2:T25	
+R15	Arg2_PPT_Z Arg1:T22 Arg2:T4	
+R16	Arg1_PPT_X Arg1:T26 Arg2:T22	
+R17	Arg1_PPT_X Arg1:T5 Arg2:T26	
+R18	ArgM_TMP Arg1:T5 Arg2:T41	
+R19	ArgM_TMP Arg1:T5 Arg2:T27	
+R20	Arg1_PPT Arg1:T6 Arg2:T28	
+R21	ArgM_LOC Arg1:T6 Arg2:T29	
+R22	ArgM_MNR Arg1:T6 Arg2:T30	
+R23	Arg1_PPT Arg1:T7 Arg2:T31	
+R24	Arg3_GOL Arg1:T7 Arg2:T32	
+R25	Arg1_PPT Arg1:T9 Arg2:T33	
+R26	Arg2_GOL_X Arg1:T9 Arg2:T7	
+R27	Arg1_GOL_X Arg1:T10 Arg2:T9	
+R28	Arg2_PPT Arg1:T10 Arg2:T34	
+R29	Arg1_PPT Arg1:T8 Arg2:T35	
+R30	Arg3_GOL Arg1:T8 Arg2:T36	
+R31	Arg1_PPT_X Arg1:T11 Arg2:T8	
+R32	ArgM_TMP Arg1:T11 Arg2:T42	
+R33	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R34	TODO Arg1:T13 Arg2:T37	
+R35	TODO Arg1:T1 Arg2:T38	
+R36	TODO Arg1:T1 Arg2:T39	
+R37	Arg1_PPT_X Arg1:T13 Arg2:T12	
+#1	AnnotatorNotes R5	the oil; the heated oil
+#2	AnnotatorNotes R6	the onion; the onion in the oil
+#3	AnnotatorNotes R11	the onion; the softened onion
+#4	AnnotatorNotes R15	the onion; the onion with beans
+#5	AnnotatorNotes R16	the onion mixture; the onion mixture with salsa
+#6	AnnotatorNotes R17	the onion mixture; the onion mixture with salsa
+#7	AnnotatorNotes R26	the tortilla; the tortilla in the skillet
+#8	AnnotatorNotes R27	the tortilla; the tortilla with cheese
+#9	AnnotatorNotes R31	the tortillas; the two tortillas
+#10	AnnotatorNotes R33	the tortillas; the golden tortillas
+#11	AnnotatorNotes R37	the tortillas; the flipped tortillas

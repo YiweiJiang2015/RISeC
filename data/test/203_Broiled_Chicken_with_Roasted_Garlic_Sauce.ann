@@ -1,0 +1,127 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	400 degrees F
+T4	AC 53 58	Slice
+T5	AC 156 163	Drizzle
+T6	AC 272 277	Roast
+T7	AC 354 360	Change
+T8	TOOL 361 373	oven setting
+T9	TEMPERATURE 384 397	375 degrees F
+T10	AC 429 433	cool
+T11	FOOD 422 428	garlic
+T12	AC 458 463	place
+T14	TOOL 467 490	a 9x13 inch baking dish
+T15	AC 495 501	splash
+T16	FOOD 518 528	white wine
+T17	OTHER 502 512	both sides
+T18	AC 533 538	Broil
+T19	DUR 543 553	25 minutes
+T20	CONDITION_CLAUSE 557 609	until chicken is cooked through and juices run clear
+T21	AC 625 630	place
+T22	FOOD 631 637	butter
+T23	FOOD 641 650	margarine
+T24	FOOD 655 659	milk
+T25	TOOL 663 678	a large skillet
+T26	AC 683 687	heat
+T27	TEMPERATURE 693 704	medium heat
+T28	CONDITION_CLAUSE 705 715	until warm
+T30	FOOD 729 738	the flour
+T29	AC 721 728	Stir in
+T31	AC 755 759	Stir
+T32	TOOL 765 776	medium heat
+T33	CONDITION_CLAUSE 777 806	until sauce begins to thicken
+T34	AC 812 816	Slip
+T35	FOOD 817 837	cooled garlic cloves
+T36	AC 852 855	add
+T37	FOOD 859 868	the sauce
+T38	AC 900 903	Add
+T39	FOOD 904 919	chopped parsley
+T40	AC 943 947	boil
+T41	AC 949 955	reduce
+T42	AC 965 969	stir
+T43	CONDITION_CLAUSE 997 1007	If desired
+T44	AC 1009 1013	pour
+T45	FOOD 1014 1019	sauce
+T46	FOOD 1025 1036	cooked rice
+T47	FOOD 1040 1045	pasta
+T48	AC 1050 1053	top
+T49	FOOD 1059 1074	broiled chicken
+T50	FOOD 169 178	olive oil
+T51	AC 183 188	roast
+T52	TOOL 192 206	preheated oven
+T53	FOOD 59 88	the top of the head of garlic
+T54	DUR 282 292	20 minutes
+T55	CONDITION_CLAUSE 296 349	until cloves are soft and slip from skins when pushed
+T56	OTHER 377 382	broil
+T57	FOOD 843 847	skin
+T60	PURPOSE_CLAUSE 970 991	to control thickening
+T61	PURPOSE_CLAUSE 90 151	just enough to remove paper and expose the tops of the cloves
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+T62	TEMPERATURE 34 47	200 degrees C
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T62	
+R4	Arg1_PPT Arg1:T4 Arg2:T53	
+R5	ArgM_PRP Arg1:T4 Arg2:T61	
+R6	Arg2_PPT Arg1:T5 Arg2:T50	
+R8	Arg1_GOL_X Arg1:T5 Arg2:T4	
+R10	ArgM_TMP Arg1:T6 Arg2:T54	
+R11	ArgM_TMP Arg1:T6 Arg2:T55	
+R12	Arg1_PPT Arg1:T7 Arg2:T8	
+R13	Arg3_GOL Arg1:T7 Arg2:T56	
+T63	TEMPERATURE 399 412	190 degrees C
+R14	ArgM_MNR Arg1:T7 Arg2:T9	
+R15	ArgM_MNR Arg1:T7 Arg2:T63	
+R16	Arg1_PPT Arg1:T10 Arg2:T11	
+R17	Arg3_GOL Arg1:T12 Arg2:T14	
+T13	FOOD 449 456	chicken
+R18	Arg1_PPT Arg1:T12 Arg2:T13	
+R19	Arg1_GOL Arg1:T15 Arg2:T17	
+R20	Arg2_PPT Arg1:T15 Arg2:T16	
+R21	ArgM_TMP Arg1:T18 Arg2:T19	
+R22	Arg1_PPT_X Arg1:T18 Arg2:T15	
+R23	ArgM_TMP Arg1:T18 Arg2:T20	
+R24	Arg1_PPT Arg1:T21 Arg2:T22	
+R25	Arg1_PPT Arg1:T21 Arg2:T23	
+R26	Arg1_PPT Arg1:T21 Arg2:T24	
+R27	Arg3_GOL Arg1:T21 Arg2:T25	
+R28	ArgM_MNR Arg1:T26 Arg2:T27	
+R29	ArgM_TMP Arg1:T26 Arg2:T28	
+R30	Arg1_PPT_X Arg1:T26 Arg2:T21	
+R31	Arg1_PPT Arg1:T29 Arg2:T30	
+T64	FOOD 743 749	cheese
+R32	Arg1_PPT Arg1:T29 Arg2:T64	
+R33	Arg2_PPT_Z Arg1:T29 Arg2:T26	
+R34	ArgM_MNR Arg1:T31 Arg2:T32	
+R35	ArgM_TMP Arg1:T31 Arg2:T33	
+R36	Arg1_PPT Arg1:T34 Arg2:T35	
+R37	Arg2_DIR Arg1:T34 Arg2:T57	
+R38	Arg2_PPT Arg1:T36 Arg2:T37	
+R39	Arg1_PPT_X Arg1:T36 Arg2:T34	
+R40	Arg1_PPT Arg1:T38 Arg2:T39	
+R41	Arg2_PPT_Z Arg1:T38 Arg2:T36	
+R42	Arg1_PPT_X Arg1:T40 Arg2:T38	
+T59	OTHER 956 960	heat
+R43	Arg1_PPT Arg1:T41 Arg2:T59	
+R44	ArgM_PRP Arg1:T42 Arg2:T60	
+R45	Arg1_PPT Arg1:T44 Arg2:T45	
+R46	Arg3_GOL Arg1:T44 Arg2:T46	
+R47	Arg3_GOL Arg1:T44 Arg2:T47	
+R48	Arg2_PPT Arg1:T48 Arg2:T49	
+R49	Arg1_GOL_X Arg1:T48 Arg2:T44	
+#1	AnnotatorNotes R8	the garlic; the garlic cloves; the cloves of garlic
+#2	AnnotatorNotes R22	the chicken; the chicken in the baking dish
+#3	AnnotatorNotes R30	the milk; the milk with butter; the skillet with milk and butter
+#4	AnnotatorNotes R33	the milk; the warm milk; the heating milk; the skillet with warm milk
+#5	AnnotatorNotes R39	the garlic; the garlic cloves
+#6	AnnotatorNotes R41	the sauce; the cheese sauce; the garlic sauce
+#7	AnnotatorNotes R42	the sauce; the garlic sauce
+R50	Arg1_PPT_X Arg1:T6 Arg2:T51	
+R7	ArgM_LOC Arg1:T51 Arg2:T52	
+R9	Arg1_PPT_X Arg1:T51 Arg2:T5	
+R51	Arg1_PPT_X Arg1:T31 Arg2:T29	
+#8	AnnotatorNotes R49	the rice or pasta; the rice or pasta with sauce
+R52	Arg1_PPT_X Arg1:T42 Arg2:T40	
+#9	AnnotatorNotes R52	the sauce; the boiling garlic sauce
+#10	AnnotatorNotes R9	the garlic; the garlic topped with olive oil
+#11	AnnotatorNotes R50	the garlic; the roasted garlic
+#12	AnnotatorNotes R51	the milk; the warm milk with flour and cheese

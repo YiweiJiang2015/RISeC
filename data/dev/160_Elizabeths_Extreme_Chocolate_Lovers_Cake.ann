@@ -1,0 +1,216 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 59	Grease
+T6	AC 64 69	flour
+T7	TOOL 70 85	2 (9 inch) pans
+T8	AC 90 94	Sift
+T9	FOOD 104 113	the flour
+T10	FOOD 115 126	baking soda
+T11	FOOD 131 135	salt
+T12	AC 140 149	Set aside
+T13	AC 185 189	heat
+T14	FOOD 190 208	6 ounces chocolate
+T15	AC 210 218	stirring
+T16	CONDITION_CLAUSE 233 269	until chocolate is melted and smooth
+T18	TOOL 157 183	the top of a double boiler
+T19	AC 274 280	Remove
+T20	OTHER 286 290	heat
+T21	AC 304 308	cool
+T22	TEMPERATURE 312 320	lukewarm
+T23	TOOL 328 340	a large bowl
+T24	AC 342 347	cream
+T25	FOOD 357 367	the butter
+T26	FOOD 372 383	brown sugar
+T27	CONDITION_CLAUSE 384 406	until light and fluffy
+T28	AC 411 418	Beat in
+T29	FOOD 419 427	the eggs
+T30	AC 448 455	stir in
+T31	FOOD 456 478	1 1/2 teaspoon vanilla
+T32	AC 483 490	Stir in
+T33	FOOD 491 511	the melted chocolate
+T34	AC 517 524	Beat in
+T35	FOOD 525 542	the flour mixture
+T36	FOOD 560 574	the sour cream
+T37	AC 580 587	Stir in
+T38	FOOD 588 601	boiling water
+T39	PURPOSE_CLAUSE 603 622	batter will be thin
+T40	AC 629 633	Pour
+T41	FOOD 634 640	batter
+T42	TOOL 646 659	prepared pans
+T43	AC 665 669	Bake
+T44	TOOL 673 691	the preheated oven
+T45	DUR 696 712	35 to 40 minutes
+T46	CONDITION_CLAUSE 717 787	until a toothpick inserted into the center of the cake comes out clean
+T47	AC 797 801	cool
+T48	TOOL 805 808	pan
+T49	DUR 813 823	10 minutes
+T50	TOOL 844 855	a wire rack
+T51	AC 860 864	cool
+T52	AC 830 838	turn out
+T53	TOOL 925 951	the top of a double boiler
+T55	AC 953 957	heat
+T56	FOOD 958 976	6 ounces chocolate
+T57	AC 978 986	stirring
+T58	CONDITION_CLAUSE 1001 1037	until chocolate is melted and smooth
+T60	TOOL 1046 1058	a large bowl
+T61	AC 1060 1064	whip
+T62	FOOD 1065 1075	the butter
+T63	DUR 1086 1096	10 minutes
+T64	CONDITION_CLAUSE 1097 1121	until it is super fluffy
+T65	AC 1123 1130	beat in
+T66	FOOD 1131 1139	egg yolk
+T67	AC 1155 1163	blend in
+T68	FOOD 1164 1188	the confectioners' sugar
+T69	AC 1259 1267	blend in
+T70	FOOD 1268 1288	the melted chocolate
+T71	AC 1190 1201	alternating
+R1	Simultaneous Arg1:T67 Arg2:T71	
+T72	FOOD 1207 1228	2 tablespoons vanilla
+T73	FOOD 1233 1252	2 tablespoons cream
+T74	AC 1294 1301	Beat in
+T75	FOOD 1302 1327	the softened cream cheese
+T77	TOOL 1354 1370	a large saucepan
+T78	AC 1372 1379	combine
+T79	FOOD 1380 1395	chocolate chips
+T80	FOOD 1400 1417	1 cup heavy cream
+T81	AC 1423 1427	Heat
+T82	AC 1429 1437	stirring
+T83	CONDITION_CLAUSE 1450 1486	until chocolate is melted and smooth
+T84	AC 1492 1498	Remove
+T85	OTHER 1504 1508	heat
+T86	AC 1513 1522	set aside
+T89	CONDITION_CLAUSE 1547 1577	When cake is completely cooled
+T90	AC 1579 1584	cover
+T91	FOOD 1585 1606	the bottom cake layer
+T92	FOOD 1620 1627	ganache
+T93	AC 1644 1655	Refrigerate
+T94	DUR 1660 1669	5 minutes
+T95	CONDITION_CLAUSE 1674 1695	until ganache has set
+T96	AC 1701 1707	Spread
+T97	FOOD 1708 1716	frosting
+T98	FOOD 1722 1733	the ganache
+T99	AC 1739 1744	Cover
+T100	FOOD 1750 1767	top layer of cake
+T102	FOOD 1798 1809	buttercream
+T103	AC 1815 1822	garnish
+T104	FOOD 1828 1840	more ganache
+T105	FOOD 1779 1792	top and sides
+T106	AC 1773 1778	Frost
+T107	OTHER 428 441	one at a time
+T59	PURPOSE_CLAUSE 881 920	Make the Chocolate Buttercream Frosting
+T76	PURPOSE_CLAUSE 1333 1349	Make the Ganache
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R4	ArgM_MNR Arg1:T1 Arg2:T3	
+R5	ArgM_MNR Arg1:T1 Arg2:T4	
+R6	Arg1_PPT Arg1:T5 Arg2:T7	
+R8	Simultaneous Arg1:T5 Arg2:T6	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R9	Arg1_PPT Arg1:T8 Arg2:T10	
+R10	Arg1_PPT Arg1:T8 Arg2:T11	
+R11	Arg1_PPT_X Arg1:T12 Arg2:T8	
+R12	Arg1_PPT Arg1:T13 Arg2:T14	
+R13	ArgM_LOC Arg1:T13 Arg2:T18	
+R15	Simultaneous Arg1:T13 Arg2:T15	
+R16	ArgM_TMP Arg1:T13 Arg2:T16	
+R17	Arg2_DIR Arg1:T19 Arg2:T20	
+R18	Arg1_PPT_X Arg1:T19 Arg2:T13	
+R19	ArgM_MNR Arg1:T21 Arg2:T22	
+R20	Arg1_PPT_X Arg1:T21 Arg2:T19	
+R21	Arg1_PPT Arg1:T24 Arg2:T25	
+R22	Arg1_PPT Arg1:T24 Arg2:T26	
+R23	ArgM_TMP Arg1:T24 Arg2:T27	
+R24	ArgM_LOC Arg1:T24 Arg2:T23	
+R25	Arg1_PPT Arg1:T28 Arg2:T29	
+R26	ArgM_MNR Arg1:T28 Arg2:T107	
+R27	Arg1_PPT Arg1:T30 Arg2:T31	
+R28	Arg1_PPT_X Arg1:T30 Arg2:T28	
+R29	Arg2_PPT_Z Arg1:T28 Arg2:T24	
+R30	Arg2_PPT_Z Arg1:T32 Arg2:T30	
+R31	Arg1_PPT Arg1:T32 Arg2:T33	
+R32	Arg1_PPT Arg1:T34 Arg2:T35	
+R33	Arg1_PPT Arg1:T34 Arg2:T36	
+R34	Arg2_PPT_Z Arg1:T34 Arg2:T32	
+R35	Arg1_PPT Arg1:T37 Arg2:T38	
+R36	Arg2_PPT_Z Arg1:T37 Arg2:T34	
+R37	ArgM_PRP Arg1:T37 Arg2:T39	
+R38	Arg1_PPT Arg1:T40 Arg2:T41	
+R39	Arg3_GOL Arg1:T40 Arg2:T42	
+R40	ArgM_LOC Arg1:T43 Arg2:T44	
+R41	ArgM_TMP Arg1:T43 Arg2:T45	
+R42	ArgM_TMP Arg1:T43 Arg2:T46	
+R43	TODO Arg1:T45 Arg2:T46	
+R44	ArgM_LOC Arg1:T47 Arg2:T48	
+R45	ArgM_TMP Arg1:T47 Arg2:T49	
+R46	Arg2_GOL Arg1:T52 Arg2:T50	
+R47	Arg1_PPT_X Arg1:T52 Arg2:T47	
+R48	Arg1_PPT_X Arg1:T51 Arg2:T52	
+R49	ArgM_LOC Arg1:T55 Arg2:T53	
+R50	Arg1_PPT Arg1:T55 Arg2:T56	
+R51	Simultaneous Arg1:T55 Arg2:T57	
+R52	ArgM_TMP Arg1:T55 Arg2:T58	
+R54	Arg1_PPT Arg1:T61 Arg2:T62	
+R55	ArgM_TMP Arg1:T61 Arg2:T63	
+R56	ArgM_TMP Arg1:T61 Arg2:T64	
+R57	Arg1_PPT Arg1:T65 Arg2:T66	
+R58	Arg2_PPT_Z Arg1:T65 Arg2:T61	
+R59	ArgM_LOC Arg1:T61 Arg2:T60	
+R60	Arg1_PPT Arg1:T67 Arg2:T68	
+R61	Arg1_PPT Arg1:T71 Arg2:T72	
+R62	Arg1_PPT Arg1:T71 Arg2:T73	
+R63	Arg2_PPT_Z Arg1:T67 Arg2:T65	
+R64	Arg1_PPT Arg1:T69 Arg2:T70	
+R65	Arg2_PPT_Z Arg1:T69 Arg2:T67	
+R66	Arg1_PPT Arg1:T74 Arg2:T75	
+R67	Arg2_PPT_Z Arg1:T74 Arg2:T69	
+R68	ArgM_LOC Arg1:T78 Arg2:T77	
+R69	Arg1_PPT Arg1:T78 Arg2:T79	
+R70	Arg1_PPT Arg1:T78 Arg2:T80	
+R71	Simultaneous Arg1:T81 Arg2:T82	
+R72	ArgM_TMP Arg1:T81 Arg2:T83	
+R73	Arg1_PPT_X Arg1:T81 Arg2:T78	
+R74	Arg2_DIR Arg1:T84 Arg2:T85	
+R75	Arg1_PPT_X Arg1:T84 Arg2:T81	
+R76	Arg1_PPT_X Arg1:T86 Arg2:T84	
+T87	PURPOSE_CLAUSE 1528 1545	Assemble the cake
+R3	Arg1_PPT Arg1:T90 Arg2:T91	
+R77	Arg2_PPT Arg1:T90 Arg2:T92	
+R78	ArgM_TMP Arg1:T90 Arg2:T89	
+R79	ArgM_TMP Arg1:T93 Arg2:T94	
+R80	ArgM_TMP Arg1:T93 Arg2:T95	
+R82	Arg1_PPT Arg1:T96 Arg2:T97	
+R83	Arg2_GOL Arg1:T96 Arg2:T98	
+R84	Arg2_PPT Arg1:T99 Arg2:T100	
+R86	Arg1_PPT_X Arg1:T99 Arg2:T96	
+R87	Arg1_PPT_X Arg1:T93 Arg2:T90	
+R88	Arg1_PPT Arg1:T106 Arg2:T105	
+R89	Arg2_PPT Arg1:T106 Arg2:T102	
+R90	Arg1_PPT Arg1:T103 Arg2:T104	
+R92	Arg1_PPT Arg1:T6 Arg2:T7	
+R14	TODO Arg1:T100 Arg2:T105	
+#1	AnnotatorNotes R11	the mix; the sifted mix
+#2	AnnotatorNotes R18	the chocolate; the warm chocolate; the melted chocolate;
+#3	AnnotatorNotes R29	the cream; the creamed butter with sugar
+#4	AnnotatorNotes R30	the mix; the cream mixture
+#5	AnnotatorNotes R34	the mixture; the mixture with melted chocolate
+#6	AnnotatorNotes R36	the mixture; the beaten mixture
+#7	AnnotatorNotes R58	the butter; the beaten butter
+#8	AnnotatorNotes R63	the butter mixture; the butter with egg yolks mix
+#9	AnnotatorNotes R65	the blend; the mixture
+#10	AnnotatorNotes R67	the blend; the chocolate blend
+#11	AnnotatorNotes R73	the mixture; the content of the saucepan
+#12	AnnotatorNotes R75	the heated mix; the chocolate chips mixture
+#13	AnnotatorNotes R76	the chocolate chips mixture; the saucepan
+#14	AnnotatorNotes R87	the cake; the covered cake
+#15	AnnotatorNotes R86	the frosting; the ganache
+#16	AnnotatorNotes R20	the chocolate; the chocolate away from heat; the melted chocolate;
+#17	AnnotatorNotes R28	the cream; the creamed butter with eggs
+R53	Arg1_PPT_X Arg1:T47 Arg2:T43	
+R81	Arg1_PPT_X Arg1:T43 Arg2:T40	
+#18	AnnotatorNotes R81	the batter; the batter in the pans
+#19	AnnotatorNotes R53	the baked batter; the cake
+#20	AnnotatorNotes R47	the cake; the cooled cake
+#21	AnnotatorNotes R48	the cake; the cooled cake on the wire rack
+R85	Arg2_GOL_X Arg1:T103 Arg2:T106	
+#22	AnnotatorNotes R85	the cake; the cake frosted with buttercream

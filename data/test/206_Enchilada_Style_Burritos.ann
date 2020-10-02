@@ -1,0 +1,79 @@
+T1	AC 3 8	Place
+T2	FOOD 9 24	frozen burritos
+T3	TOOL 28 55	a greased 13-in baking dish
+T4	AC 57 66	set aside
+T5	TOOL 74 84	a saucepan
+T6	AC 86 90	melt
+T7	FOOD 91 97	butter
+T8	AC 102 109	Stir in
+T9	FOOD 110 115	flour
+T10	CONDITION_CLAUSE 116 128	until smooth
+T11	AC 140 147	stir in
+T12	FOOD 148 153	water
+T13	AC 169 173	boil
+T14	AC 175 179	cook
+T15	AC 184 188	stir
+T16	DUR 193 202	2 minutes
+T17	CONDITION_CLAUSE 206 221	until thickened
+T18	AC 226 229	Add
+T19	FOOD 230 246	the tomato sauce
+T20	FOOD 248 260	chili powder
+T21	FOOD 262 270	bouillon
+T22	FOOD 272 277	cumin
+T23	FOOD 282 286	salt
+T24	AC 291 297	Simmer
+T25	DUR 314 323	5 minutes
+T26	CONDITION_CLAUSE 327 342	until thickened
+T27	AC 347 351	Pour
+T28	FOOD 357 369	the burritos
+T29	AC 374 382	Sprinkle
+T30	FOOD 388 394	cheese
+T31	FOOD 396 402	olives
+T32	FOOD 418 424	onions
+T33	AC 429 433	Bake
+T34	TEMPERATURE 449 462	350 degrees F
+T35	DUR 467 480	35-40 minutes
+T36	CONDITION_CLAUSE 484 504	until heated through
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg3_GOL Arg1:T1 Arg2:T3	
+R3	Arg1_PPT_X Arg1:T4 Arg2:T1	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+R5	ArgM_LOC Arg1:T6 Arg2:T5	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	ArgM_TMP Arg1:T8 Arg2:T10	
+R8	Arg2_PPT_Z Arg1:T8 Arg2:T6	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg2_PPT_Z Arg1:T11 Arg2:T8	
+R11	Arg1_PPT_X Arg1:T13 Arg2:T11	
+R12	Arg1_PPT_X Arg1:T14 Arg2:T13	
+R13	Simultaneous Arg1:T14 Arg2:T15	
+R14	ArgM_TMP Arg1:T14 Arg2:T16	
+R15	ArgM_TMP Arg1:T14 Arg2:T17	
+R16	Arg1_PPT Arg1:T18 Arg2:T19	
+R17	Arg2_PPT_Z Arg1:T18 Arg2:T14	
+R18	Arg1_PPT Arg1:T18 Arg2:T20	
+R19	Arg1_PPT Arg1:T18 Arg2:T21	
+R20	Arg1_PPT Arg1:T18 Arg2:T22	
+R21	Arg1_PPT Arg1:T18 Arg2:T23	
+R22	Arg1_PPT_X Arg1:T24 Arg2:T18	
+R23	ArgM_TMP Arg1:T24 Arg2:T25	
+R24	ArgM_TMP Arg1:T24 Arg2:T26	
+R25	Arg3_GOL Arg1:T27 Arg2:T28	
+R26	Arg1_PPT_X Arg1:T27 Arg2:T24	
+R27	Arg1_PPT Arg1:T29 Arg2:T30	
+R28	Arg1_PPT Arg1:T29 Arg2:T31	
+R29	Arg1_PPT Arg1:T29 Arg2:T32	
+R30	Arg2_GOL_X Arg1:T29 Arg2:T27	
+R31	Arg1_PPT_X Arg1:T33 Arg2:T29	
+R32	ArgM_MNR Arg1:T33 Arg2:T34	
+R33	ArgM_TMP Arg1:T33 Arg2:T35	
+R34	ArgM_TMP Arg1:T33 Arg2:T36	
+#1	AnnotatorNotes R3	the burritos; the dish with burritos
+#2	AnnotatorNotes R8	the saucepan; the pan with butter
+#3	AnnotatorNotes R10	the roux; the mixture of butter and flour
+#4	AnnotatorNotes R11	the sauce; the white sauce; the bechamel sauce
+#5	AnnotatorNotes R17	REDO (from 'Add' to 'stir'?)
+#6	AnnotatorNotes R22	the sauce; the burrito sauce
+#7	AnnotatorNotes R26	the sauce; the burrito sauce
+#8	AnnotatorNotes R30	the burritos; the burritos with sauce
+#9	AnnotatorNotes R31	the burritos; the burrito dish

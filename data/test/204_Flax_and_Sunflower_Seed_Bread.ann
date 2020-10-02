@@ -1,0 +1,18 @@
+T1	AC 3 8	Place
+T2	FOOD 9 49	all ingredients (except sunflower seeds)
+T3	TOOL 53 81	the pan of the bread machine
+T4	AC 173 176	Add
+T5	FOOD 177 196	the sunflower seeds
+T6	CONDITION_CLAUSE 197 241	when the alert sounds during the knead cycle
+T7	AC 131 137	Select
+T8	AC 157 162	press
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg3_GOL Arg1:T1 Arg2:T3	
+T9	OTHER 138 155	basic white cycle
+T10	OTHER 163 168	start
+R3	Arg1_PPT Arg1:T7 Arg2:T9	
+R4	Arg1_PPT Arg1:T8 Arg2:T10	
+R5	Arg1_PPT Arg1:T4 Arg2:T5	
+R6	ArgM_TMP Arg1:T4 Arg2:T6	
+R7	Arg2_PPT_Z Arg1:T4 Arg2:T1	
+#1	AnnotatorNotes R7	the bread machine; the pan of the bread machine; the ingredients in the bread machine

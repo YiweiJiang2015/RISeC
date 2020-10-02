@@ -1,0 +1,102 @@
+T1	AC 18 22	boil
+T2	FOOD 9 14	water
+T3	TOOL 26 37	a large pot
+T4	AC 42 47	Place
+T5	FOOD 48 58	beef shank
+T6	AC 67 73	simmer
+T7	DUR 74 85	1 1/2 hours
+T8	AC 94 98	cool
+T9	DUR 99 108	overnight
+T10	AC 113 117	Lift
+T11	FOOD 118 122	meat
+T12	AC 128 136	trim off
+T13	FOOD 137 144	gristle
+T14	AC 149 152	cut
+T15	FOOD 153 157	meat
+T16	OTHER 163 182	medium sized pieces
+T17	AC 184 193	set aside
+T18	AC 198 202	Skim
+T19	TOOL 248 260	a fine sieve
+T20	AC 233 239	strain
+T21	TOOL 212 228	surface of stock
+T22	OTHER 203 206	fat
+T23	AC 265 271	Return
+T24	OTHER 281 285	heat
+T25	AC 302 306	boil
+T26	TOOL 272 277	stock
+T27	AC 311 314	Add
+T28	FOOD 315 321	onions
+T29	FOOD 323 330	carrots
+T30	FOOD 335 343	rutabaga
+T31	AC 348 354	Season
+T32	FOOD 360 364	salt
+T33	FOOD 369 375	pepper
+T34	AC 380 386	Simmer
+T35	DUR 391 397	1 hour
+T36	AC 403 406	Add
+T37	FOOD 407 415	potatoes
+T38	AC 421 427	simmer
+T39	CONDITION_CLAUSE 428 440	until tender
+T40	DUR 442 458	15 to 20 minutes
+T41	AC 464 471	Stir in
+T42	FOOD 472 481	the leeks
+T43	FOOD 483 490	cabbage
+T44	FOOD 492 499	parsley
+T45	FOOD 504 517	reserved meat
+T46	AC 523 529	Simmer
+T47	DUR 530 540	10 minutes
+T48	CONDITION_CLAUSE 545 568	until cabbage is tender
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R4	Arg2_PPT_Z Arg1:T4 Arg2:T1	
+R5	Arg1_PPT_X Arg1:T6 Arg2:T4	
+R6	ArgM_TMP Arg1:T6 Arg2:T7	
+R7	Arg1_PPT_X Arg1:T8 Arg2:T6	
+R8	ArgM_TMP Arg1:T8 Arg2:T9	
+R9	Arg1_PPT Arg1:T10 Arg2:T11	
+R10	Arg1_PPT Arg1:T12 Arg2:T13	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg3_PRD Arg1:T14 Arg2:T16	
+R13	Arg1_PPT_X Arg1:T17 Arg2:T14	
+R14	Arg1_PPT Arg1:T27 Arg2:T28	
+R15	Arg1_PPT Arg1:T23 Arg2:T26	
+R16	Arg3_GOL Arg1:T23 Arg2:T24	
+R17	Arg1_PPT_X Arg1:T25 Arg2:T23	
+R18	Arg1_PPT Arg1:T18 Arg2:T22	
+R19	Arg2_DIR Arg1:T18 Arg2:T21	
+R20	TODO Arg1:T18 Arg2:T20	
+R21	ArgM_MEANS Arg1:T20 Arg2:T19	
+R22	ArgM_TMP Arg1:T34 Arg2:T35	
+R23	Arg1_PPT Arg1:T36 Arg2:T37	
+R24	ArgM_TMP Arg1:T38 Arg2:T39	
+R25	ArgM_TMP Arg1:T38 Arg2:T40	
+R26	Arg1_PPT Arg1:T41 Arg2:T42	
+R27	Arg1_PPT Arg1:T41 Arg2:T43	
+R28	Arg1_PPT Arg1:T41 Arg2:T44	
+R29	Arg1_PPT Arg1:T41 Arg2:T45	
+R30	ArgM_TMP Arg1:T46 Arg2:T47	
+R31	ArgM_TMP Arg1:T46 Arg2:T48	
+R32	Arg1_PPT Arg1:T27 Arg2:T29	
+R33	Arg1_PPT Arg1:T27 Arg2:T30	
+R34	Arg2_PPT Arg1:T31 Arg2:T32	
+R35	Arg2_PPT Arg1:T31 Arg2:T33	
+R36	Arg2_PPT_Z Arg1:T27 Arg2:T25	
+R37	Arg1_GOL_X Arg1:T31 Arg2:T27	
+R38	Arg1_PPT_X Arg1:T34 Arg2:T31	
+R39	Arg2_PPT_Z Arg1:T36 Arg2:T34	
+R40	Arg1_PPT_X Arg1:T38 Arg2:T36	
+R41	Arg2_PPT_Z Arg1:T41 Arg2:T38	
+R42	Arg1_PPT_X Arg1:T46 Arg2:T41	
+#1	AnnotatorNotes R4	the water; the boiling water
+#2	AnnotatorNotes R5	the beef; the content of the pot
+#3	AnnotatorNotes R7	the beef; the meat; the simmered beaf
+#4	AnnotatorNotes R13	the meat; the cut meat
+#5	AnnotatorNotes R36	the stock; the boiling stock
+#6	AnnotatorNotes R37	the stock; the beef mix; the beef mix with onions
+#7	AnnotatorNotes R38	the stock; the seasoned stock
+#8	AnnotatorNotes R39	the simmered stock; the stock
+#9	AnnotatorNotes R40	the stock; the broth with potatos
+#10	AnnotatorNotes R41	the stock; the cooked stock
+#11	AnnotatorNotes R42	the mixture; the stock; the broth
+#12	AnnotatorNotes R17	the stock; the stock on heat

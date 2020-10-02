@@ -1,0 +1,45 @@
+T1	AC 206 211	Cover
+T2	AC 216 227	refrigerate
+T3	DUR 232 238	1 hour
+T5	TOOL 6 19	a medium bowl
+T6	AC 21 28	combine
+T7	FOOD 29 40	the avocado
+T8	FOOD 42 48	garlic
+T9	FOOD 50 61	lemon juice
+T10	FOOD 63 73	sour cream
+T11	FOOD 78 86	cucumber
+T12	AC 91 95	Mash
+T13	TOOL 101 107	a fork
+T14	CONDITION_CLAUSE 108 120	until smooth
+T15	AC 125 131	Season
+T16	FOOD 137 154	red pepper flakes
+T17	FOOD 156 164	cilantro
+T18	FOOD 166 170	mint
+T19	FOOD 172 176	salt
+T20	FOOD 181 187	pepper
+T21	AC 193 196	mix
+R1	ArgM_LOC Arg1:T6 Arg2:T5	
+R2	Arg1_PPT Arg1:T6 Arg2:T7	
+R3	Arg1_PPT Arg1:T6 Arg2:T8	
+R4	Arg1_PPT Arg1:T6 Arg2:T9	
+R5	Arg1_PPT Arg1:T6 Arg2:T10	
+R6	Arg1_PPT Arg1:T6 Arg2:T11	
+R7	ArgM_MEANS Arg1:T12 Arg2:T13	
+R8	ArgM_TMP Arg1:T12 Arg2:T14	
+R9	Arg2_PPT Arg1:T15 Arg2:T16	
+R10	Arg2_PPT Arg1:T15 Arg2:T17	
+R11	Arg2_PPT Arg1:T15 Arg2:T18	
+R12	Arg2_PPT Arg1:T15 Arg2:T19	
+R13	Arg2_PPT Arg1:T15 Arg2:T20	
+R14	Arg1_PPT_X Arg1:T21 Arg2:T15	
+R15	Arg1_GOL_X Arg1:T15 Arg2:T12	
+R16	Arg1_PPT_X Arg1:T12 Arg2:T6	
+R17	Arg1_PPT_X Arg1:T1 Arg2:T21	
+R18	Arg1_PPT_X Arg1:T2 Arg2:T1	
+R19	ArgM_TMP Arg1:T2 Arg2:T3	
+T4	CONDITION_CLAUSE 239 253	before serving
+R20	ArgM_TMP Arg1:T2 Arg2:T4	
+#1	AnnotatorNotes R16	the ingredients; the combined ingredients; the tzatziki ingredients in the bowl
+#2	AnnotatorNotes R15	the mash; the tzatziki mash; the avocado cucumber mash
+#3	AnnotatorNotes R17	the tzatziki; the avocado tzatziki; the bowl with avocado tzatziki
+#4	AnnotatorNotes R18	the tzatziki; the bowl with tzatziki; the covered bowl with tzatziki

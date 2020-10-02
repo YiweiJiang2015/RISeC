@@ -1,0 +1,71 @@
+T1	AC 449 457	Sprinkle
+T2	AC 3 10	Preheat
+T3	AC 53 59	Grease
+T4	AC 85 89	Beat
+T5	AC 136 140	Sift
+T6	AC 204 207	Add
+T7	AC 261 265	Pour
+T8	AC 406 410	Cool
+T10	AC 288 292	bake
+T11	TOOL 11 15	oven
+T12	TOOL 60 80	one 10 inch tube pan
+T13	TEMPERATURE 19 48	325 degrees F (165 degrees C)
+T14	FOOD 99 106	the oil
+T15	FOOD 108 112	eggs
+T16	FOOD 114 121	vanilla
+T17	FOOD 126 131	sugar
+T18	FOOD 150 159	the flour
+T19	FOOD 161 172	baking soda
+T20	FOOD 174 178	salt
+T21	FOOD 180 188	cinnamon
+T22	FOOD 193 199	nutmeg
+T23	FOOD 211 222	egg mixture
+T24	FOOD 232 238	apples
+T25	FOOD 240 244	nuts
+T26	FOOD 249 256	raisins
+T9	AC 224 231	stir in
+T27	TOOL 271 283	prepared pan
+T28	TEMPERATURE 296 309	325 degrees F
+T29	DUR 330 339	1 1/2 hrs
+T31	AC 415 420	frost
+T32	FOOD 426 444	cream cheese icing
+T33	FOOD 458 461	top
+T34	FOOD 467 492	1/4 cup fine chopped nuts
+R1	Arg1_PPT Arg1:T2 Arg2:T11	
+R2	ArgM_MNR Arg1:T2 Arg2:T13	
+R3	Arg1_PPT Arg1:T3 Arg2:T12	
+R4	Arg1_PPT Arg1:T4 Arg2:T14	
+R5	Arg1_PPT Arg1:T4 Arg2:T15	
+R6	Arg1_PPT Arg1:T4 Arg2:T16	
+R7	Arg1_PPT Arg1:T4 Arg2:T17	
+R8	Arg1_PPT Arg1:T5 Arg2:T18	
+R9	Arg1_PPT Arg1:T5 Arg2:T19	
+R10	Arg1_PPT Arg1:T5 Arg2:T20	
+R11	Arg1_PPT Arg1:T5 Arg2:T21	
+R12	Arg1_PPT Arg1:T5 Arg2:T22	
+R13	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R14	Arg2_PPT Arg1:T6 Arg2:T23	
+R15	Arg1_PPT Arg1:T9 Arg2:T24	
+R16	Arg1_PPT Arg1:T9 Arg2:T25	
+R17	Arg1_PPT Arg1:T9 Arg2:T26	
+R18	Arg2_PPT_Z Arg1:T9 Arg2:T6	
+T30	CONDITION_CLAUSE 343 401	until a cake tester inserted in the center comes out clean
+R19	Arg1_PPT_X Arg1:T7 Arg2:T9	
+R20	Arg3_GOL Arg1:T7 Arg2:T27	
+R21	Arg1_PPT_X Arg1:T10 Arg2:T7	
+R22	ArgM_MNR Arg1:T10 Arg2:T28	
+R23	ArgM_TMP Arg1:T10 Arg2:T29	
+R24	ArgM_TMP Arg1:T10 Arg2:T30	
+R25	Arg1_PPT_X Arg1:T8 Arg2:T10	
+R26	Arg1_PPT_X Arg1:T31 Arg2:T8	
+R27	TODO Arg1:T31 Arg2:T32	
+R28	Arg1_PPT Arg1:T1 Arg2:T34	
+R29	Arg2_GOL Arg1:T1 Arg2:T33	
+T35	TEMPERATURE 311 324	165 degrees C
+R30	ArgM_MNR Arg1:T10 Arg2:T35	
+#1	AnnotatorNotes R13	the flour mixture; the flour mixture with cinnamon
+#2	AnnotatorNotes R18	the flour mixture; the egg flour mixture
+#3	AnnotatorNotes R19	the flour mixture; the egg flour mixture with apples
+#4	AnnotatorNotes R21	the flour mixture; the flour mixture in the pan
+#5	AnnotatorNotes R25	the cake; the baked cake
+#6	AnnotatorNotes R26	the cake; the cool cake

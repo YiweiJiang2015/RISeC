@@ -1,0 +1,107 @@
+T1	AC 3 7	Peel
+T2	AC 12 16	dice
+T3	AC 28 31	Add
+T4	AC 55 59	Cook
+T5	AC 90 94	Cook
+T6	CONDITION_CLAUSE 95 105	until soft
+T7	AC 112 116	mash
+T8	TOOL 122 126	fork
+T9	PURPOSE_CLAUSE 127 153	to form a thick applesauce
+T10	TOOL 63 73	a saucepan
+T11	FOOD 32 37	sugar
+T12	FOOD 42 50	cinnamon
+T13	TEMPERATURE 77 85	low heat
+T14	AC 158 162	Sift
+T16	AC 217 220	Add
+T17	AC 249 257	Roll out
+T18	AC 305 308	Cut
+T19	AC 379 384	place
+T20	AC 417 424	Moisten
+T21	AC 485 489	Heat
+T22	AC 538 541	Fry
+T23	AC 623 628	Drain
+T24	AC 650 658	Sprinkle
+T25	FOOD 664 683	confectioners sugar
+T26	TOOL 632 644	paper towels
+T27	FOOD 542 546	pies
+T28	FOOD 490 493	oil
+T29	TOOL 497 512	a large skillet
+T30	TEMPERATURE 516 532	medium-high heat
+T31	FOOD 436 446	cold water
+T32	AC 448 452	fold
+T33	AC 457 462	press
+T34	TOOL 473 479	a fork
+T35	FOOD 385 411	1 heaping tablespoon fruit
+T36	TOOL 314 335	a large cookie cutter
+T37	FOOD 221 226	water
+T38	AC 231 234	mix
+T39	TOOL 240 244	fork
+T40	FOOD 163 168	flour
+T41	FOOD 173 177	salt
+T42	FOOD 198 212	the shortening
+T15	AC 191 197	Cut in
+T43	DUR 565 592	2 to 3 minutes on each side
+T44	AC 594 598	cook
+T45	CONDITION_CLAUSE 599 617	until golden brown
+T46	TOOL 285 300	a floured board
+T47	OTHER 261 281	about 1/8 inch thick
+T48	OTHER 425 430	edges
+T49	FOOD 17 23	apples
+R1	Arg1_PPT Arg1:T3 Arg2:T11	
+R2	Arg1_PPT Arg1:T3 Arg2:T12	
+R3	Arg2_PPT_Z Arg1:T3 Arg2:T2	
+R4	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R5	ArgM_LOC Arg1:T4 Arg2:T10	
+R6	ArgM_MNR Arg1:T4 Arg2:T13	
+R8	Arg1_PPT_X Arg1:T2 Arg2:T1	
+R9	ArgM_TMP Arg1:T5 Arg2:T6	
+R10	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R11	Arg1_PPT_X Arg1:T7 Arg2:T5	
+R12	TODO Arg1:T7 Arg2:T8	
+R13	ArgM_PRP Arg1:T7 Arg2:T9	
+R14	Arg1_PPT Arg1:T14 Arg2:T40	
+R15	Arg1_PPT Arg1:T14 Arg2:T41	
+R16	Arg1_PPT Arg1:T15 Arg2:T42	
+R17	Arg1_PPT_X Arg1:T15 Arg2:T14	
+R18	Arg1_PPT Arg1:T16 Arg2:T37	
+R19	Arg2_PPT_Z Arg1:T16 Arg2:T15	
+R20	Arg1_PPT_X Arg1:T38 Arg2:T16	
+R21	ArgM_MEANS Arg1:T38 Arg2:T39	
+R22	Arg1_PPT_X Arg1:T17 Arg2:T38	
+R23	Arg2_PRD Arg1:T17 Arg2:T47	
+R24	ArgM_LOC Arg1:T17 Arg2:T46	
+R25	Arg1_PPT_X Arg1:T18 Arg2:T17	
+R26	ArgM_TMP Arg1:T44 Arg2:T45	
+R27	Arg1_GOL Arg1:T20 Arg2:T48	
+R28	Arg2_PPT Arg1:T20 Arg2:T31	
+T50	OTHER 463 467	edge
+R29	ArgM_MEANS Arg1:T18 Arg2:T36	
+R30	Arg1_PPT Arg1:T21 Arg2:T28	
+R31	ArgM_LOC Arg1:T21 Arg2:T29	
+R32	ArgM_MNR Arg1:T21 Arg2:T30	
+R33	Arg1_PPT Arg1:T22 Arg2:T27	
+R34	ArgM_LOC Arg1:T23 Arg2:T26	
+R35	Arg1_PPT_X Arg1:T23 Arg2:T44	
+R36	Arg1_PPT Arg1:T24 Arg2:T25	
+R37	Arg2_GOL_X Arg1:T24 Arg2:T23	
+R38	Arg1_PPT Arg1:T1 Arg2:T49	
+R7	ArgM_MEANS Arg1:T32 Arg2:T34	
+R39	Arg1_PPT Arg1:T32 Arg2:T50	
+R40	Simultaneous Arg1:T32 Arg2:T33	
+R41	ArgM_TMP Arg1:T22 Arg2:T43	
+R42	Arg1_PPT Arg1:T19 Arg2:T35	
+T51	OTHER 367 377	each round
+R43	ArgM_LOC Arg1:T19 Arg2:T51	
+#1	AnnotatorNotes R8	The apples; The peeled apples
+#2	AnnotatorNotes R3	The apples; The diced apples
+#3	AnnotatorNotes R4	The apples; The apples added with sugar and cinnamon
+#4	AnnotatorNotes R10	The apples; The cooked apples
+#5	AnnotatorNotes R11	The apples; The cooked apples
+#6	AnnotatorNotes R17	The flour and salt; The sifted flour and salt
+#7	AnnotatorNotes R19	The flour and salt; The flour and salt cutted with the shortening
+#8	AnnotatorNotes R22	The mixture; The mixed flour and salt
+#9	AnnotatorNotes R25	The mixture; The rolled out mixture
+#10	AnnotatorNotes R35	The pies, The cooked pies
+R44	Arg1_PPT_X Arg1:T44 Arg2:T22	
+#11	AnnotatorNotes R44	the pies; the fried pies
+#12	AnnotatorNotes R37	the pies; the drained pies

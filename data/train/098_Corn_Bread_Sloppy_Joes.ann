@@ -1,0 +1,86 @@
+T1	AC 3 10	Prepare
+T2	AC 15 19	bake
+T3	FOOD 20 30	corn bread
+T4	AC 64 69	using
+T5	FOOD 74 77	egg
+T6	FOOD 82 86	milk
+R1	Arg1_PPT Arg1:T1 Arg2:T3	
+R2	Arg1_PPT_X Arg1:T2 Arg2:T1	
+T7	OTHER 31 62	according to package directions
+R3	ArgM_MNR Arg1:T2 Arg2:T7	
+T8	TOOL 105 120	a large skillet
+T9	AC 122 126	cook
+T10	FOOD 127 131	beef
+T11	FOOD 136 141	onion
+T12	TEMPERATURE 147 158	medium heat
+T13	CONDITION_CLAUSE 159 187	until meat is no longer pink
+T14	AC 189 194	drain
+R6	ArgM_LOC Arg1:T9 Arg2:T8	
+R7	Arg1_PPT Arg1:T9 Arg2:T10	
+R8	Arg1_PPT Arg1:T9 Arg2:T11	
+R9	ArgM_MNR Arg1:T9 Arg2:T12	
+R10	ArgM_TMP Arg1:T9 Arg2:T13	
+R11	Arg1_PPT_X Arg1:T14 Arg2:T9	
+T15	AC 199 206	Stir in
+T16	FOOD 207 226	the spaghetti sauce
+T17	FOOD 228 232	corn
+T18	FOOD 234 241	chilies
+T19	FOOD 246 260	sloppy joe mix
+R13	Arg1_PPT Arg1:T15 Arg2:T16	
+R14	Arg1_PPT Arg1:T15 Arg2:T17	
+R15	Arg1_PPT Arg1:T15 Arg2:T18	
+R16	Arg1_PPT Arg1:T15 Arg2:T19	
+R17	Arg2_PPT_Z Arg1:T15 Arg2:T14	
+T21	AC 276 280	boil
+R18	Arg1_PPT_X Arg1:T21 Arg2:T15	
+T22	AC 285 291	Reduce
+T23	OTHER 292 296	heat
+T24	AC 298 304	simmer
+R19	Arg1_PPT Arg1:T22 Arg2:T23	
+R20	Next Arg1:T21 Arg2:T22	
+T25	DUR 321 331	10 minutes
+T26	OTHER 306 315	uncovered
+R21	ArgM_MNR Arg1:T24 Arg2:T26	
+R22	Arg1_PPT_X Arg1:T24 Arg2:T21	
+R23	ArgM_TMP Arg1:T24 Arg2:T25	
+T27	AC 336 344	Sprinkle
+T28	FOOD 350 356	cheese
+R24	Arg2_GOL_X Arg1:T27 Arg2:T24	
+R25	Arg1_PPT Arg1:T27 Arg2:T28	
+T29	AC 358 363	cover
+T30	AC 368 372	cook
+R26	Arg1_PPT_X Arg1:T29 Arg2:T27	
+R27	Arg1_PPT_X Arg1:T30 Arg2:T29	
+T31	DUR 377 385	1 minute
+T32	CONDITION_CLAUSE 389 411	until cheese is melted
+R28	ArgM_TMP Arg1:T30 Arg2:T31	
+R29	ArgM_TMP Arg1:T30 Arg2:T32	
+T33	AC 416 419	Cut
+T34	FOOD 420 430	corn bread
+T35	OTHER 436 446	six pieces
+#1	AnnotatorNotes T35	quantity?
+T36	AC 448 451	cut
+T37	FOOD 452 462	each piece
+T38	OTHER 466 470	half
+#2	AnnotatorNotes T38	quantity?
+R30	Arg1_PPT Arg1:T33 Arg2:T34	
+R31	Arg1_PPT Arg1:T36 Arg2:T37	
+R32	Arg2_PRD Arg1:T36 Arg2:T38	
+R33	Next Arg1:T33 Arg2:T36	
+T39	AC 475 478	Top
+T40	FOOD 484 502	sloppy joe mixture
+R34	Arg1_GOL_X Arg1:T39 Arg2:T36	
+R35	Arg2_PPT Arg1:T39 Arg2:T40	
+R36	Arg1_PPT Arg1:T4 Arg2:T5	
+R37	Arg1_PPT Arg1:T4 Arg2:T6	
+R38	Simultaneous Arg1:T2 Arg2:T4	
+R4	Arg2_PRD Arg1:T33 Arg2:T35	
+#3	AnnotatorNotes R2	the corn bread; the prepared corn bread
+#4	AnnotatorNotes R11	the beef; the onion beef
+#5	AnnotatorNotes R17	the beef; the drained beef
+#6	AnnotatorNotes R18	the joe mix; the beef joe mix
+#7	AnnotatorNotes R22	the joe mix; the boiling joe mix
+#8	AnnotatorNotes R24	the joe mix; the simmered joe mix
+#9	AnnotatorNotes R26	the joe mix; the joe mix with cheese
+#10	AnnotatorNotes R27	the beef mix; the covered beef mix
+#11	AnnotatorNotes R34	the corn bread; the six pieces of corn bread

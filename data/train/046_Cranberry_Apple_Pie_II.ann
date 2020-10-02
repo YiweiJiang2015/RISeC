@@ -1,0 +1,68 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 57	Line
+T6	TOOL 58 69	a pie plate
+T7	FOOD 75 81	pastry
+T8	AC 86 90	Peel
+T9	AC 92 96	core
+T10	AC 102 107	slice
+T11	FOOD 108 118	the apples
+T12	AC 123 130	Combine
+T13	FOOD 131 137	apples
+T14	FOOD 142 157	cranberry sauce
+T15	TOOL 161 187	a medium-sized mixing bowl
+T16	AC 192 199	Combine
+T17	FOOD 200 211	brown sugar
+T18	FOOD 213 218	flour
+T19	FOOD 220 228	cinnamon
+T20	FOOD 234 240	nutmeg
+T21	AC 242 245	add
+T22	FOOD 249 266	the apple mixture
+T23	AC 271 274	Mix
+T24	AC 290 294	Turn
+T25	FOOD 295 302	filling
+T26	TOOL 308 328	the pastry lined pan
+T27	AC 333 338	Cover
+T28	FOOD 344 353	top crust
+T29	AC 358 363	Crimp
+T30	FOOD 364 369	edges
+T31	AC 375 378	Cut
+T32	FOOD 379 384	slits
+T33	FOOD 388 397	top crust
+T34	AC 403 407	Bake
+T35	DUR 412 418	1 hour
+T36	CONDITION_CLAUSE 423 477	until the crust is golden brown and the filling bubbly
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_GOL Arg1:T5 Arg2:T6	
+R5	Arg2_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R8	Arg1_PPT Arg1:T8 Arg2:T11	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	Arg1_PPT Arg1:T12 Arg2:T14	
+R11	ArgM_LOC Arg1:T12 Arg2:T15	
+R12	Arg1_PPT Arg1:T16 Arg2:T17	
+R13	Arg1_PPT Arg1:T16 Arg2:T18	
+R14	Arg1_PPT Arg1:T16 Arg2:T19	
+R15	Arg1_PPT Arg1:T16 Arg2:T20	
+R16	Arg1_PPT_X Arg1:T21 Arg2:T16	
+R17	Arg2_PPT Arg1:T21 Arg2:T22	
+R18	Arg1_PPT_X Arg1:T23 Arg2:T21	
+R19	Arg1_PPT Arg1:T24 Arg2:T25	
+R20	Arg3_GOL Arg1:T24 Arg2:T26	
+R21	Arg2_PPT Arg1:T27 Arg2:T28	
+R22	Arg1_PPT_X Arg1:T27 Arg2:T24	
+R23	Arg1_PPT Arg1:T29 Arg2:T30	
+R24	Arg1_PPT Arg1:T31 Arg2:T32	
+R25	ArgM_LOC Arg1:T31 Arg2:T33	
+R26	ArgM_TMP Arg1:T34 Arg2:T35	
+R27	ArgM_TMP Arg1:T34 Arg2:T36	
+R7	Arg1_PPT_X Arg1:T10 Arg2:T9	
+#1	AnnotatorNotes R6	the apples; the peeled apples
+#2	AnnotatorNotes R7	the apples; the cored apples
+#3	AnnotatorNotes R16	the flour mixture
+#4	AnnotatorNotes R18	the mixture; the filling
+#5	AnnotatorNotes R22	the pie; the filling

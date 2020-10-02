@@ -1,0 +1,150 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	AC 62 68	grease
+T5	TOOL 69 92	a 9 inch springform pan
+T6	AC 114 117	mix
+T7	TOOL 100 112	a small bowl
+T8	FOOD 127 160	1 1/2 cups chocolate wafer crumbs
+T9	FOOD 162 181	2 tablespoons sugar
+T10	FOOD 187 200	melted butter
+T11	AC 205 210	Press
+T12	OTHER 216 226	the bottom
+T13	AC 297 301	Bake
+T14	TEMPERATURE 305 318	350 degrees F
+T15	DUR 339 349	10 minutes
+T16	AC 363 367	cool
+T17	AC 372 378	Reduce
+T18	OTHER 379 395	oven temperature
+T19	TEMPERATURE 399 428	325 degrees F (165 degrees C)
+T20	PURPOSE_CLAUSE 433 448	To Make Filling
+T21	TOOL 453 469	a small saucepan
+T22	AC 471 475	heat
+T23	FOOD 476 498	1/4 cup whipping cream
+T24	FOOD 503 526	1/4 cup chocolate chips
+T25	AC 528 536	stirring
+T26	CONDITION_CLAUSE 549 571	until chips are melted
+T27	TOOL 579 598	a large mixing bowl
+T28	AC 600 604	beat
+T29	FOOD 605 617	cream cheese
+T30	FOOD 622 636	1 cup of sugar
+T31	CONDITION_CLAUSE 637 649	until smooth
+T32	AC 655 658	Add
+T33	FOOD 659 664	cocoa
+T34	AC 669 673	beat
+T35	AC 684 687	Add
+T36	FOOD 688 692	eggs
+T37	AC 697 701	beat
+T38	TEMPERATURE 705 708	low
+T39	CONDITION_CLAUSE 709 727	until just blended
+T40	AC 733 740	Stir in
+T41	FOOD 741 759	1 teaspoon vanilla
+T42	FOOD 764 790	reserved chocolate mixture
+T43	CONDITION_CLAUSE 791 804	until blended
+T44	AC 810 814	Pour
+T45	FOOD 820 825	crust
+T46	AC 831 835	Bake
+T47	TEMPERATURE 839 852	325 degrees F
+T48	DUR 873 889	45 to 50 minutes
+T49	CONDITION_CLAUSE 893 919	until center is almost set
+T50	PURPOSE_CLAUSE 925 940	To Make Topping
+T51	TOOL 945 961	a small saucepan
+T52	AC 963 967	heat
+T53	FOOD 968 990	1/4 cup whipping cream
+T54	FOOD 995 1013	1 teaspoon vanilla
+T55	CONDITION_CLAUSE 1014 1039	until just before boiling
+T56	AC 1045 1049	Stir
+T57	AC 1083 1092	boil over
+T58	FOOD 1103 1129	1 1/2 cups chocolate chips
+T59	TOOL 1139 1151	a small bowl
+T61	FOOD 1165 1178	the hot cream
+T62	AC 1183 1187	stir
+T60	AC 1157 1164	Pour in
+T63	TOOL 1193 1200	a spoon
+T64	CONDITION_CLAUSE 1201 1213	until smooth
+T65	AC 1219 1225	Spread
+T66	FOOD 1231 1247	baked cheesecake
+T67	AC 1252 1263	refrigerate
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+T68	TEMPERATURE 35 48	175 degrees C
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T68	
+R4	Arg1_PPT Arg1:T4 Arg2:T5	
+R5	Arg1_PPT Arg1:T6 Arg2:T8	
+R6	ArgM_LOC Arg1:T6 Arg2:T7	
+R7	Arg1_PPT Arg1:T6 Arg2:T9	
+R8	Arg1_PPT Arg1:T6 Arg2:T10	
+T69	TEMPERATURE 320 333	175 degrees C
+R9	Arg3_GOL Arg1:T11 Arg2:T12	
+T70	TOOL 258 292	the prepared 9 inch springform pan
+R10	TODO Arg1:T70 Arg2:T4	
+R11	TODO Arg1:T70 Arg2:T12	
+R12	Arg1_PPT_X Arg1:T11 Arg2:T6	
+R13	ArgM_MNR Arg1:T13 Arg2:T14	
+R14	ArgM_MNR Arg1:T13 Arg2:T69	
+R15	ArgM_TMP Arg1:T13 Arg2:T15	
+R16	Arg1_PPT_X Arg1:T16 Arg2:T13	
+R17	Arg1_PPT_X Arg1:T13 Arg2:T11	
+R18	Arg1_PPT Arg1:T17 Arg2:T18	
+R19	Arg4_GOL Arg1:T17 Arg2:T19	
+R20	ArgM_LOC Arg1:T22 Arg2:T21	
+R21	Arg1_PPT Arg1:T22 Arg2:T23	
+R22	Arg1_PPT Arg1:T22 Arg2:T24	
+R23	Simultaneous Arg1:T22 Arg2:T25	
+R24	ArgM_TMP Arg1:T22 Arg2:T26	
+R25	ArgM_LOC Arg1:T28 Arg2:T27	
+R26	Arg1_PPT Arg1:T28 Arg2:T29	
+R27	Arg1_PPT Arg1:T28 Arg2:T30	
+R28	ArgM_TMP Arg1:T28 Arg2:T31	
+R29	Arg1_PPT Arg1:T32 Arg2:T33	
+R30	Arg2_PPT_Z Arg1:T32 Arg2:T28	
+R31	Arg1_PPT_X Arg1:T34 Arg2:T32	
+R32	Arg1_PPT Arg1:T35 Arg2:T36	
+R33	Arg2_PPT_Z Arg1:T35 Arg2:T34	
+R34	Arg1_PPT_X Arg1:T37 Arg2:T35	
+R35	ArgM_MNR Arg1:T37 Arg2:T38	
+R36	ArgM_TMP Arg1:T37 Arg2:T39	
+R37	Arg1_PPT Arg1:T40 Arg2:T41	
+R38	Arg1_PPT Arg1:T40 Arg2:T42	
+R39	Arg2_PPT_Z Arg1:T40 Arg2:T37	
+R40	ArgM_TMP Arg1:T40 Arg2:T43	
+R41	Arg1_PPT_X Arg1:T44 Arg2:T40	
+R42	Arg3_GOL Arg1:T44 Arg2:T45	
+T71	TEMPERATURE 854 867	165 degrees C
+R43	ArgM_MNR Arg1:T46 Arg2:T47	
+R44	ArgM_MNR Arg1:T46 Arg2:T71	
+R45	ArgM_TMP Arg1:T46 Arg2:T48	
+R46	ArgM_TMP Arg1:T46 Arg2:T49	
+R47	Arg1_PPT_X Arg1:T46 Arg2:T44	
+R48	ArgM_LOC Arg1:T52 Arg2:T51	
+R49	Arg1_PPT Arg1:T52 Arg2:T53	
+R50	Arg1_PPT Arg1:T52 Arg2:T54	
+R51	ArgM_TMP Arg1:T52 Arg2:T55	
+R52	Arg1_PPT_X Arg1:T56 Arg2:T52	
+T72	AC 1098 1102	Have
+R53	Arg1_PPT Arg1:T72 Arg2:T58	
+R54	ArgM_LOC Arg1:T72 Arg2:T59	
+R55	Arg1_PPT Arg1:T60 Arg2:T61	
+R56	Arg1_PPT_X Arg1:T60 Arg2:T72	
+R57	ArgM_MEANS Arg1:T62 Arg2:T63	
+R58	Arg1_PPT_X Arg1:T62 Arg2:T60	
+R59	Arg1_PPT_X Arg1:T67 Arg2:T65	
+T73	DUR 1264 1273	overnight
+R60	ArgM_TMP Arg1:T67 Arg2:T73	
+R61	Arg1_PPT_X Arg1:T65 Arg2:T62	
+R62	Arg2_GOL Arg1:T65 Arg2:T66	
+#1	AnnotatorNotes R12	the mixture; the mix; the crumble mixture
+#2	AnnotatorNotes R16	the crumble; the crust; the crumble bottom; the chocolate crumble mix; the chocolate bottom; the chocolate bottom in the pan; the chocolate crust
+#3	AnnotatorNotes R31	the mixture; the cream cheese mixture; the cream cheese with cocoa
+#4	AnnotatorNotes R30	the mixture; the cream cheese mixture; the cheese mixture; the sugared cream cheese
+#5	AnnotatorNotes R33	the mixture; the mix; the cream cheese mixture
+#6	AnnotatorNotes R34	the batter; the cream cheese with eggs; 
+#7	AnnotatorNotes R39	the batter; the blended batter; the cream cheese batter; the cream cheese mix
+#8	AnnotatorNotes R41	the batter; the cream cheese batter; the chocolate cream cheese mixture; the chocolate cream cheese batter
+#9	AnnotatorNotes R47	the cake; the cheesecake; the chocolate cheesecake
+#10	AnnotatorNotes R52	the cream; the topping; the heating cream; the hot cream; the heated cream
+#11	AnnotatorNotes R56	the chocolate; the chocolate chips
+#12	AnnotatorNotes R58	the cream; the hot cream; the cream with the chocolate chips; the hot cream with the chocolate chips; the cream with the chocolate
+#13	AnnotatorNotes R61	the cream; the topping; the chocolate cream; the chocolate topping; the chocolate cream topping
+#14	AnnotatorNotes R59	the cake; the cheesecake; the chocolate cheesecake
+#15	AnnotatorNotes R17	the mixture; the crumble mixture on the bottom of pan

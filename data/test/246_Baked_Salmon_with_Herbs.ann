@@ -1,0 +1,63 @@
+T1	AC 3 7	Line
+T2	TOOL 8 26	a 15-in baking pan
+T3	TOOL 32 36	foil
+T4	AC 38 42	coat
+T5	TOOL 43 47	foil
+T6	FOOD 53 75	nonstick cooking spray
+T7	TOOL 83 89	a bowl
+T8	AC 91 98	combine
+T9	FOOD 99 115	the bread crumbs
+T10	FOOD 117 123	garlic
+T11	FOOD 125 140	Parmesan cheese
+T12	FOOD 142 149	parsley
+T13	FOOD 151 156	thyme
+T14	FOOD 158 166	rosemary
+T15	FOOD 168 172	salt
+T16	FOOD 177 183	pepper
+T17	AC 188 191	Add
+T18	FOOD 192 198	butter
+T19	AC 200 204	toss
+T20	PURPOSE_CLAUSE 205 219	to coat evenly
+T21	AC 224 229	Place
+T22	FOOD 230 236	salmon
+T23	TOOL 240 252	prepared pan
+T24	AC 257 262	Spray
+T25	FOOD 268 290	nonstick cooking spray
+T26	AC 295 298	pat
+T27	FOOD 304 323	bread crumb mixture
+T28	AC 328 332	Bake
+T29	TEMPERATURE 348 361	350 degrees F
+T30	DUR 366 379	35-40 minutes
+T31	CONDITION_CLAUSE 383 419	until fish flakes easily with a fork
+R1	Arg2_PPT Arg1:T1 Arg2:T3	
+R2	Arg1_GOL Arg1:T1 Arg2:T2	
+R3	Arg1_GOL Arg1:T4 Arg2:T5	
+R4	Arg2_PPT Arg1:T4 Arg2:T6	
+R5	ArgM_LOC Arg1:T8 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg1_PPT Arg1:T8 Arg2:T10	
+R8	Arg1_PPT Arg1:T8 Arg2:T11	
+R9	Arg1_PPT Arg1:T8 Arg2:T12	
+R10	Arg1_PPT Arg1:T8 Arg2:T13	
+R11	Arg1_PPT Arg1:T8 Arg2:T14	
+R12	Arg1_PPT Arg1:T8 Arg2:T15	
+R13	Arg1_PPT Arg1:T8 Arg2:T16	
+R14	Arg1_PPT Arg1:T17 Arg2:T18	
+R16	Arg1_PPT_X Arg1:T19 Arg2:T17	
+R17	ArgM_PRP Arg1:T19 Arg2:T20	
+R18	Arg1_PPT Arg1:T21 Arg2:T22	
+R19	Arg3_GOL Arg1:T21 Arg2:T23	
+R20	Arg1_PPT Arg1:T24 Arg2:T25	
+R21	Arg1_GOL_X Arg1:T24 Arg2:T21	
+R22	Arg1_GOL_X Arg1:T26 Arg2:T24	
+R23	Arg2_PPT Arg1:T26 Arg2:T27	
+R24	ArgM_MNR Arg1:T28 Arg2:T29	
+R25	ArgM_TMP Arg1:T28 Arg2:T30	
+R26	ArgM_TMP Arg1:T28 Arg2:T31	
+R27	Arg1_PPT_X Arg1:T28 Arg2:T26	
+R15	Arg2_PPT_Z Arg1:T17 Arg2:T8	
+#1	AnnotatorNotes R15	the mixture; the bread crumb mixture
+#2	AnnotatorNotes R16	the mixture; the bread crumb mixture
+#3	AnnotatorNotes R21	the salmon; the salmon in the pan
+#4	AnnotatorNotes R22	the salmon; the salmon in the pan
+#5	AnnotatorNotes R27	the salmon; the breaded salmon; the breaded salmon in the pan

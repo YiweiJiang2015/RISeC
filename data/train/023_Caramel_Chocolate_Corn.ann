@@ -1,0 +1,102 @@
+T1	AC 3 9	Grease
+T2	TOOL 10 23	cookie sheets
+T3	AC 28 33	Place
+T4	FOOD 34 41	popcorn
+T5	FOOD 46 53	peanuts
+T6	TOOL 57 68	a paper bag
+T7	AC 73 82	Set aside
+T8	TOOL 90 111	a microwave safe bowl
+T9	AC 113 120	combine
+T10	FOOD 121 126	sugar
+T11	FOOD 128 134	butter
+T12	FOOD 136 146	corn syrup
+T13	FOOD 148 155	vanilla
+T14	FOOD 160 164	salt
+T15	AC 169 178	Microwave
+T16	DUR 179 188	4 minutes
+T17	CONDITION_CLAUSE 190 202	until bubbly
+T18	AC 207 214	Stir in
+T19	FOOD 215 226	baking soda
+T20	AC 231 235	Pour
+T21	FOOD 241 256	popcorn mixture
+T22	AC 261 266	shake
+T23	TOOL 267 270	bag
+T24	PURPOSE_CLAUSE 271 278	to coat
+T25	AC 283 292	Roll down
+T26	TOOL 293 305	edges of bag
+T28	AC 310 315	place
+T29	TOOL 316 319	bag
+T30	TOOL 323 332	microwave
+T31	AC 337 341	Heat
+T32	DUR 346 355	2 minutes
+T33	AC 357 364	shaking
+T34	DUR 365 376	three times
+T35	PURPOSE_CLAUSE 377 383	to mix
+T36	AC 389 395	Spread
+T37	FOOD 396 403	mixture
+T38	TOOL 409 424	prepared sheets
+T39	PURPOSE_CLAUSE 425 432	to cool
+T40	TOOL 441 462	a microwave safe bowl
+T41	AC 464 471	combine
+T42	FOOD 472 481	chocolate
+T43	FOOD 486 496	shortening
+T44	AC 502 511	Microwave
+T45	DUR 512 522	90 seconds
+T46	AC 524 532	stirring
+T47	CONDITION_CLAUSE 539 551	until melted
+T48	AC 557 564	Drizzle
+T49	FOOD 570 585	popcorn mixture
+T50	AC 595 599	cool
+T51	CONDITION_CLAUSE 600 614	before serving
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T3 Arg2:T4	
+R3	Arg1_PPT Arg1:T3 Arg2:T5	
+R4	Arg3_GOL Arg1:T3 Arg2:T6	
+R5	Arg1_PPT_X Arg1:T7 Arg2:T3	
+R6	ArgM_LOC Arg1:T9 Arg2:T8	
+R7	Arg1_PPT Arg1:T9 Arg2:T10	
+R8	Arg1_PPT Arg1:T9 Arg2:T11	
+R9	Arg1_PPT Arg1:T9 Arg2:T12	
+R10	Arg1_PPT Arg1:T9 Arg2:T13	
+R11	Arg1_PPT Arg1:T9 Arg2:T14	
+R12	ArgM_TMP Arg1:T15 Arg2:T16	
+R13	ArgM_TMP Arg1:T15 Arg2:T17	
+R14	Arg1_PPT Arg1:T18 Arg2:T19	
+R15	Arg2_PPT_Z Arg1:T18 Arg2:T15	
+R16	Arg1_PPT_X Arg1:T20 Arg2:T18	
+R17	Arg3_GOL Arg1:T20 Arg2:T21	
+R18	Arg1_PPT Arg1:T22 Arg2:T23	
+R19	ArgM_PRP Arg1:T22 Arg2:T24	
+R21	Arg1_PPT Arg1:T28 Arg2:T29	
+R22	Arg3_GOL Arg1:T28 Arg2:T30	
+R23	Arg1_PPT Arg1:T25 Arg2:T26	
+R24	ArgM_TMP Arg1:T31 Arg2:T32	
+R25	ArgM_TMP Arg1:T33 Arg2:T34	
+R26	ArgM_PRP Arg1:T33 Arg2:T35	
+R28	Arg1_PPT Arg1:T36 Arg2:T37	
+R29	Arg2_GOL Arg1:T36 Arg2:T38	
+R30	ArgM_PRP Arg1:T36 Arg2:T39	
+R31	Arg1_PPT Arg1:T41 Arg2:T42	
+R32	Arg1_PPT Arg1:T41 Arg2:T43	
+R33	ArgM_LOC Arg1:T41 Arg2:T40	
+R34	ArgM_TMP Arg1:T44 Arg2:T45	
+R36	ArgM_TMP Arg1:T44 Arg2:T47	
+R37	Arg1_PPT_X Arg1:T44 Arg2:T41	
+R38	Arg1_PPT_X Arg1:T15 Arg2:T9	
+R39	Arg1_GOL Arg1:T48 Arg2:T49	
+R40	Arg1_PPT_X Arg1:T48 Arg2:T44	
+R41	ArgM_TMP Arg1:T50 Arg2:T51	
+#1	AnnotatorNotes R5	the paper bag; the popcorn and peanuts
+#2	AnnotatorNotes R38	the syrup mixture
+#3	AnnotatorNotes R15	the bubbly mixture
+#4	AnnotatorNotes R16	the syrup; the coating
+R20	Arg1_PPT_X Arg1:T31 Arg2:T28	
+#5	AnnotatorNotes R20	the bag
+R27	Arg1_PPT_X Arg1:T33 Arg2:T31	
+#6	AnnotatorNotes R27	the bag
+#7	AnnotatorNotes R37	the chocolate mixture
+R35	Arg1_PPT_X Arg1:T46 Arg2:T44	
+#8	AnnotatorNotes R35	the chocolate mixture
+#9	AnnotatorNotes R40	the chocolate mixture
+R42	Arg1_PPT_X Arg1:T50 Arg2:T48	
+#10	AnnotatorNotes R42	the popcorn

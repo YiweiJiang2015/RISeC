@@ -1,0 +1,63 @@
+T1	AC 3 8	Place
+T2	FOOD 9 24	the cranberries
+T3	FOOD 29 34	water
+T4	TOOL 40 51	a large pot
+T5	AC 67 71	boil
+T6	AC 76 80	cook
+T7	CONDITION_CLAUSE 86 107	until the berries pop
+T8	DUR 109 124	about 5 minutes
+T9	AC 129 135	Remove
+T10	OTHER 141 149	the heat
+T11	AC 214 224	Strain out
+T12	FOOD 225 240	the cranberries
+T13	AC 245 249	stir
+T14	FOOD 250 266	the orange juice
+T15	FOOD 268 283	pineapple juice
+T16	FOOD 285 296	lemon juice
+T17	FOOD 301 306	sugar
+T18	FOOD 312 322	the liquid
+T19	AC 327 330	Add
+T20	FOOD 331 349	the cinnamon stick
+T21	FOOD 351 363	whole cloves
+T22	FOOD 368 384	allspice berries
+T23	AC 404 408	boil
+T24	TEMPERATURE 400 403	low
+R1	ArgM_MNR Arg1:T23 Arg2:T24	
+R2	Arg1_PPT_X Arg1:T23 Arg2:T19	
+R3	Arg1_PPT Arg1:T19 Arg2:T20	
+R4	Arg1_PPT Arg1:T19 Arg2:T21	
+R5	Arg1_PPT Arg1:T19 Arg2:T22	
+R6	Arg2_PPT_Z Arg1:T19 Arg2:T13	
+R7	Arg1_PPT Arg1:T11 Arg2:T12	
+R8	Arg1_PPT Arg1:T13 Arg2:T14	
+R9	Arg1_PPT Arg1:T13 Arg2:T15	
+R10	Arg1_PPT Arg1:T13 Arg2:T16	
+R11	Arg1_PPT Arg1:T13 Arg2:T17	
+R12	Arg2_PPT Arg1:T13 Arg2:T18	
+T25	AC 158 163	stand
+T26	TEMPERATURE 167 183	room temperature
+T27	CONDITION_CLAUSE 184 194	until cold
+T28	DUR 196 209	several hours
+R13	ArgM_MNR Arg1:T25 Arg2:T26	
+R14	ArgM_TMP Arg1:T25 Arg2:T27	
+R15	ArgM_TMP Arg1:T25 Arg2:T28	
+R16	Arg1_PPT Arg1:T1 Arg2:T2	
+R17	Arg1_PPT Arg1:T1 Arg2:T3	
+R18	Arg3_GOL Arg1:T1 Arg2:T4	
+R19	Arg1_PPT_X Arg1:T5 Arg2:T1	
+R20	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R21	ArgM_TMP Arg1:T6 Arg2:T7	
+R22	ArgM_TMP Arg1:T6 Arg2:T8	
+R23	Arg1_PPT_X Arg1:T9 Arg2:T6	
+R24	Arg2_DIR Arg1:T9 Arg2:T10	
+R25	Arg0_PAG Arg1:T25 Arg2:T9	
+#1	AnnotatorNotes R25	seems arg1 to me
+R26	TODO Arg1:T11 Arg2:T25	
+#2	AnnotatorNotes R26	depends on
+R27	TODO Arg1:T18 Arg2:T11	
+#3	AnnotatorNotes R27	coreferent with this somehow??
+#4	AnnotatorNotes R19	the cranberries; the cranberries in a pot
+#5	AnnotatorNotes R20	the boiling water; the boiling water with cranberries
+#6	AnnotatorNotes R23	the cranberries; the cooking cranberries
+#7	AnnotatorNotes R6	the liquid; the cranberries with juice
+#8	AnnotatorNotes R2	the craberries liquid; the craberries liquid

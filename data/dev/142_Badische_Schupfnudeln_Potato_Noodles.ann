@@ -1,0 +1,95 @@
+T1	AC 3 8	Place
+T2	FOOD 9 23	whole potatoes
+T3	FOOD 44 72	a large pot of boiling water
+T5	AC 74 78	boil
+T6	DUR 83 99	25 to 30 minutes
+T7	AC 104 110	Remove
+T8	FOOD 111 119	potatoes
+T9	AC 125 132	discard
+T10	FOOD 133 138	water
+T11	CONDITION_CLAUSE 143 169	When cool enough to handle
+T12	AC 171 175	peel
+T13	FOOD 176 184	potatoes
+T14	AC 190 195	place
+T15	TOOL 199 224	a lightly floured surface
+T16	AC 229 233	Mash
+T17	FOOD 234 242	potatoes
+T18	TOOL 248 261	a rolling pin
+T19	AC 266 271	Place
+T20	FOOD 272 287	mashed potatoes
+T21	TOOL 293 305	a large bowl
+T22	AC 310 317	Stir in
+T23	FOOD 318 323	flour
+T24	FOOD 325 328	egg
+T25	FOOD 330 337	parsley
+T26	FOOD 339 343	salt
+T27	FOOD 349 355	nutmeg
+T28	AC 360 365	Knead
+T29	PURPOSE_CLAUSE 371 393	to form a smooth dough
+T31	AC 403 411	roll out
+T32	FOOD 412 421	the dough
+T33	FOOD 425 454	a thickness of about 1/2 inch
+T34	AC 459 462	Cut
+T35	FOOD 463 478	flattened dough
+T36	FOOD 484 495	thin strips
+T37	OTHER 503 520	1 1/2 inches long
+T38	AC 533 541	roll out
+T39	FOOD 542 552	the strips
+T41	FOOD 565 569	them
+T42	CONDITION_CLAUSE 570 590	until the ends taper
+T43	AC 596 605	Set aside
+T44	DUR 610 620	15 minutes
+T45	TOOL 629 644	a large skillet
+T46	AC 646 650	heat
+T47	TEMPERATURE 661 672	medium heat
+T48	AC 678 683	Place
+T49	FOOD 684 701	the potato strips
+T50	TOOL 707 718	the skillet
+T51	AC 724 727	fry
+T52	CONDITION_CLAUSE 728 760	until golden brown on both sides
+T53	FOOD 651 655	lard
+R1	Arg1_PPT Arg1:T31 Arg2:T32	
+T40	AC 557 564	stretch
+R3	Arg1_PPT Arg1:T1 Arg2:T2	
+R4	Arg3_GOL Arg1:T1 Arg2:T3	
+R5	ArgM_TMP Arg1:T5 Arg2:T6	
+R6	Arg1_PPT_X Arg1:T5 Arg2:T1	
+R7	Arg1_PPT Arg1:T7 Arg2:T8	
+R8	Arg1_PPT Arg1:T9 Arg2:T10	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	Arg1_PPT_X Arg1:T14 Arg2:T12	
+R11	Arg3_GOL Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T16 Arg2:T17	
+R13	ArgM_MEANS Arg1:T16 Arg2:T18	
+R14	Arg1_PPT Arg1:T19 Arg2:T20	
+R15	Arg3_GOL Arg1:T19 Arg2:T21	
+R16	Arg1_PPT Arg1:T22 Arg2:T23	
+R17	Arg1_PPT Arg1:T22 Arg2:T24	
+R18	Arg1_PPT Arg1:T22 Arg2:T25	
+R19	Arg1_PPT Arg1:T22 Arg2:T26	
+R20	Arg1_PPT Arg1:T22 Arg2:T27	
+R21	Arg2_PPT_Z Arg1:T22 Arg2:T19	
+R22	ArgM_PRP Arg1:T28 Arg2:T29	
+R2	Arg1_PPT Arg1:T34 Arg2:T35	
+R24	Arg1_PPT Arg1:T38 Arg2:T39	
+R25	Arg1_PPT Arg1:T40 Arg2:T41	
+R26	ArgM_TMP Arg1:T40 Arg2:T42	
+R27	ArgM_TMP Arg1:T43 Arg2:T44	
+R28	Arg1_PPT Arg1:T46 Arg2:T53	
+R29	ArgM_MNR Arg1:T46 Arg2:T47	
+R30	ArgM_LOC Arg1:T46 Arg2:T45	
+R31	Arg1_PPT Arg1:T48 Arg2:T49	
+R32	Arg3_GOL Arg1:T48 Arg2:T50	
+R33	ArgM_TMP Arg1:T51 Arg2:T52	
+R34	Arg1_PPT_X Arg1:T51 Arg2:T48	
+R35	Arg3_PRD Arg1:T34 Arg2:T36	
+R36	Arg2_PRD Arg1:T31 Arg2:T33	
+R37	TODO Arg1:T36 Arg2:T37	
+R38	Arg1_PPT_X Arg1:T28 Arg2:T22	
+R39	Arg1_PPT_X Arg1:T43 Arg2:T40	
+#1	AnnotatorNotes R6	the potatoes; the pot; 
+#2	AnnotatorNotes R21	mashed potatoes; the large bowl
+#3	AnnotatorNotes R38	the mixture; the content of the bowl
+#4	AnnotatorNotes R39	the strips; the potato strips
+#5	AnnotatorNotes R10	teh potatoes; the peeled potatoes
+#6	AnnotatorNotes R34	the potato strips; the potato strips in the skillet

@@ -1,0 +1,20 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 25	condensed milk
+T3	FOOD 27 31	milk
+T4	FOOD 33 38	cream
+T5	FOOD 40 47	vanilla
+T6	FOOD 49 53	salt
+T7	FOOD 58 63	fruit
+T8	TOOL 67 102	freezer canister of ice cream maker
+T9	AC 107 113	Freeze
+T10	OTHER 114 152	according to manufacturer's directions
+R1	ArgM_MNR Arg1:T9 Arg2:T10	
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	Arg1_PPT Arg1:T1 Arg2:T3	
+R4	Arg1_PPT Arg1:T1 Arg2:T4	
+R5	Arg1_PPT Arg1:T1 Arg2:T5	
+R6	Arg1_PPT Arg1:T1 Arg2:T6	
+R7	Arg1_PPT Arg1:T1 Arg2:T7	
+R8	ArgM_LOC Arg1:T1 Arg2:T8	
+R9	Arg1_PPT_X Arg1:T9 Arg2:T1	
+#1	AnnotatorNotes R9	the mixture; the milky mixture; the fruit mixture; 

@@ -1,0 +1,31 @@
+T1	AC 3 7	Sift
+T2	FOOD 17 24	creamer
+T3	FOOD 26 43	hot chocolate mix
+T4	FOOD 45 59	instant coffee
+T5	FOOD 61 69	cinnamon
+T6	FOOD 74 80	nutmeg
+T7	AC 85 89	Pour
+T8	TOOL 95 100	a jar
+T9	AC 105 109	seal
+T10	TOOL 115 120	a lid
+T11	PURPOSE_CLAUSE 125 135	To prepare
+T12	AC 137 141	Stir
+T13	FOOD 142 164	3 teaspoons of mixture
+T14	FOOD 170 188	1 cup of hot water
+T15	AC 193 199	Adjust
+T16	PURPOSE_CLAUSE 200 208	to taste
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T1 Arg2:T5	
+R5	Arg1_PPT Arg1:T1 Arg2:T6	
+R6	Arg3_GOL Arg1:T7 Arg2:T8	
+R7	ArgM_MEANS Arg1:T9 Arg2:T10	
+R8	Arg1_PPT_X Arg1:T7 Arg2:T1	
+R9	Arg1_PPT_X Arg1:T9 Arg2:T7	
+R10	Arg1_PPT Arg1:T12 Arg2:T13	
+R11	Arg2_PPT Arg1:T12 Arg2:T14	
+R12	ArgM_PRP Arg1:T15 Arg2:T16	
+#1	AnnotatorNotes R8	the mixture; the coffee mix; the sifted mixture
+#2	AnnotatorNotes R9	the jar; the mixture in the jar; the coffee mix in the jar
+R13	TODO Arg1:T12 Arg2:T11	

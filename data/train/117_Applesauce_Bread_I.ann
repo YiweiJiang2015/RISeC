@@ -1,0 +1,60 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 59	Grease
+T6	AC 64 69	flour
+T7	TOOL 70 94	two 9 x 5 inch loaf pans
+T8	AC 99 103	Beat
+T9	FOOD 113 117	eggs
+T10	FOOD 119 124	sugar
+T11	FOOD 130 133	oil
+T12	AC 138 146	Blend in
+T13	FOOD 147 157	applesauce
+T14	FOOD 168 178	sour cream
+T15	FOOD 182 192	buttermilk
+T16	AC 197 203	Mix in
+T17	FOOD 204 209	flour
+T18	FOOD 211 224	baking powder
+T19	FOOD 226 230	soda
+T20	FOOD 236 244	cinnamon
+T21	AC 249 256	Stir in
+T22	FOOD 257 264	raisins
+T23	AC 269 273	Pour
+T24	FOOD 274 280	batter
+T25	TOOL 286 299	prepared pans
+T26	AC 304 308	Bake
+T27	DUR 313 323	80 minutes
+T28	AC 328 332	Cool
+T29	TOOL 336 346	wire racks
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T7	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	Simultaneous Arg1:T5 Arg2:T6	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	Arg1_PPT Arg1:T8 Arg2:T10	
+R9	Arg1_PPT Arg1:T8 Arg2:T11	
+R10	Arg1_PPT Arg1:T12 Arg2:T13	
+R11	Arg1_PPT Arg1:T12 Arg2:T14	
+R12	Arg1_PPT Arg1:T12 Arg2:T15	
+R13	Arg2_PPT_Z Arg1:T12 Arg2:T8	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg1_PPT Arg1:T16 Arg2:T18	
+R16	Arg1_PPT Arg1:T16 Arg2:T19	
+R17	Arg1_PPT Arg1:T16 Arg2:T20	
+R18	Arg2_PPT_Z Arg1:T16 Arg2:T12	
+R19	Arg1_PPT Arg1:T21 Arg2:T22	
+R20	Arg2_PPT_Z Arg1:T21 Arg2:T16	
+R21	Arg1_PPT Arg1:T23 Arg2:T24	
+R22	Arg3_GOL Arg1:T23 Arg2:T25	
+R23	Arg1_PPT_X Arg1:T26 Arg2:T23	
+R24	ArgM_TMP Arg1:T26 Arg2:T27	
+R25	Arg1_PPT_X Arg1:T28 Arg2:T26	
+R26	ArgM_LOC Arg1:T28 Arg2:T29	
+#1	AnnotatorNotes R13	the mixture; eggs, sugar, and oil;
+#2	AnnotatorNotes R18	applesauce and sour cream; applesauce and buttermilk;
+#3	AnnotatorNotes R20	flour, baking powder, soda and cinnamon; the mixture; 
+#4	AnnotatorNotes R23	the batter; batter in pans;
+#5	AnnotatorNotes R25	the batter; the batter in pans;

@@ -1,0 +1,21 @@
+T1	TOOL 6 24	a large punch bowl
+T2	AC 25 32	combine
+T3	FOOD 33 42	drink mix
+T4	FOOD 44 59	pineapple juice
+T5	FOOD 61 66	sugar
+T6	FOOD 71 76	water
+T7	AC 81 85	Stir
+T8	CONDITION_CLAUSE 86 101	until dissolved
+T9	AC 106 113	Stir in
+T10	FOOD 114 128	the ginger ale
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	ArgM_LOC Arg1:T2 Arg2:T1	
+R6	ArgM_TMP Arg1:T7 Arg2:T8	
+R7	Arg1_PPT Arg1:T9 Arg2:T10	
+R8	Arg2_PPT_Z Arg1:T9 Arg2:T7	
+R9	Arg1_PPT_X Arg1:T7 Arg2:T2	
+#1	AnnotatorNotes R9	The liquid; The combined liquid
+#2	AnnotatorNotes R8	The mixture; The stirred mixture

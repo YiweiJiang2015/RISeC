@@ -1,0 +1,27 @@
+T1	TOOL 6 23	a medium saucepan
+T2	AC 24 31	combine
+T3	FOOD 32 46	whipping cream
+T4	FOOD 48 54	butter
+T5	FOOD 58 67	margarine
+T6	FOOD 73 95	grated Parmesan cheese
+T7	AC 100 104	Cook
+T8	TEMPERATURE 110 125	medium low heat
+T9	CONDITION_CLAUSE 126 138	until smooth
+T10	AC 143 149	Remove
+T11	FOOD 164 169	Sauce
+T12	AC 175 182	thicken
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	ArgM_LOC Arg1:T2 Arg2:T1	
+R6	ArgM_MNR Arg1:T7 Arg2:T8	
+R7	ArgM_TMP Arg1:T7 Arg2:T9	
+T13	OTHER 155 159	heat
+R8	Arg1_PPT_X Arg1:T10 Arg2:T7	
+R9	Arg2_DIR Arg1:T10 Arg2:T13	
+R10	Arg0_PAG Arg1:T12 Arg2:T11	
+R11	Arg1_PPT_X Arg1:T7 Arg2:T2	
+R12	TODO Arg1:T11 Arg2:T10	
+#1	AnnotatorNotes R11	the mixture; the combined ingredients
+#2	AnnotatorNotes R8	the saucepan; the sauce; the sauce in the pan

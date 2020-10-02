@@ -1,0 +1,36 @@
+T1	AC 219 222	Dip
+T2	AC 226 232	spread
+T3	AC 199 206	Stir in
+T4	AC 152 157	Cover
+T5	AC 162 173	refrigerate
+T6	CONDITION_CLAUSE 174 194	until ready to serve
+T7	AC 123 131	Transfer
+T8	TOOL 135 147	serving bowl
+T9	AC 100 105	Pulse
+T10	CONDITION_CLAUSE 106 118	until smooth
+T11	AC 3 10	Combine
+T12	FOOD 11 41	all ingredients except parsley
+T13	FOOD 46 64	Quaker Rice Snacks
+T14	TOOL 68 95	work bowl of food processor
+T15	FOOD 233 268	each Quakes Ranch Flavor Rice Snack
+T16	FOOD 274 280	hummus
+R1	Arg1_PPT Arg1:T11 Arg2:T12	
+R2	Arg1_PPT Arg1:T11 Arg2:T13	
+R3	ArgM_LOC Arg1:T11 Arg2:T14	
+R4	ArgM_TMP Arg1:T9 Arg2:T10	
+R5	Arg3_GOL Arg1:T7 Arg2:T8	
+R7	Arg1_PPT_X Arg1:T7 Arg2:T9	
+R8	Arg1_PPT_X Arg1:T4 Arg2:T7	
+R9	Arg1_PPT_X Arg1:T5 Arg2:T4	
+R10	ArgM_TMP Arg1:T5 Arg2:T6	
+T17	FOOD 207 214	parsley
+R11	Arg1_PPT Arg1:T3 Arg2:T17	
+R12	Arg2_PPT_Z Arg1:T3 Arg2:T5	
+R13	Arg1_PPT Arg1:T1 Arg2:T15	
+R14	Arg2_PPT Arg1:T1 Arg2:T16	
+R6	Arg1_PPT_X Arg1:T9 Arg2:T11	
+#1	AnnotatorNotes R6	the ingredients; the mixture; the ingredient mixture
+#2	AnnotatorNotes R7	the hummus; the mixture; the smoothened mixture; the smoothened ingredients
+#3	AnnotatorNotes R8	the hummus; the hummus in the bowl; the bowl
+#4	AnnotatorNotes R9	the hummus; the hummus in the bowl
+#5	AnnotatorNotes R12	the hummus

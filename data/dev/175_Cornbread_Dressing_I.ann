@@ -1,0 +1,75 @@
+T1	AC 3 10	Prepare
+T2	FOOD 11 19	biscuits
+T3	FOOD 58 84	one 8x8 inch pan cornbread
+T4	OTHER 85 116	according to package directions
+T5	AC 121 125	Cool
+T6	AC 130 137	crumble
+T7	AC 142 149	Preheat
+T8	TOOL 150 154	oven
+T9	TEMPERATURE 158 171	350 degrees F
+T10	TEMPERATURE 173 186	175 degrees C
+T11	TOOL 195 206	a small pot
+T12	AC 208 215	combine
+T13	FOOD 216 221	onion
+T14	FOOD 223 229	celery
+T15	FOOD 231 240	margarine
+T16	FOOD 245 258	chicken broth
+T17	AC 272 276	boil
+T18	AC 281 285	cook
+T19	FOOD 286 296	vegetables
+T20	CONDITION_CLAUSE 297 309	until tender
+T21	TOOL 317 341	a 2-quart casserole dish
+T22	AC 343 350	combine
+T23	FOOD 378 399	4 cups biscuit crumbs
+T24	FOOD 401 405	salt
+T25	FOOD 407 413	pepper
+T26	FOOD 415 422	sausage
+T27	FOOD 424 436	chopped eggs
+T28	FOOD 441 445	sage
+T29	FOOD 351 376	4 cups crumbled cornbread
+T30	AC 450 454	Pour
+T31	FOOD 455 460	broth
+T32	FOOD 465 475	vegetables
+T33	FOOD 481 494	bread mixture
+T34	AC 500 504	stir
+T35	CONDITION_CLAUSE 505 519	until combined
+T36	AC 524 528	Bake
+T37	TOOL 532 550	the preheated oven
+T38	DUR 555 571	30 to 45 minutes
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT_X Arg1:T5 Arg2:T1	
+R5	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	ArgM_MNR Arg1:T7 Arg2:T9	
+R8	ArgM_MNR Arg1:T7 Arg2:T10	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	Arg1_PPT Arg1:T12 Arg2:T14	
+R11	Arg1_PPT Arg1:T12 Arg2:T15	
+R12	Arg1_PPT Arg1:T12 Arg2:T16	
+R13	ArgM_LOC Arg1:T12 Arg2:T11	
+R14	Arg1_PPT Arg1:T18 Arg2:T19	
+R15	Arg1_PPT_X Arg1:T17 Arg2:T12	
+R16	ArgM_TMP Arg1:T18 Arg2:T20	
+R17	Arg1_PPT Arg1:T22 Arg2:T29	
+R18	Arg1_PPT Arg1:T22 Arg2:T23	
+R19	Arg1_PPT Arg1:T22 Arg2:T24	
+R20	Arg1_PPT Arg1:T22 Arg2:T25	
+R21	Arg1_PPT Arg1:T22 Arg2:T26	
+R22	Arg1_PPT Arg1:T22 Arg2:T27	
+R23	Arg1_PPT Arg1:T22 Arg2:T28	
+R24	ArgM_LOC Arg1:T22 Arg2:T21	
+R25	Arg1_PPT Arg1:T30 Arg2:T31	
+R26	Arg1_PPT Arg1:T30 Arg2:T32	
+R27	Arg3_GOL Arg1:T30 Arg2:T33	
+R28	ArgM_TMP Arg1:T34 Arg2:T35	
+R29	Arg1_PPT_X Arg1:T34 Arg2:T30	
+R30	ArgM_LOC Arg1:T36 Arg2:T37	
+R31	ArgM_TMP Arg1:T36 Arg2:T38	
+R32	Arg1_PPT_X Arg1:T36 Arg2:T34	
+#1	AnnotatorNotes R4	The cornbread mixture; The prepared biscuits and cornbread
+#2	AnnotatorNotes R15	The combination; The combination of ingredients
+#3	AnnotatorNotes R32	The mixture; The stirred mixture
+#4	AnnotatorNotes R5	the cooled cornbread; The biscuits and cornbread; the bread mixture
+#5	AnnotatorNotes R29	the bread mixture; the chicken broth over bread mixture

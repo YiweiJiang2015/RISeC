@@ -1,0 +1,134 @@
+T1	AC 35 42	divided
+T2	FOOD 3 33	3/4 cup grated Parmesan cheese
+T3	AC 81 88	divided
+T4	FOOD 46 79	6 tablespoons butter or margarine
+T5	AC 92 97	Drain
+T6	AC 102 113	squeeze out
+T7	FOOD 114 129	excess moisture
+T8	FOOD 135 142	spinach
+T9	AC 147 151	Beat
+T10	FOOD 152 156	eggs
+T11	FOOD 158 168	onion salt
+T12	FOOD 173 179	nutmeg
+T13	AC 184 187	Add
+T14	FOOD 188 195	spinach
+T15	FOOD 200 223	1/4 cup Parmesan cheese
+T16	AC 225 228	mix
+T17	AC 238 245	Combine
+T18	FOOD 246 258	bread crumbs
+T19	FOOD 263 281	remaining Parmesan
+T20	AC 286 294	Sprinkle
+T21	FOOD 295 302	chicken
+T22	FOOD 308 312	salt
+T23	FOOD 317 323	pepper
+T24	AC 325 329	coat
+T25	FOOD 335 348	crumb mixture
+T26	AC 353 358	Place
+T27	TOOL 362 391	two greased 13-in baking pans
+T28	AC 396 402	Spread
+T29	FOOD 403 432	2 tablespoons spinach mixture
+T30	FOOD 438 449	each breast
+T31	AC 455 463	Sprinkle
+T32	FOOD 469 492	remaining crumb mixture
+T33	AC 494 501	drizzle
+T34	FOOD 507 513	butter
+T35	AC 519 523	Bake
+T36	TEMPERATURE 527 540	350 degrees F
+T37	DUR 545 558	35-40 minutes
+T38	CONDITION_CLAUSE 562 592	until chicken juices run clear
+T39	FOOD 602 607	sauce
+T40	AC 609 613	melt
+R1	TODO Arg1:T40 Arg2:T39	
+T41	FOOD 614 634	4 tablespoons butter
+T42	AC 636 644	blend in
+T43	FOOD 645 650	flour
+T44	FOOD 655 659	salt
+T45	AC 665 669	Stir
+T46	PURPOSE_CLAUSE 670 692	to form a smooth paste
+T48	AC 698 701	Add
+T49	FOOD 702 706	milk
+T50	AC 708 712	cook
+T51	AC 717 721	stir
+T52	CONDITION_CLAUSE 722 748	until thickened and bubbly
+T53	AC 754 757	Add
+T54	FOOD 758 764	cheese
+T55	AC 769 773	stir
+T56	CONDITION_CLAUSE 774 786	until melted
+T57	AC 792 797	Saute
+T58	FOOD 798 807	mushrooms
+T59	FOOD 811 827	remaining butter
+T60	AC 833 837	Stir
+T61	FOOD 843 857	cheese mixture
+T62	AC 873 877	pour
+T63	FOOD 878 883	sauce
+T64	FOOD 889 896	chicken
+T65	AC 901 905	pour
+T66	FOOD 911 925	a serving bowl
+T67	AC 930 934	pass
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	Arg1_PPT Arg1:T3 Arg2:T4	
+R4	Simultaneous Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg2_DIR Arg1:T5 Arg2:T8	
+R7	Arg1_PPT Arg1:T9 Arg2:T10	
+R8	Arg1_PPT Arg1:T9 Arg2:T11	
+R9	Arg1_PPT Arg1:T9 Arg2:T12	
+R10	Arg1_PPT Arg1:T13 Arg2:T14	
+R11	Arg1_PPT Arg1:T13 Arg2:T15	
+R12	Arg1_PPT Arg1:T16 Arg2:T13	
+R13	Arg2_PPT_Z Arg1:T13 Arg2:T9	
+R14	Arg1_PPT Arg1:T17 Arg2:T18	
+R15	Arg1_PPT Arg1:T17 Arg2:T19	
+R16	Arg3_GOL Arg1:T26 Arg2:T27	
+R17	Arg2_PPT Arg1:T24 Arg2:T25	
+R18	Arg2_GOL Arg1:T20 Arg2:T21	
+R19	Arg1_PPT Arg1:T20 Arg2:T22	
+R20	Arg1_PPT Arg1:T20 Arg2:T23	
+R21	Arg1_GOL_X Arg1:T24 Arg2:T20	
+R22	Arg1_PPT_X Arg1:T26 Arg2:T24	
+R23	Arg1_PPT Arg1:T28 Arg2:T29	
+R24	Arg2_GOL Arg1:T28 Arg2:T30	
+R25	ArgM_MNR Arg1:T35 Arg2:T36	
+R26	ArgM_TMP Arg1:T35 Arg2:T37	
+R27	ArgM_TMP Arg1:T35 Arg2:T38	
+R28	Arg1_PPT Arg1:T40 Arg2:T41	
+R29	Arg1_PPT Arg1:T42 Arg2:T43	
+R30	Arg1_PPT Arg1:T42 Arg2:T44	
+R31	Arg2_PPT_Z Arg1:T42 Arg2:T40	
+R32	ArgM_PRP Arg1:T45 Arg2:T46	
+R34	Arg2_PPT_Z Arg1:T45 Arg2:T42	
+R35	Arg1_PPT Arg1:T48 Arg2:T49	
+R36	Arg2_PPT_Z Arg1:T48 Arg2:T45	
+R37	Arg1_PPT_X Arg1:T50 Arg2:T48	
+R38	Simultaneous Arg1:T50 Arg2:T51	
+R39	ArgM_TMP Arg1:T50 Arg2:T52	
+R40	Arg1_PPT Arg1:T53 Arg2:T54	
+R41	ArgM_TMP Arg1:T55 Arg2:T56	
+R42	Arg1_PPT_X Arg1:T55 Arg2:T53	
+R43	Arg2_PPT_Z Arg1:T53 Arg2:T50	
+R44	Arg1_PPT Arg1:T57 Arg2:T58	
+R45	ArgM_LOC Arg1:T57 Arg2:T59	
+R46	Arg2_PPT Arg1:T60 Arg2:T61	
+R47	Arg1_PPT_X Arg1:T60 Arg2:T57	
+R48	Arg1_PPT Arg1:T62 Arg2:T63	
+R49	Arg3_GOL Arg1:T62 Arg2:T64	
+R50	Arg3_GOL Arg1:T65 Arg2:T66	
+R51	Arg1_PPT_X Arg1:T67 Arg2:T65	
+R52	TODO Arg1:T62 Arg2:T65	
+R53	Arg1_PPT Arg1:T31 Arg2:T32	
+R54	Arg2_PPT Arg1:T33 Arg2:T34	
+R55	Arg2_GOL_X Arg1:T31 Arg2:T28	
+R56	Arg1_GOL_X Arg1:T33 Arg2:T31	
+#1	AnnotatorNotes R13	the beaten eggs; the mix
+#2	AnnotatorNotes R21	the chicken; the seasoned chicken
+#3	AnnotatorNotes R22	the chicken; the coated chicken 
+#4	AnnotatorNotes R55	the seasoned breasts; the chicken breasts
+#5	AnnotatorNotes R56	the chicken; the chicken breasts
+#6	AnnotatorNotes R31	the butter; the melted butter
+#7	AnnotatorNotes R34	the batter; the mixture
+#8	AnnotatorNotes R36	the paste; the blend
+#9	AnnotatorNotes R43	the thickened paste; the cooked batter; the thickened and bubbly paste
+#10	AnnotatorNotes R47	the mushrooms; fried mushrooms; 
+#11	AnnotatorNotes R51	the chicken; the chicken with sauce
+#12	AnnotatorNotes R37	the paste; the paste in milk
+#13	AnnotatorNotes R42	the thickened paste; the thickened paste with cheese

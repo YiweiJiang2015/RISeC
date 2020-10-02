@@ -1,0 +1,36 @@
+T1	AC 23 27	cook
+T2	AC 63 71	stirring
+T3	AC 123 126	Add
+T4	AC 137 141	heat
+T5	AC 154 160	Season
+T6	AC 186 191	Serve
+T7	TOOL 6 21	a large skillet
+T8	FOOD 28 36	potatoes
+T9	FOOD 38 41	ham
+T10	FOOD 46 51	onion
+T11	FOOD 55 61	butter
+T13	FOOD 127 135	broccoli
+T14	FOOD 166 170	salt
+T15	FOOD 175 181	pepper
+T16	FOOD 197 207	sour cream
+T12	CONDITION_CLAUSE 84 118	until potatoes are lightly browned
+R1	Arg1_PPT Arg1:T1 Arg2:T8	
+R2	Arg1_PPT Arg1:T1 Arg2:T9	
+R3	Arg1_PPT Arg1:T1 Arg2:T10	
+R4	ArgM_LOC Arg1:T1 Arg2:T11	
+R5	ArgM_LOC Arg1:T1 Arg2:T7	
+R6	Arg1_PPT_X Arg1:T2 Arg2:T1	
+R7	ArgM_TMP Arg1:T2 Arg2:T12	
+R8	Arg1_PPT Arg1:T3 Arg2:T13	
+R9	Arg2_PPT_Z Arg1:T3 Arg2:T2	
+R10	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R11	Arg1_GOL_X Arg1:T5 Arg2:T4	
+R12	Arg2_PPT Arg1:T5 Arg2:T14	
+R13	Arg2_PPT Arg1:T5 Arg2:T15	
+R14	Arg2_PPT Arg1:T6 Arg2:T16	
+R15	Arg1_PPT_X Arg1:T6 Arg2:T5	
+#1	AnnotatorNotes R6	the potato mixture; the potato butter mixture
+#2	AnnotatorNotes R9	the potato mixture; the potato butter mixture
+#3	AnnotatorNotes R10	the potato mixture; the potato broccoli mixture
+#4	AnnotatorNotes R11	the potato mixture; the heated mixture
+#5	AnnotatorNotes R15	the potato mixture; the final dish

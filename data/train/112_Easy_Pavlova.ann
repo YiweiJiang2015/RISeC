@@ -1,0 +1,102 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	300 degrees F
+T4	TEMPERATURE 34 47	150 degrees C
+T5	AC 53 57	Line
+T6	TOOL 58 72	a baking sheet
+T7	TOOL 78 93	parchment paper
+T8	AC 98 102	Draw
+T9	OTHER 103 118	a 9 inch circle
+T10	TOOL 122 141	the parchment paper
+T11	TOOL 149 161	a large bowl
+T12	AC 163 167	beat
+T13	FOOD 168 178	egg whites
+T14	CONDITION_CLAUSE 179 202	until stiff but not dry
+T15	AC 217 223	add in
+T16	FOOD 224 233	the sugar
+T17	OTHER 235 257	1 tablespoon at a time
+T18	AC 259 266	beating
+T19	CONDITION_CLAUSE 272 291	after each addition
+T20	AC 296 300	Beat
+T21	CONDITION_CLAUSE 301 323	until thick and glossy
+T23	FOOD 328 349	Overbeaten egg whites
+T24	AC 366 373	deflate
+T25	CONDITION_CLAUSE 374 408	when folded into other ingredients
+T26	FOOD 432 468	not a particle of grease or egg yolk
+T27	AC 469 473	gets
+T28	FOOD 479 489	the whites
+T29	AC 501 508	fold in
+T30	FOOD 509 524	vanilla extract
+T31	FOOD 526 537	lemon juice
+T32	FOOD 542 552	cornstarch
+T33	AC 558 563	Spoon
+T34	FOOD 564 571	mixture
+T35	TOOL 599 618	the parchment paper
+T36	OTHER 579 589	the circle
+T37	AC 649 655	spread
+T38	FOOD 656 663	mixture
+T39	AC 774 778	Bake
+T40	DUR 783 789	1 hour
+T41	AC 795 799	Cool
+T42	TOOL 803 814	a wire rack
+T43	AC 820 826	Remove
+T44	TOOL 827 836	the paper
+T45	AC 842 847	place
+T46	FOOD 848 856	meringue
+T47	TOOL 860 880	a flat serving plate
+T48	AC 886 890	Fill
+T49	FOOD 923 936	whipped cream
+T50	AC 964 967	Top
+T51	FOOD 968 981	whipped cream
+T52	FOOD 987 1003	kiwifruit slices
+T53	FOOD 891 917	the center of the meringue
+T54	PURPOSE_CLAUSE 729 768	leave a slight depression in the center
+T55	OTHER 671 687	the outside edge
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	ArgM_MNR Arg1:T1 Arg2:T3	
+R4	ArgM_MNR Arg1:T1 Arg2:T4	
+R5	Arg1_GOL Arg1:T5 Arg2:T6	
+R6	Arg2_PPT Arg1:T5 Arg2:T7	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	ArgM_LOC Arg1:T8 Arg2:T10	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	ArgM_TMP Arg1:T12 Arg2:T14	
+R11	ArgM_LOC Arg1:T12 Arg2:T11	
+R12	Arg1_PPT Arg1:T15 Arg2:T16	
+R13	ArgM_MNR Arg1:T15 Arg2:T17	
+R14	Simultaneous Arg1:T15 Arg2:T18	
+R15	Arg2_PPT_Z Arg1:T15 Arg2:T12	
+R16	Arg1_PPT_X Arg1:T20 Arg2:T15	
+R17	ArgM_TMP Arg1:T20 Arg2:T21	
+R18	ArgM_TMP Arg1:T24 Arg2:T25	
+R20	Arg0_PAG Arg1:T27 Arg2:T26	
+R21	ArgM_LOC Arg1:T27 Arg2:T28	
+R22	Arg1_PPT Arg1:T29 Arg2:T30	
+R23	Arg1_PPT Arg1:T29 Arg2:T31	
+R24	Arg1_PPT Arg1:T29 Arg2:T32	
+R25	Arg2_PPT_Z Arg1:T29 Arg2:T24	
+T22	AC 350 354	lose
+T56	OTHER 355 361	volume
+R1	Arg1_PPT Arg1:T22 Arg2:T56	
+R19	Arg0_PAG Arg1:T22 Arg2:T23	
+R26	Arg0_PAG Arg1:T24 Arg2:T23	
+R27	Arg1_PPT Arg1:T33 Arg2:T34	
+R28	Arg3_GOL Arg1:T33 Arg2:T36	
+R29	Arg1_PPT Arg1:T37 Arg2:T38	
+R30	Arg3_GOL Arg1:T37 Arg2:T55	
+R31	Arg1_PPT_X Arg1:T39 Arg2:T37	
+R32	ArgM_TMP Arg1:T39 Arg2:T40	
+R33	ArgM_LOC Arg1:T41 Arg2:T42	
+R34	Arg1_PPT Arg1:T43 Arg2:T44	
+R35	Arg1_PPT Arg1:T45 Arg2:T46	
+R36	Arg3_GOL Arg1:T45 Arg2:T47	
+R37	Arg1_GOL Arg1:T48 Arg2:T53	
+R38	Arg2_PPT Arg1:T48 Arg2:T49	
+R39	Arg1_GOL Arg1:T50 Arg2:T51	
+R40	Arg2_PPT Arg1:T50 Arg2:T52	
+R41	Arg1_PPT_X Arg1:T41 Arg2:T39	
+#1	AnnotatorNotes R16	overbeaten egg whites; egg whites; 
+#2	AnnotatorNotes R15	the egg whites; albumen;
+#3	AnnotatorNotes R25	the overbeaten egg whites; the egg whites; the mixture;
+#4	AnnotatorNotes R31	the mixture; the egg whites, vanilla, lemon juice, cornstarch; 
+#5	AnnotatorNotes R41	the mixture; the baked mixture;

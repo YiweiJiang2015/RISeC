@@ -1,0 +1,38 @@
+T1	AC 3 7	Fill
+T2	TOOL 8 26	sterile containers
+T3	FOOD 32 38	garlic
+T4	FOOD 40 58	chopped fresh dill
+T5	FOOD 63 77	cayenne pepper
+T6	OTHER 81 106	within an inch of the top
+T7	AC 111 114	Mix
+T8	FOOD 115 142	the distilled white vinegar
+T9	FOOD 147 151	salt
+T10	TOOL 155 172	a medium saucepan
+T11	AC 188 192	boil
+T12	AC 197 201	Pour
+T13	FOOD 202 250	the hot distilled white vinegar and salt mixture
+T14	TOOL 256 294	the containers with the garlic mixture
+T15	AC 299 303	Fill
+T16	OTHER 307 342	approximately 1/4 inch from the top
+T17	AC 347 351	Seal
+T18	AC 356 361	store
+T19	TOOL 365 381	the refrigerator
+R1	Arg1_GOL Arg1:T1 Arg2:T2	
+R2	Arg2_PPT Arg1:T1 Arg2:T3	
+R3	Arg2_PPT Arg1:T1 Arg2:T4	
+R4	Arg2_PPT Arg1:T1 Arg2:T5	
+R5	Arg1_PPT Arg1:T7 Arg2:T8	
+R6	TODO Arg1:T1 Arg2:T6	
+R7	Arg1_PPT Arg1:T7 Arg2:T9	
+R8	ArgM_LOC Arg1:T7 Arg2:T10	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	Arg3_GOL Arg1:T12 Arg2:T14	
+R11	TODO Arg1:T15 Arg2:T16	
+R12	Arg1_PPT_X Arg1:T17 Arg2:T15	
+R13	ArgM_LOC Arg1:T18 Arg2:T19	
+R14	Arg1_PPT_X Arg1:T18 Arg2:T17	
+R15	Arg1_PPT_X Arg1:T11 Arg2:T7	
+R16	Arg1_PPT_X Arg1:T15 Arg2:T14	
+#1	AnnotatorNotes R15	the mix; the content of the saucepan
+#2	AnnotatorNotes R12	the mixture; the containers
+#3	AnnotatorNotes R14	the containers; the containers with garlic mixture

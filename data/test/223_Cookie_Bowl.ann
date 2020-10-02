@@ -1,0 +1,115 @@
+T1	AC 3 10	Preheat
+T2	AC 53 57	Turn
+T3	AC 140 145	Place
+T4	AC 170 174	Stir
+T5	AC 252 257	cream
+T6	AC 305 312	Beat in
+T7	AC 347 354	stir in
+T8	AC 438 442	roll
+T9	AC 486 489	Cut
+T10	AC 588 595	arrange
+T11	AC 710 715	press
+T12	AC 771 775	Bake
+T13	AC 848 852	Cool
+T14	AC 879 883	turn
+T15	AC 901 907	remove
+T16	AC 946 952	remove
+T17	AC 1000 1004	Fill
+T18	TOOL 11 15	oven
+T19	TEMPERATURE 19 48	350 degrees F (175 degrees C)
+T20	TOOL 58 77	a 9x5 inch loaf pan
+T21	TOOL 81 91	metal bowl
+T22	AC 108 113	cover
+T23	TOOL 131 135	foil
+T24	TOOL 151 165	a cookie sheet
+T25	FOOD 188 193	flour
+T26	FOOD 195 200	cocoa
+T27	FOOD 202 206	salt
+T28	FOOD 211 218	almonds
+T29	AC 220 229	set aside
+T30	TOOL 237 250	a medium bowl
+T31	FOOD 267 277	the butter
+T32	FOOD 282 287	sugar
+T33	CONDITION_CLAUSE 288 300	until smooth
+T34	FOOD 313 320	the egg
+T35	FOOD 325 332	vanilla
+T36	FOOD 355 374	the dry ingredients
+T37	PURPOSE_CLAUSE 375 403	to form a fairly stiff dough
+T38	TOOL 411 436	a lightly floured surface
+T39	FOOD 443 452	the dough
+T40	OTHER 460 481	1/4 inch in thickness
+T41	OTHER 495 502	circles
+T42	TOOL 509 516	a glass
+T43	TOOL 520 533	cookie cutter
+T44	TOOL 571 578	the pan
+T45	TOOL 582 586	bowl
+T46	FOOD 596 603	cookies
+T47	PURPOSE_CLAUSE 604 627	so they are overlapping
+T48	TOOL 675 682	the pan
+T49	FOOD 716 727	each cookie
+T50	DUR 780 796	10 to 15 minutes
+T51	TOOL 800 818	the preheated oven
+T52	CONDITION_CLAUSE 820 842	until cookies are firm
+T53	TOOL 884 891	the pan
+T54	TOOL 908 915	the pan
+T55	TOOL 921 929	the foil
+T56	TOOL 953 961	the foil
+T57	FOOD 1010 1016	cookie
+T58	FOOD 1020 1025	candy
+R1	Arg1_PPT Arg1:T1 Arg2:T18	
+R2	ArgM_MNR Arg1:T1 Arg2:T19	
+R3	Arg1_PPT Arg1:T2 Arg2:T20	
+R4	Arg1_PPT Arg1:T2 Arg2:T21	
+T59	OTHER 114 125	the outside
+R5	Arg1_PPT Arg1:T22 Arg2:T59	
+R6	ArgM_MEANS Arg1:T22 Arg2:T23	
+R7	Arg1_PPT_X Arg1:T3 Arg2:T22	
+R8	Arg3_GOL Arg1:T3 Arg2:T24	
+R9	Arg1_PPT Arg1:T4 Arg2:T25	
+R10	Arg1_PPT Arg1:T4 Arg2:T26	
+R11	Arg1_PPT Arg1:T4 Arg2:T27	
+R12	Arg1_PPT Arg1:T4 Arg2:T28	
+R13	Arg1_PPT Arg1:T29 Arg2:T4	
+R14	Arg1_PPT Arg1:T5 Arg2:T31	
+R15	Arg1_PPT Arg1:T5 Arg2:T32	
+R16	ArgM_LOC Arg1:T5 Arg2:T30	
+R17	ArgM_TMP Arg1:T5 Arg2:T33	
+R18	Arg1_PPT Arg1:T6 Arg2:T34	
+R19	Arg1_PPT Arg1:T6 Arg2:T35	
+R20	Arg2_PPT_Z Arg1:T6 Arg2:T5	
+R21	Arg1_PPT Arg1:T7 Arg2:T36	
+R22	ArgM_PRP Arg1:T7 Arg2:T37	
+R23	Arg2_PPT_Z Arg1:T7 Arg2:T6	
+R24	ArgM_LOC Arg1:T8 Arg2:T38	
+R25	Arg1_PPT Arg1:T8 Arg2:T39	
+R26	Arg2_PRD Arg1:T8 Arg2:T40	
+R27	Arg3_PRD Arg1:T9 Arg2:T41	
+R28	ArgM_MEANS Arg1:T9 Arg2:T42	
+R29	ArgM_MEANS Arg1:T9 Arg2:T43	
+R30	Arg1_PPT Arg1:T10 Arg2:T46	
+R31	ArgM_PRP Arg1:T10 Arg2:T47	
+T60	AC 655 663	covering
+R32	Arg1_PPT Arg1:T60 Arg2:T48	
+R33	Arg1_PPT Arg1:T11 Arg2:T49	
+T61	PURPOSE_CLAUSE 731 765	so you will have a good solid bowl
+R34	ArgM_PRP Arg1:T11 Arg2:T61	
+R35	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R36	ArgM_TMP Arg1:T12 Arg2:T50	
+R37	ArgM_LOC Arg1:T12 Arg2:T51	
+R38	ArgM_TMP Arg1:T12 Arg2:T52	
+R39	Arg1_PPT_X Arg1:T13 Arg2:T12	
+R40	Arg1_PPT Arg1:T14 Arg2:T53	
+R41	Arg1_PPT Arg1:T15 Arg2:T54	
+R42	Arg2_DIR Arg1:T15 Arg2:T55	
+R43	Arg1_PPT Arg1:T16 Arg2:T56	
+T62	OTHER 962 994	from inside the cookie structure
+R44	Arg2_DIR Arg1:T16 Arg2:T62	
+R45	Arg2_PPT Arg1:T17 Arg2:T57	
+R46	Arg2_PPT Arg1:T17 Arg2:T58	
+R47	Arg1_PPT_X Arg1:T17 Arg2:T16	
+#1	AnnotatorNotes R7	the loaf pan; the metal bowl; the covered loaf pan; the covered bowl
+#2	AnnotatorNotes R20	the butter; the butter cream; the creamed butter; the smooth butter
+#3	AnnotatorNotes R23	the egg; the egg with butter; the egg, vanilla and butter; the egg mixture
+#4	AnnotatorNotes R35	the cookies; the pressed cookies
+#5	AnnotatorNotes R39	the cookies; the baked cookies; the firm cookies
+#6	AnnotatorNotes R47	the cookies; the cookies without foil

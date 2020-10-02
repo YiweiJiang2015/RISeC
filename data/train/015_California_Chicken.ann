@@ -1,0 +1,69 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 57	Warm
+T6	FOOD 58 61	oil
+T7	TOOL 65 72	skillet
+T8	AC 77 80	add
+T9	FOOD 81 88	chicken
+T10	FOOD 93 98	onion
+T11	AC 103 107	Cook
+T12	DUR 108 118	15 minutes
+T13	CONDITION_CLAUSE 122 166	until chicken is browned and just about done
+T14	AC 171 174	Add
+T15	FOOD 175 179	salt
+T16	FOOD 184 190	pepper
+T17	PURPOSE_CLAUSE 191 199	to taste
+T18	AC 204 209	Place
+T19	FOOD 210 217	chicken
+T20	TOOL 221 233	cookie sheet
+T21	AC 238 241	top
+T22	FOOD 242 253	each breast
+T23	FOOD 259 282	1 to 2 slices of tomato
+T24	FOOD 287 310	2 to 3 slices of cheese
+T25	AC 315 320	Place
+T26	TOOL 324 328	oven
+T27	DUR 333 349	10 to 15 minutes
+T28	CONDITION_CLAUSE 351 369	until cheese melts
+T29	AC 374 380	Remove
+T30	TOOL 386 390	oven
+T31	AC 392 395	add
+T32	FOOD 396 420	2 to 3 slices of avocado
+T33	FOOD 424 442	top of each breast
+T35	AC 448 453	serve
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	ArgM_LOC Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg1_PPT Arg1:T8 Arg2:T10	
+R8	Arg2_PPT_Z Arg1:T8 Arg2:T5	
+R9	ArgM_TMP Arg1:T11 Arg2:T12	
+R10	ArgM_TMP Arg1:T11 Arg2:T13	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T14 Arg2:T16	
+R13	ArgM_PRP Arg1:T14 Arg2:T17	
+R14	Arg2_PPT_Z Arg1:T14 Arg2:T11	
+R15	Arg1_PPT Arg1:T18 Arg2:T19	
+R16	Arg3_GOL Arg1:T18 Arg2:T20	
+R17	Arg1_GOL Arg1:T21 Arg2:T22	
+R18	Arg2_PPT Arg1:T21 Arg2:T23	
+R19	Arg2_PPT Arg1:T21 Arg2:T24	
+R20	Arg3_GOL Arg1:T25 Arg2:T26	
+R21	ArgM_TMP Arg1:T25 Arg2:T27	
+R22	ArgM_TMP Arg1:T25 Arg2:T28	
+R23	Arg2_DIR Arg1:T29 Arg2:T30	
+R24	Arg1_PPT Arg1:T31 Arg2:T32	
+R25	Arg2_PPT Arg1:T31 Arg2:T33	
+R27	Arg1_PPT_X Arg1:T35 Arg2:T31	
+R28	Arg1_PPT_X Arg1:T29 Arg2:T25	
+R29	Arg1_PPT_X Arg1:T11 Arg2:T8	
+#1	AnnotatorNotes R8	the oil; the hot oil
+#2	AnnotatorNotes R29	the chicken and onion
+#3	AnnotatorNotes R14	the chicken
+R26	Arg1_PPT_X Arg1:T25 Arg2:T21	
+#4	AnnotatorNotes R26	the chicken; the chicken breasts
+#5	AnnotatorNotes R28	the chicken
+#6	AnnotatorNotes R27	the chicken; the Colifornia Chicken

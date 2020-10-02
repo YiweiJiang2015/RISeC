@@ -1,0 +1,61 @@
+T1	AC 3 10	Preheat
+T2	AC 32 37	Place
+T3	AC 133 138	Broil
+T4	AC 194 197	Cut
+T5	AC 230 236	Spread
+T6	AC 292 297	Layer
+T7	AC 333 341	sprinkle
+T8	AC 367 372	Cover
+T9	AC 403 406	Cut
+T10	AC 425 430	Serve
+T11	FOOD 38 50	the eggplant
+T12	TOOL 11 27	the oven broiler
+T13	FOOD 55 70	red bell pepper
+T14	TOOL 74 95	a medium baking sheet
+T15	AC 101 107	season
+T16	FOOD 113 117	salt
+T17	FOOD 122 128	pepper
+T18	DUR 139 154	5 to 10 minutes
+T19	FOOD 198 206	baguette
+T20	FOOD 254 265	goat cheese
+T21	FOOD 237 248	bottom half
+T22	FOOD 279 287	tapenade
+T23	FOOD 303 311	eggplant
+T24	FOOD 316 326	red pepper
+T25	FOOD 347 362	Parmesan cheese
+T26	FOOD 378 398	top half of baguette
+T27	OTHER 412 420	4 pieces
+T28	CONDITION_CLAUSE 156 189	until tender and slightly browned
+R1	Arg1_PPT Arg1:T1 Arg2:T12	
+R2	Arg1_PPT Arg1:T2 Arg2:T11	
+R3	Arg1_PPT Arg1:T2 Arg2:T13	
+R4	Arg3_GOL Arg1:T2 Arg2:T14	
+R5	Arg1_GOL_X Arg1:T15 Arg2:T2	
+R6	Arg2_PPT Arg1:T15 Arg2:T16	
+R7	Arg2_PPT Arg1:T15 Arg2:T17	
+R8	ArgM_TMP Arg1:T3 Arg2:T18	
+R9	ArgM_TMP Arg1:T3 Arg2:T28	
+R10	Arg1_PPT_X Arg1:T3 Arg2:T15	
+R11	Arg1_PPT Arg1:T4 Arg2:T19	
+T29	OTHER 210 225	half lengthwise
+R12	ArgM_MNR Arg1:T4 Arg2:T29	
+R13	Arg1_PPT Arg1:T5 Arg2:T20	
+R14	Arg2_GOL Arg1:T5 Arg2:T21	
+R15	Arg1_PPT Arg1:T5 Arg2:T22	
+R16	Arg1_PPT Arg1:T6 Arg2:T23	
+R17	Arg1_PPT Arg1:T6 Arg2:T24	
+R18	Arg2_GOL_X Arg1:T6 Arg2:T5	
+R19	Arg1_PPT Arg1:T7 Arg2:T25	
+R20	Arg2_GOL_X Arg1:T7 Arg2:T6	
+R21	Arg2_PPT Arg1:T8 Arg2:T26	
+R22	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R23	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R24	Arg3_PRD Arg1:T9 Arg2:T27	
+R25	Arg1_PPT_X Arg1:T10 Arg2:T9	
+#1	AnnotatorNotes R5	the eggplant mixture; the eggplant and pepper;
+#2	AnnotatorNotes R10	the eggplant mixture; the seasoned eggplant mixture
+#3	AnnotatorNotes R18	the bagutte; the bottom half of the baguette
+#4	AnnotatorNotes R20	the bagutte; the bagutte with eggplant and pepper
+#5	AnnotatorNotes R22	the baguette; the baguette with cheese; the baguette with Parmesan cheese
+#6	AnnotatorNotes R23	the baguette sandwich; the full baguette
+#7	AnnotatorNotes R25	the 4 pieces of baguette; the baguette sandwiches

@@ -1,0 +1,93 @@
+T1	AC 3 7	Heat
+T2	AC 67 70	Add
+T3	AC 132 137	Drain
+T4	AC 248 251	Add
+T5	AC 353 356	Add
+T6	AC 310 315	Raise
+T7	AC 344 348	boil
+T8	TOOL 316 320	heat
+T9	TEMPERATURE 324 328	high
+T10	FOOD 357 366	the beans
+T11	FOOD 368 372	corn
+T12	FOOD 374 381	chicken
+T13	FOOD 386 391	salsa
+T14	AC 396 402	Reduce
+T15	TOOL 403 407	heat
+T16	TEMPERATURE 411 414	low
+T17	AC 416 420	stir
+T18	AC 425 431	simmer
+T19	DUR 436 451	about 2 minutes
+T20	CONDITION_CLAUSE 456 513	until chicken is cooked through and no longer pink inside
+T21	AC 518 521	Add
+T22	FOOD 522 534	the cilantro
+T23	FOOD 539 575	half of the reserved tortilla strips
+T24	AC 581 586	Ladle
+T25	TOOL 592 608	individual bowls
+T26	AC 613 620	garnish
+T27	TOOL 621 630	each bowl
+T28	FOOD 636 664	some of the remaining strips
+T29	FOOD 252 261	the broth
+T30	FOOD 263 268	cumin
+T31	FOOD 270 282	chili powder
+T32	FOOD 287 294	oregano
+T33	TOOL 298 305	the pot
+T34	FOOD 8 30	2 teaspoons of the oil
+T35	TOOL 34 45	a large pot
+T36	TEMPERATURE 51 62	medium heat
+T37	FOOD 71 98	half of the tortilla strips
+T38	AC 100 108	stirring
+T39	CONDITION_CLAUSE 116 127	until crisp
+T40	TOOL 141 153	paper towels
+T41	AC 158 164	Repeat
+T42	FOOD 170 199	remaining 1/2 teaspoon of oil
+T43	FOOD 204 229	remaining tortilla strips
+T44	AC 234 243	set aside
+R1	Arg1_PPT Arg1:T1 Arg2:T34	
+R2	ArgM_LOC Arg1:T1 Arg2:T35	
+R3	ArgM_MNR Arg1:T1 Arg2:T36	
+R4	Arg1_PPT Arg1:T2 Arg2:T37	
+R5	Simultaneous Arg1:T2 Arg2:T38	
+R6	ArgM_TMP Arg1:T38 Arg2:T39	
+R7	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+R8	ArgM_LOC Arg1:T3 Arg2:T40	
+R9	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R10	Arg1_PPT Arg1:T41 Arg2:T42	
+R11	Arg1_PPT Arg1:T41 Arg2:T43	
+R12	Arg1_PPT_X Arg1:T44 Arg2:T41	
+R13	Arg1_PPT Arg1:T4 Arg2:T29	
+R14	Arg1_PPT Arg1:T4 Arg2:T30	
+R15	Arg1_PPT Arg1:T4 Arg2:T31	
+R16	Arg1_PPT Arg1:T4 Arg2:T32	
+R17	Arg2_PPT Arg1:T4 Arg2:T33	
+R18	Arg1_PPT Arg1:T6 Arg2:T8	
+R19	ArgM_MNR Arg1:T6 Arg2:T9	
+R20	Arg1_PPT_X Arg1:T7 Arg2:T4	
+R21	Arg1_PPT Arg1:T5 Arg2:T10	
+R22	Arg1_PPT Arg1:T5 Arg2:T11	
+R23	Arg1_PPT Arg1:T5 Arg2:T12	
+R24	Arg1_PPT Arg1:T5 Arg2:T13	
+R25	Arg2_PPT_Z Arg1:T5 Arg2:T7	
+R26	Arg1_PPT Arg1:T14 Arg2:T15	
+R27	Arg4_GOL Arg1:T14 Arg2:T16	
+R28	Arg1_PPT_X Arg1:T17 Arg2:T5	
+R29	Arg1_PPT_X Arg1:T18 Arg2:T17	
+R30	ArgM_MNR Arg1:T7 Arg2:T9	
+R31	ArgM_MNR Arg1:T18 Arg2:T16	
+R32	ArgM_TMP Arg1:T18 Arg2:T19	
+R33	ArgM_TMP Arg1:T18 Arg2:T20	
+R34	Arg1_PPT Arg1:T21 Arg2:T22	
+R35	Arg1_PPT Arg1:T21 Arg2:T23	
+R36	Arg2_PPT_Z Arg1:T21 Arg2:T18	
+R37	Arg1_PPT_X Arg1:T24 Arg2:T21	
+R38	Arg3_GOL Arg1:T24 Arg2:T25	
+R39	Arg1_GOL Arg1:T26 Arg2:T27	
+R40	Arg2_PPT Arg1:T26 Arg2:T28	
+#1	AnnotatorNotes R7	the oil; the heated oil; the hot oil; the oil in the pot
+#2	AnnotatorNotes R9	the tortilla strips; the crisp tortilla strips; the fried tortilla chips; the fried tortilla; the fried strips
+#3	AnnotatorNotes R12	the tortilla strips; the crisp tortilla strips; the fried tortilla chips; the fried tortilla
+#4	AnnotatorNotes R20	the broth; the broth in the pot; the spiced broth; the spiced broth in the pot
+#5	AnnotatorNotes R25	the broth; the boiled broth; the spiced broth; the hot broth
+#6	AnnotatorNotes R28	the soup; the chicken soup; the heated soup; the heated chicken soup; the hot soup; the hot chicken soup
+#7	AnnotatorNotes R29	the soup; the chicken soup; the heated soup; the heated chicken soup; the hot soup; the hot chicken soup
+#8	AnnotatorNotes R36	the soup; the chicken soup; the cooked chicken soup
+#9	AnnotatorNotes R37	the soup; the chicken soup; the soup with tortilla; the soup with tortilla strips; the chicke soup with tortilla strips

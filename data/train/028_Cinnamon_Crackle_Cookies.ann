@@ -1,0 +1,48 @@
+T1	TOOL 6 19	a mixing bowl
+T2	AC 21 26	cream
+T3	FOOD 27 33	butter
+T4	FOOD 35 45	shortening
+T5	FOOD 50 56	sugars
+T6	AC 61 64	Add
+T7	FOOD 65 68	egg
+T8	FOOD 73 81	extracts
+T9	AC 83 86	mix
+T10	AC 96 103	Combine
+T11	FOOD 104 130	the next eight ingredients
+T12	AC 142 145	add
+T13	FOOD 149 168	the creamed mixture
+T14	AC 173 178	Shape
+T15	FOOD 184 194	1-in balls
+T16	AC 196 203	roll in
+T17	TOOL 219 242	ungreased baking sheets
+T18	FOOD 204 209	sugar
+T19	AC 247 251	Bake
+T20	TEMPERATURE 255 268	350 degrees F
+T21	DUR 273 286	10-15 minutes
+T22	CONDITION_CLAUSE 290 311	until lightly browned
+R1	ArgM_LOC Arg1:T2 Arg2:T1	
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg1_PPT Arg1:T2 Arg2:T4	
+R4	Arg1_PPT Arg1:T2 Arg2:T5	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	Arg1_PPT Arg1:T6 Arg2:T8	
+R7	Arg2_PPT_Z Arg1:T6 Arg2:T2	
+R8	Arg1_PPT_X Arg1:T9 Arg2:T6	
+R9	Arg1_PPT Arg1:T10 Arg2:T11	
+R10	Arg2_PPT Arg1:T12 Arg2:T13	
+R11	Arg1_PPT_X Arg1:T12 Arg2:T10	
+R12	Arg2_PRD Arg1:T14 Arg2:T15	
+R13	ArgM_LOC Arg1:T16 Arg2:T17	
+R14	Arg1_PPT Arg1:T16 Arg2:T18	
+R15	Arg2_PPT_Z Arg1:T16 Arg2:T14	
+R16	ArgM_MNR Arg1:T19 Arg2:T20	
+R17	ArgM_TMP Arg1:T19 Arg2:T21	
+R18	ArgM_TMP Arg1:T19 Arg2:T22	
+#1	AnnotatorNotes R7	the mixture; the sugar mixture
+#2	AnnotatorNotes R8	the ingredients
+#3	AnnotatorNotes R11	the combined ingredients
+R19	Arg1_PPT_X Arg1:T14 Arg2:T12	
+#4	AnnotatorNotes R19	the dough
+#5	AnnotatorNotes R15	the balls
+R20	Arg1_PPT_X Arg1:T19 Arg2:T16	
+#6	AnnotatorNotes R20	the cookies

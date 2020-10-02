@@ -1,0 +1,67 @@
+T1	AC 3 10	Preheat
+T2	AC 53 56	mix
+T4	AC 174 181	combine
+T5	AC 232 237	Brush
+T6	AC 295 302	Arrange
+T7	AC 331 335	cook
+T8	AC 389 392	top
+T9	TOOL 11 16	grill
+T10	TEMPERATURE 21 30	high heat
+T11	TOOL 38 51	a medium bowl
+T12	FOOD 66 70	corn
+T13	FOOD 72 81	red onion
+T14	FOOD 83 89	jicama
+T15	FOOD 91 106	red bell pepper
+T16	FOOD 112 120	cilantro
+T17	FOOD 133 143	lime juice
+T18	FOOD 148 152	zest
+T19	FOOD 182 196	cayenne pepper
+T20	FOOD 198 217	ground black pepper
+T21	FOOD 223 227	salt
+T22	TOOL 160 172	a small bowl
+T24	FOOD 255 264	olive oil
+T25	FOOD 303 310	fillets
+T26	TOOL 314 325	grill grate
+T27	DUR 340 349	3 minutes
+T30	FOOD 417 421	fish
+T31	FOOD 423 433	sour cream
+T32	FOOD 439 449	corn salsa
+T33	FOOD 284 290	spices
+T34	AC 270 278	sprinkle
+R1	Arg1_PPT Arg1:T1 Arg2:T9	
+R2	Arg1_PPT Arg1:T2 Arg2:T12	
+R3	Arg1_PPT Arg1:T2 Arg2:T13	
+R4	Arg1_PPT Arg1:T2 Arg2:T14	
+R5	Arg1_PPT Arg1:T2 Arg2:T15	
+R6	Arg1_PPT Arg1:T2 Arg2:T16	
+R7	ArgM_LOC Arg1:T2 Arg2:T11	
+T3	AC 125 132	Stir in
+R8	Arg1_PPT Arg1:T3 Arg2:T17	
+R9	Arg1_PPT Arg1:T3 Arg2:T18	
+R10	Arg2_PPT_Z Arg1:T3 Arg2:T2	
+R11	Arg1_PPT Arg1:T4 Arg2:T19	
+R12	Arg1_PPT Arg1:T4 Arg2:T20	
+R13	Arg1_PPT Arg1:T4 Arg2:T21	
+R14	ArgM_LOC Arg1:T4 Arg2:T22	
+T23	FOOD 238 249	each fillet
+R17	Arg1_PPT Arg1:T34 Arg2:T33	
+R18	Arg2_GOL_X Arg1:T34 Arg2:T5	
+R15	TODO Arg1:T5 Arg2:T24	
+R16	Arg1_PPT Arg1:T5 Arg2:T23	
+R19	Arg1_PPT Arg1:T6 Arg2:T25	
+R20	Arg3_GOL Arg1:T6 Arg2:T26	
+R22	ArgM_TMP Arg1:T7 Arg2:T27	
+T35	OTHER 350 358	per side
+R21	TODO Arg1:T7 Arg2:T35	
+T29	FOOD 393 411	two corn tortillas
+R23	Arg2_PPT Arg1:T8 Arg2:T30	
+R24	Arg2_PPT Arg1:T8 Arg2:T31	
+R25	Arg2_PPT Arg1:T8 Arg2:T32	
+R26	Arg1_GOL Arg1:T8 Arg2:T29	
+T28	FOOD 363 387	For each fiery fish taco
+R27	TODO Arg1:T8 Arg2:T28	
+R28	ArgM_MNR Arg1:T1 Arg2:T10	
+R29	Arg1_PPT_X Arg1:T7 Arg2:T6	
+#1	AnnotatorNotes R10	the vegetables; the vegetables in the bowl
+#2	AnnotatorNotes R18	the fillets; the fillets brushed with olive oil
+#3	AnnotatorNotes R29	the fillets; the fillets on the grill grate

@@ -1,0 +1,73 @@
+T1	AC 3 7	Cook
+T2	FOOD 8 23	lasagna noodles
+T3	AC 57 65	omitting
+T4	FOOD 66 70	salt
+T5	FOOD 75 78	fat
+T6	AC 80 85	drain
+T7	AC 95 102	Combine
+T8	FOOD 103 110	cheeses
+T9	FOOD 115 133	next 3 ingredients
+T10	OTHER 37 55	package directions
+T11	AC 135 143	stirring
+T12	AC 153 159	Spread
+T13	FOOD 160 174	cheese mixture
+T14	FOOD 180 203	one side of each noodle
+T16	AC 208 213	Spoon
+T17	FOOD 214 225	black beans
+T18	FOOD 238 252	cheese mixture
+T19	AC 257 261	Roll
+T20	FOOD 265 272	noodles
+T21	FOOD 274 291	jellyroll fashion
+T22	AC 293 302	beginning
+T23	FOOD 306 317	narrow ends
+T24	AC 322 327	Place
+T25	FOOD 328 341	lasagna rolls
+T26	TOOL 363 398	an 11- x 7- x 11/2-inch baking dish
+T27	OTHER 399 424	coated with cooking spray
+T28	AC 429 434	Cover
+T29	AC 439 443	bake
+T30	TEMPERATURE 447 458	350 degrees
+T31	DUR 463 473	25 minutes
+T32	CONDITION_CLAUSE 477 500	until thoroughly heated
+T33	PURPOSE_CLAUSE 505 513	To serve
+T34	AC 515 520	spoon
+T35	FOOD 521 526	salsa
+T36	FOOD 539 544	rolls
+T37	AC 550 557	garnish
+T38	FOOD 563 578	cilantro sprigs
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T10	
+R3	Arg1_PPT Arg1:T3 Arg2:T4	
+R4	Arg1_PPT Arg1:T3 Arg2:T5	
+R5	Simultaneous Arg1:T1 Arg2:T3	
+R6	Arg1_PPT_X Arg1:T6 Arg2:T1	
+R7	Arg1_PPT Arg1:T7 Arg2:T8	
+R8	Arg1_PPT Arg1:T7 Arg2:T9	
+R11	Arg1_PPT Arg1:T12 Arg2:T13	
+R12	Arg2_GOL Arg1:T12 Arg2:T14	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg2_GOL Arg1:T16 Arg2:T18	
+R16	Arg1_PPT Arg1:T19 Arg2:T20	
+R17	Arg1_PPT Arg1:T19 Arg2:T21	
+R18	Simultaneous Arg1:T19 Arg2:T22	
+R19	Arg1_PPT Arg1:T24 Arg2:T25	
+R21	Arg3_GOL Arg1:T24 Arg2:T26	
+R22	TODO Arg1:T26 Arg2:T27	
+R23	Arg1_PPT_X Arg1:T29 Arg2:T28	
+R24	ArgM_MNR Arg1:T29 Arg2:T30	
+R25	ArgM_TMP Arg1:T29 Arg2:T31	
+R26	ArgM_TMP Arg1:T29 Arg2:T32	
+R27	Arg1_PPT Arg1:T34 Arg2:T35	
+R28	Arg2_GOL Arg1:T34 Arg2:T36	
+R29	Arg1_PPT Arg1:T37 Arg2:T38	
+R31	ArgM_PRP Arg1:T34 Arg2:T33	
+R32	Arg1_PPT_X Arg1:T28 Arg2:T24	
+#1	AnnotatorNotes R6	the noodles; the lasagna noodles
+R9	Arg1_PPT_X Arg1:T11 Arg2:T7	
+#2	AnnotatorNotes R9	the mixture
+#3	AnnotatorNotes R32	the baking dish; the lasagna rolls
+#4	AnnotatorNotes R23	the lasagna rolls
+T15	CONDITION_CLAUSE 580 590	if desired
+R10	ArgM_TMP Arg1:T37 Arg2:T15	
+R13	Arg1_PPT_X Arg1:T37 Arg2:T34	
+#5	AnnotatorNotes R13	the lasagna rolls

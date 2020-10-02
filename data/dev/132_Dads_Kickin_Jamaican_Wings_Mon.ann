@@ -1,0 +1,58 @@
+T1	AC 3 8	Place
+T2	FOOD 9 27	the jerk seasoning
+T3	FOOD 29 32	oil
+T4	FOOD 34 40	garlic
+T5	FOOD 42 48	ginger
+T6	FOOD 50 62	green onions
+T7	FOOD 68 83	jalapeno slices
+T8	TOOL 87 96	a blender
+T9	AC 102 107	blend
+T10	CONDITION_CLAUSE 108 130	until thick and smooth
+T11	AC 135 139	Dunk
+T12	FOOD 140 145	wings
+T13	FOOD 149 160	the mixture
+T14	AC 166 173	arrange
+T15	OTHER 177 189	single layer
+T16	TOOL 193 206	baking sheets
+T17	AC 211 216	Cover
+T18	TOOL 222 235	aluminum foil
+T19	AC 241 252	refrigerate
+T20	DUR 253 260	8 hours
+T21	DUR 265 274	overnight
+T22	AC 279 286	Preheat
+T23	TOOL 287 291	oven
+T24	TEMPERATURE 295 308	300 degrees F
+T25	TEMPERATURE 310 323	150 degrees C
+T26	AC 329 333	Bake
+T27	FOOD 334 339	wings
+T28	DUR 340 347	2 hours
+T29	TOOL 351 369	the preheated oven
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T1 Arg2:T5	
+R5	Arg1_PPT Arg1:T1 Arg2:T6	
+R6	Arg1_PPT Arg1:T1 Arg2:T7	
+R7	ArgM_LOC Arg1:T1 Arg2:T8	
+R8	ArgM_TMP Arg1:T9 Arg2:T10	
+R9	Arg1_PPT_X Arg1:T9 Arg2:T1	
+R10	Arg1_PPT Arg1:T11 Arg2:T12	
+R11	Arg2_GOL Arg1:T11 Arg2:T13	
+R12	ArgM_LOC Arg1:T14 Arg2:T16	
+R13	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R14	ArgM_MNR Arg1:T14 Arg2:T15	
+R15	Arg2_PPT Arg1:T17 Arg2:T18	
+R16	Arg1_PPT_X Arg1:T17 Arg2:T14	
+R17	Arg1_PPT_X Arg1:T19 Arg2:T17	
+R18	ArgM_TMP Arg1:T19 Arg2:T20	
+R19	ArgM_TMP Arg1:T19 Arg2:T21	
+R20	Arg1_PPT Arg1:T22 Arg2:T23	
+R21	ArgM_MNR Arg1:T22 Arg2:T24	
+R22	ArgM_MNR Arg1:T22 Arg2:T25	
+R23	Arg1_PPT Arg1:T26 Arg2:T27	
+R24	ArgM_TMP Arg1:T26 Arg2:T28	
+R25	ArgM_LOC Arg1:T26 Arg2:T29	
+#1	AnnotatorNotes R13	the dunked wings; the seasoned wings; the wings
+#2	AnnotatorNotes R17	the mixture; the covered wings; the wings mixture; 
+#3	AnnotatorNotes R9	the seasoning; the jerk sauce; the garlic mixture
+#4	AnnotatorNotes R16	the wings; the wings on baking sheets; the seasoned wings

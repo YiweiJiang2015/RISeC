@@ -1,0 +1,16 @@
+T1	TOOL 6 18	a small bowl
+T2	AC 20 24	stir
+T3	FOOD 25 42	the food coloring
+T4	FOOD 48 67	the evaporated milk
+T5	AC 72 77	Paint
+T6	FOOD 83 90	cookies
+T7	TOOL 96 108	a paintbrush
+T8	CONDITION_CLAUSE 109 122	before baking
+R1	ArgM_LOC Arg1:T2 Arg2:T1	
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg2_PPT Arg1:T2 Arg2:T4	
+R4	Arg1_GOL Arg1:T5 Arg2:T6	
+R5	ArgM_MEANS Arg1:T5 Arg2:T7	
+R6	ArgM_TMP Arg1:T5 Arg2:T8	
+R7	Arg2_PPT_Z Arg1:T5 Arg2:T2	
+#1	AnnotatorNotes R7	The milk; The stirred milk

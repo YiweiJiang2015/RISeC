@@ -1,0 +1,68 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 57	Stir
+T6	FOOD 67 78	lemon juice
+T7	FOOD 80 90	corn syrup
+T8	FOOD 92 101	soy sauce
+T9	FOOD 103 107	salt
+T10	FOOD 109 115	ginger
+T11	FOOD 121 129	corn oil
+T12	TOOL 133 139	a bowl
+T13	CONDITION_CLAUSE 140 152	until smooth
+T14	AC 157 164	Stir in
+T15	FOOD 165 186	the crushed pineapple
+T16	FOOD 192 202	its liquid
+T17	AC 207 212	Place
+T18	FOOD 213 229	the chicken legs
+T19	TOOL 233 263	an ovenproof glass baking dish
+T20	AC 269 273	pour
+T21	FOOD 274 279	sauce
+T22	FOOD 285 288	top
+T23	AC 293 297	Bake
+T24	TOOL 301 315	preheated oven
+T25	DUR 320 330	30 minutes
+T26	AC 337 341	turn
+T27	FOOD 342 353	the chicken
+T28	AC 373 380	cooking
+T29	CONDITION_CLAUSE 381 428	until the chicken is tender, and no longer pink
+T30	DUR 436 446	20 minutes
+T31	AC 451 456	Baste
+T32	FOOD 462 467	sauce
+T33	AC 485 491	baking
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T5 Arg2:T8	
+R7	Arg1_PPT Arg1:T5 Arg2:T9	
+R8	Arg1_PPT Arg1:T5 Arg2:T10	
+R9	Arg1_PPT Arg1:T5 Arg2:T11	
+R10	ArgM_MNR Arg1:T5 Arg2:T12	
+R11	ArgM_TMP Arg1:T5 Arg2:T13	
+R12	Arg1_PPT Arg1:T14 Arg2:T15	
+R13	Arg1_PPT Arg1:T14 Arg2:T16	
+R14	Arg2_GOL_X Arg1:T14 Arg2:T5	
+R16	Arg1_PPT Arg1:T17 Arg2:T18	
+R17	Arg3_GOL Arg1:T17 Arg2:T19	
+R18	Arg1_PPT Arg1:T20 Arg2:T21	
+R19	Arg3_GOL Arg1:T20 Arg2:T22	
+#1	AnnotatorNotes T22	part-of relation, link to what?
+R20	ArgM_LOC Arg1:T23 Arg2:T24	
+R21	ArgM_TMP Arg1:T23 Arg2:T25	
+R22	Arg1_PPT Arg1:T26 Arg2:T27	
+R23	ArgM_TMP Arg1:T28 Arg2:T29	
+R24	ArgM_TMP Arg1:T28 Arg2:T30	
+R25	Arg1_PPT_X Arg1:T23 Arg2:T20	
+R26	Arg2_PPT Arg1:T31 Arg2:T32	
+R27	Simultaneous Arg1:T31 Arg2:T33	
+R28	Arg1_GOL_X Arg1:T31 Arg2:T28	
+R29	Arg1_PPT_X Arg1:T28 Arg2:T26	
+#2	AnnotatorNotes R14	the sauce
+#3	AnnotatorNotes R25	the chicken; the chicken legs
+#4	AnnotatorNotes R29	the chicken
+#5	AnnotatorNotes R28	the chicken
+R15	Arg1_PPT_X Arg1:T33 Arg2:T31	
+#6	AnnotatorNotes R15	the chicken

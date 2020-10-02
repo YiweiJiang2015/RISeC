@@ -1,0 +1,110 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	325 degrees F
+T4	TEMPERATURE 34 47	165 degrees C
+T5	AC 53 58	Spray
+T6	TOOL 59 73	a baking sheet
+T7	FOOD 79 108	a thin layer of cooking spray
+T8	AC 113 118	Place
+T9	FOOD 119 132	squash halves
+T10	OTHER 133 146	cut side down
+T11	TOOL 150 166	the baking sheet
+T12	AC 171 175	Bake
+T13	FOOD 176 182	squash
+T14	DUR 183 193	35 minutes
+T15	TOOL 197 215	the preheated oven
+T16	CONDITION_CLAUSE 220 256	until a knife can be easily inserted
+T17	AC 261 267	Remove
+T18	TOOL 273 277	oven
+T19	AC 283 287	cool
+T20	AC 303 308	spray
+T21	TOOL 309 329	a non-stick saucepan
+T22	FOOD 335 348	cooking spray
+T23	OTHER 358 369	medium heat
+T24	AC 371 376	saute
+T25	FOOD 377 386	the onion
+T26	FOOD 391 397	garlic
+T27	CONDITION_CLAUSE 398 416	until golden brown
+T28	AC 421 428	Stir in
+T29	FOOD 429 437	tomatoes
+T30	FOOD 439 444	basil
+T31	FOOD 446 459	bouillon cube
+T32	FOOD 465 477	black pepper
+T33	AC 482 486	Cook
+T34	DUR 497 507	15 minutes
+T35	CONDITION_CLAUSE 512 547	until you have a medium thick sauce
+T36	AC 553 559	Remove
+T37	FOOD 560 574	squash strands
+T38	TOOL 580 586	a fork
+T39	AC 588 597	reserving
+T40	FOOD 598 608	the shells
+T41	AC 614 619	Layer
+T42	FOOD 620 629	each half
+T43	FOOD 635 658	a spoonful of the sauce
+T44	OTHER 660 667	a layer
+T45	FOOD 671 695	spaghetti squash strands
+T46	FOOD 697 703	olives
+T47	FOOD 709 726	mozzarella cheese
+T48	AC 732 738	Repeat
+T49	FOOD 739 745	layers
+T50	CONDITION_CLAUSE 746 767	until shells are full
+T51	CONDITION_CLAUSE 772 809	until all of the ingredients are used
+T52	AC 815 818	Top
+T53	FOOD 824 839	Parmesan cheese
+T54	AC 845 849	Bake
+T55	DUR 854 864	20 minutes
+T56	CONDITION_CLAUSE 868 886	the preheated oven
+T57	CONDITION_CLAUSE 891 918	until Parmesan cheese melts
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg2_GOL Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	ArgM_MNR Arg1:T8 Arg2:T10	
+R8	Arg3_GOL Arg1:T8 Arg2:T11	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	ArgM_TMP Arg1:T12 Arg2:T14	
+R11	ArgM_LOC Arg1:T12 Arg2:T15	
+R12	ArgM_TMP Arg1:T12 Arg2:T16	
+R13	Arg2_DIR Arg1:T17 Arg2:T18	
+R14	Arg1_PPT_X Arg1:T17 Arg2:T12	
+R15	Arg1_PPT_X Arg1:T19 Arg2:T17	
+R16	Arg2_GOL Arg1:T20 Arg2:T21	
+R17	Arg1_PPT Arg1:T20 Arg2:T22	
+R18	ArgM_MNR Arg1:T24 Arg2:T23	
+R19	Arg1_PPT Arg1:T24 Arg2:T25	
+R20	Arg1_PPT Arg1:T24 Arg2:T26	
+R21	ArgM_TMP Arg1:T24 Arg2:T27	
+R22	Arg1_PPT Arg1:T28 Arg2:T29	
+R23	Arg1_PPT Arg1:T28 Arg2:T30	
+R24	Arg1_PPT Arg1:T28 Arg2:T31	
+R25	Arg1_PPT Arg1:T28 Arg2:T32	
+R26	Arg2_PPT_Z Arg1:T28 Arg2:T24	
+R27	ArgM_TMP Arg1:T33 Arg2:T34	
+R28	ArgM_TMP Arg1:T33 Arg2:T35	
+R29	Arg1_PPT Arg1:T36 Arg2:T37	
+R30	ArgM_MEANS Arg1:T36 Arg2:T38	
+R31	Simultaneous Arg1:T36 Arg2:T39	
+R32	Arg1_PPT Arg1:T39 Arg2:T40	
+R33	Arg2_GOL Arg1:T41 Arg2:T42	
+R34	Arg1_PPT Arg1:T41 Arg2:T43	
+R39	Arg1_PPT Arg1:T48 Arg2:T49	
+R40	ArgM_TMP Arg1:T48 Arg2:T50	
+R41	ArgM_TMP Arg1:T48 Arg2:T51	
+R42	Arg1_PPT Arg1:T52 Arg2:T53	
+R43	ArgM_TMP Arg1:T54 Arg2:T55	
+R44	ArgM_TMP Arg1:T54 Arg2:T56	
+R45	ArgM_TMP Arg1:T54 Arg2:T57	
+R35	Arg1_PPT Arg1:T41 Arg2:T45	
+R36	Arg1_PPT Arg1:T41 Arg2:T46	
+R37	Arg1_PPT Arg1:T41 Arg2:T47	
+#1	AnnotatorNotes R14	the squash; the squash on the baking sheet
+#2	AnnotatorNotes R15	the baked squash; the baked squash out of oven
+#3	AnnotatorNotes R26	the onion and garlic; the golden brown onion
+R38	Arg1_PPT_X Arg1:T52 Arg2:T48	
+R46	Arg1_PPT_X Arg1:T54 Arg2:T52	
+R47	Arg1_PPT_X Arg1:T33 Arg2:T28	
+#4	AnnotatorNotes R47	the vegetables; the onion mixture
+#5	AnnotatorNotes R38	the squash layers; the squash layers full of mixture
+#6	AnnotatorNotes R46	the squash with cheese; the squash topped with cheese

@@ -1,0 +1,93 @@
+T1	TOOL 6 21	a large skillet
+T2	AC 23 27	heat
+T3	FOOD 28 31	oil
+T4	AC 36 39	Add
+T5	FOOD 40 57	1/2 of the garlic
+T7	AC 62 68	Season
+T8	FOOD 69 74	flour
+T9	FOOD 80 97	poultry seasoning
+T10	AC 102 108	Dredge
+T11	FOOD 109 122	chicken parts
+T12	AC 138 143	brown
+T13	TOOL 147 158	the skillet
+T14	DUR 163 177	4 or 5 minutes
+T15	AC 182 185	Add
+T16	FOOD 186 197	the sausage
+T17	AC 203 208	saute
+T18	DUR 213 226	a few minutes
+T19	AC 231 234	Add
+T20	FOOD 235 244	the onion
+T21	FOOD 246 253	carrots
+T22	FOOD 255 264	mushrooms
+T23	FOOD 266 274	rosemary
+T24	FOOD 279 299	the remaining garlic
+T25	AC 304 308	Stir
+T26	FOOD 309 312	all
+T27	AC 326 329	Add
+T28	FOOD 330 338	the wine
+T29	FOOD 343 351	tomatoes
+T30	AC 353 357	stir
+T31	AC 362 367	Cover
+T32	AC 376 382	simmer
+T33	TEMPERATURE 388 396	low heat
+T34	DUR 401 411	25 minutes
+T35	AC 417 423	Season
+T36	FOOD 429 433	salt
+T37	FOOD 438 444	pepper
+T38	AC 448 453	taste
+T39	AC 462 468	simmer
+T40	DUR 473 491	another 10 minutes
+T41	AC 501 505	cool
+T42	DUR 518 528	10 minutes
+T43	AC 535 540	serve
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	ArgM_LOC Arg1:T2 Arg2:T1	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R5	Arg1_GOL Arg1:T7 Arg2:T8	
+R6	Arg2_PPT Arg1:T7 Arg2:T9	
+R7	Arg1_PPT Arg1:T10 Arg2:T11	
+T44	FOOD 126 131	flour
+R8	Arg3_GOL Arg1:T10 Arg2:T44	
+R9	ArgM_LOC Arg1:T12 Arg2:T13	
+R10	ArgM_TMP Arg1:T12 Arg2:T14	
+R11	Arg1_PPT Arg1:T15 Arg2:T16	
+R12	ArgM_TMP Arg1:T17 Arg2:T18	
+R13	Arg1_PPT Arg1:T12 Arg2:T10	
+R14	Arg2_PPT_Z Arg1:T15 Arg2:T12	
+R15	Arg1_PPT Arg1:T17 Arg2:T15	
+R16	Arg1_PPT Arg1:T19 Arg2:T20	
+R17	Arg1_PPT Arg1:T19 Arg2:T21	
+R18	Arg1_PPT Arg1:T19 Arg2:T22	
+R19	Arg1_PPT Arg1:T19 Arg2:T23	
+R20	Arg1_PPT Arg1:T19 Arg2:T24	
+R21	Arg1_PPT Arg1:T25 Arg2:T26	
+R22	Arg2_PPT_Z Arg1:T19 Arg2:T17	
+R23	Arg1_PPT Arg1:T27 Arg2:T28	
+R24	Arg1_PPT Arg1:T27 Arg2:T29	
+R25	Arg2_PPT_Z Arg1:T27 Arg2:T25	
+R26	ArgM_MNR Arg1:T32 Arg2:T33	
+R27	ArgM_TMP Arg1:T32 Arg2:T34	
+R28	Arg2_PPT Arg1:T35 Arg2:T36	
+R29	Arg2_PPT Arg1:T35 Arg2:T37	
+R30	Arg1_PPT_X Arg1:T30 Arg2:T27	
+R31	Arg1_PPT_X Arg1:T31 Arg2:T30	
+R32	Arg1_PPT_X Arg1:T32 Arg2:T31	
+R33	ArgM_PRP Arg1:T35 Arg2:T38	
+R34	Arg1_PPT_X Arg1:T39 Arg2:T35	
+R35	ArgM_TMP Arg1:T39 Arg2:T40	
+R36	ArgM_TMP Arg1:T41 Arg2:T42	
+R37	Arg1_PPT_X Arg1:T43 Arg2:T41	
+R38	Arg1_PPT_X Arg1:T41 Arg2:T39	
+R39	Arg2_PPT_Z Arg1:T4 Arg2:T2	
+R40	Arg1_GOL_X Arg1:T35 Arg2:T32	
+#1	AnnotatorNotes R39	the oil; the content of the skillet; the hot oil
+#2	AnnotatorNotes R14	the chicken; the browned chicken; 
+#3	AnnotatorNotes R22	fried chicken; fried chicken with sausage
+#4	AnnotatorNotes R25	the mix; the mixture; the content of the skillet
+#5	AnnotatorNotes R30	the mix; the mixture with wine
+#6	AnnotatorNotes R31	mixed ingredients; mixed chicken with sausage and greens
+#7	AnnotatorNotes R32	the mix; the covered mixture
+#8	AnnotatorNotes R40	the simmered mixture; the fried mix
+#9	AnnotatorNotes R34	the mix; the seasoned mixture
+#10	AnnotatorNotes R38	the mix; the almost ready mixture
+#11	AnnotatorNotes R37	the cooled mix; the ready-to-serve mix

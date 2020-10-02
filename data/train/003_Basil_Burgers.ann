@@ -1,0 +1,52 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 27	an outdoor grill
+T3	TEMPERATURE 32 41	high heat
+T4	TOOL 49 55	a bowl
+T5	AC 57 60	mix
+T6	FOOD 61 76	the ground beef
+T7	FOOD 78 98	Worcestershire sauce
+T8	FOOD 100 105	basil
+T9	FOOD 107 118	garlic salt
+T10	FOOD 124 130	pepper
+T11	AC 135 139	Form
+T12	FOOD 140 151	the mixture
+T13	FOOD 157 173	4 burger patties
+T14	AC 186 189	oil
+T15	TOOL 190 205	the grill grate
+T16	AC 211 215	cook
+T17	FOOD 216 223	burgers
+T18	DUR 230 239	6 minutes
+T19	AC 241 248	turning
+T20	OTHER 258 281	an internal temperature
+T21	TEMPERATURE 285 298	160 degrees F
+T22	TEMPERATURE 300 312	70 degrees C
+T24	AC 342 347	Serve
+T25	FOOD 351 365	hamburger buns
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R13	ArgM_TMP Arg1:T16 Arg2:T18	
+R14	ArgM_MNR Arg1:T16 Arg2:T21	
+R15	ArgM_MNR Arg1:T16 Arg2:T22	
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	ArgM_LOC Arg1:T5 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T5 Arg2:T8	
+R7	Arg1_PPT Arg1:T5 Arg2:T9	
+R8	Arg1_PPT Arg1:T5 Arg2:T10	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg3_PRD Arg1:T11 Arg2:T13	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T16 Arg2:T17	
+R17	Simultaneous Arg1:T16 Arg2:T19	
+R18	Arg2_PPT Arg1:T24 Arg2:T25	
+R19	Arg1_PPT_X Arg1:T24 Arg2:T16	
+#1	AnnotatorNotes T1	the outdoor grill; the heated outdoor grill
+#2	AnnotatorNotes T5	the mixture; the beef mixture
+#3	AnnotatorNotes T11	4 burger patties; 4 burger patties made from the beef mixture
+#4	AnnotatorNotes T14	the grill grate; the oiled grill grate
+#5	AnnotatorNotes T16	the burgers; the cooked burgers
+#6	AnnotatorNotes T19	the burgers; the cooked burgers
+#7	AnnotatorNotes T24	the burgers; the burgers on hamburger buns
+R16	Arg1_PPT_X Arg1:T19 Arg2:T16	
+#8	AnnotatorNotes R16	the burgers
+#9	AnnotatorNotes R19	the burgers; the basil burgers; the cooked burgers; the hot burgers

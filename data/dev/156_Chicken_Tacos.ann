@@ -1,0 +1,68 @@
+T1	TOOL 6 21	a large skillet
+T2	TEMPERATURE 27 38	medium heat
+T3	AC 40 47	combine
+T4	FOOD 48 55	chicken
+T5	FOOD 57 65	lemonade
+T6	FOOD 67 76	olive oil
+T7	FOOD 78 88	lime juice
+T8	FOOD 94 114	Worcestershire sauce
+T9	AC 119 125	Season
+T10	FOOD 131 144	garlic powder
+T11	FOOD 146 158	onion powder
+T12	FOOD 164 172	bay leaf
+T13	AC 177 183	Simmer
+T14	CONDITION_CLAUSE 184 237	until chicken is no longer pink, and juices run clear
+T15	DUR 239 255	15 to 20 minutes
+T16	AC 271 275	warm
+T17	FOOD 276 289	the tortillas
+T18	TOOL 293 301	the oven
+T19	AC 305 314	microwave
+T20	CONDITION_CLAUSE 315 325	until soft
+T21	CONDITION_CLAUSE 330 358	When chicken is fully cooked
+T22	AC 360 368	transfer
+T23	TOOL 372 384	serving bowl
+T24	AC 389 394	Place
+T25	FOOD 395 402	lettuce
+T26	FOOD 404 412	tomatoes
+T27	FOOD 414 420	cheese
+T28	FOOD 422 427	salsa
+T29	FOOD 433 443	sour cream
+T30	TOOL 447 461	serving dishes
+T31	AC 505 510	using
+T32	FOOD 511 538	their preferred ingredients
+T33	OTHER 466 477	Each person
+T34	FOOD 489 503	their own wrap
+T35	AC 482 488	create
+R1	Arg1_PPT Arg1:T3 Arg2:T4	
+R2	Arg1_PPT Arg1:T3 Arg2:T5	
+R3	Arg1_PPT Arg1:T3 Arg2:T6	
+R4	Arg1_PPT Arg1:T3 Arg2:T7	
+R5	Arg1_PPT Arg1:T3 Arg2:T8	
+R6	ArgM_LOC Arg1:T3 Arg2:T1	
+R7	ArgM_MNR Arg1:T3 Arg2:T2	
+R8	Arg2_PPT Arg1:T9 Arg2:T10	
+R9	Arg2_PPT Arg1:T9 Arg2:T11	
+R10	Arg2_PPT Arg1:T9 Arg2:T12	
+R11	Arg1_GOL_X Arg1:T9 Arg2:T3	
+R12	Arg1_PPT_X Arg1:T13 Arg2:T9	
+R13	ArgM_TMP Arg1:T13 Arg2:T14	
+R14	ArgM_TMP Arg1:T13 Arg2:T15	
+R15	Arg1_PPT Arg1:T16 Arg2:T17	
+R16	ArgM_LOC Arg1:T16 Arg2:T18	
+R17	ArgM_TMP Arg1:T19 Arg2:T20	
+R18	TODO Arg1:T16 Arg2:T19	
+R19	Arg3_GOL Arg1:T22 Arg2:T23	
+R20	Arg1_PPT_X Arg1:T22 Arg2:T16	
+R21	ArgM_TMP Arg1:T22 Arg2:T21	
+R22	Arg1_PPT Arg1:T24 Arg2:T25	
+R23	Arg1_PPT Arg1:T24 Arg2:T26	
+R24	Arg1_PPT Arg1:T24 Arg2:T27	
+R25	Arg1_PPT Arg1:T24 Arg2:T28	
+R26	Arg1_PPT Arg1:T24 Arg2:T29	
+R27	Arg3_GOL Arg1:T24 Arg2:T30	
+R28	Arg1_PPT Arg1:T35 Arg2:T34	
+R29	Simultaneous Arg1:T35 Arg2:T31	
+R30	Arg1_PPT Arg1:T31 Arg2:T32	
+#1	AnnotatorNotes R11	the mixture; the chicken mixture
+#2	AnnotatorNotes R12	the chicken; the seasoned chicken
+#3	AnnotatorNotes R20	the tortilla; the warmed tortillas

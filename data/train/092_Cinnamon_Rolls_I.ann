@@ -1,0 +1,128 @@
+T1	AC 3 8	Place
+T2	FOOD 9 14	water
+T3	FOOD 16 19	egg
+T4	FOOD 21 32	bread flour
+T5	FOOD 34 45	white sugar
+T6	FOOD 47 60	powdered milk
+T7	FOOD 62 66	salt
+T8	FOOD 68 88	5 tablespoons butter
+T9	FOOD 93 98	yeast
+T10	TOOL 102 115	bread machine
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T1 Arg2:T5	
+R5	Arg1_PPT Arg1:T1 Arg2:T6	
+R6	Arg1_PPT Arg1:T1 Arg2:T7	
+R7	Arg1_PPT Arg1:T1 Arg2:T8	
+R8	Arg1_PPT Arg1:T1 Arg2:T9	
+R9	Arg3_GOL Arg1:T1 Arg2:T10	
+T11	AC 163 169	Select
+T12	OTHER 170 183	DOUGH setting
+T13	AC 189 193	turn
+T14	TOOL 194 201	machine
+R10	Arg1_PPT Arg1:T13 Arg2:T14	
+R11	Arg1_PPT Arg1:T11 Arg2:T12	
+R12	Next Arg1:T11 Arg2:T13	
+T15	AC 241 245	melt
+T16	TOOL 223 239	a small saucepan
+T17	FOOD 246 260	1/3 cup butter
+R13	Arg1_PPT Arg1:T15 Arg2:T17	
+R14	ArgM_LOC Arg1:T15 Arg2:T16	
+T18	AC 265 268	Add
+T19	FOOD 269 288	1/2 cup brown sugar
+T20	FOOD 293 302	ice cream
+T21	AC 315 319	boil
+T22	AC 325 329	cook
+T23	DUR 334 343	2 minutes
+R15	ArgM_TMP Arg1:T22 Arg2:T23	
+R16	Arg1_PPT_X Arg1:T22 Arg2:T21	
+R17	Arg1_PPT_X Arg1:T21 Arg2:T18	
+R18	Arg1_PPT Arg1:T18 Arg2:T19	
+R19	Arg1_PPT Arg1:T18 Arg2:T20	
+R20	Arg2_PPT_Z Arg1:T18 Arg2:T15	
+T24	AC 348 352	Pour
+T26	TOOL 382 413	lightly greased 9 x 13 inch pan
+T28	FOOD 353 360	caramel
+R23	Arg1_PPT Arg1:T24 Arg2:T28	
+T29	AC 418 425	Preheat
+T30	TEMPERATURE 434 447	350 degrees F
+T31	TEMPERATURE 449 462	175 degrees C
+T32	TOOL 426 430	oven
+R25	Arg1_PPT Arg1:T29 Arg2:T32	
+R26	ArgM_MNR Arg1:T29 Arg2:T30	
+R27	ArgM_MNR Arg1:T29 Arg2:T31	
+T33	CONDITION_CLAUSE 468 501	When machine has finished cycling
+T34	AC 502 508	remove
+R28	ArgM_TMP Arg1:T34 Arg2:T33	
+T35	FOOD 509 514	dough
+T36	TOOL 520 523	pan
+T37	AC 528 532	turn
+T38	TOOL 547 570	lightly floured surface
+#2	AnnotatorNotes T38	Location?
+T39	AC 575 578	Pat
+T40	AC 606 612	Spread
+T41	AC 674 681	Crumble
+T42	AC 720 727	Roll up
+T43	AC 748 751	Cut
+T44	AC 818 822	rise
+T45	CONDITION_CLAUSE 823 844	until doubled in size
+T46	DUR 846 862	about 45 minutes
+R29	ArgM_TMP Arg1:T44 Arg2:T45	
+R30	ArgM_TMP Arg1:T44 Arg2:T46	
+T47	AC 868 872	Bake
+T48	TEMPERATURE 876 889	350 degrees F
+T49	TEMPERATURE 891 904	175 degrees C
+T50	DUR 924 940	20 to 25 minutes
+R31	ArgM_MNR Arg1:T47 Arg2:T48	
+R32	ArgM_MNR Arg1:T47 Arg2:T49	
+R33	Arg1_PPT_X Arg1:T47 Arg2:T44	
+R34	ArgM_TMP Arg1:T47 Arg2:T50	
+R35	TODO Arg1:T44 Arg2:T43	
+T51	FOOD 757 765	12 rolls
+T52	AC 771 776	place
+T53	TOOL 780 803	prepared pan of caramel
+R36	Arg1_PPT_X Arg1:T52 Arg2:T43	
+R37	Arg3_GOL Arg1:T52 Arg2:T53	
+R38	Arg1_PPT_X Arg1:T43 Arg2:T42	
+R39	Arg3_PRD Arg1:T43 Arg2:T51	
+T54	FOOD 738 742	edge
+T55	AC 733 737	seal
+R40	Arg1_PPT Arg1:T55 Arg2:T54	
+R41	Next Arg1:T42 Arg2:T55	
+T56	FOOD 682 701	1/2 cup brown sugar
+R42	Arg1_PPT Arg1:T41 Arg2:T56	
+T57	FOOD 579 584	dough
+R43	Arg1_PPT Arg1:T39 Arg2:T57	
+T58	OTHER 590 601	a rectangle
+R45	Arg2_GOL_X Arg1:T40 Arg2:T39	
+T59	FOOD 618 633	softened butter
+T60	AC 638 646	sprinkle
+T61	FOOD 660 668	cinnamon
+T62	OTHER 647 654	lightly
+R46	ArgM_MNR Arg1:T60 Arg2:T62	
+R47	Arg1_PPT Arg1:T60 Arg2:T61	
+R48	Arg2_GOL_X Arg1:T60 Arg2:T40	
+R49	Arg1_PPT Arg1:T40 Arg2:T59	
+R50	Arg1_PPT Arg1:T34 Arg2:T35	
+R51	Arg2_DIR Arg1:T34 Arg2:T36	
+R53	Arg3_GOL Arg1:T37 Arg2:T38	
+R54	Arg1_PPT_X Arg1:T42 Arg2:T41	
+T63	OTHER 707 714	the top
+R22	Arg3_GOL Arg1:T24 Arg2:T26	
+R21	Arg2_PRD Arg1:T39 Arg2:T58	
+T25	FOOD 533 535	it
+R24	Arg1_PPT Arg1:T37 Arg2:T25	
+R44	TODO Arg1:T25 Arg2:T34	
+R52	Arg2_GOL Arg1:T41 Arg2:T63	
+T27	CONDITION_CLAUSE 942 960	until golden brown
+R55	ArgM_TMP Arg1:T47 Arg2:T27	
+#1	AnnotatorNotes R20	the butter; the melted butter
+#3	AnnotatorNotes R17	the butter mixture; the butter mixture with sugar
+#4	AnnotatorNotes R16	the butter mixture; the boiling mixture
+#5	AnnotatorNotes R45	the dough; the rectangle dough
+#6	AnnotatorNotes R48	the dough; the dough with butter
+#7	AnnotatorNotes R54	the dough; the dough with sugar
+#8	AnnotatorNotes R38	the roll; the roll with sealed edge
+#9	AnnotatorNotes R36	the 12 rolls; the 12 dough rolls
+#10	AnnotatorNotes R33	the 12 rolls; the doubled rolls

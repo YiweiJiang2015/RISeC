@@ -1,0 +1,84 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 11	oil
+T3	TOOL 15 30	a large skillet
+T4	TEMPERATURE 36 52	medium high heat
+T5	AC 57 62	Saute
+T6	FOOD 63 70	chicken
+T7	CONDITION_CLAUSE 71 92	until lightly browned
+T8	AC 94 100	remove
+T9	TOOL 106 113	skillet
+T10	AC 118 127	set aside
+T11	AC 132 137	Saute
+T12	FOOD 138 143	onion
+T13	FOOD 145 151	garlic
+T14	FOOD 156 173	green bell pepper
+T15	CONDITION_CLAUSE 174 184	until soft
+T16	AC 186 193	stir in
+T17	FOOD 194 206	tomato sauce
+T18	FOOD 208 215	saffron
+T19	FOOD 217 221	salt
+T20	FOOD 226 234	bouillon
+T21	AC 239 245	return
+T22	FOOD 246 260	chicken pieces
+T23	TOOL 264 271	skillet
+T24	AC 276 280	Cook
+T25	DUR 285 295	10 minutes
+T26	AC 302 305	add
+T27	FOOD 306 310	rice
+T28	AC 315 321	reduce
+T29	TEMPERATURE 330 333	low
+T30	OTHER 322 326	heat
+T31	AC 338 341	Add
+T32	FOOD 342 346	beer
+T33	AC 351 357	simmer
+T34	DUR 362 377	8 to 10 minutes
+T35	AC 379 387	stirring
+T36	CONDITION_CLAUSE 402 422	until rice is tender
+T37	AC 436 443	stir in
+T38	FOOD 444 448	peas
+T39	AC 465 472	garnish
+T40	FOOD 478 501	roasted red bell pepper
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	ArgM_TMP Arg1:T5 Arg2:T7	
+R6	Arg2_DIR Arg1:T8 Arg2:T9	
+R7	Arg1_PPT_X Arg1:T8 Arg2:T5	
+R8	Arg1_PPT_X Arg1:T10 Arg2:T8	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg1_PPT Arg1:T11 Arg2:T13	
+R11	Arg1_PPT Arg1:T11 Arg2:T14	
+R12	ArgM_TMP Arg1:T11 Arg2:T15	
+R13	Arg1_PPT Arg1:T16 Arg2:T17	
+R14	Arg1_PPT Arg1:T16 Arg2:T18	
+R15	Arg1_PPT Arg1:T16 Arg2:T19	
+R16	Arg1_PPT Arg1:T16 Arg2:T20	
+R17	Arg1_PPT Arg1:T21 Arg2:T22	
+R18	Arg3_GOL Arg1:T21 Arg2:T23	
+R19	ArgM_TMP Arg1:T24 Arg2:T25	
+R20	Arg1_PPT Arg1:T26 Arg2:T27	
+R21	Arg1_PPT Arg1:T28 Arg2:T30	
+R22	Arg4_GOL Arg1:T28 Arg2:T29	
+R23	Arg1_PPT Arg1:T31 Arg2:T32	
+R24	Arg1_PPT_X Arg1:T33 Arg2:T31	
+R25	ArgM_TMP Arg1:T33 Arg2:T34	
+R26	Simultaneous Arg1:T33 Arg2:T35	
+R27	ArgM_TMP Arg1:T33 Arg2:T36	
+R28	Arg1_PPT Arg1:T37 Arg2:T38	
+R29	Arg2_PPT Arg1:T39 Arg2:T40	
+R30	Arg2_PPT_Z Arg1:T37 Arg2:T33	
+R31	Arg1_GOL_X Arg1:T39 Arg2:T37	
+R32	Arg2_PPT_Z Arg1:T16 Arg2:T11	
+R33	Arg1_PPT_X Arg1:T24 Arg2:T21	
+R34	Arg2_PPT_Z Arg1:T26 Arg2:T24	
+R35	Arg2_PPT_Z Arg1:T31 Arg2:T26	
+#1	AnnotatorNotes R7	the chicken; the browned chicken
+#2	AnnotatorNotes R8	the chicken; the browned chicken
+#3	AnnotatorNotes R32	the mix; the fried mix; 
+#4	AnnotatorNotes R33	the chicken mixture; the chicken pieces
+#5	AnnotatorNotes R34	the chicken; the cooked chicken; the cooked chicken mixture
+#6	AnnotatorNotes R35	the mixture; the chicken with rice;
+#7	AnnotatorNotes R30	the mixture; the chicken mixture
+#8	AnnotatorNotes R31	the chicken with peas; the chicken with rice; the cooked chicken
+#9	AnnotatorNotes R24	the mixture; the chicken with beer;

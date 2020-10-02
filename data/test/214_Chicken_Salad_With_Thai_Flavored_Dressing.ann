@@ -1,0 +1,44 @@
+T1	TOOL 6 19	a medium bowl
+T2	AC 21 24	mix
+T3	FOOD 25 32	chicken
+T4	FOOD 34 40	celery
+T5	FOOD 42 54	green onions
+T6	FOOD 59 66	peanuts
+T7	TOOL 74 86	a small bowl
+T8	AC 88 93	whisk
+T9	FOOD 94 104	lime juice
+T10	FOOD 106 116	fish sauce
+T11	FOOD 118 124	ginger
+T12	FOOD 126 131	sugar
+T13	FOOD 133 143	red pepper
+T14	FOOD 145 153	cilantro
+T15	FOOD 158 162	mint
+T16	FOOD 169 181	2 Tbs. water
+T17	AC 186 190	Toss
+T18	FOOD 191 199	dressing
+T19	FOOD 205 220	chicken mixture
+T20	AC 225 230	serve
+T21	FOOD 234 257	a bed of Boston lettuce
+T22	FOOD 263 291	the suggested accompaniments
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	ArgM_LOC Arg1:T2 Arg2:T1	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg1_PPT Arg1:T8 Arg2:T10	
+R8	Arg1_PPT Arg1:T8 Arg2:T11	
+R9	Arg1_PPT Arg1:T8 Arg2:T12	
+R10	Arg1_PPT Arg1:T8 Arg2:T13	
+R11	Arg1_PPT Arg1:T8 Arg2:T14	
+R12	Arg1_PPT Arg1:T8 Arg2:T15	
+R13	Arg1_PPT Arg1:T8 Arg2:T16	
+R14	ArgM_LOC Arg1:T8 Arg2:T7	
+R15	Arg1_PPT Arg1:T17 Arg2:T18	
+R16	Arg2_PPT Arg1:T20 Arg2:T21	
+R17	Arg2_PPT Arg1:T20 Arg2:T22	
+R18	Arg1_PPT_X Arg1:T20 Arg2:T17	
+R19	Arg2_PPT Arg1:T17 Arg2:T19	
+R20	TODO Arg1:T18 Arg2:T8	
+R21	TODO Arg1:T19 Arg2:T2	
+#1	AnnotatorNotes R18	the chicken mix; the chicken salad; the chicken salad with flavored dressing

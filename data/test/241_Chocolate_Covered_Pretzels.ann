@@ -1,0 +1,25 @@
+T1	AC 3 7	Melt
+T2	FOOD 8 17	chocolate
+T3	FOOD 22 27	cream
+T4	TOOL 31 44	double boiler
+T5	TEMPERATURE 50 58	low heat
+T6	AC 60 68	stirring
+T7	AC 84 87	Dip
+T8	FOOD 88 96	pretzels
+T10	AC 164 169	Place
+T11	FOOD 170 178	pretzels
+T12	TOOL 182 191	wax paper
+T13	PURPOSE_CLAUSE 192 207	to set and cool
+T9	PURPOSE_CLAUSE 119 159	to coat while mixture is still very warm
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg1_PPT Arg1:T1 Arg2:T3	
+R3	ArgM_LOC Arg1:T1 Arg2:T4	
+R4	ArgM_MNR Arg1:T1 Arg2:T5	
+R5	Simultaneous Arg1:T1 Arg2:T6	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	ArgM_PRP Arg1:T7 Arg2:T9	
+R8	Arg1_PPT Arg1:T10 Arg2:T11	
+R9	Arg3_GOL Arg1:T10 Arg2:T12	
+R10	ArgM_PRP Arg1:T10 Arg2:T13	
+R11	Arg2_GOL_X Arg1:T7 Arg2:T1	
+#1	AnnotatorNotes R11	the chocolate; the chocolate cream; the molten chocolate

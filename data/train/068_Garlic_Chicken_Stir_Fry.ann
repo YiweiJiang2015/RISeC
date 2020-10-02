@@ -1,0 +1,82 @@
+T1	AC 3 7	Heat
+T3	AC 154 158	Stir
+T4	AC 216 219	Add
+T5	AC 271 274	Add
+T6	AC 378 381	mix
+T7	AC 453 456	Add
+T8	AC 490 494	stir
+T9	AC 564 569	Serve
+T10	FOOD 8 18	peanut oil
+T11	TOOL 22 27	a wok
+T12	TOOL 31 44	large skillet
+T14	FOOD 91 113	2 cloves minced garlic
+T15	FOOD 115 126	ginger root
+T16	FOOD 128 140	green onions
+T17	FOOD 145 149	salt
+T21	FOOD 220 227	chicken
+T22	AC 232 236	stir
+T23	FOOD 275 287	sweet onions
+T24	FOOD 289 296	cabbage
+T25	FOOD 298 309	bell pepper
+T26	FOOD 311 315	peas
+T27	FOOD 320 346	1/2 cup of the broth/water
+T28	AC 351 356	cover
+T29	TOOL 364 376	a small bowl
+T31	FOOD 417 426	soy sauce
+T32	FOOD 428 433	sugar
+T33	FOOD 438 448	cornstarch
+T34	FOOD 457 470	sauce mixture
+T35	TOOL 474 485	wok/skillet
+T39	FOOD 588 596	hot rice
+T13	CONDITION_CLAUSE 49 73	When oil begins to smoke
+R1	Arg1_PPT Arg1:T1 Arg2:T10	
+T2	AC 83 90	stir in
+R2	Arg1_PPT Arg1:T2 Arg2:T14	
+R3	Arg1_PPT Arg1:T2 Arg2:T15	
+R4	Arg1_PPT Arg1:T2 Arg2:T16	
+R5	Arg1_PPT Arg1:T2 Arg2:T17	
+R6	ArgM_TMP Arg1:T2 Arg2:T13	
+R7	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+T18	CONDITION_CLAUSE 163 194	until onion becomes translucent
+R8	ArgM_TMP Arg1:T3 Arg2:T18	
+R10	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R11	Arg1_PPT Arg1:T4 Arg2:T21	
+R12	Arg2_PPT_Z Arg1:T4 Arg2:T3	
+T41	CONDITION_CLAUSE 237 249	until opaque
+R13	Arg1_PPT_X Arg1:T22 Arg2:T4	
+R14	ArgM_TMP Arg1:T22 Arg2:T41	
+T19	DUR 196 211	about 2 minutes
+T20	DUR 251 266	about 3 minutes
+R9	ArgM_TMP Arg1:T3 Arg2:T19	
+R15	ArgM_TMP Arg1:T22 Arg2:T20	
+R16	Arg1_PPT Arg1:T5 Arg2:T23	
+R17	Arg1_PPT Arg1:T5 Arg2:T24	
+R18	Arg1_PPT Arg1:T5 Arg2:T25	
+R19	Arg1_PPT Arg1:T5 Arg2:T26	
+R20	Arg1_PPT Arg1:T5 Arg2:T27	
+R21	Arg1_PPT_X Arg1:T28 Arg2:T5	
+R22	Arg2_PPT_Z Arg1:T5 Arg2:T22	
+T30	FOOD 382 415	the remaining 1/2 cup broth/water
+R23	Arg1_PPT Arg1:T6 Arg2:T30	
+R24	Arg1_PPT Arg1:T6 Arg2:T31	
+R25	Arg1_PPT Arg1:T6 Arg2:T32	
+R26	Arg1_PPT Arg1:T6 Arg2:T33	
+R27	ArgM_LOC Arg1:T6 Arg2:T29	
+R28	Arg1_PPT Arg1:T7 Arg2:T34	
+R29	Arg2_PPT Arg1:T7 Arg2:T35	
+R30	Arg1_PPT_X Arg1:T8 Arg2:T7	
+T36	CONDITION_CLAUSE 495 559	until chicken and vegetables are coated with the thickened sauce
+R31	Arg1_PPT_X Arg1:T9 Arg2:T8	
+R32	Arg2_PPT Arg1:T9 Arg2:T39	
+R34	ArgM_TMP Arg1:T8 Arg2:T36	
+R35	ArgM_LOC Arg1:T1 Arg2:T11	
+R36	ArgM_LOC Arg1:T1 Arg2:T12	
+#1	AnnotatorNotes R7	the peanut oil; the heated peanut oil
+#2	AnnotatorNotes R10	the onion mixture; the onion mixture in the peanut oil
+#3	AnnotatorNotes R12	the oinion mixture; the translucent oinion mixture
+#4	AnnotatorNotes R13	the chicken mixture; the chicken mixture with onion
+#5	AnnotatorNotes R22	the chicken mixture; the opaque chicken mixture
+#6	AnnotatorNotes R21	the chicken mixture; the chicken mixture with vegetables
+#7	AnnotatorNotes R30	the sauce mixture; the sauce mixture in wok
+#8	AnnotatorNotes R31	the sauce mixture; the sauce mixture with chicken and vegetables
+#9	AnnotatorNotes R32	the final dish; the chicken mixture with sauce

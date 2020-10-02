@@ -1,0 +1,94 @@
+T1	AC 139 146	Discard
+T2	AC 96 102	Remove
+T3	AC 125 134	set aside
+T4	AC 40 45	brown
+T5	TOOL 6 21	a large skillet
+T6	TEMPERATURE 27 38	medium heat
+T7	FOOD 46 53	chicken
+T8	FOOD 58 66	potatoes
+T9	FOOD 70 73	oil
+T10	DUR 78 91	10-15 minutes
+T11	FOOD 103 110	chicken
+T12	FOOD 115 123	potatoes
+T13	FOOD 147 177	all but 1 tablespoon drippings
+T14	FOOD 185 194	drippings
+T15	FOOD 200 205	cream
+T16	AC 196 199	add
+T17	FOOD 207 211	salt
+T18	FOOD 216 222	pepper
+T19	AC 224 228	stir
+T20	FOOD 247 254	chicken
+T21	FOOD 259 267	potatoes
+T22	TOOL 271 278	skillet
+T23	AC 240 246	Return
+T24	AC 283 291	Sprinkle
+T25	FOOD 297 303	onions
+T26	FOOD 308 312	dill
+T27	AC 317 322	Cover
+T28	AC 327 333	simmer
+T29	DUR 338 351	50-60 minutes
+T30	CONDITION_CLAUSE 355 409	until chicken juices run clear and potatoes are tender
+T31	TOOL 419 434	a slotted spoon
+T32	AC 436 442	remove
+T33	FOOD 443 450	chicken
+T34	FOOD 455 463	potatoes
+T35	TOOL 467 484	a serving platter
+T36	AC 486 490	keep
+T37	AC 500 503	Add
+T38	FOOD 504 514	sour cream
+T39	TOOL 518 521	pan
+T40	AC 523 527	stir
+T41	AC 539 543	heat
+T43	AC 557 562	Serve
+T44	FOOD 568 575	chicken
+T45	FOOD 580 588	potatoes
+R1	Arg1_PPT Arg1:T4 Arg2:T7	
+R2	Arg1_PPT Arg1:T4 Arg2:T8	
+R3	TODO Arg1:T4 Arg2:T9	
+R4	ArgM_TMP Arg1:T4 Arg2:T10	
+R5	ArgM_MNR Arg1:T4 Arg2:T6	
+R6	ArgM_LOC Arg1:T4 Arg2:T5	
+R7	Arg1_PPT Arg1:T2 Arg2:T11	
+R8	Arg1_PPT Arg1:T2 Arg2:T12	
+R9	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R10	Arg1_PPT Arg1:T16 Arg2:T15	
+R11	Arg1_PPT Arg1:T16 Arg2:T17	
+R12	Arg1_PPT Arg1:T16 Arg2:T18	
+T46	PURPOSE_CLAUSE 229 235	to mix
+R13	Arg1_PPT_X Arg1:T19 Arg2:T16	
+R14	Arg2_PPT Arg1:T16 Arg2:T14	
+R15	Arg1_PPT Arg1:T23 Arg2:T20	
+R16	Arg1_PPT Arg1:T23 Arg2:T21	
+R17	Arg3_GOL Arg1:T23 Arg2:T22	
+R18	Arg1_PPT Arg1:T37 Arg2:T38	
+R19	Arg2_PPT Arg1:T37 Arg2:T39	
+R20	Arg1_PPT_X Arg1:T40 Arg2:T37	
+T42	PURPOSE_CLAUSE 528 534	to mix
+R21	ArgM_PRP Arg1:T40 Arg2:T42	
+R22	Arg1_PPT_X Arg1:T41 Arg2:T40	
+R23	Arg1_PPT Arg1:T24 Arg2:T25	
+R24	Arg1_PPT Arg1:T24 Arg2:T26	
+R25	Arg2_GOL_X Arg1:T24 Arg2:T23	
+R26	Arg1_PPT Arg1:T1 Arg2:T13	
+R27	Arg1_PPT_X Arg1:T27 Arg2:T24	
+R28	Arg1_PPT_X Arg1:T28 Arg2:T27	
+R29	ArgM_TMP Arg1:T28 Arg2:T29	
+R30	ArgM_TMP Arg1:T28 Arg2:T30	
+R31	Arg1_PPT Arg1:T32 Arg2:T33	
+R32	Arg1_PPT Arg1:T32 Arg2:T34	
+R33	ArgM_LOC Arg1:T32 Arg2:T35	
+R34	Arg1_PPT_X Arg1:T36 Arg2:T32	
+R35	TODO Arg1:T32 Arg2:T31	
+R36	Arg1_PPT_X Arg1:T43 Arg2:T41	
+R37	Arg1_PPT Arg1:T43 Arg2:T44	
+R38	Arg1_PPT Arg1:T43 Arg2:T45	
+R39	ArgM_PRP Arg1:T19 Arg2:T46	
+#1	AnnotatorNotes R9	The oil; The skillet removed with chicken and potatoes
+#2	AnnotatorNotes R13	The drippings; The drippings added with cream
+#3	AnnotatorNotes R27	The chicken and potatoes; The sprinkled chicken and potatoes
+#4	AnnotatorNotes R28	The chicken and potatoes; The covered chicken and potatoes
+#5	AnnotatorNotes R34	The chicken and potatoes; The removed chicken and potatoes
+#6	AnnotatorNotes R20	The juices; The juices added with cream
+#7	AnnotatorNotes R22	The stir; The stirred cream and juices
+#8	AnnotatorNotes R36	The stir; The heated stir
+#9	AnnotatorNotes R25	the chicken and potato; the chicken in the skillet

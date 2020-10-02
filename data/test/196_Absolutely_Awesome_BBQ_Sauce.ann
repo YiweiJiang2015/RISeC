@@ -1,0 +1,38 @@
+T1	TOOL 6 16	a saucepan
+T2	TEMPERATURE 22 30	low heat
+T3	AC 32 35	mix
+T4	FOOD 36 51	the brown sugar
+T5	FOOD 53 64	chile sauce
+T6	FOOD 66 69	rum
+T7	FOOD 71 80	soy sauce
+T8	FOOD 82 89	ketchup
+T9	FOOD 91 111	Worcestershire sauce
+T10	FOOD 113 119	garlic
+T11	FOOD 121 132	dry mustard
+T12	FOOD 138 144	pepper
+T13	AC 149 155	Simmer
+T14	DUR 156 166	30 minutes
+T15	AC 168 176	stirring
+T16	AC 194 198	Cool
+T17	AC 204 215	refrigerate
+T18	CONDITION_CLAUSE 216 234	until ready to use
+R1	Arg1_PPT Arg1:T3 Arg2:T4	
+R2	Arg1_PPT Arg1:T3 Arg2:T5	
+R3	Arg1_PPT Arg1:T3 Arg2:T6	
+R4	Arg1_PPT Arg1:T3 Arg2:T7	
+R5	Arg1_PPT Arg1:T3 Arg2:T8	
+R6	Arg1_PPT Arg1:T3 Arg2:T9	
+R7	Arg1_PPT Arg1:T3 Arg2:T10	
+R8	Arg1_PPT Arg1:T3 Arg2:T11	
+R9	Arg1_PPT Arg1:T3 Arg2:T12	
+R10	ArgM_LOC Arg1:T3 Arg2:T1	
+R11	ArgM_MNR Arg1:T3 Arg2:T2	
+R12	ArgM_TMP Arg1:T13 Arg2:T14	
+R13	Arg1_PPT_X Arg1:T13 Arg2:T3	
+R16	Arg1_PPT_X Arg1:T17 Arg2:T16	
+R17	ArgM_TMP Arg1:T17 Arg2:T18	
+R14	Arg1_PPT_X Arg1:T16 Arg2:T13	
+R15	Simultaneous Arg1:T13 Arg2:T15	
+#1	AnnotatorNotes R13	The mixture; The mixture of ingredients
+#2	AnnotatorNotes R14	The mixture, The simmered mixture
+#3	AnnotatorNotes R16	The mixture; The cooled mixture

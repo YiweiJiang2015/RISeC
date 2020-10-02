@@ -1,0 +1,69 @@
+T1	AC 21 25	stir
+T3	AC 195 202	Measure
+T4	AC 278 283	Label
+T5	AC 288 292	date
+T6	AC 327 332	empty
+T8	AC 481 484	Mix
+T9	AC 494 499	shape
+T10	AC 543 548	Place
+T11	AC 588 595	flatten
+T12	TOOL 6 19	a medium bowl
+T13	FOOD 35 43	the oats
+T14	FOOD 45 50	flour
+T15	FOOD 52 63	baking soda
+T16	FOOD 68 79	brown sugar
+T17	FOOD 91 105	the shortening
+T21	FOOD 203 225	1/2 cup of the mixture
+T26	FOOD 333 355	one package of the mix
+T27	TOOL 361 367	a bowl
+T28	FOOD 380 400	2 teaspoons of water
+T29	FOOD 402 425	1 tablespoon of raisins
+T30	FOOD 430 476	1 tablespoon of mini semisweet chocolate chips
+T31	FOOD 500 521	teaspoonfuls of dough
+T32	FOOD 527 538	small balls
+T33	FOOD 549 554	balls
+T34	TOOL 558 583	an ungreased cookie sheet
+T36	TOOL 601 647	the buttered bottom of a glass dipped in sugar
+T20	CONDITION_CLAUSE 147 191	There should be no lumps of shortening left.
+T18	CONDITION_CLAUSE 106 142	until the mixture resembles cornmeal
+R1	Arg1_PPT Arg1:T1 Arg2:T13	
+R2	Arg1_PPT Arg1:T1 Arg2:T14	
+R3	Arg1_PPT Arg1:T1 Arg2:T15	
+R4	Arg1_PPT Arg1:T1 Arg2:T16	
+R5	ArgM_LOC Arg1:T1 Arg2:T12	
+T2	AC 84 90	Cut in
+R6	Arg1_PPT Arg1:T2 Arg2:T17	
+R7	Arg2_GOL_X Arg1:T2 Arg2:T1	
+R8	ArgM_TMP Arg1:T2 Arg2:T18	
+R9	Arg1_PPT Arg1:T3 Arg2:T21	
+R11	Arg1_PPT_X Arg1:T4 Arg2:T3	
+T19	TOOL 231 273	re-sealable bags or containers for storage
+R12	TODO Arg1:T3 Arg2:T19	
+T22	TOOL 293 301	each bag
+R13	Arg1_PPT Arg1:T5 Arg2:T22	
+R10	Arg1_PPT Arg1:T6 Arg2:T26	
+R14	TODO Arg1:T6 Arg2:T27	
+T7	AC 372 379	Stir in
+R15	Arg1_PPT Arg1:T7 Arg2:T28	
+R16	Arg1_PPT Arg1:T7 Arg2:T29	
+R17	Arg1_PPT Arg1:T7 Arg2:T30	
+R18	Arg2_PPT_Z Arg1:T7 Arg2:T6	
+R19	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R20	Arg1_PPT Arg1:T9 Arg2:T31	
+R21	Arg2_PRD Arg1:T9 Arg2:T32	
+R22	Arg1_PPT Arg1:T10 Arg2:T33	
+R23	Arg3_GOL Arg1:T10 Arg2:T34	
+R24	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R28	ArgM_MEANS Arg1:T11 Arg2:T36	
+T35	OTHER 664 683	oven's instructions
+T23	PURPOSE_CLAUSE 684 694	for baking
+T24	AC 653 659	Follow
+T25	PURPOSE_CLAUSE 306 325	To make the cookies
+R25	ArgM_PRP Arg1:T6 Arg2:T25	
+#1	AnnotatorNotes R7	the mixture; the oats mixture
+#2	AnnotatorNotes R11	the mixture; the mixture in bags or containers
+#3	AnnotatorNotes R18	the mix; the mix in the bowl
+#4	AnnotatorNotes R19	the mix; the mix with raisins and chips
+#5	AnnotatorNotes R24	the balls; the dough balls
+R26	ArgM_PRP Arg1:T24 Arg2:T23	
+R27	Arg1_PPT Arg1:T24 Arg2:T35	

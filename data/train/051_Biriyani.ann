@@ -1,0 +1,148 @@
+T1	AC 3 7	Heat
+T3	AC 96 101	Place
+T4	AC 132 136	cook
+T8	AC 269 275	Season
+T9	AC 347 352	Place
+T10	AC 384 390	Reduce
+T12	AC 635 641	Season
+T13	AC 666 671	Cover
+T14	AC 673 679	reduce
+T15	AC 697 703	simmer
+T16	AC 739 748	alternate
+T17	AC 812 820	Sprinkle
+T18	AC 849 852	mix
+T19	FOOD 8 21	the olive oil
+T20	FOOD 69 79	the yogurt
+T21	FOOD 84 91	vinegar
+T22	FOOD 102 111	the onion
+T23	FOOD 161 171	the garlic
+T24	FOOD 173 185	ginger paste
+T25	FOOD 187 206	green chile peppers
+T26	FOOD 212 220	tomatoes
+T28	FOOD 281 293	garam masala
+T29	FOOD 295 299	mint
+T30	FOOD 301 305	salt
+T31	FOOD 311 317	pepper
+T33	FOOD 330 342	the cilantro
+T34	FOOD 353 364	the chicken
+T35	TOOL 368 379	the skillet
+T36	TOOL 25 40	a large skillet
+T37	TOOL 115 126	the skillet
+T38	FOOD 585 599	green cardamom
+T39	FOOD 601 615	black cardamom
+T40	FOOD 621 629	cinnamon
+T41	FOOD 571 583	the bay leaf
+T42	FOOD 647 651	salt
+T43	DUR 704 714	20 minutes
+T44	TOOL 723 737	a separate pot
+T45	FOOD 749 757	the rice
+T46	FOOD 762 777	chicken mixture
+T47	FOOD 802 806	rice
+T48	FOOD 826 843	the food coloring
+T49	AC 411 416	cover
+T50	AC 431 438	cooking
+T51	DUR 439 449	45 minutes
+T52	AC 451 459	stirring
+T55	TEMPERATURE 399 409	medium-low
+T57	FOOD 515 524	the water
+T58	FOOD 529 533	rice
+T59	TOOL 547 558	a large pot
+R1	Arg1_PPT Arg1:T1 Arg2:T19	
+R2	ArgM_LOC Arg1:T1 Arg2:T36	
+T61	TEMPERATURE 46 57	medium heat
+T62	TOOL 391 395	heat
+R3	ArgM_MNR Arg1:T1 Arg2:T61	
+T6	AC 234 238	stir
+T7	CONDITION_CLAUSE 137 149	until tender
+T27	CONDITION_CLAUSE 239 264	until tomatoes are tender
+T53	CONDITION_CLAUSE 474 504	until chicken juices run clear
+T54	AC 789 796	topping
+T63	TEMPERATURE 688 691	low
+T2	AC 62 68	Mix in
+R4	Arg1_PPT Arg1:T2 Arg2:T20	
+R5	Arg1_PPT Arg1:T2 Arg2:T21	
+R6	Arg2_PPT_Z Arg1:T2 Arg2:T1	
+R7	Arg1_PPT Arg1:T3 Arg2:T22	
+R8	Arg3_GOL Arg1:T3 Arg2:T37	
+R9	Arg1_PPT_X Arg1:T4 Arg2:T3	
+T5	AC 154 160	Mix in
+T11	AC 564 570	Mix in
+R10	Arg1_PPT Arg1:T5 Arg2:T23	
+R11	Arg1_PPT Arg1:T5 Arg2:T24	
+R12	Arg1_PPT Arg1:T5 Arg2:T25	
+R13	Arg1_PPT Arg1:T5 Arg2:T26	
+R14	Arg2_PPT_Z Arg1:T5 Arg2:T4	
+R16	Arg1_GOL_X Arg1:T8 Arg2:T6	
+R17	Arg2_PPT Arg1:T8 Arg2:T28	
+R18	Arg2_PPT Arg1:T8 Arg2:T29	
+R19	Arg2_PPT Arg1:T8 Arg2:T30	
+R20	Arg2_PPT Arg1:T8 Arg2:T31	
+T32	AC 323 329	mix in
+R21	Arg1_PPT Arg1:T32 Arg2:T33	
+R22	Arg2_PPT_Z Arg1:T32 Arg2:T8	
+R23	Arg1_PPT Arg1:T9 Arg2:T34	
+R24	Arg3_GOL Arg1:T9 Arg2:T35	
+R25	Arg1_PPT Arg1:T10 Arg2:T62	
+R26	Arg4_GOL Arg1:T10 Arg2:T55	
+R29	Arg1_PPT_X Arg1:T49 Arg2:T9	
+R30	Arg1_PPT_X Arg1:T50 Arg2:T49	
+R31	ArgM_TMP Arg1:T50 Arg2:T51	
+R33	ArgM_TMP Arg1:T52 Arg2:T53	
+T60	AC 539 543	boil
+R34	Arg1_PPT Arg1:T60 Arg2:T58	
+R35	Arg1_PPT Arg1:T60 Arg2:T57	
+R36	ArgM_LOC Arg1:T60 Arg2:T59	
+R37	Arg1_PPT Arg1:T11 Arg2:T41	
+R38	Arg1_PPT Arg1:T11 Arg2:T38	
+R39	Arg1_PPT Arg1:T11 Arg2:T39	
+R40	Arg1_PPT Arg1:T11 Arg2:T40	
+R41	Arg2_PPT_Z Arg1:T11 Arg2:T60	
+R42	Arg1_GOL_X Arg1:T12 Arg2:T11	
+R43	Arg2_PPT Arg1:T12 Arg2:T42	
+R44	Arg1_PPT_X Arg1:T13 Arg2:T12	
+R45	ArgM_TMP Arg1:T15 Arg2:T43	
+R47	Arg1_PPT_X Arg1:T15 Arg2:T13	
+R48	Arg1_PPT Arg1:T16 Arg2:T45	
+R49	Arg1_PPT Arg1:T16 Arg2:T46	
+R50	ArgM_LOC Arg1:T16 Arg2:T44	
+R51	Arg1_GOL_X Arg1:T54 Arg2:T16	
+R52	Arg2_PPT Arg1:T54 Arg2:T47	
+R53	Arg1_PPT_X Arg1:T18 Arg2:T17	
+R54	Arg1_PPT Arg1:T17 Arg2:T48	
+R55	Arg2_GOL_X Arg1:T17 Arg2:T54	
+R56	ArgM_TMP Arg1:T4 Arg2:T7	
+R57	ArgM_TMP Arg1:T6 Arg2:T27	
+T56	OTHER 781 787	layers
+R58	TODO Arg1:T16 Arg2:T56	
+#1	AnnotatorNotes T32	Yiwei: shall we include 'in'?
+#5	AnnotatorNotes T11	Y: include 'in'?
+#6	AnnotatorNotes T5	Y: include 'in'?
+#7	AnnotatorNotes R58	Y: Arg3?
+T64	TOOL 680 684	heat
+R46	Arg1_PPT Arg1:T14 Arg2:T64	
+R59	Arg4_GOL Arg1:T14 Arg2:T63	
+R60	TODO Arg1:T14 Arg2:T13	
+T65	AC 225 229	Cook
+R15	Arg1_PPT_X Arg1:T6 Arg2:T65	
+R61	Arg1_PPT_X Arg1:T65 Arg2:T5	
+T66	PURPOSE_CLAUSE 652 660	to taste
+R62	ArgM_PRP Arg1:T12 Arg2:T66	
+T67	PURPOSE_CLAUSE 853 861	to serve
+R63	ArgM_PRP Arg1:T18 Arg2:T67	
+R27	Simultaneous Arg1:T50 Arg2:T52	
+#2	AnnotatorNotes R6	the skillet; the large skillet with the oil
+#3	AnnotatorNotes R9	the mixture; the onion mixture
+#4	AnnotatorNotes R14	the onion mixture; the tender onion mixture
+#8	AnnotatorNotes R61	the tomato mixture; the tomato mixture
+#9	AnnotatorNotes R15	the tomato mixture; the tomato mixture
+#10	AnnotatorNotes R16	the tomato mixture; the tender tomato mixture
+#11	AnnotatorNotes R22	the tomato mixture; the tomato mixture with flavoring
+#12	AnnotatorNotes R29	the chicken mixture; the chicken mixture
+#13	AnnotatorNotes R30	the chicken mixture; the covered chicken mixture
+#14	AnnotatorNotes R41	the rice; the rice in boiling water; the gruel
+#15	AnnotatorNotes R42	the rice mixture; the rice mixture with species; the gruel with spicies
+#16	AnnotatorNotes R44	the rice mixture; the rice mixture with salt; the gruel with salt
+#17	AnnotatorNotes R47	the rice mixture; the covered rice mixture; the covered gruel
+#18	AnnotatorNotes R51	the mixture; the chicken rice mixture
+#19	AnnotatorNotes R55	the mixture; the chicken rice mixture
+#20	AnnotatorNotes R53	the mixture; the chicken rice mixture with the food coloring

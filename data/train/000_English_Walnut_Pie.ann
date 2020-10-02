@@ -1,0 +1,70 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	400 degrees F
+T4	TEMPERATURE 34 47	205 degrees C
+T5	AC 53 57	Beat
+T6	FOOD 58 66	the eggs
+T7	TOOL 70 82	a large bowl
+T8	AC 87 93	Mix in
+T9	FOOD 94 99	sugar
+T10	FOOD 101 105	salt
+T11	FOOD 107 114	vanilla
+T12	FOOD 120 125	syrup
+T13	AC 130 134	Melt
+T14	FOOD 135 145	the butter
+T15	FOOD 149 158	margarine
+T16	AC 164 167	add
+T17	FOOD 168 170	it
+T18	FOOD 174 189	the egg mixture
+T19	AC 194 201	Stir in
+T20	FOOD 202 210	the nuts
+T21	AC 215 219	Pour
+T22	FOOD 220 227	filling
+T23	FOOD 233 242	pie shell
+T24	AC 247 251	Bake
+T25	TOOL 255 269	preheated oven
+T26	DUR 274 284	10 minutes
+T27	AC 289 295	Reduce
+T28	OTHER 296 300	heat
+T29	TEMPERATURE 304 317	300 degrees F
+T30	TEMPERATURE 319 332	150 degrees C
+T31	AC 348 354	baking
+T32	DUR 359 375	35 to 45 minutes
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	ArgM_LOC Arg1:T5 Arg2:T7	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg1_PPT Arg1:T8 Arg2:T10	
+R8	Arg1_PPT Arg1:T8 Arg2:T11	
+R9	Arg1_PPT Arg1:T8 Arg2:T12	
+R10	Arg1_PPT Arg1:T13 Arg2:T14	
+R11	Arg1_PPT Arg1:T13 Arg2:T15	
+R12	Arg1_PPT Arg1:T16 Arg2:T17	
+R13	Arg2_PPT Arg1:T16 Arg2:T18	
+R14	Arg1_PPT Arg1:T19 Arg2:T20	
+R15	Arg1_PPT Arg1:T21 Arg2:T22	
+R16	Arg3_GOL Arg1:T21 Arg2:T23	
+R17	ArgM_LOC Arg1:T24 Arg2:T25	
+R18	ArgM_TMP Arg1:T24 Arg2:T26	
+R19	Arg1_PPT Arg1:T27 Arg2:T28	
+R20	Arg4_GOL Arg1:T27 Arg2:T29	
+R21	Arg4_GOL Arg1:T27 Arg2:T30	
+R22	ArgM_TMP Arg1:T31 Arg2:T32	
+R23	Arg2_PPT_Z Arg1:T8 Arg2:T5	
+R24	Arg2_PPT_Z Arg1:T19 Arg2:T16	
+R25	Arg1_PPT_X Arg1:T24 Arg2:T21	
+#1	AnnotatorNotes T1	the oven; the preheated oven
+#2	AnnotatorNotes T5	the eggs; the beaten eggs; the eggs in the bowl
+#3	AnnotatorNotes T8	the egg mixture; the sugary egg mixture
+#4	AnnotatorNotes T13	the butter; the melted butter
+#5	AnnotatorNotes T16	the egg mixture; the egg mixture with butter
+#6	AnnotatorNotes T19	the egg mixture; the egg mixture with nuts; the egg mixture with butter and nuts
+#7	AnnotatorNotes T21	the filled pie shell; the pie shell filled with egg mixture
+#8	AnnotatorNotes T24	the baked pie; the half baked pie
+#9	AnnotatorNotes T27	lower temperature in oven; oven with reduced temperature 
+#10	AnnotatorNotes T31	the fully baked pie
+#11	AnnotatorNotes R23	the eggs; the beaten eggs; the eggs in the bowl
+#12	AnnotatorNotes R24	the egg mixture; the egg mixture with butter
+#13	AnnotatorNotes R25	the filled pie shell; the pie shell filled with egg mixture

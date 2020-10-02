@@ -1,0 +1,106 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	TEMPERATURE 34 47	190 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 72	a muffin pan
+T8	TOOL 86 105	paper muffin liners
+T7	TOOL 113 132	a large mixing bowl
+T9	AC 134 139	cream
+T10	FOOD 140 146	butter
+T11	FOOD 151 162	brown sugar
+T12	CONDITION_CLAUSE 172 184	until fluffy
+T13	AC 189 192	Add
+T14	FOOD 193 200	bananas
+T15	FOOD 202 206	milk
+T16	FOOD 208 215	vanilla
+T17	FOOD 220 224	eggs
+T18	AC 226 229	mix
+T19	AC 239 246	Stir in
+T20	FOOD 247 252	flour
+T21	FOOD 254 258	bran
+T22	FOOD 260 273	baking powder
+T23	FOOD 275 279	soda
+T24	FOOD 284 288	salt
+T25	AC 290 295	blend
+T26	CONDITION_CLAUSE 301 316	until moistened
+T27	AC 321 328	Stir in
+T28	FOOD 329 336	walnuts
+T29	AC 341 345	Pour
+T30	FOOD 346 352	batter
+T31	TOOL 358 378	prepared muffin cups
+T32	AC 383 387	Bake
+T33	TEMPERATURE 391 404	375 degrees F
+T34	TEMPERATURE 406 419	190 degrees C
+T35	DUR 425 441	20 to 25 minutes
+T36	CONDITION_CLAUSE 445 515	until a toothpick inserted into the center of a muffin comes out clean
+T37	AC 520 524	Cool
+T38	TOOL 528 536	the cups
+T39	DUR 541 550	5 minutes
+T40	AC 557 563	remove
+T41	FOOD 564 571	muffins
+T42	AC 576 581	place
+T43	TOOL 585 596	a wire rack
+T44	PURPOSE_CLAUSE 597 615	to cool completely
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+T45	AC 76 80	line
+R5	ArgM_MEANS Arg1:T45 Arg2:T8	
+R6	Arg1_PPT Arg1:T9 Arg2:T10	
+R7	ArgM_LOC Arg1:T9 Arg2:T7	
+R8	Arg1_PPT Arg1:T9 Arg2:T11	
+R9	ArgM_TMP Arg1:T9 Arg2:T12	
+R10	Arg1_PPT Arg1:T13 Arg2:T14	
+R11	Arg1_PPT Arg1:T13 Arg2:T15	
+R12	Arg1_PPT Arg1:T13 Arg2:T16	
+R13	Arg1_PPT Arg1:T13 Arg2:T17	
+R14	Arg2_PPT_Z Arg1:T13 Arg2:T9	
+R15	Arg1_PPT Arg1:T18 Arg2:T13	
+R16	Arg2_PPT_Z Arg1:T19 Arg2:T18	
+R17	Arg1_PPT Arg1:T19 Arg2:T20	
+R18	Arg1_PPT Arg1:T19 Arg2:T21	
+R19	Arg1_PPT Arg1:T19 Arg2:T22	
+R20	Arg1_PPT Arg1:T19 Arg2:T23	
+R21	Arg1_PPT Arg1:T19 Arg2:T24	
+R22	Arg1_PPT_X Arg1:T25 Arg2:T19	
+R23	ArgM_TMP Arg1:T25 Arg2:T26	
+R24	Arg1_PPT Arg1:T27 Arg2:T28	
+R25	Arg2_PPT_Z Arg1:T27 Arg2:T25	
+R26	Arg1_PPT Arg1:T29 Arg2:T30	
+R27	Arg3_GOL Arg1:T29 Arg2:T31	
+R28	ArgM_MNR Arg1:T32 Arg2:T33	
+R29	ArgM_MNR Arg1:T32 Arg2:T34	
+R30	ArgM_TMP Arg1:T32 Arg2:T35	
+R31	ArgM_TMP Arg1:T32 Arg2:T36	
+R32	ArgM_TMP Arg1:T37 Arg2:T39	
+R33	ArgM_LOC Arg1:T37 Arg2:T38	
+R34	Arg1_PPT Arg1:T40 Arg2:T41	
+R35	Arg1_PPT_X Arg1:T42 Arg2:T40	
+R36	Arg3_GOL Arg1:T42 Arg2:T43	
+R37	ArgM_PRP Arg1:T42 Arg2:T44	
+R38	Arg1_PPT_X Arg1:T37 Arg2:T32	
+R39	Arg1_PPT_X Arg1:T32 Arg2:T29	
+#1	AnnotatorNotes T1	the oven; the preheated oven
+#2	AnnotatorNotes T5	the muffin pan; the greased muffin pan
+#3	AnnotatorNotes T45	the muffin pan; the muffin pan with paper liners
+#4	AnnotatorNotes T9	the butter with sugar cream; the butter and sugar mixture
+#5	AnnotatorNotes T13	the egg mixture; the butter mixture with bananas, milk, vanilla and eggs
+#6	AnnotatorNotes T18	the mix; the butter mixture with bananas, milk, vanilla and eggs
+#7	AnnotatorNotes T19	the dough
+#8	AnnotatorNotes T25	the moistened dough
+#9	AnnotatorNotes T27	the dough; the dough with walnuts
+#10	AnnotatorNotes T29	the filled cups; the muffin cups with dough 
+#11	AnnotatorNotes T32	the muffins; the baked muffins in the cups
+#12	AnnotatorNotes T37	the muffins; the cooling muffins in the cups
+#13	AnnotatorNotes T40	the muffins; the muffins out of the cups
+#14	AnnotatorNotes T42	the muffins; the cooling muffins on the rack
+#15	AnnotatorNotes T44	the muffins; the cooled muffins
+#16	AnnotatorNotes R14	the butter; the creamed butter; the butter cream
+#17	AnnotatorNotes R16	the dough; the banana mixture
+#18	AnnotatorNotes R22	the dough; the banana dough; the muffin dough
+#19	AnnotatorNotes R25	the dough; the batter; the banana dough; the muffin dough
+#20	AnnotatorNotes R39	the muffins; the filled muffin cups
+#21	AnnotatorNotes R38	the muffins; the banana muffins
+#22	AnnotatorNotes R35	the muffins; the muffins without cups

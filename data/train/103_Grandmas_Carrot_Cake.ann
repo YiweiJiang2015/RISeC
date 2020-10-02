@@ -1,0 +1,118 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 59	Grease
+T6	TOOL 60 75	a 9x13 inch pan
+T7	AC 80 84	Sift
+T8	FOOD 94 103	the flour
+T9	FOOD 105 116	baking soda
+T10	FOOD 121 129	cinnamon
+T11	AC 134 143	Set aside
+T12	TOOL 151 163	a large bowl
+T13	AC 165 172	combine
+T14	FOOD 173 182	the sugar
+T15	FOOD 187 190	oil
+T16	CONDITION_CLAUSE 191 204	until blended
+T17	AC 209 216	Beat in
+T18	FOOD 217 225	the eggs
+T19	AC 246 253	stir in
+T20	FOOD 254 265	the vanilla
+T21	AC 270 277	Stir in
+T22	FOOD 278 295	the flour mixture
+T23	CONDITION_CLAUSE 301 319	until incorporated
+T24	AC 324 331	Fold in
+T25	FOOD 332 345	the pineapple
+T26	FOOD 347 354	carrots
+T27	FOOD 356 363	coconut
+T28	FOOD 368 375	walnuts
+T29	AC 380 384	Pour
+T30	FOOD 385 391	batter
+T31	TOOL 397 409	prepared pan
+T32	AC 415 419	Bake
+T33	TOOL 423 441	the preheated oven
+T34	DUR 446 456	45 minutes
+T35	CONDITION_CLAUSE 461 531	until a toothpick inserted into the center of the cake comes out clean
+T37	AC 555 559	poke
+T38	OTHER 560 565	holes
+T39	FOOD 569 577	the cake
+T40	TOOL 583 589	a fork
+R1	ArgM_MEANS Arg1:T37 Arg2:T40	
+T41	FOOD 599 608	the glaze
+T42	TOOL 613 623	a saucepan
+T43	AC 625 632	combine
+T44	FOOD 633 639	butter
+T45	FOOD 641 646	sugar
+T46	FOOD 648 658	buttermilk
+T47	FOOD 663 670	vanilla
+T48	AC 695 699	boil
+T49	FOOD 682 689	mixture
+T50	TEMPERATURE 705 716	medium heat
+T51	AC 723 729	reduce
+T52	OTHER 730 734	heat
+T53	AC 739 743	cook
+T54	TEMPERATURE 748 757	5 minutes
+T55	AC 763 767	Pour
+T56	FOOD 768 773	glaze
+T57	FOOD 779 788	warm cake
+T58	AC 804 808	cool
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	ArgM_MNR Arg1:T1 Arg2:T3	
+R4	ArgM_MNR Arg1:T1 Arg2:T4	
+R5	Arg1_PPT Arg1:T5 Arg2:T6	
+R7	Arg1_PPT Arg1:T7 Arg2:T8	
+R8	Arg1_PPT Arg1:T7 Arg2:T9	
+R9	Arg1_PPT Arg1:T7 Arg2:T10	
+R13	ArgM_LOC Arg1:T13 Arg2:T12	
+R14	Arg1_PPT Arg1:T13 Arg2:T14	
+R15	Arg1_PPT Arg1:T13 Arg2:T15	
+R16	ArgM_TMP Arg1:T13 Arg2:T16	
+R17	Arg1_PPT Arg1:T17 Arg2:T18	
+R18	Arg2_PPT_Z Arg1:T17 Arg2:T13	
+T59	OTHER 226 239	one at a time
+R19	ArgM_MNR Arg1:T17 Arg2:T59	
+R21	Arg1_PPT Arg1:T19 Arg2:T20	
+R22	Arg2_PPT_Z Arg1:T19 Arg2:T17	
+R23	Arg1_PPT Arg1:T21 Arg2:T22	
+R25	ArgM_TMP Arg1:T21 Arg2:T23	
+R26	Arg1_PPT Arg1:T24 Arg2:T25	
+R27	Arg1_PPT Arg1:T24 Arg2:T26	
+R28	Arg1_PPT Arg1:T24 Arg2:T27	
+R29	Arg1_PPT Arg1:T24 Arg2:T28	
+R30	Arg2_PPT_Z Arg1:T24 Arg2:T21	
+R32	Arg1_PPT Arg1:T29 Arg2:T30	
+R33	Arg3_GOL Arg1:T29 Arg2:T31	
+R35	Arg1_PPT Arg1:T37 Arg2:T38	
+R36	Arg2_DIR Arg1:T37 Arg2:T39	
+R37	ArgM_LOC Arg1:T43 Arg2:T42	
+R38	Arg1_PPT Arg1:T43 Arg2:T44	
+R39	TODO Arg1:T43 Arg2:T41	
+R40	Arg1_PPT Arg1:T43 Arg2:T45	
+R41	Arg1_PPT Arg1:T43 Arg2:T46	
+R42	Arg1_PPT Arg1:T43 Arg2:T47	
+R44	Arg1_PPT Arg1:T48 Arg2:T49	
+R45	ArgM_MNR Arg1:T48 Arg2:T50	
+R46	Arg1_PPT Arg1:T51 Arg2:T52	
+R48	Arg1_PPT_X Arg1:T53 Arg2:T51	
+R49	ArgM_MNR Arg1:T53 Arg2:T54	
+R50	Arg1_PPT Arg1:T55 Arg2:T56	
+R51	Arg3_GOL Arg1:T55 Arg2:T57	
+R53	Arg1_PPT_X Arg1:T58 Arg2:T55	
+T60	OTHER 809 819	completely
+R54	ArgM_TMP Arg1:T58 Arg2:T60	
+R56	Arg1_PPT_X Arg1:T32 Arg2:T29	
+R57	ArgM_LOC Arg1:T32 Arg2:T33	
+R58	ArgM_TMP Arg1:T32 Arg2:T34	
+R59	ArgM_TMP Arg1:T32 Arg2:T35	
+T61	CONDITION_CLAUSE 537 553	While still warm
+R34	ArgM_TMP Arg1:T37 Arg2:T61	
+R6	Arg1_PPT_X Arg1:T11 Arg2:T7	
+R10	Arg2_PPT_Z Arg1:T21 Arg2:T19	
+#1	AnnotatorNotes R6	the mixture; the flour mixture
+#2	AnnotatorNotes R18	the sugar and oil; the sugar and oil in the bowl
+#3	AnnotatorNotes R22	the eggs; the egg mixture
+#4	AnnotatorNotes R10	the eggs; the eggs with vanilla
+#5	AnnotatorNotes R30	the flour mixture; the flour mixture with eggs
+#6	AnnotatorNotes R56	the batter; the batter in the pan
+#7	AnnotatorNotes R48	the mixture; the butter mixture; the butter mixture on lower heat
+#8	AnnotatorNotes R53	the warm cake; the warm cake with glaze

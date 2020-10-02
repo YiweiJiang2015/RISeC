@@ -1,0 +1,61 @@
+T1	AC 3 10	Preheat
+T2	TEMPERATURE 19 32	325 degrees F
+T3	AC 61 67	grease
+T4	TOOL 68 89	a medium baking sheet
+T5	AC 94 97	Cut
+T6	AC 133 139	Remove
+T7	AC 144 151	discard
+T8	TOOL 174 187	a medium bowl
+T9	AC 189 192	mix
+T10	FOOD 193 200	sausage
+T11	FOOD 202 212	baking mix
+T12	FOOD 214 228	Cheddar cheese
+T13	FOOD 230 248	crushed red pepper
+T14	FOOD 254 265	garlic salt
+T15	FOOD 276 285	jalapenos
+T16	AC 270 275	Stuff
+T17	FOOD 291 321	the Monterey Jack cheese cubes
+T18	AC 326 331	Shape
+T19	FOOD 332 347	sausage mixture
+T20	FOOD 355 368	the jalapenos
+T22	FOOD 395 409	jalapeno balls
+T23	TOOL 413 438	the prepared baking sheet
+T24	AC 443 447	Bake
+T25	AC 387 394	Arrange
+T26	DUR 448 458	25 minutes
+T27	TOOL 462 480	the preheated oven
+T28	CONDITION_CLAUSE 482 503	until lightly browned
+T29	FOOD 152 157	seeds
+T30	FOOD 162 166	pulp
+T31	OTHER 98 104	a slit
+T32	FOOD 108 128	each jalapeno pepper
+T33	TOOL 11 15	oven
+R1	Arg1_PPT Arg1:T1 Arg2:T33	
+R2	ArgM_MNR Arg1:T1 Arg2:T2	
+R3	Arg1_PPT Arg1:T3 Arg2:T4	
+R4	Arg2_DIR Arg1:T5 Arg2:T32	
+R5	Arg1_PPT Arg1:T6 Arg2:T29	
+R6	Arg1_PPT Arg1:T6 Arg2:T30	
+R7	Arg1_PPT Arg1:T7 Arg2:T6	
+R8	Arg1_PPT Arg1:T9 Arg2:T10	
+R9	Arg1_PPT Arg1:T9 Arg2:T11	
+R10	Arg1_PPT Arg1:T9 Arg2:T12	
+R11	Arg1_PPT Arg1:T9 Arg2:T13	
+R12	Arg1_PPT Arg1:T9 Arg2:T14	
+R13	ArgM_LOC Arg1:T9 Arg2:T8	
+R14	Arg1_GOL Arg1:T16 Arg2:T15	
+R15	Arg2_PPT Arg1:T16 Arg2:T17	
+R16	Arg1_PPT Arg1:T18 Arg2:T19	
+R17	Arg1_PPT Arg1:T25 Arg2:T22	
+R18	Arg1_PPT_X Arg1:T24 Arg2:T25	
+R19	ArgM_LOC Arg1:T24 Arg2:T27	
+R20	ArgM_TMP Arg1:T24 Arg2:T26	
+R21	ArgM_TMP Arg1:T24 Arg2:T28	
+T21	PURPOSE_CLAUSE 369 382	to form balls
+R22	ArgM_LOC Arg1:T18 Arg2:T20	
+R23	ArgM_LOC Arg1:T25 Arg2:T23	
+R24	Arg1_PPT Arg1:T5 Arg2:T31	
+T34	TEMPERATURE 34 47	165 degrees C
+R25	ArgM_MNR Arg1:T1 Arg2:T34	
+R26	ArgM_PRP Arg1:T18 Arg2:T21	
+#1	AnnotatorNotes R18	The jalapeno balls; The arranged jalapeno balls

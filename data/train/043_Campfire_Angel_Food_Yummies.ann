@@ -1,0 +1,19 @@
+T1	AC 3 8	Toast
+T2	CONDITION_CLAUSE 83 96	until browned
+T3	TOOL 67 82	toasting sticks
+T4	AC 101 104	Dip
+T5	FOOD 105 121	the toasted cake
+T6	FOOD 127 145	the condensed milk
+T7	AC 151 158	roll in
+T8	FOOD 159 173	coconut flakes
+R1	ArgM_LOC Arg1:T1 Arg2:T3	
+R2	ArgM_TMP Arg1:T1 Arg2:T2	
+T9	FOOD 9 34	the angel food cake cubes
+T10	TOOL 40 63	the coals of a campfire
+R3	Arg1_PPT Arg1:T1 Arg2:T9	
+R4	ArgM_MEANS Arg1:T1 Arg2:T10	
+R5	Arg1_PPT Arg1:T4 Arg2:T5	
+R6	Arg3_GOL Arg1:T4 Arg2:T6	
+R7	Arg1_PPT Arg1:T7 Arg2:T8	
+R8	Arg2_PPT_Z Arg1:T7 Arg2:T4	
+#1	AnnotatorNotes R8	the toasted cake; the cake dipped in milk

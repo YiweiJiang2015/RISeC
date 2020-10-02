@@ -1,0 +1,112 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	350 degrees F
+T4	TEMPERATURE 34 47	175 degrees C
+T5	AC 53 58	Place
+T6	FOOD 59 66	carrots
+T7	FOOD 71 77	onions
+T8	TOOL 81 86	a pot
+T9	AC 145 149	boil
+T11	AC 154 158	Cook
+T12	DUR 159 168	5 minutes
+T13	CONDITION_CLAUSE 173 194	until tender but firm
+T14	AC 199 204	Drain
+T15	AC 210 216	spread
+T16	FOOD 217 232	1/2 the carrots
+T17	FOOD 237 243	onions
+T18	TOOL 247 260	a baking dish
+T19	AC 265 270	Cover
+T20	FOOD 276 290	3/4 cup cheese
+T21	AC 292 297	layer
+T22	FOOD 303 320	remaining carrots
+T23	FOOD 325 331	onions
+T24	AC 337 340	top
+T25	FOOD 346 362	remaining cheese
+T26	TOOL 370 380	a saucepan
+T27	AC 382 386	melt
+T28	FOOD 387 407	3 tablespoons butter
+T29	AC 412 418	mix in
+T30	FOOD 419 424	flour
+T31	CONDITION_CLAUSE 425 437	until smooth
+T32	AC 452 459	stir in
+T33	FOOD 460 464	milk
+T34	CONDITION_CLAUSE 465 480	until thickened
+T35	AC 486 492	season
+T36	FOOD 498 502	salt
+T37	FOOD 507 513	pepper
+T38	AC 518 522	Pour
+T39	FOOD 528 539	the carrots
+T40	FOOD 541 547	onions
+T41	FOOD 553 559	cheese
+T42	TOOL 563 578	the baking dish
+T43	AC 583 587	Melt
+T44	FOOD 588 607	1 tablespoon butter
+T45	TOOL 611 622	a small pot
+T46	AC 628 634	mix in
+T47	FOOD 635 647	bread crumbs
+T48	AC 653 661	Sprinkle
+T49	TOOL 672 687	the baking dish
+T50	AC 693 697	Bake
+T51	DUR 698 708	20 minutes
+T52	TOOL 712 730	the preheated oven
+T53	CONDITION_CLAUSE 735 767	until bubbly and lightly browned
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T5 Arg2:T7	
+R6	TODO Arg1:T3 Arg2:T4	
+R7	ArgM_LOC Arg1:T5 Arg2:T8	
+R8	ArgM_TMP Arg1:T11 Arg2:T12	
+R9	ArgM_TMP Arg1:T11 Arg2:T13	
+R10	TODO Arg1:T12 Arg2:T13	
+R11	Arg1_PPT Arg1:T14 Arg2:T16	
+R12	Arg1_PPT Arg1:T14 Arg2:T17	
+R13	Arg1_PPT Arg1:T15 Arg2:T14	
+R14	Arg1_PPT_X Arg1:T9 Arg2:T5	
+R15	ArgM_LOC Arg1:T14 Arg2:T18	
+R16	Arg2_PPT Arg1:T19 Arg2:T20	
+R17	Arg2_PPT Arg1:T21 Arg2:T22	
+R18	Arg2_PPT Arg1:T21 Arg2:T23	
+R19	Arg2_PPT Arg1:T24 Arg2:T25	
+R20	Arg1_PPT_X Arg1:T19 Arg2:T15	
+R21	Arg1_GOL_X Arg1:T21 Arg2:T19	
+R22	Arg1_GOL_X Arg1:T24 Arg2:T21	
+R23	Arg1_PPT Arg1:T27 Arg2:T28	
+R24	Arg1_PPT Arg1:T29 Arg2:T30	
+R25	ArgM_TMP Arg1:T29 Arg2:T31	
+R26	ArgM_LOC Arg1:T27 Arg2:T26	
+R27	Arg2_PPT_Z Arg1:T29 Arg2:T27	
+R28	Arg1_PPT Arg1:T32 Arg2:T33	
+R29	ArgM_TMP Arg1:T32 Arg2:T34	
+R30	Arg2_PPT Arg1:T35 Arg2:T36	
+R31	Arg2_PPT Arg1:T35 Arg2:T37	
+R32	Arg1_PPT Arg1:T43 Arg2:T44	
+R33	ArgM_LOC Arg1:T43 Arg2:T45	
+R34	Arg1_PPT Arg1:T46 Arg2:T47	
+R35	ArgM_LOC Arg1:T48 Arg2:T49	
+R36	ArgM_TMP Arg1:T50 Arg2:T51	
+R37	ArgM_LOC Arg1:T50 Arg2:T52	
+R38	ArgM_TMP Arg1:T50 Arg2:T53	
+R39	Arg3_GOL Arg1:T38 Arg2:T39	
+R40	Arg3_GOL Arg1:T38 Arg2:T40	
+R41	Arg3_GOL Arg1:T38 Arg2:T41	
+R42	ArgM_LOC Arg1:T38 Arg2:T42	
+R43	Arg1_PPT_X Arg1:T32 Arg2:T29	
+R44	Arg1_GOL_X Arg1:T35 Arg2:T32	
+R45	Arg1_PPT_X Arg1:T38 Arg2:T35	
+R46	Arg2_PPT_Z Arg1:T46 Arg2:T43	
+R47	Arg1_PPT_X Arg1:T48 Arg2:T46	
+#1	AnnotatorNotes R20	the carrots and onions; the 1/2 carrot mixture; the onion mixture; the mixture;
+#2	AnnotatorNotes R27	the butter; the melted butter; 3 tablespoons butter;
+#3	AnnotatorNotes R43	the flour mixture; the smooth flour mixture; the flour and butter mixture
+#4	AnnotatorNotes R45	the flour mixture; the mixture; the seasoned mixture;
+#5	AnnotatorNotes R47	the bread crumbs; the bread crumbs mixture; 
+#6	AnnotatorNotes R14	the carrots and onions; the carrot mixture; the carrots in the pot
+#7	AnnotatorNotes R21	the carrot mixture; the covered carrots with cheese; the carrots in the baking dish
+#8	AnnotatorNotes R22	the carrot mixture; the carrots and onions with cheese
+#9	AnnotatorNotes R44	the flour mixture; the flour mixture with milk; the thickened flour mixture
+R48	Arg1_PPT_X Arg1:T50 Arg2:T48	
+R49	TODO Arg1:T49 Arg2:T38	
+#10	AnnotatorNotes R46	the butter; the butter in the pot
+#11	AnnotatorNotes R48	the carrots and onions; the carrot mixture with butter and crumbs; the carrot mixture in the baking dish; the baking dish

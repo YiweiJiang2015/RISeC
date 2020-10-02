@@ -1,0 +1,81 @@
+T1	CONDITION_CLAUSE 3 13	DAY BEFORE
+T2	AC 15 20	Cream
+T3	FOOD 21 27	butter
+T4	FOOD 32 44	cream cheese
+T5	CONDITION_CLAUSE 54 76	until smoothly blended
+T6	AC 81 88	Beat in
+T7	FOOD 89 98	the flour
+T8	AC 103 108	Shape
+T9	FOOD 109 114	dough
+T10	FOOD 120 133	a smooth ball
+T11	AC 135 139	wrap
+T12	TOOL 143 147	foil
+T13	TOOL 151 161	cling wrap
+T14	AC 167 178	refrigerate
+T15	DUR 179 188	overnight
+T16	DUR 192 204	up to a week
+T17	AC 225 231	Remove
+T18	FOOD 232 237	dough
+T19	TOOL 243 255	refrigerator
+T20	DUR 256 266	30 minutes
+T21	CONDITION_CLAUSE 267 279	before using
+T22	AC 290 297	heating
+T23	TOOL 298 302	oven
+T24	TEMPERATURE 306 319	375 degrees F
+T25	TEMPERATURE 321 334	190 degrees C
+T26	AC 340 344	Roll
+T27	FOOD 345 358	chilled dough
+T29	AC 368 371	Cut
+T30	TOOL 377 408	3 or 4 inch round cookie cutter
+T31	AC 413 418	Place
+T32	FOOD 419 440	small spoonful of jam
+T33	AC 466 473	moisten
+T34	FOOD 485 490	water
+T35	FOOD 444 464	center of each round
+T37	FOOD 474 479	edges
+T38	AC 495 499	Fold
+T39	FOOD 500 505	round
+T40	AC 515 520	press
+T41	FOOD 521 526	edges
+T42	AC 541 545	Bake
+T43	TOOL 549 571	ungreased cookie sheet
+T44	DUR 572 588	15 to 20 minutes
+T45	AC 606 613	roll in
+T46	FOOD 614 639	sugar mixed with cinnamon
+T47	FOOD 660 680	confectioners' sugar
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	ArgM_TMP Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T6 Arg2:T7	
+R5	Arg2_PPT_Z Arg1:T6 Arg2:T2	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg3_PRD Arg1:T8 Arg2:T10	
+R8	ArgM_MEANS Arg1:T11 Arg2:T12	
+R9	ArgM_TMP Arg1:T14 Arg2:T15	
+R10	ArgM_TMP Arg1:T14 Arg2:T16	
+R11	ArgM_MEANS Arg1:T11 Arg2:T13	
+R12	Arg1_PPT Arg1:T17 Arg2:T18	
+R13	Arg2_DIR Arg1:T17 Arg2:T19	
+R14	ArgM_TMP Arg1:T17 Arg2:T20	
+R15	Arg1_PPT Arg1:T22 Arg2:T23	
+R16	ArgM_MNR Arg1:T22 Arg2:T24	
+R17	ArgM_MNR Arg1:T22 Arg2:T25	
+R18	Arg1_PPT Arg1:T26 Arg2:T27	
+R19	ArgM_MEANS Arg1:T29 Arg2:T30	
+R20	Arg1_PPT_X Arg1:T29 Arg2:T26	
+R22	Arg1_PPT Arg1:T31 Arg2:T32	
+R23	Arg3_GOL Arg1:T31 Arg2:T35	
+R25	Arg1_GOL Arg1:T33 Arg2:T37	
+R26	Arg2_PPT Arg1:T33 Arg2:T34	
+R27	Arg1_PPT Arg1:T38 Arg2:T39	
+R28	Arg1_PPT Arg1:T40 Arg2:T41	
+R29	ArgM_LOC Arg1:T42 Arg2:T43	
+R30	ArgM_TMP Arg1:T42 Arg2:T44	
+R31	Arg1_PPT Arg1:T45 Arg2:T46	
+R32	Arg1_PPT Arg1:T45 Arg2:T47	
+R33	TODO Arg1:T46 Arg2:T47	
+R34	ArgM_TMP Arg1:T17 Arg2:T21	
+R35	Arg1_PPT_X Arg1:T42 Arg2:T40	
+#1	AnnotatorNotes R5	the cream; the creamed butter with cheese
+#2	AnnotatorNotes R20	the rolls; the rolled dough; 
+#3	AnnotatorNotes R35	the folds; the folded rounds; 

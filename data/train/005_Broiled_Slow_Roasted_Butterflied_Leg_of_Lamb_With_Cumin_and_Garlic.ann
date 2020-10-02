@@ -1,0 +1,174 @@
+T1	AC 3 6	Mix
+T2	FOOD 7 10	oil
+T3	FOOD 12 18	garlic
+T4	FOOD 20 24	salt
+T5	FOOD 26 32	pepper
+T6	FOOD 34 39	cumin
+T7	FOOD 44 51	oregano
+T8	FOOD 60 65	paste
+T9	AC 53 59	spread
+T10	FOOD 69 91	both sides of the lamb
+T12	DUR 110 117	an hour
+T13	AC 100 105	stand
+T18	AC 159 165	Adjust
+T19	TOOL 166 175	oven rack
+T20	DUR 283 293	10 minutes
+T21	TOOL 254 261	broiler
+T22	AC 246 253	preheat
+T23	OTHER 224 240	lamb's thickness
+T24	OTHER 179 209	upper or upper-middle position
+T25	AC 298 303	Place
+T26	FOOD 304 308	lamb
+T29	TOOL 326 378	a large wire rack set over a foil-lined roasting pan
+T31	AC 383 388	Broil
+T32	TEMPERATURE 265 269	high
+T33	AC 390 396	moving
+T34	TOOL 397 400	pan
+T36	PURPOSE_CLAUSE 401 432	so entire surface browns evenly
+T37	DUR 440 449	8 minutes
+T38	AC 454 458	Turn
+T39	FOOD 459 463	lamb
+T40	AC 482 487	broil
+T41	CONDITION_CLAUSE 488 524	until well browned on the other side
+T43	DUR 532 541	8 minutes
+T44	AC 553 561	Turn off
+T45	TOOL 562 569	broiler
+T46	AC 571 577	remove
+T47	FOOD 578 582	lamb
+T48	TOOL 588 592	oven
+T49	AC 601 605	rest
+T51	DUR 610 620	10 minutes
+T52	AC 625 629	Heat
+T53	TOOL 630 634	oven
+T54	TEMPERATURE 638 649	325 degrees
+T55	AC 654 659	Stick
+T56	TOOL 660 678	a meat thermometer
+T57	FOOD 684 716	the thickest portion of the lamb
+T59	AC 718 724	return
+T60	FOOD 725 727	it
+T61	FOOD 731 739	the oven
+T62	AC 744 749	Roast
+T63	DUR 765 785	50 minutes to 1 hour
+T67	AC 844 849	Check
+T68	FOOD 850 854	lamb
+T69	DUR 875 885	30 minutes
+T73	AC 924 933	turn down
+T74	TOOL 934 938	oven
+T75	TEMPERATURE 942 953	170 degrees
+T80	AC 1019 1026	squeeze
+T81	FOOD 1030 1041	lemon juice
+T82	AC 1046 1054	sprinkle
+T83	FOOD 1060 1071	fresh herbs
+T84	AC 1077 1082	Carve
+T85	AC 1084 1091	slicing
+T87	AC 1128 1135	Arrange
+T88	TOOL 1139 1148	a platter
+T89	AC 1150 1157	drizzle
+T90	FOOD 1163 1181	accumulated juices
+T91	AC 1187 1192	serve
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	Arg1_PPT Arg1:T1 Arg2:T3	
+R4	Arg1_PPT Arg1:T1 Arg2:T4	
+R5	Arg1_PPT Arg1:T1 Arg2:T5	
+R6	Arg1_PPT Arg1:T1 Arg2:T6	
+R7	Arg1_PPT Arg1:T1 Arg2:T7	
+R8	Arg1_PPT Arg1:T9 Arg2:T8	
+R9	Arg2_GOL Arg1:T9 Arg2:T10	
+R11	ArgM_TMP Arg1:T13 Arg2:T12	
+T14	CONDITION_CLAUSE 118 154	until meat comes to room temperature
+R12	ArgM_TMP Arg1:T13 Arg2:T14	
+R13	Arg1_PPT Arg1:T18 Arg2:T19	
+R14	ArgM_MNR Arg1:T18 Arg2:T24	
+R15	Arg1_PPT Arg1:T22 Arg2:T21	
+R16	ArgM_MNR Arg1:T22 Arg2:T32	
+R17	ArgM_TMP Arg1:T22 Arg2:T20	
+R18	Arg1_PPT Arg1:T25 Arg2:T26	
+R23	ArgM_TMP Arg1:T31 Arg2:T37	
+R24	Simultaneous Arg1:T31 Arg2:T33	
+R25	Arg1_PPT Arg1:T33 Arg2:T34	
+R26	ArgM_PRP Arg1:T33 Arg2:T36	
+R27	Arg1_PPT Arg1:T38 Arg2:T39	
+R28	ArgM_TMP Arg1:T40 Arg2:T41	
+R29	ArgM_TMP Arg1:T40 Arg2:T43	
+R30	Arg1_PPT Arg1:T44 Arg2:T45	
+R31	Arg1_PPT Arg1:T46 Arg2:T47	
+R32	Arg2_DIR Arg1:T46 Arg2:T48	
+R33	ArgM_TMP Arg1:T49 Arg2:T51	
+R34	Arg1_PPT Arg1:T52 Arg2:T53	
+R35	ArgM_MNR Arg1:T52 Arg2:T54	
+R36	Arg1_PPT Arg1:T55 Arg2:T56	
+R37	Arg2_GOL Arg1:T55 Arg2:T57	
+R39	Arg1_PPT Arg1:T59 Arg2:T60	
+R40	Arg2_GOL Arg1:T59 Arg2:T61	
+R41	ArgM_TMP Arg1:T62 Arg2:T63	
+T15	CONDITION_CLAUSE 787 838	until thermometer registers a rosy-pink 140 degrees
+R42	ArgM_TMP Arg1:T62 Arg2:T15	
+R43	Arg1_PPT Arg1:T67 Arg2:T68	
+R44	ArgM_TMP Arg1:T67 Arg2:T69	
+T16	CONDITION_CLAUSE 891 915	If lamb gets done sooner
+R45	Arg1_PPT Arg1:T73 Arg2:T74	
+R46	ArgM_MNR Arg1:T73 Arg2:T75	
+T17	CONDITION_CLAUSE 954 974	until ready to serve
+R47	ArgM_TMP Arg1:T73 Arg2:T17	
+R48	ArgM_TMP Arg1:T73 Arg2:T16	
+T42	CONDITION_CLAUSE 980 1017	As soon as lamb comes out of the oven
+R49	ArgM_TMP Arg1:T80 Arg2:T42	
+R50	Arg1_PPT Arg1:T80 Arg2:T81	
+R51	Arg1_PPT Arg1:T82 Arg2:T83	
+R52	Arg2_GOL_X Arg1:T82 Arg2:T80	
+T50	CONDITION_CLAUSE 1109 1122	when possible
+T64	FOOD 1099 1108	the grain
+R53	TODO Arg1:T84 Arg2:T85	
+R54	Arg1_PPT Arg1:T85 Arg2:T64	
+R55	ArgM_TMP Arg1:T85 Arg2:T50	
+R56	Arg1_PPT_X Arg1:T84 Arg2:T82	
+R57	ArgM_LOC Arg1:T87 Arg2:T88	
+R58	Arg1_PPT_X Arg1:T87 Arg2:T84	
+R59	Arg1_PPT Arg1:T89 Arg2:T90	
+R60	Arg1_PPT_X Arg1:T89 Arg2:T87	
+R61	Arg1_PPT_X Arg1:T91 Arg2:T89	
+#2	AnnotatorNotes T1	the paste; the garlic paste
+#3	AnnotatorNotes T9	the lamb; the lamb spreaded with the paste
+#4	AnnotatorNotes T13	the lamb; the chilled lamb
+#5	AnnotatorNotes T18	the oven rack; the oven rack at upper position
+#6	AnnotatorNotes T22	the broiler; the heated broiler
+#7	AnnotatorNotes T25	the lamb; the lamb
+#9	AnnotatorNotes T31	the lamb; the broiled lamb
+#10	AnnotatorNotes T33	the pan; the pan with evenly browned
+#11	AnnotatorNotes T38	the lamb; the turned lamb
+#12	AnnotatorNotes T40	the lamb; the broiled and browned lamb
+#13	AnnotatorNotes T44	the broiler; the turned-off broiler
+#14	AnnotatorNotes T46	the lamb; the lamb removed from the oven
+#15	AnnotatorNotes T49	the lamb; the chilled lamb
+#16	AnnotatorNotes T52	the oven; the heated oven
+#17	AnnotatorNotes T55	the lamb; the lamb with an inserted thermometer
+#18	AnnotatorNotes T59	the lamb; the lamb returned to the oven
+R10	Arg1_PPT_X Arg1:T62 Arg2:T59	
+#19	AnnotatorNotes T62	the lamb; the roasted lamb
+#20	AnnotatorNotes T67	the lamb; the checked lamb
+#21	AnnotatorNotes T73	the oven; the oven at lower temperature
+#22	AnnotatorNotes T80	the lamb; the lamb with squeezed lemon juice
+#23	AnnotatorNotes T82	the lamb; the lamb sprinkled with herbs
+#24	AnnotatorNotes T84	the lamb; the carved lamb
+#25	AnnotatorNotes T85	the lamb; the carved lamb
+#26	AnnotatorNotes T87	the lamb; the lamb arraged on a platter
+#27	AnnotatorNotes T89	the lamb; the lamb drizzled with juice
+#28	AnnotatorNotes T91	the lamb; the lamb drizzled with juice
+R1	Arg1_PPT_X Arg1:T13 Arg2:T9	
+#1	AnnotatorNotes R1	the lamb
+R19	Arg2_GOL Arg1:T25 Arg2:T29	
+R20	Arg1_PPT_X Arg1:T31 Arg2:T25	
+#8	AnnotatorNotes R20	the lamb
+R21	Arg1_PPT_X Arg1:T40 Arg2:T38	
+#29	AnnotatorNotes R21	the lamb; the turned over lamb
+R22	Arg1_PPT_X Arg1:T49 Arg2:T46	
+#30	AnnotatorNotes R22	the lamb
+#31	AnnotatorNotes R10	the lamb
+R38	TODO Arg1:T80 Arg2:T67	
+#32	AnnotatorNotes R38	the lamb; the roast
+#33	AnnotatorNotes R52	the roast
+#34	AnnotatorNotes R56	the roast
+#35	AnnotatorNotes R53	explaining instead of simultaneous
+#36	AnnotatorNotes R58	the slices; the roast slices; the lamb slices
+#37	AnnotatorNotes R60	the lamb; the meat
+#38	AnnotatorNotes R61	the roast; the lamb; the roasted lamb

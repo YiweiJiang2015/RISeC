@@ -1,0 +1,77 @@
+T1	AC 3 7	Melt
+T2	FOOD 8 27	the chocolate chips
+T3	TOOL 31 47	a heavy saucepan
+T4	TEMPERATURE 53 66	very low heat
+T5	AC 71 75	Stir
+T7	AC 95 100	Cream
+T8	FOOD 110 120	the butter
+T9	FOOD 125 131	sugars
+T10	CONDITION_CLAUSE 132 143	until light
+T11	AC 148 155	Beat in
+T12	FOOD 156 164	the eggs
+T13	OTHER 166 179	one at a time
+T14	AC 184 191	Stir in
+T15	FOOD 192 212	the melted chocolate
+T16	FOOD 217 224	vanilla
+T17	TOOL 232 238	a bowl
+T18	AC 240 245	whisk
+T19	FOOD 255 264	the flour
+T20	FOOD 266 279	baking powder
+T21	FOOD 284 295	baking soda
+T22	AC 300 303	Add
+T23	FOOD 307 325	the butter mixture
+T24	AC 337 342	Blend
+T25	AC 358 363	Shape
+T26	FOOD 369 381	1-inch balls
+T27	AC 386 391	place
+T28	TOOL 395 417	a greased cookie sheet
+T29	AC 423 427	Bake
+T30	TEMPERATURE 431 444	350 degrees F
+T31	TEMPERATURE 446 459	180 degrees C
+T32	DUR 465 481	12 to 14 minutes
+T33	AC 491 494	sit
+T34	TOOL 498 510	cookie sheet
+T35	DUR 515 530	a minute or two
+T36	CONDITION_CLAUSE 531 564	before removing to a rack to cool
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R5	Arg1_PPT_X Arg1:T5 Arg2:T1	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg1_PPT Arg1:T7 Arg2:T9	
+R8	ArgM_TMP Arg1:T7 Arg2:T10	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	ArgM_MNR Arg1:T11 Arg2:T13	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T14 Arg2:T16	
+R13	Arg2_PPT_Z Arg1:T14 Arg2:T11	
+R14	Arg2_PPT_Z Arg1:T11 Arg2:T7	
+R15	Arg1_PPT Arg1:T18 Arg2:T19	
+R16	Arg1_PPT Arg1:T18 Arg2:T20	
+R17	Arg1_PPT Arg1:T18 Arg2:T21	
+R18	ArgM_LOC Arg1:T18 Arg2:T17	
+R19	Arg2_PPT Arg1:T22 Arg2:T23	
+R20	Arg1_PPT_X Arg1:T22 Arg2:T18	
+R21	Arg1_PPT_X Arg1:T24 Arg2:T22	
+R22	Arg3_PRD Arg1:T25 Arg2:T26	
+R23	Arg1_PPT_X Arg1:T27 Arg2:T25	
+R24	Arg1_PPT_X Arg1:T25 Arg2:T24	
+R25	Arg3_GOL Arg1:T27 Arg2:T28	
+R26	ArgM_MNR Arg1:T29 Arg2:T30	
+R27	ArgM_MNR Arg1:T29 Arg2:T31	
+R28	ArgM_TMP Arg1:T29 Arg2:T32	
+R29	Arg1_PPT_X Arg1:T29 Arg2:T27	
+R30	Arg0_PAG Arg1:T33 Arg2:T29	
+R31	ArgM_LOC Arg1:T33 Arg2:T34	
+R32	ArgM_TMP Arg1:T33 Arg2:T35	
+R33	ArgM_TMP Arg1:T33 Arg2:T36	
+T6	PURPOSE_CLAUSE 76 90	to evenly melt
+R4	ArgM_PRP Arg1:T5 Arg2:T6	
+#1	AnnotatorNotes R5	The chocolate chips; The melted chocolate chips
+#2	AnnotatorNotes R14	The cream; The cream of butter and sugar
+#3	AnnotatorNotes R13	The cream; The beat cream
+#4	AnnotatorNotes R20	The mixture; The mixture of flour
+#5	AnnotatorNotes R21	The mixture; The flour added with butter mixture
+#6	AnnotatorNotes R24	The blend; the batter with butter
+#7	AnnotatorNotes R29	The dough balls; The dough placed on the sheet
+#8	AnnotatorNotes R23	the dough balls; the 1 inch balls

@@ -1,0 +1,73 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 18	an oven
+T3	TEMPERATURE 22 35	300 degrees F
+T4	TEMPERATURE 37 50	150 degrees C
+T5	AC 56 62	Grease
+T6	TOOL 63 76	cookie sheets
+T7	TOOL 84 100	a small saucepan
+T8	TEMPERATURE 106 117	medium heat
+T9	AC 119 123	melt
+T10	FOOD 124 130	butter
+T11	CONDITION_CLAUSE 131 151	till lightly browned
+T12	AC 156 160	Pour
+T13	TOOL 166 183	medium sized bowl
+T14	AC 188 195	Stir in
+T15	FOOD 196 209	the egg white
+T16	FOOD 211 216	sugar
+T17	FOOD 221 228	vanilla
+T18	AC 233 240	Combine
+T19	FOOD 241 256	the flour cocoa
+T20	FOOD 262 266	salt
+T21	AC 268 271	mix
+T22	FOOD 277 295	the butter mixture
+T23	AC 300 307	Fold in
+T24	FOOD 308 317	chocolate
+T25	AC 322 326	Drop
+T26	TOOL 369 382	cookie sheets
+T27	AC 387 391	Bake
+T28	DUR 396 412	12 to 15 minutes
+T29	AC 418 426	Transfer
+T30	TOOL 430 434	rack
+T31	PURPOSE_CLAUSE 435 442	to cool
+T32	AC 447 451	dust
+T34	OTHER 330 342	teaspoonfuls
+T35	OTHER 343 363	about 2 inches apart
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT Arg1:T5 Arg2:T6	
+R5	Arg1_PPT Arg1:T9 Arg2:T10	
+R6	ArgM_TMP Arg1:T9 Arg2:T11	
+R7	ArgM_LOC Arg1:T9 Arg2:T7	
+R8	ArgM_MNR Arg1:T9 Arg2:T8	
+R9	Arg3_GOL Arg1:T12 Arg2:T13	
+R10	Arg1_PPT_X Arg1:T12 Arg2:T9	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg1_PPT Arg1:T14 Arg2:T16	
+R13	Arg1_PPT Arg1:T14 Arg2:T17	
+R14	Arg2_PPT_Z Arg1:T14 Arg2:T12	
+R15	Arg1_PPT Arg1:T18 Arg2:T19	
+R16	Arg1_PPT Arg1:T18 Arg2:T20	
+R17	Arg1_PPT_X Arg1:T21 Arg2:T18	
+R18	Arg2_PPT Arg1:T21 Arg2:T22	
+R19	Arg1_PPT Arg1:T23 Arg2:T24	
+R20	Arg2_PPT_Z Arg1:T23 Arg2:T21	
+R21	Arg3_GOL Arg1:T25 Arg2:T26	
+R22	ArgM_MNR Arg1:T25 Arg2:T34	
+R23	ArgM_TMP Arg1:T27 Arg2:T28	
+R24	Arg3_GOL Arg1:T29 Arg2:T30	
+R25	Arg1_PPT_X Arg1:T29 Arg2:T27	
+R26	Arg1_PPT_X Arg1:T27 Arg2:T25	
+R27	ArgM_PRP Arg1:T29 Arg2:T31	
+R29	Arg2_GOL_X Arg1:T32 Arg2:T29	
+#1	AnnotatorNotes R10	The butter; The melted butter
+#2	AnnotatorNotes R14	The bowl; The bowl with melted butter
+#3	AnnotatorNotes R20	The butter mixture; The butter mixture with cocoa
+#4	AnnotatorNotes R25	The crisps; The baked crisps
+#5	AnnotatorNotes R26	The dough; The spreaded dough
+#6	AnnotatorNotes R17	the flour cocoa; the flour cocoa and salt
+R30	Arg1_PPT_X Arg1:T25 Arg2:T23	
+#7	AnnotatorNotes R30	the butter mixture; the butter mixture with chocolate
+#8	AnnotatorNotes R29	the chocolate crisps; the cooled crisps
+T33	FOOD 457 477	confectioners' sugar
+R28	Arg1_PPT Arg1:T32 Arg2:T33	

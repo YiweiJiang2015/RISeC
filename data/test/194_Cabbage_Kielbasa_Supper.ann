@@ -1,0 +1,35 @@
+T1	TOOL 6 25	a 5-qt. slow cooker
+T2	AC 27 34	combine
+T3	FOOD 35 46	the cabbage
+T4	FOOD 48 56	potatoes
+T5	FOOD 58 63	onion
+T6	FOOD 65 69	salt
+T7	FOOD 74 80	pepper
+T8	AC 85 89	Pour
+T9	FOOD 90 95	broth
+T10	FOOD 101 104	all
+T11	AC 109 114	Place
+T12	FOOD 115 122	sausage
+T13	FOOD 126 129	top
+T14	AC 189 194	Cover
+T15	AC 199 203	cook
+T16	TEMPERATURE 207 210	low
+T17	DUR 215 224	8-9 hours
+T18	CONDITION_CLAUSE 228 285	until vegetables are tender and sausage is heated through
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	ArgM_LOC Arg1:T2 Arg2:T1	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	Arg3_GOL Arg1:T8 Arg2:T10	
+R9	Arg1_PPT Arg1:T11 Arg2:T12	
+R10	Arg3_GOL Arg1:T11 Arg2:T13	
+R11	ArgM_MNR Arg1:T15 Arg2:T16	
+R12	ArgM_TMP Arg1:T15 Arg2:T17	
+R13	ArgM_TMP Arg1:T15 Arg2:T18	
+R14	Arg1_PPT_X Arg1:T15 Arg2:T14	
+R15	Arg1_PPT_X Arg1:T14 Arg2:T11	
+#1	AnnotatorNotes R15	The slow cooker; The slow cooker with sausage placed on top
+#2	AnnotatorNotes R14	The slow cooker; The covered slow cooker

@@ -1,0 +1,59 @@
+T1	AC 464 472	Sprinkle
+T2	AC 375 379	Bake
+T4	AC 3 10	Preheat
+T5	AC 57 62	Brush
+T6	AC 124 131	Arrange
+T7	AC 208 211	mix
+T8	TOOL 11 19	the oven
+T9	TEMPERATURE 23 36	375 degrees F
+T10	TOOL 63 83	a large baking sheet
+T11	FOOD 95 119	1/4 cup of melted butter
+T12	FOOD 132 145	mushroom caps
+T13	OTHER 149 163	a single layer
+T14	TOOL 169 185	the baking sheet
+T15	TOOL 193 206	a medium bowl
+T16	FOOD 221 241	the crushed croutons
+T17	FOOD 243 267	remaining 1/2 cup butter
+T18	FOOD 269 284	shredded cheese
+T19	FOOD 286 294	crabmeat
+T20	FOOD 296 303	lobster
+T21	FOOD 308 314	garlic
+T22	FOOD 330 343	mushroom caps
+T24	DUR 384 400	10 to 12 minutes
+T25	TOOL 404 422	the preheated oven
+T26	FOOD 478 495	additional cheese
+T27	AC 512 517	serve
+T28	CONDITION_CLAUSE 427 459	until lightly browned on the top
+R1	Arg1_PPT Arg1:T4 Arg2:T8	
+R2	ArgM_MNR Arg1:T4 Arg2:T9	
+R3	Arg1_GOL Arg1:T5 Arg2:T10	
+R4	Arg2_PPT Arg1:T5 Arg2:T11	
+R5	Arg1_PPT Arg1:T6 Arg2:T12	
+R6	TODO Arg1:T6 Arg2:T13	
+R7	Arg3_GOL Arg1:T6 Arg2:T14	
+R8	Arg1_PPT Arg1:T7 Arg2:T16	
+R9	Arg1_PPT Arg1:T7 Arg2:T17	
+R10	Arg1_PPT Arg1:T7 Arg2:T18	
+R11	Arg1_PPT Arg1:T7 Arg2:T19	
+R12	Arg1_PPT Arg1:T7 Arg2:T20	
+R13	Arg1_PPT Arg1:T7 Arg2:T21	
+R14	ArgM_LOC Arg1:T7 Arg2:T15	
+T3	AC 319 324	Spoon
+T23	OTHER 344 370	where the stems used to be
+R15	Arg1_PPT_X Arg1:T3 Arg2:T7	
+R16	Arg3_GOL Arg1:T3 Arg2:T22	
+R17	TODO Arg1:T3 Arg2:T23	
+R18	Arg1_PPT_X Arg1:T2 Arg2:T3	
+R19	ArgM_TMP Arg1:T2 Arg2:T24	
+R20	ArgM_LOC Arg1:T2 Arg2:T25	
+R21	ArgM_TMP Arg1:T2 Arg2:T28	
+R22	Arg2_GOL_X Arg1:T1 Arg2:T2	
+R23	Arg1_PPT Arg1:T1 Arg2:T26	
+R25	Arg1_PPT_X Arg1:T27 Arg2:T1	
+T30	TEMPERATURE 38 51	190 degrees C
+R26	ArgM_MNR Arg1:T4 Arg2:T30	
+#1	AnnotatorNotes T3	Not sure about this one
+#2	AnnotatorNotes R15	the mixture; the crab and lobster mixture
+#3	AnnotatorNotes R18	the mushroom; the mushroom caps; the mushroom with crab and lobster
+#4	AnnotatorNotes R22	the mushroom; the baked mushroom; the browned mushroom
+#5	AnnotatorNotes R25	the mushroom; the final dish

@@ -1,0 +1,77 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 23	mix
+T3	FOOD 24 42	the teriyaki sauce
+T4	FOOD 44 56	oyster sauce
+T5	FOOD 58 67	soy sauce
+T6	FOOD 69 76	ketchup
+T7	FOOD 78 91	garlic powder
+T8	FOOD 93 96	gin
+T9	FOOD 98 110	liquid smoke
+T10	FOOD 116 121	sugar
+T11	AC 126 131	Place
+T12	FOOD 132 149	the chicken wings
+T13	TOOL 153 161	the bowl
+T14	AC 163 168	cover
+T15	AC 174 182	marinate
+T16	TOOL 186 202	the refrigerator
+T17	DUR 203 210	8 hours
+T18	DUR 214 223	overnight
+T19	AC 228 235	Preheat
+T20	TOOL 236 245	the grill
+T21	TEMPERATURE 250 258	low heat
+T22	AC 271 274	oil
+T23	TOOL 275 290	the grill grate
+T24	AC 295 302	Arrange
+T25	FOOD 303 310	chicken
+T26	TOOL 314 323	the grill
+T27	AC 329 336	discard
+T28	FOOD 337 349	the marinade
+T29	AC 354 359	Grill
+T30	FOOD 360 377	the chicken wings
+T31	FOOD 381 389	one side
+T32	DUR 394 404	20 minutes
+T33	AC 411 415	turn
+T34	AC 420 425	brush
+T35	FOOD 431 436	honey
+T36	AC 450 458	grilling
+T37	DUR 459 469	25 minutes
+T38	CONDITION_CLAUSE 474 496	until juices run clear
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	Arg1_PPT Arg1:T2 Arg2:T8	
+R7	Arg1_PPT Arg1:T2 Arg2:T9	
+R8	Arg1_PPT Arg1:T2 Arg2:T10	
+R9	ArgM_LOC Arg1:T2 Arg2:T1	
+R10	Arg1_PPT Arg1:T11 Arg2:T12	
+R11	Arg3_GOL Arg1:T11 Arg2:T13	
+R12	Arg1_PPT_X Arg1:T14 Arg2:T11	
+R13	Arg1_PPT_X Arg1:T15 Arg2:T14	
+R14	ArgM_LOC Arg1:T15 Arg2:T16	
+R15	ArgM_TMP Arg1:T15 Arg2:T17	
+R16	ArgM_TMP Arg1:T15 Arg2:T18	
+R17	TODO Arg1:T17 Arg2:T18	
+R18	Arg1_PPT Arg1:T19 Arg2:T20	
+R19	ArgM_MNR Arg1:T19 Arg2:T21	
+R20	Arg1_PPT Arg1:T22 Arg2:T23	
+R21	Arg1_PPT Arg1:T24 Arg2:T25	
+R22	ArgM_LOC Arg1:T24 Arg2:T26	
+R23	Arg1_PPT Arg1:T27 Arg2:T28	
+R24	Arg1_PPT Arg1:T29 Arg2:T30	
+R25	ArgM_TMP Arg1:T29 Arg2:T32	
+R26	TODO Arg1:T30 Arg2:T31	
+R27	Simultaneous Arg1:T33 Arg2:T34	
+R28	Arg1_PPT_X Arg1:T33 Arg2:T29	
+R30	ArgM_TMP Arg1:T36 Arg2:T37	
+R31	ArgM_TMP Arg1:T36 Arg2:T38	
+R32	TODO Arg1:T37 Arg2:T38	
+R29	Arg1_PPT Arg1:T34 Arg2:T35	
+#1	AnnotatorNotes R13	the chicken wings; the bowl
+#2	AnnotatorNotes R12	the chicken wings; the chicken wings in the bowl
+R33	Arg1_PPT_X Arg1:T34 Arg2:T33	
+#3	AnnotatorNotes R28	the chicken wings; the grilled chicken wings
+#4	AnnotatorNotes R33	the chicken wings; the turned chicken wings; 
+R34	Arg1_PPT_X Arg1:T36 Arg2:T34	
+#5	AnnotatorNotes R34	the chicken wings; the chicken wings with honey

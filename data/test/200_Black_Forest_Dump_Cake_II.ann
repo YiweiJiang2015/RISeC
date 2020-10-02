@@ -1,0 +1,50 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	AC 53 58	Spray
+T5	TOOL 59 75	9x13 baking dish
+T6	FOOD 81 94	cooking spray
+T7	AC 99 103	Dump
+T8	FOOD 104 122	cherry pie filling
+T9	TOOL 128 132	dish
+T10	AC 137 143	spread
+T11	AC 155 161	Repeat
+T12	FOOD 167 175	cherries
+T13	FOOD 187 192	juice
+T14	AC 197 205	Sprinkle
+T15	FOOD 206 214	cake mix
+T16	FOOD 220 227	the top
+T17	AC 233 241	NOT STIR
+T18	AC 246 254	Sprinkle
+T19	FOOD 260 272	chopped nuts
+T20	AC 277 287	Distribute
+T21	FOOD 288 301	butter pieces
+T22	OTHER 314 321	the top
+T23	AC 326 330	Bake
+T24	TOOL 334 352	the preheated oven
+T25	DUR 357 367	45 minutes
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+T26	TEMPERATURE 34 47	190 degrees C
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T26	
+R4	Arg1_GOL Arg1:T4 Arg2:T5	
+R5	Arg2_PPT Arg1:T4 Arg2:T6	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	Arg3_GOL Arg1:T7 Arg2:T9	
+R8	Arg1_PPT_X Arg1:T10 Arg2:T7	
+R9	Arg2_PPT Arg1:T11 Arg2:T12	
+R10	Arg2_PPT Arg1:T11 Arg2:T13	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg2_GOL Arg1:T14 Arg2:T16	
+R13	Arg1_PPT Arg1:T18 Arg2:T19	
+R14	Arg2_GOL_X Arg1:T18 Arg2:T17	
+R15	Arg1_PPT Arg1:T20 Arg2:T21	
+R16	ArgM_LOC Arg1:T20 Arg2:T22	
+R17	Arg1_PPT_X Arg1:T23 Arg2:T20	
+R18	ArgM_LOC Arg1:T23 Arg2:T24	
+R19	ArgM_TMP Arg1:T23 Arg2:T25	
+#1	AnnotatorNotes R8	the filling; the cherry pie filling; the filling in the dish
+R20	Arg1_PPT_X Arg1:T17 Arg2:T14	
+#2	AnnotatorNotes R20	the dish; the dish with filling and cake mix
+#3	AnnotatorNotes R14	the mix; the layered cake ingredients; the dish with cake ingredients
+#4	AnnotatorNotes R17	the dish; the layered cake ingredients; the dish with cake ingredients topped with butter

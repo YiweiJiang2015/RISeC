@@ -1,0 +1,80 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 27	combine
+T3	FOOD 28 39	the chicken
+T4	FOOD 41 49	broccoli
+T5	FOOD 51 57	onions
+T6	FOOD 59 70	bell pepper
+T7	FOOD 72 78	cheese
+T8	FOOD 80 90	mayonnaise
+T9	FOOD 92 99	mustard
+T10	FOOD 101 105	salt
+T11	FOOD 107 113	pepper
+T12	FOOD 118 124	garlic
+T13	AC 129 132	Mix
+T14	FOOD 133 136	all
+T15	AC 150 157	Preheat
+T16	TOOL 158 162	oven
+T17	TEMPERATURE 166 179	400 degrees F
+T18	TEMPERATURE 181 194	200 degrees C
+T19	AC 200 205	Cover
+T20	TOOL 206 220	a cookie sheet
+T21	TOOL 226 239	aluminum foil
+T22	AC 244 249	Place
+T23	TOOL 250 257	a glass
+T25	TOOL 273 303	the center of the cookie sheet
+T26	AC 308 316	Roll out
+T27	FOOD 317 331	crescent rolls
+T29	TOOL 339 360	the base of the glass
+T30	CONDITION_CLAUSE 400 420	when you're finished
+T31	OTHER 422 437	the arrangement
+T32	AC 443 452	look like
+T33	OTHER 453 460	the sun
+T34	AC 465 470	Spoon
+T35	FOOD 471 498	some of the chicken mixture
+T37	FOOD 504 540	the thick part of each crescent roll
+T38	AC 545 549	Fold
+T41	FOOD 583 605	the top of the mixture
+T42	AC 610 617	tuck in
+T43	OTHER 618 628	the middle
+T44	AC 633 639	Remove
+T45	TOOL 640 645	glass
+T46	TOOL 651 663	cookie sheet
+T47	OTHER 669 689	Arrangement of rolls
+T48	AC 699 708	look like
+T49	OTHER 709 727	a fluted tube cake
+T50	AC 733 737	Bake
+T51	TOOL 741 755	preheated oven
+T52	DUR 760 776	25 to 30 minutes
+T53	CONDITION_CLAUSE 781 809	until rolls are golden brown
+T55	FOOD 550 577	the pointy end of each roll
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg1_PPT Arg1:T2 Arg2:T4	
+R4	Arg1_PPT Arg1:T2 Arg2:T5	
+R5	Arg1_PPT Arg1:T2 Arg2:T6	
+R6	Arg1_PPT Arg1:T2 Arg2:T7	
+R7	Arg1_PPT Arg1:T2 Arg2:T8	
+R8	Arg1_PPT Arg1:T2 Arg2:T9	
+R9	Arg1_PPT Arg1:T2 Arg2:T10	
+R10	Arg1_PPT Arg1:T2 Arg2:T11	
+R11	Arg1_PPT Arg1:T2 Arg2:T12	
+R12	ArgM_LOC Arg1:T2 Arg2:T1	
+R13	Arg1_PPT Arg1:T13 Arg2:T14	
+R14	Arg1_PPT Arg1:T15 Arg2:T16	
+R15	ArgM_MNR Arg1:T15 Arg2:T17	
+R16	ArgM_MNR Arg1:T15 Arg2:T18	
+R17	Arg1_PPT Arg1:T19 Arg2:T20	
+R18	ArgM_MEANS Arg1:T19 Arg2:T21	
+R19	Arg1_PPT Arg1:T22 Arg2:T23	
+R20	Arg3_GOL Arg1:T22 Arg2:T25	
+R1	Arg1_PPT Arg1:T26 Arg2:T27	
+R21	ArgM_LOC Arg1:T26 Arg2:T29	
+R22	Arg1_PPT Arg1:T34 Arg2:T35	
+R23	Arg3_GOL Arg1:T34 Arg2:T37	
+R24	Arg1_PPT Arg1:T38 Arg2:T55	
+R25	Arg3_GOL Arg1:T38 Arg2:T41	
+R26	Arg1_PPT Arg1:T42 Arg2:T43	
+R27	Arg1_PPT Arg1:T44 Arg2:T45	
+R28	Arg2_DIR Arg1:T44 Arg2:T46	
+R29	ArgM_LOC Arg1:T50 Arg2:T51	
+R30	ArgM_TMP Arg1:T50 Arg2:T52	
+R31	ArgM_TMP Arg1:T50 Arg2:T53	

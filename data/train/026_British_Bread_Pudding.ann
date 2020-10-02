@@ -1,0 +1,63 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+T3	TEMPERATURE 19 32	375 degrees F
+T4	TEMPERATURE 34 47	190 degrees C
+T5	TOOL 56 68	a large bowl
+T6	AC 70 77	combine
+T7	FOOD 78 83	bread
+T8	FOOD 88 92	milk
+T9	AC 98 107	set aside
+T12	AC 139 146	stir in
+T13	FOOD 147 150	egg
+T14	FOOD 152 158	butter
+T15	FOOD 160 167	raisins
+T16	FOOD 169 180	mixed fruit
+T17	FOOD 182 193	brown sugar
+T18	FOOD 195 201	nutmeg
+T19	FOOD 207 215	cinnamon
+T20	AC 220 223	Mix
+T21	AC 233 238	Press
+T22	FOOD 239 250	the mixture
+T23	TOOL 256 283	a  9-inch square baking pan
+T24	AC 288 292	Bake
+T25	TOOL 296 310	preheated oven
+T26	CONDITION_CLAUSE 311 341	until golden and firm to touch
+T27	DUR 349 359	35 minutes
+T28	TOOL 373 383	baking pan
+T29	PURPOSE_CLAUSE 384 391	to cool
+T30	AC 398 401	cut
+T31	OTHER 407 414	squares
+T32	AC 364 369	Leave
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	ArgM_LOC Arg1:T6 Arg2:T5	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	Arg1_PPT Arg1:T6 Arg2:T8	
+R7	Arg1_PPT_X Arg1:T9 Arg2:T6	
+R10	Arg1_PPT Arg1:T12 Arg2:T13	
+R11	Arg1_PPT Arg1:T12 Arg2:T14	
+R12	Arg1_PPT Arg1:T12 Arg2:T15	
+R13	Arg1_PPT Arg1:T12 Arg2:T16	
+R14	Arg1_PPT Arg1:T12 Arg2:T17	
+R15	Arg1_PPT Arg1:T12 Arg2:T18	
+R16	Arg1_PPT Arg1:T12 Arg2:T19	
+R17	Arg1_PPT_X Arg1:T20 Arg2:T12	
+R18	Arg1_PPT Arg1:T21 Arg2:T22	
+R19	Arg2_GOL Arg1:T21 Arg2:T23	
+R20	ArgM_LOC Arg1:T24 Arg2:T25	
+R21	Arg1_PPT_X Arg1:T24 Arg2:T21	
+R22	ArgM_TMP Arg1:T24 Arg2:T26	
+R23	ArgM_TMP Arg1:T24 Arg2:T27	
+R24	Arg1_PPT_X Arg1:T32 Arg2:T24	
+R25	ArgM_LOC Arg1:T32 Arg2:T28	
+R26	ArgM_PRP Arg1:T32 Arg2:T29	
+R27	Arg3_PRD Arg1:T30 Arg2:T31	
+T10	PURPOSE_CLAUSE 108 129	to soak for 5 minutes
+R8	ArgM_PRP Arg1:T9 Arg2:T10	
+#1	AnnotatorNotes R7	the bread and milk mixture
+#2	AnnotatorNotes R17	the ingredients
+#3	AnnotatorNotes R21	the pudding mixture
+#4	AnnotatorNotes R24	the pudding; the bread pudding
+R9	Arg1_PPT_X Arg1:T30 Arg2:T32	
+#5	AnnotatorNotes R9	the pudding; the bread pudding

@@ -1,0 +1,104 @@
+T1	TOOL 6 25	a large mixing bowl
+T2	AC 27 34	combine
+T3	FOOD 35 47	3 cups flour
+T4	FOOD 49 55	cheese
+T5	FOOD 57 62	sugar
+T6	FOOD 64 69	yeast
+T7	FOOD 74 78	salt
+T8	AC 83 86	Add
+T9	FOOD 87 91	milk
+T10	FOOD 96 99	egg
+T11	AC 101 105	beat
+T12	OTHER 109 118	low speed
+T13	CONDITION_CLAUSE 119 131	until smooth
+T14	AC 136 143	Stir in
+T15	FOOD 144 166	enough remaining flour
+T16	PURPOSE_CLAUSE 167 187	to form a soft dough
+T18	AC 192 196	Turn
+T19	TOOL 202 219	a floured surface
+T20	AC 221 226	knead
+T21	CONDITION_CLAUSE 227 251	until smooth and elastic
+T22	DUR 259 270	6-8 minutes
+T23	AC 275 280	Place
+T24	TOOL 284 298	a greased bowl
+T25	AC 300 307	turning
+T26	PURPOSE_CLAUSE 313 326	to grease top
+T28	AC 331 336	Cover
+T29	AC 345 349	rise
+T30	TOOL 353 365	a warm place
+T31	CONDITION_CLAUSE 366 379	until doubled
+T32	DUR 387 393	1 hour
+T33	AC 398 403	Punch
+T34	FOOD 404 409	dough
+T35	AC 419 425	Divide
+T36	OTHER 429 433	half
+T37	AC 438 443	shape
+T38	FOOD 449 459	two loaves
+T39	AC 464 469	Place
+T40	TOOL 473 489	two greased 9-in
+T41	AC 495 500	Cover
+T42	AC 509 513	rise
+T43	CONDITION_CLAUSE 514 527	until doubled
+T44	DUR 535 545	45 minutes
+T45	AC 551 555	Bake
+T46	TEMPERATURE 559 572	375 degrees F
+T47	DUR 577 590	25-30 minutes
+T48	CONDITION_CLAUSE 594 612	until golden brown
+T49	AC 618 624	Remove
+T50	TOOL 630 634	pans
+T51	PURPOSE_CLAUSE 635 656	to cool on wire racks
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	ArgM_LOC Arg1:T2 Arg2:T1	
+R7	Arg1_PPT Arg1:T8 Arg2:T9	
+R8	Arg1_PPT Arg1:T8 Arg2:T10	
+R9	ArgM_MNR Arg1:T11 Arg2:T12	
+R10	ArgM_TMP Arg1:T11 Arg2:T13	
+R11	Arg1_PPT_X Arg1:T11 Arg2:T8	
+R12	Arg2_PPT_Z Arg1:T8 Arg2:T2	
+R13	Arg1_PPT Arg1:T14 Arg2:T15	
+R14	ArgM_PRP Arg1:T14 Arg2:T16	
+R16	Arg2_PPT_Z Arg1:T14 Arg2:T11	
+R17	Arg2_GOL Arg1:T18 Arg2:T19	
+R18	ArgM_TMP Arg1:T20 Arg2:T21	
+R19	ArgM_TMP Arg1:T20 Arg2:T22	
+R20	Arg1_PPT_X Arg1:T20 Arg2:T18	
+R21	Arg1_PPT_X Arg1:T18 Arg2:T14	
+R22	Arg1_PPT_X Arg1:T23 Arg2:T20	
+R23	Arg3_GOL Arg1:T23 Arg2:T24	
+R24	ArgM_PRP Arg1:T25 Arg2:T26	
+R26	Simultaneous Arg1:T23 Arg2:T25	
+R27	Arg1_PPT_X Arg1:T28 Arg2:T23	
+R28	ArgM_LOC Arg1:T29 Arg2:T30	
+R29	ArgM_TMP Arg1:T29 Arg2:T31	
+R30	ArgM_TMP Arg1:T29 Arg2:T32	
+R31	Arg1_PPT Arg1:T33 Arg2:T34	
+R32	Arg3_GOL Arg1:T39 Arg2:T40	
+R33	Arg1_PPT_X Arg1:T35 Arg2:T33	
+R34	Arg1_PPT_X Arg1:T37 Arg2:T35	
+R35	ArgM_TMP Arg1:T42 Arg2:T43	
+R36	ArgM_TMP Arg1:T42 Arg2:T44	
+R37	Arg1_PPT_X Arg1:T41 Arg2:T39	
+R38	Arg2_PRD Arg1:T35 Arg2:T36	
+R39	Arg2_PRD Arg1:T37 Arg2:T38	
+R40	Arg1_PPT_X Arg1:T39 Arg2:T37	
+R41	ArgM_MNR Arg1:T45 Arg2:T46	
+R42	ArgM_TMP Arg1:T45 Arg2:T47	
+R43	ArgM_TMP Arg1:T45 Arg2:T48	
+R44	Arg2_DIR Arg1:T49 Arg2:T50	
+R46	ArgM_PRP Arg1:T49 Arg2:T51	
+#1	AnnotatorNotes R12	the mixture; the dough mixture; the flour mixture;
+#2	AnnotatorNotes R16	the mixture; the dough mixture; the flour mixture;
+#4	AnnotatorNotes R22	the mixture; the dough mixture; 
+#5	AnnotatorNotes R27	the mixture; the dough mixture; 
+#6	AnnotatorNotes R33	the dough mixture; the greased dough; 
+#7	AnnotatorNotes R40	the loaves; the two loaves
+#8	AnnotatorNotes R37	the loaves; the two loaves
+R47	Arg0_PAG Arg1:T29 Arg2:T28	
+#9	AnnotatorNotes R11	the dough; the dough with milk and eggs; the flour mixture with eggs
+#10	AnnotatorNotes R20	the soft dough; the dough on the floured surface
+#11	AnnotatorNotes R34	the two pieces of dough; the halved dough
+R48	Arg0_PAG Arg1:T42 Arg2:T41	

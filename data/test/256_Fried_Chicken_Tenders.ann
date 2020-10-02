@@ -1,0 +1,66 @@
+T1	AC 3 8	Place
+T2	FOOD 9 14	flour
+T3	TOOL 18 32	a shallow bowl
+T4	AC 37 42	Place
+T5	FOOD 43 54	breadcrumbs
+T6	TOOL 58 81	a separate shallow bowl
+T7	AC 87 90	mix
+T8	FOOD 96 115	ground black pepper
+T9	FOOD 120 134	cayenne pepper
+T10	AC 139 144	Place
+T11	FOOD 145 149	eggs
+T12	FOOD 154 159	water
+T13	TOOL 163 175	a small bowl
+T14	AC 201 205	coat
+T15	FOOD 206 217	the chicken
+T16	FOOD 221 230	the flour
+T17	FOOD 232 240	the eggs
+T18	FOOD 245 261	the bread crumbs
+T19	AC 267 276	set aside
+T20	AC 281 285	Heat
+T21	FOOD 286 289	oil
+T22	TOOL 293 305	a deep fryer
+T23	TEMPERATURE 309 322	375 degrees F
+T24	TEMPERATURE 324 337	190 degrees C
+T25	AC 361 364	fry
+T26	FOOD 365 372	chicken
+T27	DUR 373 387	6 to 8 minutes
+T28	CONDITION_CLAUSE 392 410	until golden brown
+T29	TOOL 418 439	a separate small bowl
+T30	AC 441 448	combine
+T31	FOOD 449 463	the mayonnaise
+T32	FOOD 465 476	horseradish
+T33	FOOD 478 488	sour cream
+T34	FOOD 490 510	Worcestershire sauce
+T35	FOOD 515 522	mustard
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg3_GOL Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R4	Arg3_GOL Arg1:T4 Arg2:T6	
+R5	Arg2_PPT Arg1:T7 Arg2:T8	
+R6	Arg2_PPT Arg1:T7 Arg2:T9	
+R7	Arg1_PPT_X Arg1:T7 Arg2:T4	
+R8	Arg1_PPT Arg1:T10 Arg2:T11	
+R9	Arg1_PPT Arg1:T10 Arg2:T12	
+R10	Arg3_GOL Arg1:T10 Arg2:T13	
+R11	Arg1_GOL Arg1:T14 Arg2:T15	
+R12	Arg1_PPT_X Arg1:T19 Arg2:T14	
+R13	Arg2_PPT Arg1:T14 Arg2:T16	
+R14	Arg2_PPT Arg1:T14 Arg2:T17	
+R15	Arg2_PPT Arg1:T14 Arg2:T18	
+R16	Arg1_PPT Arg1:T20 Arg2:T21	
+R17	ArgM_LOC Arg1:T20 Arg2:T22	
+R18	ArgM_MNR Arg1:T20 Arg2:T23	
+R19	ArgM_MNR Arg1:T20 Arg2:T24	
+R20	Arg1_PPT Arg1:T25 Arg2:T26	
+R21	ArgM_TMP Arg1:T25 Arg2:T27	
+R22	ArgM_TMP Arg1:T25 Arg2:T28	
+R23	Arg1_PPT Arg1:T30 Arg2:T31	
+R24	Arg1_PPT Arg1:T30 Arg2:T32	
+R25	ArgM_LOC Arg1:T30 Arg2:T29	
+R26	Arg1_PPT Arg1:T30 Arg2:T33	
+R27	Arg1_PPT Arg1:T30 Arg2:T34	
+R28	Arg1_PPT Arg1:T30 Arg2:T35	
+R29	TODO Arg1:T26 Arg2:T14	
+#1	AnnotatorNotes R7	the breadcrumbs; the breadcrumbs in the bowl
+#2	AnnotatorNotes R12	the chicken; the breaded chicken

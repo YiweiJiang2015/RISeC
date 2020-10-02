@@ -1,0 +1,33 @@
+T1	TOOL 6 22	a large saucepan
+T2	TEMPERATURE 26 37	medium heat
+T3	AC 39 44	saute
+T4	FOOD 45 50	onion
+T5	CONDITION_CLAUSE 51 62	until clear
+T6	AC 67 70	Add
+T7	FOOD 71 82	tomato soup
+T8	FOOD 84 97	mushroom soup
+T9	FOOD 103 118	canned tomatoes
+T10	AC 123 129	Simmer
+T11	DUR 134 144	15 minutes
+T12	AC 149 154	Place
+T13	FOOD 155 167	the crawfish
+T14	TOOL 173 180	the pan
+T15	AC 185 191	simmer
+T16	DUR 196 206	25 minutes
+R1	Arg1_PPT Arg1:T3 Arg2:T4	
+R2	ArgM_TMP Arg1:T3 Arg2:T5	
+R3	ArgM_LOC Arg1:T3 Arg2:T1	
+R4	ArgM_MNR Arg1:T3 Arg2:T2	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	Arg1_PPT Arg1:T6 Arg2:T8	
+R7	Arg1_PPT Arg1:T6 Arg2:T9	
+R8	Arg2_PPT_Z Arg1:T6 Arg2:T3	
+R9	ArgM_TMP Arg1:T10 Arg2:T11	
+R10	Arg1_PPT Arg1:T12 Arg2:T13	
+R11	Arg3_GOL Arg1:T12 Arg2:T14	
+R12	Arg1_PPT_X Arg1:T15 Arg2:T12	
+R13	ArgM_TMP Arg1:T15 Arg2:T16	
+R14	Arg1_PPT_X Arg1:T10 Arg2:T6	
+#1	AnnotatorNotes R8	the onion; the sauteed onion;
+#2	AnnotatorNotes R14	the mixture; the soup mixture; the onion mixture;
+#3	AnnotatorNotes R12	the crawfish; the crawfish mixture; 

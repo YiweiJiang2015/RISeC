@@ -1,0 +1,131 @@
+T1	AC 3 8	Slice
+T2	AC 92 97	pound
+T3	AC 113 118	Place
+T4	AC 158 162	Soak
+T5	AC 201 205	stir
+T6	AC 265 274	Set aside
+T7	AC 279 283	Heat
+T8	AC 345 351	Dredge
+T9	AC 399 404	place
+T10	AC 432 437	brown
+T11	AC 458 464	remove
+T12	AC 523 529	Season
+T13	AC 565 570	Place
+T14	AC 618 625	Preheat
+T15	AC 673 678	Drain
+T16	AC 728 732	Heat
+T17	AC 807 810	Add
+T18	AC 864 868	Pour
+T19	AC 902 909	drizzle
+T20	AC 705 714	reserving
+T21	AC 935 939	Bake
+T22	TOOL 964 982	the preheated oven
+T23	CONDITION_CLAUSE 984 996	until bubbly
+T24	DUR 944 960	20 to 25 minutes
+T25	FOOD 9 24	chicken breasts
+T26	TOOL 122 128	a dish
+T27	AC 134 138	pour
+T28	FOOD 139 143	milk
+T29	FOOD 149 153	them
+T30	DUR 167 177	10 minutes
+T31	TOOL 185 199	a shallow bowl
+T32	FOOD 215 231	the bread crumbs
+T33	FOOD 233 248	Parmesan cheese
+T34	FOOD 253 260	parsley
+T35	FOOD 284 293	olive oil
+T36	TOOL 297 318	a large heavy skillet
+T37	TEMPERATURE 324 340	medium-high heat
+T38	FOOD 352 366	chicken pieces
+T39	FOOD 370 393	the bread crumb mixture
+T40	FOOD 408 419	the hot oil
+T41	TOOL 468 500	a buttered 9x13 inch baking dish
+T42	FOOD 535 539	salt
+T43	FOOD 544 550	pepper
+T44	PURPOSE_CLAUSE 551 559	to taste
+T45	FOOD 571 584	orange slices
+T46	TOOL 626 634	the oven
+T47	TEMPERATURE 638 651	350 degrees F
+T48	FOOD 679 686	the oil
+T49	TOOL 692 703	the skillet
+T50	FOOD 733 749	the reserved oil
+T51	FOOD 755 763	the wine
+T52	TEMPERATURE 769 780	medium heat
+T53	CONDITION_CLAUSE 781 801	until reduced by 1/2
+T54	FOOD 811 816	broth
+T55	FOOD 821 833	orange juice
+T56	AC 839 845	reduce
+T57	FOOD 869 878	the sauce
+T58	FOOD 884 895	the chicken
+T59	FOOD 590 612	the top of the chicken
+T60	FOOD 915 929	Grand Marinier
+T61	PURPOSE_CLAUSE 48 79	to make 12 thin chicken fillets
+R1	Arg1_PPT Arg1:T1 Arg2:T25	
+T62	TEMPERATURE 653 666	175 degrees C
+R2	ArgM_PRP Arg1:T1 Arg2:T61	
+T63	FOOD 98 108	each piece
+R3	Arg1_PPT Arg1:T2 Arg2:T63	
+R4	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R5	Arg3_GOL Arg1:T3 Arg2:T26	
+R6	Arg1_PPT Arg1:T27 Arg2:T28	
+R7	Arg3_GOL Arg1:T27 Arg2:T29	
+R8	Arg1_PPT_X Arg1:T4 Arg2:T27	
+R9	TODO Arg1:T29 Arg2:T3	
+R10	ArgM_TMP Arg1:T4 Arg2:T30	
+R11	Arg1_PPT Arg1:T5 Arg2:T32	
+R12	Arg1_PPT Arg1:T5 Arg2:T33	
+R13	Arg1_PPT Arg1:T5 Arg2:T34	
+R14	ArgM_LOC Arg1:T5 Arg2:T31	
+R15	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R16	Arg1_PPT Arg1:T7 Arg2:T35	
+R17	ArgM_LOC Arg1:T7 Arg2:T36	
+R18	ArgM_MNR Arg1:T7 Arg2:T37	
+R19	Arg1_PPT Arg1:T8 Arg2:T38	
+R20	ArgM_LOC Arg1:T8 Arg2:T39	
+R21	Arg3_GOL Arg1:T9 Arg2:T40	
+R22	Arg1_PPT_X Arg1:T9 Arg2:T8	
+T64	OTHER 441 451	both sides
+R23	ArgM_LOC Arg1:T10 Arg2:T64	
+R24	Arg3_GOL Arg1:T11 Arg2:T41	
+R25	Arg1_PPT_X Arg1:T10 Arg2:T9	
+R26	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R27	Arg2_PPT Arg1:T12 Arg2:T42	
+R28	Arg2_PPT Arg1:T12 Arg2:T43	
+R29	ArgM_PRP Arg1:T12 Arg2:T44	
+R30	Arg1_GOL_X Arg1:T12 Arg2:T11	
+R31	Arg1_PPT Arg1:T13 Arg2:T45	
+R32	Arg3_GOL Arg1:T13 Arg2:T59	
+R33	Arg1_PPT Arg1:T14 Arg2:T46	
+R34	ArgM_MNR Arg1:T14 Arg2:T47	
+R35	ArgM_MNR Arg1:T14 Arg2:T62	
+R36	Arg1_PPT Arg1:T15 Arg2:T48	
+R37	Arg2_DIR Arg1:T15 Arg2:T49	
+T65	OTHER 715 722	1/4 cup
+R38	Arg1_PPT Arg1:T20 Arg2:T65	
+R39	Simultaneous Arg1:T15 Arg2:T20	
+R40	Arg1_PPT Arg1:T16 Arg2:T50	
+R41	Arg1_PPT Arg1:T16 Arg2:T51	
+R42	ArgM_MNR Arg1:T16 Arg2:T52	
+R43	ArgM_TMP Arg1:T16 Arg2:T53	
+R44	Arg1_PPT Arg1:T17 Arg2:T54	
+R45	Arg1_PPT Arg1:T17 Arg2:T55	
+R46	Arg2_PPT_Z Arg1:T17 Arg2:T16	
+T66	CONDITION_CLAUSE 846 858	by 1/2 again
+R47	ArgM_TMP Arg1:T56 Arg2:T66	
+R48	Arg1_PPT_X Arg1:T56 Arg2:T17	
+R49	Arg1_PPT Arg1:T18 Arg2:T57	
+R50	Arg3_GOL Arg1:T18 Arg2:T58	
+R51	Arg2_PPT Arg1:T19 Arg2:T60	
+R52	Arg1_GOL_X Arg1:T19 Arg2:T18	
+R53	ArgM_TMP Arg1:T21 Arg2:T24	
+R54	ArgM_LOC Arg1:T21 Arg2:T22	
+R55	ArgM_TMP Arg1:T21 Arg2:T23	
+#1	AnnotatorNotes R4	the chicken fillets; the slices of chicken breast
+#2	AnnotatorNotes R8	the chicken fillets; the slices of chicken breast
+#3	AnnotatorNotes R15	the mixture; the bread crumb mixture; the bread crumbs with cheese and parsley
+#4	AnnotatorNotes R22	the chicken pieces; the slices of chicken breast; the chicken fillets
+#5	AnnotatorNotes R26	the chicken breasts; the browned chicken breasts
+#6	AnnotatorNotes R30	the chicken pieces; the slices of chicken breast; the chicken fillets
+#7	AnnotatorNotes R46	the oil with wine; the hot oil with wine
+#8	AnnotatorNotes R48	the mixture; the mixture with oil, wine, broth, and juice.
+#9	AnnotatorNotes R52	the chicken; the baking dish with with chicken
+#10	AnnotatorNotes T21	REDO - add relation backwards

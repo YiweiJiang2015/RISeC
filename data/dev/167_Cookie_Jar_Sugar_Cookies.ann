@@ -1,0 +1,93 @@
+T1	AC 3 10	Combine
+T2	FOOD 11 20	the flour
+T3	FOOD 26 43	the baking powder
+T4	FOOD 45 56	baking soda
+T5	FOOD 58 62	salt
+T6	FOOD 67 73	nutmeg
+T7	TOOL 81 112	a clean 1 liter sized glass jar
+T8	AC 131 136	layer
+T9	FOOD 137 152	the white sugar
+T10	FOOD 165 182	the flour mixture
+T11	AC 187 192	Press
+T12	AC 213 217	seal
+T13	AC 222 228	Attach
+T14	TOOL 229 235	a card
+T15	TOOL 272 284	a large bowl
+T16	AC 286 290	beat
+T17	FOOD 291 296	1 egg
+T18	FOOD 302 323	1 cup softened butter
+T19	FOOD 327 336	margarine
+T20	CONDITION_CLAUSE 337 359	until light and fluffy
+T21	TOOL 380 397	an electric mixer
+T22	AC 398 401	add
+T23	FOOD 402 420	1/2 cup sour cream
+T24	FOOD 422 440	1 teaspoon vanilla
+T25	FOOD 445 460	contents of Jar
+T26	AC 465 468	Mix
+T27	CONDITION_CLAUSE 469 483	until combined
+T28	AC 488 494	Remove
+T29	FOOD 495 500	dough
+T30	TOOL 506 522	the refrigerator
+T31	AC 527 534	Preheat
+T32	TOOL 535 539	oven
+T33	TEMPERATURE 543 556	375 degrees F
+T34	TEMPERATURE 558 571	190 degrees C
+T35	AC 577 581	Roll
+T36	FOOD 582 595	chilled dough
+T37	TOOL 603 628	a lightly floured surface
+T38	OTHER 632 646	1/8 inch thick
+T39	AC 652 655	Cut
+T40	FOOD 656 661	dough
+T41	OTHER 667 681	desired shapes
+T42	AC 687 692	Place
+T43	TOOL 696 721	an ungreased cookie sheet
+T44	AC 726 730	bake
+T45	TEMPERATURE 734 747	375 degrees F
+T46	TEMPERATURE 749 762	190 degrees C
+T47	DUR 768 784	10 to 12 minutes
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg2_PPT Arg1:T1 Arg2:T3	
+R3	Arg2_PPT Arg1:T1 Arg2:T4	
+R4	Arg2_PPT Arg1:T1 Arg2:T5	
+R5	Arg2_PPT Arg1:T1 Arg2:T6	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	ArgM_LOC Arg1:T8 Arg2:T7	
+R8	Arg1_PPT Arg1:T16 Arg2:T17	
+R9	Arg2_PPT Arg1:T16 Arg2:T18	
+R10	Arg2_PPT Arg1:T16 Arg2:T19	
+R11	ArgM_TMP Arg1:T16 Arg2:T20	
+R12	ArgM_LOC Arg1:T16 Arg2:T15	
+R13	Arg2_PPT Arg1:T8 Arg2:T10	
+R14	Arg2_PPT_Z Arg1:T11 Arg2:T8	
+R15	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R16	Arg1_PPT Arg1:T22 Arg2:T23	
+R17	Arg1_PPT Arg1:T22 Arg2:T24	
+R18	Arg1_PPT Arg1:T22 Arg2:T25	
+R19	ArgM_LOC Arg1:T22 Arg2:T21	
+T48	OTHER 367 376	low speed
+R20	ArgM_MNR Arg1:T22 Arg2:T48	
+R21	ArgM_TMP Arg1:T26 Arg2:T27	
+R22	Arg1_PPT Arg1:T28 Arg2:T29	
+R23	Arg2_DIR Arg1:T28 Arg2:T30	
+R24	Arg1_PPT Arg1:T31 Arg2:T32	
+R25	ArgM_MNR Arg1:T31 Arg2:T33	
+R26	ArgM_MNR Arg1:T31 Arg2:T34	
+R27	Arg1_PPT Arg1:T35 Arg2:T36	
+R28	ArgM_LOC Arg1:T35 Arg2:T37	
+R29	Arg3_PRD Arg1:T35 Arg2:T38	
+R30	Arg1_PPT Arg1:T39 Arg2:T40	
+R31	Arg3_PRD Arg1:T39 Arg2:T41	
+R32	Arg3_GOL Arg1:T42 Arg2:T43	
+R33	Arg1_PPT_X Arg1:T42 Arg2:T39	
+R34	ArgM_MNR Arg1:T44 Arg2:T45	
+R35	ArgM_MNR Arg1:T44 Arg2:T46	
+R36	ArgM_TMP Arg1:T44 Arg2:T47	
+R37	Arg2_PPT_Z Arg1:T22 Arg2:T16	
+R38	Arg1_PPT_X Arg1:T26 Arg2:T22	
+R39	Arg1_PPT_X Arg1:T44 Arg2:T42	
+#1	AnnotatorNotes R15	the mixture; the pressed mixture
+#2	AnnotatorNotes R37	the beaten egg; the beaten egg with butter; the contents of jar
+#3	AnnotatorNotes R38	the batter; the mixture; 
+#4	AnnotatorNotes R33	the dough; the cut dough
+#5	AnnotatorNotes R39	the cut dough; the dough
+#6	AnnotatorNotes R14	the glass jar; the jar with flour mixture

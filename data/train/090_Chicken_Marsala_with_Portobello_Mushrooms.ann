@@ -1,0 +1,168 @@
+T1	AC 3 10	Preheat
+T2	TEMPERATURE 19 32	350 degrees F
+T3	TEMPERATURE 34 47	175 degrees C
+T4	TOOL 11 15	oven
+R1	Arg1_PPT Arg1:T1 Arg2:T4	
+R2	ArgM_MNR Arg1:T1 Arg2:T2	
+R3	ArgM_MNR Arg1:T1 Arg2:T3	
+T5	AC 53 57	Melt
+T6	AC 143 147	Cook
+T7	AC 209 215	Remove
+T8	AC 265 269	Melt
+T9	AC 358 362	Cook
+T10	AC 367 371	stir
+T11	FOOD 372 382	the garlic
+T12	CONDITION_CLAUSE 383 396	until tender,
+T14	AC 412 420	whisk in
+T15	FOOD 421 430	the flour
+T16	AC 435 443	Increase
+T17	OTHER 444 448	heat
+T18	TEMPERATURE 452 456	high
+R4	Arg4_GOL Arg1:T16 Arg2:T18	
+R5	Arg1_PPT Arg1:T16 Arg2:T17	
+T19	AC 506 512	Season
+T20	AC 599 605	reduce
+T21	AC 589 593	boil
+T22	OTHER 606 610	heat
+T23	TEMPERATURE 614 617	low
+T24	AC 623 629	Mix in
+T25	AC 700 705	Cover
+T26	AC 716 722	remove
+T27	OTHER 728 732	heat
+T28	AC 738 747	set aside
+T29	TOOL 706 714	saucepan
+T30	AC 753 759	Season
+T31	FOOD 760 767	chicken
+T32	FOOD 773 777	salt
+T33	FOOD 782 788	pepper
+T34	AC 794 803	dredge in
+T35	FOOD 804 823	the remaining flour
+T36	AC 829 833	Cook
+T37	FOOD 834 845	the chicken
+T38	DUR 846 864	2 minutes per side
+T39	CONDITION_CLAUSE 866 879	until browned
+R6	ArgM_TMP Arg1:T36 Arg2:T39	
+R7	Arg1_PPT Arg1:T36 Arg2:T37	
+R8	ArgM_TMP Arg1:T36 Arg2:T38	
+T41	AC 885 892	Arrange
+T42	FOOD 893 904	the chicken
+T43	TOOL 908 945	the bottom of a 9x13 inch baking dish
+T45	AC 951 956	cover
+T46	FOOD 962 992	the sauce and mushroom mixture
+T47	AC 998 1003	Cover
+T48	TOOL 1004 1015	baking dish
+T49	AC 1021 1025	bake
+T50	DUR 1026 1036	25 minutes
+T51	TOOL 1040 1058	the preheated oven
+T52	CONDITION_CLAUSE 1063 1093	until chicken juices run clear
+R11	ArgM_TMP Arg1:T49 Arg2:T50	
+R12	ArgM_TMP Arg1:T49 Arg2:T52	
+R13	ArgM_LOC Arg1:T49 Arg2:T51	
+R14	Arg1_PPT Arg1:T47 Arg2:T48	
+R15	Arg1_PPT Arg1:T41 Arg2:T42	
+R16	Arg3_GOL Arg1:T41 Arg2:T43	
+R17	Arg1_PPT_X Arg1:T45 Arg2:T41	
+R18	Arg2_PPT Arg1:T45 Arg2:T46	
+R19	Arg1_GOL Arg1:T30 Arg2:T31	
+R20	Arg2_PPT Arg1:T30 Arg2:T32	
+R21	Arg2_PPT Arg1:T30 Arg2:T33	
+R22	Arg1_PPT Arg1:T34 Arg2:T35	
+R23	Arg2_PPT_Z Arg1:T34 Arg2:T30	
+R24	Arg1_PPT Arg1:T25 Arg2:T29	
+T53	FOOD 58 72	1/2 cup butter
+T54	FOOD 82 108	1 tablespoon vegetable oil
+T55	TOOL 112 121	a skillet
+T56	TEMPERATURE 127 138	medium heat
+T57	AC 77 81	heat
+R25	Arg1_PPT_X Arg1:T26 Arg2:T25	
+R26	Arg1_PPT_X Arg1:T28 Arg2:T26	
+R27	Arg2_DIR Arg1:T26 Arg2:T27	
+R28	Arg1_PPT Arg1:T5 Arg2:T53	
+R29	Arg1_PPT Arg1:T57 Arg2:T54	
+R30	ArgM_LOC Arg1:T57 Arg2:T55	
+R31	ArgM_MNR Arg1:T57 Arg2:T56	
+T58	AC 152 156	stir
+T59	FOOD 161 176	mushroom slices
+R32	Arg1_PPT Arg1:T6 Arg2:T59	
+R34	Arg1_PPT Arg1:T58 Arg2:T59	
+T60	TOOL 180 191	the skillet
+T61	CONDITION_CLAUSE 192 204	until tender
+R35	ArgM_TMP Arg1:T6 Arg2:T61	
+T62	OTHER 221 225	heat
+T63	FOOD 634 643	mushrooms
+R38	Arg1_PPT Arg1:T24 Arg2:T63	
+T64	AC 645 654	reserving
+T65	FOOD 655 671	remaining butter
+R39	Arg1_PPT Arg1:T64 Arg2:T65	
+T66	FOOD 676 679	oil
+R40	Arg1_PPT Arg1:T64 Arg2:T66	
+T67	TOOL 683 694	the skillet
+R41	ArgM_LOC Arg1:T64 Arg2:T67	
+T68	AC 546 554	whisk in
+T69	FOOD 559 573	browning sauce
+T70	FOOD 518 524	kosher
+T71	FOOD 525 529	salt
+T72	FOOD 534 540	pepper
+T73	AC 462 469	pour in
+T74	FOOD 474 484	beef broth
+T75	FOOD 489 501	Marsala wine
+R42	Arg1_PPT Arg1:T73 Arg2:T74	
+R43	Arg1_PPT Arg1:T73 Arg2:T75	
+R46	Arg1_PPT Arg1:T9 Arg2:T11	
+T76	FOOD 270 290	the remaining butter
+T77	AC 295 299	heat
+T78	FOOD 300 317	the remaining oil
+R50	Arg1_PPT Arg1:T77 Arg2:T78	
+R51	Arg1_PPT Arg1:T8 Arg2:T76	
+T79	TOOL 321 331	a saucepan
+R53	ArgM_LOC Arg1:T77 Arg2:T79	
+R54	ArgM_LOC Arg1:T8 Arg2:T79	
+T80	TEMPERATURE 337 353	medium-high heat
+R56	ArgM_MNR Arg1:T77 Arg2:T80	
+R57	Arg2_DIR Arg1:T7 Arg2:T62	
+T81	AC 227 232	cover
+R58	Arg1_PPT_X Arg1:T81 Arg2:T7	
+T82	PURPOSE_CLAUSE 233 245	to keep warm
+R59	ArgM_PRP Arg1:T81 Arg2:T82	
+T83	AC 251 260	set aside
+R60	Arg1_PPT_X Arg1:T83 Arg2:T81	
+R62	Arg2_PPT Arg1:T19 Arg2:T70	
+R63	Arg1_GOL_X Arg1:T19 Arg2:T73	
+R64	Arg2_PPT Arg1:T19 Arg2:T71	
+R65	Arg2_PPT Arg1:T19 Arg2:T72	
+R67	Arg1_PPT Arg1:T68 Arg2:T69	
+R68	Arg1_PPT_X Arg1:T21 Arg2:T68	
+R69	Arg1_PPT Arg1:T20 Arg2:T22	
+R70	ArgM_MNR Arg1:T20 Arg2:T23	
+R73	Simultaneous Arg1:T24 Arg2:T64	
+R74	TODO Arg1:T37 Arg2:T30	
+#4	AnnotatorNotes R74	This is coreference?
+R75	Next Arg1:T16 Arg2:T73	
+R76	Next Arg1:T14 Arg2:T16	
+R78	Arg1_PPT Arg1:T14 Arg2:T15	
+R10	ArgM_MNR Arg1:T8 Arg2:T80	
+R33	Simultaneous Arg1:T6 Arg2:T58	
+R36	Arg1_PPT_X Arg1:T7 Arg2:T6	
+R37	Simultaneous Arg1:T9 Arg2:T10	
+R45	ArgM_TMP Arg1:T9 Arg2:T12	
+R47	Arg2_PPT_Z Arg1:T14 Arg2:T9	
+R44	Arg2_PPT_Z Arg1:T68 Arg2:T19	
+R48	Arg2_PPT_Z Arg1:T73 Arg2:T14	
+R49	TODO Arg1:T20 Arg2:T21	
+R52	Arg2_PPT_Z Arg1:T24 Arg2:T21	
+R9	Arg1_PPT_X Arg1:T49 Arg2:T47	
+R55	ArgM_LOC Arg1:T6 Arg2:T60	
+#1	AnnotatorNotes R36	the mushroom slices; the tender mushroom slices
+#2	AnnotatorNotes R58	the mushroom slices; the skillet with mushrooms
+#3	AnnotatorNotes R60	the mushrooms; the covered skillet
+#5	AnnotatorNotes R47	the cooked garlic; the tender garlic
+#6	AnnotatorNotes R48	the flour; the flour with garlic
+#7	AnnotatorNotes R63	the beef mixture; the beef flour mixture
+#8	AnnotatorNotes R44	the beef mixture; the beef mixture with seasoning
+#9	AnnotatorNotes R68	the beef mixture; the beef mixture with sauce
+#10	AnnotatorNotes R52	the beef mixture; the boiling beef mixture
+#11	AnnotatorNotes R25	the sausepan; the covered sausepan
+#12	AnnotatorNotes R26	the sausepan; the covered sausepan
+#13	AnnotatorNotes R23	the chicken; the chicken with pepper
+#14	AnnotatorNotes R17	the chicken; the browned chicken
+#15	AnnotatorNotes R9	the baking dish; the covered baking dish

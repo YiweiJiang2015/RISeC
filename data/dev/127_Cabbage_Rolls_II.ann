@@ -1,0 +1,68 @@
+T1	AC 35 39	boil
+T2	FOOD 9 29	a large pot of water
+T3	AC 44 48	Boil
+T4	FOOD 49 63	cabbage leaves
+T5	DUR 64 73	2 minutes
+T6	AC 75 80	drain
+T7	TOOL 88 98	large bowl
+T8	AC 100 107	combine
+T9	FOOD 108 125	1 cup cooked rice
+T10	FOOD 127 130	egg
+T11	FOOD 132 136	milk
+T12	FOOD 138 143	onion
+T13	FOOD 145 156	ground beef
+T14	FOOD 158 162	salt
+T15	FOOD 168 174	pepper
+T16	AC 179 184	Place
+T17	FOOD 191 214	1/4 cup of meat mixture
+T18	FOOD 218 245	center of each cabbage leaf
+T20	AC 251 258	roll up
+T21	AC 260 267	tucking
+T22	AC 280 285	Place
+T23	FOOD 286 291	rolls
+T24	TOOL 295 306	slow cooker
+T25	TOOL 314 326	a small bowl
+T26	AC 328 331	mix
+T27	FOOD 341 353	tomato sauce
+T28	FOOD 355 366	brown sugar
+T29	FOOD 368 379	lemon juice
+T30	FOOD 385 405	Worcestershire sauce
+T31	AC 410 414	Pour
+T32	FOOD 420 433	cabbage rolls
+T33	AC 438 443	Cover
+T34	AC 449 453	cook
+T35	TEMPERATURE 457 460	low
+T36	DUR 461 473	8 to 9 hours
+R2	Arg1_PPT Arg1:T1 Arg2:T2	
+R3	Arg1_PPT Arg1:T3 Arg2:T4	
+R4	ArgM_TMP Arg1:T3 Arg2:T5	
+R5	Arg1_PPT Arg1:T6 Arg2:T3	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	Arg1_PPT Arg1:T8 Arg2:T10	
+R8	Arg1_PPT Arg1:T8 Arg2:T11	
+R9	Arg1_PPT Arg1:T8 Arg2:T12	
+R10	Arg1_PPT Arg1:T8 Arg2:T13	
+R11	Arg1_PPT Arg1:T8 Arg2:T14	
+R12	Arg1_PPT Arg1:T8 Arg2:T15	
+R13	ArgM_LOC Arg1:T8 Arg2:T7	
+R14	Arg1_PPT Arg1:T16 Arg2:T17	
+R15	Arg3_GOL Arg1:T16 Arg2:T18	
+R16	Arg1_PPT Arg1:T22 Arg2:T23	
+R17	Arg3_GOL Arg1:T22 Arg2:T24	
+R18	Arg1_PPT_X Arg1:T20 Arg2:T16	
+R19	Simultaneous Arg1:T20 Arg2:T21	
+R20	ArgM_LOC Arg1:T26 Arg2:T25	
+R21	Arg1_PPT Arg1:T26 Arg2:T27	
+R22	Arg1_PPT Arg1:T26 Arg2:T28	
+R23	Arg1_PPT Arg1:T26 Arg2:T29	
+R24	Arg1_PPT Arg1:T26 Arg2:T30	
+R25	Arg3_GOL Arg1:T31 Arg2:T32	
+R26	Arg1_PPT_X Arg1:T31 Arg2:T26	
+R27	Arg1_PPT_X Arg1:T33 Arg2:T31	
+R28	Arg1_PPT_X Arg1:T34 Arg2:T33	
+R29	ArgM_MNR Arg1:T34 Arg2:T35	
+R30	ArgM_TMP Arg1:T34 Arg2:T36	
+#1	AnnotatorNotes R18	meat mixture; the rolled meat; cabbage leaf; 
+#2	AnnotatorNotes R26	the sauce; tomato sauce; Worcestershire sauce; 
+#3	AnnotatorNotes R27	the cabbage rolls; cabbage rolls poured with sauce;
+#4	AnnotatorNotes R28	the cabbage rolls; the covered cabbage rolls; the covered rolls with tomato sauce

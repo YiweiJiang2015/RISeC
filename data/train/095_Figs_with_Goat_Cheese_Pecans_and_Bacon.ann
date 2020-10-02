@@ -1,0 +1,37 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 22	the broiler
+T3	AC 27 32	Stuff
+T4	FOOD 33 43	fig halves
+T5	FOOD 49 60	goat cheese
+T6	AC 65 70	Press
+T7	FOOD 71 77	pecans
+T8	FOOD 83 93	the cheese
+T9	AC 98 102	Wrap
+T11	FOOD 103 124	each stuffed fig half
+T12	FOOD 130 151	half a slice of bacon
+T13	AC 153 161	securing
+T14	TOOL 167 177	toothpicks
+T15	AC 182 189	Arrange
+T17	TOOL 193 214	a medium baking sheet
+T18	AC 219 224	Broil
+T19	DUR 225 234	5 minutes
+T20	CONDITION_CLAUSE 239 322	until bacon is evenly brown and crisp and goat cheese is bubbly and lightly browned
+R2	ArgM_TMP Arg1:T18 Arg2:T19	
+R3	ArgM_TMP Arg1:T18 Arg2:T20	
+R4	Arg1_PPT_X Arg1:T18 Arg2:T15	
+R5	Arg1_GOL_X Arg1:T13 Arg2:T9	
+R6	Arg2_PPT Arg1:T13 Arg2:T14	
+R7	Arg1_GOL Arg1:T9 Arg2:T11	
+R8	Arg2_PPT Arg1:T9 Arg2:T12	
+R10	Arg1_PPT_X Arg1:T15 Arg2:T13	
+R11	Arg3_GOL Arg1:T15 Arg2:T17	
+R12	Arg1_PPT Arg1:T6 Arg2:T7	
+R13	Arg2_GOL Arg1:T6 Arg2:T8	
+R14	Next Arg1:T6 Arg2:T9	
+R16	Arg1_GOL Arg1:T3 Arg2:T4	
+R17	Arg2_PPT Arg1:T3 Arg2:T5	
+R18	Arg1_PPT Arg1:T1 Arg2:T2	
+R19	TODO Arg1:T1 Arg2:T18	
+#1	AnnotatorNotes R5	the figs; the figs with bacon
+#2	AnnotatorNotes R10	the figs; the figs with toothpicks
+#3	AnnotatorNotes R4	the figs; the figs on the baking sheet

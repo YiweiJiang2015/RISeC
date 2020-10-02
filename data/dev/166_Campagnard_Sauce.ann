@@ -1,0 +1,36 @@
+T1	TOOL 6 12	a bowl
+T2	AC 14 18	stir
+T3	FOOD 28 34	garlic
+T4	FOOD 36 47	goat cheese
+T5	FOOD 49 55	celery
+T6	FOOD 57 73	balsamic vinegar
+T7	FOOD 79 88	olive oil
+T8	AC 93 99	Season
+T9	PURPOSE_CLAUSE 100 108	to taste
+T10	FOOD 114 118	salt
+T11	FOOD 123 129	pepper
+T12	AC 134 139	Blend
+T13	CONDITION_CLAUSE 145 170	until the sauce is smooth
+T14	AC 175 180	Cover
+T15	AC 186 197	refrigerate
+T16	AC 202 207	Serve
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	ArgM_LOC Arg1:T2 Arg2:T1	
+R7	Arg1_PPT Arg1:T8 Arg2:T10	
+R8	Arg2_PPT_Z Arg1:T8 Arg2:T2	
+R9	Arg1_PPT Arg1:T8 Arg2:T11	
+R10	ArgM_PRP Arg1:T8 Arg2:T9	
+R11	ArgM_TMP Arg1:T12 Arg2:T13	
+R12	Arg1_PPT_X Arg1:T12 Arg2:T8	
+R13	Arg1_PPT_X Arg1:T14 Arg2:T12	
+R14	Arg1_PPT_X Arg1:T15 Arg2:T14	
+R16	Arg1_PPT_X Arg1:T16 Arg2:T15	
+#1	AnnotatorNotes R8	the mix; the ingredients; the mixed ingredients
+#2	AnnotatorNotes R12	the seasoned mixture; the seasoned ingredients
+#3	AnnotatorNotes R13	the blend; the sauce
+#4	AnnotatorNotes R14	the sauce; the covered sauce
+#5	AnnotatorNotes R16	the cooled sauce; the ready-to-serve sauce

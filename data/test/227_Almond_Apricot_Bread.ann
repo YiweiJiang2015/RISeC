@@ -1,0 +1,82 @@
+T1	AC 20 27	combine
+T2	AC 74 83	Set aside
+T3	AC 138 142	beat
+T4	AC 199 203	Stir
+T5	AC 250 257	Fold in
+T6	AC 283 287	Pour
+T7	AC 321 325	Bake
+T8	AC 402 406	Cool
+T9	AC 481 488	combine
+T10	FOOD 521 528	extract
+T11	FOOD 489 513	the confectioners' sugar
+T12	FOOD 515 519	milk
+T13	FOOD 533 551	reserved baby food
+T14	CONDITION_CLAUSE 552 564	until smooth
+T15	AC 570 577	Drizzle
+T16	FOOD 583 595	cooled bread
+T17	PURPOSE_CLAUSE 470 479	For glaze
+T18	TOOL 6 18	a large bowl
+T19	FOOD 28 37	the flour
+T20	FOOD 39 45	sugars
+T21	FOOD 47 60	baking powder
+T22	FOOD 65 69	salt
+T23	FOOD 84 106	1 tablespoon baby food
+T24	PURPOSE_CLAUSE 107 116	for glaze
+T25	TOOL 124 136	another bowl
+T26	FOOD 143 150	the egg
+T27	FOOD 152 156	milk
+T28	FOOD 158 161	oil
+T29	FOOD 163 170	extract
+T30	FOOD 175 194	remaining baby food
+T31	FOOD 209 224	dry ingredients
+T32	CONDITION_CLAUSE 230 245	until moistened
+T33	FOOD 258 265	almonds
+T34	FOOD 270 278	apricots
+T35	TOOL 293 316	a greased 9-in loaf pan
+T36	TEMPERATURE 329 342	350 degrees F
+T37	DUR 347 360	55-65 minutes
+T38	CONDITION_CLAUSE 364 397	until a toothpick comes out clean
+T39	DUR 411 421	10 minutes
+R1	Arg1_PPT Arg1:T1 Arg2:T19	
+R2	Arg1_PPT Arg1:T1 Arg2:T20	
+R3	Arg1_PPT Arg1:T1 Arg2:T21	
+R4	Arg1_PPT Arg1:T1 Arg2:T22	
+R5	ArgM_LOC Arg1:T1 Arg2:T18	
+R6	Arg1_PPT Arg1:T2 Arg2:T23	
+R7	ArgM_PRP Arg1:T2 Arg2:T24	
+R8	ArgM_LOC Arg1:T3 Arg2:T25	
+R9	Arg1_PPT Arg1:T3 Arg2:T26	
+R10	Arg1_PPT Arg1:T3 Arg2:T27	
+R11	Arg1_PPT Arg1:T3 Arg2:T28	
+R12	Arg1_PPT Arg1:T3 Arg2:T29	
+R13	Arg1_PPT Arg1:T3 Arg2:T30	
+R14	Arg2_PPT Arg1:T4 Arg2:T31	
+R15	Arg1_PPT_X Arg1:T4 Arg2:T3	
+R16	ArgM_TMP Arg1:T4 Arg2:T32	
+R17	Arg1_PPT Arg1:T5 Arg2:T33	
+R18	Arg1_PPT Arg1:T5 Arg2:T34	
+R19	Arg2_PPT_Z Arg1:T5 Arg2:T4	
+R20	Arg3_GOL Arg1:T6 Arg2:T35	
+R21	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R22	Arg1_PPT_X Arg1:T7 Arg2:T6	
+R23	ArgM_MNR Arg1:T7 Arg2:T36	
+R24	ArgM_TMP Arg1:T7 Arg2:T37	
+R25	ArgM_TMP Arg1:T7 Arg2:T38	
+R26	ArgM_TMP Arg1:T8 Arg2:T39	
+T40	CONDITION_CLAUSE 422 465	before removing from the pan to a wire rack
+R27	ArgM_TMP Arg1:T8 Arg2:T40	
+R28	Arg1_PPT Arg1:T9 Arg2:T11	
+R29	Arg1_PPT Arg1:T9 Arg2:T12	
+R30	Arg1_PPT Arg1:T9 Arg2:T10	
+R31	Arg1_PPT Arg1:T9 Arg2:T13	
+R32	ArgM_TMP Arg1:T9 Arg2:T14	
+R33	Arg1_GOL Arg1:T15 Arg2:T16	
+R34	Arg1_PPT_X Arg1:T15 Arg2:T9	
+R35	TODO Arg1:T9 Arg2:T17	
+#1	AnnotatorNotes R15	the egg; the egg mixture; the egg in another bowl
+#2	AnnotatorNotes R19	the dough; the dry ingredients in the milk; the moistened dough
+#3	AnnotatorNotes R21	the dough; the dough with almonds and apricots
+#4	AnnotatorNotes R22	the dough; the dough in the loaf pan
+R36	Arg1_PPT_X Arg1:T8 Arg2:T7	
+#5	AnnotatorNotes R36	the bread; the baked bread
+#6	AnnotatorNotes R34	the glaze; the smooth glaze

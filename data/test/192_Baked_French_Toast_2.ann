@@ -1,0 +1,69 @@
+T1	AC 3 9	Butter
+T2	AC 38 45	Arrange
+T3	TOOL 87 99	a large bowl
+T4	AC 101 105	beat
+T5	FOOD 115 119	eggs
+T6	FOOD 121 125	milk
+T7	FOOD 127 132	cream
+T8	FOOD 134 141	vanilla
+T9	FOOD 146 154	cinnamon
+T11	AC 183 188	cover
+T12	AC 194 205	refrigerate
+T13	AC 238 245	preheat
+T14	TOOL 246 250	oven
+T15	TEMPERATURE 254 267	350 degrees F
+T16	TOOL 291 307	a small saucepan
+T17	AC 309 316	combine
+T18	FOOD 317 323	butter
+T19	FOOD 325 336	brown sugar
+T20	FOOD 341 351	corn syrup
+T21	AC 353 357	heat
+T22	CONDITION_CLAUSE 358 372	until bubbling
+T23	AC 377 381	Pour
+T24	FOOD 387 392	bread
+T25	FOOD 397 408	egg mixture
+T26	AC 413 417	Bake
+T27	TOOL 421 435	preheated oven
+T28	DUR 452 462	40 minutes
+T29	FOOD 169 181	bread slices
+T30	FOOD 46 65	the slices of bread
+T31	TOOL 69 79	the bottom
+T32	TOOL 10 33	a 9x13 inch baking dish
+R1	Arg1_PPT Arg1:T4 Arg2:T5	
+R2	Arg1_PPT Arg1:T4 Arg2:T6	
+R3	Arg1_PPT Arg1:T4 Arg2:T7	
+R4	Arg1_PPT Arg1:T4 Arg2:T8	
+R5	Arg1_PPT Arg1:T4 Arg2:T9	
+R6	ArgM_LOC Arg1:T4 Arg2:T3	
+R7	Arg1_PPT_X Arg1:T2 Arg2:T30	
+T10	AC 159 163	Pour
+R8	Arg3_GOL Arg1:T10 Arg2:T29	
+R9	Arg1_PPT_X Arg1:T11 Arg2:T10	
+R10	Arg1_PPT_X Arg1:T12 Arg2:T11	
+R11	Arg1_PPT_X Arg1:T10 Arg2:T4	
+T33	OTHER 220 236	The next morning
+R12	ArgM_TMP Arg1:T13 Arg2:T33	
+R13	Arg1_PPT Arg1:T13 Arg2:T14	
+R14	ArgM_MNR Arg1:T13 Arg2:T15	
+R15	Arg1_PPT_X Arg1:T17 Arg2:T18	
+R16	Arg1_PPT_X Arg1:T17 Arg2:T19	
+R17	Arg1_PPT_X Arg1:T17 Arg2:T20	
+R18	Arg1_PPT_X Arg1:T21 Arg2:T17	
+R19	ArgM_LOC Arg1:T17 Arg2:T16	
+R20	ArgM_TMP Arg1:T21 Arg2:T22	
+R21	Arg3_GOL Arg1:T23 Arg2:T24	
+R22	Arg3_GOL Arg1:T23 Arg2:T25	
+R23	Arg1_PPT_X Arg1:T23 Arg2:T21	
+R24	Arg1_PPT_X Arg1:T26 Arg2:T23	
+R25	ArgM_LOC Arg1:T26 Arg2:T27	
+R26	ArgM_TMP Arg1:T26 Arg2:T28	
+R27	ArgM_LOC Arg1:T2 Arg2:T31	
+R28	Arg1_PPT Arg1:T1 Arg2:T32	
+T34	TEMPERATURE 269 282	175 degrees C
+R29	ArgM_MNR Arg1:T13 Arg2:T34	
+#1	AnnotatorNotes R11	The mixture; The beat mixture
+#2	AnnotatorNotes R9	The bread slices; The bread slices poured with the mixture
+#3	AnnotatorNotes R10	The bread slices; The covered bread slices
+#4	AnnotatorNotes R18	The combination; The combined butter, sugar and sryup
+#5	AnnotatorNotes R23	The sauce; The heated sauce
+#6	AnnotatorNotes R24	The mixture; The mixture poured with the sauce

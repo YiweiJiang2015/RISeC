@@ -1,0 +1,78 @@
+T1	AC 3 10	Preheat
+T2	TOOL 11 15	oven
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+T3	TEMPERATURE 19 32	375 degrees F
+T4	TEMPERATURE 34 47	190 degrees C
+R2	ArgM_MNR Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+T5	AC 53 59	Butter
+T6	AC 82 86	Sift
+T7	AC 141 146	Cream
+T8	AC 193 196	Add
+T9	AC 239 246	Stir in
+T10	AC 313 318	Place
+T11	AC 390 394	Bake
+T12	AC 447 453	Remove
+T13	AC 527 535	sprinkle
+T14	FOOD 87 96	the flour
+T15	FOOD 98 103	cocoa
+T16	FOOD 105 118	baking powder
+T17	FOOD 123 127	salt
+R4	Arg1_PPT Arg1:T6 Arg2:T14	
+R5	Arg1_PPT Arg1:T6 Arg2:T15	
+R6	Arg1_PPT Arg1:T6 Arg2:T16	
+R7	Arg1_PPT Arg1:T6 Arg2:T17	
+T18	FOOD 147 157	the butter
+T19	FOOD 163 174	the vanilla
+T20	FOOD 179 188	the sugar
+T21	FOOD 197 204	the egg
+T22	FOOD 209 218	egg yolks
+T23	FOOD 247 266	the dry ingredients
+T25	FOOD 319 345	rounded teaspoon of batter
+T28	TEMPERATURE 398 411	375 degrees F
+T29	TEMPERATURE 413 426	190 degrees C
+T30	DUR 432 442	12 minutes
+T31	TOOL 459 463	oven
+T32	TOOL 492 503	a wire rack
+T33	FOOD 541 561	confectioners' sugar
+R9	Arg1_PPT Arg1:T7 Arg2:T18	
+R10	Arg1_PPT Arg1:T7 Arg2:T19	
+R11	Arg1_PPT Arg1:T7 Arg2:T20	
+R12	Arg1_PPT Arg1:T13 Arg2:T33	
+R13	Arg2_GOL_X Arg1:T13 Arg2:T37	
+T34	CONDITION_CLAUSE 517 526	Once cool
+R8	ArgM_TMP Arg1:T13 Arg2:T34	
+R14	Arg2_DIR Arg1:T12 Arg2:T31	
+T35	TOOL 60 77	one Madeleine pan
+T24	CONDITION_CLAUSE 267 291	until just combined only
+R16	Arg1_PPT Arg1:T8 Arg2:T21	
+R17	Arg1_PPT Arg1:T8 Arg2:T22	
+R18	ArgM_MNR Arg1:T11 Arg2:T28	
+R19	ArgM_MNR Arg1:T11 Arg2:T29	
+R20	Arg1_PPT Arg1:T10 Arg2:T25	
+R22	Arg1_PPT Arg1:T9 Arg2:T23	
+T36	AC 220 227	beating
+R25	Arg1_PPT_X Arg1:T36 Arg2:T8	
+R26	ArgM_TMP Arg1:T9 Arg2:T24	
+R27	Arg1_PPT Arg1:T5 Arg2:T35	
+R28	ArgM_TMP Arg1:T11 Arg2:T30	
+R29	Arg2_PPT_Z Arg1:T8 Arg2:T7	
+T26	PURPOSE_CLAUSE 228 234	to mix
+R23	ArgM_PRP Arg1:T36 Arg2:T26	
+R24	Arg2_PPT_Z Arg1:T9 Arg2:T36	
+T27	TOOL 351 385	the prepared Madeleine shell forms
+R21	Arg3_GOL Arg1:T10 Arg2:T27	
+T37	AC 480 486	invert
+T38	PURPOSE_CLAUSE 504 511	to cool
+R15	Arg1_PPT_X Arg1:T37 Arg2:T12	
+R30	Arg3_GOL Arg1:T37 Arg2:T32	
+R32	ArgM_PRP Arg1:T37 Arg2:T38	
+#1	AnnotatorNotes R29	the cream; the butter cream
+#2	AnnotatorNotes R25	the egg mixture; the egg mixture with the butter
+#3	AnnotatorNotes R24	the egg mixture; the beaten egg mixture
+R31	Arg1_PPT_X Arg1:T11 Arg2:T10	
+#4	AnnotatorNotes R31	the batter; the batter in the shell forms
+R33	Arg1_PPT_X Arg1:T12 Arg2:T11	
+#5	AnnotatorNotes R33	the batter; the baked batter
+#6	AnnotatorNotes R15	the batter; the batter out of oven
+#7	AnnotatorNotes R13	the batter; the inverted batter

@@ -1,0 +1,66 @@
+T1	AC 3 7	Heat
+T2	FOOD 8 11	oil
+T3	TOOL 15 30	a heavy skillet
+T4	AC 35 40	spray
+T5	TOOL 41 62	a nonstick frying pan
+T6	FOOD 68 81	cooking spray
+T7	AC 86 91	Saute
+T8	FOOD 92 107	chicken breasts
+T9	CONDITION_CLAUSE 108 150	until no longer pink, and juices run clear
+T10	AC 152 161	set aside
+T11	AC 166 173	Preheat
+T12	TOOL 174 178	oven
+T13	TEMPERATURE 182 196	375  degrees F
+T14	TEMPERATURE 198 211	190 degrees C
+T15	AC 217 223	Unroll
+T16	FOOD 224 246	4 large crescent rolls
+T17	AC 251 256	Layer
+T18	FOOD 257 261	each
+T19	FOOD 267 285	3 thin slices brie
+T20	FOOD 287 303	3 leaves spinach
+T21	FOOD 308 326	1 slice prosciutto
+T22	AC 331 336	Place
+T23	FOOD 337 351	chicken breast
+T24	FOOD 355 374	the center of dough
+T26	AC 379 383	Wrap
+T27	AC 388 392	tuck
+T28	FOOD 393 398	dough
+T29	FOOD 406 413	chicken
+T30	CONDITION_CLAUSE 414 439	until completely enclosed
+T31	AC 444 449	Place
+T32	FOOD 450 459	seam side
+T33	TOOL 468 480	baking sheet
+T34	AC 485 489	Bake
+T35	TOOL 493 507	preheated oven
+T36	DUR 512 528	10 to 15 minutes
+T37	CONDITION_CLAUSE 533 551	until golden brown
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	Arg2_GOL Arg1:T4 Arg2:T5	
+R4	Arg1_PPT Arg1:T4 Arg2:T6	
+R5	Arg1_PPT Arg1:T7 Arg2:T8	
+R6	ArgM_TMP Arg1:T7 Arg2:T9	
+R7	Arg1_PPT_X Arg1:T10 Arg2:T7	
+R8	Arg1_PPT Arg1:T11 Arg2:T12	
+R9	ArgM_MNR Arg1:T11 Arg2:T13	
+R10	ArgM_MNR Arg1:T11 Arg2:T14	
+R11	Arg1_PPT Arg1:T15 Arg2:T16	
+R12	Arg2_GOL Arg1:T17 Arg2:T18	
+R13	Arg1_PPT Arg1:T17 Arg2:T19	
+R14	Arg1_PPT Arg1:T17 Arg2:T20	
+R15	Arg1_PPT Arg1:T17 Arg2:T21	
+R16	Arg1_PPT Arg1:T22 Arg2:T23	
+R17	Arg3_GOL Arg1:T22 Arg2:T24	
+R18	Arg1_PPT Arg1:T26 Arg2:T28	
+R19	Arg2_GOL Arg1:T26 Arg2:T29	
+R20	Simultaneous Arg1:T26 Arg2:T27	
+R21	ArgM_TMP Arg1:T26 Arg2:T30	
+R22	Arg1_PPT Arg1:T31 Arg2:T32	
+R23	Arg3_GOL Arg1:T31 Arg2:T33	
+R24	ArgM_LOC Arg1:T34 Arg2:T35	
+R25	ArgM_TMP Arg1:T34 Arg2:T36	
+R26	ArgM_TMP Arg1:T34 Arg2:T37	
+R27	TODO Arg1:T18 Arg2:T16	
+R28	Arg1_PPT_X Arg1:T34 Arg2:T31	
+#1	AnnotatorNotes R28	the chicken; the wrapped chicken; the chicken in the dough 
+#2	AnnotatorNotes R7	the chicken; the chicken breasts; the sauteed chicken; the sauteed breasts; the sauteed chicken breasts

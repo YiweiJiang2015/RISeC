@@ -1,0 +1,39 @@
+T1	TOOL 6 18	a large bowl
+T3	FOOD 34 46	the avocados
+T4	FOOD 48 58	lime juice
+T5	FOOD 60 72	orange juice
+T6	FOOD 74 89	pineapple juice
+T7	FOOD 91 96	cumin
+T8	FOOD 98 106	cilantro
+T9	FOOD 111 115	salt
+T10	AC 120 126	Mix in
+T11	FOOD 127 143	hot pepper sauce
+T12	CONDITION_CLAUSE 144 152	if using
+T13	AC 157 162	Place
+T14	FOOD 163 186	one of the avocado pits
+T15	TOOL 192 200	the bowl
+T16	PURPOSE_CLAUSE 201 222	to help keep it fresh
+T17	AC 227 232	Serve
+T18	AC 249 260	refrigerate
+T19	CONDITION_CLAUSE 261 274	until serving
+T2	AC 20 24	stir
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	Arg1_PPT Arg1:T2 Arg2:T8	
+R7	Arg1_PPT Arg1:T2 Arg2:T9	
+R8	ArgM_LOC Arg1:T2 Arg2:T1	
+R9	Arg1_PPT Arg1:T10 Arg2:T11	
+R10	Arg2_PPT_Z Arg1:T10 Arg2:T2	
+R11	ArgM_TMP Arg1:T10 Arg2:T12	
+R12	Arg1_PPT Arg1:T13 Arg2:T14	
+R13	Arg3_GOL Arg1:T13 Arg2:T15	
+R14	ArgM_PRP Arg1:T13 Arg2:T16	
+R15	Arg1_PPT_X Arg1:T17 Arg2:T13	
+R16	ArgM_TMP Arg1:T18 Arg2:T19	
+R17	Arg1_PPT_X Arg1:T18 Arg2:T17	
+#1	AnnotatorNotes R10	The stir; The stirred avocados
+#2	AnnotatorNotes R15	The mixture; The mixture placed with one avocado pit
+#3	AnnotatorNotes R17	The avocado mixture; The avocado pit placed in the avocado mixture

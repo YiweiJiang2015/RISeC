@@ -1,0 +1,50 @@
+T1	TOOL 6 24	a 1 pint glass jar
+T2	AC 36 43	combine
+T3	FOOD 44 54	the garlic
+T4	FOOD 56 62	ginger
+T5	FOOD 64 73	olive oil
+T6	FOOD 75 87	rice vinegar
+T7	FOOD 89 98	soy sauce
+T8	FOOD 100 105	honey
+T9	FOOD 111 116	water
+T10	AC 121 126	Cover
+T11	TOOL 127 134	the jar
+T12	TOOL 140 159	a tight fitting lid
+T13	AC 165 170	shake
+T14	AC 180 186	Remove
+T15	TOOL 187 190	lid
+T16	AC 196 200	heat
+T17	TOOL 201 204	jar
+T18	TOOL 208 221	the microwave
+T19	DUR 226 234	1 minute
+T20	PURPOSE_CLAUSE 240 261	to dissolve the honey
+T22	AC 270 274	cool
+T23	AC 280 285	shake
+T25	AC 310 315	Store
+T27	TOOL 327 343	the refrigerator
+R1	Arg1_PPT Arg1:T2 Arg2:T3	
+R2	Arg1_PPT Arg1:T2 Arg2:T4	
+R3	Arg1_PPT Arg1:T2 Arg2:T5	
+R4	Arg1_PPT Arg1:T2 Arg2:T6	
+R5	Arg1_PPT Arg1:T2 Arg2:T7	
+R6	Arg1_PPT Arg1:T2 Arg2:T8	
+R7	Arg1_PPT Arg1:T2 Arg2:T9	
+R8	ArgM_LOC Arg1:T2 Arg2:T1	
+R9	Arg1_PPT Arg1:T10 Arg2:T11	
+R10	Arg2_PPT Arg1:T10 Arg2:T12	
+R11	Arg1_PPT_X Arg1:T13 Arg2:T10	
+R12	Arg1_PPT Arg1:T14 Arg2:T15	
+R15	Arg1_PPT Arg1:T16 Arg2:T17	
+R16	ArgM_LOC Arg1:T16 Arg2:T18	
+R17	ArgM_TMP Arg1:T16 Arg2:T19	
+R18	ArgM_PRP Arg1:T16 Arg2:T20	
+R20	Arg1_PPT_X Arg1:T22 Arg2:T16	
+R21	Arg1_PPT_X Arg1:T23 Arg2:T22	
+T24	CONDITION_CLAUSE 291 305	before serving
+R22	ArgM_TMP Arg1:T23 Arg2:T24	
+R24	ArgM_LOC Arg1:T25 Arg2:T27	
+R25	Arg1_PPT_X Arg1:T25 Arg2:T23	
+#1	AnnotatorNotes R11	the jar
+#2	AnnotatorNotes R20	the jar
+#3	AnnotatorNotes R21	the jar
+#4	AnnotatorNotes R25	the jar

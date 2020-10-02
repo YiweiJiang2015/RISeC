@@ -1,0 +1,66 @@
+T1	AC 41 48	combine
+T3	AC 142 148	remove
+T5	AC 208 212	Heat
+T6	AC 295 299	Pipe
+T7	AC 352 355	Fry
+T8	AC 396 403	Combine
+T9	AC 435 439	Roll
+T11	TOOL 6 22	a small saucepan
+T12	TEMPERATURE 28 39	medium heat
+T13	FOOD 49 54	water
+T14	FOOD 56 79	2 1/2 tablespoons sugar
+T15	FOOD 81 85	salt
+T16	FOOD 90 117	2 tablespoons vegetable oil
+T17	FOOD 171 176	flour
+T18	FOOD 213 227	oil for frying
+T19	TOOL 231 241	deep-fryer
+T20	TOOL 245 257	deep skillet
+T21	TEMPERATURE 261 274	375 degrees F
+T22	AC 370 375	drain
+T23	TOOL 379 391	paper towels
+T24	FOOD 404 417	1/2 cup sugar
+T25	FOOD 422 430	cinnamon
+T26	FOOD 440 455	drained churros
+T30	FOOD 321 328	hot oil
+T31	FOOD 300 315	strips of dough
+T32	TOOL 335 347	a pastry bag
+T33	CONDITION_CLAUSE 356 368	until golden
+T28	CONDITION_CLAUSE 177 203	until mixture forms a ball
+T4	AC 163 170	Stir in
+R1	Arg1_PPT Arg1:T4 Arg2:T17	
+T2	AC 133 137	boil
+R2	Arg1_PPT Arg1:T1 Arg2:T13	
+R3	Arg1_PPT Arg1:T1 Arg2:T14	
+R4	Arg1_PPT Arg1:T1 Arg2:T15	
+R5	Arg1_PPT Arg1:T1 Arg2:T16	
+R6	ArgM_LOC Arg1:T1 Arg2:T11	
+R7	ArgM_MNR Arg1:T1 Arg2:T12	
+R8	Arg1_PPT_X Arg1:T2 Arg2:T1	
+R9	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R10	Arg2_GOL_X Arg1:T4 Arg2:T3	
+R11	Arg1_PPT Arg1:T5 Arg2:T18	
+R12	ArgM_LOC Arg1:T5 Arg2:T19	
+R13	ArgM_LOC Arg1:T5 Arg2:T20	
+R14	ArgM_MNR Arg1:T5 Arg2:T21	
+R15	Arg1_PPT Arg1:T6 Arg2:T31	
+R16	Arg2_GOL Arg1:T6 Arg2:T30	
+R17	ArgM_MEANS Arg1:T6 Arg2:T32	
+R18	Arg1_PPT_X Arg1:T7 Arg2:T6	
+R19	Arg1_PPT_X Arg1:T22 Arg2:T7	
+R20	ArgM_LOC Arg1:T22 Arg2:T23	
+R21	Arg1_PPT Arg1:T8 Arg2:T24	
+R22	Arg1_PPT Arg1:T8 Arg2:T25	
+R23	Arg1_PPT Arg1:T9 Arg2:T26	
+T10	FOOD 459 485	cinnamon and sugar mixture
+R24	ArgM_LOC Arg1:T9 Arg2:T10	
+T27	TOOL 154 158	heat
+R25	Arg2_DIR Arg1:T3 Arg2:T27	
+R26	ArgM_TMP Arg1:T4 Arg2:T28	
+R27	ArgM_TMP Arg1:T7 Arg2:T33	
+T29	TEMPERATURE 276 289	190 degrees C
+R28	ArgM_MNR Arg1:T5 Arg2:T29	
+#1	AnnotatorNotes R8	the water; the heated water
+#2	AnnotatorNotes R9	the water; the boiling water
+#3	AnnotatorNotes R10	the water; the boiling water
+#4	AnnotatorNotes R18	the dough strips; the dough strips in hot oil
+#5	AnnotatorNotes R19	the dough strips; the fried dough strips

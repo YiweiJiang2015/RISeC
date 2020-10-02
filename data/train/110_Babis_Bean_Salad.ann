@@ -1,0 +1,105 @@
+T1	AC 3 8	Place
+T2	FOOD 9 18	the beans
+T3	TOOL 22 32	a saucepan
+T4	FOOD 38 50	enough water
+T8	FOOD 87 92	beans
+T7	AC 103 107	boil
+T9	AC 112 118	Reduce
+T10	OTHER 119 123	heat
+T11	TEMPERATURE 127 130	low
+T12	AC 136 142	simmer
+T13	CONDITION_CLAUSE 143 169	until tender but not mushy
+T14	DUR 177 187	35 minutes
+T15	AC 193 202	Set aside
+T16	PURPOSE_CLAUSE 203 210	to cool
+T17	CONDITION_CLAUSE 215 241	When the beans have cooled
+T18	AC 243 248	place
+T19	FOOD 249 253	them
+T20	TOOL 257 269	a large bowl
+T21	AC 274 277	Add
+T22	FOOD 278 288	the celery
+T23	FOOD 290 297	carrots
+T24	FOOD 299 306	parsley
+T25	FOOD 308 319	white onion
+T26	FOOD 325 329	mint
+T27	AC 331 335	toss
+T28	PURPOSE_CLAUSE 336 344	to blend
+T29	AC 363 368	blend
+T30	FOOD 369 378	olive oil
+T31	FOOD 380 402	orange and lemon juice
+T32	FOOD 404 410	garlic
+T33	FOOD 412 421	coriander
+T34	FOOD 423 427	salt
+T35	FOOD 429 435	pepper
+T36	FOOD 441 452	brown sugar
+T37	TOOL 456 465	a blender
+T38	DUR 470 479	6 seconds
+T39	AC 484 492	Transfer
+T40	TOOL 496 512	a small saucepan
+T41	AC 518 524	simmer
+T42	TEMPERATURE 530 538	low heat
+T43	DUR 543 555	five minutes
+T44	AC 560 566	Remove
+T45	OTHER 572 576	heat
+T46	AC 582 586	cool
+T47	AC 592 596	Pour
+T48	FOOD 353 361	dressing
+T49	FOOD 597 605	dressing
+T50	FOOD 611 625	the bean salad
+T51	AC 631 642	refrigerate
+T52	DUR 647 662	at least 1 hour
+T53	CONDITION_CLAUSE 663 677	before serving
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg3_GOL Arg1:T1 Arg2:T3	
+R3	TODO Arg1:T3 Arg2:T4	
+T5	PURPOSE_CLAUSE 51 76	to cover them by one inch
+R4	ArgM_PRP Arg1:T1 Arg2:T5	
+R5	Arg1_PPT Arg1:T7 Arg2:T8	
+R6	Arg1_PPT Arg1:T9 Arg2:T10	
+R7	Arg4_GOL Arg1:T9 Arg2:T11	
+R8	Arg1_PPT_X Arg1:T12 Arg2:T9	
+R9	ArgM_TMP Arg1:T12 Arg2:T13	
+R10	ArgM_TMP Arg1:T12 Arg2:T14	
+R11	Arg1_PPT_X Arg1:T15 Arg2:T12	
+R12	ArgM_PRP Arg1:T15 Arg2:T16	
+R13	Arg1_PPT Arg1:T18 Arg2:T19	
+R14	Arg3_GOL Arg1:T18 Arg2:T20	
+R15	ArgM_TMP Arg1:T18 Arg2:T17	
+R16	Arg1_PPT Arg1:T21 Arg2:T22	
+R17	Arg1_PPT Arg1:T21 Arg2:T23	
+R18	Arg1_PPT Arg1:T21 Arg2:T24	
+R19	Arg1_PPT Arg1:T21 Arg2:T25	
+R20	Arg1_PPT Arg1:T21 Arg2:T26	
+R21	Arg1_PPT_X Arg1:T27 Arg2:T21	
+R22	ArgM_PRP Arg1:T27 Arg2:T28	
+R23	Arg2_PPT_Z Arg1:T21 Arg2:T18	
+R24	Arg1_PPT Arg1:T29 Arg2:T30	
+R25	Arg1_PPT Arg1:T29 Arg2:T31	
+R26	Arg1_PPT Arg1:T29 Arg2:T32	
+R27	Arg1_PPT Arg1:T29 Arg2:T33	
+R28	Arg1_PPT Arg1:T29 Arg2:T34	
+R29	Arg1_PPT Arg1:T29 Arg2:T35	
+R30	Arg1_PPT Arg1:T29 Arg2:T36	
+R31	ArgM_LOC Arg1:T29 Arg2:T37	
+R32	ArgM_TMP Arg1:T29 Arg2:T38	
+R33	Arg3_GOL Arg1:T39 Arg2:T40	
+R34	Arg1_PPT_X Arg1:T39 Arg2:T29	
+R35	Arg1_PPT_X Arg1:T41 Arg2:T39	
+R36	ArgM_MNR Arg1:T41 Arg2:T42	
+R37	ArgM_TMP Arg1:T41 Arg2:T43	
+R38	Arg2_DIR Arg1:T44 Arg2:T45	
+R39	Arg1_PPT_X Arg1:T46 Arg2:T44	
+R40	Arg1_PPT_X Arg1:T44 Arg2:T41	
+R41	Arg1_PPT Arg1:T47 Arg2:T49	
+R42	Arg3_GOL Arg1:T47 Arg2:T50	
+R43	Arg1_PPT_X Arg1:T51 Arg2:T47	
+R44	ArgM_TMP Arg1:T51 Arg2:T52	
+R45	ArgM_TMP Arg1:T51 Arg2:T53	
+#1	AnnotatorNotes R11	the beans; the beans in the saucepan;
+#2	AnnotatorNotes R8	the beans; the beans in the sausepan; the beans in water;
+#3	AnnotatorNotes R23	the beans; the cooled beans;
+#4	AnnotatorNotes R34	the dressing; the seasoning; olive oil, orange and lemon juice, garlic, coriander, salt, pepper, and brown sugar;
+#5	AnnotatorNotes R35	the dressing; the seasoning;
+#6	AnnotatorNotes R40	the saucepan; the dressing; the mixture;
+#7	AnnotatorNotes R21	the mixture; the beans, the celery, carrots, parsely, white onion, and minit;
+#8	AnnotatorNotes R43	the dressing; the mixture; the seasoning;

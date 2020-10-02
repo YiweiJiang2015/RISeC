@@ -1,0 +1,116 @@
+T1	AC 3 7	Cook
+T2	FOOD 8 12	pork
+T3	TOOL 16 27	a large wok
+T4	TEMPERATURE 33 49	medium-high heat
+T5	AC 54 59	Drain
+T6	AC 64 73	set aside
+T7	TOOL 81 93	a large bowl
+T8	AC 95 98	mix
+T9	FOOD 99 110	the cabbage
+T10	FOOD 112 118	carrot
+T11	FOOD 120 137	green bell pepper
+T12	FOOD 139 144	onion
+T13	FOOD 146 152	garlic
+T14	FOOD 157 163	ginger
+T15	TOOL 171 183	a small bowl
+T16	AC 185 188	mix
+T17	FOOD 189 203	the cornstarch
+T18	FOOD 205 214	soy sauce
+T19	FOOD 220 228	molasses
+T20	CONDITION_CLAUSE 229 241	until smooth
+T21	AC 246 250	Heat
+T22	FOOD 251 268	2 tablespoons oil
+T23	TOOL 272 275	wok
+T24	AC 280 287	Stir in
+T25	FOOD 288 303	cabbage mixture
+T26	AC 316 323	cooking
+T27	FOOD 324 334	each batch
+T28	DUR 335 349	3 to 4 minutes
+T29	CONDITION_CLAUSE 356 368	until tender
+T30	AC 373 379	Return
+T31	FOOD 380 390	vegetables
+T32	TOOL 394 398	bowl
+T33	AC 404 410	mix in
+T34	FOOD 411 415	pork
+T35	AC 420 427	Stir in
+T36	FOOD 428 450	the cornstarch mixture
+T37	AC 455 459	Heat
+T38	FOOD 460 471	1 quart oil
+T39	TOOL 475 487	a deep fryer
+T40	TEMPERATURE 491 504	365 degrees F
+T41	TEMPERATURE 506 519	185 degrees C
+T42	AC 526 531	Place
+T43	FOOD 538 558	1 tablespoon filling
+T44	FOOD 562 583	each egg roll wrapper
+T45	AC 589 593	Fold
+T46	FOOD 594 615	one corner of wrapper
+T48	FOOD 621 628	filling
+T49	AC 634 638	Fold
+T50	FOOD 639 652	wrapper sides
+T51	FOOD 658 665	filling
+T52	AC 671 675	Roll
+T53	FOOD 676 684	wrappers
+T54	PURPOSE_CLAUSE 685 702	to form egg rolls
+T56	AC 708 711	Fry
+T57	FOOD 712 721	egg rolls
+T58	FOOD 736 747	the hot oil
+T59	CONDITION_CLAUSE 748 766	until golden brown
+T60	AC 772 777	Drain
+T61	TOOL 781 793	paper towels
+T62	AC 798 803	serve
+T63	FOOD 809 829	sweet and sour sauce
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	ArgM_LOC Arg1:T1 Arg2:T3	
+R3	ArgM_MNR Arg1:T1 Arg2:T4	
+R4	Arg1_PPT_X Arg1:T5 Arg2:T1	
+R5	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R6	Arg1_PPT Arg1:T8 Arg2:T9	
+R7	ArgM_LOC Arg1:T8 Arg2:T7	
+R8	Arg1_PPT Arg1:T8 Arg2:T10	
+R9	Arg1_PPT Arg1:T8 Arg2:T11	
+R10	Arg1_PPT Arg1:T8 Arg2:T12	
+R11	Arg1_PPT Arg1:T8 Arg2:T13	
+R12	Arg1_PPT Arg1:T8 Arg2:T14	
+R13	Arg1_PPT Arg1:T16 Arg2:T17	
+R14	Arg1_PPT Arg1:T16 Arg2:T18	
+R15	Arg1_PPT Arg1:T16 Arg2:T19	
+R16	ArgM_TMP Arg1:T16 Arg2:T20	
+R17	ArgM_LOC Arg1:T16 Arg2:T15	
+R18	Arg1_PPT Arg1:T21 Arg2:T22	
+R19	ArgM_LOC Arg1:T21 Arg2:T23	
+R20	Arg1_PPT Arg1:T24 Arg2:T25	
+R21	Simultaneous Arg1:T24 Arg2:T26	
+R22	Arg1_PPT Arg1:T26 Arg2:T27	
+R23	ArgM_TMP Arg1:T26 Arg2:T28	
+R24	ArgM_TMP Arg1:T26 Arg2:T29	
+R25	Arg1_PPT Arg1:T30 Arg2:T31	
+R26	Arg3_GOL Arg1:T30 Arg2:T32	
+R27	Arg1_PPT Arg1:T33 Arg2:T34	
+R28	Arg1_PPT Arg1:T35 Arg2:T36	
+R29	Arg1_PPT Arg1:T37 Arg2:T38	
+R30	ArgM_LOC Arg1:T37 Arg2:T39	
+R31	ArgM_MNR Arg1:T37 Arg2:T40	
+R32	ArgM_MNR Arg1:T37 Arg2:T41	
+R33	Arg1_PPT Arg1:T42 Arg2:T43	
+R34	Arg3_GOL Arg1:T42 Arg2:T44	
+R35	Arg1_PPT Arg1:T45 Arg2:T46	
+R36	Arg3_GOL Arg1:T45 Arg2:T48	
+R38	Arg1_PPT Arg1:T49 Arg2:T50	
+R39	Arg3_GOL Arg1:T49 Arg2:T51	
+R40	Arg1_PPT Arg1:T52 Arg2:T53	
+R41	ArgM_PRP Arg1:T52 Arg2:T54	
+R43	Arg1_PPT Arg1:T56 Arg2:T57	
+R44	ArgM_LOC Arg1:T56 Arg2:T58	
+R45	ArgM_TMP Arg1:T56 Arg2:T59	
+R46	ArgM_LOC Arg1:T60 Arg2:T61	
+R47	Arg2_PPT Arg1:T62 Arg2:T63	
+R48	Arg1_PPT_X Arg1:T62 Arg2:T60	
+R49	Arg1_PPT_X Arg1:T60 Arg2:T56	
+R50	Arg2_PPT_Z Arg1:T33 Arg2:T30	
+R51	Arg2_PPT_Z Arg1:T35 Arg2:T33	
+#1	AnnotatorNotes R4	the pork; the cooked pork; the cooked meat
+#2	AnnotatorNotes R5	the pork; the drained pork 
+#3	AnnotatorNotes R50	the vegetables; the bowl
+#4	AnnotatorNotes R51	the mix; the pork; the vegetables with pork; the mix of vegetables and pork
+#5	AnnotatorNotes R49	egg rolls; fried egg rolls
+#6	AnnotatorNotes R48	drained rolls; the ready to serve rolls

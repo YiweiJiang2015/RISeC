@@ -1,0 +1,40 @@
+T1	AC 3 10	Prepare
+T2	FOOD 11 33	Fast Chicken Soup Base
+T4	AC 60 63	Add
+T5	FOOD 71 125	1 9-ounce package refrigerated small cheese tortellini
+T6	FOOD 127 158	1 14.5-ounce can diced tomatoes
+T7	FOOD 160 184	2 medium zucchini, diced
+T8	FOOD 186 204	1 tsp. dried basil
+T9	AC 214 220	simmer
+T10	DUR 225 238	10-20 minutes
+T12	FOOD 291 320	1/2 cup chopped fresh parsley
+T14	AC 325 328	Add
+T15	FOOD 329 333	salt
+T16	FOOD 338 344	pepper
+T17	CONDITION_CLAUSE 239 251	until tender
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+T3	AC 49 55	simmer
+R2	Arg1_PPT_X Arg1:T3 Arg2:T1	
+R3	Arg1_PPT Arg1:T4 Arg2:T5	
+R4	Arg1_PPT Arg1:T4 Arg2:T6	
+R5	Arg1_PPT Arg1:T4 Arg2:T7	
+R6	Arg1_PPT Arg1:T4 Arg2:T8	
+R7	Arg2_PPT_Z Arg1:T4 Arg2:T3	
+R8	Arg1_PPT_X Arg1:T9 Arg2:T4	
+R9	ArgM_TMP Arg1:T9 Arg2:T10	
+R10	ArgM_TMP Arg1:T9 Arg2:T17	
+T11	AC 283 290	stir in
+R11	Arg1_PPT Arg1:T11 Arg2:T12	
+R12	Arg2_PPT_Z Arg1:T11 Arg2:T9	
+R14	Arg1_PPT Arg1:T14 Arg2:T15	
+R15	Arg2_PPT_Z Arg1:T14 Arg2:T11	
+R16	Arg1_PPT Arg1:T14 Arg2:T16	
+T19	PURPOSE_CLAUSE 346 354	to taste
+R18	ArgM_PRP Arg1:T14 Arg2:T19	
+#1	AnnotatorNotes R2	the chicken soup; the Fast Chicken Soup Base
+#2	AnnotatorNotes R7	the chicken soup; the simmered chicken soup
+#3	AnnotatorNotes R8	the chicken soup; the chicken soup with tomatoes
+#4	AnnotatorNotes R12	the chicken soup; the tender chicken soup
+T13	CONDITION_CLAUSE 256 281	Before removing from heat
+R13	ArgM_TMP Arg1:T11 Arg2:T13	
+#5	AnnotatorNotes R15	the chicken soup; the chicken soup with parsley

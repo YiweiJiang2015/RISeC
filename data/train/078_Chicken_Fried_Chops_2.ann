@@ -1,0 +1,61 @@
+T1	AC 22 29	combine
+T2	AC 106 111	brown
+T3	AC 147 152	Place
+T4	AC 174 181	Combine
+T5	AC 218 223	Cover
+T6	AC 198 202	pour
+T7	AC 294 301	thicken
+T8	AC 317 322	serve
+T9	TOOL 6 20	a shallow bowl
+T10	FOOD 30 35	flour
+T11	FOOD 37 41	salt
+T12	FOOD 43 50	mustard
+T13	FOOD 55 68	garlic powder
+T14	AC 70 76	dredge
+T15	FOOD 77 87	pork chops
+T16	TOOL 95 104	a skillet
+T17	FOOD 112 121	the chops
+T18	FOOD 139 142	oil
+T19	FOOD 125 135	both sides
+T20	TOOL 156 169	a slow cooker
+T21	FOOD 182 186	soup
+T22	FOOD 191 196	water
+T23	FOOD 208 213	chops
+T24	AC 228 232	cook
+T25	TEMPERATURE 236 239	low
+T26	DUR 244 253	6-8 hours
+T28	FOOD 302 312	pan juices
+T29	FOOD 328 342	the pork chops
+T30	CONDITION_CLAUSE 282 292	If desired
+T27	CONDITION_CLAUSE 257 277	until meat is tender
+R1	Arg1_PPT Arg1:T1 Arg2:T10	
+R2	Arg1_PPT Arg1:T1 Arg2:T11	
+R3	Arg1_PPT Arg1:T1 Arg2:T12	
+R4	Arg1_PPT Arg1:T1 Arg2:T13	
+R5	Arg2_PPT Arg1:T14 Arg2:T15	
+R6	ArgM_LOC Arg1:T1 Arg2:T9	
+R7	TODO Arg1:T14 Arg2:T1	
+R8	Arg1_PPT Arg1:T2 Arg2:T17	
+R9	TODO Arg1:T2 Arg2:T19	
+R10	ArgM_LOC Arg1:T2 Arg2:T18	
+R11	ArgM_LOC Arg1:T2 Arg2:T16	
+R12	Arg1_PPT_X Arg1:T3 Arg2:T2	
+R13	Arg3_GOL Arg1:T3 Arg2:T20	
+R14	Arg1_PPT Arg1:T4 Arg2:T21	
+R15	Arg1_PPT Arg1:T4 Arg2:T22	
+R16	Arg1_PPT_X Arg1:T6 Arg2:T4	
+R17	Arg3_GOL Arg1:T6 Arg2:T23	
+R18	ArgM_MNR Arg1:T24 Arg2:T25	
+R19	ArgM_TMP Arg1:T24 Arg2:T26	
+R20	ArgM_TMP Arg1:T24 Arg2:T27	
+R21	Arg1_PPT_X Arg1:T5 Arg2:T6	
+R22	Arg1_PPT_X Arg1:T24 Arg2:T5	
+R23	Arg1_PPT Arg1:T7 Arg2:T28	
+R24	Arg1_PPT_X Arg1:T8 Arg2:T7	
+R25	TODO Arg1:T8 Arg2:T29	
+R26	ArgM_TMP Arg1:T7 Arg2:T30	
+#1	AnnotatorNotes R12	the pork chops; the browned pork chops
+#2	AnnotatorNotes R16	the soup; the soup
+#3	AnnotatorNotes R21	the chops; the chops topped with soup
+#4	AnnotatorNotes R22	the chops; the covered chops
+#5	AnnotatorNotes R24	the pan juices; the thick pan juices

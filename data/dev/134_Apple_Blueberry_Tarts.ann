@@ -1,0 +1,97 @@
+T1	TOOL 6 19	a medium bowl
+T2	AC 20 27	combine
+T3	FOOD 28 34	apples
+T4	FOOD 36 47	blueberries
+T5	FOOD 49 65	sugar substitute
+T6	FOOD 71 103	the 1/4 teaspoon apple pie spice
+T7	AC 105 114	set aside
+T8	TOOL 122 141	another medium bowl
+T9	AC 142 155	stir together
+T10	FOOD 156 180	whole wheat pastry flour
+T11	FOOD 182 193	kosher salt
+T12	FOOD 199 231	the 1/8 teaspoon apple pie spice
+T13	AC 236 239	Add
+T14	FOOD 240 243	oil
+T15	FOOD 248 252	milk
+T16	FOOD 268 281	flour mixture
+T17	AC 286 290	Stir
+T18	TOOL 304 310	a fork
+T19	CONDITION_CLAUSE 311 337	until dough comes together
+T20	AC 342 348	Divide
+T21	FOOD 349 354	dough
+T22	FOOD 360 370	6 portions
+T23	AC 375 380	Using
+T24	AC 447 452	press
+T25	FOOD 453 470	one dough portion
+R1	TODO Arg1:T22 Arg2:T25	
+T26	TOOL 474 517	the bottom and up the side of each tart pan
+T28	TOOL 381 422	six 3 1/2- to 4-inch individual tart pans
+T29	TOOL 428 445	removable bottoms
+R2	TODO Arg1:T28 Arg2:T29	
+T30	AC 522 528	Divide
+T31	FOOD 529 542	fruit mixture
+T32	TOOL 549 566	pastry-lined pans
+T33	AC 571 576	Place
+T34	TOOL 577 586	tart pans
+T35	TOOL 590 610	a large baking sheet
+T36	AC 615 620	Place
+T37	TOOL 621 642	a large piece of foil
+T38	TOOL 648 657	tart pans
+T39	AC 659 664	press
+T40	TOOL 685 694	the edges
+T41	PURPOSE_CLAUSE 695 702	to seal
+T42	AC 708 712	Bake
+T43	TOOL 716 736	a 375 degrees F oven
+T44	DUR 741 751	20 minutes
+T45	AC 753 759	remove
+T46	TOOL 760 764	foil
+T47	AC 770 774	Bake
+T48	DUR 781 791	20 minutes
+T49	CONDITION_CLAUSE 800 821	until fruit is tender
+T50	AC 831 835	cool
+T51	TOOL 839 848	tart pans
+T52	TOOL 852 863	a wire rack
+T53	DUR 868 878	15 minutes
+T54	AC 894 900	remove
+T55	TOOL 901 919	sides of tart pans
+T57	AC 925 930	Serve
+R4	Arg1_PPT Arg1:T2 Arg2:T3	
+R5	Arg1_PPT Arg1:T2 Arg2:T4	
+R6	Arg1_PPT Arg1:T2 Arg2:T5	
+R7	Arg1_PPT Arg1:T2 Arg2:T6	
+R8	ArgM_LOC Arg1:T2 Arg2:T1	
+R9	Arg1_PPT_X Arg1:T7 Arg2:T2	
+R10	Arg1_PPT Arg1:T9 Arg2:T10	
+R11	Arg1_PPT Arg1:T9 Arg2:T11	
+R12	Arg1_PPT Arg1:T9 Arg2:T12	
+R13	ArgM_LOC Arg1:T9 Arg2:T8	
+R14	Arg1_PPT Arg1:T13 Arg2:T14	
+R15	Arg1_PPT Arg1:T13 Arg2:T15	
+R16	Arg2_PPT Arg1:T13 Arg2:T16	
+R17	ArgM_MEANS Arg1:T17 Arg2:T18	
+R18	ArgM_TMP Arg1:T17 Arg2:T19	
+R19	Arg1_PPT Arg1:T20 Arg2:T21	
+R20	Arg2_PRD Arg1:T20 Arg2:T22	
+R21	Arg1_PPT Arg1:T24 Arg2:T25	
+R23	ArgM_LOC Arg1:T24 Arg2:T26	
+R24	ArgM_MEANS Arg1:T24 Arg2:T28	
+R25	Arg1_PPT Arg1:T30 Arg2:T31	
+R26	ArgM_LOC Arg1:T30 Arg2:T32	
+R27	Arg1_PPT Arg1:T33 Arg2:T34	
+R28	Arg3_GOL Arg1:T33 Arg2:T35	
+R29	Arg1_PPT Arg1:T36 Arg2:T37	
+R30	Arg3_GOL Arg1:T36 Arg2:T38	
+R31	ArgM_PRP Arg1:T39 Arg2:T41	
+R32	ArgM_LOC Arg1:T39 Arg2:T40	
+R33	ArgM_LOC Arg1:T42 Arg2:T43	
+R34	ArgM_TMP Arg1:T42 Arg2:T44	
+R35	Arg1_PPT Arg1:T45 Arg2:T46	
+R36	ArgM_TMP Arg1:T47 Arg2:T48	
+R37	ArgM_TMP Arg1:T47 Arg2:T49	
+R38	ArgM_LOC Arg1:T50 Arg2:T51	
+R39	ArgM_LOC Arg1:T50 Arg2:T52	
+R40	ArgM_TMP Arg1:T50 Arg2:T53	
+R41	Arg1_PPT Arg1:T54 Arg2:T55	
+R44	Arg1_PPT_X Arg1:T17 Arg2:T13	
+#1	AnnotatorNotes R9	the mixture; the apple mixture; the fruity mixture; 
+#2	AnnotatorNotes R44	flour mixture; the mixture; dough mixture; 

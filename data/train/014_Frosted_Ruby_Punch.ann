@@ -1,0 +1,41 @@
+T1	AC 3 7	Pour
+T2	FOOD 8 23	cranberry juice
+T3	TOOL 29 46	a 5-cup ring mold
+T4	AC 51 57	Freeze
+T5	DUR 58 68	over night
+T6	TOOL 76 88	a punch bowl
+T7	AC 90 97	combine
+T8	FOOD 98 103	sugar
+T9	FOOD 105 116	lemon juice
+T10	FOOD 121 133	orange juice
+T11	CONDITION_CLAUSE 134 158	until sugar is dissolved
+T12	AC 160 167	stir in
+T13	FOOD 168 182	the ginger ale
+T14	AC 187 193	Remove
+T15	FOOD 194 202	ice ring
+T16	TOOL 208 212	mold
+T17	AC 214 219	float
+T18	AC 233 238	Place
+T19	FOOD 239 256	scoops of sherbet
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Arg3_GOL Arg1:T1 Arg2:T3	
+R3	ArgM_TMP Arg1:T4 Arg2:T5	
+R4	ArgM_LOC Arg1:T7 Arg2:T6	
+R5	Arg1_PPT Arg1:T7 Arg2:T8	
+R6	Arg1_PPT Arg1:T7 Arg2:T9	
+R7	Arg1_PPT Arg1:T7 Arg2:T10	
+R8	ArgM_TMP Arg1:T7 Arg2:T11	
+R9	Arg1_PPT Arg1:T12 Arg2:T13	
+R10	Arg2_PPT_Z Arg1:T12 Arg2:T7	
+R11	Arg1_PPT Arg1:T14 Arg2:T15	
+R12	Arg2_DIR Arg1:T14 Arg2:T16	
+R13	Arg1_PPT Arg1:T18 Arg2:T19	
+T21	TOOL 223 228	punch
+R15	ArgM_LOC Arg1:T17 Arg2:T21	
+T20	TOOL 264 268	ring
+R14	Arg3_GOL Arg1:T18 Arg2:T20	
+R17	Arg1_PPT_X Arg1:T4 Arg2:T1	
+#1	AnnotatorNotes R17	the cranberry juice
+#2	AnnotatorNotes R10	the lemon orange juice
+R16	Arg1_PPT_X Arg1:T17 Arg2:T14	
+#3	AnnotatorNotes R16	the ice ring; the froozen cranberry juice ring

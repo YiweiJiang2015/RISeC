@@ -1,0 +1,62 @@
+T1	AC 3 10	Measure
+T2	FOOD 11 16	flour
+T3	FOOD 18 23	sugar
+T4	FOOD 25 38	baking powder
+T5	FOOD 40 44	salt
+T6	FOOD 50 65	chocolate chips
+T7	TOOL 71 83	a large bowl
+T8	AC 88 91	Mix
+T9	AC 108 112	make
+T10	AC 138 142	Beat
+T11	FOOD 143 150	the egg
+T12	TOOL 154 166	a small bowl
+T13	CONDITION_CLAUSE 167 179	until frothy
+T14	AC 184 190	Mix in
+T15	FOOD 191 202	cooking oil
+T16	FOOD 204 208	milk
+T17	FOOD 214 221	bananas
+T18	AC 226 230	Pour
+T19	FOOD 231 238	mixture
+T20	OTHER 244 252	the well
+T21	AC 257 261	Stir
+T22	PURPOSE_CLAUSE 267 277	to moisten
+T23	AC 282 286	Fill
+T24	TOOL 287 306	greased muffin cups
+T25	AC 320 324	Bake
+T27	DUR 362 378	20 to 25 minutes
+R2	ArgM_TMP Arg1:T25 Arg2:T27	
+T26	TEMPERATURE 328 341	400 degrees F
+T28	TEMPERATURE 343 356	205 degrees C
+R1	ArgM_MNR Arg1:T25 Arg2:T26	
+R3	ArgM_MNR Arg1:T25 Arg2:T28	
+T29	OTHER 307 315	3/4 full
+R4	Arg1_GOL Arg1:T23 Arg2:T24	
+R5	Arg2_PPT_Z Arg1:T23 Arg2:T21	
+R6	ArgM_PRP Arg1:T21 Arg2:T22	
+R7	Arg1_PPT_X Arg1:T21 Arg2:T18	
+R8	Arg1_PPT Arg1:T18 Arg2:T19	
+R9	Arg3_GOL Arg1:T18 Arg2:T20	
+R10	Arg1_PPT Arg1:T14 Arg2:T15	
+R11	Arg1_PPT Arg1:T14 Arg2:T16	
+R12	Arg1_PPT Arg1:T14 Arg2:T17	
+R13	Arg2_PPT_Z Arg1:T14 Arg2:T10	
+R14	Arg1_PPT Arg1:T10 Arg2:T11	
+R15	ArgM_LOC Arg1:T10 Arg2:T12	
+R16	ArgM_TMP Arg1:T10 Arg2:T13	
+T30	OTHER 113 119	a well
+T31	OTHER 123 133	the center
+R17	Arg1_PPT Arg1:T9 Arg2:T30	
+R18	ArgM_LOC Arg1:T9 Arg2:T31	
+R19	Arg1_PPT_X Arg1:T8 Arg2:T1	
+R20	Arg1_PPT Arg1:T1 Arg2:T2	
+R21	Arg1_PPT Arg1:T1 Arg2:T3	
+R22	Arg1_PPT Arg1:T1 Arg2:T4	
+R23	Arg1_PPT Arg1:T1 Arg2:T5	
+R24	Arg1_PPT Arg1:T1 Arg2:T6	
+R25	ArgM_LOC Arg1:T1 Arg2:T7	
+R26	Arg1_PPT_X Arg1:T25 Arg2:T23	
+#1	AnnotatorNotes R19	The flour; The measured flour
+#2	AnnotatorNotes R13	The egg; The beat egg
+#3	AnnotatorNotes R7	The mixture; The mixture poured into the well
+#4	AnnotatorNotes R5	The mixture; The stirred mixture
+#5	AnnotatorNotes R26	The muffin cups; The filled muffin cups 

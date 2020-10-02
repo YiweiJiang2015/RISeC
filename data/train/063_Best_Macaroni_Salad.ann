@@ -1,0 +1,55 @@
+T1	AC 43 47	cook
+T2	AC 70 75	rinse
+T3	AC 124 131	combine
+T4	AC 158 161	mix
+T6	AC 215 218	Mix
+T7	AC 228 235	Drizzle
+T8	AC 274 285	Refrigerate
+T9	FOOD 179 187	cucumber
+T10	FOOD 189 194	onion
+T11	FOOD 196 199	ham
+T12	FOOD 204 210	cheese
+T13	FOOD 236 239	oil
+T14	FOOD 244 251	vinegar
+T16	TOOL 110 122	a large bowl
+T18	FOOD 48 53	pasta
+T19	AC 97 102	drain
+T20	FOOD 82 92	cold water
+T22	FOOD 143 153	mayonnaise
+T23	FOOD 257 260	top
+T24	AC 265 269	toss
+T25	DUR 290 306	at least 4 hours
+T26	CONDITION_CLAUSE 54 68	until al dente
+T21	FOOD 132 141	the pasta
+R1	Arg1_PPT Arg1:T3 Arg2:T21	
+R2	Arg1_PPT Arg1:T3 Arg2:T22	
+R3	ArgM_LOC Arg1:T3 Arg2:T16	
+R4	Arg1_PPT_X Arg1:T4 Arg2:T3	
+T5	AC 171 178	Stir in
+R5	Arg1_PPT Arg1:T5 Arg2:T9	
+R6	Arg1_PPT Arg1:T5 Arg2:T10	
+R7	Arg1_PPT Arg1:T5 Arg2:T11	
+R8	Arg1_PPT Arg1:T5 Arg2:T12	
+R9	Arg2_PPT_Z Arg1:T5 Arg2:T4	
+R10	Arg1_PPT_X Arg1:T6 Arg2:T5	
+R11	Arg2_PPT Arg1:T7 Arg2:T13	
+R12	Arg2_PPT Arg1:T7 Arg2:T14	
+R13	Arg1_GOL Arg1:T7 Arg2:T23	
+R14	Arg1_PPT_X Arg1:T24 Arg2:T7	
+R15	Arg1_PPT_X Arg1:T8 Arg2:T24	
+R16	ArgM_TMP Arg1:T8 Arg2:T25	
+R17	Arg1_PPT Arg1:T1 Arg2:T18	
+R18	ArgM_TMP Arg1:T1 Arg2:T26	
+R19	Arg1_PPT_X Arg1:T2 Arg2:T1	
+R20	Arg1_PPT_X Arg1:T19 Arg2:T2	
+R21	ArgM_LOC Arg1:T2 Arg2:T20	
+T15	FOOD 6 41	a large pot of salted boiling water
+R22	ArgM_LOC Arg1:T1 Arg2:T15	
+#1	AnnotatorNotes R21	Added by Yiwei
+#2	AnnotatorNotes R19	the pasta; the dente pasta
+#3	AnnotatorNotes R20	the pasta; the rinsed pasta
+#4	AnnotatorNotes R4	the pasta mixture; the pasta with mayonnaise
+#5	AnnotatorNotes R9	the mixture; the pasta mixture
+#6	AnnotatorNotes R10	the mixture; the pasta mixture with cheese
+#7	AnnotatorNotes R14	the pasta mixture; the pasta mixture topped with oil
+#8	AnnotatorNotes R15	the pasta mixture; the tossed pasta mixture

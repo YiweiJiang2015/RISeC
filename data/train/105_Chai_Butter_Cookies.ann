@@ -1,0 +1,86 @@
+T1	TOOL 6 18	a large bowl
+T2	AC 20 25	cream
+T3	FOOD 35 45	the butter
+T4	FOOD 47 63	1 1/3 cups sugar
+T5	FOOD 69 81	chai tea mix
+T6	CONDITION_CLAUSE 82 104	until light and fluffy
+T7	AC 109 116	Beat in
+T8	FOOD 117 125	the eggs
+T9	OTHER 126 139	one at a time
+T10	AC 141 147	mixing
+T11	AC 168 175	Combine
+T12	FOOD 176 185	the flour
+T13	FOOD 187 200	baking powder
+T14	FOOD 206 210	salt
+T15	AC 212 217	blend
+T16	FOOD 223 242	the creamed mixture
+T17	CONDITION_CLAUSE 243 281	until all of the dry has been absorbed
+T18	AC 286 291	Cover
+T19	FOOD 292 301	the dough
+T20	AC 307 318	refrigerate
+T21	DUR 323 329	1 hour
+T22	AC 334 341	Preheat
+T23	TOOL 342 350	the oven
+T24	TEMPERATURE 354 367	400 degrees F
+T25	TEMPERATURE 369 382	200 degrees C
+T26	AC 388 392	Roll
+T27	FOOD 393 409	the cookie dough
+T28	FOOD 415 433	walnut sized balls
+T29	AC 439 443	roll
+T30	FOOD 444 453	the balls
+T31	FOOD 457 462	sugar
+T32	AC 467 472	Place
+T33	FOOD 473 484	the cookies
+T34	TOOL 490 511	greased cookie sheets
+T35	AC 538 545	flatten
+T36	TOOL 561 580	the tines of a fork
+T37	AC 585 589	Bake
+T38	DUR 594 610	10 to 12 minutes
+T39	TOOL 614 632	the preheated oven
+T40	CONDITION_CLAUSE 639 669	until the edges begin to brown
+T41	AC 674 680	Remove
+T42	TOOL 686 699	cookie sheets
+T43	PURPOSE_CLAUSE 700 721	to cool on wire racks
+R1	ArgM_LOC Arg1:T2 Arg2:T1	
+R2	Arg1_PPT Arg1:T2 Arg2:T3	
+R3	Arg1_PPT Arg1:T2 Arg2:T4	
+R4	Arg1_PPT Arg1:T2 Arg2:T5	
+R5	ArgM_TMP Arg1:T2 Arg2:T6	
+R6	Arg1_PPT Arg1:T7 Arg2:T8	
+R7	ArgM_MNR Arg1:T7 Arg2:T9	
+R8	Arg1_PPT_X Arg1:T10 Arg2:T7	
+R9	Arg2_PPT_Z Arg1:T7 Arg2:T2	
+R10	Arg1_PPT Arg1:T11 Arg2:T12	
+R11	Arg1_PPT Arg1:T11 Arg2:T13	
+R12	Arg1_PPT Arg1:T11 Arg2:T14	
+R13	Arg2_PPT Arg1:T15 Arg2:T16	
+R14	Arg1_PPT_X Arg1:T15 Arg2:T11	
+R15	ArgM_TMP Arg1:T15 Arg2:T17	
+R16	Arg1_PPT Arg1:T18 Arg2:T19	
+R17	Arg1_PPT_X Arg1:T20 Arg2:T18	
+R18	ArgM_TMP Arg1:T20 Arg2:T21	
+R19	Arg1_PPT Arg1:T22 Arg2:T23	
+R20	ArgM_MNR Arg1:T22 Arg2:T24	
+R21	ArgM_MNR Arg1:T22 Arg2:T25	
+R22	Arg1_PPT Arg1:T26 Arg2:T27	
+R23	Arg3_PRD Arg1:T26 Arg2:T28	
+R24	Arg1_PPT Arg1:T29 Arg2:T30	
+R25	ArgM_LOC Arg1:T29 Arg2:T31	
+R26	Arg1_PPT Arg1:T32 Arg2:T33	
+R27	Arg3_GOL Arg1:T32 Arg2:T34	
+R28	ArgM_MEANS Arg1:T35 Arg2:T36	
+R29	Arg1_PPT_X Arg1:T35 Arg2:T32	
+R30	Arg1_PPT_X Arg1:T37 Arg2:T35	
+R31	ArgM_TMP Arg1:T37 Arg2:T38	
+R32	ArgM_LOC Arg1:T37 Arg2:T39	
+R33	ArgM_TMP Arg1:T37 Arg2:T40	
+R34	Arg1_PPT_X Arg1:T41 Arg2:T37	
+R35	Arg2_DIR Arg1:T41 Arg2:T42	
+R36	ArgM_PRP Arg1:T41 Arg2:T43	
+#1	AnnotatorNotes R9	the cream; the butter cream
+#2	AnnotatorNotes R8	the egg mixture; the egg mixture with butter
+#3	AnnotatorNotes R14	the flour mixture; the flour mixture with salt
+#4	AnnotatorNotes R17	the dough; the covered dough
+#5	AnnotatorNotes R29	the cookies; the cookies on cookie sheets
+#6	AnnotatorNotes R30	the cookies; the flattened cookies
+#7	AnnotatorNotes R34	the cookies; the baked cookies

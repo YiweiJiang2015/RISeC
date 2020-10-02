@@ -1,0 +1,77 @@
+T1	AC 3 8	Drain
+T2	FOOD 9 19	artichokes
+T3	AC 21 30	reserving
+T4	FOOD 31 51	half of the marinade
+T6	AC 56 60	Chop
+T7	FOOD 61 71	artichokes
+T8	AC 73 76	set
+T9	TOOL 90 99	a skillet
+T10	AC 101 106	saute
+T11	FOOD 107 112	onion
+T12	FOOD 117 123	garlic
+T13	FOOD 127 144	reserved marinade
+T14	CONDITION_CLAUSE 145 157	until tender
+T15	AC 159 168	set aside
+T16	TOOL 173 188	In a large bowl
+T17	AC 190 197	combine
+T18	FOOD 198 205	the egg
+T19	FOOD 207 219	bread crumbs
+T20	FOOD 221 228	mustard
+T21	FOOD 230 237	oregano
+T22	FOOD 239 245	pepper
+T23	FOOD 250 266	hot pepper sauce
+T24	AC 271 278	Stir in
+T25	FOOD 279 289	the cheese
+T26	FOOD 291 298	parsley
+T27	FOOD 300 319	reserved artichokes
+T28	FOOD 324 337	onion mixture
+T29	AC 342 346	Fill
+T30	TOOL 347 368	miniature muffin cups
+T32	AC 392 396	Bake
+T33	TEMPERATURE 400 413	325 degrees F
+T34	DUR 418 431	15-17 minutes
+T35	CONDITION_CLAUSE 435 444	until set
+T36	AC 449 453	Cool
+T37	DUR 458 467	5 minutes
+T38	CONDITION_CLAUSE 468 506	before removing from pan to wire racks
+T39	AC 511 516	Serve
+R1	Arg1_PPT Arg1:T1 Arg2:T2	
+R2	Simultaneous Arg1:T1 Arg2:T3	
+R3	Arg1_PPT Arg1:T3 Arg2:T4	
+R5	Arg1_PPT Arg1:T6 Arg2:T7	
+R6	Arg1_PPT_X Arg1:T8 Arg2:T6	
+R7	ArgM_LOC Arg1:T10 Arg2:T9	
+R8	Arg1_PPT Arg1:T10 Arg2:T11	
+R9	Arg1_PPT Arg1:T10 Arg2:T12	
+R10	ArgM_LOC Arg1:T10 Arg2:T13	
+R11	ArgM_TMP Arg1:T10 Arg2:T14	
+R12	Arg1_PPT_X Arg1:T15 Arg2:T10	
+R13	ArgM_LOC Arg1:T17 Arg2:T16	
+R14	Arg1_PPT Arg1:T17 Arg2:T18	
+R15	Arg1_PPT Arg1:T17 Arg2:T19	
+R16	Arg1_PPT Arg1:T17 Arg2:T20	
+R17	Arg1_PPT Arg1:T17 Arg2:T21	
+R18	Arg1_PPT Arg1:T17 Arg2:T22	
+R19	Arg1_PPT Arg1:T17 Arg2:T23	
+R20	Arg1_PPT Arg1:T24 Arg2:T25	
+R21	Arg1_PPT Arg1:T24 Arg2:T26	
+R22	Arg1_PPT Arg1:T24 Arg2:T27	
+R23	Arg1_PPT Arg1:T24 Arg2:T28	
+R24	Arg2_PPT_Z Arg1:T24 Arg2:T17	
+R25	Arg1_PPT Arg1:T29 Arg2:T30	
+R27	ArgM_MNR Arg1:T32 Arg2:T33	
+R28	ArgM_TMP Arg1:T32 Arg2:T34	
+R29	ArgM_TMP Arg1:T32 Arg2:T35	
+R30	ArgM_TMP Arg1:T36 Arg2:T37	
+R31	ArgM_TMP Arg1:T36 Arg2:T38	
+R33	Arg1_PPT_X Arg1:T32 Arg2:T29	
+R34	Arg2_PPT_Z Arg1:T29 Arg2:T24	
+#1	AnnotatorNotes R6	the artichokes; the chopped artichokes
+#2	AnnotatorNotes R12	the onions; the sauteed onions
+#3	AnnotatorNotes R24	the egg mixture
+R4	Arg1_PPT_X Arg1:T39 Arg2:T36	
+#4	AnnotatorNotes R34	the artichoke mixture
+#5	AnnotatorNotes R33	the quiche cups; the cheddar artichoke quiche cups
+R26	Arg1_PPT_X Arg1:T36 Arg2:T32	
+#6	AnnotatorNotes R26	the quiche cups; the cheddar artichoke quiche cups
+#7	AnnotatorNotes R4	the quiche cups; the cheddar artichoke quiche cups
