@@ -5,7 +5,7 @@
 
 **R**ecipe **I**nstruction **Se**mantics **C**orpus 
 
-This dataset contains 260 cooking recipe texts which are the same as [CURD](https://www.cs.cmu.edu/~ark/CURD/) and [SIMMR](https://camel.abudhabi.nyu.edu/simmr/). The corpus development is detailed in our short paper. If it contributes to your research, please cite the paper.
+This dataset contains 260 cooking recipe texts which are the same as [CURD](https://www.cs.cmu.edu/~ark/CURD/) and [SIMMR](https://camel.abudhabi.nyu.edu/simmr/). The corpus development is detailed in our short paper. If our work contributes to your research, please cite the paper.
 ```
 @inproceedings{yjiang2020risec,
   author       = {Jiang, Yiwei and Deleu, Johannes and Demeester, Thomas and Develder, Chris},
