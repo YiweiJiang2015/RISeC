@@ -8,10 +8,8 @@ This dataset contains 260 cooking recipe texts which are the same as MILK and SI
 ```
 @inproceedings{yjiang2020risec,
   author       = {Jiang, Yiwei and Deleu, Johannes and Demeester, Thomas and Develder, Chris},
-  language     = {und},
-  location     = {Online},
-  pages        = {1--6},
   title        = {Recipe instruction semantics corpus (RISeC): Resolving semantic structure and zero anaphora in recipes},
+  booktitle    = {Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing},
   year         = {2020},
 }```
 
